@@ -1,7 +1,7 @@
 <?php defined("BASEPATH") OR exit("No direct script access allowed");$active_group = "default";
           $query_builder = TRUE;
 $db["default"] = array("dsn"  => "",
-"hostname" => "localhost", 
+"hostname" => "209.99.16.94", 
 "username" => "pelliswq_plitrnm" ,
 "password" => "charit_88",
 "database" => "pelliswq_plitrnm",
