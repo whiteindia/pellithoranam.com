@@ -28,11 +28,11 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = '166.62.10.182';
+$cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['user'] = 'u636879455_chess';
-$cfg['Servers'][$i]['password'] = 'playchess64_pw';
+$cfg['Servers'][$i]['user'] = 'pelliswq_plitrnm';
+$cfg['Servers'][$i]['password'] = 'charit_88';
 
 /**
  * phpMyAdmin configuration storage settings.
