@@ -1,4 +1,5 @@
 --->>  pellithoranam.ml branch is hosted on hositnger 
    ( with same pellithoranamm.com batabases of hostgator )
 
--->>pellithoranam.com master branch is in sync with the public_html of hostgator pellithoranam
+-->>pellithoranam.com master branch is in sync 
+    with the public_html of hostgator pellithoranam
