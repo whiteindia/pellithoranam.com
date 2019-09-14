@@ -31,9 +31,10 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = '203.109.108.78';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
+/*
 $cfg['Servers'][$i]['user'] = 'pelliswq_plitrnm';
 $cfg['Servers'][$i]['password'] = 'charit_88';
-
+*/
 /**
  * phpMyAdmin configuration storage settings.
  */
