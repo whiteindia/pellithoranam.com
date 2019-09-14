@@ -1,0 +1,80 @@
+#carousel {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5em;
+  margin:0 auto;
+}
+
+#carousel .shadow {
+  -moz-box-shadow: 0px 16px 26px #888888;
+  -webkit-box-shadow: 0px 16px 26px #888888;
+  box-shadow: 0px 16px 26px #888888;
+}
+
+#carousel .slide {
+  position: absolute ;
+  overflow: hidden;
+  width: 400px !important;
+
+}
+
+
+
+
+#carousel .slide img {
+	width:200px;
+	height:200px;
+	 transition-property: opacity;
+}
+
+#carousel .slide p {
+  position: relative;
+  padding: 0;
+  margin:  0;
+  height:  100%
+}
+
+#carousel .slide span {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  position: absolute;
+  padding: 5px;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+}
+
+#carousel .navigate-left {
+  cursor: pointer;
+  bottom: 10px;
+  left: 220px;
+  height:400px;
+  width:50%;
+  float:left;
+  background:url(../images/ar-left.png);
+  background-repeat:no-repeat;
+  background-position: left 15% top 50%;
+  background-size:20px;}
+
+#carousel .navigate-right {
+  cursor: pointer;
+  bottom: 10px;
+  right: 484px;
+  height:400px;
+  width:50%;
+  float:right;
+	left: 0px !important;
+	background:url(../images/ar-right.png);
+  background-repeat:no-repeat;
+  background-position:right;
+  background-size:20px;
+   background-position: right 10% top 50%;
+}
+.carousel-control1{width:100%;height: 400px !important;position: absolute;top: 0px;}
+.acc-grn-ovrly{width:100%;height:100%;background:rgba(238, 238, 238, 0);position:absolute;z-index:10;}
+.acc-grn-ovrly h1{font-family:AvenirNextLTPro-Regular;color:#fff;width:100%;text-align:center;margin: 0px;position:relative;top: 180px;padding-bottom:10px;font-size:25px;}
+.acc-slider-inner{right: 20px;position: relative;}
+

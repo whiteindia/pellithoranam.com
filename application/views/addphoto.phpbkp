@@ -1,0 +1,306 @@
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/jquery.Jcrop.min.css">
+    <script src="<?php echo base_url();?>/assets/js/jquery.Jcrop.min.js"></script>   
+   <!--  <script src="<?php echo base_url();?>/assets/js/jqueryj.min.js"></script> 
+ <body class="wed-add-photo-theme">-->
+    <!-- ADD-PHOTO -->
+<div class="wed-wrapper">
+    <div class="wed-add-photo-div">
+      <h1>Add a photo to complete your profile</h1>
+      <h4>Profiles with Photos get 20 times <br>more responses !</h4>
+
+      <div class="wed-photo-add-pic">
+        <div class="wed-photo-add-btn">+</div>
+      </div>
+      <button class="wed-add-now-btn" data-toggle="modal" data-target="#addphoto">Add Photo Now</button>
+      <button class="wed-add-now-btn" data-toggle="modal" data-target="#privacy">Photo Privacy</button>
+             <?php
+               if($this->session->flashdata('message')) {
+               $message = $this->session->flashdata('message');
+               ?>
+            <div id="error_msges" style="color: red !important;">
+              <!--  <button class="close" data-dismiss="alert" type="button">×</button> -->
+               <?php echo $message['message']; ?>
+            </div>
+            <?php
+               }
+               ?>
+       <h4>Allowed Type: jpg, png<br/>Max.Size: 5mb</h4>
+    
+      <!-- ADD-PHOTO-POP-UP -->
+<!-- CSS -->
+<script type="js/css">
+    .bheader {
+    background-color: #DDDDDD;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0;
+    text-align: center;
+}
+.bbody {
+    color: #000;
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+    background: -moz-linear-gradient(#ffffff, #f2f2f2);
+    background: -ms-linear-gradient(#ffffff, #f2f2f2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+    background: -webkit-linear-gradient(#ffffff, #f2f2f2);
+    background: -o-linear-gradient(#ffffff, #f2f2f2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2')";
+    background: linear-gradient(#ffffff, #f2f2f2);
+}
+.bbody h2, .info, .error {
+    margin: 10px 0;
+}
+.step2, .error {
+    display: none;
+}
+.error {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+.info {
+    font-size: 14px;
+}
+label {
+    margin: 0 5px;
+}
+input {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 70px;
+}
+.jcrop-holder {
+    display: inline-block;
+}
+input[type=submit] {
+    background: #e3e3e3;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+    box-shadow: inset 0 0 1px 1px #f6f6f6;
+    color: #333;
+    font: bold 12px/1 "helvetica neue", helvetica, arial, sans-serif;
+    padding: 8px 0 9px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    width: 150px;
+}
+input[type=submit]:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer;
+}
+input[type=submit]:active {
+    background: #d0d0d0;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000;
+}
+    
+    
+    
+</script>
+
+
+      <div class="modal fade wed-add-modal" id="addphoto" role="dialog">
+        <div class="modal-dialog wed-add-modal-dialogue">
+          <div class="modal-content wed-add-modal-content">
+            <div class="modal-body  wed-add-modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4>Are You Sure?</h4>
+              <p>If you don’t upload your photo now, <br>
+                Potential matches may not contact you </p>
+                
+            <div class="wed-add-modal-footer">
+                <!-- Jcorp example-->
+                
+<!--<link rel="stylesheet" href="//jcrop-cdn.tapmodo.com/v0.9.12/css/jquery.Jcrop.min.css" type="text/css" />
+<script src="//edge1u.tapmodo.com/global/js/jquery.min.js"></script>
+<script src="//jcrop-cdn.tapmodo.com/v0.9.12/js/jquery.Jcrop.min.js"></script>  -->
+
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/jquery.Jcrop.min.css">
+    <script src="<?php echo base_url();?>/assets/js/jquery.Jcrop.min.js"></script>   
+   <!--  <script src="<?php echo base_url();?>/assets/js/jqueryj.min.js"></script> 
+<style>#cropbox { display: inline !important; visibility: visible !important;width: 100% !important;height: 100% !important; }</style> -->
+
+   <div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+
+   <!-- Main content -->
+   <section class="content">
+      <div class="row">
+     <!--    <div class="col-xs-12">
+            <?php
+              // if($this->session->flashdata('message')) {
+                 //       $message = $this->session->flashdata('message');
+               
+                     ?>
+            <div class="alert alert-<?php //echo $message['class']; ?>">
+               <button class="close" data-dismiss="alert" type="button">×</button>
+               <?php// echo $message['message']; ?>
+            </div>
+            <?php
+             //  }
+               ?>
+         </div>   -->
+         <div class="col-xs-12">
+            <!-- /.box -->
+            <div class="box">
+               <div class="box-header">
+                  <h3 class="box-title">Crop Profile Picture</h3>
+               </div>
+               <!-- /.box-header -->
+               <div class="box-body">
+                  <b><u><?php// echo "T".$prof_user; ?></u></b><br/>
+                   <!--   id="cropbox" -->
+         <form id="form1" >
+
+    </form>
+                   <div class="jc_coords">
+                  <form action="<?php echo base_url();?>profile/upload_photo" method="post"onsubmit="return checkCoords();" >  <!--onsubmit="return checkCoords();"  -->
+              <!--      <input type="hidden" name="picid" value="<?php// echo $picid; ?>">
+                    <input type="hidden" name="photo" value="<?php// echo //$prof_pic; ?>">
+                    <input type="hidden" name="prof_preference" value="<?php //echo $prof_preference; ?>">
+                    <input type="hidden" name="user_matr" value="<?php //echo $prof_user; ?>">.  -->
+                     <input type="hidden" id="x" name="x" />
+                     <input type="hidden" id="y" name="y" />
+                     <input type="hidden" id="w" name="w" />
+                     <input type="hidden" id="h" name="h" />
+                             <input type='file' id="imgInp" />
+     <div> <img id="blah"  src="#" alt="your image" /></div> 
+                     <?php $data = getimagesize(('#blah')[0].files[0]);
+                      $width = $data[0];
+                      $height = $data[1]; 
+                      //print_r($width);print_r($height);
+                      ?>
+                     <input type="hidden" id="org_w" value="<?php echo $width; ?>" name="org_w" />
+                     <input type="hidden" id="org_h" value="<?php echo $height; ?>" name="org_h" />
+                     <a><button class="btn add-new" type="submit"><b>Approve</b></button></a>
+                  </form>
+                  </div>
+               </div>
+               <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+         </div>
+         <!-- /.col -->
+      </div>
+      <!-- /.row -->
+   </section>
+   <!-- /.content -->
+</div>
+
+<script language="Javascript">
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+(function($) {
+    $(window).load(function() {
+          $(input.files[0]).Jcrop({
+            aspectRatio: 1,
+            onSelect: updateCoords
+          });
+    });
+})(jQuery);
+
+function updateCoords(c)
+{
+  jQuery('#x').val(c.x);
+  jQuery('#y').val(c.y);
+  jQuery('#w').val(c.w);
+  jQuery('#h').val(c.h);
+};
+
+function checkCoords()
+{
+  if (parseInt(jQuery('#w').val())>0) return true;
+  alert('Please select a crop region then press submit.');
+  return false;
+};
+
+/*jQuery(function () {
+  jQuery('#showcode').FieldsetToggle('Code for this demo');
+});*/
+
+</script>
+         <!--     <form method="post" enctype="multipart/form-data" role="form" action="<?php echo base_url();?>profile/upload_photo" onsubmit="return checkForm()">
+               <div class="wed-btn">
+
+               </div>
+               <div class="wed-add-modal-footer">
+                 <input class="wed-file-type1" type="file" name="image" value="upload Photo">
+                 <button class="wed-modal-btn">Upload Photo</button>
+
+                 <input class="wed-modal-btn" type="submit" value="Submit">
+               </div>
+             </form>   -->
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PRIVACY-POP-UP -->
+
+      <div class="modal fade wed-add-modal" id="privacy" role="dialog">
+        <div class="modal-dialog wed-add-modal-dialogue">
+          <div class="modal-content wed-add-modal-content">
+            <div class="modal-body  wed-add-modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4>Set Privacy</h4>
+              <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
+      
+ <form method="post" enctype="multipart/form-data" role="form" action="<?php echo base_url();?>profile/set_privacy">
+                <div class="wed-photoprivacy" style="text-align: left;">
+                        <input id="nm" name="profile_preference" type="radio" value="0" <?php echo ($privacy->profile_preference== '0') ?  "checked" : "" ;  ?>>
+                        <label for="nm">Visible to all</label><br/>
+                        <input id="dvsd" name="profile_preference" type="radio" value="1" <?php echo ($privacy->profile_preference== '1') ?  "checked" : "" ;  ?>>
+                        <label for="dvsd">Visible only to members whom I had contacted / responded</label>
+                       
+                    </div>
+           <input class="wed-modal-btn" type="submit" value="Submit">
+             <input class="wed-modal-btn" style="text-align:center;" value="Cancel" data-dismiss="modal">
+                </form>
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+      <div class="wed-add-skip-bay">
+        <button class="wed-skip-btn">Skip</button>
+      </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!--</body></html>-->

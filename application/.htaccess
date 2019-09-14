@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+RewriteCond $1 !^(index\.php|public|\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?$1
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>
+# Add Font Types
+AddType application/vnd.ms-fontobject .eot
+AddType font/truetype .ttf
+AddType font/opentype .otf
+AddType font/opentype .woff
+AddType font/opentype .woff2
+AddType image/svg+xml .svg .svgz
+
+<FilesMatch ".(eot|ttf|otf|woff|woff2|svg|svgz)">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
