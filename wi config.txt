@@ -1,5 +1,13 @@
---->>  pellithoranam.ml branch is hosted on hositnger 
-   ( with same pellithoranamm.com batabases of hostgator )
+--->> Github repos Pellithoranam.com's Branch  "pellithoranam.ml"  is auto deploy to hositnger ( i.e www.pellithoranam.ml) 
+                              ( i.e development or testing branch)
 
--->>pellithoranam.com master branch is in sync 
-    with the public_html of hostgator pellithoranam
+-->>Github repos Pellithoranam.com's "master" branch is auto deploying to with the public_html of hostgator pellithoranam i.e www.pellithoranam.com
+	                         (i.e production or customer live project)
+	
+	
+-->> Database is same for both 
+www.pellithoranam.com/phpmyadmin
+
+username => pelliswq_plitrnm
+password => charit_88
+database => pelliswq_plitrnm
