@@ -114,7 +114,7 @@
     <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/wedding.js"></script>
     <script src="<?php echo base_url('assets/js/parsley/parsley.min.js'); ?>"></script>
-   <!--  <script src="<?php echo// base_url('assets/js/ie-emulation-modes-warning.js.download'); ?>
+   <!--  <script src="<?php echo base_url('assets/js/ie-emulation-modes-warning.js.download'); ?>
     "></script> -->
     <script src="<?php echo base_url(); ?>assets/js/intlTelInput.js"></script>
 <script type="text/javascript">
@@ -140,12 +140,12 @@
 //     }
 // });
 </script>
-<!--
-<script language="JavaScript" type="text/javascript">
-/*TrustLogo("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.png", "CL1", "none");  */
-</script>  -->
 
-<!--<a  href="https://ssl.comodo.com" id="comodoTL">Comodo SSL</a>  -->
+<script language="JavaScript" type="text/javascript">
+TrustLogo("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.png", "CL1", "none");
+</script>
+
+<a  href="https://ssl.comodo.com" id="comodoTL">Comodo SSL</a>
 
     </body>
     </html>
