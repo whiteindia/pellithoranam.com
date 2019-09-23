@@ -114,7 +114,7 @@
     <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/wedding.js"></script>
     <script src="<?php echo base_url('assets/js/parsley/parsley.min.js'); ?>"></script>
-   <!--  <script src="<?php echo base_url('assets/js/ie-emulation-modes-warning.js.download'); ?>
+   <!--  <script src="<?php echo// base_url('assets/js/ie-emulation-modes-warning.js.download'); ?>
     "></script> -->
     <script src="<?php echo base_url(); ?>assets/js/intlTelInput.js"></script>
 <script type="text/javascript">
