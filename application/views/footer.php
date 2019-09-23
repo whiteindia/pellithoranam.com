@@ -142,7 +142,7 @@
 </script>
 <!--
 <script language="JavaScript" type="text/javascript">
-TrustLogo("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.png", "CL1", "none");
+TrustLogo//("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.png", "CL1", "none");
 </script>
 -->
 <!--<a  href="https://ssl.comodo.com" id="comodoTL">Comodo SSL</a>  -->
