@@ -506,17 +506,17 @@ die();*/
 				$this->image_lib->clear();
 				$this->image_lib->initialize($image_config);
 				
-			if(!($this->image_lib->watermark())) { //Resize image
+		/*	if(!($this->image_lib->watermark())) { //Resize image
 					
 				    echo $this->image_lib->display_errors();
 				    $this->session->set_flashdata('message', array('message' => "Something Went wrong.",'class' => 'danger'));
 					redirect(base_url().'customer/view_profilepics');
-				}
+				}  */
 
 			//	if(!($this->image_lib->crop() && $this->image_lib->watermark())) 
 				
 				
-				else { 
+			//	else { 
 					$ext = pathinfo($new_name, PATHINFO_EXTENSION);	
 					if($ext=='jpg')	{			
 					$img = imagecreatefromjpeg(base_url().'../'.$new_name); 
@@ -545,7 +545,7 @@ die();*/
 					$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id);
 					$this->session->set_flashdata('message',array('message' => ' Profile Picture Successfully Approved','class' => 'success'));
 					redirect(base_url().'customer/view_profilepics');
-				}
+				//}
 			}
 		} else { redirect(base_url()); } 
 	}
