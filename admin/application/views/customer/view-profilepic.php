@@ -69,8 +69,11 @@
                            <input type="hidden" name="profile_preference" value="<?php echo $pics->profile_preference;?>">
                            <input type="submit" class="btn btn-sm bg-olive" value=" Approve">
                             </form>
+                            <a class="btn btn-sm bg-orange" href="<?php echo site_url('Customer/approve_profilepic/'.$pics->user_id .'/'.$pics->pic_verification_id); ?>" onClick="return doapprove()">
+                              <i class="fa"></i> Approve </a>  
                               <a class="btn btn-sm bg-orange" href="<?php echo site_url('Customer/reject_profilepic/'.$pics->user_id .'/'.$pics->pic_verification_id); ?>" onClick="return doapprove()">
                               <i class="fa"></i> Reject </a>   
+                             
                               <a class="btn btn-sm btn-danger" href="<?php echo site_url('Customer/delete_profilepic/'.$pics->user_id.'/'.$pics->pic_verification_id); ?>" onClick="return doconfirm()">
                               <i class="fa fa-fw fa-trash"></i>Delete</a>							
                            </td>
