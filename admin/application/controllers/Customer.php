@@ -476,7 +476,7 @@ die();*/
 				$pic_id = $_POST['picid'];
 				$new_name = $_POST['photo'];
 			//	$prof_preference = $_POST['prof_preference'];
-/*
+
 				$image_config["image_library"] = "gd2";
 				$image_config["source_image"] = '../'.$_POST['photo'];
 
@@ -493,30 +493,30 @@ die();*/
 				$image_config['create_thumb'] = FALSE;
 				$image_config['maintain_ratio'] = true;
 				$image_config['new_image'] = '../'.$new_name;
-				$image_config['width'] =$_POST['w'];
+			/*	$image_config['width'] =$_POST['w'];
 				$image_config['height'] =$_POST['h'];
 				$image_config['x_axis'] = $_POST['x'];
 				$image_config['y_axis'] = $_POST['y'];
 				$dim = (intval($_POST["org_w"]) / intval($_POST["org_h"])) - ($_POST['w'] / $_POST['h']);
 				$image_config['master_dim'] = ($dim > 0)? "height" : "width";   */
 				/*var_dump($image_config);
-				die();*/
-                
+				die();
+                */
 				$this->load->library('image_lib');
 				$this->image_lib->clear();
 				$this->image_lib->initialize($image_config);
 				
-			/*	if(!($this->image_lib->crop() && $this->image_lib->watermark())) { //Resize image
+			if(!($this->image_lib->watermark())) { //Resize image
 					
 				    echo $this->image_lib->display_errors();
 				    $this->session->set_flashdata('message', array('message' => "Something Went wrong.",'class' => 'danger'));
 					redirect(base_url().'customer/view_profilepics');
 				}
 
-				if(!($this->image_lib->crop() && $this->image_lib->watermark())) 
-				*/
+			//	if(!($this->image_lib->crop() && $this->image_lib->watermark())) 
 				
-			//	else { 
+				
+				else { 
 					$ext = pathinfo($new_name, PATHINFO_EXTENSION);	
 					if($ext=='jpg')	{			
 					$img = imagecreatefromjpeg(base_url().'../'.$new_name); 
@@ -545,7 +545,7 @@ die();*/
 					$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id);
 					$this->session->set_flashdata('message',array('message' => ' Profile Picture Successfully Approved','class' => 'success'));
 					redirect(base_url().'customer/view_profilepics');
-			//	}
+				}
 			}
 		} else { redirect(base_url()); } 
 	}
