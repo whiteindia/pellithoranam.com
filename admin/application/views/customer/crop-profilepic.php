@@ -68,6 +68,7 @@
                      <input type="hidden" id="org_h" value="<?php echo $height; ?>" name="org_h" />
                      <a><button class="btn add-new" type="submit"><b>Crop Image</b></button></a>
                   </form>
+
                   </div>
                </div>
                <!-- /.box-body -->
