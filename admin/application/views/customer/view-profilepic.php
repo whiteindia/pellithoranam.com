@@ -70,10 +70,21 @@
                            <input type="submit" class="btn btn-sm bg-olive" value=" Crop and Approve">
                             </form>
                             <form action="<?php echo site_url('Customer/save_approved');?> " method="post">
-                           <input type="hidden" name="picid" value="<?php echo $pics->pic_verification_id;?>">
-                           <input type="hidden" name="image-user" value="<?php echo $pics->matrimony_id;?>">
-                           <input type="hidden" name="image-loc" value="<?php echo $image;?>">
-                         <!--  <input type="hidden" name="profile_preference" value="<?php //echo $pics->profile_preference;?>">-->
+                    <input type="hidden" name="picid" value="<?php echo $picid; ?>">
+                    <input type="hidden" name="photo" value="<?php echo $prof_pic; ?>">
+                    <input type="hidden" name="prof_preference" value="<?php echo $prof_preference; ?>">
+                    <input type="hidden" name="user_matr" value="<?php echo $prof_user; ?>">.
+                <!--     <input type="hidden" id="x" name="x" />
+                     <input type="hidden" id="y" name="y" />
+                     <input type="hidden" id="w" name="w" />
+                     <input type="hidden" id="h" name="h" /> -->
+                     <?php $data = getimagesize(site_url()."../../../".$prof_pic);
+                      $width = $data[0];
+                      $height = $data[1]; 
+                      //print_r($width);print_r($height);
+                      ?>
+                  <!--   <input type="hidden" id="org_w" value="<?php echo $width; ?>" name="org_w" />
+                     <input type="hidden" id="org_h" value="<?php echo $height; ?>" name="org_h" />  -->
                            <input type="submit" class="btn btn-sm bg-olive" value=" Approve">
                             </form>
                          
