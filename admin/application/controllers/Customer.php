@@ -469,6 +469,93 @@ die();*/
 			}
 		} else { redirect(base_url()); } 
 	}
+
+	public function save_approved() {
+		if($this->session->userdata('logged_in_admin')) {
+			if($_POST){
+				$pic_id = $_POST['picid'];
+				$new_name = $_POST['photo'];
+			//	$prof_preference = $_POST['prof_preference'];
+/*
+				$image_config["image_library"] = "gd2";
+				$image_config["source_image"] = '../'.$_POST['photo'];
+
+				$image_config['wm_text'] = 'Pellithoranam.com';
+				$image_config['wm_type'] = 'text';
+				$image_config['wm_font_path'] = './system/fonts/texb.ttf';
+				$image_config['wm_font_size'] = '12';
+				$image_config['wm_font_color'] = 'ffffff';
+				$image_config['wm_vrt_alignment'] = 'bottom';
+				$image_config['wm_hor_alignment'] = 'right';
+				$image_config['wm_padding'] = '0';
+				$image_config['wm_opacity']   = '48';
+
+				$image_config['create_thumb'] = FALSE;
+				$image_config['maintain_ratio'] = true;
+				$image_config['new_image'] = '../'.$new_name;
+				$image_config['width'] =$_POST['w'];
+				$image_config['height'] =$_POST['h'];
+				$image_config['x_axis'] = $_POST['x'];
+				$image_config['y_axis'] = $_POST['y'];
+				$dim = (intval($_POST["org_w"]) / intval($_POST["org_h"])) - ($_POST['w'] / $_POST['h']);
+				$image_config['master_dim'] = ($dim > 0)? "height" : "width";   */
+				/*var_dump($image_config);
+				die();*/
+                
+				$this->load->library('image_lib');
+				$this->image_lib->clear();
+				$this->image_lib->initialize($image_config);
+				
+			/*	if(!($this->image_lib->crop() && $this->image_lib->watermark())) { //Resize image
+					
+				    echo $this->image_lib->display_errors();
+				    $this->session->set_flashdata('message', array('message' => "Something Went wrong.",'class' => 'danger'));
+					redirect(base_url().'customer/view_profilepics');
+				}
+
+				if(!($this->image_lib->crop() && $this->image_lib->watermark())) 
+				*/
+				
+			//	else { 
+					$ext = pathinfo($new_name, PATHINFO_EXTENSION);	
+					if($ext=='jpg')	{			
+					$img = imagecreatefromjpeg(base_url().'../'.$new_name); 
+					for ($x=1; $x<=35; $x++) { 
+					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
+					imagefilter($img, IMG_FILTER_SELECTIVE_BLUR); 
+					} 
+					$image_name= time()."_".'blur'.'.jpg';	
+					$image_name1='assets/uploads/profile_pics/'.$image_name;			
+					imagejpeg($img,'../assets/uploads/profile_pics/'.$image_name); 
+					imagedestroy($img); 
+				    }else if($ext=='png'){
+
+				    $img = imagecreatefrompng(base_url().'../'.$new_name); 
+				    $image_name= time()."_".'blur'.'.png';			    
+					$image_name1='assets/uploads/profile_pics/'.$image_name;
+					for ($x=1; $x<=35; $x++) { 
+					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
+					imagefilter($img, IMG_FILTER_SELECTIVE_BLUR); 
+					} 
+					imagepng($img,'../assets/uploads/profile_pics/'.$image_name); 
+					imagedestroy($img); 	
+				    }/*if($prof_preference=='1'){*/
+				    $this->Customer_model->update_profile_pic_blur($image_name1,$_POST['user_matr'],$pic_id);
+				   /* }*/
+					$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id);
+					$this->session->set_flashdata('message',array('message' => ' Profile Picture Successfully Approved','class' => 'success'));
+					redirect(base_url().'customer/view_profilepics');
+			//	}
+			}
+		} else { redirect(base_url()); } 
+	}
+
+
+
+
+
+
+
 public function hello() { 
 	$img = imagecreatefrompng('https://pbs.twimg.com/profile_images/616198230297214976/PeR519Mx.png'); 
 	for ($x=1; $x<=35; $x++) { 
