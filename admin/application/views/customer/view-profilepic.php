@@ -73,7 +73,7 @@
                            <input type="hidden" name="picid" value="<?php echo $pics->pic_verification_id;?>">
                            <input type="hidden" name="image-user" value="<?php echo $pics->matrimony_id;?>">
                            <input type="hidden" name="image-loc" value="<?php echo $image;?>">
-                         <!--  <input type="hidden" name="profile_preference" value="<?php //echo $pics->profile_preference;?>">-->
+                         <input type="hidden" name="profile_preference" value="<?php echo $pics->profile_preference;?>">
                            <input type="submit" class="btn btn-sm bg-olive" value=" Approve">
                             </form>
                          
