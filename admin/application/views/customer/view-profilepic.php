@@ -67,10 +67,16 @@
                            <input type="hidden" name="image-user" value="<?php echo $pics->matrimony_id;?>">
                            <input type="hidden" name="image-loc" value="<?php echo $image;?>">
                            <input type="hidden" name="profile_preference" value="<?php echo $pics->profile_preference;?>">
+                           <input type="submit" class="btn btn-sm bg-olive" value=" Crop and Approve">
+                            </form>
+                            <form action="<?php echo site_url('Customer/save_approved');?> " method="post">
+                           <input type="hidden" name="picid" value="<?php echo $pics->pic_verification_id;?>">
+                           <input type="hidden" name="image-user" value="<?php echo $pics->matrimony_id;?>">
+                           <input type="hidden" name="image-loc" value="<?php echo $image;?>">
+                         <!--  <input type="hidden" name="profile_preference" value="<?php //echo $pics->profile_preference;?>">-->
                            <input type="submit" class="btn btn-sm bg-olive" value=" Approve">
                             </form>
-                            <a class="btn btn-sm bg-orange" href="<?php echo site_url('Customer/approve_profilepic/'.$pics->user_id .'/'.$pics->pic_verification_id); ?>" onClick="return doapprove()">
-                              <i class="fa"></i> Approve </a>  
+                         
                               <a class="btn btn-sm bg-orange" href="<?php echo site_url('Customer/reject_profilepic/'.$pics->user_id .'/'.$pics->pic_verification_id); ?>" onClick="return doapprove()">
                               <i class="fa"></i> Reject </a>   
                              

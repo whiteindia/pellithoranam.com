@@ -223,15 +223,15 @@ class Customer_model extends CI_Model {
                 $result = $query->result();          
                 return $result;
 
-	 }*/
+	 }
 //approve profilepic	 
 	 public function approve_profilepic($id,$data1){
 		  		 $this->db->where('user_id',$id);
-				 $result = $this->db->update('profile_pic_verification',$data1);
+				 $result = $this->db->update('photo_gallery',$data1);
 				 return $result;
 		 
 		 
-	 }
+	 }*/
 //reject profilepic	 
 	 public function reject_profilepic($user_id,$pic_id,$data1){
 	 			 $this->db->where('pic_verification_id',$pic_id);
