@@ -72,7 +72,7 @@
                             
                             <form action="<?php echo site_url('Customer/save_approved');?> " method="post">
                            <input type="hidden" name="picid" value="<?php echo $pics->pic_verification_id;?>">
-                           <input type="hidden" name="image-user" value="<?php echo $pics->matrimony_id;?>">
+                           <input type="hidden" name="user_matr" value="<?php echo $pics->matrimony_id;?>">
                            <input type="hidden" name="photo" value="<?php echo $image;?>">
                          <input type="hidden" name="profile_preference" value="<?php echo $pics->profile_preference;?>">
                            <input type="submit" class="btn btn-sm .btn-default" value=" Approve(testing)">
