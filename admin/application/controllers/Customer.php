@@ -540,9 +540,9 @@ die();*/
 					imagepng($img,'../assets/uploads/profile_pics/'.$image_name); 
 					imagedestroy($img); 	
 				    }/*if($prof_preference=='1'){*/
-			if(	    $this->Customer_model->update_profile_pic_blur($image_name1,$_POST['user_matr'],$pic_id);)
+			if(	    $this->Customer_model->update_profile_pic_blur($image_name1,$_POST['user_matr'],$pic_id))
 				   /* }*/
-				{if(	$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id);){
+				{if(	$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id)){
 					$this->session->set_flashdata('message',array('message' => ' Profile Picture Successfully Approved','class' => 'success'));
 				}else{
 					$this->session->set_flashdata('message',array('message' => ' Profile Picture failed to Approve','class' => 'failure'));
