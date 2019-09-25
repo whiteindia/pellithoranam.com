@@ -75,7 +75,7 @@
                            <input type="hidden" name="user_matr" value="<?php echo $pics->matrimony_id;?>">
                            <input type="hidden" name="photo" value="<?php echo $image;?>">
                          <input type="hidden" name="profile_preference" value="<?php echo $pics->profile_preference;?>">
-                           <input type="submit" class="btn btn-sm .btn-default" value=" Direct Approve(testing)">
+                           <input type="submit" class="btn btn-sm btn-primary" value=" Direct Approve">
                             </form>
                          
                               <a class="btn btn-sm bg-orange" href="<?php echo site_url('Customer/reject_profilepic/'.$pics->user_id .'/'.$pics->pic_verification_id); ?>" onClick="return doapprove()">
