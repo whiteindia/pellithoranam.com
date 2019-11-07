@@ -54,7 +54,7 @@ error_reporting(E_ALL);
 			$settings        = get_setting();
         	$header['title'] = $settings->title;
 			$this->load->view('header', $header); 
-			$this->load->view('index',$data);
+			$this->load->view('index_bulk',$data);
 			$this->load->view('footer');     
 		//}                
 	}
