@@ -280,12 +280,12 @@ membership_package!='1'
 			$settings        = get_setting();
         	$header['title'] = $settings->title . " | Registration";
 			//$this->load->view('header', $header); 
-			$this->load->view('registration',$data);
+			$this->load->view('registration_bulk',$data);
 			$this->load->view('footer');
 		} else { redirect('../home/index'); }
 	}
 
-	public function submit_registration_details() {
+	public function submit_registration_details_bulk() {
 		if($this->session->userdata('ins_id')) {
 			if($_POST){
 				$data = $_POST;
