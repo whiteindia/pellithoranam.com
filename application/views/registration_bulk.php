@@ -338,7 +338,7 @@ $sess = get_profile($pid);
 	  
 
         <div class="row">
-           <?php $this->load->view('forms/register-step-2.php');?>
+           <?php $this->load->view('forms/register-step-2_bulk.php');?>
           <div class="col-md-3">
             <div class="wed-reg-right-ads">
               <ul>
