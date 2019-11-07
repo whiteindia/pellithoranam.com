@@ -434,7 +434,7 @@
                         <div id="error-msg"></div>
                         <!-- ============Showing Error Message================== -->
                         <!-- <a href="#" class="wed-scrollup"> -->
-                           <button class="btn-success" type="submit">Submit</button>
+                           <button class="btn-warning" type="submit">Submit</button>
                        <!--    <button class="wed-submit-btn1 reg_detail" type="submit">Submit</button>
                          </a> -->
 
