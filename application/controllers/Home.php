@@ -37,7 +37,27 @@ error_reporting(E_ALL);
 			$this->load->view('footer');     
 		//}                
 	}
-
+	public function index_bulk($err = NULL)	{ 
+		/*if($this->session->userdata('logged_in')) {
+			redirect('../search');
+		} else {*/
+			$data['religions'] = $this->Home_model->getReligions();
+			$data['mother_tongue'] = $this->Home_model->getMotherTongues();
+			$data['content'] = $this->Home_model->view_content();
+			$data['footer'] = $this->Home_model->view_footer();
+			$data['banner'] = $this->Home_model->view_banner();
+			$data['left'] = $this->Home_model->view_leftad();
+			$data['right'] = $this->Home_model->view_rightad();
+			$data['success'] = $this->Home_model->view_success_story();
+			$data['profile_highlight'] = $this->Home_model->get_highlighted_profiles();			
+			$header['logn_err'] = $err;
+			$settings        = get_setting();
+        	$header['title'] = $settings->title;
+			$this->load->view('header', $header); 
+			$this->load->view('index',$data);
+			$this->load->view('footer');     
+		//}                
+	}
 		function do_send_expiry_mail($key=""){
 		if($key=="iNAa2CIz60F8qAsdMuKDGvWOKFqUVbfC"){
 			
