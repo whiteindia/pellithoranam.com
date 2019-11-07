@@ -207,7 +207,7 @@ membership_package!='1'
 		
 	}  
 	}
-	public function customer_registration() {
+	public function customer_registration_bulk() {
  		if($_POST){
 			$data = $_POST;
 			$result = $this->Home_model->InsertRegistration($data);
@@ -251,7 +251,7 @@ membership_package!='1'
 	}
 
  
-	public function registration_details() {
+	public function registration_details_bulk() {
 		if($this->session->userdata('ins_id')) {
 			$caste_id = $this->session->userdata('cast_id');
 			$religion_id = $this->session->userdata('religion');
@@ -313,7 +313,8 @@ membership_package!='1'
 				if($result==1){
 					$email = $this->session->userdata('email');
 					//Verify/send_otp
-					redirect(base_url().'verify/send_otp_after_reg?email='.$email);
+                //	redirect(base_url().'verify/send_otp_after_reg?email='.$email);
+                redirect(base_url().'Profile/upload_profile_pic'); 	
 				} else { 
 					redirect(base_url().'home/index'); 
 				}

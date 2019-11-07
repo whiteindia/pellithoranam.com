@@ -8,7 +8,7 @@
       <!-- <div class="wed-banner" style="background:url('<?php echo base_url(); ?>admin/assets/img/home_main_bg.png');"> -->
       
       <!-- <div class="container container-custom"> -->
-        <?php $this->load->view('forms/register.php');?>
+        <?php $this->load->view('forms/register_bulk.php');?>
   
       <!-- </div> -->
     </div> </div>
