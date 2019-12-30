@@ -87,6 +87,12 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
   
   </head>
    <body>
+     
+<div id="newslater-popup" class="mfp-hide white-popup-block open align-center">
+  <div class="nl-popup-main">
+    <img src="ad.jpg">
+   
+  </div>
    <?php
     function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
@@ -661,3 +667,12 @@ var url='<?php echo base_url()?>';
 });  
       $('.bell_noti').show();
     </script>
+    
+<script>
+  /* ------------ Newslater-popup JS Start ------------- */
+  $(window).load(function() {
+    $.magnificPopup.open({
+      items: {src: '#newslater-popup'},type: 'inline'}, 0);
+  });
+    /* ------------ Newslater-popup JS End ------------- */
+</script>
