@@ -87,6 +87,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
   
   </head>
    <body>
+     
    <?php
     function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
