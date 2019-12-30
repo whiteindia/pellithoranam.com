@@ -2,6 +2,11 @@
 
     <!-- BANNER -->
 
+    <div class="wed-banner" style="background:url('<?php echo base_url(); ?>admin/<?php echo $banner->banner_image;?>'); background-size: cover; background-position: center;">
+        
+        <div class="wed-about-overlay">
+      <!-- <div class="wed-banner" style="background:url('<?php echo base_url(); ?>admin/assets/img/home_main_bg.png');"> -->
+      
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jmagnific-popup.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom.css'); ?>">
 
@@ -29,11 +34,6 @@
     /* ------------ Newslater-popup JS End ------------- */
 </script>
     
-    <div class="wed-banner" style="background:url('<?php echo base_url(); ?>admin/<?php echo $banner->banner_image;?>'); background-size: cover; background-position: center;">
-        
-        <div class="wed-about-overlay">
-      <!-- <div class="wed-banner" style="background:url('<?php echo base_url(); ?>admin/assets/img/home_main_bg.png');"> -->
-      
       <!-- <div class="container container-custom"> -->
         <?php $this->load->view('forms/register.php');?>
   
