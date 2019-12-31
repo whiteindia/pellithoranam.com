@@ -1,36 +1,40 @@
+
+
 <div class="row">
 
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jmagnific-popup.css'); ?>">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom.css'); ?>">
-
-
-<div id="newslater-popup" class="mfp-hide white-popup-block open align-center">
-  <div class="nl-popup-main">
-    <img src="<?php echo base_url('assets/img/ad1.jpg'); ?>">
-   
-  </div>
-</div>
-
-<script src="<?php echo base_url('assets/js/jquery-1.12.3.min.js'); ?>"></script> 
-
-
-<script src="<?php echo base_url('assets/js/jquery.magnific-popup.js'); ?>"></script> 
- 
-
-
-<script>
-  /* ------------ Newslater-popup JS Start ------------- */
-  $(window).load(function() {
-    $.magnificPopup.open({
-      items: {src: '#newslater-popup'},type: 'inline'}, 0);
-  });
-    /* ------------ Newslater-popup JS End ------------- */
-</script>
-    
             <form method="post" id="register_form">
+
               <div class="wed-reg-div animated zoomIn">  
                 
                 <div class="wed-reg-body">
+                                                          <!-- POP UP START -->
+               <link rel="stylesheet" href="<?php echo base_url('assets/css/colorbox.css'); ?>" />
+
+
+
+    <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.colorbox.js'); ?>"></script>
+    <script>
+      function openColorBox(){
+          	
+        $.colorbox({iframe:true, width:"65%", height:"100%", href: "<?php echo base_url('assets/img/ad11.jpg'); ?>" });
+        			
+			
+      }
+           setTimeout(openColorBox, 1000);
+     
+    </script>
+                                             
+                                                          
+                                                          
+                                                          
+                                                          
+                                                     
+
+   
+   
+  
+    <!-- POP UP END -->
                   <h3 class="register_head">REGISTER FREE</h3>
                   <ul>
                     <li>
