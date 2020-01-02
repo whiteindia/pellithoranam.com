@@ -2,8 +2,8 @@
           $query_builder = TRUE;
 $db["default"] = array("dsn"  => "",
 "hostname" => "localhost", 
-"username" => "pelliswq_plitrnm" ,
-"password" => "charit_88",
+"username" => "root" ,
+"password" => "Pellithoranam@888",
 "database" => "pelliswq_plitrnm",
 "dbdriver" => "mysqli",
 "pconnect" => FALSE,
