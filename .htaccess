@@ -39,11 +39,11 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 # php -- END cPanel-generated handler, do not edit
 RewriteCond %{HTTP} off
 RewriteCond %{HTTP:X-Forwarded-SSL} !on
-#RewriteCond %{HTTP_HOST} ^pellithoranam\.com$ [OR]
-#RewriteCond %{HTTP_HOST} ^www\.pellithoranam\.com$
+RewriteCond %{HTTP_HOST} ^pellithoranam\.ml$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pellithoranam\.ml$
 RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-#RewriteRule ^/?$ "http\:\/\/www\.pellithoranam\.com\/" [R=301,L]
+RewriteRule ^/?$ "http\:\/\/www\.pellithoranam\.ml\/" [R=301,L]
 
