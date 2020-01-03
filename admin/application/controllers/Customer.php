@@ -523,8 +523,8 @@ error_reporting(E_ALL);
 					if($ext=='jpg')	{			
 					$img = imagecreatefromjpeg(base_url().'../'.$new_name); 
 					for ($x=1; $x<=35; $x++) { 
-					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
-					imagefilter($img, IMG_FILTER_SELECTIVE_BLUR); 
+				//	imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
+				//	imagefilter($img, IMG_FILTER_SELECTIVE_BLUR); 
 					} 
 					$image_name= time()."_".'blur'.'.jpg';	
 					$image_name1='assets/uploads/profile_pics/'.$image_name;			
