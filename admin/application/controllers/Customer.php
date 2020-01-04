@@ -10,6 +10,8 @@ class Customer extends CI_Controller {
     }
 	// view customer details	  
 	public function view_members(){
+
+		ini_set('display_errors', 1);
 		if($this->session->userdata('logged_in_admin')) {
 			$postedData =$this->input->post(NULL);
 			// for datatable
