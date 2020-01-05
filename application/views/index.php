@@ -296,18 +296,15 @@
 
 
 
-<!--<section class="module parallax parallax-1">
+<section class="module parallax parallax-1">
   <div class="wed-index-parallax-overlay">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
           <div class="wed-parallax-detail">
            <!--<h5><strong><?php echo $footer->footer_header?></strong> </h5>-->
-            <!--<h5><strong>Soulmate Matrimony</strong> </h5>-->
-            <!--<h5>Mobile App</h5>-->
-            <!--<p>Get on the app & experience matchmaking on the go.</p>-->
-         
- <!--<p><?php echo $footer->footer_para?>.</p>-->
+            <!--<h5>Mobile App</h5>-->                 
+     <!--<p><?php echo $footer->footer_para?>.</p>-->
             <div class="wed-download-bay">
               <!--<li><img src="<?php echo base_url(); ?>assets/img/googleplay.png"></li>-->
               <!--<li><img src="<?php echo base_url(); ?>assets/img/appstore.png"></li>-->
