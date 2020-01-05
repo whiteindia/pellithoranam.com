@@ -307,11 +307,11 @@
             <!--<h5>Mobile App</h5>-->
             <!--<p>Get on the app & experience matchmaking on the go.</p>-->
          
-  <p><?php echo $footer->footer_para?>.</p>
-            <!--<div class="wed-download-bay">-->
+ <!--<p><?php echo $footer->footer_para?>.</p>-->
+            <div class="wed-download-bay">
               <!--<li><img src="<?php echo base_url(); ?>assets/img/googleplay.png"></li>-->
               <!--<li><img src="<?php echo base_url(); ?>assets/img/appstore.png"></li>-->
-<!--</div>-->
+</div>
           </div>
        </div> 
 
