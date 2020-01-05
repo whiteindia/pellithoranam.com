@@ -310,9 +310,9 @@
             <!--<div class="wed-download-bay">-->
               <!--<li><img src="<?php echo base_url(); ?>assets/img/googleplay.png"></li>-->
               <!--<li><img src="<?php echo base_url(); ?>assets/img/appstore.png"></li>-->
-           <!-- </div>-->
-          <!--</div>-->
-       <!-- </div> -->
+<!--</div>-->
+          </div>
+       </div> 
 
 
         <div class="col-md-7 animatedParent" data-sequence='500'>
