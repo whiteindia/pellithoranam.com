@@ -295,7 +295,7 @@
 
 
 
-
+<!--
 <section class="module parallax parallax-1">
   <div class="wed-index-parallax-overlay">
     <div class="container">
@@ -312,7 +312,7 @@
               <li><img src="<?php echo base_url(); ?>assets/img/appstore.png"></li>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="col-md-7 animatedParent" data-sequence='500'>
           <div class="wed-index-phone animated bounceInLeft" >
