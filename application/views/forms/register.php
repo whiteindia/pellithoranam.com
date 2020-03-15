@@ -8,8 +8,8 @@
                 
                 <div class="wed-reg-body">
 			
-             /*                                             <!-- POP UP START -->
-               <link rel="stylesheet" href="<?php echo base_url('assets/css/colorbox.css'); ?>" />
+                                                       <!-- POP UP START -->
+           <!--     <link rel="stylesheet" href="<?php echo base_url('assets/css/colorbox.css'); ?>" />
 
 
 
@@ -35,7 +35,7 @@
    
    
   
-    <!-- POP UP END --> */
+    <!-- POP UP END -->  -->
 			
 			
                   <h3 class="register_head">REGISTER FREE</h3>
