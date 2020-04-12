@@ -74,7 +74,7 @@ $title = $settings->title;
             </a>
               <div class="arrow-up"></div>
             </li>
-            <li>
+       <!--     <li>
               <a data-toggle="tab" href="#delete">
               <div class="wed-img-bg">
                 <img src="<?php echo base_url(); ?>assets/img/delete-profile.png">
@@ -84,7 +84,7 @@ $title = $settings->title;
             </p>
             </a>
               <div class="arrow-up"></div>
-            </li>
+            </li>  -->
             <div class="clearfix"></div>
           </ul>
         </div>
