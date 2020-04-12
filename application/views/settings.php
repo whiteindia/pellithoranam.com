@@ -77,7 +77,7 @@ $title = $settings->title;
        <!--     <li>
               <a data-toggle="tab" href="#delete">
               <div class="wed-img-bg">
-                <img src="<?php echo base_url(); ?>assets/img/delete-profile.png">
+                <img src="<?php //echo base_url(); ?>assets/img/delete-profile.png">
               </div>
               <p>
               Delete Profile
