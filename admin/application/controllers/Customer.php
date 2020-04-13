@@ -440,7 +440,7 @@ die();*/
 					redirect(base_url().'customer/view_profilepics');
 				} else { 
 					$ext = pathinfo($new_name, PATHINFO_EXTENSION);	
-					if($ext=='jpg')	{			
+					if($ext=='jpg'||$ext=='jpeg')	{			
 					$img = imagecreatefromjpeg(base_url().'../'.$new_name); 
 					for ($x=1; $x<=35; $x++) { 
 					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
@@ -464,8 +464,8 @@ die();*/
 					imagedestroy($img); 	
 					}/*if($prof_preference=='1'){*/
 						
-						echo 'image name--'.$image_name.'--';
-						exit();
+					//	0echo 'image name--'.$image_name.'--';
+						//exit();
 				    $this->Customer_model->update_profile_pic_blur($image_name1,$_POST['user_matr'],$pic_id);
 				   /* }*/
 					$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id);
