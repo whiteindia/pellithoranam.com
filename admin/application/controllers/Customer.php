@@ -454,7 +454,12 @@ die();*/
 				    }else if($ext=='png'){
 
 				    $img = imagecreatefrompng(base_url().'../'.$new_name); 
-				    $image_name= time()."_".'blur'.'.png';			    
+				   // $image_name= time()."_".'blur'.'.png';			    
+				   if($ext=='jpg'){
+					$image_name= time()."_".'blur'.'.jpg';	
+					} else if($ext=='jpeg'){
+						$image_name= time()."_".'blur'.'.jpeg';
+					}
 					$image_name1='assets/uploads/profile_pics/'.$image_name;
 					for ($x=1; $x<=35; $x++) { 
 					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
@@ -532,7 +537,11 @@ error_reporting(E_ALL);
 				//	imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
 				//	imagefilter($img, IMG_FILTER_SELECTIVE_BLUR); 
 					} 
+					if($ext=='jpg'){
 					$image_name= time()."_".'blur'.'.jpg';	
+					} else if($ext=='jpeg'){
+						$image_name= time()."_".'blur'.'.jpeg';
+					}
 					$image_name1='assets/uploads/profile_pics/'.$image_name;			
 					imagejpeg($img,'../assets/uploads/profile_pics/'.$image_name); 
 					imagedestroy($img); 
