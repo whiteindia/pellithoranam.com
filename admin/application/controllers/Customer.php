@@ -526,7 +526,7 @@ error_reporting(E_ALL);
 				
 			//	else { 
 					$ext = pathinfo($new_name, PATHINFO_EXTENSION);	
-					if($ext=='jpg')	{			
+					if($ext=='jpg'||$ext=='jpeg')	{			
 					$img = imagecreatefromjpeg(base_url().'../'.$new_name); 
 					for ($x=1; $x<=35; $x++) { 
 				//	imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
