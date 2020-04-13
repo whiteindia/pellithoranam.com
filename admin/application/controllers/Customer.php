@@ -633,7 +633,7 @@ public function hello() {
 				    $ext = pathinfo($img_loc, PATHINFO_EXTENSION);	
 					/*var_dump($img_loc);
 					die();*/
-						if($ext=='jpg'||$ext=='JPEG')	{	
+						if($ext=='jpg'||$ext=='jpeg')	{	
 						$a=base_url().'../'.$img_loc;
 						/*var_dump($a);
 						die();		*/
