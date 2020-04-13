@@ -448,6 +448,7 @@ die();*/
 					} 
 					$image_name= time()."_".'blur'.'.jpg';	
 					echo '--'.$image_name.'--';
+					exit();
 					$image_name1='assets/uploads/profile_pics/'.$image_name;			
 					imagejpeg($img,'../assets/uploads/profile_pics/'.$image_name); 
 					imagedestroy($img); 
