@@ -235,7 +235,7 @@
                         <div class="col-md-6" style="padding:5px;">
                            <label>College / Institution</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="college"  value="<?php echo $profile->college; ?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" name="college"  value="<?php echo $profile->college; ?>">
                         </div> 
                         <div class="col-md-6" style="padding:5px;">
                            <label>Education in Detail</label>
@@ -255,17 +255,17 @@
                          <div class="col-md-6" style="padding:5px;">
                            <label>occupation in Detail</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="occupation_detail"  value="<?php echo $profile->occupation_detail; ?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="occupation_detail"  value="<?php echo $profile->occupation_detail; ?>">
                         </div>
                          <div class="col-md-6" style="padding:5px;">
                            <label>Employed in</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="employed_in"  value="<?php echo $profile->employed_in; ?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="employed_in"  value="<?php echo $profile->employed_in; ?>">
                         </div>
                          <div class="col-md-6" style="padding:5px;">
                            <label>Annual Income</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="income"  value="<?php echo $profile->income; ?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="income"  value="<?php echo $profile->income; ?>">
                         </div>
                          <label class="col-md-8"><u>Family Details</u></label><br>
                          <div class="col-md-6" style="padding:5px;">
@@ -299,22 +299,22 @@
                         <div class="col-md-6" style="padding:5px;">
                            <label>Ancestral /Family Origin</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="family_origin"  value="<?php echo $profile->family_origin;?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="family_origin"  value="<?php echo $profile->family_origin;?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label>Family Location</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="family_location"  value="<?php echo $profile->family_location;?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="family_location"  value="<?php echo $profile->family_location;?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label>Father's Status</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="father_status"  value="<?php echo ucwords($profile->father_status);?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="father_status"  value="<?php echo ucwords($profile->father_status);?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label> Mother's Status</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="mother_status"  value="<?php echo ucwords($profile->mother_status);?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="mother_status"  value="<?php echo ucwords($profile->mother_status);?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label>No of Brother(s)</label>
@@ -329,7 +329,7 @@
                          <div class="col-md-6" style="padding:5px;">
                            <label>About my Family</label>
                             <textarea  class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="family_about"><?php echo ucwords($profile->family_about);?></textarea>
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="family_about"><?php echo ucwords($profile->family_about);?></textarea>
                         </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label>Personal Information</label>
