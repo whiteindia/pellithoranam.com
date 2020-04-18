@@ -240,7 +240,7 @@
                         <div class="col-md-6" style="padding:5px;">
                            <label>Education in Detail</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="education_detail"  value="<?php echo $profile->education_detail; ?>">
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="education_detail"  value="<?php echo $profile->education_detail; ?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label>Occupation</label>
