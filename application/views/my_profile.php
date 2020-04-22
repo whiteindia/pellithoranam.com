@@ -1,3 +1,4 @@
+<?php set_time_limit(0); ?>
 <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
 <?php  $session=$this->session->userdata('logged_in');
 
