@@ -86,7 +86,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
 </script>  -->
   
   </head>
-   <body>
+   <body oncontextmenu="return false;">
      
    <?php
     function time_elapsed_string($datetime, $full = false) {

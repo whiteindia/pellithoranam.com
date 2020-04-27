@@ -45,7 +45,7 @@ $settings = get_setting(); ?>
       .wed-navbar-logo img {width: 90px;}
     </style>
   </head>
-   <body>
+   <body oncontextmenu="return false;">
    <?php
     function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
