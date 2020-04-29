@@ -569,7 +569,7 @@ function delete_caste(){
 		  $data1 = array(
 				  "caste_status" => '0'
 							 );
-		  $id = $this->uri->segment(3);
+		  $id = $this->uri->segment(4);
 		  $result = $this->Settings_model->delete_caste($id,$data1);
 		  $this->session->set_flashdata('message', array('message' => 'Deleted Successfully','class' => 'success'));
 		  redirect(base_url().'Settings_ctrl/view_caste');
