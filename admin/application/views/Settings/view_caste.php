@@ -55,7 +55,7 @@
                         <tr>
                           <!--  <td class="hidden"><?php echo $states->state_id; ?></td> -->
                            <td class="hidden"><?php echo $caste->caste_id; ?></td>
-                           <td class="center"><?php echo $caste->caste_name; echo '---'.base_url; ?></td>
+                           <td class="center"><?php echo $caste->caste_name; echo '---'.base_url(); ?></td>
                            <td class="center"><?php echo $caste->religion_name; ?></td>
 						        
                            <td class="center">	                                                   		  
