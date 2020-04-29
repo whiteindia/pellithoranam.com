@@ -567,7 +567,7 @@ function view_caste()
 function delete_caste(){
 		  
 		  $data1 = array(
-				  "caste_status" => '0'
+				  "caste_status" => 0
 							 );
 		  $id = $this->uri->segment(3);
 		  $result = $this->Settings_model->delete_caste($id,$data1);
