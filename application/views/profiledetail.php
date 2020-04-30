@@ -17,7 +17,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
        <div class="wed-profile-detail-left">
           <div class="wed-profile-pic-div">
             <div class=""> <!-- class= wed-profile-pic-->
-              <li><img src="<?php echo base_url(); ?>assets/img/user.jpg"></li>
+              <li><img src="<?php echo base_url(); ?>assets/img/user.jpg" width="200px" height="200px"></li>
             </div>
           </div>
             <div class="clearfix"></div>
