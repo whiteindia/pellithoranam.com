@@ -1498,7 +1498,7 @@
       <ul class="wed-inside-detail">
         <li>
           <div class="child1">
-            Father's Status
+            Father's Name
           </div>
           <div class="child2">:
           </div>
@@ -1509,7 +1509,7 @@
         </li>
         <li>
           <div class="child1">
-            Mother's Status
+            Mother's Name
           </div>
           <div class="child2">:
           </div>
