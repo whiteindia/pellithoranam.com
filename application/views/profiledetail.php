@@ -24,7 +24,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
         </div>
       <?php } else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==0) { ?>
         <div class="wed-profile-detail-left">
-            <div class="wed-profile-pic-div"><div class="wed-profile-pic">
+            <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
 
              
                <?php $i=0 ;foreach($gallery as $gal) { $i++;?>
@@ -53,7 +53,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
   
  <?php } else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==1) { ?>
         <div class="wed-profile-detail-left">
-            <div class="wed-profile-pic-div"><div class="wed-profile-pic">
+            <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
 
              
                <?php $i=0 ;foreach($gallery as $gal) { $i++;?>
