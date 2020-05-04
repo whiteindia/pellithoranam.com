@@ -347,7 +347,7 @@
               <div class="login_modal_remember">
                   <input id="remember_me" type="checkbox" name="remember" value="1">
                   <!-- <input id="remember_me" type="checkbox" value="check1" data-parsley-mincheck="1" data-parsley-trigger="change" required> -->
-                  <label for="remember_me">Remember me</label>
+                  <label for="remember_me">Remember me.</label>
               </div>
               <div class="modal_login_button">
                 <button class="wed-login" id="login_userhighlight" type="button">Login</button>
