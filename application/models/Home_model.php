@@ -718,9 +718,12 @@ public function check_verification($data) {
         $res =  trim($data['email'],$pre);
 	  }
 	    $this->db->where('is_phone_verified',1);
-		$this->db->where('email', $res);
+    $this->db->where('email', $res);
+    if (is_numeric($res)){
+      $this->db->or_where('phone',$res);
+    }else{
     $this->db->or_where('matrimony_id',$res);	
-    $this->db->or_where('phone',$res);
+    }
 		$query1=$this->db->get('profiles');  		
 		$query=$query1->row();
 		return $query;
