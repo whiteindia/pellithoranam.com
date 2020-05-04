@@ -1361,7 +1361,7 @@
             <select class="wed-reg-select" name="employed_in">
               <option value="">Select</option>
               <option value="Govt" <?php if($profile->employed_in=="Govt"){echo "selected";}?>>Govt</option>
-              <option value="Privet" <?php if($profile->employed_in=="Privet"){echo "selected";}?>>Private</option>
+              <option value="Private" <?php if($profile->employed_in=="Private"){echo "selected";}?>>Private</option>
               <option value="Business" <?php if($profile->employed_in=="Business"){echo "selected";}?>>Business</option>
               <option value="Self Employed" <?php if($profile->employed_in=="Self Employed"){echo "selected";}?>>Self Employed</option>
               <option value="Not Working" <?php if($profile->employed_in=="Not Working"){echo "selected";}?>>Not Working</option>
