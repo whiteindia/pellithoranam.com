@@ -718,10 +718,10 @@ public function check_verification($data) {
         $res =  trim($data['email'],$pre);
 	  }
 	    $this->db->where('is_phone_verified',1);
-    $this->db->where('email', $res);
-    if (strlen($res)==10){
-      $this->db->or_where('phone',$res);
-    }else{
+    //$this->db->where('email', $res);
+    //if (strlen($res)){
+      $this->db->where('phone',$res);
+    //}else{
     $this->db->or_where('matrimony_id',$res);	
     }
 		$query1=$this->db->get('profiles');  		
