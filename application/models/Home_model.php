@@ -59,7 +59,8 @@ class Home_model extends CI_Model {
 			$this->db->join('profiles', 'profiles.email = users.email','left');
 			$this->db->where('user_status','1');
 			$this->db->where('users.email', $res);
-			$this->db->or_where('matrimony_id',$res);
+      $this->db->or_where('matrimony_id',$res);
+      $this->db->or_where('phone',$res);
 		$chk_qry = $this->db->get();
 		//$chk_qry = $query->row();
 		//echo $this->db->last_query();die;
@@ -718,12 +719,8 @@ public function check_verification($data) {
         $res =  trim($data['email'],$pre);
 	  }
 	    $this->db->where('is_phone_verified',1);
-    //$this->db->where('email', $res);
-    //if (strlen($res)){
-      $this->db->where('phone',$res);
-    //}else{
-    $this->db->or_where('matrimony_id',$res);	
-   // }
+		$this->db->where('email', $res);
+		$this->db->or_where('matrimony_id',$res);	
 		$query1=$this->db->get('profiles');  		
 		$query=$query1->row();
 		return $query;
