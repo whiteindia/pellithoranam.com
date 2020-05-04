@@ -342,7 +342,7 @@
               Login
             </div>             
             <form  id="loginhigh_form1">
-              <input class="wed-navbar-input" type="text" placeholder="Email/Matrimonyid/Mobileno." name="email" data-parsley-trigger="change" required>
+              <input class="wed-navbar-input" type="text" placeholder="Email or Matrimonyid or Mobileno." name="email" data-parsley-trigger="change" required>
               <input class="wed-navbar-input" type="password" placeholder="password" name="password" data-parsley-trigger="change" required>
               <div class="login_modal_remember">
                   <input id="remember_me" type="checkbox" name="remember" value="1">
@@ -378,7 +378,7 @@
               Login Error
             </div>             
             <div class="login_modal_head">
-            Invalid Email/Matrimonyid or password
+            Invalid Email or Matrimonyid or Phoneno or password
               </div>
               <div class="modal_login_button">
                 <button class="wed-login" data-dismiss="modal">Close</button>
