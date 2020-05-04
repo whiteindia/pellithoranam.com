@@ -719,7 +719,7 @@ public function check_verification($data) {
 	  }
 	    $this->db->where('is_phone_verified',1);
     $this->db->where('email', $res);
-    if (is_numeric($res)){
+    if (strlen($res)==10){
       $this->db->or_where('phone',$res);
     }else{
     $this->db->or_where('matrimony_id',$res);	
