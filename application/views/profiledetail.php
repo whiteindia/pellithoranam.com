@@ -7,7 +7,14 @@ $settings = get_setting();
 
 if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[0]->gender)){
 ?>
-
+       <style> 
+ 
+            @media print { 
+               .no-print { 
+                  visibility: hidden; 
+               } 
+            } 
+        </style> 
     <div class="wed-profile-detail-banner">
       <div class="container container-custom">
         <h3><?php echo $profile[0]->profile_name;?></h3>
