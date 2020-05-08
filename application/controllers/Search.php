@@ -873,6 +873,40 @@ class Search extends CI_Controller {
             $this->load->view('searchresult',$data);
             $this->load->view('footer');                     
     }
+    function searchbyid(){
+      $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
+      if((isset($_POST['matri_id'])) && (!empty($_POST['matri_id']))) { // checking matrimony id
+        $where[]= "profiles.matrimony_id = '". preg_replace("/[^0-9]/","",$_POST['matri_id'])."'";
+    }
+                  $config = array();
+              $config["base_url"] = base_url() . "search/searchbyid";
+              $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
+              $config["per_page"] = 10;
+              $config["uri_segment"] =3;
+             // $choice = $config["total_rows"] / $config["per_page"];
+              //$config["num_links"] = round($choice);
+              $config["num_links"] = $config["total_rows"];
+              $config['use_page_numbers'] = TRUE;
+              $config['next_link'] = 'Next';
+              $config['prev_link'] = 'Previous';
+  
+              $this->pagination->initialize($config);
+              $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+      
+        $data['srch_candidates'] = $this->Search_model->search_user_details($config["per_page"], $page, $where,$or_where,$like);
+          $this->load->view('header', $header); 
+              $this->load->view('searchresult',$data);
+              $this->load->view('footer');
+    }
+
+
+
+
+
+
+
+
+
     function get_state_by_cntry(){
       $ct_id = $_POST['ct_id'];
       $state = $this->Home_model->getTable2("",array("state_status != 0","country_id=".$ct_id),"states","state_id");
