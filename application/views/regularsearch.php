@@ -25,7 +25,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="wed-reg-search-id">
-                <form method="post" id="search_form" action="<?php echo base_url();?>search/">
+                <form method="post" id="search_form" action="<?php echo base_url();?>search/searchbyid">
                     <p>Search by ID</p>
                     <input type='text' id='matr_id' class="wed-search-id-input" placeholder='SM12345' name='matri_id'>
                     <button class="wed-go" type="submit">Go</button>
