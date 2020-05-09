@@ -422,6 +422,9 @@ class Reports extends CI_Controller
 
     function view_mobile()
     {
+        ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
         $postedData =$this->input->post(NULL);
         // for datatable
         if(array_key_exists("start", $postedData)){
