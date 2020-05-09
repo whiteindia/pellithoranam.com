@@ -109,34 +109,11 @@ class Verify extends CI_Controller {
 
 
     public function send_otp() {
-      ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
       if($_POST['email_id']) { $email_id =  $_POST['email_id']; }
-      
-      
-      $my_matr_id = $this->Verify_model->mobile($email_id);
       $otp = $this->generate_otp();
       $result = $this->Verify_model->add_otpdetails($otp);
-      $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp." .: ".$my_matr_id." : Do not share the password with anyone for security reasons.";
+      $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp." . Do not share the password with anyone for security reasons.";
       $this->send_sms($email_id,$msg);
-
-      $this->db->select('phone');
-      $this->db->from('users');
-      
-          $this->db->where('email',$_POST['email_id']);
-          $chk_qry = $this->db->get();
-      $my_matr_id = $chk_qry;
-	    $mob=$my_matr_id->phone;
-      $mob_cc = str_replace(' ', '', $my_matr_id->phone_countrycode);
-      $mobile_no = $mob_cc.$mob;
-      //$mobile_no = "+919966337383";
-
-      
-     // $msg = "You are Successfully registered with www.Pellithoranam.com";
-      $this->sent_mobile_msg($mobile_no,$msg);
-
-
     }
 
     public function send_otp_after_reg() {

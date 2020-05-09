@@ -624,13 +624,44 @@ public function forgetpassword($email){
    $query=$this->db->update('users',$password);
    if($query)
    {
+    $this->db->select('phone');
+    $this->db->from('users');
+    
+        $this->db->where('email',$email);
+        $chk_qry = $this->db->get();
+    $my_matr_id = $chk_qry;
+    $mob=$my_matr_id->phone; 
      $from= 'no-reply@techlabz.in'; 
      $name='Soulmate Matrimony'; 
      $sub="Forgot Password";
      $email=$email;
      // $mailTemplate="<div style='width:100%;float:left;color: ##ee2979;font-size=14px;font-weight: bold;>Hi,<br>Your Temporary Password is<br><div style='font-style=italics;width:100%; margin:0px 50px;'>$rand_pwd</div><br>You can change it later from account settings</div>";
-     $mailTemplate='Your Temporary Password is '.$rand_pwd.' You can change it later from account settings';
-     $this->sending_mail($from,$name,$email,$sub,$mailTemplate);          
+     $mailTemplate='Your Temporary Password is '.$rand_pwd.'.'.$mob.' You can change it later from account settings';
+     $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
+     
+    // $my_matr_id = $this->Verify_model->mobile($email_id);
+      $this->db->select('phone');
+      $this->db->from('users');
+      
+          $this->db->where('email',$email);
+          $chk_qry = $this->db->get();
+      $my_matr_id = $chk_qry;
+      $mob=$my_matr_id->phone;
+      $msg=$mailTemplate;
+      $mob_cc = str_replace(' ', '', $my_matr_id->phone_countrycode);
+      $mobile_no = $mob_cc.$mob;
+      //$mobile_no = "+919966337383";
+
+      
+     // $msg = "You are Successfully registered with www.Pellithoranam.com";
+      $this->sent_mobile_msg($mobile_no,$msg);
+
+
+
+
+
+
+
      return "EmailSend";
    }
  }
