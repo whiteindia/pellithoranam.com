@@ -618,7 +618,8 @@ public function forgetpassword($email){
  $this->db->where('email',$email);
  $query1=$this->db->get('users');    
  $query=$query1->row();
- $mob=$query1->row()->phone;
+ $query2=$query1->result_array();
+ $mob=$query2->phone;
  if($query1->num_rows()>0)
  {         
    $this->load->helper('string');
