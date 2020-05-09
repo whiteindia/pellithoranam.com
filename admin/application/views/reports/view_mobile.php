@@ -1,11 +1,30 @@
 
-
+<table style="width:100%">
+  <tr>
+    <th>Matrimony id</th>
+    <th>total mobile views</th>
+    <th>used mobile views</th>
+  </tr>
 <?php foreach ($mobilecount as $row) { 
-    echo '<pre>';
+   
     print_r($row);
     echo '</pre>';
     
     
     ?> 
-<br><br><br><br><br>
+
+  <tr>
+    <td><?= $row['matrimony_id']; ?></td>
+    <td><?= $row['total_mobileview']; ?></td>
+    <td><?= $row['total']; ?></td>
+  </tr>
+
+
     <?php } ?>
+    </table>
+<!--    stdClass Object
+(
+    [matrimony_id] => 10969
+    [total_mobileview] => 0
+    [total] => 0
+)  -->
