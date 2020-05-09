@@ -438,9 +438,9 @@ error_reporting(E_ALL);
            
          //   $data['countries'] = $this->Reports_model->getTable("", "", "country");
             $data['mobilecount'] = $this->Reports_model->view_mobile();
-            $this->load->view('reports/view_amount_report', $data);
+            $this->load->view('reports/view_mobile', $data);
             $this->load->view('Templates/footer');
-            $this->load->view('reports/view_amount_reports_js');
+           // $this->load->view('reports/view_amount_reports_js');
         }
     }
     /**
