@@ -95,8 +95,8 @@ class Reports_model extends CI_Model {
 	
 	
 	function view_mobile(){
-		$query = 	$this->db->select(membership_details.matrimony_id,membership_details.total_mobileview, 
-		COUNT(mobile_view.mobileview_from) AS total,false);
+		$query = 	$this->db->select('membership_details.matrimony_id,membership_details.total_mobileview, 
+		COUNT(mobile_view.mobileview_from) AS total');
 		$query = 	  $this->db->from('membership_details');
 			  $query = 	  $this->db->join('mobile_view', 'membership_details.matrimony_id = mobile_view.mobileview_from', 'left');
 			  $query = 	$this->db->group_by('membership_details.matrimony_id,membership_details.total_mobileview');
