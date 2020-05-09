@@ -655,7 +655,7 @@ public function forgetpassword($email){
 
       
      // $msg = "You are Successfully registered with www.Pellithoranam.com";
-      $this->sent_mobile_msg($mobile_no,$msg);
+      $this->verify->sent_mobile_msg($mobile_no,$msg);
 
 
 
