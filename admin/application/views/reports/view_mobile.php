@@ -1,15 +1,40 @@
 
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
 <div class="row">
 <div class="col-4 col-md-4">
 </div>
 <div class="col-8 col-md-8">
-<table style="width:100%;">
+<table style="width:100%;" id="t01">
   <tr>
+    <th>S.No</th>
     <th>Matrimony id</th>
     <th>total mobile views</th>
     <th>used mobile views</th>
   </tr>
 <?php
+$c=1;
 $mobilecount=json_decode(json_encode($mobilecount),true);
 foreach ($mobilecount as $row) { 
    
@@ -20,13 +45,14 @@ foreach ($mobilecount as $row) {
     ?> 
 
   <tr>
+  <td><?= $c; ?></td>
     <td><?= $row['matrimony_id']; ?></td>
     <td><?= $row['total_mobileview']; ?></td>
     <td><?= $row['total']; ?></td>
   </tr>
 
 
-    <?php } ?>
+    <?php $c++; } ?>
     </table>
     </div>
     </div>
