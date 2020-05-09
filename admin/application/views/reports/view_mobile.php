@@ -1,5 +1,5 @@
 
-<table style="width:100%">
+<table style="width:100%;padding-left:20%;">
   <tr>
     <th>Matrimony id</th>
     <th>total mobile views</th>
