@@ -614,6 +614,7 @@ public function forgetpassword($email){
  $this->db->where('email',$email);
  $query1=$this->db->get('users');    
  $query=$query1->row();
+ $mob=$query1->phone;
  if($query1->num_rows()>0)
  {         
    $this->load->helper('string');
@@ -624,13 +625,13 @@ public function forgetpassword($email){
    $query=$this->db->update('users',$password);
    if($query)
    {
-    $this->db->select('phone');
+    /*$this->db->select('phone');
     $this->db->from('users');
     
         $this->db->where('email',$email);
         $chk_qry = $this->db->get();
     $my_matr_id = $chk_qry;
-    $mob=$my_matr_id->phone; 
+    $mob=$my_matr_id->phone;   */ 
      $from= 'no-reply@techlabz.in'; 
      $name='Soulmate Matrimony'; 
      $sub="Forgot Password";
@@ -640,13 +641,13 @@ public function forgetpassword($email){
      $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
      
     // $my_matr_id = $this->Verify_model->mobile($email_id);
-      $this->db->select('phone');
+      /*$this->db->select('phone');
       $this->db->from('users');
       
           $this->db->where('email',$email);
           $chk_qry = $this->db->get();
       $my_matr_id = $chk_qry;
-      $mob=$my_matr_id->phone;
+      $mob=$my_matr_id->phone;  */
       $msg=$mailTemplate;
       $mob_cc = str_replace(' ', '', $my_matr_id->phone_countrycode);
       $mobile_no = $mob_cc.$mob;
