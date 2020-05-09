@@ -434,7 +434,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
               Login
             </div>             
             <form method="post" action='<?php echo base_url(); ?>home/login' id="login_form">
-              <input class="wed-navbar-input" type="text" placeholder="Email/Matrimonyid" name="email" data-parsley-trigger="change" required>
+              <input class="wed-navbar-input" type="text" placeholder="Email/Matrimonyid/MobileNo" name="email" data-parsley-trigger="change" required>
               <input class="wed-navbar-input" type="password" placeholder="password" name="password" data-parsley-trigger="change" required>
               <div class="login_modal_remember">
                   <input id="remember_me" type="checkbox" name="remember" value="1">
