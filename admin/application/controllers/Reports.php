@@ -420,6 +420,26 @@ class Reports extends CI_Controller
         }
     }
 
+    function view_mobile()
+    {
+        $postedData =$this->input->post(NULL);
+        // for datatable
+        if(array_key_exists("start", $postedData)){
+            $this->_get_amount_report_tbl();
+            return false;
+        }
+        else{
+            $settings        = get_settings();
+            $header['title'] = $settings->title . " | View Report";
+            $this->load->view('Templates/header', $header);
+           
+         //   $data['countries'] = $this->Reports_model->getTable("", "", "country");
+            $data['mobilecount'] = $this->Reports_model->view_mobile();
+            $this->load->view('reports/view_amount_report', $data);
+            $this->load->view('Templates/footer');
+            $this->load->view('reports/view_amount_reports_js');
+        }
+    }
     /**
     * This Function is for Getting Data Table For User Rule 
     *
