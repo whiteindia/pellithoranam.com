@@ -114,15 +114,11 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
       if($_POST['email_id']) { $email_id =  $_POST['email_id']; }
       
-      $this->db->select('phone');
-      $this->db->from('users');
       
-          $this->db->where('email',$_POST['email_id']);
-          $chk_qry = $this->db->get();
-      $my_matr_id = $chk_qry;
+      $my_matr_id = $this->Verify_model->mobile($email_id);
       $otp = $this->generate_otp();
       $result = $this->Verify_model->add_otpdetails($otp);
-      $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp." . ".$chk_qry."Do not share the password with anyone for security reasons.";
+      $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp." .: ".$my_matr_id." : Do not share the password with anyone for security reasons.";
       $this->send_sms($email_id,$msg);
 
       $this->db->select('phone');
