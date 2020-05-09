@@ -5,7 +5,9 @@
     <th>total mobile views</th>
     <th>used mobile views</th>
   </tr>
-<?php foreach ($mobilecount as $row) { 
+<?php
+$mobilecount=json_decode(json_encode($mobilecount),true);
+foreach ($mobilecount as $row) { 
    
     print_r($row);
     echo '</pre>';
