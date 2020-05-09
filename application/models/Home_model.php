@@ -610,7 +610,11 @@ $var = $this->db->update('profiles',$data);
     $mgClient->message($msg);
     $mgClient->send();
 }  
-public function forgetpassword($email){                  
+public function forgetpassword($email){     
+  ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL);
+  
  $this->db->where('email',$email);
  $query1=$this->db->get('users');    
  $query=$query1->row();
@@ -637,29 +641,30 @@ public function forgetpassword($email){
      $sub="Forgot Password";
      $email=$email;
      // $mailTemplate="<div style='width:100%;float:left;color: ##ee2979;font-size=14px;font-weight: bold;>Hi,<br>Your Temporary Password is<br><div style='font-style=italics;width:100%; margin:0px 50px;'>$rand_pwd</div><br>You can change it later from account settings</div>";
-     $mailTemplate='Your Temporary Password is '.$rand_pwd.'.'.$mob.' You can change it later from account settings';
+     $mailTemplate='Your Temporary Password is '.$rand_pwd.'.'.$query.' You can change it later from account settings';
      $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
-     
-    // $my_matr_id = $this->Verify_model->mobile($email_id);
-      /*$this->db->select('phone');
-      $this->db->from('users');
-      
-          $this->db->where('email',$email);
-          $chk_qry = $this->db->get();
-      $my_matr_id = $chk_qry;
-      $mob=$my_matr_id->phone;  */
-      $msg=$mailTemplate;
-      $mob_cc = str_replace(' ', '', $my_matr_id->phone_countrycode);
-      $mobile_no = $mob_cc.$mob;
-      //$mobile_no = "+919966337383";
-
-      
-     // $msg = "You are Successfully registered with www.Pellithoranam.com";
-      $this->verify->sent_mobile_msg($mobile_no,$msg);
 
 
 
-
+     $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
+     //echo $mob;
+     // Message details
+     $numbers = array($mob);
+     $sender = urlencode('TORNAM');
+     $message = rawurlencode($msg);
+    
+     $numbers = implode(',', $numbers);
+    
+     // Prepare data for POST request
+     $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
+    
+     // Send the POST request with cURL
+     $ch = curl_init('https://api.textlocal.in/send/');
+     curl_setopt($ch, CURLOPT_POST, true);
+     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+     $response = curl_exec($ch);
+     curl_close($ch);
 
 
 
