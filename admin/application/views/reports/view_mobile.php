@@ -9,8 +9,8 @@
 $mobilecount=json_decode(json_encode($mobilecount),true);
 foreach ($mobilecount as $row) { 
    
-    print_r($row);
-    echo '</pre>';
+ //   print_r($row);
+ //   echo '</pre>';
     
     
     ?> 
