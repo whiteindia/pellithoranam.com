@@ -1,5 +1,9 @@
 
-<table style="width:100%;padding-left:20%;">
+<div class="row">
+<div class="col-4 col-md-4">
+</div>
+<div class="col-8 col-md-8">
+<table style="width:100%;">
   <tr>
     <th>Matrimony id</th>
     <th>total mobile views</th>
@@ -24,9 +28,12 @@ foreach ($mobilecount as $row) {
 
     <?php } ?>
     </table>
+    </div>
+    </div>
+    </div>
 <!--    stdClass Object
 (
     [matrimony_id] => 10969
-    [total_mobileview] => 0
+    [total_mobileview] => 0 
     [total] => 0
 )  -->
