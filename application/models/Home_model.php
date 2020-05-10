@@ -625,8 +625,8 @@ public function forgetpassword($email){
     
         $this->db->where('email',$email);
         $chk_qry1 = $this->db->get('profiles');
-    $my_matr_id = $chk_qry1->result()->phone;
-    $mob=$my_matr_id;   
+    $my_matr_id = $chk_qry1->result();
+    $mob=$my_matr_id[0]->phone;   
    // $query11=$this->db->select('phone')->where('email',$email)->get('profiles');
    // $query12=$query11->result();
 
