@@ -623,10 +623,20 @@ public function forgetpassword($email){
     //$this->db->select('phone');
    // $this->db->from('profiles');
     
-        $this->db->where('email',$email);
+   $this->db->select('*');
+   $this->db->from('profiles');
+   $this->db->where('email', $email);
+   $query12 = $this->db->get();
+   //$query11= $query12->row();
+   $my_matr_id =  $query12->result();
+   $mob=$my_matr_id[0]->phone;
+
+
+
+      /*  $this->db->where('email',$email);
         $chk_qry1 = $this->db->get('profiles');
     $my_matr_id = $chk_qry1->result();
-    $mob=$my_matr_id[0]->phone;   
+    $mob=$my_matr_id[0]->phone;   */
    // $query11=$this->db->select('phone')->where('email',$email)->get('profiles');
    // $query12=$query11->result();
 
