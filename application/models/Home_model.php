@@ -627,7 +627,7 @@ public function forgetpassword($email){
    $this->db->from('profiles');
    $this->db->where('email', $email);
    $query12 = $this->db->get();
-   $query11= $query12->row();
+   //$query11= $query12->row();
    $my_matr_id =  $query12->result();
    $mob=$my_matr_id->phone;
 
@@ -641,7 +641,7 @@ public function forgetpassword($email){
    // $query12=$query11->result();
 
 
- $mob=$query12->phone;
+ //$mob=$query12->phone;
  if($query1->num_rows()>0)
  {         
    $this->load->helper('string');
