@@ -667,7 +667,7 @@ public function forgetpassword($email){
      $mailTemplate='Your Temporary Password is '.$rand_pwd.'.'.$mob.' You can change it later from account settings';
      $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
 
-
+if(!empty($mob)){
 
      $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
      //echo $mob;
@@ -689,7 +689,7 @@ public function forgetpassword($email){
      $response = curl_exec($ch);
      curl_close($ch);
 
-
+   }
 
      return "EmailSend";
    }
