@@ -614,11 +614,11 @@ public function forgetpassword($email){
   ini_set('display_errors', 1);
   ini_set('display_startup_errors', 1);
   error_reporting(E_ALL);
-  
+  $this->db->select('phone')
  $this->db->where('email',$email);
  $query1=$this->db->get('users');    
  $query=$query1->row();
- $query2=$query1->result_array();
+ $query2=$query1->result();
  $mob=$query2->phone;
  if($query1->num_rows()>0)
  {         
