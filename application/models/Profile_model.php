@@ -458,7 +458,7 @@ return $all_membs;
         $count = $qry->num_rows();
         $qry1 = $this->db->select("$main_field as counts")
                        ->get_where('membership_details',array('matrimony_id' => $matr_id));
-         return $base_count = $qry1->row()->counts;
+          $base_count = $qry1->row()->counts;
         if($count < $base_count) {
             $remaining = $base_count-$count;
             return array('status' =>'success', 'remaining'=> $remaining);
