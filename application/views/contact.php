@@ -20,7 +20,7 @@ $title    = $settings->title;
               info@pellithoranam.com, pellithoranam999@gmail.com
             </div>
             <div class="wed-contact-call">
-              +91 78934 19537
+              +91 8187893236 <!-- 78934 19537-->
             </div>
         </div>
         <div class="clearfix"></div>
