@@ -221,7 +221,7 @@
             </div>
          </div>
           <div class="pck-detl">
-         <a href="/package" class="btn-pckg" style="">View Packages</a>
+       <!--  <a href="/package" class="btn-pckg" style="">View Packages</a> -->
          <p> To know more, call us @ +91 8187893236 </p>  <!-- 78934 19537 -->
           </div> 
      </div> 
