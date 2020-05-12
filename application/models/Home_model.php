@@ -623,7 +623,13 @@ public function forgetpassword($email){
     //$this->db->select('phone');
    // $this->db->from('profiles');
     
-
+   $this->db->select('*');
+   $this->db->from('profiles');
+   $this->db->where('email', $email);
+   $query12 = $this->db->get();
+   //$query11= $query12->row();
+   $my_matr_id =  $query12->result();
+   $mob=$my_matr_id[0]->phone;
 /*
    if($query12->num_rows()>0){
 
@@ -682,10 +688,10 @@ public function forgetpassword($email){
      $email=$email;
      // $mailTemplate="<div style='width:100%;float:left;color: ##ee2979;font-size=14px;font-weight: bold;>Hi,<br>Your Temporary Password is<br><div style='font-style=italics;width:100%; margin:0px 50px;'>$rand_pwd</div><br>You can change it later from account settings</div>";
      $mailTemplate='Your Temporary Password is '.$rand_pwd.'. You can change it later from account settings';
-   $_SESSION['pwd']=$mailTemplate;
+   
      $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
 
-   //  $this->verify->sent_mobile_msg($mob,$mailTemplate);
+     $this->verify->sent_mobile_msg($mob,$mailTemplate);
 
 
 
