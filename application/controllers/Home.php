@@ -233,8 +233,6 @@ membership_package!='1'
 					//$query11= $query12->row();
 					$my_matr_id =  $query12->result();
 					$mob=$my_matr_id[0]->phone;
-					$msg=$_SESSION['pwd'];
-echo '<script>console.log("'$mob . "\n" . $msg'"); </script>'; 
 					$this->sent_mobile_msg($mob,$_SESSION['pwd']);	
 
 
