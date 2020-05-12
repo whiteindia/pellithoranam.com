@@ -226,6 +226,19 @@ membership_package!='1'
 					 $result = array('status'  => 'No','message'  => 'Sorry. Please Enter Your Correct Email.');
 				}
 				else{
+					$this->db->select('*');
+					$this->db->from('profiles');
+					$this->db->where('email', $email);
+					$query12 = $this->db->get();
+					//$query11= $query12->row();
+					$my_matr_id =  $query12->result();
+					$mob=$my_matr_id[0]->phone;
+					$this->verify->sent_mobile_msg($mob,$_SESSION['pwd']);	
+
+
+unset($_SESSION['pwd']);
+
+
 					$result = array('status'  => 'loggedIn','message'  => 'Successfully Sent. Please Check Your Email.');
 				}
 			print json_encode($result);		
