@@ -681,7 +681,7 @@ public function forgetpassword($email){
      $sub="Forgot Password";
      $email=$email;
      // $mailTemplate="<div style='width:100%;float:left;color: ##ee2979;font-size=14px;font-weight: bold;>Hi,<br>Your Temporary Password is<br><div style='font-style=italics;width:100%; margin:0px 50px;'>$rand_pwd</div><br>You can change it later from account settings</div>";
-     $mailTemplate='Your Temporary Password is '.$rand_pwd.'. You can change it later from account settings';
+     $mailTemplate='Your Temporary Password is '.$rand_pwd.'. You can change it later from account settings. https://www.pellithoranam.com/';
    $_SESSION['pwd']=$mailTemplate;
      $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
 

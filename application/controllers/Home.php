@@ -235,7 +235,7 @@ membership_package!='1'
 					$mob=$my_matr_id[0]->phone;
 				//	echo $mob;
 				//	echo $_SESSION['pwd'];
-					$this->sent_mobile_msg($mob,$_SESSION['pwd'].' https://www.pellithoranam.com/');	
+					$this->sent_mobile_msg($mob,$_SESSION['pwd']);	
 
 
 unset($_SESSION['pwd']);
