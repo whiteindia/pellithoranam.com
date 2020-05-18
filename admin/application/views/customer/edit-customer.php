@@ -307,12 +307,12 @@
                               data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="family_location"  value="<?php echo $profile->family_location;?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
-                           <label>Father's Status</label>
+                           <label>Father's Name</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
                               data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="father_status"  value="<?php echo ucwords($profile->father_status);?>">
                         </div>
                         <div class="col-md-6" style="padding:5px;">
-                           <label> Mother's Status</label>
+                           <label> Mother's Name</label>
                             <input type="text" class="form-control " data-parsley-trigger="change"  
                               data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="mother_status"  value="<?php echo ucwords($profile->mother_status);?>">
                         </div>
