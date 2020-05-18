@@ -21,9 +21,9 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
         <p><?php echo $settings->id_prefix;?><?php echo $profile[0]->matrimony_id;?><span>Profile Created by <?php echo $profile[0]->profile_for;?></span></p>
 
       <?php if($profile[0]->profile_photo=="") {?>
-       <div class=""><!--wed-profile-detail-left--->
-          <div class="">  <!--wed-profile-pic-div-->
-            <div class=""> <!-- class= wed-profile-pic-->
+       <div class="wed-profile-detail-left"><!--wed-profile-detail-left--->
+          <div class="wed-profile-pic-div">  <!--wed-profile-pic-div-->
+            <div class="class= wed-profile-pic"> <!-- class= wed-profile-pic-->
               <li><img src="<?php echo base_url(); ?>assets/img/user.jpg" style="width:200px; height:200px; !important;" ></li>
             </div>
           </div>
