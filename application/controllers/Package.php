@@ -68,7 +68,7 @@ echo '
 	<script
 		src="https://checkout.razorpay.com/v1/checkout.js"
 		data-key="rzp_live_IvB41B9WM4ptCj" // Enter the Key ID generated from the Dashboard
-		data-amount="'.$amount2.'" // Amount is in currency subunits. Default currency is INR. Hence, 29935 refers to 29935 paise or INR 299.35.
+		data-amount="'.$amount1.'" // Amount is in currency subunits. Default currency is INR. Hence, 29935 refers to 29935 paise or INR 299.35.
 		data-currency="INR"
 		data-buttontext="Pay with Razorpay"
 		data-name="Pellithoranam"
