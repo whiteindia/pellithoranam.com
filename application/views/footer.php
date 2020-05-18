@@ -174,9 +174,9 @@ TrustLogo//("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.pn
         disabledEvent(e);
       }
       // "F12" key
-      if (event.keyCode == 123) {
-        disabledEvent(e);
-      }
+     // if (event.keyCode == 123) {
+      //  disabledEvent(e);
+     // }
     }, false);
     function disabledEvent(e){
       if (e.stopPropagation){
