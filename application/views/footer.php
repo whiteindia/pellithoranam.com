@@ -151,7 +151,6 @@ TrustLogo//("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.pn
     * Disable right-click of mouse, F12 key, and save key combinations on page
 
     */
-    /*
   window.onload = function() {
     document.addEventListener("contextmenu", function(e){
       e.preventDefault();
@@ -175,9 +174,9 @@ TrustLogo//("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.pn
         disabledEvent(e);
       }
       // "F12" key
-     // if (event.keyCode == 123) {
-      //  disabledEvent(e);
-     // }
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
     }, false);
     function disabledEvent(e){
       if (e.stopPropagation){
@@ -188,7 +187,7 @@ TrustLogo//("https://www.pellithoranam.com/assets/sectigo_trust_seal_sm_82x32.pn
       e.preventDefault();
       return false;
     }
-  };  */
+  };
 </script>
     </body>
     </html>
