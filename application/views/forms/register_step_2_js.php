@@ -11,18 +11,18 @@
 		    onkeyup: false,
 		    onclick: false,
 			rules: {
-				sub_caste:{
-					required : true,
-				},
+			//	sub_caste:{
+			//		required : true,
+			//	},
 				country:{
 					required : true,
 					valueNotEquals : '-1'
 				}
 			},
 			messages: {
-				sub_caste:{
-					required : "Please Type Your Subcast.",
-				},
+			//	sub_caste:{
+			//		required : "Please Type Your Subcast.",
+			//	},
 				country:{
 					required : "Must Choose City",
 					valueNotEquals : "Must Choose City"
