@@ -210,7 +210,7 @@ error_reporting(E_ALL);
      // 
       $result = $this->Verify_model->add_smsdetails($data);
        $send_sms_to=$data['to_id'];
-       $this->send_sms($mobn,$msg);
+      if($this->send_sms($mobn,$msg))
         $this->session->set_flashdata('message',array('message' => 'SMS Sent Successfully','class' => 'success'));
       redirect(base_url().'Profile/profile_details/'.$send_sms_to.'');    
     }   
