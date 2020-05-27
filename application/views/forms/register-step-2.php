@@ -221,7 +221,7 @@
                         <div class="wed-reg-right-child1">Income</div>
                         <div class="wed-reg-right-child2">
                           <div class="row1">
-                            <span><select class="wed-reg-select1 cst-select-1" cst-attr="currency" cst-for="city" id="currency-selector"  name="country_currency" required>
+                            <span><select class="wed-reg-select1 cst-select-1"  name="country_currency" required>  <!--cst-attr="currency" cst-for="city" id="currency-selector" -->
                             <option selected="true" disabled="disabled">Select</option>
                               <?php foreach($currencies as $currency) { ?>
                                   <option value="<?php echo $currency->symbol; ?>"><?php echo $currency->code; ?></option>
