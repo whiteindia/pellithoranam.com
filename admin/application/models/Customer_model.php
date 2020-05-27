@@ -72,10 +72,10 @@ class Customer_model extends CI_Model {
 		$views = $this->getCount($mat_id,"mobileview_from","mobile_view");
 		$sms = $this->getCount($mat_id,"send_sms_from","send_sms");
 
-		 $data1['total_interest']=$result->intrest_permonth + $interest;
-		 $data1['total_sendmail']=$result->personalized_msg_permonth + $mails;
-		 $data1['total_mobileview']=$result->verified_mob_permonth + $views;
-		 $data1['total_sms']=$result->send_sms_permonth + $sms;
+		 $data1['total_interest']=(int)$result->intrest_permonth + $interest;
+		 $data1['total_sendmail']=(int)$result->personalized_msg_permonth + $mails;
+		 $data1['total_mobileview']=(int)$result->verified_mob_permonth + $views;
+		 $data1['total_sms']=(int)$result->send_sms_permonth + $sms;
 		 $data1['membership_package']=$data['package_id'];
 		 $data1['membership_purchase']= date('Y-m-d H:i:s', time());
 		 $data1['membership_expiry']= date('Y-m-d H:i:s', strtotime('+'.$month.' months'));
