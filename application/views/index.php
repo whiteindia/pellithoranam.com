@@ -40,9 +40,155 @@
               <h4>Terms & Conditions</h4>
               <p class="tc-scroll">Terms and Conditions governing usage of Matrimony sites [Applicable for All Services]
               DEAR USER:
-              Welcome to Ooi matrimony (herein referred as "BM").
-              BM and its affiliates provide their services to you subject to the following terms and conditions. On your visit or signing up at BM, you consciously accept the terms and conditions as set out hereinbelow. In addition, when you use or visit any current or future BM service or any business affiliated with BM, whether or not included in the BM Web site, you will also be subject to the guidelines and conditions applicable to such service or business. Please read the various services provided by BM before making any payment in respect of any service.
-              The Users availing services from BM shall be deemed to have read, understood and expressly accepted and agreed to the terms and conditions hereof and this agreement shall govern the relationship between you and BM and all transactions or services by, with or in connection with BM for all purposes, and shall be unconditionally binding between the parties without any reservation. All rights, privileges, obligations and liabilities of you and/or BM with respect to any transactions or services by, with or in connection with BM for all purposes shall be governed by this agreement. The terms and conditions may be changed and/or altered by BM from time to time at its sole discretion.
+              The Pellithoranam is a sole proprietary firm having its registered office in Pragathi Nagar, Hyderabad. and have website in the by name and style of www.pellithoranam.com (herein after wards the Pellithoranam called as PT)
+
+The PT humbly requests please read the following terms and conditions very carefully as you use website and are subject to acceptance and compliance with terms and conditions including and amended/modified/changed from time to time without prior notice.
+
+Using the website shows you are agreeing to all the terms and conditions herein. SO READ THE TERMS AND CONDITIONS CAREFULLY BEFORE PROCEEDING. IF YOU PROCEED, ACCEPTED THE TERMS AND CONDITIONS BY EXPRESS OR IMPLIED MANNER BY USING THE WEBSITE. IF YOU DO NOT WANT TO BE BOUND BY THE TERMS AND CONDITIONS YOU MUST NOT USE THE WEBSITE.
+
+2.  It acts as a platform to enable any person/individual to themselves register as member by providing requisite information, and to voluntarily search for profile(s) from the website. Already registered users for seeking prospective lawful marriages alliances for themselves. PT help desk may also be able to assist you to create your profile, and also to update. But the member/interested person must have a valid/operational mobile/ phone number and an email id, photo, address proof, date of birth, and phone verification is compulsory.
+
+ 
+
+3.    The profiles in the database/website of PT are classified broadly on the basis of language and region for the ease and convenience of its member/customer. PT members are provided with free/paid access for searching profiles from the website of PT as per the partner preference set by you and you shortlist the prospective alliances yourself. The search for prospective alliance is depends caste wise, age, and district wise and inter-caste also. Membership is guided by the terms and conditions mentioned herein below
+
+ 
+
+By using or accessing the PT services, you agree to be bound by all the terms and conditions (agreement). PT do not authenticate/guarantee any information of any profile is genuine and hence you as a user/member need to verify the credentials and information provided by other users/members.
+
+ 
+
+4. Eligibility:
+
+    a.    PT membership and rights of admission is reserved solely for;-
+
+        The   below mentioned are citizens of India;
+
+        i.    Who is born in the territory of India.
+
+        ii.    Either of whose parents was born in the territory of me.
+
+ 
+
+        iii.    Who has been ordinarily resident in the ‘territory’ of India for not less than five years immediately preceding such commitment.
+
+ 
+
+    b.    In respect of citizen ship issue, the law of land for the time being in force is applicable.
+
+ 
+
+ 
+
+        The person who wants to join as member must require/ full fill the following conditions.
+
+ 
+
+        i.    A major, 18 years is to be completed for female and 21 year is to be completed for male person as per the applicable Indian Law.
+
+ 
+
+        ii.    Legally competent to marry as per the law applicable to member and in case of divorcee he/she has to submit divorcee papers which were obtained from the competent court of law or any authority which is approved and the recognized by the State Govt.
+
+ 
+
+        iii.    Not disqualified by any applicable law for the time being in force from entering into a valid marriage.
+
+ 
+
+5. Registration:
+
+ 
+
+    a.    The company (PT) we expect that you would complete the online registration process with fairness and honesty while uploading your personal information’s in PT/Website. We should ensure that efficient and effective match making through our website depend upon yourself furnishing true, accurate, current, complete information and photos etc. We expect you to read the relevant columns before keying/uploading/typing the details or selecting the option available or uploading the photo you are requested not to keeping key in details of the profile in filed other than the applicable filed (including mentioning id’s of other platforms/websites /applications) or repeating your details in another fields after filling them once in the relevant fields or others photographs. You further undertake that you alone shall be responsible or liable for any information provided to PT/Website. In order to serve you better if PT requires additional details you agree to provide it. PT/Website shall reproduce the registered member details on “as on that date” basis to other registered members and PT members shall be solely liable for the information given by such PT member. You may also give a missed call to help-desk phone number service phone numbers for us to call you back and assist you in getting your profile registered on our website.
+
+ 
+
+    b.    If at any point of time PT/website comes to know or is so informed by third party or has reasons to believe that any information provided by you for registration (including photos) or otherwise is found to be untrue, inaccurate, or incomplete then PT/website shall have full right to suspend or terminate without any notice your PT membership and forfeit any amount paid by you towards PT membership fee and reserve the right to refuse to provide PT service to you thereafter.
+
+ 
+
+    c.    PT membership is restricted strictly to the individual member only. Organizations, companies, businesses and/or individuals carrying on similar or competitive business cannot become members of PT and nor use the PT service or PT members data for any commercial purpose and PT reserves its right  to initiate appropriate legal action for breach of these obligation/conditions.
+
+ 
+
+ 
+
+Disclaimer:
+
+a.       Your access to and use of the PT services or any content is at your own risk. YouUNDERSTAND AND AGREE THAT THE PT SERVICES ARE PROVIDED TO YOU ON AN “AS IS” AND “AS AVAILABLE “ BASIS. WITHOUT LIMITING THE FOREGOING TO THE FULL EXTENT PERMITTED BY LAW, PT/WEBSITE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, OF MERCHANT-ABILITY, and FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT
+
+b.      PT/website does not give any implied or explicit guarantee or warranty of marriage or alliance by you choosing to register on our website and using PT services (both paid and free).
+
+c.       Notwithstanding anything contrary contained anywhere, under no circumstances, PT/website shall be held responsible or liable whatsoever or howsoever, arising out of, relating to or connected with;
+
+        I.            Any untrue or incorrect information submitted by you or on your behalf;
+
+      II.            Any decision taken by you or on your behalf or any consequences thereof, based on any information provided by any other user (including suspension/deletion of the profile from PT);
+
+    III.            Any unauthorized or illegal act done by any third party relating to or connected with any information submitted by you or on your behalf;
+
+    IV.            Any cyber-crime attempted or committed by anyone and
+
+      V.            Any incident of force-majeure or act of god;
+
+    VI.            Any issue already stated in these terms and conditions including limitation of liability clause of these terms and conditions;
+
+  VII.            PT members are requested to exercise due care and caution while shortlisting the prospect and satisfy themselves before making a choice of your match through adequate efforts, initiatives and due diligence. PT/website will not be liable for any damages of any kind arising from the use of this website, including, but not limited to direct, indirect, incidental, punitive, and consequential damages.
+
+VIII.            PT/website shall not be liable for the outcome of during any interaction in a meeting, call, sms, chat, email or social media posts at any point of time. You expressly agree that use of this website is at your sole risk.
+
+Indemnity:
+
+By using our PT services you agree to defend, indemnify, and hold harmless PT/website its subsidiaries, affiliates, directors, officers, agents and other partners and employees, fully indemnified and harmless from any loss, damage, liability, claim, or demand, including reasonable attorney’s fees, made by any person through improper use of the service provided by PT/website. This defense and indemnification obligation will survive in perpetuity.
+
+Breach:
+
+a.       You agree that if we receive  feedback/complaints against your profile in relation to the facts that you are seeking physical/financial favors from our other registered members or have provided incorrect information on our website or committed any unlawful/illegal activities through the use of our website  or created a profile on our website by impersonation / fake/bogus/false/misrepresentation/without consent of the person whose profile is being registered or use only part information including using photo of third parties without the permission of such third parties or act with other members/employees in indecent/improper manner, then we PT/website in good faith reserve our right to suspend/delete your profile at our sole discretion without any notice to you, we also reserve to stop all PT services to you and take any action as mentioned in clause 2(b) of the terms and conditions.
+
+b.      PT/website reserves the right to forthwith terminate your PT membership, block/delete your profile and forfeit entire amount paid as membership fee; if at any time PT/website, in its sole discretion, is of the opinion or has any reason to believe that, you have violated these terms and conditions of use. We also reserve our right to file appropriate police complaint against you, if the breach of these terms and conditions is/are criminal in nature.
+
+Termination:
+
+a.       All PT paid package users can renew the paid package to carry forward the un-used contacts (mobile No. viewing and SMS).
+
+b.      The payments made by PT member to PT/website by way of registration/membership/renewal fee/ auto renewal is/are treated as non-refundable. Payment once made for PT service cannot be assigned to any person/party or adjusted towards any other product or packages provided by PT.
+
+c.       PT members cannot put the paid PT service on hold even temporarily, for any reason whatsoever. For an every registered member from the date of issuing GST invoice in token receipt of payment by the member is to be taken into consideration and from that day to 120 days is the tenure period for every member.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Jurisdiction and applicable law:
+
+a.       The registration of PT membership and all PT services/website are deemed to have been entered into within the territorial jurisdiction of Hyderabad, Telangana, India.
+
+b.      The PT members unconditionally agree that all such disputes and/or differences if any shall be governed by the laws of India and submitting to the exclusive jurisdiction of appropriate court of law in Hyderabad, Telangana, India.
+
+c.       You hereby, unconditionally and irrevocably confirm that you have read terms and conditions and agree to abide by them and the information provided by you is true and correct.
+
+Privacy Policy:
+
+a.       Pellithoranam is an online marriages portal endeavoring constantly to provide you with marriages services. Since we are strongly committed to your right to privacy, we have drawn out a privacy statement with regard to the information we collect from you. You acknowledge that you are disclosing information voluntarily. By using the website and/or by providing your information, you consent to the collection and use of the information you disclose on the website in accordance with the privacy policy. If you do not agree for use of your information, please do not use or access this website.
+
+b.      The information  we gather from members and visitors who apply for  the various services our site offers includes, but may not be limited to, email address, name, date of birth, educational qualifications a user-specified pass word, mailing address, zip/pin code and telephone/mobile number.
+
+c.       Any information you give us is held with the utmost care and security. We are also bound to cooperate fully should a situation arise where we are required by law or legal process to provide information about a customer/visitor/member.
+
+d.      The members are requested to login to the relevant pages for un-subscription.
+
+e.      As a paid member of this site, you have the privilege to contact number of profiles. However, there is a specified un-limited message per day due to fair online usage policy.
+
+f.        We may change this privacy policy without notice from time to time based on your comments or as a result of a change of policy in our company.
+
+This document is an electronic record in terms of the information technology Act, 2000 and rules there under pertaining to electronic records as applicable and amended. This electronic record is generated by a computer system and does not require any physical or digital signatures
+
+NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY BROUGHT TO THE NOTICE OF HELP DESK OR GRIEVANCE OFFICER.
               </p>
             </div>
           </div>
