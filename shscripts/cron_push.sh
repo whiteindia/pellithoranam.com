@@ -1,7 +1,7 @@
 #!/bin/bash
-cd /home/pelliswq/public_html
+cd /var/www/html
 eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa_pelligithub
+ssh-add /root/.ssh/pthoranam
 git add .
 git commit -m "files modified"
 git push --force origin master
