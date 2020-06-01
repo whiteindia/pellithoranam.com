@@ -88,7 +88,7 @@
     $(window).load(function() {
           $('#cropbox').Jcrop({
            // aspectRatio: 1,
-          //aspectRatio: 30 / 20,
+          aspectRatio: 30 / 20,
             onSelect: updateCoords
           });
     });
