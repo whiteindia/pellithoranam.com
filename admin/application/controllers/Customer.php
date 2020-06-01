@@ -440,7 +440,7 @@ error_reporting(E_ALL);
 					
 				    echo $this->image_lib->display_errors();
 				    $this->session->set_flashdata('message', array('message' => "Something Went wrong.",'class' => 'danger'));
-					redirect(base_url().'customer/view_profilepics');
+					redirect(base_url().'customer/view_profilepic');
 				} else { 
 					$ext = pathinfo($new_name, PATHINFO_EXTENSION);	
 					if($ext=='jpg'||$ext=='jpeg')	{			
@@ -478,7 +478,7 @@ error_reporting(E_ALL);
 				   /* }*/
 					$this->Customer_model->update_profile_pic($new_name,$_POST['user_matr'],$pic_id);
 					$this->session->set_flashdata('message',array('message' => ' Profile Picture Successfully Croped and Approved','class' => 'success'));
-					redirect(base_url().'customer/view_profilepics');
+					redirect(base_url().'customer/view_profilepic');
 				}
 			}
 		} else { redirect(base_url()); } 
