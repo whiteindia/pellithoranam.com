@@ -421,7 +421,7 @@ error_reporting(E_ALL);
 				$image_config['wm_opacity']   = '48';
 
 				$image_config['create_thumb'] = FALSE;
-				$image_config['maintain_ratio'] = true;
+				$image_config['maintain_ratio'] = false;
 				$image_config['new_image'] = '../'.$new_name;
 				$image_config['width'] =$_POST['w'];
 				$image_config['height'] =$_POST['h'];
