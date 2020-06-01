@@ -398,6 +398,9 @@ die();*/
 	}
 
 	public function save_croped() {
+		ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 		if($this->session->userdata('logged_in_admin')) {
 			if($_POST){
 				$pic_id = $_POST['picid'];
