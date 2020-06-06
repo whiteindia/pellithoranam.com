@@ -224,7 +224,7 @@
                             <span><select class="wed-reg-select1 cst-select-1" cst-attr="currency" cst-for="city" id="currency-selector" required name="country_currency">
                             <option selected="true" disabled="disabled">Select</option>
                               <?php foreach($currencies as $currency) { ?>
-                                  <option value="<?php echo $currency->symbol; ?>"><?php echo $currency->code; ?></option>
+                                  <option value="<?php echo $currency->code; ?>"><?php echo $currency->code; ?></option>
                               <?php } ?>  
                               
                             </select></span>
