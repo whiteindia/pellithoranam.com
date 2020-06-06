@@ -379,7 +379,7 @@ class Home_model extends CI_Model {
   $result=json_decode($result,true);
   //print_r($result);
   //$from='USD';
-  //$to='INR';
+  $to='INR';
   //$amount=10;
   $medium=($result['rates']['USD']/$result['rates'][$from])*(int)$amount;
   $converted=$medium*$result['rates'][$to];
