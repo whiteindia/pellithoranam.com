@@ -265,11 +265,6 @@ class Home_model extends CI_Model {
         'is_phone_verified' =>0,
         'profile_approval' => 1,
                           'profile_status' => 1); // change verified and approval after admin
-                          print_r($ins_ids);
-                          echo "<script>";
-                          echo "var $results = JSON.parse('" . json_encode($ins_ids) . "');";
-                          echo "<script>";
-                          exit();
       $this->db->where('profile_id',$ins_ids);
      // print_r($upd_arr_2); die();
       $var = $this->db->update('profiles',$upd_arr_2);
