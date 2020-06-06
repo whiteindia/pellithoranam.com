@@ -309,6 +309,7 @@ class Home_model extends CI_Model {
       }
 
     }
+    /*
     public function post1($url, $postVars = array()){
       //Transform our POST array into a URL-encoded query string.
       $postStr = http_build_query($postVars);
@@ -336,13 +337,13 @@ class Home_model extends CI_Model {
       }
       //If everything went OK, return the response.
       return $result;
-  }
+  }   */
     function convertCurrency($amount, $from, $to){ 
  // $amount1='1000';https://finance.google.com/finance/converter?a=$amount&from=$from&to=$to
  //$data = file_get_contents("https://www.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
    //   $data = file_get_contents("https://www.finance.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
     //  preg_match("/<span class=bld>(.*)<\/span>/",$data, $converted); $converted = preg_replace("/[^0-9.]/", "", $converted[1]); 
-    $url=post1('https://openexchangerates.org/api/latest.json?app_id=90757f2fab394122a41c7a34d4e9d7c0');
+    $url='https://openexchangerates.org/api/latest.json?app_id=90757f2fab394122a41c7a34d4e9d7c0';
     $postStr = http_build_query($postVars);
     //Create an $options array that can be passed into stream_context_create.
     $options = array(
