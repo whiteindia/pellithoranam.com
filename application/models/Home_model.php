@@ -386,8 +386,8 @@ class Home_model extends CI_Model {
   //echo $convert;
     
     
-    
-    return number_format(round($converted, 3),2); 
+    return $converted;
+   // return number_format(round($converted, 3),2); 
     } 
 
 
