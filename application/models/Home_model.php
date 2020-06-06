@@ -309,29 +309,7 @@ class Home_model extends CI_Model {
       }
 
     }
-
-    function convertCurrency($amount, $from, $to){ 
- // $amount1='1000';https://finance.google.com/finance/converter?a=$amount&from=$from&to=$to
- //$data = file_get_contents("https://www.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
-   //   $data = file_get_contents("https://www.finance.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
-    //  preg_match("/<span class=bld>(.*)<\/span>/",$data, $converted); $converted = preg_replace("/[^0-9.]/", "", $converted[1]); 
-     
-
-  $result=post('https://openexchangerates.org/api/latest.json?app_id=90757f2fab394122a41c7a34d4e9d7c0');
-  $result=json_decode($result,true);
-  //print_r($result);
-  $from='USD';
-  $to='INR';
-  $amount=10;
-  $medium=($result['rates']['USD']/$result['rates'][$from])*$amount;
-  $converted=$medium*$result['rates'][$to];
-  //echo $convert;
-    
-    
-    
-    return number_format(round($converted, 3),2); 
-    } 
-    function post($url, $postVars = array()){
+    function post1($url, $postVars = array()){
       //Transform our POST array into a URL-encoded query string.
       $postStr = http_build_query($postVars);
       //Create an $options array that can be passed into stream_context_create.
@@ -359,6 +337,28 @@ class Home_model extends CI_Model {
       //If everything went OK, return the response.
       return $result;
   }
+    function convertCurrency($amount, $from, $to){ 
+ // $amount1='1000';https://finance.google.com/finance/converter?a=$amount&from=$from&to=$to
+ //$data = file_get_contents("https://www.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
+   //   $data = file_get_contents("https://www.finance.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
+    //  preg_match("/<span class=bld>(.*)<\/span>/",$data, $converted); $converted = preg_replace("/[^0-9.]/", "", $converted[1]); 
+     
+
+  $result=post1('https://openexchangerates.org/api/latest.json?app_id=90757f2fab394122a41c7a34d4e9d7c0');
+  $result=json_decode($result,true);
+  //print_r($result);
+  $from='USD';
+  $to='INR';
+  $amount=10;
+  $medium=($result['rates']['USD']/$result['rates'][$from])*$amount;
+  $converted=$medium*$result['rates'][$to];
+  //echo $convert;
+    
+    
+    
+    return number_format(round($converted, 3),2); 
+    } 
+
 
     public function get_currency($data){
   //var_dump($data['income']); die();
