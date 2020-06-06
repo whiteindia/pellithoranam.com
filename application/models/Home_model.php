@@ -309,7 +309,7 @@ class Home_model extends CI_Model {
       }
 
     }
-    function post1($url, $postVars = array()){
+    public function post1($url, $postVars = array()){
       //Transform our POST array into a URL-encoded query string.
       $postStr = http_build_query($postVars);
       //Create an $options array that can be passed into stream_context_create.
