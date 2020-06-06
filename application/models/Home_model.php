@@ -381,7 +381,7 @@ class Home_model extends CI_Model {
   //$from='USD';
   //$to='INR';
   //$amount=10;
-  $medium=($result['rates']['USD']/$result['rates'][$from])*$amount;
+  $medium=($result['rates']['USD']/$result['rates'][$from])*(int)$amount;
   $converted=$medium*$result['rates'][$to];
   //echo $convert;
     
