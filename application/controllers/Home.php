@@ -321,9 +321,10 @@ unset($_SESSION['pwd']);
 				}
 
 
-				// echo "<pre>";
-				// print_r($data);
-				// exit;
+				 echo "<pre>";
+				 print_r($data);
+				 echo "</pre>";
+				 exit();
 				$result = $this->Home_model->InsertRegistrationDetails($data);
 				if($result==1){
 					$email = $this->session->userdata('email');
