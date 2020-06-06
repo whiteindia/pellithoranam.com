@@ -228,8 +228,7 @@
                               <?php } ?>  
                               
                             </select></span>
-                            <span><input type="text" id="income" name="income" required>
-                           </span>
+                            <span><input class="wed-reg-input12" type="number" name="income" placeholder="enter income" required></span>
                             <div class="row1">
                               <div class="wed-custom5">
                                <input id="mon" type="radio" name="income_per"  value="1" required>
