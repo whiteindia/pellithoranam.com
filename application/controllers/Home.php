@@ -319,12 +319,14 @@ unset($_SESSION['pwd']);
 						 $data['horo_img']=$upload_image['upload_data']['file_name'];
 					}
 				}
-
-
-				 echo "<pre>";
-				 print_r($data);
-				 echo "</pre>";
-				 exit();
+//if($data['income_per']==2){
+//	$data['income']	=
+//}
+//[income_per] => 2
+	////			 echo "<pre>";
+		//		 print_r($data);
+		//		 echo "</pre>";
+			//	 exit();
 				$result = $this->Home_model->InsertRegistrationDetails($data);
 				if($result==1){
 					$email = $this->session->userdata('email');
