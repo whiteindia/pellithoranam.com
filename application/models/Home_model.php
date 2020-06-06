@@ -311,8 +311,9 @@ class Home_model extends CI_Model {
     }
 
     function convertCurrency($amount, $from, $to){ 
- // $amount1='1000';
-      $data = file_get_contents("https://www.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
+ // $amount1='1000';https://finance.google.com/finance/converter?a=$amount&from=$from&to=$to
+ //$data = file_get_contents("https://www.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
+      $data = file_get_contents("https://www.finance.google.com/finance/converter?a=$amount&from=$from&to=$to"); 
       preg_match("/<span class=bld>(.*)<\/span>/",$data, $converted); $converted = preg_replace("/[^0-9.]/", "", $converted[1]); 
       return number_format(round($converted, 3),2); 
     } 
