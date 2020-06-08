@@ -56,7 +56,8 @@ class Settings_model extends CI_Model {
           echo "5";
       } 
       else { 
-          return array('status' => 3,'msg' => "Current password not matching with Existing password []");
+       $msgs="Current password not matching with Existing password []".$exist_pass;
+          return array('status' => 3,'msg' => $msgs);
           echo "3"; 
       } 
     } 
