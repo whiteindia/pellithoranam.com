@@ -173,6 +173,7 @@ $settings = get_settings();
        </li> 
 
       <?php } ?>
+      <?php if($this->session->userdata('logged_in_admin')['username']!='pellithoranam999@gmail.com'){ ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pencil"></i>
@@ -185,6 +186,8 @@ $settings = get_settings();
          
          </ul>
        </li>
+       <?php } ?>
+       <?php if($this->session->userdata('logged_in_admin')['username']!='pellithoranam999@gmail.com'){ ?>
       <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -196,7 +199,7 @@ $settings = get_settings();
           <li><a href="<?php echo base_url(); ?>Packages/view_manage_packages"><i class="fa fa-circle-o text-yellow"></i>Packages Details</a></li>
          </ul>
        </li>
-
+       <?php } ?>
         <?php /* <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -210,6 +213,7 @@ $settings = get_settings();
            <li><a href="<?php echo base_url(); ?>Packages/view_manage_packages"><i class="fa fa-circle-o text-yellow"></i>City</a></li> -->
          </ul>
        </li> */ ?>
+        <?php if($this->session->userdata('logged_in_admin')['username']!='pellithoranam999@gmail.com'){ ?>
        <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -222,6 +226,7 @@ $settings = get_settings();
           <li><a href="<?php echo base_url(); ?>Index_management/view_footer"><i class="fa fa-circle-o text-yellow"></i>Footer Management</a></li>
          </ul>
        </li>
+       <?php } ?>
       <!-- <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -235,6 +240,7 @@ $settings = get_settings();
            <li><a href="<?php echo base_url(); ?>classifieds_management/view_categories"><i class="fa fa-circle-o text-yellow"></i>Classifieds Categories</a></li>
          </ul>
        </li>-->
+       <?php if($this->session->userdata('logged_in_admin')['username']!='pellithoranam999@gmail.com'){ ?>
        <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -245,6 +251,7 @@ $settings = get_settings();
           <li><a href="<?php echo base_url(); ?>Index_management/view_success_story"><i class="fa fa-circle-o text-yellow"></i>Success Stories Management</a></li>  
          </ul>
        </li>
+       <?php } ?>
        <?php /* <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -257,6 +264,7 @@ $settings = get_settings();
          
          </ul>
        </li> */ ?>
+         <?php if($this->session->userdata('logged_in_admin')['username']!='pellithoranam999@gmail.com'){ ?>
        <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
@@ -271,6 +279,7 @@ $settings = get_settings();
            <li><a href="<?php echo base_url(); ?>Reports/view_mobile"><i class="fa fa-circle-o text-yellow"></i>View mobile views</a></li>
          </ul>
        </li>
+       <?php } ?>
       <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
