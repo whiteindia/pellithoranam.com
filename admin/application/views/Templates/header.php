@@ -157,6 +157,8 @@ $settings = get_settings();
           <li><a href="<?php echo base_url(); ?>Index_management/view_other_source"><i class="fa fa-circle-o text-yellow"></i>Members Deleted</a></li>
          </ul>
        </li>
+
+       <?php if($this->session->userdata('logged_in_admin')['username'])!='pellithoranam999@gmail.com'; ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-heart"></i>
@@ -168,7 +170,9 @@ $settings = get_settings();
           <li><a href="<?php echo base_url(); ?>bridal/add_collection"><i class="fa fa-circle-o text-yellow"></i>Add Collection</a></li>
          
          </ul>
-       </li>
+       </li> 
+
+      <?php } ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pencil"></i>
