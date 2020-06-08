@@ -158,7 +158,7 @@ $settings = get_settings();
          </ul>
        </li>
 
-       <?php if($this->session->userdata('logged_in_admin')['username']=='vattem.krishnan@gmail.com'){ ?>
+       <?php if($this->session->userdata('logged_in_admin')['username']!='pellithoranam999@gmail.com'){ ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-heart"></i>
