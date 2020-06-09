@@ -38,9 +38,9 @@ error_reporting(E_ALL);
     //print_r($pass_data['new_password']); 
     //print_r($pass_data['conf_password']);           
       $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
-     // $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
+      $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
      echo '<pre>';
-     print_r($qry_1->result()[0]->password);
+     print_r($exist_pass);
      echo '</pre>';
      exit();
      $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
