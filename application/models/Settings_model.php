@@ -28,6 +28,9 @@ class Settings_model extends CI_Model {
   }
 
   public function update_password($pass_data) {
+    ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
     $usr  = $this->session->userdata('logged_in');
 
     $td_date = date('Y-m-d H:i:s', time());
