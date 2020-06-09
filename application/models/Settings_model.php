@@ -29,16 +29,17 @@ class Settings_model extends CI_Model {
 
   public function update_password($pass_data) {
     $usr  = $this->session->userdata('logged_in');
-    echo '<pre>';
-    print_r($usr);
-    echo '</pre>';
-    exit();
+
     $td_date = date('Y-m-d H:i:s', time());
     if($pass_data['new_password'] == $pass_data['conf_password']) { // checking new & confirm pass are same
     //print_r($pass_data['new_password']); 
     //print_r($pass_data['conf_password']);           
       $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
       $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password); // decoding pass
+          echo '<pre>';
+    print_r($exist_pass);
+    echo '</pre>';
+    exit();
           //print_r($exist_pass); 
        //var_dump($pass_data['crnt_password']);die();   
       
