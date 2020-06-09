@@ -29,6 +29,10 @@ class Settings_model extends CI_Model {
 
   public function update_password($pass_data) {
     $usr  = $this->session->userdata('logged_in');
+    echo '<pre>';
+    print_r($usr);
+    echo '</pre>';
+    exit();
     $td_date = date('Y-m-d H:i:s', time());
     if($pass_data['new_password'] == $pass_data['conf_password']) { // checking new & confirm pass are same
     //print_r($pass_data['new_password']); 
