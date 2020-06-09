@@ -40,7 +40,7 @@ error_reporting(E_ALL);
       $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
      // $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
      echo '<pre>';
-     print_r($qry_1);
+     print_r($qry_1->result());
      echo '</pre>';
      exit();
      $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
