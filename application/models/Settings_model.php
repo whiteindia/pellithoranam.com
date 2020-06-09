@@ -28,9 +28,9 @@ class Settings_model extends CI_Model {
   }
 
   public function update_password($pass_data) {
-    ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ //   ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
     $usr  = $this->session->userdata('logged_in');
     $this->load->library('encryption');
     $td_date = date('Y-m-d H:i:s', time());
@@ -39,11 +39,11 @@ error_reporting(E_ALL);
     //print_r($pass_data['conf_password']);           
       $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
       $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
-     echo '<pre>';
-     print_r($exist_pass);
-     echo '</pre>';
-     exit();
-     $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
+   //  echo '<pre>';
+   //  print_r($exist_pass);
+   //  echo '</pre>';
+   //  exit();
+  //   $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
       //$pass = $this->encryption->decrypt($chk_qry->row()->password);
           echo '<pre>';
     print_r($exist_pass);
