@@ -47,6 +47,7 @@
             <!-- /.col -->
             <div class="col-xs-12 right">
               <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+              <p data-toggle="modal" data-target="#forgot" class="forgot">Forgot Password</p>
             </div><!-- /.col -->
           </div>
         </form>
@@ -54,6 +55,112 @@
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
+<!-- MODAL FOR FORGOT PASSWORD START -->
+<div class="modal fade wed-add-modal" id="forgot" role="dialog">
+      <div class="modal-dialog wed-add-modal-dialogue">
+        <div class="modal-content login_modal_content">             
+          <form method="post" action="" id="frgt_psw_form" data-parsley-validate="true" class="validate">
+            <div class="modal-body  wed-add-modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4>Forgot Password</h4>
+              <p>Please enter your E-mail ID. We will send you a link to reset your password. </p>  
+               <div id="frgt_psw_msg" class="renew_pass" style="color:#fff;"></div>         
+              <input type="email" id="email" name="email" class="wed-forgot-input" placeholder="E-mail" required=""
+               data-parsley-required-message="Please insert email."
+               data-parsley-errors-container="#frgt_psw_msg">
 
+              <input class="wed-forgot-submit" type="button" value="Send"  id="frgt_psw"> 
+              <div class="view_loader"></div>          
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+        <div class="modal fade wed-add-modal" id="confirm" role="dialog">
+            <div class="modal-dialog wed-add-modal-dialogue">
+              <div class="modal-content wed-add-modal-content">
+              <div class="modal-body  wed-add-modal-body">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>Create New Password</h4>
+                <p>Please Enter your Password </p>
+                <input class="wed-forgot-input1" placeholder="Enter New Password"><br>
+                <input class="wed-forgot-input1" placeholder="Confirm New Password">
+                <input class="wed-forgot-submit" type="button" value="Submit">
+                <div class="clearfix"></div>
+              </div>
+              </div>
+            </div>
+            </div>
+			<script>
+          
+  $(document).ready(function(){
+
+$('#frgt_psw').on('click', function(e) {
+// $('.view_loader').append('<div class="loader"></div>');
+// $('#frgt_psw').hide();
+var value =$("#frgt_psw_form").serialize() ;
+      
+  var val = $("#email").val();
+  if(val==''){
+    $(".renew_pass").show('');
+    $(".renew_pass").html('');
+    $(".renew_pass").html('<p class="error">Please enter your Email Id</p>');
+    setTimeout(function() {
+      $(".renew_pass").hide();
+    }, 3000);
+  } 
+  else {
+       $(".renew_pass").html('');
+  }
+  var url = base_url + 'Home/Forget_Password';
+  var data = 'email='+val;
+  var result = post_ajax(url, data);
+  obj = JSON.parse(result);
+   
+  console.log(obj.status);
+  if (obj.status == "No") {
+    $(".renew_pass").show('');
+    $(".renew_pass").html('');
+    $(".renew_pass").html('<p class="error">' + obj.message + '</p>');
+    setTimeout(function() {
+      $(".renew_pass").hide();
+    }, 3000);
+  }
+   
+  else{
+    $(".renew_pass").show('');
+    $(".renew_pass").html('');
+    $(".renew_pass").html('<p class="error">' + obj.message + '</p>');
+    setTimeout(function() {
+        $(".renew_pass").hide();
+    }, 3000);
+  } 
+
+});
+});
+
+function post_ajax(url, data) {
+var result = '';
+$.ajax({
+  type: "POST",
+  url: url,
+  data: data,
+  success: function(response) {
+      result = response;
+
+  },
+  error: function(response) {
+      result = 'error';
+  },
+  async: false
+});
+return result;
+}  
+
+      
+      
+      </script>
   </body>
 </html>

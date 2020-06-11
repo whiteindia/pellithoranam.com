@@ -70,6 +70,69 @@ class Login extends CI_Controller {
 		redirect(base_url());
 	}
 
+	public function Forget_Password() {
+
+		if (isset($_POST)) {
+			$data = $_POST;
+	     	$email = $this->input->post('email');
+	      	$res=$this->Login_model->forgetpassword($email);
+	      	// print_r($res);die;
+				if($res=="EmailNotExist"){
+					 $result = array('status'  => 'No','message'  => 'Sorry. Please Enter Your Correct Email.');
+				}
+				else{
+					$this->db->select('*');
+					$this->db->from('profiles');
+					$this->db->where('email', $email);
+					$query12 = $this->db->get();
+					//$query11= $query12->row();
+					$my_matr_id =  $query12->result();
+					$mob=$my_matr_id[0]->phone;
+				//	echo $mob;
+				//	echo $_SESSION['pwd'];
+					$this->sent_mobile_msg($mob,$_SESSION['pwd']);	
+
+
+unset($_SESSION['pwd']);
+
+
+					$result = array('status'  => 'loggedIn','message'  => 'Successfully Sent. Please Check Your Email.');
+				}
+			print json_encode($result);		
+		}
+	
+	}
+
+
+	public function sent_mobile_msg($mob,$msg){
+		// Account details
+		  $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
+		  // Message details
+		  $numbers = array($mob);
+		  //$sender = urlencode('TXTLCL');
+		  $sender = urlencode('TORNAM');
+		  $message = rawurlencode($msg);
+		 
+		  $numbers = implode(',', $numbers);
+		 
+		  // Prepare data for POST request
+		  $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
+		 
+		  // Send the POST request with cURL
+		  $ch = curl_init('https://api.textlocal.in/send/');
+		  curl_setopt($ch, CURLOPT_POST, true);
+		  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+		  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		  $response = curl_exec($ch);
+		  curl_close($ch);
+		  
+		  // Process your response here
+		  //echo $response;
+		  //test
+		  //exit;
+	  }
+  
+
 	// function testmail(){
 	// 	$this->load->library('Mailgun_lib');
 	// 	$mgClient = new Mailgun_lib();
