@@ -48,8 +48,11 @@
           <div class="row">
             <!-- /.col -->
             <div class="col-xs-12 right">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-              <p data-toggle="modal" data-target="#forgot" class="forgot">Forgot Password</p>
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button><br><br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" class="forgot" data-target="#forgot">
+              Forgot Password
+</button>
+              <!--<p data-toggle="modal" data-target="#forgot" class="forgot">Forgot Password</p>  -->
             </div><!-- /.col -->
           </div>
         </form>
