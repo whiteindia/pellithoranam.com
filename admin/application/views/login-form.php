@@ -116,7 +116,7 @@ var value =$("#frgt_psw_form").serialize() ;
   else {
        $(".renew_pass").html('');
   }
-  var url = base_url + 'Home/Forget_Password';
+  var url = base_url + 'Login/Forget_Password';
   var data = 'email='+val;
   var result = post_ajax(url, data);
   obj = JSON.parse(result);
