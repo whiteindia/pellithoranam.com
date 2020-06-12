@@ -296,6 +296,7 @@ $settings = get_settings();
            <li><a href="<?php echo base_url(); ?>Settings_ctrl/view_religion"><i class="fa fa-circle-o text-yellow"></i>Religion</a></li> 
            <li><a href="<?php echo base_url(); ?>Settings_ctrl/view_caste"><i class="fa fa-circle-o text-yellow"></i>Caste/Division</a></li>
            <li><a href="<?php echo base_url(); ?>Settings_ctrl/websettings"><i class="fa fa-circle-o text-yellow"></i>Web Settings</a></li>          
+           <li><a href="<?php echo base_url(); ?>Settings_ctrl/view_changepassword"><i class="fa fa-circle-o text-yellow"></i>Change Password</a></li>       
          </ul>
        </li>
        <!-- <li class="treeview">
