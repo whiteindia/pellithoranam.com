@@ -138,7 +138,7 @@ unset($_SESSION['pwd']);
 		//   ini_set('display_errors', 1);
 	   //ini_set('display_startup_errors', 1);
 	   //error_reporting(E_ALL);
-		   $usr  = $this->session->userdata('logged_in');
+		   $usr  = $pass_data['uid'];
 		   $this->load->library('encryption');
 		   $td_date = date('Y-m-d H:i:s', time());
 		   if($pass_data['new_password'] == $pass_data['conf_password']) { // checking new & confirm pass are same
