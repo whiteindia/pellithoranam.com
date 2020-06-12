@@ -9,6 +9,7 @@ class Login extends CI_Controller {
 		}
 		$this->load->helper(array('form'));
 		$this->load->model('login_model', 'login');
+		$this->load->model('login_model');
 		
 	}
 	public function index(){
