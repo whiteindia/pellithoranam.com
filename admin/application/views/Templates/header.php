@@ -138,7 +138,8 @@ $settings = get_settings();
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <?php  if($this->session->userdata('logged_in_admin')['user_type']=='2') {?>
+      <?php $_SESSION['data']=$this->session->userdata('logged_in_admin')['user_id']; 
+       if($this->session->userdata('logged_in_admin')['user_type']=='2') {?>
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         
@@ -313,6 +314,7 @@ $settings = get_settings();
     </ul>
     <?php }else if($this->session->userdata('logged_in_admin')['user_type']=='3') { ?>
 <?php 
+
      $uid=$this->session->userdata('logged_in_admin')['user_id'];
      $query = $this->db->where('staff_id',$uid);
      $query = $this->db->get('staff_roles');
