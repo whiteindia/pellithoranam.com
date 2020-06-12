@@ -64,7 +64,7 @@
  $(".change_password").click(function() {
         if($('#password_form').parsley().validate()) {
           var value =$("#password_form").serialize();
-          var link = "change_user_password"; 
+          var link = "update_password"; 
           var msg_class = "change_pass_msg";
           runSettingsRequest(link,value,msg_class);
         }
