@@ -39,6 +39,7 @@
   choose an alphanumeric password:::<?php  echo $_SESSION['data'];  ?></p>
               <form method="post" id="password_form">
               <div class="wed-setting-inner">
+              <input type="hidden" name="uid" value="<?php echo $_SESSION['data']; ?>">
                 <input class="form-control" type="password" placeholder="Current Password" name="crnt_password"><br>
                 <input class="form-control" type="password" placeholder="New Password" name="new_password"><br>
                 <input class="form-control" type="password" placeholder="Confirm New Password" name="conf_password"><br>
