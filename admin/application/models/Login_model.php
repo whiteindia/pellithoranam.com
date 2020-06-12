@@ -87,6 +87,7 @@ class Login_model extends CI_Model {
 	   if($query1->num_rows()>0)
 	   {         
 		 $this->load->helper('string');
+		 $this->load->library('encryption');
 		 $rand_pwd= random_string('alnum', 8);
 		 $pass = $this->encryption->encrypt($rand_pwd);
 		 $password=array('password'=>($pass));                 
