@@ -49,40 +49,7 @@ class Login_model extends CI_Model {
 		 // $this->db->from('profiles');
 		  
 	  
-	  /*
-		 if($query12->num_rows()>0){
-	  
-		  $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
-		  //echo $mob;
-		  // Message details
-		  $numbers = array($mob);
-		  $sender = urlencode('TORNAM');
-		  $message = rawurlencode($msg);
-		 
-		  $numbers = implode(',', $numbers);
-		 
-		  // Prepare data for POST request
-		  $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
-		 
-		  // Send the POST request with cURL
-		  $ch = curl_init('https://api.textlocal.in/send/');
-		  curl_setopt($ch, CURLOPT_POST, true);
-		  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-		  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		  $response = curl_exec($ch);
-		  curl_close($ch);
-	  
-		}
-		*/
-	  
-			/*  $this->db->where('email',$email);
-			  $chk_qry1 = $this->db->get('profiles');
-		  $my_matr_id = $chk_qry1->result();
-		  $mob=$my_matr_id[0]->phone;   */
-		 // $query11=$this->db->select('phone')->where('email',$email)->get('profiles');
-		 // $query12=$query11->result();
-	  
-	  
+	 
 	   //$mob=$query12->phone;
 	   if($query1->num_rows()>0)
 	   {         
@@ -95,15 +62,9 @@ class Login_model extends CI_Model {
 		 $query=$this->db->update('users',$password);
 		 if($query)
 		 {
-		  /*$this->db->select('phone');
-		  $this->db->from('users');
-		  
-			  $this->db->where('email',$email);
-			  $chk_qry = $this->db->get();
-		  $my_matr_id = $chk_qry;
-		  $mob=$my_matr_id->phone;   */ 
+
 		   $from= 'no-reply@techlabz.in'; 
-		   $name='Soulmate Matrimony'; 
+		   $name='Pellithoranam Matrimony'; 
 		   $sub="Forgot Password";
 		   $email=$email;
 		   // $mailTemplate="<div style='width:100%;float:left;color: ##ee2979;font-size=14px;font-weight: bold;>Hi,<br>Your Temporary Password is<br><div style='font-style=italics;width:100%; margin:0px 50px;'>$rand_pwd</div><br>You can change it later from account settings</div>";
@@ -128,22 +89,7 @@ class Login_model extends CI_Model {
 	  } 
 
 	  function sending_mail($from,$name,$mail,$sub, $msg) {  
-		// $settings        = get_settings();
-		// $config['protocol'] = "smtp";
-		// $config['smtp_host'] = $settings->smtp_host;
-		// $config['smtp_port'] = "587";
-		// $config['smtp_user'] = $settings->smtp_username; 
-		// $config['smtp_pass'] =  $settings->smtp_password; ;
-		// $config['charset'] = "utf-8";
-		// $config['mailtype'] = "html";
-		// $config['newline'] = "\r\n";
-		// $this->email->initialize($config); 
-		// $this->email->from($from, $name); 
-		// $this->email->to($mail); 
-		// $this->email->subject($sub);
-		// $this->email->message($msg); 
-		// $this->email->send();
-	
+
 		$this->load->library('Mailgun_lib');
 		$mgClient = new Mailgun_lib();
 		$mgClient->to($mail);
