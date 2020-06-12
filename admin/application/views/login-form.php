@@ -126,7 +126,8 @@ var value =$("#frgt_psw_form").serialize() ;
   var data = 'email='+val;
   var result = post_ajax(url, data);
   obj = JSON.parse(result);
-   
+ 
+  console.log(url);
   console.log(obj.status);
   if (obj.status == "No") {
     $(".renew_pass").show('');
