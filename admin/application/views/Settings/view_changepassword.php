@@ -76,7 +76,7 @@
     $.ajax({
       type: "POST",
     //  url: base_url+'settings/'+link,
-    url:'<?php echo base_url()."Settings_ctrl/change_user_password"; ?>';
+    url:'<?php echo base_url()."Settings_ctrl/change_user_password"; ?>',
       data: value,
       error: function (err) {
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
