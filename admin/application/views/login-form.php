@@ -64,7 +64,7 @@
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
 <!-- MODAL FOR FORGOT PASSWORD START -->
-            
+       <div class="bg-info">  
           <form method="post" action="" id="frgt_psw_form" data-parsley-validate="true" class="validate">
            
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -79,7 +79,7 @@
               
             
           </form>
-    
+    </div>   
 
         <div class="modal fade wed-add-modal" id="confirm" role="dialog">
             <div class="modal-dialog wed-add-modal-dialogue">
