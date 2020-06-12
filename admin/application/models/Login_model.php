@@ -126,6 +126,33 @@ class Login_model extends CI_Model {
 	   
 	  
 	  } 
+
+	  function sending_mail($from,$name,$mail,$sub, $msg) {  
+		// $settings        = get_settings();
+		// $config['protocol'] = "smtp";
+		// $config['smtp_host'] = $settings->smtp_host;
+		// $config['smtp_port'] = "587";
+		// $config['smtp_user'] = $settings->smtp_username; 
+		// $config['smtp_pass'] =  $settings->smtp_password; ;
+		// $config['charset'] = "utf-8";
+		// $config['mailtype'] = "html";
+		// $config['newline'] = "\r\n";
+		// $this->email->initialize($config); 
+		// $this->email->from($from, $name); 
+		// $this->email->to($mail); 
+		// $this->email->subject($sub);
+		// $this->email->message($msg); 
+		// $this->email->send();
+	
+		$this->load->library('Mailgun_lib');
+		$mgClient = new Mailgun_lib();
+		$mgClient->to($mail);
+		$mgClient->from($from, $name);
+		$mgClient->subject($sub);
+		$mgClient->message($msg);
+		$mgClient->send(); 
+		return "success";
+	} 
 	
 
 }
