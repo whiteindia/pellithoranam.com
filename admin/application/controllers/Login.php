@@ -8,7 +8,7 @@ class Login extends CI_Controller {
 			redirect(base_url().'Dashboard_ctrl/dashboard');
 		}
 		$this->load->helper(array('form'));
-		$this->load->model('login_model', 'login');
+		//$this->load->model('login_model', 'login');
 		$this->load->model('login_model');
 		
 	}
