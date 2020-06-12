@@ -75,7 +75,7 @@
 
   function runSettingsRequest(link,value,msg_class) {
     $.ajax({
-      type: "GET",
+      type: "POST",
     //  url: base_url+'settings/'+link,
     url:'<?php echo base_url()."login/update_password"; ?>',
       data: value,
