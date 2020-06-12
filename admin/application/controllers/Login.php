@@ -78,7 +78,7 @@ class Login extends CI_Controller {
 		if (isset($_POST)) {
 			$data = $_POST;
 	     	$email = $this->input->post('email');
-	      	$res=$this->Login_model->forgetpassword($email);
+	      	$res=$this->login_model->forgetpassword($email);
 	      	// print_r($res);die;
 				if($res=="EmailNotExist"){
 					 $result = array('status'  => 'No','message'  => 'Sorry. Please Enter Your Correct Email.');
