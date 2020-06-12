@@ -32,7 +32,24 @@
                   <h3 class="box-title">Change Password</h3>
                </div>
                <!-- /.box-header -->
-
+               <div  class="tab-pane fade">
+              <div class="wed-space"></div>
+              <h4>Change Password</h4>
+              <p>Your password must have a minimum of 6 characters. We recommend you <br>
+  choose an alphanumeric password:::<?php  echo $this->session->userdata('logged_in');  ?></p>
+              <form method="post" id="password_form">
+              <div class="wed-setting-inner">
+                <input class="wed-setting-input" type="password" placeholder="Current Password" name="crnt_password">
+                <input class="wed-setting-input" type="password" placeholder="New Password" name="new_password">
+                <input class="wed-setting-input" type="password" placeholder="Confirm New Password" name="conf_password">
+                <div class="wed-space"></div>
+                <div class="change_pass_msg"></div>
+                <div class="wed-settings-save change_password">Change</div>
+                <div class="wed-settings-reset">Reset</div>
+                  <div class="wed-space"></div>
+              </div>
+              </form>
+            </div>
                
             </div>
             <!-- /.box -->
@@ -43,3 +60,37 @@
    </section>
    <!-- /.content -->
 </div>
+<script>
+ $(".change_password").click(function() {
+        if($('#password_form').parsley().validate()) {
+          var value =$("#password_form").serialize();
+          var link = "change_user_password"; 
+          var msg_class = "change_pass_msg";
+          runSettingsRequest(link,value,msg_class);
+        }
+    });
+
+
+
+  function runSettingsRequest(link,value,msg_class) {
+    $.ajax({
+      type: "POST",
+      url: base_url+'settings/'+link,
+      data: value,
+      error: function (err) {
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+      },
+      success: function(datas){
+          data1 = JSON.parse(datas);
+          $("."+msg_class).html("");
+          $("."+msg_class).fadeIn();
+          $("."+msg_class).html(data1.msg);
+          $("."+msg_class).fadeOut(4000);   
+      }
+    });
+  }
+
+
+
+
+</script>
