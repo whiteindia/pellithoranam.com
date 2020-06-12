@@ -854,7 +854,7 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
         $header['title'] = $settings->title . " | View Change Password";
 	            $this->load->view('Templates/header',$header);
 	           // $template['data'] = $this->session->userdata('logged_in_admin')['username'];,$template
-				$this->load->view('Settings/view_parish'); 
+				$this->load->view('Settings/view_changepassword'); 
 				$this->load->view('Templates/footer');
  }	
 
