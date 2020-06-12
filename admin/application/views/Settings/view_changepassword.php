@@ -36,7 +36,7 @@
               <div class="wed-space"></div>
               <h4>Change Password</h4>
               <p>Your password must have a minimum of 6 characters. We recommend you <br>
-  choose an alphanumeric password:::<?php  echo $this->session->userdata('logged_in');  ?></p>
+  choose an alphanumeric password:::<?php  echo $uid;  ?></p>
               <form method="post" id="password_form">
               <div class="wed-setting-inner">
                 <input class="form-control" type="password" placeholder="Current Password" name="crnt_password"><br>
