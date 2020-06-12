@@ -64,22 +64,27 @@
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
 <!-- MODAL FOR FORGOT PASSWORD START -->
-       <div class="bg-info">  
+<div class="modal fade wed-add-modal" id="forgot" role="dialog">
+      <div class="modal-dialog wed-add-modal-dialogue">
+        <div class="modal-content login_modal_content">             
           <form method="post" action="" id="frgt_psw_form" data-parsley-validate="true" class="validate">
-           
+            <div class="modal-body  wed-add-modal-body">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4>Forgot Password</h4>
               <p>Please enter your E-mail ID. We will send you a link to reset your password. </p>  
-               <div id="frgt_psw_msg" class="renew_pass" style="color:red;"></div>         
+               <div id="frgt_psw_msg" class="renew_pass" style="color:#fff;"></div>         
               <input type="email" id="email" name="email" class="wed-forgot-input" placeholder="E-mail" required=""
                data-parsley-required-message="Please insert email."
                data-parsley-errors-container="#frgt_psw_msg">
 
               <input class="wed-forgot-submit" type="button" value="Send"  id="frgt_psw"> 
-              
-            
+              <div class="view_loader"></div>          
+              <div class="clearfix"></div>
+            </div>
           </form>
-    </div>   
+        </div>
+      </div>
+    </div>
 
         <div class="modal fade wed-add-modal" id="confirm" role="dialog">
             <div class="modal-dialog wed-add-modal-dialogue">
@@ -166,7 +171,7 @@ return result;
       
       
       </script>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
