@@ -30,7 +30,7 @@ class Login extends CI_Controller {
 		
 		$username = $this->input->post('username');
 		//echo $password;
-		$result = $this->login->login($username, $password);
+		$result = $this->login_model->login($username, $password);
 		// echo "<pre>";
 		// print_r($result);die;
 
