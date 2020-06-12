@@ -32,7 +32,7 @@
                   <h3 class="box-title">Change Password</h3>
                </div>
                <!-- /.box-header -->
-               <div  class="tab-pane fade">
+               <div  class="bg-info">
               <div class="wed-space"></div>
               <h4>Change Password</h4>
               <p>Your password must have a minimum of 6 characters. We recommend you <br>
