@@ -71,7 +71,9 @@ class Login extends CI_Controller {
 	}
 
 	public function Forget_Password() {
-
+		error_reporting(E_ALL);
+		error_reporting(-1);
+		ini_set('error_reporting', E_ALL);
 		if (isset($_POST)) {
 			$data = $_POST;
 	     	$email = $this->input->post('email');
