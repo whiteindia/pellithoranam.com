@@ -39,12 +39,12 @@
   choose an alphanumeric password:::<?php  echo $this->session->userdata('logged_in');  ?></p>
               <form method="post" id="password_form">
               <div class="wed-setting-inner">
-                <input class="wed-setting-input" type="password" placeholder="Current Password" name="crnt_password">
-                <input class="wed-setting-input" type="password" placeholder="New Password" name="new_password">
-                <input class="wed-setting-input" type="password" placeholder="Confirm New Password" name="conf_password">
+                <input class="form-control" type="password" placeholder="Current Password" name="crnt_password"><br>
+                <input class="form-control" type="password" placeholder="New Password" name="new_password"><br>
+                <input class="form-control" type="password" placeholder="Confirm New Password" name="conf_password"><br>
                 <div class="wed-space"></div>
                 <div class="change_pass_msg"></div>
-                <div class="wed-settings-save change_password btn btn-primary">Change</div>
+                <div class="wed-settings-save change_password btn btn-primary">Change Password</div>
                 <div class="wed-settings-reset btn btn-danger">Reset</div>
                   <div class="wed-space"></div>
               </div>
