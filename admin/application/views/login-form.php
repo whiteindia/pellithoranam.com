@@ -66,7 +66,7 @@
 <!-- MODAL FOR FORGOT PASSWORD START -->
             
           <form method="post" action="" id="frgt_psw_form" data-parsley-validate="true" class="validate">
-            <div class="modal-body  wed-add-modal-body">
+           
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4>Forgot Password</h4>
               <p>Please enter your E-mail ID. We will send you a link to reset your password. </p>  
@@ -76,9 +76,8 @@
                data-parsley-errors-container="#frgt_psw_msg">
 
               <input class="wed-forgot-submit" type="button" value="Send"  id="frgt_psw"> 
-              <div class="view_loader"></div>          
-              <div class="clearfix"></div>
-            </div>
+              
+            
           </form>
     
 
