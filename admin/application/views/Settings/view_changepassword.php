@@ -24,20 +24,7 @@
    <!-- Main content -->
    <section class="content">
       <div class="row">
-         <div class="col-xs-12">
-            <?php
-               if($this->session->flashdata('message')) {
-                        $message = $this->session->flashdata('message');
-               
-                     ?>
-            <div class="alert alert-<?php echo $message['class']; ?>">
-               <button class="close" data-dismiss="alert" type="button">×</button>
-               <?php echo $message['message']; ?>
-            </div>
-            <?php
-               }
-               ?>
-         </div>
+
          <div class="col-xs-12">
             <!-- /.box -->
             <div class="box">
