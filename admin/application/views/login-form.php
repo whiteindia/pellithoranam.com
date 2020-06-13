@@ -72,7 +72,7 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4>Forgot Password</h4>
               <p>Please enter your E-mail ID. We will send you a link to reset your password. </p>  
-               <div id="frgt_psw_msg" class="renew_pass" style="color:#fff;"></div>         
+               <div id="frgt_psw_msg" class="renew_pass" style="font-size:24px;color:red"></div>         
               <input type="email" id="email" name="email" class="wed-forgot-input" placeholder="E-mail" required=""
                data-parsley-required-message="Please insert email."
                data-parsley-errors-container="#frgt_psw_msg">
