@@ -85,15 +85,15 @@ class Login extends CI_Controller {
 				}
 				else{
 					$this->db->select('*');
-					$this->db->from('profiles');
+					$this->db->from('users');
 					$this->db->where('email', $email);
 					$query12 = $this->db->get();
 					//$query11= $query12->row();
 					$my_matr_id =  $query12->result();
-					$mob=$my_matr_id[0]->phone;
+			//		$mob=$my_matr_id[0]->phone;
 				//	echo $mob;
 				//	echo $_SESSION['pwd'];
-					$this->sent_mobile_msg($mob,$_SESSION['pwd']);	
+			//		$this->sent_mobile_msg($mob,$_SESSION['pwd']);	
 
 
 unset($_SESSION['pwd']);
@@ -144,7 +144,7 @@ unset($_SESSION['pwd']);
 		   if($pass_data['new_password'] == $pass_data['conf_password']) { // checking new & confirm pass are same
 		   //print_r($pass_data['new_password']); 
 		   //print_r($pass_data['conf_password']);           
-			 $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
+			 $qry_1 = $this->db->get_where('users', array('user_id'=>$usr)); // getting password of that user
 			 $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
 		 
 		 //   $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
