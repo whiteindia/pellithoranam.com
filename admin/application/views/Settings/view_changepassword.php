@@ -79,7 +79,7 @@
     $.ajax({
       type: "POST",
     //  url: base_url+'settings/'+link,
-    url:'<?php echo "pellithoranam.com/admin/login/update_password"; ?>',
+    url:'www.pellithoranam.com/admin/login/update_password',
       data: value,
       cache: false,
       error: function (err) {
