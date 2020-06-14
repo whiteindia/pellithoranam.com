@@ -1,3 +1,5 @@
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js"></script>
 <head>
    <style>
    input.parsley-error, select.parsley-error, textarea.parsley-error {
