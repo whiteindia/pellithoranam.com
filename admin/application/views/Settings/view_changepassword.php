@@ -79,6 +79,7 @@
     //  url: base_url+'settings/'+link,
     url:'<?php echo base_url()."login/update_password"; ?>',
       data: value,
+      cache: false,
       error: function (err) {
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
       },
