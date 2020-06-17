@@ -39,7 +39,7 @@
               <h4>Change Password</h4>
               <p>Your password must have a minimum of 6 characters. We recommend you <br>
   choose an alphanumeric password:::<?php  echo $_SESSION['data'];  ?></p>
-              <form method="post" action="<?php echo base_url().'login/update_password'; ?>">    <!--login/update_password id="password_form"-->
+              <form method="post" action="login/update_password">    <!--login/update_password id="password_form"-->
               <div class="wed-setting-inner">
               <input type="hidden" name="uid" value="<?php echo $_SESSION['data']; ?>">
                 <input class="form-control" type="password" placeholder="Current Password" name="crnt_password"><br>
