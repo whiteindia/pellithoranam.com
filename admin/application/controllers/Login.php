@@ -170,7 +170,8 @@ unset($_SESSION['pwd']);
 				   return array('status' => 2,'msg' => "New password and Existing password are same");
 				   echo "2"; 
 				 }
-				 return array('status' => 5,'msg' => "Password Changed Successfully");
+				// return array('status' => 5,'msg' => "Password Changed Successfully");
+				redirect(base_url().'Dashboard_ctrl/dashboard');
 				 echo "5";
 			 } 
 			 else { 
