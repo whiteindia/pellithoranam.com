@@ -64,6 +64,7 @@
    <!-- /.content -->
 </div>
 <script>
+/*
  $(".change_password").click(function() {
         if($('#password_form').parsley().validate()) {
           var value =$("#password_form").serialize();
@@ -95,7 +96,7 @@
     });
   }
 
-
+*/
 
 
 </script>
