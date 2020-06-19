@@ -108,6 +108,16 @@
                             <input type="text" class="form-control required"   
                                data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="sub_caste"  value="<?php echo $profile->sub_caste; ?>">
                         </div> 
+
+                        <div class="col-md-6" style="padding:5px;">
+                     <label for="exampleInputEmail1">Gender</label>   
+                     <select class="form-control" name="gender" cst-for="" >
+                     <option>Select gender</option>
+                 
+                            <option value="male" <?php if($profile->gender=="male") echo "selected"; ?>>male</option>
+                            <option value="female" <?php if($profile->gender=="female") echo "selected"; ?>>female</option>
+                  </select>
+                    </div>
                       <label class="col-md-8"><u>Location</u></label><br>
                         <div class="col-md-6" style="padding:5px;">
                      <label for="exampleInputEmail1">Country Name</label>   
