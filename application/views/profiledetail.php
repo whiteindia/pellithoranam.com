@@ -113,7 +113,10 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <?php echo $profile[0]->caste_name.",<br/>".$profile[0]->sub_caste_name;?>
             </li>
             <li><span><img src="<?php echo base_url(); ?>assets/img/loc.png"></span>
-            <?php echo $profile[0]->city_name.", ".$profile[0]->state_name.", ".$profile[0]->country_name;?>
+            <?php echo $profile[0]->city_name." ".$profile[0]->state_name.", ".$profile[0]->country_name;?>
+            </li>
+            <li><span><img src="<?php echo base_url(); ?>assets/img/loc.png"></span>
+            <?php echo $profile[0]->star_id.",<br/>".$profile[0]->padam;?>
             </li>
             <li><span><img src="<?php echo base_url(); ?>assets/img/edu.png"></span>
             <?php echo $profile[0]->education;?>
