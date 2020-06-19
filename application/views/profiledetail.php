@@ -115,7 +115,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <li><span><img src="<?php echo base_url(); ?>assets/img/loc.png"></span>
             <?php echo $profile[0]->city_name." ".$profile[0]->state_name.", ".$profile[0]->country_name;?>
             </li>
-            <li><span><img src="<?php echo base_url(); ?>assets/img/priority.png"></span>
+            <li><span><img src="<?php echo base_url(); ?>assets/img/religion.png"></span>
             <?php
             $qry_1 = $this->db->get_where('stars', array('star_id'=>$profile[0]->star_id)); 
             echo $qry_1->result()[0]->star_name.",".$profile[0]->padam;?>
