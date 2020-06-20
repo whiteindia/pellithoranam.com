@@ -803,7 +803,7 @@ class Search extends CI_Controller {
             $config = array();
             $config["base_url"] = base_url() . "search/index";
             $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
-            $config["per_page"] = 10;
+            $config["per_page"] = 50;
             $config["uri_segment"] =3;
            // $choice = $config["total_rows"] / $config["per_page"];
             //$config["num_links"] = round($choice);
@@ -881,7 +881,7 @@ class Search extends CI_Controller {
                   $config = array();
               $config["base_url"] = base_url() . "search/searchbyid";
               $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
-              $config["per_page"] = 10;
+              $config["per_page"] = 50;
               $config["uri_segment"] =3;
              // $choice = $config["total_rows"] / $config["per_page"];
               //$config["num_links"] = round($choice);
