@@ -120,7 +120,8 @@
                     edit
                   </div>
 
-                  <!--   <form class="reply-form" style="display:none;">
+
+            <!--   <form class="reply-form" style="display:none;">
                       <input />
                       <input type="submit" value="submit"/>
                   </form> -->
@@ -173,8 +174,8 @@
                       </div>
                       <div class="child3">
                        <?php if($profile->profile_for) { 
-          					   echo ucwords($profile->profile_for);
-          					    } else {?> - <?php } ?>
+					   echo ucwords($profile->profile_for);
+					    } else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -223,8 +224,8 @@
                       </div>
                       <div class="child3">
                       <?php if($profile->weight) {
-          					   echo $profile->weight;
-          					    } else {?> - <?php } ?>
+					   echo $profile->weight;
+					    } else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -284,8 +285,8 @@
                     </div>
                     <div class="child3">
                      <?php if($profile->profile_name) {
-          					  echo $profile->profile_name;
-          					   } else {?> - <?php } ?>
+					  echo $profile->profile_name;
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -297,8 +298,8 @@
                     </div>
                     <div class="child3">
                      <?php if($profile->mothers_maiden_name) {
-                    echo $profile->mothers_maiden_name;
-                     } else {?> - <?php } ?>
+            echo $profile->mothers_maiden_name;
+             } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -310,10 +311,10 @@
                     </div>
                     <div class="child3">
                      <?php if($profile->age) {
-          						$now = new DateTime();
-                			$age = $now->diff(new DateTime($profile->dob));
-                			$my_age = $age->format('%Y');
-          					  echo $my_age;  } else {?> - <?php } ?> Yrs
+						 $now = new DateTime();
+			$age = $now->diff(new DateTime($profile->dob));
+			$my_age = $age->format('%Y');
+					  echo $my_age;  } else {?> - <?php } ?> Yrs
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -325,8 +326,8 @@
                     </div>
                     <div class="child3">
                      <?php if($profile->height) {
-          					 echo $profile->height;
-          					  } else {?> - <?php } ?>
+					 echo $profile->height;
+					  } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -338,8 +339,8 @@
                     </div>
                     <div class="child3">
                       <?php if($profile->mother_tongue_name) {
-            					 echo ucwords($profile->mother_tongue_name);
-            					 } else {?> - <?php } ?>
+					 echo ucwords($profile->mother_tongue_name);
+					 } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -350,7 +351,7 @@
                     <div class="child2">:
                     </div>
                     <div class="child3">
-                          <?php
+                                        <?php
                           if($profile->eating == 1) {
                               $eat = "Vegetarian";
                           } else if($profile->eating == 2) {
@@ -358,9 +359,9 @@
                           } else if($profile->eating == 3) {
                               $eat = "Eggetarian";
                           }
-            						  else if($profile->eating == 0){
-            							  $eat = "-";
-            						  }
+						  else if($profile->eating == 0){
+							  $eat = "-";
+						  }
                           echo $eat;
                           ?>
                     </div>
@@ -413,8 +414,8 @@
                       </div>
                       <div class="child3">
                        <?php if($profile->religion_name) {
-          					   echo $profile->religion_name; 
-          					    } else {?> - <?php } ?>
+					   echo $profile->religion_name; 
+					    } else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -426,8 +427,8 @@
                       </div>
                       <div class="child3">
                         <?php if($profile->caste_name) {
-            						echo $profile->caste_name; 
-            						 } else {?> - <?php } ?>
+						echo $profile->caste_name; 
+						 } else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -439,8 +440,8 @@
                       </div>
                       <div class="child3">
                         <?php if($profile->sub_caste) {
-              						echo $profile->sub_caste; 
-              					} else {?> - <?php } ?>
+						echo $profile->sub_caste; 
+						  } else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -473,8 +474,8 @@
                     </div>
                     <div class="child3">
                     <?php if($profile->country_name) {
-        					  echo ucwords($profile->country_name);
-        					   } else {?> - <?php } ?>
+					  echo ucwords($profile->country_name);
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -486,8 +487,8 @@
                     </div>
                     <div class="child3">
                     <?php if($profile->state_name) {
-        					  echo ucwords($profile->state_name);
-        					   } else {?> - <?php } ?>
+					  echo ucwords($profile->state_name);
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -499,8 +500,8 @@
                     </div>
                     <div class="child3">
                     <?php if($profile->city_name) {
-            					echo ucwords($profile->city_name);
-            				} else {?> - <?php } ?>
+					echo ucwords($profile->city_name);
+					 } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -511,9 +512,9 @@
                     <div class="child2">:
                     </div>
                     <div class="child3">
-          					<?php if($profile->resident_status) {
+					<?php if($profile->resident_status) {
                       echo ucwords(str_replace("_"," ",$profile->resident_status));
-          					} else {?> - <?php } ?>
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -525,9 +526,9 @@
                     <div class="child2">:
                     </div>
                     <div class="child3">
-            					<?php if($profile->parish) {
-                          echo ucwords(str_replace("_"," ",$profile->parish));
-            					 } else {?> - <?php } ?>
+					<?php if($profile->parish) {
+                       echo ucwords(str_replace("_"," ",$profile->parish));
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -538,9 +539,9 @@
                     <div class="child2">:
                     </div>
                     <div class="child3">
-            					<?php if($profile->parish_village) {
-            					  echo ucwords(str_replace("_"," ",$profile->parish_village));
-            					} else {?> - <?php } ?>
+					<?php if($profile->parish_village) {
+					  echo ucwords(str_replace("_"," ",$profile->parish_village));
+					} else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -572,8 +573,8 @@
                       </div>
                       <div class="child3">
                         <?php if($profile->education) {
-            						echo ucwords($profile->education);
-            						} else {?> - <?php } ?>
+						echo ucwords($profile->education);
+						} else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -585,8 +586,8 @@
                       </div>
                       <div class="child3">
                          <?php if($profile->college) { 
-              						echo ucwords($profile->college);
-              						} else {?> - <?php } ?>
+						echo ucwords($profile->college);
+						} else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li> -->
@@ -598,8 +599,8 @@
                       </div>
                       <div class="child3">
                          <?php if($profile->education_detail) {  
-            						echo ucwords($profile->education_detail);
-            						} else {?> - <?php } ?>
+						echo ucwords($profile->education_detail);
+						} else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li> --> */ ?>
@@ -611,8 +612,8 @@
                       </div>
                       <div class="child3">
                        <?php if($profile->occupation) {  
-            						echo ucwords($profile->occupation);
-            						} else {?> - <?php } ?>
+						echo ucwords($profile->occupation);
+						} else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -630,8 +631,8 @@
                     </div>
                     <div class="child3">
                        <?php if($profile->occupation_detail) {  
-            					  echo ucwords($profile->occupation_detail);
-            					  } else {?> - <?php } ?>
+					  echo ucwords($profile->occupation_detail);
+					  } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -643,8 +644,8 @@
                     </div>
                     <div class="child3">
                      <?php if($profile->employed_in) {  
-          					  echo ucwords($profile->employed_in);
-          					  } else {?> - <?php } ?>
+					  echo ucwords($profile->employed_in);
+					  } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -753,8 +754,8 @@
                       </div>
                       <div class="child3">
                        <?php if($profile->family_origin) {  
-            						echo ucwords($profile->family_origin);
-            						} else {?> - <?php } ?>
+						echo ucwords($profile->family_origin);
+						} else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -766,8 +767,8 @@
                       </div>
                       <div class="child3">
                          <?php if($profile->family_location) {  
-              						echo ucwords($profile->family_location);
-              						} else {?> - <?php } ?>
+						echo ucwords($profile->family_location);
+						} else {?> - <?php } ?>
                       </div>
                       <div class="clearfix"></div>
                     </li>
@@ -785,8 +786,8 @@
                     </div>
                     <div class="child3">
                        <?php if($profile->father_status) {  
-            					  echo ucwords($profile->father_status);
-            					  } else {?> - <?php } ?>
+					  echo ucwords($profile->father_status);
+					  } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -798,8 +799,8 @@
                     </div>
                     <div class="child3">
                       <?php if($profile->mother_status) {   
-          					  echo ucwords($profile->mother_status);
-          					   } else {?> - <?php } ?>
+					  echo ucwords($profile->mother_status);
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -811,8 +812,8 @@
                     </div>
                     <div class="child3">
                      <?php if($profile->brothers) {  
-        					  echo ucwords($profile->brothers);
-        					   } else {?> - <?php } ?>
+					  echo ucwords($profile->brothers);
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -824,8 +825,8 @@
                     </div>
                     <div class="child3">
                     <?php if($profile->sisters) {  
-        					  echo ucwords($profile->sisters);
-        					   } else {?> - <?php } ?>
+					  echo ucwords($profile->sisters);
+					   } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -1073,7 +1074,10 @@
 </form>
 </ul>
 
+
 <!-- Religion modal of -->
+
+
   <ul id="prof_religion_edit" style="display: none;">
   <form method="post" id="relg_form">
     <li class="wed-detail-left border-right1">
@@ -1258,6 +1262,8 @@
   <div class="clearfix"></div>
     </form>
   </ul>
+
+
 
   <ul id="prof_profnl_edit" style="display: none;">
   <form method="post" id="prof_form">
@@ -2091,6 +2097,8 @@
       </div>
 </div>
 
+
+
 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <?php $this->load->view('forms/my_profile_js.php');?>
 
@@ -2104,8 +2112,11 @@ $(document).ready(function(){
       dateFormat: "yy-mm-dd",
       //yearRange: "1970:2000"
 	   yearRange: "1970:2000"
+	 
   });
 
+
+    
 
     $(document).on("click","#prof_pers_edit",function() {
         $('#prof_pers_text').show();
@@ -2205,6 +2216,9 @@ $(document).ready(function(){
         });
     });*/
 
+
+    
+
     $(document).on("click","#prof_pers_btn",function() {
         if($('#about_form').parsley().validate()) {
 
@@ -2217,11 +2231,8 @@ $(document).ready(function(){
                     console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
                 },
                 success: function(data) {
-                  alert("Updated Successfully!");
-                  location.reload();
                 }
             });
-            return false;
         }
     });
 
@@ -2230,7 +2241,6 @@ $(document).ready(function(){
     $(document).on("click",".edit_relg_btn",function() {
         //if($('#edit_form').parsley().validate()) {
 
-            console.log('relg_form - submit');
             var value =$("#relg_form").serialize();
             console.log(value);
             $.ajax({
@@ -2242,11 +2252,8 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                   console.log(data);
-                  alert("Updated Successfully!");
-                  location.reload();
                 }
             });
-            return false;
         //}
     });
 
@@ -2266,11 +2273,8 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                   console.log(data);
-                  alert("Updated Successfully!");
-                  location.reload();
                 }
             });
-            return false;
         //}
     });
 
@@ -2288,11 +2292,8 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                   console.log(data);
-                  alert("Updated Successfully!");
-                  location.reload();
                 }
             });
-            return false;
         //}
     });
 
@@ -2342,6 +2343,10 @@ $( document ).ready(function() {
    setTimeout(function() {
      $("select#city-selector").val(city).change();
   }, 1000);
+
+
+
+
 
 var religion = <?php echo json_encode($profile->religion) ?>;
   var caste = <?php echo json_encode($profile->caste) ?>;

@@ -266,18 +266,18 @@ if($data==null){ ?>
 
 <?php }else{
 
-//print_r($data);
+
 $hobbies=$data->hobbies;
-$role_pages = explode(', ', $hobbies);
+$role_pages = explode(',', $hobbies);
 
 $music=$data->music;
-$role_pages1 = explode(', ', $music);
+$role_pages1 = explode(',', $music);
 
 $sports=$data->sports;
-$role_pages2 = explode(', ', $sports);
+$role_pages2 = explode(',', $sports);
 
 $languages=$data->languages;
-$role_pages3 = explode(', ', $languages);
+$role_pages3 = explode(',', $languages);
 
 ?>
     <!-- TOP-BANNER -->

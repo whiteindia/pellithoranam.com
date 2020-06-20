@@ -232,37 +232,37 @@ class Profile_model extends CI_Model {
 
     public function  add_hobbies($data){
               $my_matr_id = $this->session->userdata('logged_in');
-              //echo '<br>';print_r($data);exit;
+             
                 $query = $this->db->where('user_id',$my_matr_id->matrimony_id);
                 $query = $this->db->get('hobbies');
-              if ($query->num_rows() > 0){
-                $data['user_id']=$my_matr_id->matrimony_id;  
-                $hobbies =  isset($data['hobbies'])?$data['hobbies']:array();
-                $data['hobbies'] = implode(", ", $hobbies);
-                $music =  isset($data['music'])?$data['music']:array();
-                $data['music'] = implode(", ", $music);
-                $sports =  isset($data['sports'])?$data['sports']:array();
-                $data['sports'] = implode(", ", $sports);
-                $languages =  isset($data['languages'])?$data['languages']:array();
-                $data['languages'] = implode(", ", $languages);   
-                $this->db->where('user_id',$my_matr_id->matrimony_id);
-                return $this->db->update('hobbies',$data);
-                //print_r($this->db->last_query());  
-              }else{
-                //print_r($data);
-                $data['user_id']=$my_matr_id->matrimony_id;  
-                $hobbies =  isset($data['hobbies'])?$data['hobbies']:array();
-                $data['hobbies'] = implode(", ", $hobbies);
-                $music =  isset($data['music'])?$data['music']:array();
-                $data['music'] = implode(", ", $music);
-                $sports =  isset($data['sports'])?$data['sports']:array();
-                $data['sports'] = implode(", ", $sports);
-                $languages =  isset($data['languages'])?$data['languages']:array();
-                $data['languages'] = implode(", ", $languages);
-                return $result = $this->db->insert('hobbies', $data);
-                print_r($this->db->last_query());
-              }
-              //print_r($my_matr_id);exit;
+                 if ($query->num_rows() > 0){
+
+              $data['user_id']=$my_matr_id->matrimony_id;  
+              $hobbies =  isset($data['hobbies'])?$data['hobbies']:array();
+              $data['hobbies'] = implode(", ", $hobbies);
+              $music =  isset($data['music'])?$data['music']:array();
+              $data['music'] = implode(", ", $music);
+              $sports =  isset($data['sports'])?$data['sports']:array();
+              $data['sports'] = implode(", ", $sports);
+              $languages =  isset($data['languages'])?$data['languages']:array();
+              $data['languages'] = implode(", ", $languages);   
+                  $this->db->where('user_id',$my_matr_id->matrimony_id);
+                 $this->db->update('hobbies',$data); 
+                 }else{
+
+                  //print_r($data);
+
+              $data['user_id']=$my_matr_id->matrimony_id;  
+              $hobbies =  isset($data['hobbies'])?$data['hobbies']:array();
+              $data['hobbies'] = implode(", ", $hobbies);
+              $music =  isset($data['music'])?$data['music']:array();
+              $data['music'] = implode(", ", $music);
+              $sports =  isset($data['sports'])?$data['sports']:array();
+              $data['sports'] = implode(", ", $sports);
+              $languages =  isset($data['languages'])?$data['languages']:array();
+              $data['languages'] = implode(", ", $languages);
+              $result = $this->db->insert('hobbies', $data);
+          }
             //  return $result;
      }
 

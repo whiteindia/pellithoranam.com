@@ -1550,25 +1550,19 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 	}
 	public function get_hobbies()
 	{         //  $my_matr_id = $this->session->userdata('logged_in');
-		if($_POST) {
-			$data = $_POST;
-			//  var_dump($data);
-			// die();
-			$result = $this->Profile_model->add_hobbies($data);
+	             if($_POST) {
+	    	   $data = $_POST;
+	    	  /* var_dump($data);
+	    	   die();*/
+	    	   $result = $this->Profile_model->add_hobbies($data);
+	    	
+                if($result) 
+				          {
+				          	redirect(base_url().'Profile/my_profile'); 		
+				          }
 
-			if($result) 
-			{
-				echo "<script>alert('Hobbies updated successfully');</script>";
-				redirect(base_url().'Profile/my_profile'); exit;		
-			}
-			echo "<script>alert('Hobbies updation failed');</script>";
-			redirect(base_url().'Profile/my_profile'); exit;
-
-		} else {
-			echo "<script>alert('No post data submitted');</script>";
-			redirect(base_url().'Profile/my_profile'); exit;
-		}   
-		 	            
+	    	   }   
+	    	   redirect(base_url().'Profile/my_profile'); 	            
 	}
 	public function add_photo()
 	{
@@ -1619,7 +1613,7 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 				  //}	
 		$this->load->view('template', $template);                     
 	}
-	public function membershipinfo()
+public function membershipinfo()
 	{
 	    $header['title'] = "membershipinfo";
 		$this->load->view('header', $header); 
@@ -1633,7 +1627,7 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 		$this->load->view('footer');                    
 	}	
 
-	public function get_session() {
+public function get_session() {
      if($this->session->userdata('logged_in')) {
      	$my_matr_id=$this->session->userdata('logged_in');
         header('Content-type: application/json');

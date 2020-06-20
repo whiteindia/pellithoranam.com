@@ -5,7 +5,6 @@
 			 return arg != value;
 			}, "Value must not equal arg.");
 		$( "#edit_form" ).validate({
-
 			debug: false,
 		    //focusInvalid: false,
 		    //onfocusout: false,
@@ -32,7 +31,6 @@
 				}
 			},
 		  	submitHandler: function(form) {
-		  		console.log('edit_form - validate, submitHandler');
 		  		var value =$("#edit_form").serialize();
 		  		console.log(value);
 		  		$.ajax({
@@ -45,12 +43,10 @@
 		  		    },
 		  		    success: function(data) {
 		  		        //alert(data);
-		  		      	console.log(data);
-		  		    	alert("Updated Successfully!");
-		  		      	location.reload();
+		  		      console.log(data);
 		  		    }
 		  		});
-		  		return false;
+		  		return true;
 		  	}
 		});
 
@@ -73,7 +69,6 @@
 				}
 			},
 		  	submitHandler: function(form) {
-		  		console.log('prof_form - validate, submitHandler');
 		  		var value =$("#prof_form").serialize();
 		  		console.log(value);
 		  		$.ajax({
@@ -84,12 +79,10 @@
 		  		        console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
 		  		    },
 		  		    success: function(data) {
-		  		      	console.log(data);
-		  		    	alert("Updated Successfully!");
-		  		      	location.reload();
+		  		      console.log(data);
 		  		    }
 		  		});
-		  		return false;
+		  		return true;
 		  	}
 		});
 
@@ -119,7 +112,6 @@
 				}
 			},
 		  	submitHandler: function(form) {
-		  		console.log('mob_form - validate, submitHandler');
 		  		var value =$("#mob_form").serialize();
 		  		$.ajax({
 		  		    type: "POST",
@@ -129,11 +121,9 @@
 		  		        console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
 		  		    },
 		  		    success: function(data) {
-		  		    	alert("Updated Successfully!");
-		  		    	location.reload();
 		  		    }
 		  		});
-		  		return false;
+		  		return true;
 		  	}
 		});
 		// $(document).on("click","#prof_mob_btn",function() {
@@ -152,6 +142,7 @@
 		// });
 
 		$("#alt-mobile-number").intlTelInput();
+		
 
 		$(document).on("click","#prof_mob_edit",function() {
 		    $('.edit-phone-form').show();
