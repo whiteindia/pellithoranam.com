@@ -199,32 +199,34 @@ class Search extends CI_Controller {
                     } 
                   } // eof from preference
             } // eof logged in
-        } else {   
+        } else {  
           redirect(base_url()); 
+          exit();
+          
           // not logged in , guest user, then  from post
-       /*   if($_POST) { // all datas must be post
-              if((isset($_POST['matri_id'])) && (!empty($_POST['matri_id']))) { // matrimony id search
-                $where[]= "profiles.matrimony_id = '". preg_replace("/[^0-9]/","",$_POST['matri_id'])."'";
-              } else {
-                  if((isset($_POST['keyword'])) && (!empty($_POST['keyword']))) { // if, keyword search
-                    $keywrd = explode(',', $_POST['keyword']);
-                    $length = count($keywrd);
-                    for($i=0;$i<$length;$i++) {
-                       $like[] = "profiles.matrimony_id like '%".$keywrd[$i]."%'";
-                       $like[] = "profiles.profile_name like '%".$keywrd[$i]."%'";
-                       $like[] = "profiles.email like '%".$keywrd[$i]."%'";
-                    }
+    ///      if($_POST) { // all datas must be post
+    ///          if((isset($_POST['matri_id'])) && (!empty($_POST['matri_id']))) { // matrimony id search
+    ///            $where[]= "profiles.matrimony_id = '". preg_replace("/[^0-9]/","",$_POST['matri_id'])."'";
+    ///          } else {
+        ///         if((isset($_POST['keyword'])) && (!empty($_POST['keyword']))) { // if, keyword search
+            ///        $keywrd = explode(',', $_POST['keyword']);
+            ///        $length = count($keywrd);
+            ///        for($i=0;$i<$length;$i++) {
+           ////            $like[] = "profiles.matrimony_id like '%".$keywrd[$i]."%'";
+         ///              $like[] = "profiles.profile_name like '%".$keywrd[$i]."%'";
+          ///             $like[] = "profiles.email like '%".$keywrd[$i]."%'";
+        ///            }
 
-                  } else { // else, search from index page, basic
-                      if((isset($_POST['gender'])) && (!empty($_POST['gender']))) { 
-                          $this->session->set_userdata('gender',$_POST['gender']); 
-                      }
+          ///        } else { // else, search from index page, basic
+          ////            if((isset($_POST['gender'])) && (!empty($_POST['gender']))) { 
+          ////                $this->session->set_userdata('gender',$_POST['gender']); 
+             ////         }
                       /*if((isset($_POST['age_from'])) && ($_POST['age_from']!=0)) {
                           $where[]= "profiles.age >= '".$_POST['age_from']."'"; 
-                      }
+            ////          }
                       if((isset($_POST['age_to'])) && ($_POST['age_to']!=0)) {
                           $where[]= "profiles.age <= '".$_POST['age_to']."'";
-                      }*/
+          ////            }*/
                      /* if((isset($_POST['caste'])) && ($_POST['caste']!=0)) {
                           $where[] = "profiles.caste = '".$_POST['caste']."'"; 
                       }*/
@@ -254,10 +256,10 @@ class Search extends CI_Controller {
                           $where[] = "profiles.religion = '".$_POST['religion']."'";
                           $where1[] = "religion_id = '".$_POST['religion']."'"; 
                       }*/
-                  } // eof index search
-              } // eof matri, keyword ,  indesx search
-            } // eof post
-        } // eof else of logged in  */
+          ////        } // eof index search
+        /////      } // eof matri, keyword ,  indesx search
+      /////      } // eof post
+        } // eof else of logged in
 
         if($this->session->userdata('logged_in')) { // if logged, then get from session
             $my_user = $this->session->userdata; 
