@@ -199,8 +199,10 @@ class Search extends CI_Controller {
                     } 
                   } // eof from preference
             } // eof logged in
-        } else {   // not logged in , guest user, then  from post
-          if($_POST) { // all datas must be post
+        } else {   
+          redirect(base_url()); 
+          // not logged in , guest user, then  from post
+       /*   if($_POST) { // all datas must be post
               if((isset($_POST['matri_id'])) && (!empty($_POST['matri_id']))) { // matrimony id search
                 $where[]= "profiles.matrimony_id = '". preg_replace("/[^0-9]/","",$_POST['matri_id'])."'";
               } else {
@@ -255,7 +257,7 @@ class Search extends CI_Controller {
                   } // eof index search
               } // eof matri, keyword ,  indesx search
             } // eof post
-        } // eof else of logged in
+        } // eof else of logged in  */
 
         if($this->session->userdata('logged_in')) { // if logged, then get from session
             $my_user = $this->session->userdata; 
