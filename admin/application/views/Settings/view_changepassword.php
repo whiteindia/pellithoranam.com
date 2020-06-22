@@ -47,7 +47,7 @@
                 <input class="form-control" type="password" placeholder="Confirm New Password" name="conf_password"><br>
                 <div class="wed-space"></div>
                 <div class="change_pass_msg"></div>
-                <div class="wed-settings-save btn btn-primary">Change Password</div>  <!--class="wed-settings-save change_password btn btn-primary"-->
+                <div class="wed-settings-save change_password btn btn-primary">Change Password</div>  <!--class="wed-settings-save change_password btn btn-primary"-->
                 <div class="wed-settings-reset btn btn-danger">Reset</div>
                   <div class="wed-space"></div>
               </div>
