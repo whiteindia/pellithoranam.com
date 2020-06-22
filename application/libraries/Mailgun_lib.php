@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require dirname(dirname(dirname(__FILE__))).'/vendor/autoload.php';
 use Mailgun\Mailgun;
 class Mailgun_lib{
-	var $_mailgun_key    = 'd52c57c1e1014292f5052d9bac62de36-2b0eef4c-083d49f2';
+	var $_mailgun_key    = 'cfa62355afb6eda118f71f5a10dd8f29-468bde97-7f911fcc'; //d52c57c1e1014292f5052d9bac62de36-2b0eef4c-083d49f2
 	var $_mailgun_domain = 'mg.pellithoranam.com';
 	var $_to             = '';
 	var $_reply_to       = '';
