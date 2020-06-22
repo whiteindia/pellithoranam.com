@@ -149,10 +149,10 @@ unset($_SESSION['pwd']);
 		 
 		 //   $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
 			 //$pass = $this->encryption->decrypt($chk_qry->row()->password);
-		  //       echo '<pre>';
-		 //  print_r($exist_pass);
-		  // echo '</pre>';
-		 //  exit();
+			        echo '<pre>';
+		  print_r($exist_pass);
+		  echo '</pre>';
+		   exit();
 				 //print_r($exist_pass); 
 			  //var_dump($pass_data['crnt_password']);die();   
 			 
