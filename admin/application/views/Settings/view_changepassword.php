@@ -39,7 +39,7 @@
               <h4>Change Password</h4>
               <p>Your password must have a minimum of 6 characters. We recommend you <br>
   choose an alphanumeric password:::<?php  echo $_SESSION['data'];  ?></p>
-              <form method="post" action="Settings_ctrl/update_password">    <!--login/update_password id="password_form"-->
+              <form method="post" action="login/update_password" id="password_form">    <!--login/update_password id="password_form"-->
               <div class="wed-setting-inner">
               <input type="hidden" name="uid" value="<?php echo $_SESSION['data']; ?>">
                 <input class="form-control" type="password" placeholder="Current Password" name="crnt_password"><br>
@@ -64,7 +64,7 @@
    <!-- /.content -->
 </div>
 <script>
-/*
+/**/
  $(".change_password").click(function() {
         if($('#password_form').parsley().validate()) {
           var value =$("#password_form").serialize();
@@ -96,7 +96,7 @@
     });
   }
 
-*/
+
 
 
 </script>
