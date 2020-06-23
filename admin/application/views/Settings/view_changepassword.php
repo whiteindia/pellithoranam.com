@@ -81,13 +81,12 @@
     $.ajax({
       type: "POST",
       url: base_url+'settings_ctrl/'+link,
-  //  url:'<?php echo base_url()."Settings_ctrl/update_password"; ?>',
+  //  url:'< echo base_url()."Settings_ctrl/update_password"; ?>',
       data: value,
       cache: false,
       error: function (err) {
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
       },
-      console.log(value);
       success: function(datas){
           data1 = JSON.parse(datas);
           $("."+msg_class).html("");
