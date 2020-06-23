@@ -1,12 +1,12 @@
 <script src="../jquery.js" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js"></script>
-<head>
+
    <style>
    input.parsley-error, select.parsley-error, textarea.parsley-error {
       width:100% !important;
    }
    </style>
-</head>
+<!--<head></head>-->
 <div class="content-wrapper">
    <!-- Content Header (Page header) -->
    <section class="content-header">
