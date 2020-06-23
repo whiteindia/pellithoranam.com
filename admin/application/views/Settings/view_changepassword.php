@@ -70,7 +70,7 @@
           var value =$("#password_form").serialize();
           var link = "update_password"; 
           var msg_class = "change_pass_msg";
-          console.log(link);
+          console.log(value);
           runSettingsRequest(link,value,msg_class);
         }
     });
