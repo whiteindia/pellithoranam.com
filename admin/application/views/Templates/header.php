@@ -55,6 +55,11 @@ $settings = get_settings();
 
     <script src="<?php echo base_url();?>/assets/js/jquery.min.js"></script>    
     <link href="<?php echo base_url();?>assets/parsley/parsley.css" rel="stylesheet">
+    <style>
+   input.parsley-error, select.parsley-error, textarea.parsley-error {
+      width:100% !important;
+   }
+   </style>
   </head>
 
    <body class="hold-transition skin-red sidebar-mini">
