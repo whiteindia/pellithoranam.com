@@ -87,6 +87,7 @@
       error: function (err) {
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
       },
+      console.log(value);
       success: function(datas){
           data1 = JSON.parse(datas);
           $("."+msg_class).html("");
