@@ -79,7 +79,7 @@
           </div>
           <div class="wed-cpy">
             This website is strictly for matrimonial purpose only and not a dating website.<br>
-            Copyright © <?php echo date("Y"); ?><b> Pellithoranam</b>
+            Copyright © <?php echo date("Y"); ?><b> Pellithoranam</b> <p>Developed & Maintained By: <a href="https://www.whiteindia.in" target="_blank">Whiteindia</a></p>
           <div class="wed-footer-right">
             <span><img src="<?php echo base_url(); ?>assets/images/fb.png"></span>
             <span><img src="<?php echo base_url(); ?>assets/images/twit.png"></span>
