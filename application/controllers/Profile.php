@@ -1004,6 +1004,10 @@ public function upload_photo() {
 
 
 	public function send_mail() {
+		ini_set('display_errors', 1);
+		ini_set('display_startup_errors', 1);
+		error_reporting(E_ALL);
+
 		if($this->session->userdata('logged_in')) {
 			if($_POST) {
 			$my_matr_id = $this->session->userdata('logged_in');
