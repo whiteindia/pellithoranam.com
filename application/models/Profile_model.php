@@ -467,7 +467,7 @@ return $all_membs;
         }
     }
     function do_delete_sent_mail($matr_id,$intrst_count){
-      $intrst_count = $intrst_count-1;
+      $intrst_count = (int)$intrst_count-1;
       $this->db->where('matrimony_id',$matr_id);
       $this->db->set('total_sendmail', $intrst_count);
       $this->db->update('membership_details');
