@@ -71,7 +71,7 @@
           var link = "update_password"; 
           var msg_class = "change_pass_msg";
           console.log(value);
-          runSettingsRequest(link,value,msg_class);
+          console.log(runSettingsRequest(link,value,msg_class));
         }
     });
 
