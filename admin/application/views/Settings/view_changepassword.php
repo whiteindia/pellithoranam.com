@@ -79,8 +79,8 @@
   function runSettingsRequest(link,value,msg_class) {
     $.ajax({
       type: "POST",
-    //  url: base_url+'settings/'+link,
-    url:'<?php echo base_url()."Settings_ctrl/update_password"; ?>',
+      url: base_url+'settings_ctrl/'+link,
+  //  url:'<?php echo base_url()."Settings_ctrl/update_password"; ?>',
       data: value,
       cache: false,
       error: function (err) {
