@@ -1525,8 +1525,8 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 	}
 	public function sent_mobile_msg($mob,$msg){
 	  // Account details
-	  echo $mob;
-	  echo '**-'.$msg;
+	//  echo $mob;
+	//  echo '**-'.$msg;
 	    $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
 	    //echo $msg;
 	    // Message details
@@ -1546,7 +1546,7 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 	    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$response = curl_exec($ch);
-		echo $response;
+		//echo $response;
 	    curl_close($ch);
 	    
 	    // Process your response here
