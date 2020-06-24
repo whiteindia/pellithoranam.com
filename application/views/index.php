@@ -111,7 +111,7 @@ By using or accessing the PT services, you agree to be bound by all the terms an
     c.    PT membership is restricted strictly to the individual member only. Organizations, companies, businesses and/or individuals carrying on similar or competitive business cannot become members of PT and nor use the PT service or PT members data for any commercial purpose and PT reserves its right  to initiate appropriate legal action for breach of these obligation/conditions.
 
  
-
+    d.    The company (Pellithoranam.com) will be sending messages related promotional , marketing and transactional through email, calls and phones.
  
 
 Disclaimer:
