@@ -1517,7 +1517,7 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 		$my_matr_id = $this->session->userdata('logged_in');
 		$do_delete_sent_mail = $this->Profile_model->do_delete_sent_sms($my_matr_id->matrimony_id);
 		$result_array['type'] = 'success';
-		$result_array['msg'] = 'Sms Sent Successfully.'.$rcal;
+		$result_array['msg'] = 'Sms Sent Successfully.r-'.$rcal;
 		//$result_array['sms'] = $sms_contnet;
 		echo json_encode($result_array);
 		exit;
