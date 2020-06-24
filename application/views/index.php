@@ -33,7 +33,7 @@
 	  	<!-- TERMS AND CONDITION -->
 
       <div class="modal fade wed-add-modal" id="tc" role="dialog">
-        <div class="modal-dialog wed-add-modal-dialogue">
+        <div class="modal-dialog modal-lg wed-add-modal-dialogue">
           <div class="modal-content wed-add-modal-content">
             <div class="modal-body  wed-add-modal-body">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
