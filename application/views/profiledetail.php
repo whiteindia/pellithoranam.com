@@ -1298,7 +1298,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
            <!--    <p>Enter your message</p> -->
             <div class="wed-add-modal-footer">
 
-                <textarea rows="4" cols="50" name="mail_content" readonly>I am <?php echo $sess->profile_name; ?> (<?php echo $sess->matrimony_id; ?>) from Pellithoranam.com ph:<?php echo $sess->phone; ?> i would like to reach out to you.please share your contact details</textarea><br/>
+                <textarea rows="4" cols="50" name="mail_content" readonly>I am <?php echo $sess->profile_name; ?> ( <?php echo $sess->matrimony_id; ?>) from Pellithoranam.com ph:<?php echo $sess->phone; ?> i would like to reach out to you.please share your contact details</textarea><br/>
                 <input type="hidden" name="to_id" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <input type="hidden" name="from_id" value="<?php echo $sess->matrimony_id; ?>">
                 <input type="hidden" name="mob_num" value="<?php echo $profile[0]->phone; ?>">
