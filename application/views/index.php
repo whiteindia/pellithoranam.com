@@ -39,156 +39,280 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4>Terms & Conditions</h4>
               <p class="tc-scroll">Terms and Conditions governing usage of Matrimony sites [Applicable for All Services]
-              DEAR USER:
-              The Pellithoranam is a sole proprietary firm having its registered office in Pragathi Nagar, Hyderabad. and have website in the by name and style of www.pellithoranam.com (herein after wards the Pellithoranam called as PT)
+              <p>&nbsp;&nbsp;DEAR&nbsp;USER:</p>
 
-The PT humbly requests please read the following terms and conditions very carefully as you use website and are subject to acceptance and compliance with terms and conditions including and amended/modified/changed from time to time without prior notice.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;Pellithoranam&nbsp;is&nbsp;a&nbsp;sole&nbsp;proprietary&nbsp;firm&nbsp;having&nbsp;its&nbsp;registered&nbsp;office&nbsp;in&nbsp;Pragathi&nbsp;Nagar,&nbsp;Hyderabad.&nbsp;and&nbsp;have&nbsp;website&nbsp;in&nbsp;the&nbsp;by&nbsp;name&nbsp;and&nbsp;style&nbsp;of&nbsp;www.pellithoranam.com&nbsp;(herein&nbsp;after&nbsp;wards&nbsp;the&nbsp;Pellithoranam&nbsp;called&nbsp;as&nbsp;PT)</p>
 
-Using the website shows you are agreeing to all the terms and conditions herein. SO READ THE TERMS AND CONDITIONS CAREFULLY BEFORE PROCEEDING. IF YOU PROCEED, ACCEPTED THE TERMS AND CONDITIONS BY EXPRESS OR IMPLIED MANNER BY USING THE WEBSITE. IF YOU DO NOT WANT TO BE BOUND BY THE TERMS AND CONDITIONS YOU MUST NOT USE THE WEBSITE.
+<p>&nbsp;</p>
 
-2.  It acts as a platform to enable any person/individual to themselves register as member by providing requisite information, and to voluntarily search for profile(s) from the website. Already registered users for seeking prospective lawful marriages alliances for themselves. PT help desk may also be able to assist you to create your profile, and also to update. But the member/interested person must have a valid/operational mobile/ phone number and an email id, photo, address proof, date of birth, and phone verification is compulsory.
+<p>The&nbsp;PT&nbsp;humbly&nbsp;requests&nbsp;please&nbsp;read&nbsp;the&nbsp;following&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;very&nbsp;carefully&nbsp;as&nbsp;you&nbsp;use&nbsp;website&nbsp;and&nbsp;are&nbsp;subject&nbsp;to&nbsp;acceptance&nbsp;and&nbsp;compliance&nbsp;with&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;including&nbsp;and&nbsp;amended/modified/changed&nbsp;from&nbsp;time&nbsp;to&nbsp;time&nbsp;without&nbsp;prior&nbsp;notice.</p>
 
- 
+<p>&nbsp;</p>
 
-3.    The profiles in the database/website of PT are classified broadly on the basis of language and region for the ease and convenience of its member/customer. PT members are provided with free/paid access for searching profiles from the website of PT as per the partner preference set by you and you shortlist the prospective alliances yourself. The search for prospective alliance is depends caste wise, age, and district wise and inter-caste also. Membership is guided by the terms and conditions mentioned herein below
+<p>Using&nbsp;the&nbsp;website&nbsp;shows&nbsp;you&nbsp;are&nbsp;agreeing&nbsp;to&nbsp;all&nbsp;the&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;herein.&nbsp;SO&nbsp;READ&nbsp;THE&nbsp;TERMS&nbsp;AND&nbsp;CONDITIONS&nbsp;CAREFULLY&nbsp;BEFORE&nbsp;PROCEEDING.&nbsp;IF&nbsp;YOU&nbsp;PROCEED,&nbsp;ACCEPTED&nbsp;THE&nbsp;TERMS&nbsp;AND&nbsp;CONDITIONS&nbsp;BY&nbsp;EXPRESS&nbsp;OR&nbsp;IMPLIED&nbsp;MANNER&nbsp;BY&nbsp;USING&nbsp;THE&nbsp;WEBSITE.&nbsp;IF&nbsp;YOU&nbsp;DO&nbsp;NOT&nbsp;WANT&nbsp;TO&nbsp;BE&nbsp;BOUND&nbsp;BY&nbsp;THE&nbsp;TERMS&nbsp;AND&nbsp;CONDITIONS&nbsp;YOU&nbsp;MUST&nbsp;NOT&nbsp;USE&nbsp;THE&nbsp;WEBSITE.</p>
 
- 
+<p>&nbsp;</p>
 
-By using or accessing the PT services, you agree to be bound by all the terms and conditions (agreement). PT do not authenticate/guarantee any information of any profile is genuine and hence you as a user/member need to verify the credentials and information provided by other users/members.
+<p>2.&nbsp;&nbsp;It&nbsp;acts&nbsp;as&nbsp;a&nbsp;platform&nbsp;to&nbsp;enable&nbsp;any&nbsp;person/individual&nbsp;to&nbsp;themselves&nbsp;register&nbsp;as&nbsp;member&nbsp;by&nbsp;providing&nbsp;requisite&nbsp;information,&nbsp;and&nbsp;to&nbsp;voluntarily&nbsp;search&nbsp;for&nbsp;profile(s)&nbsp;from&nbsp;the&nbsp;website.&nbsp;Already&nbsp;registered&nbsp;users&nbsp;for&nbsp;seeking&nbsp;prospective&nbsp;lawful&nbsp;marriages&nbsp;alliances&nbsp;for&nbsp;themselves.&nbsp;PT&nbsp;help&nbsp;desk&nbsp;may&nbsp;also&nbsp;be&nbsp;able&nbsp;to&nbsp;assist&nbsp;you&nbsp;to&nbsp;create&nbsp;your&nbsp;profile,&nbsp;and&nbsp;also&nbsp;to&nbsp;update.&nbsp;But&nbsp;the&nbsp;member/interested&nbsp;person&nbsp;must&nbsp;have&nbsp;a&nbsp;valid/operational&nbsp;mobile/&nbsp;phone&nbsp;number&nbsp;and&nbsp;an&nbsp;email&nbsp;id,&nbsp;photo,&nbsp;address&nbsp;proof,&nbsp;date&nbsp;of&nbsp;birth,&nbsp;and&nbsp;phone&nbsp;verification&nbsp;is&nbsp;compulsory.</p>
 
- 
+<p>&nbsp;</p>
 
-4. Eligibility:
+<p>&nbsp;</p>
 
-    a.    PT membership and rights of admission is reserved solely for;-
+<p>&nbsp;</p>
 
-        The   below mentioned are citizens of India;
+<p>3.&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;profiles&nbsp;in&nbsp;the&nbsp;database/website&nbsp;of&nbsp;PT&nbsp;are&nbsp;classified&nbsp;broadly&nbsp;on&nbsp;the&nbsp;basis&nbsp;of&nbsp;language&nbsp;and&nbsp;region&nbsp;for&nbsp;the&nbsp;ease&nbsp;and&nbsp;convenience&nbsp;of&nbsp;its&nbsp;member/customer.&nbsp;PT&nbsp;members&nbsp;are&nbsp;provided&nbsp;with&nbsp;free/paid&nbsp;access&nbsp;for&nbsp;searching&nbsp;profiles&nbsp;from&nbsp;the&nbsp;website&nbsp;of&nbsp;PT&nbsp;as&nbsp;per&nbsp;the&nbsp;partner&nbsp;preference&nbsp;set&nbsp;by&nbsp;you&nbsp;and&nbsp;you&nbsp;shortlist&nbsp;the&nbsp;prospective&nbsp;alliances&nbsp;yourself.&nbsp;The&nbsp;search&nbsp;for&nbsp;prospective&nbsp;alliance&nbsp;is&nbsp;depends&nbsp;caste&nbsp;wise,&nbsp;age,&nbsp;and&nbsp;district&nbsp;wise&nbsp;and&nbsp;inter-caste&nbsp;also.&nbsp;Membership&nbsp;is&nbsp;guided&nbsp;by&nbsp;the&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;mentioned&nbsp;herein&nbsp;below</p>
 
-        i.    Who is born in the territory of India.
+<p>&nbsp;</p>
 
-        ii.    Either of whose parents was born in the territory of me.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;</p>
 
-        iii.    Who has been ordinarily resident in the ‘territory’ of India for not less than five years immediately preceding such commitment.
+<p>By&nbsp;using&nbsp;or&nbsp;accessing&nbsp;the&nbsp;PT&nbsp;services,&nbsp;you&nbsp;agree&nbsp;to&nbsp;be&nbsp;bound&nbsp;by&nbsp;all&nbsp;the&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;(agreement).&nbsp;PT&nbsp;do&nbsp;not&nbsp;authenticate/guarantee&nbsp;any&nbsp;information&nbsp;of&nbsp;any&nbsp;profile&nbsp;is&nbsp;genuine&nbsp;and&nbsp;hence&nbsp;you&nbsp;as&nbsp;a&nbsp;user/member&nbsp;need&nbsp;to&nbsp;verify&nbsp;the&nbsp;credentials&nbsp;and&nbsp;information&nbsp;provided&nbsp;by&nbsp;other&nbsp;users/members.</p>
 
- 
+<p>&nbsp;</p>
 
-    b.    In respect of citizen ship issue, the law of land for the time being in force is applicable.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;</p>
 
- 
+<p>4.&nbsp;Eligibility:</p>
 
-        The person who wants to join as member must require/ full fill the following conditions.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;a.&nbsp;&nbsp;&nbsp;&nbsp;PT&nbsp;membership&nbsp;and&nbsp;rights&nbsp;of&nbsp;admission&nbsp;is&nbsp;reserved&nbsp;solely&nbsp;for;-</p>
 
-        i.    A major, 18 years is to be completed for female and 21 year is to be completed for male person as per the applicable Indian Law.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;&nbsp;&nbsp;below&nbsp;mentioned&nbsp;are&nbsp;citizens&nbsp;of&nbsp;India;</p>
 
-        ii.    Legally competent to marry as per the law applicable to member and in case of divorcee he/she has to submit divorcee papers which were obtained from the competent court of law or any authority which is approved and the recognized by the State Govt.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;Who&nbsp;is&nbsp;born&nbsp;in&nbsp;the&nbsp;territory&nbsp;of&nbsp;India.</p>
 
-        iii.    Not disqualified by any applicable law for the time being in force from entering into a valid marriage.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;&nbsp;Either&nbsp;of&nbsp;whose&nbsp;parents&nbsp;was&nbsp;born&nbsp;in&nbsp;the&nbsp;territory&nbsp;of&nbsp;me.</p>
 
-5. Registration:
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;</p>
 
-    a.    The company (PT) we expect that you would complete the online registration process with fairness and honesty while uploading your personal information’s in PT/Website. We should ensure that efficient and effective match making through our website depend upon yourself furnishing true, accurate, current, complete information and photos etc. We expect you to read the relevant columns before keying/uploading/typing the details or selecting the option available or uploading the photo you are requested not to keeping key in details of the profile in filed other than the applicable filed (including mentioning id’s of other platforms/websites /applications) or repeating your details in another fields after filling them once in the relevant fields or others photographs. You further undertake that you alone shall be responsible or liable for any information provided to PT/Website. In order to serve you better if PT requires additional details you agree to provide it. PT/Website shall reproduce the registered member details on “as on that date” basis to other registered members and PT members shall be solely liable for the information given by such PT member. You may also give a missed call to help-desk phone number service phone numbers for us to call you back and assist you in getting your profile registered on our website.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.&nbsp;&nbsp;&nbsp;&nbsp;Who&nbsp;has&nbsp;been&nbsp;ordinarily&nbsp;resident&nbsp;in&nbsp;the&nbsp;&lsquo;territory&rsquo;&nbsp;of&nbsp;India&nbsp;for&nbsp;not&nbsp;less&nbsp;than&nbsp;five&nbsp;years&nbsp;immediately&nbsp;preceding&nbsp;such&nbsp;commitment.</p>
 
-    b.    If at any point of time PT/website comes to know or is so informed by third party or has reasons to believe that any information provided by you for registration (including photos) or otherwise is found to be untrue, inaccurate, or incomplete then PT/website shall have full right to suspend or terminate without any notice your PT membership and forfeit any amount paid by you towards PT membership fee and reserve the right to refuse to provide PT service to you thereafter.
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;</p>
 
-    c.    PT membership is restricted strictly to the individual member only. Organizations, companies, businesses and/or individuals carrying on similar or competitive business cannot become members of PT and nor use the PT service or PT members data for any commercial purpose and PT reserves its right  to initiate appropriate legal action for breach of these obligation/conditions.
+<p>&nbsp;</p>
 
- 
-    d.    The company (Pellithoranam.com) will be sending messages related promotional , marketing and transactional through email, calls and phones.
- 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;b.&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;respect&nbsp;of&nbsp;citizen&nbsp;ship&nbsp;issue,&nbsp;the&nbsp;law&nbsp;of&nbsp;land&nbsp;for&nbsp;the&nbsp;time&nbsp;being&nbsp;in&nbsp;force&nbsp;is&nbsp;applicable.</p>
 
-Disclaimer:
+<p>&nbsp;</p>
 
-a.       Your access to and use of the PT services or any content is at your own risk. YouUNDERSTAND AND AGREE THAT THE PT SERVICES ARE PROVIDED TO YOU ON AN “AS IS” AND “AS AVAILABLE “ BASIS. WITHOUT LIMITING THE FOREGOING TO THE FULL EXTENT PERMITTED BY LAW, PT/WEBSITE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, OF MERCHANT-ABILITY, and FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT
+<p>&nbsp;</p>
 
-b.      PT/website does not give any implied or explicit guarantee or warranty of marriage or alliance by you choosing to register on our website and using PT services (both paid and free).
+<p>&nbsp;</p>
 
-c.       Notwithstanding anything contrary contained anywhere, under no circumstances, PT/website shall be held responsible or liable whatsoever or howsoever, arising out of, relating to or connected with;
+<p>&nbsp;</p>
 
-        I.            Any untrue or incorrect information submitted by you or on your behalf;
+<p>&nbsp;</p>
 
-      II.            Any decision taken by you or on your behalf or any consequences thereof, based on any information provided by any other user (including suspension/deletion of the profile from PT);
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;person&nbsp;who&nbsp;wants&nbsp;to&nbsp;join&nbsp;as&nbsp;member&nbsp;must&nbsp;require/&nbsp;full&nbsp;fill&nbsp;the&nbsp;following&nbsp;conditions.</p>
 
-    III.            Any unauthorized or illegal act done by any third party relating to or connected with any information submitted by you or on your behalf;
+<p>&nbsp;</p>
 
-    IV.            Any cyber-crime attempted or committed by anyone and
+<p>&nbsp;</p>
 
-      V.            Any incident of force-majeure or act of god;
+<p>&nbsp;</p>
 
-    VI.            Any issue already stated in these terms and conditions including limitation of liability clause of these terms and conditions;
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;major,&nbsp;18&nbsp;years&nbsp;is&nbsp;to&nbsp;be&nbsp;completed&nbsp;for&nbsp;female&nbsp;and&nbsp;21&nbsp;year&nbsp;is&nbsp;to&nbsp;be&nbsp;completed&nbsp;for&nbsp;male&nbsp;person&nbsp;as&nbsp;per&nbsp;the&nbsp;applicable&nbsp;Indian&nbsp;Law.</p>
 
-  VII.            PT members are requested to exercise due care and caution while shortlisting the prospect and satisfy themselves before making a choice of your match through adequate efforts, initiatives and due diligence. PT/website will not be liable for any damages of any kind arising from the use of this website, including, but not limited to direct, indirect, incidental, punitive, and consequential damages.
+<p>&nbsp;</p>
 
-VIII.            PT/website shall not be liable for the outcome of during any interaction in a meeting, call, sms, chat, email or social media posts at any point of time. You expressly agree that use of this website is at your sole risk.
+<p>&nbsp;</p>
 
-Indemnity:
+<p>&nbsp;</p>
 
-By using our PT services you agree to defend, indemnify, and hold harmless PT/website its subsidiaries, affiliates, directors, officers, agents and other partners and employees, fully indemnified and harmless from any loss, damage, liability, claim, or demand, including reasonable attorney’s fees, made by any person through improper use of the service provided by PT/website. This defense and indemnification obligation will survive in perpetuity.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;&nbsp;Legally&nbsp;competent&nbsp;to&nbsp;marry&nbsp;as&nbsp;per&nbsp;the&nbsp;law&nbsp;applicable&nbsp;to&nbsp;member&nbsp;and&nbsp;in&nbsp;case&nbsp;of&nbsp;divorcee&nbsp;he/she&nbsp;has&nbsp;to&nbsp;submit&nbsp;divorcee&nbsp;papers&nbsp;which&nbsp;were&nbsp;obtained&nbsp;from&nbsp;the&nbsp;competent&nbsp;court&nbsp;of&nbsp;law&nbsp;or&nbsp;any&nbsp;authority&nbsp;which&nbsp;is&nbsp;approved&nbsp;and&nbsp;the&nbsp;recognized&nbsp;by&nbsp;the&nbsp;State&nbsp;Govt.</p>
 
-Breach:
+<p>&nbsp;</p>
 
-a.       You agree that if we receive  feedback/complaints against your profile in relation to the facts that you are seeking physical/financial favors from our other registered members or have provided incorrect information on our website or committed any unlawful/illegal activities through the use of our website  or created a profile on our website by impersonation / fake/bogus/false/misrepresentation/without consent of the person whose profile is being registered or use only part information including using photo of third parties without the permission of such third parties or act with other members/employees in indecent/improper manner, then we PT/website in good faith reserve our right to suspend/delete your profile at our sole discretion without any notice to you, we also reserve to stop all PT services to you and take any action as mentioned in clause 2(b) of the terms and conditions.
+<p>&nbsp;</p>
 
-b.      PT/website reserves the right to forthwith terminate your PT membership, block/delete your profile and forfeit entire amount paid as membership fee; if at any time PT/website, in its sole discretion, is of the opinion or has any reason to believe that, you have violated these terms and conditions of use. We also reserve our right to file appropriate police complaint against you, if the breach of these terms and conditions is/are criminal in nature.
+<p>&nbsp;</p>
 
-Termination:
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.&nbsp;&nbsp;&nbsp;&nbsp;Not&nbsp;disqualified&nbsp;by&nbsp;any&nbsp;applicable&nbsp;law&nbsp;for&nbsp;the&nbsp;time&nbsp;being&nbsp;in&nbsp;force&nbsp;from&nbsp;entering&nbsp;into&nbsp;a&nbsp;valid&nbsp;marriage.</p>
 
-a.       All PT paid package users can renew the paid package to carry forward the un-used contacts (mobile No. viewing and SMS).
+<p>&nbsp;</p>
 
-b.      The payments made by PT member to PT/website by way of registration/membership/renewal fee/ auto renewal is/are treated as non-refundable. Payment once made for PT service cannot be assigned to any person/party or adjusted towards any other product or packages provided by PT.
+<p>&nbsp;</p>
 
-c.       PT members cannot put the paid PT service on hold even temporarily, for any reason whatsoever. For an every registered member from the date of issuing GST invoice in token receipt of payment by the member is to be taken into consideration and from that day to 120 days is the tenure period for every member.
+<p>&nbsp;</p>
 
- 
+<p>5.&nbsp;Registration:</p>
 
- 
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;</p>
 
- 
+<p>&nbsp;</p>
 
-Jurisdiction and applicable law:
+<p>&nbsp;&nbsp;&nbsp;&nbsp;a.&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;company&nbsp;(PT)&nbsp;we&nbsp;expect&nbsp;that&nbsp;you&nbsp;would&nbsp;complete&nbsp;the&nbsp;online&nbsp;registration&nbsp;process&nbsp;with&nbsp;fairness&nbsp;and&nbsp;honesty&nbsp;while&nbsp;uploading&nbsp;your&nbsp;personal&nbsp;information&rsquo;s&nbsp;in&nbsp;PT/Website.&nbsp;We&nbsp;should&nbsp;ensure&nbsp;that&nbsp;efficient&nbsp;and&nbsp;effective&nbsp;match&nbsp;making&nbsp;through&nbsp;our&nbsp;website&nbsp;depend&nbsp;upon&nbsp;yourself&nbsp;furnishing&nbsp;true,&nbsp;accurate,&nbsp;current,&nbsp;complete&nbsp;information&nbsp;and&nbsp;photos&nbsp;etc.&nbsp;We&nbsp;expect&nbsp;you&nbsp;to&nbsp;read&nbsp;the&nbsp;relevant&nbsp;columns&nbsp;before&nbsp;keying/uploading/typing&nbsp;the&nbsp;details&nbsp;or&nbsp;selecting&nbsp;the&nbsp;option&nbsp;available&nbsp;or&nbsp;uploading&nbsp;the&nbsp;photo&nbsp;you&nbsp;are&nbsp;requested&nbsp;not&nbsp;to&nbsp;keeping&nbsp;key&nbsp;in&nbsp;details&nbsp;of&nbsp;the&nbsp;profile&nbsp;in&nbsp;filed&nbsp;other&nbsp;than&nbsp;the&nbsp;applicable&nbsp;filed&nbsp;(including&nbsp;mentioning&nbsp;id&rsquo;s&nbsp;of&nbsp;other&nbsp;platforms/websites&nbsp;/applications)&nbsp;or&nbsp;repeating&nbsp;your&nbsp;details&nbsp;in&nbsp;another&nbsp;fields&nbsp;after&nbsp;filling&nbsp;them&nbsp;once&nbsp;in&nbsp;the&nbsp;relevant&nbsp;fields&nbsp;or&nbsp;others&nbsp;photographs.&nbsp;You&nbsp;further&nbsp;undertake&nbsp;that&nbsp;you&nbsp;alone&nbsp;shall&nbsp;be&nbsp;responsible&nbsp;or&nbsp;liable&nbsp;for&nbsp;any&nbsp;information&nbsp;provided&nbsp;to&nbsp;PT/Website.&nbsp;In&nbsp;order&nbsp;to&nbsp;serve&nbsp;you&nbsp;better&nbsp;if&nbsp;PT&nbsp;requires&nbsp;additional&nbsp;details&nbsp;you&nbsp;agree&nbsp;to&nbsp;provide&nbsp;it.&nbsp;PT/Website&nbsp;shall&nbsp;reproduce&nbsp;the&nbsp;registered&nbsp;member&nbsp;details&nbsp;on&nbsp;&ldquo;as&nbsp;on&nbsp;that&nbsp;date&rdquo;&nbsp;basis&nbsp;to&nbsp;other&nbsp;registered&nbsp;members&nbsp;and&nbsp;PT&nbsp;members&nbsp;shall&nbsp;be&nbsp;solely&nbsp;liable&nbsp;for&nbsp;the&nbsp;information&nbsp;given&nbsp;by&nbsp;such&nbsp;PT&nbsp;member.&nbsp;You&nbsp;may&nbsp;also&nbsp;give&nbsp;a&nbsp;missed&nbsp;call&nbsp;to&nbsp;help-desk&nbsp;phone&nbsp;number&nbsp;service&nbsp;phone&nbsp;numbers&nbsp;for&nbsp;us&nbsp;to&nbsp;call&nbsp;you&nbsp;back&nbsp;and&nbsp;assist&nbsp;you&nbsp;in&nbsp;getting&nbsp;your&nbsp;profile&nbsp;registered&nbsp;on&nbsp;our&nbsp;website.</p>
 
-a.       The registration of PT membership and all PT services/website are deemed to have been entered into within the territorial jurisdiction of Hyderabad, Telangana, India.
+<p>&nbsp;</p>
 
-b.      The PT members unconditionally agree that all such disputes and/or differences if any shall be governed by the laws of India and submitting to the exclusive jurisdiction of appropriate court of law in Hyderabad, Telangana, India.
+<p>&nbsp;</p>
 
-c.       You hereby, unconditionally and irrevocably confirm that you have read terms and conditions and agree to abide by them and the information provided by you is true and correct.
+<p>&nbsp;</p>
 
-Privacy Policy:
+<p>&nbsp;&nbsp;&nbsp;&nbsp;b.&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;at&nbsp;any&nbsp;point&nbsp;of&nbsp;time&nbsp;PT/website&nbsp;comes&nbsp;to&nbsp;know&nbsp;or&nbsp;is&nbsp;so&nbsp;informed&nbsp;by&nbsp;third&nbsp;party&nbsp;or&nbsp;has&nbsp;reasons&nbsp;to&nbsp;believe&nbsp;that&nbsp;any&nbsp;information&nbsp;provided&nbsp;by&nbsp;you&nbsp;for&nbsp;registration&nbsp;(including&nbsp;photos)&nbsp;or&nbsp;otherwise&nbsp;is&nbsp;found&nbsp;to&nbsp;be&nbsp;untrue,&nbsp;inaccurate,&nbsp;or&nbsp;incomplete&nbsp;then&nbsp;PT/website&nbsp;shall&nbsp;have&nbsp;full&nbsp;right&nbsp;to&nbsp;suspend&nbsp;or&nbsp;terminate&nbsp;without&nbsp;any&nbsp;notice&nbsp;your&nbsp;PT&nbsp;membership&nbsp;and&nbsp;forfeit&nbsp;any&nbsp;amount&nbsp;paid&nbsp;by&nbsp;you&nbsp;towards&nbsp;PT&nbsp;membership&nbsp;fee&nbsp;and&nbsp;reserve&nbsp;the&nbsp;right&nbsp;to&nbsp;refuse&nbsp;to&nbsp;provide&nbsp;PT&nbsp;service&nbsp;to&nbsp;you&nbsp;thereafter.</p>
 
-a.       Pellithoranam is an online marriages portal endeavoring constantly to provide you with marriages services. Since we are strongly committed to your right to privacy, we have drawn out a privacy statement with regard to the information we collect from you. You acknowledge that you are disclosing information voluntarily. By using the website and/or by providing your information, you consent to the collection and use of the information you disclose on the website in accordance with the privacy policy. If you do not agree for use of your information, please do not use or access this website.
+<p>&nbsp;</p>
 
-b.      The information  we gather from members and visitors who apply for  the various services our site offers includes, but may not be limited to, email address, name, date of birth, educational qualifications a user-specified pass word, mailing address, zip/pin code and telephone/mobile number.
+<p>&nbsp;</p>
 
-c.       Any information you give us is held with the utmost care and security. We are also bound to cooperate fully should a situation arise where we are required by law or legal process to provide information about a customer/visitor/member.
+<p>&nbsp;</p>
 
-d.      The members are requested to login to the relevant pages for un-subscription.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;c.&nbsp;&nbsp;&nbsp;&nbsp;PT&nbsp;membership&nbsp;is&nbsp;restricted&nbsp;strictly&nbsp;to&nbsp;the&nbsp;individual&nbsp;member&nbsp;only.&nbsp;Organizations,&nbsp;companies,&nbsp;businesses&nbsp;and/or&nbsp;individuals&nbsp;carrying&nbsp;on&nbsp;similar&nbsp;or&nbsp;competitive&nbsp;business&nbsp;cannot&nbsp;become&nbsp;members&nbsp;of&nbsp;PT&nbsp;and&nbsp;nor&nbsp;use&nbsp;the&nbsp;PT&nbsp;service&nbsp;or&nbsp;PT&nbsp;members&nbsp;data&nbsp;for&nbsp;any&nbsp;commercial&nbsp;purpose&nbsp;and&nbsp;PT&nbsp;reserves&nbsp;its&nbsp;right&nbsp;&nbsp;to&nbsp;initiate&nbsp;appropriate&nbsp;legal&nbsp;action&nbsp;for&nbsp;breach&nbsp;of&nbsp;these&nbsp;obligation/conditions.</p>
 
-e.      As a paid member of this site, you have the privilege to contact number of profiles. However, there is a specified un-limited message per day due to fair online usage policy.
+<p>&nbsp;</p>
 
-f.        We may change this privacy policy without notice from time to time based on your comments or as a result of a change of policy in our company.
+<p>&nbsp;</p>
 
-This document is an electronic record in terms of the information technology Act, 2000 and rules there under pertaining to electronic records as applicable and amended. This electronic record is generated by a computer system and does not require any physical or digital signatures
+<p>&nbsp;&nbsp;&nbsp;&nbsp;d.&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;company&nbsp;(Pellithoranam.com)&nbsp;will&nbsp;be&nbsp;sending&nbsp;messages&nbsp;related&nbsp;promotional&nbsp;,&nbsp;marketing&nbsp;and&nbsp;transactional&nbsp;through&nbsp;email,&nbsp;calls&nbsp;and&nbsp;phones.</p>
 
-NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY BROUGHT TO THE NOTICE OF HELP DESK OR GRIEVANCE OFFICER.
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Disclaimer:</p>
+
+<p>&nbsp;</p>
+
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your&nbsp;access&nbsp;to&nbsp;and&nbsp;use&nbsp;of&nbsp;the&nbsp;PT&nbsp;services&nbsp;or&nbsp;any&nbsp;content&nbsp;is&nbsp;at&nbsp;your&nbsp;own&nbsp;risk.&nbsp;YouUNDERSTAND&nbsp;AND&nbsp;AGREE&nbsp;THAT&nbsp;THE&nbsp;PT&nbsp;SERVICES&nbsp;ARE&nbsp;PROVIDED&nbsp;TO&nbsp;YOU&nbsp;ON&nbsp;AN&nbsp;&ldquo;AS&nbsp;IS&rdquo;&nbsp;AND&nbsp;&ldquo;AS&nbsp;AVAILABLE&nbsp;&ldquo;&nbsp;BASIS.&nbsp;WITHOUT&nbsp;LIMITING&nbsp;THE&nbsp;FOREGOING&nbsp;TO&nbsp;THE&nbsp;FULL&nbsp;EXTENT&nbsp;PERMITTED&nbsp;BY&nbsp;LAW,&nbsp;PT/WEBSITE&nbsp;DISCLAIMS&nbsp;ALL&nbsp;WARRANTIES,&nbsp;EXPRESS&nbsp;OR&nbsp;IMPLIED,&nbsp;OF&nbsp;MERCHANT-ABILITY,&nbsp;and&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE&nbsp;OR&nbsp;NON-INFRINGEMENT</p>
+
+<p>&nbsp;</p>
+
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT/website&nbsp;does&nbsp;not&nbsp;give&nbsp;any&nbsp;implied&nbsp;or&nbsp;explicit&nbsp;guarantee&nbsp;or&nbsp;warranty&nbsp;of&nbsp;marriage&nbsp;or&nbsp;alliance&nbsp;by&nbsp;you&nbsp;choosing&nbsp;to&nbsp;register&nbsp;on&nbsp;our&nbsp;website&nbsp;and&nbsp;using&nbsp;PT&nbsp;services&nbsp;(both&nbsp;paid&nbsp;and&nbsp;free).</p>
+
+<p>&nbsp;</p>
+
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notwithstanding&nbsp;anything&nbsp;contrary&nbsp;contained&nbsp;anywhere,&nbsp;under&nbsp;no&nbsp;circumstances,&nbsp;PT/website&nbsp;shall&nbsp;be&nbsp;held&nbsp;responsible&nbsp;or&nbsp;liable&nbsp;whatsoever&nbsp;or&nbsp;howsoever,&nbsp;arising&nbsp;out&nbsp;of,&nbsp;relating&nbsp;to&nbsp;or&nbsp;connected&nbsp;with;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;untrue&nbsp;or&nbsp;incorrect&nbsp;information&nbsp;submitted&nbsp;by&nbsp;you&nbsp;or&nbsp;on&nbsp;your&nbsp;behalf;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;decision&nbsp;taken&nbsp;by&nbsp;you&nbsp;or&nbsp;on&nbsp;your&nbsp;behalf&nbsp;or&nbsp;any&nbsp;consequences&nbsp;thereof,&nbsp;based&nbsp;on&nbsp;any&nbsp;information&nbsp;provided&nbsp;by&nbsp;any&nbsp;other&nbsp;user&nbsp;(including&nbsp;suspension/deletion&nbsp;of&nbsp;the&nbsp;profile&nbsp;from&nbsp;PT);</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;III.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;unauthorized&nbsp;or&nbsp;illegal&nbsp;act&nbsp;done&nbsp;by&nbsp;any&nbsp;third&nbsp;party&nbsp;relating&nbsp;to&nbsp;or&nbsp;connected&nbsp;with&nbsp;any&nbsp;information&nbsp;submitted&nbsp;by&nbsp;you&nbsp;or&nbsp;on&nbsp;your&nbsp;behalf;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;IV.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;cyber-crime&nbsp;attempted&nbsp;or&nbsp;committed&nbsp;by&nbsp;anyone&nbsp;and</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;incident&nbsp;of&nbsp;force-majeure&nbsp;or&nbsp;act&nbsp;of&nbsp;god;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;VI.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;issue&nbsp;already&nbsp;stated&nbsp;in&nbsp;these&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;including&nbsp;limitation&nbsp;of&nbsp;liability&nbsp;clause&nbsp;of&nbsp;these&nbsp;terms&nbsp;and&nbsp;conditions;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;VII.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT&nbsp;members&nbsp;are&nbsp;requested&nbsp;to&nbsp;exercise&nbsp;due&nbsp;care&nbsp;and&nbsp;caution&nbsp;while&nbsp;shortlisting&nbsp;the&nbsp;prospect&nbsp;and&nbsp;satisfy&nbsp;themselves&nbsp;before&nbsp;making&nbsp;a&nbsp;choice&nbsp;of&nbsp;your&nbsp;match&nbsp;through&nbsp;adequate&nbsp;efforts,&nbsp;initiatives&nbsp;and&nbsp;due&nbsp;diligence.&nbsp;PT/website&nbsp;will&nbsp;not&nbsp;be&nbsp;liable&nbsp;for&nbsp;any&nbsp;damages&nbsp;of&nbsp;any&nbsp;kind&nbsp;arising&nbsp;from&nbsp;the&nbsp;use&nbsp;of&nbsp;this&nbsp;website,&nbsp;including,&nbsp;but&nbsp;not&nbsp;limited&nbsp;to&nbsp;direct,&nbsp;indirect,&nbsp;incidental,&nbsp;punitive,&nbsp;and&nbsp;consequential&nbsp;damages.</p>
+
+<p>&nbsp;</p>
+
+<p>VIII.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT/website&nbsp;shall&nbsp;not&nbsp;be&nbsp;liable&nbsp;for&nbsp;the&nbsp;outcome&nbsp;of&nbsp;during&nbsp;any&nbsp;interaction&nbsp;in&nbsp;a&nbsp;meeting,&nbsp;call,&nbsp;sms,&nbsp;chat,&nbsp;email&nbsp;or&nbsp;social&nbsp;media&nbsp;posts&nbsp;at&nbsp;any&nbsp;point&nbsp;of&nbsp;time.&nbsp;You&nbsp;expressly&nbsp;agree&nbsp;that&nbsp;use&nbsp;of&nbsp;this&nbsp;website&nbsp;is&nbsp;at&nbsp;your&nbsp;sole&nbsp;risk.</p>
+
+<p>&nbsp;</p>
+
+<p>Indemnity:</p>
+
+<p>&nbsp;</p>
+
+<p>By&nbsp;using&nbsp;our&nbsp;PT&nbsp;services&nbsp;you&nbsp;agree&nbsp;to&nbsp;defend,&nbsp;indemnify,&nbsp;and&nbsp;hold&nbsp;harmless&nbsp;PT/website&nbsp;its&nbsp;subsidiaries,&nbsp;affiliates,&nbsp;directors,&nbsp;officers,&nbsp;agents&nbsp;and&nbsp;other&nbsp;partners&nbsp;and&nbsp;employees,&nbsp;fully&nbsp;indemnified&nbsp;and&nbsp;harmless&nbsp;from&nbsp;any&nbsp;loss,&nbsp;damage,&nbsp;liability,&nbsp;claim,&nbsp;or&nbsp;demand,&nbsp;including&nbsp;reasonable&nbsp;attorney&rsquo;s&nbsp;fees,&nbsp;made&nbsp;by&nbsp;any&nbsp;person&nbsp;through&nbsp;improper&nbsp;use&nbsp;of&nbsp;the&nbsp;service&nbsp;provided&nbsp;by&nbsp;PT/website.&nbsp;This&nbsp;defense&nbsp;and&nbsp;indemnification&nbsp;obligation&nbsp;will&nbsp;survive&nbsp;in&nbsp;perpetuity.</p>
+
+<p>&nbsp;</p>
+
+<p>Breach:</p>
+
+<p>&nbsp;</p>
+
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;agree&nbsp;that&nbsp;if&nbsp;we&nbsp;receive&nbsp;&nbsp;feedback/complaints&nbsp;against&nbsp;your&nbsp;profile&nbsp;in&nbsp;relation&nbsp;to&nbsp;the&nbsp;facts&nbsp;that&nbsp;you&nbsp;are&nbsp;seeking&nbsp;physical/financial&nbsp;favors&nbsp;from&nbsp;our&nbsp;other&nbsp;registered&nbsp;members&nbsp;or&nbsp;have&nbsp;provided&nbsp;incorrect&nbsp;information&nbsp;on&nbsp;our&nbsp;website&nbsp;or&nbsp;committed&nbsp;any&nbsp;unlawful/illegal&nbsp;activities&nbsp;through&nbsp;the&nbsp;use&nbsp;of&nbsp;our&nbsp;website&nbsp;&nbsp;or&nbsp;created&nbsp;a&nbsp;profile&nbsp;on&nbsp;our&nbsp;website&nbsp;by&nbsp;impersonation&nbsp;/&nbsp;fake/bogus/false/misrepresentation/without&nbsp;consent&nbsp;of&nbsp;the&nbsp;person&nbsp;whose&nbsp;profile&nbsp;is&nbsp;being&nbsp;registered&nbsp;or&nbsp;use&nbsp;only&nbsp;part&nbsp;information&nbsp;including&nbsp;using&nbsp;photo&nbsp;of&nbsp;third&nbsp;parties&nbsp;without&nbsp;the&nbsp;permission&nbsp;of&nbsp;such&nbsp;third&nbsp;parties&nbsp;or&nbsp;act&nbsp;with&nbsp;other&nbsp;members/employees&nbsp;in&nbsp;indecent/improper&nbsp;manner,&nbsp;then&nbsp;we&nbsp;PT/website&nbsp;in&nbsp;good&nbsp;faith&nbsp;reserve&nbsp;our&nbsp;right&nbsp;to&nbsp;suspend/delete&nbsp;your&nbsp;profile&nbsp;at&nbsp;our&nbsp;sole&nbsp;discretion&nbsp;without&nbsp;any&nbsp;notice&nbsp;to&nbsp;you,&nbsp;we&nbsp;also&nbsp;reserve&nbsp;to&nbsp;stop&nbsp;all&nbsp;PT&nbsp;services&nbsp;to&nbsp;you&nbsp;and&nbsp;take&nbsp;any&nbsp;action&nbsp;as&nbsp;mentioned&nbsp;in&nbsp;clause&nbsp;2(b)&nbsp;of&nbsp;the&nbsp;terms&nbsp;and&nbsp;conditions.</p>
+
+<p>&nbsp;</p>
+
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT/website&nbsp;reserves&nbsp;the&nbsp;right&nbsp;to&nbsp;forthwith&nbsp;terminate&nbsp;your&nbsp;PT&nbsp;membership,&nbsp;block/delete&nbsp;your&nbsp;profile&nbsp;and&nbsp;forfeit&nbsp;entire&nbsp;amount&nbsp;paid&nbsp;as&nbsp;membership&nbsp;fee;&nbsp;if&nbsp;at&nbsp;any&nbsp;time&nbsp;PT/website,&nbsp;in&nbsp;its&nbsp;sole&nbsp;discretion,&nbsp;is&nbsp;of&nbsp;the&nbsp;opinion&nbsp;or&nbsp;has&nbsp;any&nbsp;reason&nbsp;to&nbsp;believe&nbsp;that,&nbsp;you&nbsp;have&nbsp;violated&nbsp;these&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;of&nbsp;use.&nbsp;We&nbsp;also&nbsp;reserve&nbsp;our&nbsp;right&nbsp;to&nbsp;file&nbsp;appropriate&nbsp;police&nbsp;complaint&nbsp;against&nbsp;you,&nbsp;if&nbsp;the&nbsp;breach&nbsp;of&nbsp;these&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;is/are&nbsp;criminal&nbsp;in&nbsp;nature.</p>
+
+<p>&nbsp;</p>
+
+<p>Termination:</p>
+
+<p>&nbsp;</p>
+
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All&nbsp;PT&nbsp;paid&nbsp;package&nbsp;users&nbsp;can&nbsp;renew&nbsp;the&nbsp;paid&nbsp;package&nbsp;to&nbsp;carry&nbsp;forward&nbsp;the&nbsp;un-used&nbsp;contacts&nbsp;(mobile&nbsp;No.&nbsp;viewing&nbsp;and&nbsp;SMS).</p>
+
+<p>&nbsp;</p>
+
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;payments&nbsp;made&nbsp;by&nbsp;PT&nbsp;member&nbsp;to&nbsp;PT/website&nbsp;by&nbsp;way&nbsp;of&nbsp;registration/membership/renewal&nbsp;fee/&nbsp;auto&nbsp;renewal&nbsp;is/are&nbsp;treated&nbsp;as&nbsp;non-refundable.&nbsp;Payment&nbsp;once&nbsp;made&nbsp;for&nbsp;PT&nbsp;service&nbsp;cannot&nbsp;be&nbsp;assigned&nbsp;to&nbsp;any&nbsp;person/party&nbsp;or&nbsp;adjusted&nbsp;towards&nbsp;any&nbsp;other&nbsp;product&nbsp;or&nbsp;packages&nbsp;provided&nbsp;by&nbsp;PT.</p>
+
+<p>&nbsp;</p>
+
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT&nbsp;members&nbsp;cannot&nbsp;put&nbsp;the&nbsp;paid&nbsp;PT&nbsp;service&nbsp;on&nbsp;hold&nbsp;even&nbsp;temporarily,&nbsp;for&nbsp;any&nbsp;reason&nbsp;whatsoever.&nbsp;For&nbsp;an&nbsp;every&nbsp;registered&nbsp;member&nbsp;from&nbsp;the&nbsp;date&nbsp;of&nbsp;issuing&nbsp;GST&nbsp;invoice&nbsp;in&nbsp;token&nbsp;receipt&nbsp;of&nbsp;payment&nbsp;by&nbsp;the&nbsp;member&nbsp;is&nbsp;to&nbsp;be&nbsp;taken&nbsp;into&nbsp;consideration&nbsp;and&nbsp;from&nbsp;that&nbsp;day&nbsp;to&nbsp;120&nbsp;days&nbsp;is&nbsp;the&nbsp;tenure&nbsp;period&nbsp;for&nbsp;every&nbsp;member.</p>
+
+<p>Jurisdiction&nbsp;and&nbsp;applicable&nbsp;law:</p>
+
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;registration&nbsp;of&nbsp;PT&nbsp;membership&nbsp;and&nbsp;all&nbsp;PT&nbsp;services/website&nbsp;are&nbsp;deemed&nbsp;to&nbsp;have&nbsp;been&nbsp;entered&nbsp;into&nbsp;within&nbsp;the&nbsp;territorial&nbsp;jurisdiction&nbsp;of&nbsp;Hyderabad,&nbsp;Telangana,&nbsp;India.</p>
+
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;PT&nbsp;members&nbsp;unconditionally&nbsp;agree&nbsp;that&nbsp;all&nbsp;such&nbsp;disputes&nbsp;and/or&nbsp;differences&nbsp;if&nbsp;any&nbsp;shall&nbsp;be&nbsp;governed&nbsp;by&nbsp;the&nbsp;laws&nbsp;of&nbsp;India&nbsp;and&nbsp;submitting&nbsp;to&nbsp;the&nbsp;exclusive&nbsp;jurisdiction&nbsp;of&nbsp;appropriate&nbsp;court&nbsp;of&nbsp;law&nbsp;in&nbsp;Hyderabad,&nbsp;Telangana,&nbsp;India.</p>
+
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;hereby,&nbsp;unconditionally&nbsp;and&nbsp;irrevocably&nbsp;confirm&nbsp;that&nbsp;you&nbsp;have&nbsp;read&nbsp;terms&nbsp;and&nbsp;conditions&nbsp;and&nbsp;agree&nbsp;to&nbsp;abide&nbsp;by&nbsp;them&nbsp;and&nbsp;the&nbsp;information&nbsp;provided&nbsp;by&nbsp;you&nbsp;is&nbsp;true&nbsp;and&nbsp;correct.</p>
+
+<p>&nbsp;</p>
+
+<p>Privacy&nbsp;Policy:</p>
+
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pellithoranam&nbsp;is&nbsp;an&nbsp;online&nbsp;marriages&nbsp;portal&nbsp;endeavoring&nbsp;constantly&nbsp;to&nbsp;provide&nbsp;you&nbsp;with&nbsp;marriages&nbsp;services.&nbsp;Since&nbsp;we&nbsp;are&nbsp;strongly&nbsp;committed&nbsp;to&nbsp;your&nbsp;right&nbsp;to&nbsp;privacy,&nbsp;we&nbsp;have&nbsp;drawn&nbsp;out&nbsp;a&nbsp;privacy&nbsp;statement&nbsp;with&nbsp;regard&nbsp;to&nbsp;the&nbsp;information&nbsp;we&nbsp;collect&nbsp;from&nbsp;you.&nbsp;You&nbsp;acknowledge&nbsp;that&nbsp;you&nbsp;are&nbsp;disclosing&nbsp;information&nbsp;voluntarily.&nbsp;By&nbsp;using&nbsp;the&nbsp;website&nbsp;and/or&nbsp;by&nbsp;providing&nbsp;your&nbsp;information,&nbsp;you&nbsp;consent&nbsp;to&nbsp;the&nbsp;collection&nbsp;and&nbsp;use&nbsp;of&nbsp;the&nbsp;information&nbsp;you&nbsp;disclose&nbsp;on&nbsp;the&nbsp;website&nbsp;in&nbsp;accordance&nbsp;with&nbsp;the&nbsp;privacy&nbsp;policy.&nbsp;If&nbsp;you&nbsp;do&nbsp;not&nbsp;agree&nbsp;for&nbsp;use&nbsp;of&nbsp;your&nbsp;information,&nbsp;please&nbsp;do&nbsp;not&nbsp;use&nbsp;or&nbsp;access&nbsp;this&nbsp;website.</p>
+
+<p>&nbsp;</p>
+
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;information&nbsp;&nbsp;we&nbsp;gather&nbsp;from&nbsp;members&nbsp;and&nbsp;visitors&nbsp;who&nbsp;apply&nbsp;for&nbsp;&nbsp;the&nbsp;various&nbsp;services&nbsp;our&nbsp;site&nbsp;offers&nbsp;includes,&nbsp;but&nbsp;may&nbsp;not&nbsp;be&nbsp;limited&nbsp;to,&nbsp;email&nbsp;address,&nbsp;name,&nbsp;date&nbsp;of&nbsp;birth,&nbsp;educational&nbsp;qualifications&nbsp;a&nbsp;user-specified&nbsp;pass&nbsp;word,&nbsp;mailing&nbsp;address,&nbsp;zip/pin&nbsp;code&nbsp;and&nbsp;telephone/mobile&nbsp;number.</p>
+
+<p>&nbsp;</p>
+
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any&nbsp;information&nbsp;you&nbsp;give&nbsp;us&nbsp;is&nbsp;held&nbsp;with&nbsp;the&nbsp;utmost&nbsp;care&nbsp;and&nbsp;security.&nbsp;We&nbsp;are&nbsp;also&nbsp;bound&nbsp;to&nbsp;cooperate&nbsp;fully&nbsp;should&nbsp;a&nbsp;situation&nbsp;arise&nbsp;where&nbsp;we&nbsp;are&nbsp;required&nbsp;by&nbsp;law&nbsp;or&nbsp;legal&nbsp;process&nbsp;to&nbsp;provide&nbsp;information&nbsp;about&nbsp;a&nbsp;customer/visitor/member.</p>
+
+<p>&nbsp;</p>
+
+<p>d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;members&nbsp;are&nbsp;requested&nbsp;to&nbsp;login&nbsp;to&nbsp;the&nbsp;relevant&nbsp;pages&nbsp;for&nbsp;un-subscription.</p>
+
+<p>&nbsp;</p>
+
+<p>e.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As&nbsp;a&nbsp;paid&nbsp;member&nbsp;of&nbsp;this&nbsp;site,&nbsp;you&nbsp;have&nbsp;the&nbsp;privilege&nbsp;to&nbsp;contact&nbsp;number&nbsp;of&nbsp;profiles.&nbsp;However,&nbsp;there&nbsp;is&nbsp;a&nbsp;specified&nbsp;un-limited&nbsp;message&nbsp;per&nbsp;day&nbsp;due&nbsp;to&nbsp;fair&nbsp;online&nbsp;usage&nbsp;policy.</p>
+
+<p>&nbsp;</p>
+
+<p>f.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We&nbsp;may&nbsp;change&nbsp;this&nbsp;privacy&nbsp;policy&nbsp;without&nbsp;notice&nbsp;from&nbsp;time&nbsp;to&nbsp;time&nbsp;based&nbsp;on&nbsp;your&nbsp;comments&nbsp;or&nbsp;as&nbsp;a&nbsp;result&nbsp;of&nbsp;a&nbsp;change&nbsp;of&nbsp;policy&nbsp;in&nbsp;our&nbsp;company.</p>
+
+<p>&nbsp;</p>
+
+<p>This&nbsp;document&nbsp;is&nbsp;an&nbsp;electronic&nbsp;record&nbsp;in&nbsp;terms&nbsp;of&nbsp;the&nbsp;information&nbsp;technology&nbsp;Act,&nbsp;2000&nbsp;and&nbsp;rules&nbsp;there&nbsp;under&nbsp;pertaining&nbsp;to&nbsp;electronic&nbsp;records&nbsp;as&nbsp;applicable&nbsp;and&nbsp;amended.&nbsp;This&nbsp;electronic&nbsp;record&nbsp;is&nbsp;generated&nbsp;by&nbsp;a&nbsp;computer&nbsp;system&nbsp;and&nbsp;does&nbsp;not&nbsp;require&nbsp;any&nbsp;physical&nbsp;or&nbsp;digital&nbsp;signatures</p>
+
+<p>&nbsp;</p>
+
+<p>NB:&nbsp;&nbsp;&nbsp;ANY&nbsp;TYPE&nbsp;OR&nbsp;GRPTMATICAL&nbsp;MISTAKES&nbsp;IF&nbsp;NOTICED&nbsp;IN&nbsp;TERMS&nbsp;AND&nbsp;CONDITIONS&nbsp;KINDLY&nbsp;BROUGHT&nbsp;TO&nbsp;THE&nbsp;NOTICE&nbsp;OF&nbsp;HELP&nbsp;DESK&nbsp;OR&nbsp;GRIEVANCE&nbsp;OFFICER.</p>
+
               </p>
             </div>
           </div>
