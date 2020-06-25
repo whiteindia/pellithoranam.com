@@ -260,7 +260,7 @@ class Search extends CI_Controller {
         /////      } // eof matri, keyword ,  indesx search
       /////      } // eof post
         } // eof else of logged in
-
+else{
         if($this->session->userdata('logged_in')) { // if logged, then get from session
             $my_user = $this->session->userdata; 
             $my_user = json_decode(json_encode($my_user),true);
@@ -278,7 +278,7 @@ class Search extends CI_Controller {
                 $where1[] = "religion_id = '".$basic->religion."'"; 
             } 
         }
-
+      }
        // print_r($_POST);
 
         if(isset($_POST['search_type'])) { // common search w or w/o logging in  [advanced searches,filter]
