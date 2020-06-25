@@ -201,7 +201,7 @@ class Search extends CI_Controller {
             } // eof logged in
         } else {  
           redirect(base_url()); 
-          exit();
+      //    exit();
           
           // not logged in , guest user, then  from post
     ///      if($_POST) { // all datas must be post
