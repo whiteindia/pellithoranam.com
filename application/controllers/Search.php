@@ -36,14 +36,13 @@ class Search extends CI_Controller {
                     } else if((isset($_POST['search_id'])) && (!empty($_POST['search_id']))) { // load from saved search
                         $search_id=$_POST['search_id'];
                         $basic2 = $this->Search_model->get_save_search_details($search_id); 
-
-                        if($basic->gender=='male') { 
-                            $where[]= "profiles.gender = 'female'";
-                            $this->session->set_userdata('gender',"female");
-                        } else if($basic->gender=='female') { 
-                            $where[]= "gender = 'male'"; 
-                            $this->session->set_userdata('gender',"male");
-                        }                 
+                        if($_SESSION['gender']=='male') { 
+                          $where[]= "profiles.gender = 'female'";
+                          $this->session->set_userdata('gender',"female");
+                      } else if($$_SESSION['gender']=='female') { 
+                          $where[]= "gender = 'male'"; 
+                          $this->session->set_userdata('gender',"male");
+                      }                  
                         if($basic2->mart!=0){
                             $where[]  = "profiles.maritial_status = '".$basic2->mart."'";
                         }
@@ -85,13 +84,13 @@ class Search extends CI_Controller {
                             }
                         } 
                     } else { // eof saved search , if preference not set and matches
-                        if($basic->gender=='male') { 
-                            $where[]= "profiles.gender = 'female'";
-                            $this->session->set_userdata('gender',"female");
-                        } else if($basic->gender=='female') { 
-                            $where[]= "profiles.gender = 'male'"; 
-                            $this->session->set_userdata('gender',"male");
-                        }
+                      if($_SESSION['gender']=='male') { 
+                        $where[]= "profiles.gender = 'female'";
+                        $this->session->set_userdata('gender',"female");
+                    } else if($$_SESSION['gender']=='female') { 
+                        $where[]= "gender = 'male'"; 
+                        $this->session->set_userdata('gender',"male");
+                    }  
                         if($basic->willing_intercast != 1) { 
                             //  $where[] = "profiles.caste = '".$basic->caste."'";
                             $where[]  = "profiles.religion = '".$basic->religion."'";
@@ -116,10 +115,10 @@ class Search extends CI_Controller {
                     else if((isset($_POST['search_id'])) && (!empty($_POST['search_id']))) { // saved search
                         $search_id=$_POST['search_id'];
                         $basic2 = $this->Search_model->get_save_search_details($search_id); 
-                        if($basic->gender=='male') { 
+                        if($_SESSION['gender']=='male') { 
                             $where[]= "profiles.gender = 'female'";
                             $this->session->set_userdata('gender',"female");
-                        } else if($basic->gender=='female') { 
+                        } else if($$_SESSION['gender']=='female') { 
                             $where[]= "gender = 'male'"; 
                             $this->session->set_userdata('gender',"male");
                         }                 
@@ -166,13 +165,13 @@ class Search extends CI_Controller {
                     } else { /*load partner preference*/
                         $mat_id=$my_user['logged_in']['matrimony_id'];
                         $basic1 = $this->Search_model->get_user_partner_preference($mat_id);
-                        if($basic->gender=='male') { 
-                            $where[]= "profiles.gender = 'female'";
-                            $this->session->set_userdata('gender',"female");
-                        }else if($basic->gender=='female')  { 
-                            $where[]= "gender = 'male'"; 
-                            $this->session->set_userdata('gender',"male");
-                        }
+                        if($_SESSION['gender']=='male') { 
+                          $where[]= "profiles.gender = 'female'";
+                          $this->session->set_userdata('gender',"female");
+                      } else if($$_SESSION['gender']=='female') { 
+                          $where[]= "gender = 'male'"; 
+                          $this->session->set_userdata('gender',"male");
+                      }  
                         if($basic1->religion!=null && $basic1->religion != 0) {
                             $where[]  = "profiles.religion = '".$basic1->religion."'";
                         }
@@ -265,13 +264,13 @@ class Search extends CI_Controller {
             $my_user = $this->session->userdata; 
             $my_user = json_decode(json_encode($my_user),true);
             $basic = $this->Search_model->get_user_basic_details($my_user);
-            if($basic->gender=='male') { 
-                $where[]= "profiles.gender = 'female'";
-                $this->session->set_userdata('gender',"female");
-            } else if($basic->gender=='female'){ 
-                $where[]= "profiles.gender = 'male'"; 
-                $this->session->set_userdata('gender',"male");
-            }
+            if($_SESSION['gender']=='male') { 
+              $where[]= "profiles.gender = 'female'";
+              $this->session->set_userdata('gender',"female");
+          } else if($$_SESSION['gender']=='female') { 
+              $where[]= "gender = 'male'"; 
+              $this->session->set_userdata('gender',"male");
+          }  
             if($basic->willing_intercast != 1) { 
                 //  $where[] = "profiles.caste = '".$basic->caste."'";
                 $where[]  = "profiles.religion = '".$basic->religion."'";
