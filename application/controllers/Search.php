@@ -797,8 +797,8 @@ class Search extends CI_Controller {
             
             if($this->session->userdata('gender'))
             $where[]= "profiles.gender = '".$this->session->userdata('gender')."'";
-            $where[] = "profiles.is_phone_verified = '1'";
-        //    $where[] = "profiles.profile_approval = '1'";
+       //     $where[] = "profiles.is_phone_verified = '1'";
+           $where[] = "profiles.profile_approval = '1'";
             $where[] = "profiles.profile_status = '1'";
 
      //print_r($where); die();
