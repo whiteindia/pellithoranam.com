@@ -57,7 +57,7 @@
                                   <input id="male1" type="radio" name="gender" value="<?php echo $gender; ?>" checked="checked">
                                   <label for="male1">Bride</label>
                                 <?php } else { ?>
-                                  <input id="female1" type="radio" name="gender" value="male" checked="checked">
+                                  <input id="female1" type="radio" name="gender" value="female" checked="checked">
                                   <label for="female1">Groom</label>
 							  <?php } } ?>
                               </div>
