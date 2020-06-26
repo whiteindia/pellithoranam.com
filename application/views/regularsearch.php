@@ -354,6 +354,7 @@
                               <span>
                                 <select class="wed-reg-select2" name="height_to" style="width: 160px; padding-left:5px">
                                 <option disabled value="">MAX</option>
+                                <option value="34">183cm - 6ft</option>
                                   <?php foreach($heights as $heightd) { ?>
                                       <option value="<?php echo $heightd->height_id; ?>"><?php echo $heightd->height; ?></option>
                                   <?php } ?>
@@ -540,14 +541,14 @@
                                 </select>
                                 <select class="wed-reg-select" name="max_income">
                                   <option disabled value="0">MAX</option>
-                                  <option value="50000">50,000</option>
+                                  <option value="500000">5,00,000</option>
                                   <option value="100000">1,00,000</option>
                                   <option value="250000">2,50,000</option>
                                   <option value="500000">5,00,000</option>
-                                  <option value="500000">10,00,000</option>
-                                  <option value="1000000">15,00,000</option>
-                                  <option value="1000000">20,00,000</option>
-                                  <option value="1000000">Above 20,00,000</option>
+                                  <option value="1000000">10,00,000</option>
+                                  <option value="1500000">15,00,000</option>
+                                  <option value="2000000">20,00,000</option>
+                                  <option value="10000000">Above 20,00,000</option>
                                 </select>
                               </div>
                             </div>
