@@ -82,7 +82,7 @@ class Home_model extends CI_Model {
                 $this->session->set_userdata('logged_in',$usr_qry->result()[0]);
                 $data1['date_time'] = date('Y-m-d H:i:s', time());
                 $data1['user_id']=$usr_qry->result()[0]->matrimony_id;
-
+$_SESSION['gender']=$data['gender']; 
                 $query = $this->db->where('user_id',$data1['user_id']);
                 $query = $this->db->get('active_members');
                 if ($query->num_rows() > 0){
