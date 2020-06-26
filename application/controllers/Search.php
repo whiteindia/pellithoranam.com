@@ -37,10 +37,10 @@ class Search extends CI_Controller {
                         $search_id=$_POST['search_id'];
                         $basic2 = $this->Search_model->get_save_search_details($search_id); 
 
-                        if($basic->gender== 'male') { 
+                        if($basic->gender=='male') { 
                             $where[]= "profiles.gender = 'female'";
                             $this->session->set_userdata('gender',"female");
-                        } else { 
+                        } else if($basic->gender=='female') { 
                             $where[]= "gender = 'male'"; 
                             $this->session->set_userdata('gender',"male");
                         }                 
@@ -85,10 +85,10 @@ class Search extends CI_Controller {
                             }
                         } 
                     } else { // eof saved search , if preference not set and matches
-                        if($basic->gender== 'male') { 
+                        if($basic->gender=='male') { 
                             $where[]= "profiles.gender = 'female'";
                             $this->session->set_userdata('gender',"female");
-                        } else { 
+                        } else if($basic->gender=='female') { 
                             $where[]= "profiles.gender = 'male'"; 
                             $this->session->set_userdata('gender',"male");
                         }
@@ -116,10 +116,10 @@ class Search extends CI_Controller {
                     else if((isset($_POST['search_id'])) && (!empty($_POST['search_id']))) { // saved search
                         $search_id=$_POST['search_id'];
                         $basic2 = $this->Search_model->get_save_search_details($search_id); 
-                        if($basic->gender== 'male') { 
+                        if($basic->gender=='male') { 
                             $where[]= "profiles.gender = 'female'";
                             $this->session->set_userdata('gender',"female");
-                        } else { 
+                        } else if($basic->gender=='female') { 
                             $where[]= "gender = 'male'"; 
                             $this->session->set_userdata('gender',"male");
                         }                 
@@ -166,10 +166,10 @@ class Search extends CI_Controller {
                     } else { /*load partner preference*/
                         $mat_id=$my_user['logged_in']['matrimony_id'];
                         $basic1 = $this->Search_model->get_user_partner_preference($mat_id);
-                        if($basic->gender== 'male') { 
+                        if($basic->gender=='male') { 
                             $where[]= "profiles.gender = 'female'";
                             $this->session->set_userdata('gender',"female");
-                        } else { 
+                        }else if($basic->gender=='female')  { 
                             $where[]= "gender = 'male'"; 
                             $this->session->set_userdata('gender',"male");
                         }
@@ -265,10 +265,10 @@ class Search extends CI_Controller {
             $my_user = $this->session->userdata; 
             $my_user = json_decode(json_encode($my_user),true);
             $basic = $this->Search_model->get_user_basic_details($my_user);
-            if($basic->gender== 'male') { 
+            if($basic->gender=='male') { 
                 $where[]= "profiles.gender = 'female'";
                 $this->session->set_userdata('gender',"female");
-            } else { 
+            } else if($basic->gender=='female'){ 
                 $where[]= "profiles.gender = 'male'"; 
                 $this->session->set_userdata('gender',"male");
             }
