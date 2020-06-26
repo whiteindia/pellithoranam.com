@@ -44,7 +44,7 @@ class Search extends CI_Controller {
                             $where[]= "gender = 'male'"; 
                             $this->session->set_userdata('gender',"male");
                         }                 
-                     /*   if($basic2->mart!=0){
+                        if($basic2->mart!=0){
                             $where[]  = "profiles.maritial_status = '".$basic2->mart."'";
                         }
                         if($basic2->religion!=0) {
@@ -83,7 +83,7 @@ class Search extends CI_Controller {
                             foreach($edu as $check1) {
                                 $or_where[]= "profiles.education_id = ".$check1.""; 
                             }
-                        }  */
+                        } 
                     } else { // eof saved search , if preference not set and matches
                         if($basic->gender== "male") { 
                             $where[]= "profiles.gender = 'female'";
