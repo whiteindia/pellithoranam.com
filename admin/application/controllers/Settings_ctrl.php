@@ -882,7 +882,14 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 					 $new_pass = $this->encryption->encrypt($_POST['new_password']);
 					 $this->db->where("user_id",$_POST['uid']);
 					 if($this->db->update("users",array("password" => $new_pass,"modified_date" => $td_date))){
-						echo '<script>alert(" Password Changed succesfully")</script>';
+					//	echo '<script>alert(" Password Changed succesfully")</script>';
+					//	echo "<script>alert('There are no fields to generate a report');</script>";
+					//	redirect(base_url());
+					echo "<script>
+alert('Password Changed succesfully');
+window.location.href='https://pellithoranam.com/admin/Dashboard_ctrl/dashboard';
+</script>";
+						exit();
 					   return array('status' => 1,'msg' => "Password Changed Successfully");
 					   echo "1";
 					 }
