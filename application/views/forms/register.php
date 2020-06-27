@@ -35,7 +35,7 @@
    
    
   
-    <!-- POP UP END -->  -->
+    <!-- POP UP END -->  
 			
 			
                   <h3 class="register_head">REGISTER FREE</h3>
