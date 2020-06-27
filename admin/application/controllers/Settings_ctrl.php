@@ -885,11 +885,11 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 					//	echo '<script>alert(" Password Changed succesfully")</script>';
 					//	echo "<script>alert('There are no fields to generate a report');</script>";
 					//	redirect(base_url());
-					echo "<script>
+				/*	echo "<script>
 alert('Password Changed succesfully');
 window.location.href='https://pellithoranam.com/admin/Dashboard_ctrl/dashboard';
-</script>";
-						exit();
+</script>";  */
+					//	exit();
 					   return array('status' => 1,'msg' => "Password Changed Successfully");
 					   echo "1";
 					 }

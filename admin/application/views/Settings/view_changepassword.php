@@ -92,7 +92,7 @@
           alert(data1.msg);
           $("."+msg_class).html("");
           $("."+msg_class).fadeIn();
-          $("."+msg_class).html('<p class="error">' + data1.msg + '</p>');
+          $("."+msg_class).html('<p>' + data1.msg + '</p>');
           $("."+msg_class).fadeOut(4000);   
       }
     });
