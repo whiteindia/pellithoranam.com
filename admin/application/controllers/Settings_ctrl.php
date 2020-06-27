@@ -879,7 +879,7 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 	   
 				 if($_POST['new_password'] != $exist_pass) {                      // checking new pass != db pass
 					echo 'in pasword';
-					 $new_pass = $this->encrypt->encode($_POST['new_password']);
+					 $new_pass = $this->encryption->encrypt($_POST['new_password']);
 					 $this->db->where("user_id",$_POST['uid']);
 					 if($this->db->update("users",array("password" => $new_pass,"modified_date" => $td_date))){
 						echo 'in pasword success';
