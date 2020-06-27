@@ -853,13 +853,17 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 		   ini_set('display_errors', 1);
 	   ini_set('display_startup_errors', 1);
 	   error_reporting(E_ALL);
+	   echo '<pre>';
+	 print_r($_POST);  
+	   echo '</pre>';
+	   exit();
 		   $usr  = $this->session->userdata('logged_in');
 		   $this->load->library('encryption');
 		   $td_date = date('Y-m-d H:i:s', time());
 		   if($_POST['new_password'] == $_POST['conf_password']) { // checking new & confirm pass are same
 		   //print_r($pass_data['new_password']); 
 		   //print_r($pass_data['conf_password']);           
-			 $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
+			 $qry_1 = $this->db->get_where('users', array('user_id'=>$_POST['uid'])); // getting password of that user
 			 $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
 		 
 		 //   $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
@@ -875,7 +879,7 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 	   
 				 if($pass_data['new_password'] != $exist_pass) {                      // checking new pass != db pass
 					 $new_pass = $this->encrypt->encode($_POST['new_password']);
-					 $this->db->where("user_id",$usr->user_id);
+					 $this->db->where("user_id",$_POST['uid']);
 					 if($this->db->update("users",array("password" => $new_pass,"modified_date" => $td_date))){
 					   return array('status' => 1,'msg' => "Password Changed Successfully");
 					   echo "1";
