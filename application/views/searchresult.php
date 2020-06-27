@@ -702,12 +702,12 @@ $settings= get_setting();
                   <div class="eye"></div>
                   <div class="close do-remove"></div>
                   <?php if($this->session->userdata('logged_in')) {
-                      $attr = "<a href='".base_url()."profile/profile_details/".$candidate->matrimony_id."' >";
+                      $attr = "<a href='".base_url()."profile/profile_details/".$candidate->matrimony_id."'  target='_blank'>";
                   } else {
                       $attr = "<a href='' data-toggle='modal' data-target='#reglog'>";
                   }
                   
-                  $attr = "<a href='".base_url()."profile/profile_details/".$candidate->matrimony_id."' >";
+                  $attr = "<a href='".base_url()."profile/profile_details/".$candidate->matrimony_id."' target='_blank'>";
                   ?>
                   <div class="web-search-photo">
                     
