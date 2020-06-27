@@ -88,6 +88,7 @@
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
       },
       success: function(datas){
+         console.log(data);
           data1 = JSON.parse(datas);
           alert(data1.msg);
           $("."+msg_class).html("");
@@ -95,10 +96,10 @@
           $("."+msg_class).html('<p>' + data1.msg + '</p>');
           $("."+msg_class).fadeOut(4000);   
           if(data1.msg==1){
-          tempAlert(data1.msg,5000);
+          tempAlert(datas,5000);
           }
           else {
-            tempAlert(data1.msg,5000);  
+            tempAlert(datas,5000);  
           }
       }
     });
