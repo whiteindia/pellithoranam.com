@@ -89,6 +89,7 @@
       },
       success: function(datas){
           data1 = JSON.parse(datas);
+          alert(data1.msg);
           $("."+msg_class).html("");
           $("."+msg_class).fadeIn();
           $("."+msg_class).html(data1.msg);
