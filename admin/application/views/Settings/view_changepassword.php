@@ -94,11 +94,26 @@
           $("."+msg_class).fadeIn();
           $("."+msg_class).html('<p>' + data1.msg + '</p>');
           $("."+msg_class).fadeOut(4000);   
+          if(data1.msg==1){
+          tempAlert(data1.msg,5000);
+          }
+          else {
+            tempAlert(data1.msg,5000);  
+          }
       }
     });
   }
 
-
+  function tempAlert(msg,duration)
+{
+ var el = document.createElement("div");
+ el.setAttribute("style","position:absolute;top:60%;left:60%;background-color:green;text-success");
+ el.innerHTML = msg;
+ setTimeout(function(){
+  el.parentNode.removeChild(el);
+ },duration);
+ document.body.appendChild(el);
+}
 
 
 </script>
