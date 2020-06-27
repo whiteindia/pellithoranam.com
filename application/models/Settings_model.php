@@ -52,7 +52,7 @@ class Settings_model extends CI_Model {
       if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
 
           if($pass_data['new_password'] != $exist_pass) {                      // checking new pass != db pass
-              $new_pass = $this->encrypt->encode($pass_data['new_password']);
+              $new_pass = $this->encryption->encrypt($pass_data['new_password']);
               $this->db->where("user_id",$usr->user_id);
               if($this->db->update("users",array("password" => $new_pass,"modified_date" => $td_date))){
                 return array('status' => 1,'msg' => "Password Changed Successfully");
