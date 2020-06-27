@@ -70,8 +70,9 @@
           var value =$("#password_form").serialize();
           var link = "update_password"; 
           var msg_class = "change_pass_msg";
-          console.log(value);
-          console.log(runSettingsRequest(link,value,msg_class));
+      //    console.log(value);
+         // console.log();
+         runSettingsRequest(link,value,msg_class)
         }
     });
 
@@ -88,7 +89,14 @@
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
       },
       success: function(datas){
-         console.log(datas);
+      //  console.log(datas);
+
+         var array = $.map(datas, function(value, index) {
+    return [value];
+});
+
+
+console.log(array);
           data1 = JSON.parse(datas);
           alert(data1.msg);
           $("."+msg_class).html("");
