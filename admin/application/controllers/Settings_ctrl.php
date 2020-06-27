@@ -877,7 +877,7 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 			 
 			 if($exist_pass == $_POST['crnt_password']) { // checking db pass = current
 	   
-				 if($pass_data['new_password'] != $exist_pass) {                      // checking new pass != db pass
+				 if($_POST['new_password'] != $exist_pass) {                      // checking new pass != db pass
 					 $new_pass = $this->encrypt->encode($_POST['new_password']);
 					 $this->db->where("user_id",$_POST['uid']);
 					 if($this->db->update("users",array("password" => $new_pass,"modified_date" => $td_date))){
