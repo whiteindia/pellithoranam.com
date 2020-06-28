@@ -449,8 +449,12 @@ error_reporting(E_ALL);
 					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
 					imagefilter($img, IMG_FILTER_SELECTIVE_BLUR); 
 					} 
-					$image_name= time()."_".'blur'.'.jpg';	
-
+				//	$image_name= time()."_".'blur'.'.jpg';	
+					if($ext=='jpg'){
+						$image_name= time()."_".'blur'.'.jpg';	
+						} else if($ext=='jpeg'){
+							$image_name= time()."_".'blur'.'.jpeg';
+						}
 					$image_name1='assets/uploads/profile_pics/'.$image_name;			
 					imagejpeg($img,'../assets/uploads/profile_pics/'.$image_name); 
 					imagedestroy($img); 
@@ -458,11 +462,12 @@ error_reporting(E_ALL);
 
 				    $img = imagecreatefrompng(base_url().'../'.$new_name); 
 				   // $image_name= time()."_".'blur'.'.png';			    
-				   if($ext=='jpg'){
+				 /*  if($ext=='jpg'){
 					$image_name= time()."_".'blur'.'.jpg';	
 					} else if($ext=='jpeg'){
 						$image_name= time()."_".'blur'.'.jpeg';
-					}
+					}   */
+					$image_name= time()."_".'blur'.'.png';
 					$image_name1='assets/uploads/profile_pics/'.$image_name;
 					for ($x=1; $x<=35; $x++) { 
 					imagefilter($img, IMG_FILTER_GAUSSIAN_BLUR); 
