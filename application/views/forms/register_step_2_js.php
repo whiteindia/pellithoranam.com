@@ -3,8 +3,8 @@
 	jQuery(function($){
 		$.validator.addMethod("valueNotEquals", function(value, element, arg){
 			 return arg != value;
-			}, "Value must not equal arg.");
-		$( "#reg_detail_form" ).validate({
+			}, "Value must not equal arg."); 
+	/*	$( "#reg_detail_form" ).validate({
 			debug: false,
 		    //focusInvalid: false,
 		    //onfocusout: false,
@@ -33,7 +33,7 @@
 		  		return true;
 		  	}
 		});
-
+*/
 		$("#country_selector").on('change', function () {
 	        var country = $(this).val();
 
