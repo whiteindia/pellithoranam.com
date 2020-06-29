@@ -9,7 +9,7 @@
               <div class="wed-reg-div1">
                 <h6>Personal Details</h6>
                 <hr>
-                <form method="post" action="<?php echo base_url();?>home/submit_registration_details" id="reg_detail_form" enctype="multipart/form-data">
+                <form method="post" action="<?php echo base_url();?>home/submit_registration_details"  enctype="multipart/form-data">  <!--id="reg_detail_form"-->
                   <ul>
                     <li>
                       <div class="wed-reg-right-child1">Maritial Status</div>
@@ -63,7 +63,7 @@
                     <div class="wed-reg-right-child1 paddingtop10">Country Living In</div>
                     <div class="wed-reg-right-child2">
                         <div class="row1">
-                          <select class="wed-reg-select cst-select-1 cst-select-2" name="country" id="country_selector">
+                          <select class="wed-reg-select cst-select-1 cst-select-2" name="country" id="country_selector" required>
                             <option value="-1">Select</option>
                             <?php foreach($countries as $country) { ?>
                                 <option value="<?php echo $country->country_id; ?>"><?php echo $country->country_name; ?></option>
@@ -81,7 +81,7 @@
                     <div class="wed-reg-right-child1 paddingtop10">City Living In</div>
                     <div class="wed-reg-right-child2">
                         <div class="row1">
-                          <select class="wed-reg-select cst-select-1 selectpicker" data-live-search="true"  name="city_choose"  placeholder="" id="city_selector">
+                          <select class="wed-reg-select cst-select-1 selectpicker" data-live-search="true"  name="city_choose"  placeholder="" id="city_selector" required>
                           </select>
                         </div>
                       </div>
@@ -313,7 +313,7 @@
                        <div class="wed-reg-right-child1 paddingtop10">Star</div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
-                             <select class="wed-reg-select" name="star">
+                             <select class="wed-reg-select" name="star" required>
                                 <option value="0">Option</option>
                                 <?php foreach($stars as $star) { ?>
                                     <option value="<?php echo $star->star_id; ?>"><?php echo $star->star_name; ?></option>
@@ -343,7 +343,7 @@
                        <div class="wed-reg-right-child1">Have Dosham?</div>
                        <div class="wed-reg-right-child2">
                          <div class="wed-custom5">
-                             <input id="nm12" type="radio" name="dosham" value="1">
+                             <input id="nm12" type="radio" name="dosham" value="1" required>
                              <label for="nm12">No</label>
                              <input id="dvsd12" type="radio" name="dosham" value="2">
                              <label for="dvsd12">Yes</label>
@@ -374,7 +374,7 @@
                         <div class="wed-reg-right-child1">Family Status</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="mid" type="radio" name="family_status" checked="checked" value="1" required>
+                              <input id="mid" type="radio" name="family_status"  value="1" required><!--checked="checked"-->
                               <label for="mid">Middle Class</label>
                               <input id="up" type="radio" name="family_status" value="2">
                               <label for="up">Upper Middile Class</label>
@@ -391,7 +391,7 @@
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="jo" type="radio" name="family_type" checked="checked" value="1" required>
+                              <input id="jo" type="radio" name="family_type"  value="1" required><!--checked="checked"-->
                               <label for="jo">Joint</label>
                               <input id="nuc" type="radio" name="family_type" value="2">
                               <label for="nuc"> Nuclear</label>
@@ -403,7 +403,7 @@
                         <div class="wed-reg-right-child1">Family Value</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="ort" type="radio" name="family_value" checked="checked" value="1" required>
+                              <input id="ort" type="radio" name="family_value"  value="1" required><!--checked="checked"-->
                               <label for="ort">Orthodox</label>
 
                               <input id="trad" type="radio" name="family_value" value="2">
@@ -426,7 +426,7 @@
                     <ul>
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
-                        <textarea class="wed-reg-textarea"  rows="4" cols="50" name="about_you"></textarea>
+                        <textarea class="wed-reg-textarea"  rows="4" cols="50" name="about_you" required></textarea>
                         <p>( Min. 50 Characters )</p>
                       </li>
                       <li>
