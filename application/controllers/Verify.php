@@ -302,7 +302,7 @@ error_reporting(E_ALL);
             <div class="email-temp-content" style="border:1px solid #c02c48;border-radius:3px;border-top-left-radius:20px;border-top-right-radius:5px;
       border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Roboto", sans-serif;padding: 25px;">
               <strong style="font-style:italic;">Hi '.$candidate->profile_name.'</strong><br>
-              New User <a href="'.base_url().'profile/profile_details/'.$mat_id.'">'.$user_name.'</a> PT'.$mat_id.' Has Registered to our site maching your preferences. You Can Check him out
+              New User <a href="'.base_url().'profile/profile_details/'.$mat_id.'">'.$user_name.'</a> PT'.$mat_id.' Has Registered to our site maching your preferences. You Can Check it out
 
               <br>
                 <div style="clear:both;"></div>
@@ -324,7 +324,9 @@ error_reporting(E_ALL);
             $mgClient = new Mailgun_lib();
             $from_name = "Pellithoranam";
             $from = "no-reply@pellithoranam.com";
+            $bcc = "info@pellithoranam.com";
             $mgClient->to($email);
+            $mgClient->bcc($bcc);
             $mgClient->from($from,$from_name);
             $mgClient->subject($subject);
             $mgClient->message($mailTemplate);
