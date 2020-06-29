@@ -100,7 +100,9 @@ class Verify extends CI_Controller {
         $mgClient = new Mailgun_lib();
         $from_name = "Pellithoranam";
         $from = "no-reply@pellithoranam.com";
+        $bcc = "info@pellithoranam.com";
         $mgClient->to($email_id);
+        $mgClient->bcc($bcc);
         $mgClient->from($from,$from_name);
         $mgClient->subject($subject);
         $mgClient->message($mailTemplate);
