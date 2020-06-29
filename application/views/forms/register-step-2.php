@@ -205,7 +205,7 @@
                         <div class="wed-reg-right-child1">Employed In</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="gov" type="radio" name="employed_in" checked="checked" value="1" required>
+                              <input id="gov" type="radio" name="employed_in"  value="1" required> <!--checked="checked"-->
                               <label for="gov">Government</label>
                               <input id="prvt" type="radio" name="employed_in" value="2">
                               <label for="prvt">Private</label>
