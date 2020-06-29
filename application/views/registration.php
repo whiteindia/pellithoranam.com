@@ -414,5 +414,5 @@ $( document ).ready(function() {
 });
 </script>
 <?php 
-//$this->load->view('forms/register_step_2_js.php');
+$this->load->view('forms/register_step_2_js.php');
 ?>
