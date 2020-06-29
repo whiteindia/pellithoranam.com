@@ -36,7 +36,7 @@ class Package extends CI_Controller {
 		$session=$this->session->userdata('logged_in');  
 		$id=$this->input->get('amount');
 		$amt = $this->Package_model->get_amount($id);
-		$amount = $amt->price>0?$amt->price:250;
+		$amount = $amt->price>0?$amt->price:0;
 		$amount1 =$amount *100;
 		$amount2 =100;
 		$_SESSION['packageid']=$id;
