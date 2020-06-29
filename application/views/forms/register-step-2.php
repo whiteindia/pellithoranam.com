@@ -15,7 +15,7 @@
                       <div class="wed-reg-right-child1">Maritial Status</div>
                       <div class="wed-reg-right-child2">
                         <div class="wed-custom5">
-                            <input id="nm" type="radio" name="maritial_status" value="1">
+                            <input id="nm" type="radio" name="maritial_status" value="1" required >
                             <label for="nm">Never Married</label>
                             <input id="dvsd" type="radio" name="maritial_status" value="2">
                             <label for="dvsd">Divorced</label>
