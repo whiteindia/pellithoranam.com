@@ -426,7 +426,7 @@
                     <ul>
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
-                        <textarea class="wed-reg-textarea"  rows="4" cols="50" name="about_you"></textarea>
+                        <textarea class="wed-reg-textarea"  rows="4" cols="50" name="about_you" required></textarea>
                         <p>( Min. 50 Characters )</p>
                       </li>
                       <li>
