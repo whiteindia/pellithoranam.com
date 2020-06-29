@@ -15,13 +15,22 @@
                       <div class="wed-reg-right-child1">Maritial Status</div>
                       <div class="wed-reg-right-child2">
                         <div class="wed-custom5">
-                            <input id="nm" type="radio" name="maritial_status" value="1" required >
+                     <!--       <input id="nm" type="radio" name="maritial_status" value="1" required >
                             <label for="nm">Never Married</label>
                             <input id="dvsd" type="radio" name="maritial_status" value="2">
                             <label for="dvsd">Divorced</label>
                             <input id="wd" type="radio" name="maritial_status" value="3">
                             <label for="wd">Widowed</label>
                             <input id="advsd" type="radio" name="maritial_status" value="4">
+                            <label for="advsd">Awaiting for Divorce</label> -->
+
+                            <input  type="radio" name="maritial_status" value="1" required >
+                            <label for="nm">Never Married</label>
+                            <input  type="radio" name="maritial_status" value="2">
+                            <label for="dvsd">Divorced</label>
+                            <input  type="radio" name="maritial_status" value="3">
+                            <label for="wd">Widowed</label>
+                            <input  type="radio" name="maritial_status" value="4">
                             <label for="advsd">Awaiting for Divorce</label>
                         </div>
                       </div>
