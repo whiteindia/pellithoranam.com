@@ -542,7 +542,7 @@
                        <div class="wed-reg-right-child1 paddingtop10">time of birth</div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <span><input class="wed-reg-input12 reg_input" id="time" placeholder="Time" name="timeofbirth" id="timeofbirth" required></span>
+                              <span><input class="wed-reg-input12 reg_input"  placeholder="time" name="time" id="time" required></span>
                           </div>
                          </div>
                        <div class="clearfix"></div>
