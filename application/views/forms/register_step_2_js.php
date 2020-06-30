@@ -105,6 +105,7 @@
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
 		      return false; 
 		    }
+			else if($('#income').val() == 0) { alert('income can not be empty'); return false; }
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
 		    else { }
 
