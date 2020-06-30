@@ -391,7 +391,7 @@
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="jo" type="radio" name="family_type"  value="1" required>  <!--checked="checked"-->
+                              <input id="jo" type="radio" name="family_type"  value="1">  <!--checked="checked"-->
                               <label for="jo">Joint</label>
                               <input id="nuc" type="radio" name="family_type" value="2">
                               <label for="nuc"> Nuclear</label>
