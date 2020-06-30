@@ -29,9 +29,9 @@
                 <?php echo $profile->religion_name.", ".$profile->caste_name.",".$profile->sub_caste; ?><br>
                 <?php echo $profile->city_name.", ".$profile->state_name.",".$profile->country_name; ?><br>
                 <?php echo $profile->occupation; ?><br>
-                <?php if(isset($profile[0]->placeofbirth)) { ?>
+                <?php if(isset($profile->placeofbirth)) { ?>
             
-            <?php echo $profile[0]->placeofbirth; echo '  ';echo $profile[0]->timeofbirth;?><br>
+            <?php echo $profile->placeofbirth; echo '  ';echo $profile->timeofbirth;?>
            
             <?php }?>
                 <br>
