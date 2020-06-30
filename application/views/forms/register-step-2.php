@@ -374,7 +374,7 @@
                         <div class="wed-reg-right-child1">Family Status</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="mid" type="radio" name="family_status" checked="checked" value="1" required>
+                              <input id="mid" type="radio" name="family_status"  value="1" required> <!--checked="checked"-->
                               <label for="mid">Middle Class</label>
                               <input id="up" type="radio" name="family_status" value="2">
                               <label for="up">Upper Middile Class</label>
@@ -391,7 +391,7 @@
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="jo" type="radio" name="family_type" checked="checked" value="1" required>
+                              <input id="jo" type="radio" name="family_type"  value="1" required>  <!--checked="checked"-->
                               <label for="jo">Joint</label>
                               <input id="nuc" type="radio" name="family_type" value="2">
                               <label for="nuc"> Nuclear</label>
@@ -403,7 +403,7 @@
                         <div class="wed-reg-right-child1">Family Value</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="ort" type="radio" name="family_value" checked="checked" value="1" required>
+                              <input id="ort" type="radio" name="family_value"  value="1" required>  <!--checked="checked"-->
                               <label for="ort">Orthodox</label>
 
                               <input id="trad" type="radio" name="family_value" value="2">
@@ -426,7 +426,7 @@
                     <ul>
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
-                        <textarea class="wed-reg-textarea"  rows="4" cols="50" name="about_you" required></textarea>
+                        <textarea class="wed-reg-textarea" id="about" rows="4" cols="50" name="about_you" required></textarea>
                         <p>( Min. 50 Characters )</p>
                       </li>
                       <li>
