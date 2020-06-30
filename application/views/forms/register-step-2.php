@@ -1,8 +1,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
-<link href="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
+
 
 <div class="col-md-9">
             <div class="wed-reg-right">
@@ -537,16 +536,14 @@
                        <div class="clearfix"></div>
                      </li>
                      <li>
-
-
+                     
                        <div class="wed-reg-right-child1 paddingtop10">time of birth</div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <span><input class="wed-reg-input12 reg_input"  placeholder="time" name="time" id="time" required></span>
+                              <span><input class="wed-reg-input12 reg_input" type="time" name="timeofbirth" id="timeofbirth" required></span>
                           </div>
                          </div>
                        <div class="clearfix"></div>
-
                      </li>
 
 
@@ -613,16 +610,3 @@
               margin: 0px 5px;
             }
           </style>
-                                 <script>
-var timepicker = new TimePicker('time', {
-  lang: 'en',
-  theme: 'dark'
-});
-timepicker.on('change', function(evt) {
-  
-  var value = (evt.hour || '00') + ':' + (evt.minute || '00');
-  evt.element.value = value;
-
-});
-
-</script>
