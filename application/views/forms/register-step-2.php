@@ -526,6 +526,44 @@
                          </div>
                        <div class="clearfix"></div>
                      </li>
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10">place of birth</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span><input class="wed-reg-input12 reg_input" type="text" name="placeofbirth" id="placeofbirth" required></span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+                     <li>
+                     <script src="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
+<link href="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
+
+                       <div class="wed-reg-right-child1 paddingtop10">time of birth</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span><input class="wed-reg-input12 reg_input" id="time" placeholder="Time" name="timeofbirth" id="timeofbirth" required></span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                       <script>
+var timepicker = new TimePicker('time', {
+  lang: 'en',
+  theme: 'dark'
+});
+timepicker.on('change', function(evt) {
+  
+  var value = (evt.hour || '00') + ':' + (evt.minute || '00');
+  evt.element.value = value;
+
+});
+
+</script>
+                     </li>
+
+
+
+
 
                      <li>
                        <div class="wed-reg-right-child1 paddingtop10">No: of brothers</div>
