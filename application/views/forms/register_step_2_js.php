@@ -108,7 +108,7 @@
 		/*	else if($('#currency-selector').val() == 0) { alert('currency selectoion can not be empty'); return false; }
 			else if($('#income').val() == 0) { alert('income can not be empty'); return false; }  */
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
-		} else if($('#family_status').val() == 0) { 
+		 else if($('#family_status').val() == 0) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">family status  can not be empty</p>');
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
