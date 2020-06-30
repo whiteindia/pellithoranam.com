@@ -130,12 +130,12 @@
 		      return false; 
 		    }
 
-			else if($('#family_origin').val() == 0) { alert('gothram can not be empty'); return false; }
-			else if($('#family_location').val() == 0) { alert('gothram can not be empty'); return false; }
-			else if($('#father_status').val() == 0) { alert('gothram can not be empty'); return false; }
-			else if($('#mother_status').val() == 0) { alert('gothram can not be empty'); return false; }
-			else if($('#brothers').val() == 0) { alert('gothram can not be empty'); return false; }
-			else if($('#sisters').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#family_origin').val() == 0) { alert('family origin can not be empty'); return false; }
+			else if($('#family_location').val() == 0) { alert('family location can not be empty'); return false; }
+			else if($('#father_status').val() == 0) { alert('father name can not be empty'); return false; }
+			else if($('#mother_status').val() == 0) { alert('mother name can not be empty'); return false; }
+			else if($('#brothers').val() == 0) { alert('brothers can not be empty'); return false; }
+			else if($('#sisters').val() == 0) { alert('sisters can not be empty'); return false; }
 
 
 		/*
