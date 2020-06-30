@@ -121,7 +121,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             echo $qry_1->result()[0]->star_name.",".$profile[0]->padam;?>
             </li>
             <?php if(isset($profile[0]->placeofbirth)) { ?>
-            <li><span><img src="<?php echo base_url(); ?>assets/img/loc.png"></span>
+            <li><span><i class="fa fa-birthday-cake" style="color:orange"></i></span>
             <?php echo $profile[0]->placeofbirth; echo '  ';echo $profile[0]->timeofbirth;?>
             </li>
             <?php }?>
