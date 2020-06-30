@@ -391,7 +391,7 @@
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="jo" type="radio" name="family_type"  value="1" required>  <!--checked="checked"-->
+                              <input id="jo" type="radio" name="family_type" checked="checked" value="1" required>
                               <label for="jo">Joint</label>
                               <input id="nuc" type="radio" name="family_type" value="2">
                               <label for="nuc"> Nuclear</label>
@@ -403,7 +403,7 @@
                         <div class="wed-reg-right-child1">Family Value</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="ort" type="radio" name="family_value"  value="1" required>  <!--checked="checked"-->
+                              <input id="ort" type="radio" name="family_value" checked="checked" value="1" required>
                               <label for="ort">Orthodox</label>
 
                               <input id="trad" type="radio" name="family_value" value="2">
