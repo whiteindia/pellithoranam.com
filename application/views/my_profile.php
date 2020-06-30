@@ -1469,7 +1469,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="family_origin" value="<?php echo ucwords($profile->family_origin);?>">
+            <input type="text" class="wed-reg-input" name="family_origin" value="<?php echo ucwords($profile->family_origin);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1480,7 +1480,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="family_location" value="<?php echo ucwords($profile->family_location);?>">
+            <input type="text" class="wed-reg-input" name="family_location" value="<?php echo ucwords($profile->family_location);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1497,7 +1497,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="father_status" value="<?php echo ucwords($profile->father_status);?>">
+            <input type="text" class="wed-reg-input" name="father_status" value="<?php echo ucwords($profile->father_status);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1508,7 +1508,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="mother_status" value="<?php echo ucwords($profile->mother_status);?>">
+            <input type="text" class="wed-reg-input" name="mother_status" value="<?php echo ucwords($profile->mother_status);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1519,7 +1519,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" value="<?php echo ucwords($profile->brothers);?>">
+            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" value="<?php echo ucwords($profile->brothers);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1530,7 +1530,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="sisters" value="<?php echo ucwords($profile->sisters);?>">
+            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="sisters" value="<?php echo ucwords($profile->sisters);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
