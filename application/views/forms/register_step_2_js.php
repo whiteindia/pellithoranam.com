@@ -134,6 +134,8 @@
 			else if($('#family_location').val() == 0) { alert('family location can not be empty'); return false; }
 			else if($('#father_status').val() == 0) { alert('father name can not be empty'); return false; }
 			else if($('#mother_status').val() == 0) { alert('mother name can not be empty'); return false; }
+			else if($('#placeofbirth').val() == 0) { alert('place of birth can not be empty'); return false; }
+			else if($('#timeofbirth').val() == 0) { alert('time of birth can not be empty'); return false; }
 			else if($('#brothers').val().trim() == '') { alert('brothers can not be empty'); return false; }
 			else if($('#sisters').val().trim() == '') { alert('sisters can not be empty'); return false; }
 
