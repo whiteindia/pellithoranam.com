@@ -110,6 +110,10 @@
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
 			else if(($('#mid').val() != 'checked') &&($('#up').val() != 'checked')&&($('#rch').val() != 'checked')&&($('#affl').val() != 'checked'))
 			{ alert('Family Status can not be empty'); return false; }
+			else if(($('#jo').val() != 'checked') &&($('#nuc').val() != 'checked'))
+			{ alert('Family type can not be empty'); return false; }
+			else if(($('#mid').val() != 'checked') &&($('#up').val() != 'checked')&&($('#rch').val() != 'checked')&&($('#affl').val() != 'checked'))
+			{ alert('Family Status can not be empty'); return false; }
 			else if($('#about').val() == 0) { alert('Something About You can not be empty'); return false; }
 		    else { }
 
