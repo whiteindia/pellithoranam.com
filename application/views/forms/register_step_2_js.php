@@ -108,6 +108,10 @@
 		/*	else if($('#currency-selector').val() == 0) { alert('currency selectoion can not be empty'); return false; }
 			else if($('#income').val() == 0) { alert('income can not be empty'); return false; }  */
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if(($('#mid').val() == 0) &&($('#up').val() == 0)&&($('#rch').val() == 0)&&($('#affl').val() == 0))
+			
+			{ alert('Family Status can not be empty'); return false; }
+			else if($('#about').val() == 0) { alert('Something About You can not be empty'); return false; }
 		    else { }
 
 		    // var value =$("#reg_detail_form").serialize();
