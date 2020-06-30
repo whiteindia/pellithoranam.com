@@ -264,6 +264,8 @@ class Home_model extends CI_Model {
         'family_location'=> $data['family_location'],
         'father_status'=> $data['father_status'],
         'mother_status'=> $data['mother_status'],
+        'placeofbirth'=> $data['placeofbirth'],
+        'timeofbirth'=> $data['timeofbirth'],
         'brothers'=> $data['brothers'],
         'sisters'=> $data['sisters'],
         'about_you'=> $data['about_you'],
