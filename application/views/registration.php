@@ -413,4 +413,9 @@ $( document ).ready(function() {
 
 });
 </script>
+<script> 
+ $(document).ready(function(){
+    alert('Please fill all the data in the form so that you will have high chance for getting preferred profiles ');
+ });
+</script>
 <?php $this->load->view('forms/register_step_2_js.php');?>
