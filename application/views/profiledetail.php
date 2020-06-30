@@ -120,6 +120,9 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             $qry_1 = $this->db->get_where('stars', array('star_id'=>$profile[0]->star_id)); 
             echo $qry_1->result()[0]->star_name.",".$profile[0]->padam;?>
             </li>
+            <li><span><img src="<?php echo base_url(); ?>assets/img/loc.png"></span>
+            <?php echo $profile[0]->placeofbirth; echo $profile[0]->timeofbirth;?>
+            </li>
             <li><span><img src="<?php echo base_url(); ?>assets/img/edu.png"></span>
             <?php echo $profile[0]->education;?>
             </li>
