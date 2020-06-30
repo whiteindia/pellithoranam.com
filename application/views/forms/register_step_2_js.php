@@ -115,6 +115,20 @@
 		      return false; 
 		    }
 
+			else if($('#family_type').val() == 0) { 
+		      $("#error-msg").show();
+		      $("#error-msg").html('<p class="alert alert-danger" id="top">family status  can not be empty</p>');
+		      setTimeout(function() { $("#error-msg").hide();}, 3000)
+		      return false; 
+		    }
+
+			else if($('#family_value').val() == 0) { 
+		      $("#error-msg").show();
+		      $("#error-msg").html('<p class="alert alert-danger" id="top">family status  can not be empty</p>');
+		      setTimeout(function() { $("#error-msg").hide();}, 3000)
+		      return false; 
+		    }
+
 
 
 		/*	else if(($('#mid').val() != 'checked') &&($('#up').val() != 'checked')&&($('#rch').val() != 'checked')&&($('#affl').val() != 'checked'))

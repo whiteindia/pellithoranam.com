@@ -393,10 +393,10 @@
                            <div class="row1">
                              <select class="wed-reg-select" name="family_status" id="family_status">
                                 <option value="0">Option</option>
-                                <option value="1 Padam">Middle Class</option>
-                                <option value="2 Padam">Upper Middile Class</option>
-                                <option value="3 Padam">Rich</option>
-                                <option value="4 Padam">Affluent</option>
+                                <option value="1">Middle Class</option>
+                                <option value="2">Upper Middile Class</option>
+                                <option value="3">Rich</option>
+                                <option value="4">Affluent</option>
                                                 
                              </select>
                            </div>
@@ -405,7 +405,7 @@
                      </li>
 
 
-                      <li>
+         <!--             <li>
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
@@ -417,7 +417,23 @@
                         </div>
                         <div class="clearfix"></div>
                       </li>
+                      <li>  -->
+
                       <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Family Type</div>
+                       <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="family_type" id="family_type">
+                                <option value="0">Option</option>
+                                <option value="1">Joint</option>
+                                <option value="2">Nuclear</option>
+                                                          
+                             </select>
+                           </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+              <!--       <li>
                         <div class="wed-reg-right-child1">Family Value</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
@@ -435,7 +451,29 @@
                           </div>
                         </div>
                         <div class="clearfix"></div>
-                      </li>
+                      </li>  --->
+                      
+                      <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Family Value</div>
+                       <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="family_value" id="family_value">
+                                <option value="0">Option</option>
+                                <option value="1">Orthodox</option>
+                                <option value="2">Traditional</option>
+                                <option value="3">Moderate</option>
+                                <option value="4">Liberal</option>
+                                                
+                             </select>
+                           </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+                     <li>
+
+
+
+
                     </ul>
               </div>
               <div class="wed-reg-div1">
