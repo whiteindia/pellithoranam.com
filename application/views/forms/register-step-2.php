@@ -370,12 +370,12 @@
                     <h6>Family Profile</h6>
                     <hr>
                     <ul>
-                      <li>
+                <!--      <li>
                         <div class="wed-reg-right-child1">Family Status</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
                               <input id="mid" type="radio" name="family_status"  value="1" required> <!--checked="checked"-->
-                              <label for="mid">Middle Class</label>
+                     <!--         <label for="mid">Middle Class</label>
                               <input id="up" type="radio" name="family_status" value="2">
                               <label for="up">Upper Middile Class</label>
                               <input id="rch" type="radio" name="family_status" value="3">
@@ -386,7 +386,25 @@
                           </div>
                         </div>
                         <div class="clearfix"></div>
-                      </li>
+                      </li>   -->
+                      <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Family Status</div>
+                       <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="family_status" id="family_status">
+                                <option value="0">Option</option>
+                                <option value="1 Padam">Middle Class</option>
+                                <option value="2 Padam">Upper Middile Class</option>
+                                <option value="3 Padam">Rich</option>
+                                <option value="4 Padam">Affluent</option>
+                                                
+                             </select>
+                           </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+
+
                       <li>
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
