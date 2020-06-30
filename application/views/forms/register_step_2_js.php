@@ -105,6 +105,7 @@
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
 		      return false; 
 		    }
+			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
 		    else { }
 
 		    // var value =$("#reg_detail_form").serialize();
