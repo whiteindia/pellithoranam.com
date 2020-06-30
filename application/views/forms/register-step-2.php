@@ -15,7 +15,7 @@
                       <div class="wed-reg-right-child1">Maritial Status</div>
                       <div class="wed-reg-right-child2">
                         <div class="wed-custom5">
-                            <input id="nm" type="radio" name="maritial_status"  value="1"><!--checked="checked"-->
+                            <input id="nm" type="radio" name="maritial_status" checked="checked" value="1">
                             <label for="nm">Never Married</label>
                             <input id="dvsd" type="radio" name="maritial_status" value="2">
                             <label for="dvsd">Divorced</label>
@@ -374,7 +374,7 @@
                         <div class="wed-reg-right-child1">Family Status</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="mid" type="radio" name="family_status" checked="checked" value="1" required> <!--checked="checked"-->
+                              <input id="mid" type="radio" name="family_status"  value="1" required> <!--checked="checked"-->
                               <label for="mid">Middle Class</label>
                               <input id="up" type="radio" name="family_status" value="2">
                               <label for="up">Upper Middile Class</label>
@@ -391,7 +391,7 @@
                         <div class="wed-reg-right-child1">Family Type</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
-                              <input id="jo" type="radio" name="family_type"  value="1">  <!--checked="checked"-->
+                              <input id="jo" type="radio" name="family_type" checked="checked" value="1" required>
                               <label for="jo">Joint</label>
                               <input id="nuc" type="radio" name="family_type" value="2">
                               <label for="nuc"> Nuclear</label>

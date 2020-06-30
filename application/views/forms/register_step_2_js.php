@@ -109,10 +109,10 @@
 			else if($('#income').val() == 0) { alert('income can not be empty'); return false; }  */
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
 		/*	else if(($('#mid').val() != 'checked') &&($('#up').val() != 'checked')&&($('#rch').val() != 'checked')&&($('#affl').val() != 'checked'))
-			{ alert('Family Status can not be empty'); return false; }*/
-			else if(($('#jo').attr('checked'))) ||($('#nuc').attr('checked')))
+			{ alert('Family Status can not be empty'); return false; }
+			else if(($('#jo').val() != 'checked') &&($('#nuc').val() != 'checked'))
 			{ alert('Family type can not be empty'); return false; }
-		/*	else if(($('#ort').val() != 'checked') &&($('#trad').val() != 'checked')&&($('#mod').val() != 'checked')&&($('#lib').val() != 'checked'))
+			else if(($('#ort').val() != 'checked') &&($('#trad').val() != 'checked')&&($('#mod').val() != 'checked')&&($('#lib').val() != 'checked'))
 			{ alert('Family value can not be empty'); return false; }  */
 			else if($('#about').val().trim() == '') { alert('Something About You can not be empty'); return false; }
 		    else { }
