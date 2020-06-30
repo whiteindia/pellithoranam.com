@@ -72,13 +72,13 @@
 
 		$(".reg_detail").click(function(){
 		    
-		    if($('#country-selector').val() == 0) { 
+		    if($('#country-selector').val() == -1) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">Country cannot be empty</p>');
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
 		      return false; 
 
-		    } else if($('#state-selector').val() == 0) {
+		    } else if($('#state-selector').val() == -1) {
 		      // $('#error-msg').html('State cannot be empty'); 
 		      // $('.error-alert').show();
 		      // return false;
