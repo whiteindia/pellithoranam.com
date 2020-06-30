@@ -106,7 +106,8 @@
 		      return false; 
 		    }
 		/*	else if($('#currency-selector').val() == 0) { alert('currency selectoion can not be empty'); return false; }
-			else if($('#income').val() == 0) { alert('income can not be empty'); return false; }  */
+			else if($('#income').val() == 0) { alert('income can not be empty'); return false; } 
+				 */
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
 		 else if($('#family_status').val() == 0) { 
 		      $("#error-msg").show();
@@ -129,9 +130,24 @@
 		      return false; 
 		    }
 
+			else if($('#family_origin').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#family_location').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#father_status').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#mother_status').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#brothers').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#sisters').val() == 0) { alert('gothram can not be empty'); return false; }
 
 
-		/*	else if(($('#mid').val() != 'checked') &&($('#up').val() != 'checked')&&($('#rch').val() != 'checked')&&($('#affl').val() != 'checked'))
+		/*
+				
+			        'family_origin'=> $data['family_origin'],
+        'family_location'=> $data['family_location'],
+        'father_status'=> $data['father_status'],
+        'mother_status'=> $data['mother_status'],
+        'brothers'=> $data['brothers'],
+        'sisters'=> $data['sisters'],
+		
+			else if(($('#mid').val() != 'checked') &&($('#up').val() != 'checked')&&($('#rch').val() != 'checked')&&($('#affl').val() != 'checked'))
 			{ alert('Family Status can not be empty'); return false; }
 			else if(($('#jo').val() != 'checked') &&($('#nuc').val() != 'checked'))
 			{ alert('Family type can not be empty'); return false; }

@@ -469,6 +469,84 @@
                          </div>
                        <div class="clearfix"></div>
                      </li>
+
+                 <!--    <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Ancestral /Family Origin</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span>
+                              <input type="text" class="wed-reg-input" name="family_origin" value="" required>
+                              </span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>-->
+                     
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Ancestral /Family Origin</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span>
+                              <input type="text" class="wed-reg-input" name="family_origin" id="family_origin" value="" required>
+                              </span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10"> Family Location</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span>
+                              <input type="text" class="wed-reg-input" name="family_location" id="family_location" value="" required>
+                              </span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Father Name</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span><input class="wed-reg-input12 reg_input" type="text" name="father_status" id="father_status" required></span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+
+
+
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Mother Name</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span><input class="wed-reg-input12 reg_input" type="text" name="mother_status" id="mother_status" required></span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10">No: of brothers</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span> <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" id="brothers" value="" required></span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+                     <li>
+                       <div class="wed-reg-right-child1 paddingtop10">No: of sisters</div>
+                       <div class="wed-reg-right-child2">
+                            <div class="row1">
+                              <span><input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of sisters" name="sisters"  id="sisters" value="" required></span>
+                          </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+
+
                      <li>
 
 
