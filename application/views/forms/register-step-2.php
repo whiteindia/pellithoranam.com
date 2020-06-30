@@ -191,7 +191,7 @@
                         <div class="wed-reg-right-child1 paddingtop10">Occupation</div>
                         <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <select class="wed-reg-select" name="occupation" required> <!-- id="occupation"-->
+                              <select class="wed-reg-select" name="occupation" id="occupation" required>
                                 <option value="">Select Occupation</option>
                                 <?php foreach($occupations as $occupat) { ?>
                                     <option value="<?php echo $occupat->occupation_id; ?>"><?php echo $occupat->occupation; ?></option>
