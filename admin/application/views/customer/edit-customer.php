@@ -86,6 +86,16 @@
                            <input type="text" class="form-control required" data-parsley-trigger="change"  
                               data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="age"  value="<?php echo $profile->age; ?>">
                         </div><br>
+                        <div class="col-md-6" style="padding:5px;">
+                           <label>Place of Birth</label>
+                           <input type="text" class="form-control required" data-parsley-trigger="change"  
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="placeofbirth"  value="<?php if($profile->placeofbirth){ echo $profile->placeofbirth;} ?>">
+                        </div><br>
+                        <div class="col-md-6" style="padding:5px;">
+                           <label>Time of Birth</label>
+                           <input type="time" class="form-control required" data-parsley-trigger="change"  
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="timeofbirth"  value="<?php if($profile->timeofbirth){ echo $profile->timeofbirth; }?>">
+                        </div><br>
                         <label class="col-md-8"><u>Religion Information</u></label><br>
                          <div class="col-md-6" style="padding:5px;">
                            <label>religion</label>
