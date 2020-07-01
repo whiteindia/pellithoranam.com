@@ -90,7 +90,7 @@
                            <label>Place of Birth</label>
                            <input type="text" class="form-control required" data-parsley-trigger="change"  
                               data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="placeofbirth"  value="<?php if($profile->placeofbirth){ echo $profile->placeofbirth;} ?>">
-                        </div><br>
+                        </div>
                         <div class="col-md-6" style="padding:5px;">
                            <label>Time of Birth</label>
                            <input type="time" class="form-control required" data-parsley-trigger="change"  
