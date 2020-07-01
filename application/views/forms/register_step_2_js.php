@@ -155,7 +155,7 @@
 			{ alert('Family type can not be empty'); return false; }
 			else if(($('#ort').val() != 'checked') &&($('#trad').val() != 'checked')&&($('#mod').val() != 'checked')&&($('#lib').val() != 'checked'))
 			{ alert('Family value can not be empty'); return false; }  */
-			else if($('#about').val().length() <300) { alert('Something About You can not be empty or cannot be lessthan 300 chars '); return false; }
+			else if($('#about').val().length<300) { alert('Something About You can not be empty or cannot be lessthan 300 chars '); return false; }
 		    else { }
 
 		    // var value =$("#reg_detail_form").serialize();
