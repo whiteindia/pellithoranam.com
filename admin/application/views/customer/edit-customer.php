@@ -77,15 +77,11 @@
                         </div>
                          <div class="col-md-6" style="padding:5px;">
                          <div class="col-md-3" style="padding:5px;">
-                           <label>Day</label>
+                           <label>Date of birth</label>
                               <input class="datepicker wed-reg-input form-control required" name="dob" data-date-format="yyyy-mm-dd" value="<?php echo $profile->dob;?>">
                         </div>
                       </div>
-                         <div class="col-md-6" style="padding:5px;">
-                           <label>Age</label>
-                           <input type="text" class="form-control required" data-parsley-trigger="change"  
-                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="age"  value="<?php echo $profile->age; ?>">
-                        </div>
+
                         <div class="col-md-6" style="padding:5px;">
                            <label>Place of Birth</label>
                            <input type="text" class="form-control required" data-parsley-trigger="change"  
@@ -95,7 +91,13 @@
                            <label>Time of Birth</label>
                            <input type="time" class="form-control required" data-parsley-trigger="change"  
                               data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="timeofbirth"  value="<?php if($profile->timeofbirth){ echo $profile->timeofbirth; }?>">
-                        </div><br>
+                        </div>
+                        <div class="col-md-6" style="padding:5px;">
+                           <label>Age</label>
+                           <input type="text" class="form-control required" data-parsley-trigger="change"  
+                              data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="age"  value="<?php echo $profile->age; ?>">
+                        </div>
+                        <br>
                         <label class="col-md-8"><u>Religion Information</u></label><br>
                          <div class="col-md-6" style="padding:5px;">
                            <label>religion</label>
