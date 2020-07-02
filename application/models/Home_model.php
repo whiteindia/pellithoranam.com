@@ -64,7 +64,7 @@ class Home_model extends CI_Model {
 		$chk_qry = $this->db->get();
 		//$chk_qry = $query->row();
 		//echo $this->db->last_query();die;
-	print_r($usr_qry->result());
+	print_r($chk_qry->num_rows());
 	
 	
     if ($chk_qry->num_rows() == 1) {
