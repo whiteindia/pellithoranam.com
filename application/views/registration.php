@@ -110,7 +110,7 @@ $_SESSION['user_id']=$sess->user_id;
 
                   <ul class="wed-navbar-list">
            
-                      <li class="pull-right"><h4 style="font-family: 'Roboto', sans-serif;font-weight: 500;">Welcome <?php echo $sess->profile_name; echo $_SESSION['user_id'];?></h4></li>
+                      <li class="pull-right"><h4 style="font-family: 'Roboto', sans-serif;font-weight: 500;">Welcome <?php echo $sess->profile_name;?></h4></li>
                     <div class="clearfix"></div>
                   </ul>
                 </div>

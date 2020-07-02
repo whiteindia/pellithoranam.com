@@ -137,15 +137,7 @@
                         </div>
                         <div class="clearfix"></div>
                       </li>
-                      <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
-                       <div class="wed-reg-right-child2">
-                           <div class="row1">
-                             <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image"></span>
-                           </div>
-                         </div>
-                       <div class="clearfix"></div>
-                     </li>
+
                       <li>
                         <div class="wed-reg-right-child1">Complexion</div>
                         <div class="wed-reg-right-child2">
@@ -176,6 +168,15 @@
                         </div>
                         <div class="clearfix"></div>
                       </li>
+                      <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
+                       <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image"></span>
+                           </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
                     </ul>
               </div>
               <div class="wed-reg-div1">
@@ -593,7 +594,7 @@
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
                         <textarea class="wed-reg-textarea" id="about" rows="4" cols="50" name="about_you" required></textarea>
-                        <p>( Min. 50 Characters )</p>
+                        <p>( Min. 150 Characters )</p>
                       </li>
                       <li>
 

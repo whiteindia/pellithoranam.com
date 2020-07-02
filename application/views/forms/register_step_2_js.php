@@ -94,6 +94,7 @@
 		    }
 		    else if($('#height').val() == 0) { alert('Height can not be empty'); return false; }
 		    else if($('#weight').val() == 0) { alert('Weight can not be empty'); return false; }
+			else if($('#image').val() == '') { alert('Weight can not be empty'); return false; }
 		    else if($('#education').val() == 0) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">Education cannot be empty</p>');
@@ -155,7 +156,7 @@
 			{ alert('Family type can not be empty'); return false; }
 			else if(($('#ort').val() != 'checked') &&($('#trad').val() != 'checked')&&($('#mod').val() != 'checked')&&($('#lib').val() != 'checked'))
 			{ alert('Family value can not be empty'); return false; }  */
-			else if($('#about').val().length<300) { alert('Something About You can not be empty or cannot be lessthan 300 chars '); return false; }
+			else if($('#about').val().length<150) { alert('Something About You can not be empty or cannot be lessthan 150 chars '); return false; }
 		    else { }
 
 		    // var value =$("#reg_detail_form").serialize();
