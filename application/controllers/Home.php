@@ -322,6 +322,35 @@ unset($_SESSION['pwd']);
 //if($data['income_per']==2){
 //	$data['income']	=
 //}
+//////new photo upload option in registration
+$user = $this->session->userdata('logged_in');
+if($user->user_id!='') { $user1 = $user->user_id; } else { $user1 = $this->session->userdata('ins_id'); }
+$datap['user_id'] = $user1;
+$config = set_upload_optionscategory('assets/uploads/profile_pics');
+$new_name = time()."_".$_FILES["image"]['name'];
+$config['file_name'] = $new_name;
+$this->upload->initialize($config);
+if (!$this->upload->do_upload('image'))	{
+	//print_r($this->upload->display_errors());die();
+$this->session->set_flashdata('message', array('message' => 'Error Occured While Uploading Files','class' => 'danger'));
+redirect(base_url().'home/registration_details');
+}
+else 
+{
+	$upload_data = $this->upload->data();
+	$datap['pic_name'] = $new_name;
+	$datap['pic_location'] = $config['upload_path']."/".$upload_data['file_name'];
+	$datap['pic_datetime'] = date('Y-m-d H:i:s', time());
+	$result = $this->db->insert('profile_pic_verification', $datap); 
+}
+
+//////new photo upload option in registration
+
+
+
+
+
+
 //[income_per] => 2
 	////			 echo "<pre>";
 		//		 print_r($data);

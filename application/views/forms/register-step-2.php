@@ -138,6 +138,15 @@
                         <div class="clearfix"></div>
                       </li>
                       <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
+                       <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image"></span>
+                           </div>
+                         </div>
+                       <div class="clearfix"></div>
+                     </li>
+                      <li>
                         <div class="wed-reg-right-child1">Complexion</div>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">

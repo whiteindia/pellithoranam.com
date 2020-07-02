@@ -851,6 +851,57 @@ public function upload_photo() {
 			}
 		} else { redirect(base_url()); }
 	}
+	public function upload_photo_dummy() {
+	//	if($this->session->userdata('logged_in')) {
+	//		$data = $_POST;
+ 
+			//$user = $this->session->userdata('user_id');//print_r($user);die;
+			//$data['user_id'] = $user->user_id;
+			$user = $this->session->userdata('logged_in');
+			if($user->user_id!='') { $user1 = $user->user_id; } else { $user1 = $this->session->userdata('ins_id'); }
+			$data['user_id'] = $user1;
+			$config = set_upload_optionscategory('assets/uploads/profile_pics');
+			$new_name = time()."_".$_FILES["image"]['name'];
+			$config['file_name'] = $new_name;
+			$this->upload->initialize($config);
+			if (!$this->upload->do_upload('image'))	{
+			    //print_r($this->upload->display_errors());die();
+			$this->session->set_flashdata('message', array('message' => 'Error Occured While Uploading Files','class' => 'danger'));
+			redirect(base_url().'home/registration_details');
+			}
+			else 
+			{
+				$upload_data = $this->upload->data();
+				$data['pic_name'] = $new_name;
+				$data['pic_location'] = $config['upload_path']."/".$upload_data['file_name'];
+				$data['pic_datetime'] = date('Y-m-d H:i:s', time());
+				$result = $this->db->insert('profile_pic_verification', $data); 
+			}
+			//	$result = $this->Profile_model->insert_profile_pic($data);
+		/*		if($result) {
+					//echo "<script>alert('Photo Uploaded Successfully.Your photo will appear only after admin approval..Thank you...')</script>";
+					//*$logg = $this->session->userdata('logged_in');
+				//	$logg->profile_photo = $data['pic_location'];
+				//	$this->session->set_userdata('logged_in',$logg);
+
+					header("refresh:0;url=../profile/my_profile");
+				}
+				else 
+				{
+				    echo $data;
+				    echo "Somthing went wrong..."; 
+				    echo $data;
+				}  */
+			
+	//	} else { redirect(base_url()); }
+	}
+
+
+
+
+
+
+
 
  private function set_upload_options() {   
 		//upload an image options
