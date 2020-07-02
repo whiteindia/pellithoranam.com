@@ -323,8 +323,9 @@ unset($_SESSION['pwd']);
 //	$data['income']	=
 //}
 //////new photo upload option in registration
-$user = $this->session->userdata('logged_in');
-if($user->user_id!='') { $user1 = $user->user_id; } else { $user1 = $this->session->userdata('ins_id'); }
+//$user = $this->session->userdata('logged_in');
+//if($user->user_id!='') { $user1 = $user->user_id; } else { $user1 = $this->session->userdata('ins_id'); }
+$user1 = $this->session->userdata('ins_id');
 $datap['user_id'] = $user1;
 $config = set_upload_optionscategory('assets/uploads/profile_pics');
 $new_name = time()."_".$_FILES["image"]['name'];
