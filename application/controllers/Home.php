@@ -330,6 +330,7 @@ $datap['user_id'] = $user1;
 $config = set_upload_optionscategory('assets/uploads/profile_pics');
 $new_name = time()."_".$_FILES["image"]['name'];
 $config['file_name'] = $new_name;
+$this->load->library('upload');
 $this->upload->initialize($config);
 if (!$this->upload->do_upload('image'))	{
 	//print_r($this->upload->display_errors());die();
