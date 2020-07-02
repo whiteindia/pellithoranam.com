@@ -94,7 +94,7 @@
 		    }
 		    else if($('#height').val() == 0) { alert('Height can not be empty'); return false; }
 		    else if($('#weight').val() == 0) { alert('Weight can not be empty'); return false; }
-			else if($('#image').val() == '') { alert('profile pic can not be empty'); return false; }
+			else if($('#image').val() == '') { alert('profile pic can not be empty.please upload your profile photo'); return false; }
 		    else if($('#education').val() == 0) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">Education cannot be empty</p>');
