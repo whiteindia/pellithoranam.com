@@ -174,6 +174,7 @@
                            <div class="row1">
                              <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image"></span>
                            </div>
+                           <small class="text-danger">** upload jpg,jpeg,png image only.profile picture will be displayed in your profile page once admin approved </small>
                          </div>
                        <div class="clearfix"></div>
                      </li>
