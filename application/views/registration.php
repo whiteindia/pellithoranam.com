@@ -2,6 +2,7 @@
 $settings = get_setting();
 $pid = $this->session->userdata('ins_id');
 $sess = get_profile($pid);
+$_SESSION['user_id']=$sess->user_id;
  ?>
  <!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
@@ -109,7 +110,7 @@ $sess = get_profile($pid);
 
                   <ul class="wed-navbar-list">
            
-                      <li class="pull-right"><h4 style="font-family: 'Roboto', sans-serif;font-weight: 500;">Welcome <?php echo $sess->profile_name;?></h4></li>
+                      <li class="pull-right"><h4 style="font-family: 'Roboto', sans-serif;font-weight: 500;">Welcome <?php echo $sess->profile_name; echo $_SESSION['user_id'];?></h4></li>
                     <div class="clearfix"></div>
                   </ul>
                 </div>
