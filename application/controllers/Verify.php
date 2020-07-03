@@ -133,7 +133,7 @@ error_reporting(E_ALL);
       $this->send_sms($email_id,$msg);
       $result=$this->Verify_model->get_mob_email($email_id);
       $mobn=$result->phone; 
-      $this->send_sms($mobn,$msg);
+      $this->sent_mobile_msg($mobn,$msg);
       //$this->resend_otp(); 
       redirect(base_url().'Verify');
     }
