@@ -12,8 +12,9 @@
           <div class="col-md-9">
             <div class="wed-reg-banner-detail1">
               <h4>State your Preferences to find suitable matches</h4>
-              <p>You have <strong>1800</strong> </p>
-              <p>Matching Profiles based on your details</p>
+        <!--      <p>You have <strong>1800</strong> </p>
+              <p>Matching Profiles based on your details</p>-->
+              <p>Pellithoranam is the most Trusted matrimony, Call up and connect with your prospects instantly</p>
               <h6>You can edit your Partner Preferences any time</h6>
             </div>
           </div>
