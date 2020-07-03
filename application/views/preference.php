@@ -299,7 +299,7 @@
                  <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
                  <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>"></span>
+                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
                     </div>
                    </div>
                  <div class="clearfix"></div>
