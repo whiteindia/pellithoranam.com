@@ -130,7 +130,7 @@ error_reporting(E_ALL);
       $otp = $this->generate_otp();
       //exit;
       $result = $this->Verify_model->add_otpdetails($otp);
-      $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp." . Do not share the password with anyone for security reasons.";
+      $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp.". Do not share the password with anyone for security reasons.";
       $this->send_sms($email_id,$msg);
      // $result=$this->Verify_model->get_mob_email($email_id);
      // $mobn=$result->phone; 
@@ -145,7 +145,7 @@ error_reporting(E_ALL);
       
       $result = $this->Verify_model->get_otpdetails();
       $otp = $result->otp;
-      $msg = "Hello, Your one time password for www.Pellithoranam.com is ".$otp." . Do not share the password with anyone for security reasons.";
+      $msg = "Hello, Your one time password for www.Pellithoranam.com is ".$otp.". Do not share the password with anyone for security reasons.";
       $this->send_sms($mob,$msg);
 
       $result=$this->Verify_model->get_mob_email($mob);
