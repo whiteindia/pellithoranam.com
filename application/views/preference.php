@@ -65,18 +65,18 @@
                     <div class="row1">
                       <span>
                         <select class="wed-reg-select2" name="height_from_id" required>
-                        <option disabled value="0">MIN</option>>
+                        <!--<option disabled value="0">MIN</option>> --><option value="">MIN</option>
                         <?php foreach($heights as $heightd) { ?>
-                          <option value="<?php echo $heightd->height_id; ?>" <?php if($preferences->height_from_id==$heightd->height_id) echo 'selected="SELECTED"'; ?>><?php echo $heightd->height; ?></option>
+                          <option value="<?php echo $heightd->height_id; ?>" <?php //if($preferences->height_from_id==$heightd->height_id) echo 'selected="SELECTED"'; ?>><?php echo $heightd->height; ?></option>
                       <?php } ?>
                         </select>
                       </span>
                       <span class="wed-or">To</span>
                       <span>
                         <select class="wed-reg-select2" name="height_to_id" required>
-                        <option disabled value="0">MAX</option>
+                   <!--     <option disabled value="0">MAX</option>--><option value="">MAX</option>
                         <?php foreach($heights as $heightd) { ?>
-                          <option value="<?php echo $heightd->height_id; ?>" <?php if($preferences->height_to_id==$heightd->height_id) echo 'selected="SELECTED"'; ?>><?php echo $heightd->height; ?></option>
+                          <option value="<?php echo $heightd->height_id; ?>" <?php// if($preferences->height_to_id==$heightd->height_id) echo 'selected="SELECTED"'; ?>><?php echo $heightd->height; ?></option>
                       <?php } ?>
                         </select>
                       </span>
