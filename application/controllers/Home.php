@@ -361,8 +361,9 @@ else
 				$result = $this->Home_model->InsertRegistrationDetails($data);
 				if($result==1){
 					$email = $this->session->userdata('email');
+					$phone= $this->session->userdata('phone');
 					//Verify/send_otp
-					redirect(base_url().'verify/send_otp_after_reg?email='.$email);
+					redirect(base_url().'verify/send_otp_after_reg?email='.$email.'&phone='.$phone);
 				} else { 
 					redirect(base_url().'home/index'); 
 				}
