@@ -89,14 +89,25 @@
                   <div class="wed-reg-right-child1">Maritial Status</div>
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
-                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php //if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php //if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
+                  <!--      <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php //if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php //if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
                         <label for="nm1">Never Married</label>
                         <input id="dvsd1" type="checkbox" <?php //if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="2">
                         <label for="dvsd1">Divorced</label>
                         <input id="wd1" type="checkbox" <?php //if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="3">
                         <label for="wd1">Widowed</label>
                         <input id="advsd1" type="checkbox" <?php //if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="4">
-                        <label for="advsd1">Awaiting for Divorce</label>
+                        <label for="advsd1">Awaiting for Divorce</label> -->
+                        <select class="wed-reg-select" name="maritial_status[]" id="maritial_status" required>
+                        <option value="">select</option>
+                                <option value="1">Never Married</option>
+                                <option value="2">Divorced</option>
+                                <option value="3">Widowed</option>
+                                <option value="4">Awaiting for Divorce</option>
+                                
+                                                
+                             </select>
+
+
                     </div>
                   </div>
                   <div class="clearfix"></div>
