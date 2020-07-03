@@ -1283,7 +1283,8 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <form method="post" id="contact_form1" action="">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4> Contact Details Of <?php echo $profile[0]->profile_name; ?> (T<?php echo $profile[0]->matrimony_id; ?>)</h4>
-              <p>Pellithoranam is the most Trusted,the most successfull and the only matrimony site in the world to have 100% mobile verified profiles.Call up and connect with your prospects instantly</p>
+              <!--<p>Pellithoranam is the most Trusted,the most successfull and the only matrimony site in the world to have 100% mobile verified profiles.Call up and connect with your prospects instantly</p> -->
+                      <p>Pellithoranam is the most Trusted matrimony, Call up and connect with your prospects instantly</p>
          <div class="wed-add-modal-footer">
 
                 <div style="border:1px solid; color:#fff;">Primary Mobile Number : <h4><?php echo $profile[0]->phone; ?></h4></div>
