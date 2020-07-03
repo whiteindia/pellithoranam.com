@@ -499,7 +499,7 @@
               <hr>
               <ul>
                 <li>
-                  <textarea class="wed-reg-textarea" name="about_partner" rows="4" cols="50" minlength="100" placeholder="Describe your expectations.minimum 100 characters"><?php echo $preferences->about_partner; ?></textarea>
+                  <textarea class="wed-reg-textarea" name="about_partner" rows="4" cols="50" minlength="100" placeholder="Describe your expectations.minimum 100 characters" required><?php echo $preferences->about_partner; ?></textarea>
                 </li>
                 <li>
                   <button class="wed-submit-btn1 prefs_save_btn" type="submit" >Submit</button>
