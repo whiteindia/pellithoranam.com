@@ -146,6 +146,11 @@ error_reporting(E_ALL);
       $otp = $result->otp;
       $msg = "Hello, Your one time password for www.Pellithoranam.com is ".$otp." . Do not share the password with anyone for security reasons.";
       $this->send_sms($mob,$msg);
+
+      $result=$this->Verify_model->get_mob_email($mob);
+      $mobn=$result->phone; 
+      $this->sent_mobile_msg($mobn,$msg);
+      
       redirect(base_url().'Verify'); 	
     }
  public function reg_success() {
