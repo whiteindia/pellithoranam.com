@@ -322,9 +322,10 @@ $_SESSION['user_id']=$sess->user_id;
           </div>
           <div class="col-md-9">
             <div class="wed-reg-banner-detail">
-              <p>You have <strong>1800</strong> </p>
+          <!--    <p>You have <strong>1800</strong> </p>
               <p>Matching Profiles based on your details</p>
-              <p>Completing this page will take you closer to your perfect match</p>
+              <p>Completing this page will take you closer to your perfect match</p> -->
+              <p>Pellithoranam is the most Trusted matrimony, Call up and connect with your prospects instantly</p>
             </div>
           </div>
         </div>
