@@ -38,7 +38,7 @@
                   <div class="wed-reg-right-child2">
                     <div class="row1">
                       <span>
-                        <select class="wed-reg-select2" name="age_from">
+                        <select class="wed-reg-select2" name="age_from" required>
                           <option disabled value="0">MIN</option>
                           <?php for($i=18;$i<=70;$i++) { ?>
                           <option value="<?php echo $i; ?>" <?php if($preferences->age_from==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
@@ -47,7 +47,7 @@
                       </span>
                       <span class="wed-or">To</span>
                       <span>
-                        <select class="wed-reg-select2" name="age_to">
+                        <select class="wed-reg-select2" name="age_to" required>
                           <option disabled value="0">MAX</option>
                           <?php for($i=18;$i<=70;$i++) { ?>
                           <option value="<?php echo $i; ?>" <?php if($preferences->age_to==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
@@ -64,7 +64,7 @@
                   <div class="wed-reg-right-child2">
                     <div class="row1">
                       <span>
-                        <select class="wed-reg-select2" name="height_from_id">
+                        <select class="wed-reg-select2" name="height_from_id" required>
                         <option disabled value="0">MIN</option>>
                         <?php foreach($heights as $heightd) { ?>
                           <option value="<?php echo $heightd->height_id; ?>" <?php if($preferences->height_from_id==$heightd->height_id) echo 'selected="SELECTED"'; ?>><?php echo $heightd->height; ?></option>
@@ -73,7 +73,7 @@
                       </span>
                       <span class="wed-or">To</span>
                       <span>
-                        <select class="wed-reg-select2" name="height_to_id">
+                        <select class="wed-reg-select2" name="height_to_id" required>
                         <option disabled value="0">MAX</option>
                         <?php foreach($heights as $heightd) { ?>
                           <option value="<?php echo $heightd->height_id; ?>" <?php if($preferences->height_to_id==$heightd->height_id) echo 'selected="SELECTED"'; ?>><?php echo $heightd->height; ?></option>
@@ -89,7 +89,7 @@
                   <div class="wed-reg-right-child1">Maritial Status</div>
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
-                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?>>
+                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
                         <label for="nm1">Never Married</label>
                         <input id="dvsd1" type="checkbox" <?php if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="2">
                         <label for="dvsd1">Divorced</label>
