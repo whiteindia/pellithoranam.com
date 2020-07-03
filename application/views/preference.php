@@ -283,7 +283,7 @@
                   <div class="wed-reg-right-child1 paddingtop10">Country</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select ctry_drop" name="country[]" multiple="multiple">
+                        <select class="wed-reg-select ctry_drop" name="country[]" multiple="multiple" required>
                           <?php foreach($country as $ctry) { ?>
                               <option value="<?php echo $ctry->country_id; ?>" <?php if(in_array($ctry->country_id,$preferences->country)) echo 'selected="SELECTED"'; ?>><?php echo $ctry->country_name; ?></option>
                           <?php } ?>
@@ -296,7 +296,7 @@
                   <div class="wed-reg-right-child1 paddingtop10">State</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select state_drop" name="state[]" multiple="multiple">
+                        <select class="wed-reg-select state_drop" name="state[]" multiple="multiple" required>
                           <?php foreach($states as $state) { ?>
                               <option value="<?php echo $state->state_id; ?>" <?php if(in_array($state->state_id, $preferences->state)) echo 'selected="SELECTED"'; ?>><?php echo $state->state_name; ?></option>
                           <?php } ?>
