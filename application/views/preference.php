@@ -37,7 +37,7 @@
                   <div class="wed-reg-right-child1">Age</div>
                   <div class="wed-reg-right-child2">
                     <div class="row1">
-                      <span><label>min</label>
+                      <span>
                         <select class="wed-reg-select2" name="age_from" required>
                           <!--<option disabled value="0">MIN</option>--><option value="">MIN</option>
                           <?php for($i=18;$i<=70;$i++) { ?>
@@ -46,7 +46,7 @@
                         </select>
                       </span>
                       <span class="wed-or">To</span>
-                      <span><label>max</label>
+                      <span>
                         <select class="wed-reg-select2" name="age_to" required>
                           <!--<option disabled value="0">MAX</option>--><option value="">MAX</option>
                           <?php for($i=18;$i<=70;$i++) { ?>
@@ -89,13 +89,13 @@
                   <div class="wed-reg-right-child1">Maritial Status</div>
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
-                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
+                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php //if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
                         <label for="nm1">Never Married</label>
-                        <input id="dvsd1" type="checkbox" <?php if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="2">
+                        <input id="dvsd1" type="checkbox" <?php //if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="2">
                         <label for="dvsd1">Divorced</label>
-                        <input id="wd1" type="checkbox" <?php if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="3">
+                        <input id="wd1" type="checkbox" <?php //if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="3">
                         <label for="wd1">Widowed</label>
-                        <input id="advsd1" type="checkbox" <?php if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="4">
+                        <input id="advsd1" type="checkbox" <?php //if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="4">
                         <label for="advsd1">Awaiting for Divorce</label>
                     </div>
                   </div>
