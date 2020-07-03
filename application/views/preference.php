@@ -116,12 +116,22 @@
                   <div class="wed-reg-right-child1">Physical Status</div>
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
-                        <input id="physical_all" type="checkbox" <?php if(in_array('0', $preferences->physical_status)) echo 'checked="checked"'; ?> name="physical_status[]" value="0" <?php if(empty($preferences->physical_status)) echo 'checked="checked"'; ?> >
+                  <!--      <input id="physical_all" type="checkbox" <?php if(in_array('0', $preferences->physical_status)) echo 'checked="checked"'; ?> name="physical_status[]" value="0" <?php if(empty($preferences->physical_status)) echo 'checked="checked"'; ?> >
                         <label for="physical_all">Doesn't Matter</label>
                         <input id="nms" <?php if(in_array('1', $preferences->physical_status)) echo 'checked="checked"'; ?> class="physical_sel" type="checkbox" name="physical_status[]" value="1" >
                         <label for="nms">Normal</label>
                         <input id="dvsds" <?php if(in_array('2', $preferences->physical_status)) echo 'checked="checked"'; ?> class="physical_sel" type="checkbox" name="physical_status[]" value="2">
                         <label for="dvsds">Physically Challenged</label>
+                        -->
+                        <select class="wed-reg-select" name="physical_status[]" id="physical_status" required>
+                       <!----> <option value="">select</option>
+                                <option value="1">Doesn't Matter</option>
+                                <option value="2">Normal</option>
+                                <option value="3">Physically Challenged</option>
+                             <!--   <option value="4">Awaiting for Divorce</option> -->
+                                
+                                                
+                             </select>
                     </div>
                   </div>
                   <div class="clearfix"></div>
