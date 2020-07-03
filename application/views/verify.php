@@ -27,7 +27,7 @@ die();*/
               <span style="color:red;"><?php if(isset($error)) { echo $error; } ?></span>
             </form>
               <p>Didn’t receive code yet?<br>
-                <a href="<?php echo base_url(); ?>Verify/resend_otp"><strong>Resend Pin</strong></a>
+                <a href="<?php echo base_url(); ?>Verify/resend_otp"><strong>Resend Pin to Mobile number</strong></a>
               </p>
                 <hr>
                <!--  <div class="wed-custom-check">

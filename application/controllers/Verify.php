@@ -123,7 +123,7 @@ class Verify extends CI_Controller {
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
       $email_id = $_GET['email'];
-      $phone = $_GET['phone'];
+    //  $phone = $_GET['phone'];
       // echo  $email_id;
       // exit;
      // if($_POST['email_id']) { $email_id =  $_POST['email_id']; }
@@ -134,7 +134,7 @@ error_reporting(E_ALL);
       $this->send_sms($email_id,$msg);
      // $result=$this->Verify_model->get_mob_email($email_id);
      // $mobn=$result->phone; 
-      $this->sent_mobile_msg($phone,$msg);
+     // $this->sent_mobile_msg($phone,$msg);
       //$this->resend_otp(); 
       redirect(base_url().'Verify');
     }
