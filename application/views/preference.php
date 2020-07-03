@@ -123,7 +123,7 @@
                         <input id="dvsds" <?php if(in_array('2', $preferences->physical_status)) echo 'checked="checked"'; ?> class="physical_sel" type="checkbox" name="physical_status[]" value="2">
                         <label for="dvsds">Physically Challenged</label>
                         -->
-                        <select class="wed-reg-select" name="physical_status[]" id="physical_status" required>
+                        <select class="wed-reg-select" name="physical_status[]" id="physical_status" multiple required>
                        <!----> <option value="">select</option>
                                 <option value="1">Doesn't Matter</option>
                                 <option value="2">Normal</option>
@@ -140,14 +140,24 @@
                   <div class="wed-reg-right-child1">Eating Habits</div>
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
-                        <input id="eating_all" type="checkbox" name="eating_habit[]" value="0" <?php if(empty($preferences->eating_habit)) echo 'checked="checked"'; ?> <?php if(in_array('0', $preferences->eating_habit)) echo 'checked="checked"'; ?>>
+                 <!--       <input id="eating_all" type="checkbox" name="eating_habit[]" value="0" <?php if(empty($preferences->eating_habit)) echo 'checked="checked"'; ?> <?php if(in_array('0', $preferences->eating_habit)) echo 'checked="checked"'; ?>>
                         <label for="eating_all">Doesn't Matter</label>
                         <input id="nmp" class="eating_sel" type="checkbox" name="eating_habit[]" value="1" <?php if(in_array('1', $preferences->eating_habit)) echo 'checked="checked"'; ?> >
                         <label for="nmp">Vegetarian</label>
                         <input id="dvsdp" class="eating_sel" type="checkbox" name="eating_habit[]" value="2" <?php if(in_array('2', $preferences->eating_habit)) echo 'checked="checked"'; ?>>
                         <label for="dvsdp">Non Vegitarian</label>
                         <input id="wdp" class="eating_sel" type="checkbox" name="eating_habit[]" value="3" <?php if(in_array('3', $preferences->eating_habit)) echo 'checked="checked"'; ?>>
-                        <label for="wdp">Eggetarian</label>
+                        <label for="wdp">Eggetarian</label>  -->
+                        <select class="wed-reg-select" name="eating_habit[]" id="eating_habit" multiple required>
+                       <!----> <option value="0">Doesn't Matter</option>
+                                <option value="1">Vegetarian</option>
+                                <option value="2">Non Vegitarian</option>
+                                <option value="3">Eggetarian</option>
+                            <!--  <option value="4">Awaiting for Divorce</option>   -->
+                                
+                                                
+                             </select>
+
                     </div>
                   </div>
                   <div class="clearfix"></div>
