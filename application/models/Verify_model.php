@@ -101,6 +101,15 @@ function get_mob($matri_id){
                 return $result;
 
 }
+function get_mob_email($email){
+               
+  $query = $this->db->where('dnd','0');
+  $query = $this->db->where('email',$email);
+  $query = $this->db->get('profiles');
+  $result = $query->row();
+  return $result;
+
+}
 public function view_package($data){ 
             $query = $this->db->where('package_status','1');
             $query = $this->db->where('id',$data['id']);
