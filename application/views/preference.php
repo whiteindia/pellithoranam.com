@@ -124,10 +124,10 @@
                         <label for="dvsds">Physically Challenged</label>
                         -->
                         <select class="wed-reg-select" name="physical_status[]" id="physical_status" multiple required>
-                       <!----> <option value="">select</option>
-                                <option value="1">Doesn't Matter</option>
-                                <option value="2">Normal</option>
-                                <option value="3">Physically Challenged</option>
+                       <!-- <option value="">select</option>-->
+                                <option value="0">Doesn't Matter</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Physically Challenged</option>
                              <!--   <option value="4">Awaiting for Divorce</option> -->
                                 
                                                 
@@ -206,8 +206,8 @@
                   <div class="wed-reg-right-child1 paddingtop10">Religion</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select religion-selector" name="religion">
-                          <option  value="0">- Select Religion -</option>
+                        <select class="wed-reg-select religion-selector" name="religion" required>
+                          <option  value="">- Select Religion -</option>
                           <?php foreach($religions as $rlgn) { ?>
                               <option value="<?php echo $rlgn->religion_id; ?>" <?php if($preferences->religion==$rlgn->religion_id) echo 'selected="SELECTED"'; ?>><?php echo $rlgn->religion_name; ?></option>
                           <?php } ?>
@@ -220,8 +220,8 @@
                   <div class="wed-reg-right-child1 paddingtop10">Mother Tongue</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select" name="mother_language">
-                          <option   value="0">- Select Mother Tongue -</option>
+                        <select class="wed-reg-select" name="mother_language" required>
+                          <option   value="">- Select Mother Tongue -</option>
                           <?php foreach($mother_tongue as $mthr_tng) { ?>
                               <option value="<?php echo $mthr_tng->mother_tongue_id; ?>"  <?php if($preferences->mother_language==$mthr_tng->mother_tongue_id) echo 'selected="SELECTED"'; ?>><?php echo $mthr_tng->mother_tongue_name ?></option>
                           <?php } ?>
@@ -234,7 +234,7 @@
                   <div class="wed-reg-right-child1 paddingtop10">Caste / Division</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select caste-selector" name="caste[]" multiple="multiple">
+                        <select class="wed-reg-select caste-selector" name="caste[]" multiple required>
                         <?php
                         foreach ($castes as $rs) {?>
                           <option value="<?php echo $rs->caste_id;?>" <?php if(in_array($rs->caste_id, $preferences->caste)) echo 'selected="SELECTED"'; ?> ><?php echo $rs->caste_name; ?></option>
