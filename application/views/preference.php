@@ -97,7 +97,7 @@
                         <label for="wd1">Widowed</label>
                         <input id="advsd1" type="checkbox" <?php //if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="4">
                         <label for="advsd1">Awaiting for Divorce</label> -->
-                        <select class="wed-reg-select" name="maritial_status[]" id="maritial_status" required>
+                        <select class="wed-reg-select" name="maritial_status[]" id="maritial_status" multiple="multiple" required>
                         <option value="">select</option>
                                 <option value="1">Never Married</option>
                                 <option value="2">Divorced</option>
