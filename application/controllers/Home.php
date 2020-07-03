@@ -361,7 +361,12 @@ else
 				$result = $this->Home_model->InsertRegistrationDetails($data);
 				if($result==1){
 					$email = $this->session->userdata('email');
-					$phone= $this->session->userdata('phone');
+
+				//	$query = $this->db->where('dnd','0');
+					$query = $this->db->where('email',$email);
+					$query = $this->db->get('profiles');
+					$result = $query->row();
+					$phone= $result->phone;
 					//Verify/send_otp
 					redirect(base_url().'verify/send_otp_after_reg?email='.$email.'&phone='.$phone);
 				} else { 
