@@ -89,7 +89,7 @@
                   <div class="wed-reg-right-child1">Maritial Status</div>
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
-                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php //if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
+                        <input id="nm1" type="checkbox"  name="maritial_status[]" value="1" <?php //if(empty($preferences->maritial_status)) echo 'checked="checked"'; ?> <?php //if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; ?> required> 
                         <label for="nm1">Never Married</label>
                         <input id="dvsd1" type="checkbox" <?php //if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; ?> name="maritial_status[]" value="2">
                         <label for="dvsd1">Divorced</label>
