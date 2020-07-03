@@ -296,7 +296,7 @@
                   <div class="wed-reg-right-child1 paddingtop10">State</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select state_drop" name="state[]" multiple="multiple" required>
+                        <select class="wed-reg-select state_drop" name="state[]" multiple="multiple">
                           <?php foreach($states as $state) { ?>
                               <option value="<?php echo $state->state_id; ?>" <?php if(in_array($state->state_id, $preferences->state)) echo 'selected="SELECTED"'; ?>><?php echo $state->state_name; ?></option>
                           <?php } ?>
@@ -404,7 +404,8 @@
                   <div class="wed-reg-right-child1 paddingtop10">Education</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select educ_drop" name="education[]" multiple="multiple">
+                        <select class="wed-reg-select educ_drop" name="education[]" multiple required>
+                        <option value="">Option</option>
                           <?php foreach($educations as $education) { ?>
                               <option <?php if(in_array($education->education_id, $preferences->education)) echo 'selected="SELECTED"'; ?> value="<?php echo $education->education_id; ?>"><?php echo $education->education; ?></option>
                           <?php } ?>
