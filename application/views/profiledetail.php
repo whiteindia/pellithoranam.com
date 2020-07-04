@@ -120,11 +120,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             $qry_1 = $this->db->get_where('stars', array('star_id'=>$profile[0]->star_id)); 
             echo $qry_1->result()[0]->star_name.",".$profile[0]->padam;?>
             </li>
-         <!--   <?php if(isset($profile[0]->placeofbirth)) { ?>
-            <li><span><i class="fa fa-birthday-cake" style="color:orange"></i></span>
-            <?php echo $profile[0]->placeofbirth; echo '  ';echo $profile[0]->timeofbirth;?>
-            </li>
-            <?php }?>  -->
+
             <li><span><img src="<?php echo base_url(); ?>assets/img/edu.png"></span>
             <?php echo $profile[0]->education;?>
             </li>
@@ -296,19 +292,19 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                         <li class="wed-personel-sec-li">
                           <div class="child1">Date of birth</div>
                           <div class="child2">:</div>
-                          <div class="child3"><?php echo $profile[0]->dob; </div>
+                          <div class="child3"><?php echo $profile[0]->dob; ?></div>
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
                           <div class="child1">Time of Birth</div>
                           <div class="child2">:</div>
-                          <div class="child3"><?php echo $profile[0]->timeofbirth; </div>
+                          <div class="child3"><?php echo $profile[0]->timeofbirth; ?></div>
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
                           <div class="child1">Place of Birth</div>
                           <div class="child2">:</div>
-                          <div class="child3"><?php echo $profile[0]->placeofbirth; </div>
+                          <div class="child3"><?php echo $profile[0]->placeofbirth; ?></div>
                           <div class="clearfix"></div>
                         </li>
 
