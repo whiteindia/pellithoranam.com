@@ -330,13 +330,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                              <?php if($profile[0]->weight){ echo $profile[0]->weight;} else { ?> - <?php } ?> </div>
                           <div class="clearfix"></div>
                         </li>
-                        <li class="wed-personel-sec-li">
-                          <div class="child1">Mother Toungue</div>
-                          <div class="child2">:</div>
-                          <div class="child3">
-                               <?php if($profile[0]->mother_tongue_name){ echo $profile[0]->mother_tongue_name;} else { ?> - <?php } ?> </div>
-                          <div class="clearfix"></div>
-                        </li>
+
                         <li class="wed-personel-sec-li">
                           <div class="child1">Marital Status</div>
                           <div class="child2">:</div>
@@ -359,6 +353,14 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                     </li>
                     <li class="wed-personel-main-li">
                       <ul class="wed-personel-sec-ul">
+                      <li class="wed-personel-sec-li">
+                          <div class="child1">Mother Toungue</div>
+                          <div class="child2">:</div>
+                          <div class="child3">
+                               <?php if($profile[0]->mother_tongue_name){ echo $profile[0]->mother_tongue_name;} else { ?> - <?php } ?> </div>
+                          <div class="clearfix"></div>
+                        </li>
+
                         <li class="wed-personel-sec-li">
                           <div class="child1">Body Type</div>
                           <div class="child2">:</div>
