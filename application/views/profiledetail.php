@@ -676,7 +676,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
-                          <div class="child1">Father's Status</div>
+                          <div class="child1">Father's Name</div>
                           <div class="child2">:</div>
                           <div class="child3">
                                <?php if($profile[0]->father_status){ echo $profile[0]->father_status;} else { ?> - <?php } ?></div>
@@ -695,7 +695,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
-                          <div class="child1">Mother's Status</div>
+                          <div class="child1">Mother's Name</div>
                           <div class="child2">:</div>
                           <div class="child3">
                                <?php if($profile[0]->mother_status){ echo $profile[0]->mother_status;} else { ?> - <?php } ?></div>
