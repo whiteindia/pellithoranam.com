@@ -284,7 +284,7 @@ NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY
                 </div>
             </div>
             <div class="col-md-4">
-              <img src="<?php echo base_url(); ?>assets/images/side-imgs.png">
+              <img src="<?php echo base_url(); ?>assets/images/IMG-20200630-WA0011.jpg">
             </div>
             
             </div>
@@ -442,18 +442,18 @@ NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY
 
 
 
-<section class="module parallax parallax-1">
-  <div class="wed-index-parallax-overlay">
+<section class="module parallax parallax-1"> <img src="<?php echo base_url(); ?>admin/<?php echo $footer->footer_image;?>">
+<!--  <div class="wed-index-parallax-overlay">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
           <div class="wed-parallax-detail">
            <!--<h5><strong><?php echo $footer->footer_header?></strong> </h5>-->
             <!--<h5>Mobile App</h5>-->                 
-     <!--<p><?php echo $footer->footer_para?>.</p>-->
+     <!--<p><?php echo $footer->footer_para?>.</p>->
             <div class="wed-download-bay">
               <!--<li><img src="<?php echo base_url(); ?>assets/img/googleplay.png"></li>-->
-              <!--<li><img src="<?php echo base_url(); ?>assets/img/appstore.png"></li>-->
+              <!--<li><img src="<?php echo base_url(); ?>assets/img/appstore.png"></li>->
 </div>
           </div>
        </div> 
@@ -462,14 +462,14 @@ NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY
         <div class="col-md-7 animatedParent" data-sequence='500'>
           <div class="wed-index-phone animated bounceInLeft" >
              <img src="<?php echo base_url(); ?>admin/<?php echo $footer->footer_image;?>">
-            <!--<img src="<?php echo base_url(); ?>assets/images/home_phone.png">-->
+            <!--<img src="<?php echo base_url(); ?>assets/images/home_phone.png">->
           </div>
         </div>
 
         </div>
       </div>
     </div>
-  </div>
+  </div>  -->
 </section>
 
  <div class="modal fade wed-add-modal web-add-modal-custom" id="login1" role="dialog">
