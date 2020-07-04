@@ -442,7 +442,7 @@ NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY
 
 
 
-<section class="module parallax parallax-1"> <img src="<?php echo base_url(); ?>admin/<?php echo $footer->footer_image;?>">
+<section class="module parallax parallax-1"> <img src="<?php echo base_url(); ?>admin/<?php echo $footer->footer_image;?>" width="100%">
 <!--  <div class="wed-index-parallax-overlay">
     <div class="container">
       <div class="row">
