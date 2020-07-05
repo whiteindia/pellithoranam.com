@@ -761,7 +761,7 @@ $settings= get_setting();
                     </div>
                     
                     <?php echo $attr;?>
-                    <h5><?php echo ucwords(strtolower($candidate->profile_name));?></h5>
+                    <small><?php echo ucwords(strtolower($candidate->profile_name));?></small>
                     </a>
                     <?php echo $attr;?>
                     <p><?php echo $settings->id_prefix;?><?php echo $candidate->matrimony_id; ?></p>
@@ -959,7 +959,7 @@ $settings= get_setting();
                     <?php } ?>
                     </a>
                 </div>
-                <?php echo $attr;?><h5><?php echo ucwords(strtolower($candidate->profile_name));?></h5></a>
+                <?php echo $attr;?><small><?php echo ucwords(strtolower($candidate->profile_name));?></small></a>
                 <?php echo $attr;?><p><?php echo $settings->id_prefix;?><?php echo $candidate->matrimony_id; ?></p></a>
                 <!--<span><img src="<?php echo base_url(); ?>assets/img/online.png">Online</span>-->
               </div>
