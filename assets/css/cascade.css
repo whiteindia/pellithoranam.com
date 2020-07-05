@@ -1551,7 +1551,7 @@ section.module.parallax-1 {background: #fff;}
 .wed-page-go-text{width:30px;border:1px solid #b7b7b7;margin-right: 10px;margin-left: 10px;}
 .wed-page-go span{font-weight:600;font-family: 'Roboto', sans-serif;}
 .wed-search-listing ul{width:100% !important;padding:0px !important;margin:0px !important;float: left}
-.wed-search-listing ul li{width:100%;list-style: none;background: #fbfbfb;    padding: 10px;position: relative;    margin-bottom: 10px;    padding-top: 35px; padding-bottom: 35px;
+.wed-search-listing ul li{width:100%;list-style: none;background: #FEF5E7;    padding: 10px;position: relative;    margin-bottom: 10px;    padding-top: 35px; padding-bottom: 35px;
     cursor: pointer; border-radius: 10px;
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
 -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
@@ -1575,8 +1575,8 @@ box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
 	font-size: 12px;
 }
 .wed-search-listing.list-premium.list-view ul li {
-	background: rgb(88,184,90);
-	background: radial-gradient(circle, rgb(142, 204, 77) 20%, rgb(149, 215, 77) 76%);
+	background:rgb(169, 204, 227);
+/* background: rgb(88,184,90);	background: radial-gradient(circle, rgb(142, 204, 77) 20%, rgb(149, 215, 77) 76%);*/
 }
 .wed-search-listing.list-premium.list-view ul li .list ul li {
     background: none;
