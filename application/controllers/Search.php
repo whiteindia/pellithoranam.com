@@ -8,7 +8,10 @@ class Search extends CI_Controller {
         $this->load->model('Search_model');
         $this->load->model('Home_model');
         $this->load->library("pagination"); 
-        date_default_timezone_set('Asia/Kolkata');          
+        date_default_timezone_set('Asia/Kolkata');      
+ ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);    
     }
 
   public function sess() {
