@@ -261,7 +261,7 @@ to any of the alerts, please de-select the alert.</p>
               </div>
 
             </div>
-            <div id="deactivate" class="tab-pane fade">
+     <!--       <div id="deactivate" class="tab-pane fade">
               <div class="wed-space"></div>
               <h4>Deactivate Profile</h4>
               <p>You can temporarily deactivate your profile if you do not want to delete it. On deactivation your profile <br>
@@ -281,12 +281,12 @@ Select the number of days / months you would like to keep your profile deactivat
                 </select><br>
                 <div class="wed-space"></div>
 				 <div class="deact_msg">Your Profile Has been Deactivated You are logging out now...</div>
-               <!--  <div class="wed-settings-save">Deactivate Now</div> -->
-                 <button class="wed-add-now-btn wed-settings-save" id="deact" type="submit">Deactivate Now</button>
+               <!--  <div class="wed-settings-save">Deactivate Now</div> 
+                 <button class="wed-add-now-btn wed-settings-save" id="deact" type="submit">Deactivate Now</button>-->
                   <br><br>
               </div>
            </form>
-            </div>
+            </div>  -->
             <div id="delete" class="tab-pane fade">
               <div class="wed-space"></div>
               <h4>Delete Profile</h4>
