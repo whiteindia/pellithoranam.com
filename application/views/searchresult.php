@@ -761,7 +761,7 @@ $settings= get_setting();
                     </div>
                     
                     <?php echo $attr;?>
-                    <h5><?php echo $candidate->profile_name;?></h5>
+                    <h5><?php echo ucwords(strtolower($candidate->profile_name));?></h5>
                     </a>
                     <?php echo $attr;?>
                     <p><?php echo $settings->id_prefix;?><?php echo $candidate->matrimony_id; ?></p>
