@@ -518,8 +518,7 @@ class Search extends CI_Controller {
 
             if((isset($_POST['misc_type']))) {
                 if(in_array("with_photo", $_POST['misc_type'])) { 
-             //       $where[]= "profiles.profile_photo != ''"; DATALENGTH(COLUMN) > 0
-             $where[]= "DATALENGTH(profiles.profile_photo) >0";
+                    $where[]= "profiles.profile_photo <>0"; 
                 }
                  if(in_array("premium", $_POST['misc_type'])) { 
                     $where[]= "profiles.is_premium = '1'";
