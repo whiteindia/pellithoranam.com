@@ -885,7 +885,7 @@ class Search extends CI_Controller {
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       if((isset($_POST['matri_id'])) && (!empty($_POST['matri_id']))) { // checking matrimony id
         $where[]= "profiles.matrimony_id = '". preg_replace("/[^0-9]/","",$_POST['matri_id'])."'";
-    }
+    } else { redirect(base_url()); }
                   $config = array();
               $config["base_url"] = base_url() . "search/searchbyid";
               $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
