@@ -282,11 +282,11 @@ Select the number of days / months you would like to keep your profile deactivat
                 <div class="wed-space"></div>
 				 <div class="deact_msg">Your Profile Has been Deactivated You are logging out now...</div>
                <!--  <div class="wed-settings-save">Deactivate Now</div> 
-                 <button class="wed-add-now-btn wed-settings-save" id="deact" type="submit">Deactivate Now</button>-->
+                 <button class="wed-add-now-btn wed-settings-save" id="deact" type="submit">Deactivate Now</button>-
                   <br><br>
               </div>
            </form>
-            </div>  -->
+            </div> -->
             <div id="delete" class="tab-pane fade">
               <div class="wed-space"></div>
               <h4>Delete Profile</h4>
