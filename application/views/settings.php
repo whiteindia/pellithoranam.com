@@ -94,7 +94,7 @@ $title = $settings->title;
         <div class="container container-custom">
           <div class="tab-content">
 
-            <div id="edit" class="tab-pane fade in active">
+      <!--      <div id="edit" class="tab-pane fade in active">
               <div class="wed-space"></div>
               <h4>Edit Email Address</h4>
               <p>A valid e-mail id will be used to send you partner search mailers, member to member<br>
@@ -111,7 +111,7 @@ $title = $settings->title;
                 <div class="wed-space"></div>
               </div>
               </form>
-            </div>
+            </div>  -->
 
             <div id="pass" class="tab-pane fade">
               <div class="wed-space"></div>
