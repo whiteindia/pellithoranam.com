@@ -137,8 +137,8 @@
 			else if($('#mother_status').val() == 0) { alert('mother name can not be empty'); return false; }
 			else if($('#placeofbirth').val() == 0) { alert('place of birth can not be empty'); return false; }
 			else if($('#timeofbirth').val() == 0) { alert('time of birth can not be empty'); return false; }
-			else if($('#brothers').val().trim() == '') { alert('brothers can not be empty'); return false; }
-			else if($('#sisters').val().trim() == '') { alert('sisters can not be empty'); return false; }
+			else if($('#brothers').val().trim() == '') { alert('please fill brothers field'); return false; }
+			else if($('#sisters').val().trim() == '') { alert('please fill sisters field'); return false; }
 
 
 		/*
