@@ -115,6 +115,8 @@
                                 $resultss = $query->row();
                               echo $resultss->user_id;
                               ?>:incomplete profile </a>
+                                                            <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('customer/delete_member/'.$member->profile_id); ?>" onClick="return doconfirm()" title="Delete Member">
+                              <i class="fa fa-fw fa fa-power-off"></i></a>
                            </td>
                            <?php } if($member->is_premium==1){?>
                          <td class="center">
