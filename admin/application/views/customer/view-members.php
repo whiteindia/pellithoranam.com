@@ -72,7 +72,7 @@
                         <tr>
                            <td class="hidden"><?php echo $i; ?></td>
                            <td class="center">PT<?php echo $member->matrimony_id; ?></td>
-                           <td class="center"><?php echo $member->profile_name;:$member->user_id; ?></td>
+                           <td class="center"><?php echo $member->profile_name;echo $member->user_id; ?></td>
                            <td class="center"><?php echo $member->dob; ?></td>
                            <td class="center"><?php echo $member->gender; ?></td>
                            <td class="center"><?php echo $member->religion_name; ?></td>
