@@ -304,7 +304,7 @@ public function get_drop_data3() {
 	public function remove_member() {
 		if($this->session->userdata('logged_in_admin')) {
 		  $id = $this->uri->segment(3);		   
-		  $result = $this->Customer_model->remove_member($prof_id);
+		  $result = $this->Customer_model->remove_member($id);
 		  $this->session->set_flashdata('message', array('message' => 'profile  Deleted completely','class' => 'success'));
 		  redirect(base_url().'customer/view_members');
 		} else { redirect(base_url()); } 
