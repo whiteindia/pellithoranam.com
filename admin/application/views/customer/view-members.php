@@ -109,7 +109,7 @@
                            </td>
                            <?php }else{ ?>
                            <td>
-                              <a href="#" style="color:red;">incomplete profile</a>
+                              <a href="#" style="color:red;">incomplete profile <?php echo $member->user_id; ?></a>
                            </td>
                            <?php } if($member->is_premium==1){?>
                          <td class="center">
