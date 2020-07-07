@@ -113,9 +113,9 @@
                                 $query = $this->db->where('email',$member->email);
                                 $query = $this->db->get('profiles');
                                 $resultss = $query->row();
-                              echo $resultss->user_id;
+                              $user_id= $resultss->user_id;
                               ?>:incomplete profile </a>
-                                                            <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('customer/delete_member/'.$member->profile_id); ?>" onClick="return doconfirm()" title="Delete Member">
+                                                            <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('customer/remove_member/'.$user_id); ?>" onClick="return doconfirm()" title="Delete profile completely">
                               <i class="fa fa-fw fa fa-power-off"></i></a>
                            </td>
                            <?php } if($member->is_premium==1){?>

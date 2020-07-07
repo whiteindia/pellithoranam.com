@@ -158,6 +158,18 @@ class Customer_model extends CI_Model {
 		$result = $this->db->update('profiles',array("profile_approval" => 0, "profile_status" => 2));
 		return $result;
 	}
+	public function remove_member($id) {
+	    $this -> db -> where('user_id', $id);
+		$result = $this -> db -> delete('profiles');
+	if($result){
+		$this -> db -> where('user_id', $id);
+		$result1 = $this -> db -> delete('users');	
+	}
+	
+		//	$this->db->where('user_id',$user_id);
+	//	$result = $this->db->update('profiles',array("profile_approval" => 0, "profile_status" => 2));
+		return $result;
+	}
 
 	public function ban_member($prof_id) {
 		$this->db->where('profile_id',$prof_id);
