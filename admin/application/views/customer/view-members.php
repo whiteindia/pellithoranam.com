@@ -109,7 +109,12 @@
                            </td>
                            <?php }else{ ?>
                            <td>
-                              <a href="#" style="color:red;"><?php echo $member->user_id; ?>:incomplete profile </a>
+                              <a href="#" style="color:red;"><?php echo $member->user_id;
+                                $query = $this->db->where('email',$member->$email);
+                                $query = $this->db->get('profiles');
+                                $resultss = $query->row();
+                              echo $resultss->user_id;
+                              ?>:incomplete profile </a>
                            </td>
                            <?php } if($member->is_premium==1){?>
                          <td class="center">
