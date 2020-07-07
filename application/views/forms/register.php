@@ -185,7 +185,7 @@
                       </div>
                      <div class="error w3-animate-top"></div>
                       <div class="wed-submit-btn-bay">
-                        <button class="wed-submit-btn" type="submit" id="register">Continue</button>
+                        <button class="wed-submit-btn" type="submit" id="register" onclick="alert('complete your personel detail to complete registration')">Continue</button>
                       </div>
                   </div>
                 </div>
