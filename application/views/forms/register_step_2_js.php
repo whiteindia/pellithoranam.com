@@ -86,7 +86,7 @@
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">State cannot be empty</p>');
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
 		      return false; 
-		    } else if($('#city-selector').val() == 0) { 
+		    } else if($('#city-selector').val() == -1) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">City cannot be empty</p>');
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
