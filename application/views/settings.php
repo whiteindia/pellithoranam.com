@@ -10,7 +10,7 @@ $title = $settings->title;
         <h3>Profile Settings</h3>
         <div class="wed-setting-tab-bay">
           <ul>
-            <li class="active">
+       <!--     <li class="active">
               <a data-toggle="tab" href="#edit">
               <div class="wed-img-bg">
                 <img src="<?php echo base_url(); ?>assets/img/edit-mail.png">
@@ -19,7 +19,7 @@ $title = $settings->title;
               Edit Email Address
               </p></a>
               <div class="arrow-up"></div>
-            </li>
+            </li>  -->
             <li>
               <a data-toggle="tab" href="#pass">
               <div class="wed-img-bg">

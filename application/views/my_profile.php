@@ -38,10 +38,10 @@
                 <div class="edit-phone-form" style="display: none;">
                   <div>
                     <span class="country_codes">
-                      <input class="wed-reg-input" type="text" name="phone_countrycode" id="mobile-number" value="<?php echo $profile->phone_countrycode; ?>">
+                      <input class="wed-reg-input" type="text" name="phone_countrycode" id="mobile-number" value="<?php echo $profile->phone_countrycode; ?>" readonly>
                     </span>
                     <span class="phone_input">
-                    <input type='text' id='prof_mob_input' class='wed-navbar-input' value='<?php echo $profile->phone; ?>' name="phone">
+                    <input type='text' id='prof_mob_input' class='wed-navbar-input' value='<?php echo $profile->phone; ?>' name="phone" readonly>
                     </span>
                     <div class="clearfix"></div>
                   </div>
