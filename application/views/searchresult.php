@@ -66,19 +66,19 @@ $settings= get_setting();
                           <ul>
                             <li>Within a day
                               <div class="wed-custom3 floatr">
-                                  <input id="check1" class="create check_1" type="checkbox" name="create[]" value="1" >
+                                  <input id="check1" class="create check_1" type="checkbox" name="create[]" value="1" autofocus>
                                   <label for="check1"></label>
                                 </div>
                             </li>
                               <li>Within a week
                                 <div class="wed-custom3 floatr">
-                                    <input id="check2" class="create check_2" type="checkbox" name="create[]" value="2">
+                                    <input id="check2" class="create check_2" type="checkbox" name="create[]" value="2" autofocus>
                                     <label for="check2"></label>
                                   </div>
                               </li>
                                 <li>Within a month
                                   <div class="wed-custom3 floatr">
-                                      <input id="check3" class="create check_3" type="checkbox" name="create[]" value="3">
+                                      <input id="check3" class="create check_3" type="checkbox" name="create[]" value="3" autofocus>
                                       <label for="check3"></label>
                                     </div>
                                 </li>
