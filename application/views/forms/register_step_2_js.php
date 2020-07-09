@@ -71,8 +71,8 @@
 
 
 		$(".reg_detail").click(function(){
-		    
-		    if($('#country_selector').val() == -1) { 
+		    if($('#maritial_status').val() == 0) { alert('maritial status can not be empty'); return false; }
+		    else if($('#country_selector').val() == -1) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">Country cannot be empty</p>');
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
@@ -94,6 +94,9 @@
 		    }
 		    else if($('#height').val() == 0) { alert('Height can not be empty'); return false; }
 		    else if($('#weight').val() == 0) { alert('Weight can not be empty'); return false; }
+			if($('#body_type').val() == 0) { alert('body type can not be empty'); return false; }
+			if($('#complexion').val() == 0) { alert('complexion can not be empty'); return false; }
+			if($('#physical_status').val() == 0) { alert('physical status can not be empty'); return false; }
 			else if($('#image').val() == '') { alert('profile pic can not be empty.please upload your profile photo'); return false; }
 		    else if($('#education').val() == 0) { 
 		      $("#error-msg").show();
@@ -106,10 +109,13 @@
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
 		      return false; 
 		    }
+			else if($('#employed_in').val() == 0) { alert('employed in can not be empty'); return false; }
 		/*	else if($('#currency-selector').val() == 0) { alert('currency selectoion can not be empty'); return false; }
 			else if($('#income').val() == 0) { alert('income can not be empty'); return false; } 
 				 */
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
+			else if($('#star').val() == 0) { alert('star can not be empty'); return false; }
+			else if($('#padam').val() == 0) { alert('padam can not be empty'); return false; }
 		 else if($('#family_status').val() == 0) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">family status  can not be empty</p>');

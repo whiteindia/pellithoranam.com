@@ -13,7 +13,7 @@
                   <ul>
                     <li>
                       <div class="wed-reg-right-child1">Maritial Status</div>
-                      <div class="wed-reg-right-child2">
+              <!--        <div class="wed-reg-right-child2">
                         <div class="wed-custom5">
                             <input id="nm" type="radio" name="maritial_status" checked="checked" value="1">
                             <label for="nm">Never Married</label>
@@ -24,7 +24,19 @@
                             <input id="advsd" type="radio" name="maritial_status" value="4">
                             <label for="advsd">Awaiting for Divorce</label>
                         </div>
-                      </div>
+                      </div>-->
+                      <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="maritial_status" id="maritial_status">
+                                <option value="0">Option</option>
+                                <option value="1">Never Married</option>
+                                <option value="2">Divorced</option>
+                                <option value="3">Widowed</option>
+                                <option value="4">Awaiting for Divorce</option>
+                                                
+                             </select>
+                           </div>
+                         </div>
                       <div class="clearfix"></div>
                     </li>
                    
@@ -123,7 +135,7 @@
                       </li>
                       <li>
                         <div class="wed-reg-right-child1">Body Type</div>
-                        <div class="wed-reg-right-child2">
+                    <!--    <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
                               <input id="slim" type="radio" name="body_type" checked="checked" value="1" required>
                               <label for="slim">Slim</label>
@@ -134,14 +146,26 @@
                               <input id="hvy" type="radio" name="body_type" value="4">
                               <label for="hvy">Heavy</label>
                           </div>
-                        </div>
+                        </div>-->
+                        <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="body_type" id="body_type">
+                                <option value="0">Option</option>
+                                <option value="1">Slim</option>
+                                <option value="2">Average</option>
+                                <option value="3">Athletic</option>
+                                <option value="4">Heavy</option>
+                                                
+                             </select>
+                           </div>
+                         </div>
                         <div class="clearfix"></div>
                       </li>
 
                       <li>
                         <div class="wed-reg-right-child1">Complexion</div>
-                        <div class="wed-reg-right-child2">
-                          <div class="wed-custom5">
+                       <!--   <div class="wed-reg-right-child2">
+                        <div class="wed-custom5">
                               <input id="vf" type="radio" name="complexion" checked="checked" value="1" required>
                               <label for="vf">Very Fair</label>
                               <input id="fair" type="radio" name="complexion" value="2">
@@ -152,20 +176,43 @@
                               <label for="whtb">Wheatish Brown</label>
                               <input id="dsrk" type="radio" name="complexion" value="5">
                               <label for="dark">Dark</label>
-                          </div>
-                        </div>
+                          </div>  
+                        </div>-->
+                        <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="complexion" id="complexion">
+                                <option value="0">Option</option>
+                                <option value="1">Very Fair</option>
+                                <option value="2">Fair</option>
+                                <option value="3">Wheatish</option>
+                                <option value="4">Wheatish Brown</option>
+                                <option value="5">Dark</option>
+                                                
+                             </select>
+                           </div>
+                         </div>
                         <div class="clearfix"></div>
                       </li>
                       <li>
                         <div class="wed-reg-right-child1">Physical Status</div>
-                        <div class="wed-reg-right-child2">
+                       <!-- <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
                               <input id="nor" type="radio" name="physical_status" checked="checked" value="1" required>
                               <label for="nor">Normal</label>
                               <input id="phy" type="radio" name="physical_status" value="2">
                               <label for="phy">Physically Challenged</label>
                           </div>
-                        </div>
+                        </div>-->
+                        <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="physical_status" id="physical_status">
+                                <option value="0">Option</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Physically Challenged</option>
+                                                          
+                             </select>
+                           </div>
+                         </div>
                         <div class="clearfix"></div>
                       </li>
                       <li>
@@ -215,7 +262,7 @@
                       </li>
                       <li>
                         <div class="wed-reg-right-child1">Employed In</div>
-                        <div class="wed-reg-right-child2">
+                    <!--    <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
                               <input id="gov" type="radio" name="employed_in" checked="checked" value="1" required>
                               <label for="gov">Government</label>
@@ -226,7 +273,19 @@
                               <input id="self" type="radio" name="employed_in" value="4">
                               <label for="self">Self Employed</label>
                           </div>
-                        </div>
+                        </div>-->
+                        <div class="wed-reg-right-child2">
+                           <div class="row1">
+                             <select class="wed-reg-select" name="employed_in" id="employed_in">
+                                <option value="0">Option</option>
+                                <option value="1">Government</option>
+                                <option value="2">Private</option>
+                                <option value="3">Business</option>
+                                <option value="4">Self Employed</option>
+                                                
+                             </select>
+                           </div>
+                         </div>
                         <div class="clearfix"></div>
                       </li>
                       <li>
@@ -325,7 +384,7 @@
                        <div class="wed-reg-right-child1 paddingtop10">Star</div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
-                             <select class="wed-reg-select" name="star">
+                             <select class="wed-reg-select" name="star" id="star">
                                 <option value="0">Option</option>
                                 <?php foreach($stars as $star) { ?>
                                     <option value="<?php echo $star->star_id; ?>"><?php echo $star->star_name; ?></option>
@@ -339,7 +398,7 @@
                        <div class="wed-reg-right-child1 paddingtop10">Padam</div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
-                             <select class="wed-reg-select" name="padam">
+                             <select class="wed-reg-select" name="padam" id="padam">
                                 <option value="0">Option</option>
                                 <option value="1 Padam">1 Padam</option>
                                 <option value="2 Padam">2 Padam</option>
