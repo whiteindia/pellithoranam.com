@@ -227,9 +227,9 @@
                                 width="130"
                                 style="border:solid" />
                         </div>
-                       <!--image code-->
+                       <!--image code    class="wed-reg-input12 reg_input"-->
                            <div class="row1">
-                             <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image" onchange="show(this)></span>
+                             <span><input  type="file" name="image" id="image" onchange="show(this)></span>  
                            </div>
                            <small class="text-danger">** upload jpg,jpeg,png image only.profile picture will be displayed in your profile page once admin approve it </small>
                            <small class="text-danger">** use standard aspect ratio[ex 4:3 and 5:4.] of your profile picture for better display </small>
