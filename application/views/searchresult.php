@@ -62,7 +62,7 @@ $settings= get_setting();
                               <i class="more-less glyphicon glyphicon-plus"></i>
                             </a>
                         </div>
-                        <div id="collapseOne bg-info" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="collapseOne" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                           <ul>
                             <li>Within a day
                               <div class="wed-custom3 floatr">
@@ -100,7 +100,7 @@ $settings= get_setting();
                             <li>
                               Religion :
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select religion-selector bg-info" name="religion">
+                                  <select class="wed-reg-select religion-selector" name="religion">
                                     <option value="">- Select Religion -</option>
                                     <?php foreach($religions as $rlgn) { ?>
                                         <option value="<?php echo $rlgn->religion_id; ?>"><?php echo $rlgn->religion_name; ?></option>
@@ -131,7 +131,7 @@ $settings= get_setting();
                             <li>
                               Family Status :
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select bg-info" name="family_status">
+                                  <select class="wed-reg-select" name="family_status">
                                     <option value="">Select</option>
                                     <option value="1">Middle Class</option>
                                     <option value="2">Upper Middile Class</option>
@@ -143,7 +143,7 @@ $settings= get_setting();
                             <li>
                               Family Type :
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select bg-info" name="family_type">
+                                  <select class="wed-reg-select" name="family_type">
                                     <option value="">Select</option>
                                     <option value="1">Joint</option>
                                     <option value="2">Nuclear</option>
@@ -153,7 +153,7 @@ $settings= get_setting();
                             <li>
                               Family Values :
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select bg-info" name="family_value">
+                                  <select class="wed-reg-select" name="family_value">
                                     <option value="">Select</option>
                                     <option value="1">Orthodox</option>
                                     <option value="2">Traditional</option>
@@ -173,7 +173,7 @@ $settings= get_setting();
                               <i class="more-less glyphicon glyphicon-plus"></i>
                             </a>
                         </div>
-                        <div id="physical_attr_col bg-info" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="physical_attr_col" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                           <ul>
                             <li>
                               Height :
@@ -224,7 +224,7 @@ $settings= get_setting();
                             <li>
                              Body Type :
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select bg-info" name="body_type">
+                                  <select class="wed-reg-select" name="body_type">
                                     <option value="">Body Type</option>
                                     <option value="1">Slim</option>
                                     <option value="2">Average</option>
@@ -246,7 +246,7 @@ $settings= get_setting();
                             <li>
                              Physical Status :
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select bg-info" name="physical_status">
+                                  <select class="wed-reg-select" name="physical_status">
                                     <option value="">Select</option>
                                     <option value="1">Normal</option>
                                     <option value="2">Physically Challenged</option>
@@ -270,7 +270,7 @@ $settings= get_setting();
                             <li>
                               Employed In:
                                <div class="wed-custom3 floatr">
-                                  <select class="wed-reg-select bg-info" name="employed_in">
+                                  <select class="wed-reg-select" name="employed_in">
                                     <option value="">Select</option>
                                     <option value="Govt">Govt</option>
                                     <option value="Privet">Private</option>
@@ -297,7 +297,7 @@ $settings= get_setting();
                           <ul>
                             <li>Active now
                                <div class="wed-custom3 floatr">
-                                  <input class="misc_type photo check_1 bg-info" id="check4" type="checkbox" name="photo" value="1">
+                                  <input class="misc_type photo check_1" id="check4" type="checkbox" name="photo" value="1">
                                   <label for="check4"></label>
                                 </div> 
                             </li>
@@ -312,7 +312,7 @@ $settings= get_setting();
                               <i class="more-less glyphicon glyphicon-plus"></i>
                             </a>
                         </div>
-                        <div id="collapsethree bg-info" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="collapsethree" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                           <ul>
                             <li>With Photo (<?php echo $photo_count; ?>)
                               <div class="wed-custom3 floatr">
@@ -330,7 +330,7 @@ $settings= get_setting();
                               <i class="more-less glyphicon glyphicon-plus"></i>
                             </a>
                         </div>
-                        <div id="collapsefour bg-info" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="collapsefour" class="wed-filter-panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                           <ul>
                             <li>
                               <span>
