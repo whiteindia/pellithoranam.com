@@ -54,7 +54,7 @@ $settings= get_setting();
             <input type="hidden" name="search_type" value="1">
             <div class="wed-search-filter">
                 <div class="wed-filter-collapse"  role="tablist" aria-multiselectable="true">
-                    <div id="accordion" class="wed-filter-section">
+                    <div id="accordion" class="wed-filter-section bg-warning">
                       <div class="panel custom_panel">
                         <div class="wed-filter-heading" role="tab" id="headingOne" data-collapsed-icon="<i class='more-less glyphicon glyphicon-plus'></i>" data-expanded-icon="<i class='more-less glyphicon glyphicon-minus'></i>">
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -66,19 +66,19 @@ $settings= get_setting();
                           <ul>
                             <li>Within a day
                               <div class="wed-custom3 floatr">
-                                  <input id="check1" class="create check_1" type="checkbox" name="create[]" value="1" autofocus>
+                                  <input id="check1" class="create check_1" type="checkbox" name="create[]" value="1" >
                                   <label for="check1"></label>
                                 </div>
                             </li>
                               <li>Within a week
                                 <div class="wed-custom3 floatr">
-                                    <input id="check2" class="create check_2" type="checkbox" name="create[]" value="2" autofocus>
+                                    <input id="check2" class="create check_2" type="checkbox" name="create[]" value="2">
                                     <label for="check2"></label>
                                   </div>
                               </li>
                                 <li>Within a month
                                   <div class="wed-custom3 floatr">
-                                      <input id="check3" class="create check_3" type="checkbox" name="create[]" value="3" autofocus>
+                                      <input id="check3" class="create check_3" type="checkbox" name="create[]" value="3">
                                       <label for="check3"></label>
                                     </div>
                                 </li>
