@@ -767,9 +767,12 @@ class Search extends CI_Controller {
 
 
                   if((isset($filtr['misc_type']))) {
-                      if($filtr['misc_type']=="with_photo") { 
+                  //    if($filtr['misc_type']=="with_photo") { in_array("Glenn", $people)
+                    if(in_array("with_photo", $filtr['misc_type'])){
                           $where[]= "profiles.profile_photo != ''"; 
-                      } else {
+                      } 
+                  //    if($filtr['misc_type']=="with_premium") {
+                        if(in_array("with_premium", $filtr['misc_type'])) {
                           $where[]= "profiles.is_premium = '1'";
                       }
                   }
