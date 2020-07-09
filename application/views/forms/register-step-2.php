@@ -93,7 +93,7 @@
                     <div class="wed-reg-right-child1 paddingtop10">City Living In</div>
                     <div class="wed-reg-right-child2">
                         <div class="row1">
-                          <select class="wed-reg-select cst-select-1 selectpicker" data-live-search="true"  name="city_choose"  placeholder="" id="city_selector">
+                          <select class="wed-reg-select cst-select-1 selectpicker" data-live-search="true"  name="city"  placeholder="" id="city_selector">
                           </select>
                         </div>
                       </div>
