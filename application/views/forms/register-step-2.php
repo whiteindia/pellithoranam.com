@@ -218,6 +218,16 @@
                       <li>
                        <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
                        <div class="wed-reg-right-child2">
+                       <!--image code-->
+                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+                        <div>
+                            <img id="user_img"
+                                height="130"
+                                width="130"
+                                style="border:solid" />
+                        </div>
+                       <!--image code-->
                            <div class="row1">
                              <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image"></span>
                            </div>
@@ -681,3 +691,27 @@
               margin: 0px 5px;
             }
           </style>
+                       <script>
+function show(input) {
+        debugger;
+        var validExtensions = ['jpg','png','jpeg']; //array of valid extensions
+        var fileName = input.files[0].name;
+        var fileNameExt = fileName.substr(fileName.lastIndexOf('.') + 1);
+        if ($.inArray(fileNameExt, validExtensions) == -1) {
+            input.type = ''
+            input.type = 'file'
+            $('#user_img').attr('src',"");
+            alert("Only these file types are accepted : "+validExtensions.join(', '));
+        }
+        else
+        {
+        if (input.files && input.files[0]) {
+            var filerdr = new FileReader();
+            filerdr.onload = function (e) {
+                $('#user_img').attr('src', e.target.result);
+            }
+            filerdr.readAsDataURL(input.files[0]);
+        }
+        }
+    }
+    </script>
