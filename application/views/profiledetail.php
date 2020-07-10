@@ -298,7 +298,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                         <li class="wed-personel-sec-li">
                           <div class="child1">Time of Birth</div>
                           <div class="child2">:</div>
-                          <div class="child3"><?php echo $profile[0]->timeofbirth->format('h:ia'); ?></div>
+                          <div class="child3"><?php echo $profile[0]->timeofbirth; ?></div>
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
