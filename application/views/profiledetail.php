@@ -1270,13 +1270,13 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
               <p>Enter your message</p>
             <div class="wed-add-modal-footer">
                  <input class="wed-reg-modal-select" type="text" name="recipient_name"  placeholder="Recipient Name" required>
-                 <input class="wed-reg-modal-select" type="text" name="recipient_mailid" placeholder="Recipient Mobile No"><br/><br/>
+                 <input class="wed-reg-modal-select" type="text" name="mob_num" placeholder="Recipient Mobile No"><br/><br/>
                 <textarea class="wed-reg-modal-textarea" cols="50" name="mail_content" readonly>Hi,Please check the profile (PT<?php echo $profile[0]->matrimony_id; ?>) from Pellithoranam.com [https://pellithoranam.com/profile/profile_details/<?php echo $profile[0]->matrimony_id; ?>]</textarea><br/>
                 <input type="hidden" name="forward_name" value="<?php echo $profile[0]->profile_name; ?>">
                  <input type="hidden" name="profile_photo" value="<?php echo $profile[0]->profile_photo; ?>">
                 <input type="hidden" name="forward_id" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <input type="hidden" name="mail_from" value="<?php echo $sess->profile_name; ?>">
-                <button type='submit' id='send_forward' class='wed-view send_form_btn'>Send Message.</button>
+                <button type='submit' id='send_forward_others' class='wed-view send_form_btn'>Send Message.</button>
               </div>
               </form>
             </div>
@@ -1426,6 +1426,33 @@ $(document).on("click","#send_request_btns",function() {
 });
 
 $(document).on("click","#send_forward",function(e) {
+    e.preventDefault();
+    var mc = $(this).closest("form").find("[name='mail_content']").val();
+    if(mc.length>126){
+      alert("Maximum Length of sms is 130");
+      return false;
+    }
+    var value =$("#send_sms_form").serialize();
+    //console.log(value);
+    $.ajax({
+      url: base_url+'profile/send_sms',
+      type: 'POST',
+      dataType: 'json',
+      data: value,
+    })
+    .done(function(data) {
+      console.log(data);
+      alert(data.msg);
+      $("#send_sms_modal").modal('hide');
+    })
+    .fail(function() {
+      console.log("error");
+    });
+    
+    return false;
+    
+});
+$(document).on("click","#send_forward_others",function(e) {
     e.preventDefault();
     var mc = $(this).closest("form").find("[name='mail_content']").val();
     if(mc.length>126){
