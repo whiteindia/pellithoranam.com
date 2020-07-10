@@ -303,7 +303,7 @@ error_reporting(E_ALL);
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
 $msg="New User PT ".$basic->matrimony_id." Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/".$basic->matrimony_id."]";
       foreach ($srch_candidates_sms as $candidates) {
-        $this->sent_mobile_msg($candidate->phone,$msg);
+        $this->sent_mobile_msg($candidates->phone,$msg);
       }
       // echo '<pre>';print_r($my_matr_id);
       // exit;
