@@ -1190,7 +1190,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
 </div>
           </div>
           <div class="col-md-3">
-          	<div class="wed-similar-profile">
+          	<div class="wed-similar-profile no-print">
               <h1>Similar Profile</h1>
               <hr>
               <ul>
