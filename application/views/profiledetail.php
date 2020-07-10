@@ -1276,7 +1276,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                  <input type="hidden" name="profile_photo" value="<?php echo $profile[0]->profile_photo; ?>">
                 <input type="hidden" name="forward_id" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <input type="hidden" name="mail_from" value="<?php echo $sess->profile_name; ?>">
-                <button type='submit' id='send_forward' class='wed-view send_form_btn'>Send Message</button>
+                <button type='submit' id='send_forward' class='wed-view send_form_btn'>Send Message.</button>
               </div>
               </form>
             </div>
