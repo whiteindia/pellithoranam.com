@@ -1514,7 +1514,7 @@ section.module.parallax-1 {background: #fff;}
 
 .wed-search-filter-div{width:100%;}
 .wed-search-filter-div h5{color: #ff8700;font-family: 'Roboto', sans-serif;font-size:18px; padding-left: 15px;}
-.wed-search-filter{width: 100%;float: left;background: #f9f9f9;padding-top: 15px;margin-bottom: 15px;}
+.wed-search-filter{width: 100%;float: left;padding-top: 15px;margin-bottom: 15px;}/*background: #f9f9f9;*/
 .wed-filter-collapse{width:100%;}
 .wed-filter-section{width:100%;padding:15px;}
 .wed-filter-heading{width:100%;    padding-bottom:10px;}
