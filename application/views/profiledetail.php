@@ -1270,7 +1270,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
               <p>Enter your message</p>
             <div class="wed-add-modal-footer">
                  <input class="wed-reg-modal-select" type="text" name="recipient_name"  placeholder="Recipient Name" required>
-                 <input class="wed-reg-modal-select" type="text" name="recipient_mailid" placeholder="Recipient Email Id"><br/><br/>
+                 <input class="wed-reg-modal-select" type="text" name="recipient_mailid" placeholder="Recipient Mobile No"><br/><br/>
                 <textarea class="wed-reg-modal-textarea" cols="50" name="mail_content" readonly>Hi,Please check the profile (PT<?php echo $profile[0]->matrimony_id; ?>) from Pellithoranam.com [https://pellithoranam.com/profile/profile_details/<?php echo $profile[0]->matrimony_id; ?>]</textarea><br/>
                 <input type="hidden" name="forward_name" value="<?php echo $profile[0]->profile_name; ?>">
                  <input type="hidden" name="profile_photo" value="<?php echo $profile[0]->profile_photo; ?>">
