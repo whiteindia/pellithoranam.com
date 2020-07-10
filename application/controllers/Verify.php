@@ -272,11 +272,44 @@ error_reporting(E_ALL);
       }
 
       $srch_candidates= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
+
+      $now = new DateTime();
+      $age = $now->diff(new DateTime($basic->dob));
+
+
+
+
+
       foreach ($srch_candidates as $candidate) {
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
-        $this->sendMailNow($candidate);
+      //  $this->sendMailNow($candidate);
+      }
+
+
+      if($basic->gender== "male") { 
+        $agef=$age-5;
+         // $where[]= "profiles.gender = 'female'";
+          $where[]= "profiles.age >= '".$agef."'"; 
+          $where[]= "profiles.age <= '".$age."'";
+          //$this->session->set_userdata('gender',"female");
+      } else { 
+        $aget=$age+5;
+       // $where[]= "profiles.gender = 'male'";
+        $where[]= "profiles.age >= '".$age."'"; 
+        $where[]= "profiles.age <= '".$aget."'";
+      }
+      $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
+
+      foreach ($srch_candidates_sms as $candidates) {
+        // echo $candidate->email;
+        // echo $candidate->profile_name;
+        // echo "<br>";
+      //  $this->sendMailNow($candidate);
+      echo $candidate->phone;
+      $now = new DateTime();
+      echo $now->diff(new DateTime($candidate->dob));
       }
       // echo '<pre>';print_r($my_matr_id);
       // exit;
