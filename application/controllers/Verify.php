@@ -308,8 +308,12 @@ error_reporting(E_ALL);
         // echo "<br>";
       //  $this->sendMailNow($candidate);
       echo $candidate->phone;
+      echo "<script>console.log('" . $candidate->phone . "');</script>";
       $now = new DateTime();
-      echo $now->diff(new DateTime($candidate->dob));
+      $age=$now->diff(new DateTime($candidate->dob));
+      echo "<script>console.log('" .$candidate->age. "');</script>";
+      echo "<script>console.log('" .$age. "');</script>";
+
       }
       // echo '<pre>';print_r($my_matr_id);
       // exit;
