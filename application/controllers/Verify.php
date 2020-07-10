@@ -273,8 +273,8 @@ error_reporting(E_ALL);
 
       $srch_candidates= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
 
-      $now = new DateTime();
-      $age = $basic->age;
+   //   $now = new DateTime();
+
 
 
 
@@ -286,7 +286,7 @@ error_reporting(E_ALL);
         // echo "<br>";
        $this->sendMailNow($candidate);
       }
-
+      $age = $basic->age;
 
       if($basic->gender== "male") { 
         $agef=$age-5;
