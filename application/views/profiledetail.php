@@ -1459,7 +1459,7 @@ $(document).on("click","#send_forward_others",function(e) {
       alert("Maximum Length of sms is 130");
       return false;
     }
-    var value =$("#send_sms_form").serialize();
+    var value =$("#forward_form").serialize();
     //console.log(value);
     $.ajax({
       url: base_url+'profile/send_sms',
