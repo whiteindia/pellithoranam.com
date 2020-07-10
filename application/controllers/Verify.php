@@ -274,7 +274,7 @@ error_reporting(E_ALL);
       $srch_candidates= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
 
       $now = new DateTime();
-      $age = $now->diff(new DateTime($basic->dob));
+      $age = $basic->age;
 
 
 
@@ -301,19 +301,9 @@ error_reporting(E_ALL);
         $where[]= "profiles.age <= '".$aget."'";
       }
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
-
+$msg="New User PT ".$basic->matrimony_id." Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/".$basic->matrimony_id."]";
       foreach ($srch_candidates_sms as $candidates) {
-        // echo $candidate->email;
-        // echo $candidate->profile_name;
-        // echo "<br>";
-      //  $this->sendMailNow($candidate);
-      echo $candidate->phone;
-      echo "<script>console.log('" . $candidate->phone . "');</script>";
-      $now = new DateTime();
-      $age=$now->diff(new DateTime($candidate->dob));
-      echo "<script>console.log('" .$candidate->age. "');</script>";
-      echo "<script>console.log('" .$age. "');</script>";
-
+        $this->sent_mobile_msg($candidate->phone,$msg);
       }
       // echo '<pre>';print_r($my_matr_id);
       // exit;
