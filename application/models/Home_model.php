@@ -167,7 +167,7 @@ class Home_model extends CI_Model {
          'profile_surname' => $rcvd_arr['surname'],
          'gender' => $rcvd_arr['gender'],
          'dob'    => $rcvd_arr['dob'],
-		 'age' => $rcvd_arr['age'],
+		 'age' => $my_age,
          'religion' => $rcvd_arr['religion'],
          'caste'    => $rcvd_arr['cast'],
          'mother_language' => $rcvd_arr['mother_tongue'],

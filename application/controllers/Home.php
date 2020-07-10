@@ -210,9 +210,6 @@ membership_package!='1'
 	public function customer_registration() {
  		if($_POST){
 			$data = $_POST;
-		
-			$now = new DateTime();
-      $_POST['age'] = $now->diff(new DateTime($_POST['age']));
 			$result = $this->Home_model->InsertRegistration($data);
 			echo $result;
 		}  
