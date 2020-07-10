@@ -298,7 +298,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                         <li class="wed-personel-sec-li">
                           <div class="child1">Time of Birth</div>
                           <div class="child2">:</div>
-                          <div class="child3"><?php $date = new DateTime($profile[0]->timeofbirth); echo $profile[0]->timeofbirth;echo $date->format('h:ia'); ?><small>[24hr format]</small></div>
+                          <div class="child3"><?php $date = new DateTime($profile[0]->timeofbirth); echo $date->format('h:ia'); ?></div>
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
