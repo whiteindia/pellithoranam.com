@@ -284,7 +284,7 @@ error_reporting(E_ALL);
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
-      //  $this->sendMailNow($candidate);
+       $this->sendMailNow($candidate);
       }
 
 
