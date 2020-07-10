@@ -167,7 +167,7 @@ class Search extends CI_Controller {
                             }
                         }
                     } else { /*load partner preference*/
-                        $mat_id=$my_user['logged_in']['matrimony_id'];
+                     /*   $mat_id=$my_user['logged_in']['matrimony_id'];
                         $basic1 = $this->Search_model->get_user_partner_preference($mat_id);
                         if($basic->gender== "male") { 
                             $where[]= "profiles.gender = 'female'";
