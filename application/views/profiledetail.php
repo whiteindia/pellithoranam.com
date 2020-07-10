@@ -1272,10 +1272,10 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                  <input class="wed-reg-modal-select" type="text" name="recipient_name"  placeholder="Recipient Name" required>
                  <input class="wed-reg-modal-select" type="text" name="mob_num" placeholder="Recipient Mobile No" required><br/><br/>
                 <textarea class="wed-reg-modal-textarea" cols="50" name="mail_content" readonly>Hi,Please check the profile (PT<?php echo $profile[0]->matrimony_id; ?>) from Pellithoranam.com [https://pellithoranam.com/profile/profile_details/<?php echo $profile[0]->matrimony_id; ?>]</textarea><br/>
-                <input type="hidden" name="forward_name" value="<?php echo $profile[0]->profile_name; ?>">
+            <!--    <input type="hidden" name="forward_name" value="<?php echo $profile[0]->profile_name; ?>">
                  <input type="hidden" name="profile_photo" value="<?php echo $profile[0]->profile_photo; ?>">
                 <input type="hidden" name="forward_id" value="<?php echo $profile[0]->matrimony_id; ?>">
-                <input type="hidden" name="mail_from" value="<?php echo $sess->profile_name; ?>">
+                <input type="hidden" name="mail_from" value="<?php echo $sess->profile_name; ?>"> -->
                 <button type='submit' id='send_forward_others' class='wed-view send_form_btn'>Send Message.</button>
               </div>
               </form>
