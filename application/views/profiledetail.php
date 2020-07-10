@@ -23,7 +23,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
       <?php if($profile[0]->profile_photo=="") {?>
        <div class="wed-profile-detail-left"><!--wed-profile-detail-left--->
           <div class="wed-profile-pic-div">  <!--wed-profile-pic-div-->
-            <div class="class= wed-profile-pic"> <!-- class= wed-profile-pic-->
+            <div class="class= wed-profile-pic" > <!-- class= wed-profile-pic-->
               <li><img src="<?php echo base_url(); ?>assets/img/user.jpg" style="width:200px; height:200px; !important;" ></li>
             </div>
           </div>
@@ -767,7 +767,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                 <span id="printpro">Print</span>
               </div>
               <hr>
-              <div class="wed-partner-preference">
+              <div class="wed-partner-preference no-print">
                 <?php if($sess->profile_photo == "") { ?>
                       <div class="wed-partner-you"><img src="<?php echo base_url(); ?>assets/img/user.jpg"></div>
                       <?php } else { ?>
@@ -1162,7 +1162,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                 if(!empty($similar)) { 
                 	foreach($similar as $sim) { ?>
                   <li>
-                    <div class="wed-match-slider-img">
+                    <div class="wed-match-slider-img no-print">
                      <?php if($sim->profile_photo==null) {?>
                     <img src="<?php echo base_url(); ?>assets/img/user.jpg">
                       <?php }else if($sim->profile_photo != "" && $sim->profile_preference==0){ ?>
