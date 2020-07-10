@@ -1271,12 +1271,12 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <div class="wed-add-modal-footer">
                  <input class="wed-reg-modal-select" type="text" name="recipient_name"  placeholder="Recipient Name" required>
                  <input class="wed-reg-modal-select" type="text" name="recipient_mailid" placeholder="Recipient Email Id"><br/><br/>
-                <textarea class="wed-reg-modal-textarea" cols="50" name="mail_content"></textarea><br/>
+                <textarea class="wed-reg-modal-textarea" cols="50" name="mail_content">I am <?php echo $sess->profile_name; ?> ( <?php echo $profile[0]->matrimony_id; ?>) in Pellithoranam.com ph: <?php echo $sess->phone; ?> i would like to reach out to you.please share your contact details</textarea><br/>
                 <input type="hidden" name="forward_name" value="<?php echo $profile[0]->profile_name; ?>">
                  <input type="hidden" name="profile_photo" value="<?php echo $profile[0]->profile_photo; ?>">
                 <input type="hidden" name="forward_id" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <input type="hidden" name="mail_from" value="<?php echo $sess->profile_name; ?>">
-                <button type='submit' id='send_forward' class='wed-view send_form_btn'>Send Message</button>
+                <button type='submit' id='send_forward' class='wed-view send_form_btns'>Send </button>
               </div>
               </form>
             </div>
@@ -1334,7 +1334,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <div class="wed-add-modal-footer">
 
            <!--     <textarea rows="4" cols="50" name="mail_content" readonly>I am <?php echo $sess->profile_name; ?> ( <?php echo $sess->matrimony_id; ?>) from Pellithoranam.com ph:<?php echo $sess->phone; ?> i would like to reach out to you.please share your contact details</textarea><br/>-->
-           <textarea rows="4" cols="50" name="mail_content" readonly>I am <?php echo $sess->profile_name; ?> ( <?php echo $sess->matrimony_id; ?>) from Pellithoranam.com ph: <?php echo $sess->phone; ?> i would like to reach out to you.please share your contact details</textarea><br/>
+           <textarea rows="4" cols="50" name="mail_content" readonly>Hi,Please check the profile ( <?php echo $sess->matrimony_id; ?>) from Pellithoranam.com </textarea><br/>
                 <input type="hidden" name="to_id" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <input type="hidden" name="from_id" value="<?php echo $sess->matrimony_id; ?>">
                 <input type="hidden" name="mob_num" value="<?php echo $profile[0]->phone; ?>">
