@@ -128,7 +128,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <?php echo $profile[0]->occupation;?>
             </li>
             <li><span><img src="<?php echo base_url(); ?>assets/img/salary.png"></span>
-            <?php echo $profile[0]->income;?> INR
+            <?php echo ceil($profile[0]->income);?> INR
             </li>
           </div>
 
