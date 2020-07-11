@@ -263,7 +263,7 @@ error_reporting(E_ALL);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
       echo '<pre>';
-      print_r(check_otp);
+      print_r($basic);
       echo '</pre>';
       if($basic->partner_preference == 0) {
         if($basic->gender== "male") { 
@@ -314,7 +314,7 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
       foreach ($srch_candidates_sms as $candidates) {
         $this->sent_mobile_msg($candidates->phone,$msg);
         echo $candidates->phone;
-        echo $candidates->age;
+        echo $candidates->age.'<br>';
 
       }
       exit();
