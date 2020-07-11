@@ -1602,8 +1602,8 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 	    
 	    // Process your response here
 	    //print_r($response);
-	    echo $response;
-	    exit;
+	   // echo $response;
+	    //exit;
 
 	}
 	public function get_hobbies()
