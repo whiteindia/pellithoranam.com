@@ -317,6 +317,7 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
         echo $candidates->age.'<br>';
 
       }
+      echo $msg;
       exit();
       // echo '<pre>';print_r($my_matr_id);
       // exit;
