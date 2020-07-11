@@ -12,7 +12,7 @@ class Search_model extends CI_Model {
     }
     public function get_user_basic_details2($my_user) {
      // echo $my_user['profile_id'];
-        $this->db->select('gender,religion,caste,age,phone,willing_intercast,partner_preference');
+        $this->db->select('gender,religion,caste,age,phone,matrimony_id,willing_intercast,partner_preference');
         $qry_7 = $this->db->get_where('profiles', array('profile_id' => $my_user['profile_id']));
         if($qry_7->num_rows() > 0) { return $qry_7->row(); } else { return false; }
     }
