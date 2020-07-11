@@ -62,20 +62,24 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
         <div class="wed-profile-detail-left">
             <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
 
-             
+            
                <?php $i=0 ;foreach($gallery as $gal) { $i++;?>
-                <li><img src="<?php echo base_url().$gal->image_path_blur; ?>"></li>
+                <li><img src="<?php echo base_url().$gal->image_path_blur; ?>" style="-webkit-filter: blur(4px); 
+				filter: blur(4px);" ></li>
                  <?php } ?>
-                  <li><img src="<?php echo base_url().$profile[0]->profile_photo_blured; ?>"></li>
+                  <li><img src="<?php echo base_url().$profile[0]->profile_photo_blured; ?>" style="-webkit-filter: blur(4px); 
+				filter: blur(4px);"></li>   <!--  <?php echo base_url().$profile[0]->profile_photo_blured; ?>      --->
               </div>
               <div id="wed-profile-pic-slider">
                   <div class="left"><img src="<?php echo base_url(); ?>assets/img/left.png"></div>
 
-                    <a data-slide-index="0" href=""><img src="<?php echo base_url().$profile[0]->profile_photo_blured; ?>"></a>
+                    <a data-slide-index="0" href=""><img src="<?php echo base_url().$profile[0]->profile_photo_blured; ?>" style="-webkit-filter: blur(4px); 
+				filter: blur(4px);"></a>
                      <?php $i=0 ;foreach($gallery as $gal) { $i++;
 /*echo $gal->profile_preference;*/
                       ?>
-                     <a data-slide-index="<?php echo $i;?>" href=""><img src="<?php echo base_url().$gal->image_path_blur; ?>"></a>
+                     <a data-slide-index="<?php echo $i;?>" href=""><img src="<?php echo base_url().$gal->image_path_blur; ?>" style="-webkit-filter: blur(4px); 
+				filter: blur(4px);"></a>
                      <?php } ?>
                     <div class="right"><img src="<?php echo base_url(); ?>assets/img/right.png"></div>
                   <div class="clearfix"></div>
