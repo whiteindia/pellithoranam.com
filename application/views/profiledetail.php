@@ -156,7 +156,7 @@ else if(($reuest_res=="canceled")){
      
                    </div>
                  </div>
-     
+                          <?php } ?>
                  <!----->
             <!------->
             <input type="button" class="wed-ques-yes" value="Request Photo" data-toggle='modal' data-target='#photo_request'/>
