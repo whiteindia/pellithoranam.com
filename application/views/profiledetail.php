@@ -30,7 +30,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <div class="clearfix"></div>
         </div>
       <?php } 
-      else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==1) { ?>
+      else if(isset($profile[0]->profile_photo) && $profile[0]->profile_preference==1) { ?>
         <div class="wed-profile-detail-left">
             <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
 
