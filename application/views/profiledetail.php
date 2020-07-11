@@ -94,7 +94,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
 
             <!----->
        <?php   }else if($reuest_res=="success"){
-                     ?>    // $usrIMG = $candidate->profile_photo;
+                     ?>   
                       
                       <div class="wed-profile-detail-left">
             <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
