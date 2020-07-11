@@ -1,4 +1,8 @@
-<?php  $my_matr_id = $this->session->userdata('logged_in');
+<?php 
+       ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+$my_matr_id = $this->session->userdata('logged_in');
 
 /*var_dump($my_matr_id);
 die();*/
