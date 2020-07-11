@@ -61,8 +61,8 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
  <?php } else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==1) { ?>
         <div class="wed-profile-detail-left">
         <?php
-            $reuest_res = $this->Search_model->get_permission($candidate->matrimony_id);
-                        if($reuest_res=="requested"){
+            $reuest_res = $this->Search_model->get_permission($sess->matrimony_id);
+                        if(($reuest_res=="requested")||($reuest_res=="canceled")){
                           
                      ?>
 
