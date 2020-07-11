@@ -96,7 +96,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
        <?php   }else if($reuest_res=="success"){
                      ?>   
                       
-                      <div class="wed-profile-detail-left">
+                <!--      <div class="wed-profile-detail-left"> -->
             <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
 
              
@@ -122,7 +122,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
 
             <div class="clearfix"></div>
 
-        </div>
+     <!--   </div>-->
 
             <?php } 
                         ?>
