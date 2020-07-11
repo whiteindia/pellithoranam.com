@@ -262,7 +262,9 @@ error_reporting(E_ALL);
       $my_matr_id = json_decode(json_encode($my_matr_id),true);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
-      $basic=json_decode(json_encode($basic),true);
+      echo '<pre>';
+      print_r($basic);
+      echo '</pre>';
       if($basic->partner_preference == 0) {
         if($basic->gender== "male") { 
             $where[]= "profiles.gender = 'female'";
@@ -293,7 +295,7 @@ error_reporting(E_ALL);
         // echo "<br>";
      //  $this->sendMailNow($candidate);
       }
-      $age = (int)$basic->age;
+      $age = $basic->age;
 
       if($basic->gender== "male") { 
         $agef=$age-5;
@@ -307,16 +309,15 @@ error_reporting(E_ALL);
         $where[]= "profiles.age >= '".$age."'"; 
         $where[]= "profiles.age <= '".$aget."'";
       }
-      echo $age.'users<br>';
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
 $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.']';
       foreach ($srch_candidates_sms as $candidates) {
         $this->sent_mobile_msg($candidates->phone,$msg);
         echo $candidates->phone;
-        echo $candidates->age.'<br>';
+        echo $candidates->age;
 
       }
-      exit();
+      exit
       // echo '<pre>';print_r($my_matr_id);
       // exit;
 
