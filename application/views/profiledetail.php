@@ -233,7 +233,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
               <?php if(!empty($membership)) {  if($membership->total_interest == 0) { ?>
               <button class="wed-interest" data-toggle='modal' data-target='#no_interest' type="submit">Yes</button>
               <?php } else { ?>
-              <button class="wed-interest send_interest" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" type="submit">Yesuytkiyughk</button>
+              <button class="wed-interest send_interest" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" type="submit">Yes intrested</button>
               <?php } } } ?>
               <div class="wed-ques-arw">
               </div>
