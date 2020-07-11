@@ -723,9 +723,9 @@ $settings= get_setting();
                         <img src="<?php echo base_url(); ?>/assets/img/user.jpg">
                       <?php } else if($candidate->profile_photo != "" && $candidate->profile_preference==0){
                         
-                        $usrIMG = $candidate->profile_photo;
+                       $usrIMG = $candidate->profile_photo;///assets/img/user.jpg  .$usrIMG
                         if($this->session->userdata('logged_in')) {
-                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."'>";
+                            $attr2 = "<a href='".base_url()."/assets/img/user.jpg' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."'>";
                         } else {
                             $attr2 = "<a href='' data-toggle='modal' data-target='#reglog'>";
                         }
