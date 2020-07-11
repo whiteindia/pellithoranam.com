@@ -262,16 +262,25 @@ error_reporting(E_ALL);
       $my_matr_id = json_decode(json_encode($my_matr_id),true);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
-      echo '<pre>';
-      print_r($basic);
-      echo '</pre>';
+    //  echo '<pre>';
+    //  print_r($basic);
+     // echo '</pre>';
+     $age = $basic->age;
       if($basic->partner_preference == 0) {
         if($basic->gender== "male") { 
             $where[]= "profiles.gender = 'female'";
             //$this->session->set_userdata('gender',"female");
+            $agef=$age-5;
+            // $where[]= "profiles.gender = 'female'";
+             $where[]= "profiles.age >= '".$agef."'"; 
+             $where[]= "profiles.age <= '".$age."'";
         } else { 
             $where[]= "profiles.gender = 'male'"; 
             //$this->session->set_userdata('gender',"male");
+            $aget=$age+5;
+            // $where[]= "profiles.gender = 'male'";
+             $where[]= "profiles.age >= '".$age."'"; 
+             $where[]= "profiles.age <= '".$aget."'";
         }
         if($basic->willing_intercast != 1) { 
             //  $where[] = "profiles.caste = '".$basic->caste."'";
@@ -293,10 +302,10 @@ error_reporting(E_ALL);
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
-     //  $this->sendMailNow($candidate);
+   //   $this->sendMailNow($candidate);
       }
       $age = $basic->age;
-
+/*
       if($basic->gender== "male") { 
         $agef=$age-5;
          // $where[]= "profiles.gender = 'female'";
@@ -309,15 +318,15 @@ error_reporting(E_ALL);
         $where[]= "profiles.age >= '".$age."'"; 
         $where[]= "profiles.age <= '".$aget."'";
       }
-      $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like);
+      $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like); */
 $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.']';
-      foreach ($srch_candidates_sms as $candidates) {
-       // $this->sent_mobile_msg($candidates->phone,$msg);
-        echo $candidates->phone.'--';
-        echo $candidates->age.'<br>';
+      foreach ($srch_candidates as $candidate) {
+      //  $this->sent_mobile_msg($candidate->phone,$msg);
+       echo $candidates->phone.'--';
+       echo $candidates->age.'<br>';
 
       }
-      echo $msg;
+     // echo $msg;
       exit();
       // echo '<pre>';print_r($my_matr_id);
       // exit;
