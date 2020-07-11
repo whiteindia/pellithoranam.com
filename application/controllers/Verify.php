@@ -263,7 +263,7 @@ error_reporting(E_ALL);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
       echo '<pre>';
-      print_r($basic);
+      print_r(check_otp);
       echo '</pre>';
       if($basic->partner_preference == 0) {
         if($basic->gender== "male") { 
@@ -317,7 +317,7 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
         echo $candidates->age;
 
       }
-      exit
+      exit();
       // echo '<pre>';print_r($my_matr_id);
       // exit;
 
