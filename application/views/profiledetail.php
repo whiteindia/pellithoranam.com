@@ -29,36 +29,8 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
           </div>
             <div class="clearfix"></div>
         </div>
-      <?php } else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==0) { ?>
-        <div class="wed-profile-detail-left">
-            <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
-
-             
-               <?php $i=0 ;foreach($gallery as $gal) { $i++;?>
-                <li><img src="<?php echo base_url().$gal->image_path; ?>"></li>
-                 <?php } ?>
-                  <li><img src="<?php echo base_url().$profile[0]->profile_photo; ?>"></li>
-              </div>
-              <div id="wed-profile-pic-slider">
-                  <div class="left"><img src="<?php echo base_url(); ?>assets/img/left.png"></div>
-
-                    <a data-slide-index="0" href=""><img src="<?php echo base_url().$profile[0]->profile_photo; ?>"></a>
-                     <?php $i=0 ;foreach($gallery as $gal) { $i++;
-/*echo $gal->profile_preference;*/
-                      ?>
-                     <a data-slide-index="<?php echo $i;?>" href=""><img src="<?php echo base_url().$gal->image_path; ?>"></a>
-                     <?php } ?>
-                    <div class="right"><img src="<?php echo base_url(); ?>assets/img/right.png"></div>
-                  <div class="clearfix"></div>
-
-              </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-        </div>
-  
- <?php } else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==1) { ?>
+      <?php } 
+      else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==1) { ?>
         <div class="wed-profile-detail-left">
             <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
 
@@ -87,6 +59,39 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
 
         </div>
         <?php } ?>
+      
+      
+      
+      <?php else if($profile[0]->profile_photo!="" && $profile[0]->profile_preference==0) { ?>
+        <div class="wed-profile-detail-left">
+            <div class="wed-profile-pic-div no-print"><div class="wed-profile-pic">
+
+             
+               <?php $i=0 ;foreach($gallery as $gal) { $i++;?>
+                <li><img src="<?php echo base_url().$gal->image_path; ?>"></li>
+                 <?php } ?>
+                  <li><img src="<?php echo base_url().$profile[0]->profile_photo; ?>"></li>
+              </div>
+              <div id="wed-profile-pic-slider">
+                  <div class="left"><img src="<?php echo base_url(); ?>assets/img/left.png"></div>
+
+                    <a data-slide-index="0" href=""><img src="<?php echo base_url().$profile[0]->profile_photo; ?>"></a>
+                     <?php $i=0 ;foreach($gallery as $gal) { $i++;
+/*echo $gal->profile_preference;*/
+                      ?>
+                     <a data-slide-index="<?php echo $i;?>" href=""><img src="<?php echo base_url().$gal->image_path; ?>"></a>
+                     <?php } ?>
+                    <div class="right"><img src="<?php echo base_url(); ?>assets/img/right.png"></div>
+                  <div class="clearfix"></div>
+
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+  
+ <?php } ?>
         <!--<ul class="bxslider">
     <li><img src="img/pic2.png" /></li>
     <li><img src="img/pic2.png"/></li>
@@ -229,7 +234,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
               <?php if(!empty($membership)) {  if($membership->total_interest == 0) { ?>
               <button class="wed-interest" data-toggle='modal' data-target='#no_interest' type="submit">Yes</button>
               <?php } else { ?>
-              <button class="wed-interest send_interest" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" type="submit">Yesuytkiyughk</button>
+              <button class="wed-interest send_interest" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" type="submit">Yes intrested</button>
               <?php } } } ?>
               <div class="wed-ques-arw">
               </div>
