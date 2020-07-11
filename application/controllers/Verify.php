@@ -322,8 +322,8 @@ error_reporting(E_ALL);
 $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.']';
       foreach ($srch_candidates as $candidate) {
       //  $this->sent_mobile_msg($candidate->phone,$msg);
-       echo $candidates->phone.'--';
-       echo $candidates->age.'<br>';
+       echo $candidate->phone.'--';
+       echo $candidate->age.'<br>';
 
       }
      // echo $msg;
