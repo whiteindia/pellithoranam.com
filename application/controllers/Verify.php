@@ -253,9 +253,9 @@ error_reporting(E_ALL);
      
     }
     function send_email_to_other_user(){
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
       $this->load->model('Search_model');
       $this->load->model('Home_model');
       $my_matr_id = $this->session->userdata('logged_in');
@@ -302,7 +302,7 @@ error_reporting(E_ALL);
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
-   //   $this->sendMailNow($candidate);
+     $this->sendMailNow($candidate);
       }
       $age = $basic->age;
 /*
@@ -321,13 +321,13 @@ error_reporting(E_ALL);
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like); */
 $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.']';
       foreach ($srch_candidates as $candidate) {
-      //  $this->sent_mobile_msg($candidate->phone,$msg);
-       echo $candidate->phone.'--';
-       echo $candidate->age.'<br>';
+        $this->sent_mobile_msg($candidate->phone,$msg);
+     //  echo $candidate->phone.'--';
+     //  echo $candidate->age.'<br>';
 
       }
      // echo $msg;
-      exit();
+     // exit();
       // echo '<pre>';print_r($my_matr_id);
       // exit;
 
