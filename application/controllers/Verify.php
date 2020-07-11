@@ -171,6 +171,9 @@ error_reporting(E_ALL);
  /*     redirect(base_url().'Verify/'); */	
     }
     public function sent_mobile_msg($mob,$msg){
+             ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
       // Account details
         $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
         //echo $mob;
@@ -193,7 +196,7 @@ error_reporting(E_ALL);
         curl_close($ch);
         
         // Process your response here
-        //echo $response;
+        echo $response;
 
     }
  public function intrest_success() {
@@ -250,6 +253,9 @@ error_reporting(E_ALL);
      
     }
     function send_email_to_other_user(){
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
       $this->load->model('Search_model');
       $this->load->model('Home_model');
       $my_matr_id = $this->session->userdata('logged_in');
