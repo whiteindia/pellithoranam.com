@@ -25,7 +25,7 @@ die();*/
           <div class="wed-verify-inner">
             <p>A  6 - Digit Confirmation code has been sent to your email address<strong><?php echo $email;?></strong><span><img src="<?php echo base_url();?>assets/img/verify-edit.png"></span></p>
             <div class="wed-verify-code">
-              <form action="<?php echo base_url();?>Verify/check_otp" method="post">
+              <form action="<?php echo base_url();?>verify/check_otp" method="post">
               <input class="wed-verify-input" type="text" placeholder="Enter the code" name="otp">
               <button class="wed-verify-btn" type="submit">Verify</button>
               <span style="color:red;"><?php if(isset($error)) { echo $error; } ?></span>
