@@ -262,6 +262,7 @@ error_reporting(E_ALL);
       $my_matr_id = json_decode(json_encode($my_matr_id),true);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
+      $basic=json_decode(json_encode($basic),true)
       if($basic->partner_preference == 0) {
         if($basic->gender== "male") { 
             $where[]= "profiles.gender = 'female'";
