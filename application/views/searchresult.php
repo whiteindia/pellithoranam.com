@@ -755,7 +755,17 @@ $settings= get_setting();
                         }
                         echo $attr2;
                        ?>
-                        <img src="<?php echo base_url(); ?>/assets/img/user.jpg">  <!--  .$usrIMG  --->
+                       <?php
+                       if($reuest_res=="success"){ ?>
+                        <img src="<?php echo base_url().$usrIMG; ?>">
+                        <?php 
+                        }else{
+                          ?>
+                          <img src="<?php echo base_url().$usrIMG; ?>" style="-webkit-filter: blur(4px); 
+				filter: blur(4px);"> 
+                          <?php
+                        } ?>
+                         <!--   --->
                         <?php } ?>
                         </a>
                     </div>
