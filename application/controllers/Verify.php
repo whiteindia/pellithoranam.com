@@ -292,7 +292,7 @@ error_reporting(E_ALL);
         // echo "<br>";
      //  $this->sendMailNow($candidate);
       }
-      $age = $basic->age;
+      $age = (int)$basic->age;
 
       if($basic->gender== "male") { 
         $agef=$age-5;
