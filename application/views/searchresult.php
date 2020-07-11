@@ -755,7 +755,7 @@ $settings= get_setting();
                         }
                         echo $attr2;
                        ?>
-                        <img src="<?php echo base_url(/assets/img/user.jpg); ?>">  <!--  .$usrIMG  --->
+                        <img src="<?php echo base_url(); ?>/assets/img/user.jpg">  <!--  .$usrIMG  --->
                         <?php } ?>
                         </a>
                     </div>
