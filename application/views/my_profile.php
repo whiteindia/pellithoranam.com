@@ -43,7 +43,7 @@
                   <?php if($membershipinfo->alt_mobile==1): ?>
                   <div>
                     <span class="country_codes">
-                      <input class="wed-reg-input" type="text" name="alt_mobile_country_code" id="alt-mobile-number"  value="<?php echo $profile->alt_mobile_country_code; ?>">
+                      <input class="wed-reg-input" type="text" name="alt_mobile_country_code" id="alt-mobile-number"  value="<?php echo $profile->alt_mobile_country_code; ?>" readonly>
                     </span>
                     <span class="phone_input">
                     <input type='text' id='prof_mob_input' class='wed-navbar-input' value='<?php echo $profile->alt_mobile_no; ?>' name="alt_mobile_no">
