@@ -47,8 +47,7 @@
 		  		        //alert(data);
 		  		      	console.log(data);
 		  		    	alert("Updated Successfully!");
-		  		      	//location.reload();
-		  		      	window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+		  		      	location.reload();
 		  		    }
 		  		});
 		  		return false;
@@ -87,8 +86,7 @@
 		  		    success: function(data) {
 		  		      	console.log(data);
 		  		    	alert("Updated Successfully!");
-		  		      	//location.reload();
-		  		      	window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+		  		      	location.reload();
 		  		    }
 		  		});
 		  		return false;
@@ -132,8 +130,7 @@
 		  		    },
 		  		    success: function(data) {
 		  		    	alert("Updated Successfully!");
-		  		    	//location.reload();
-		  		    	window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+		  		    	location.reload();
 		  		    }
 		  		});
 		  		return false;

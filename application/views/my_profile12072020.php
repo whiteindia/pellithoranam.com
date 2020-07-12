@@ -29,14 +29,19 @@
                 <?php echo $profile->religion_name.", ".$profile->caste_name.",".$profile->sub_caste; ?><br>
                 <?php echo $profile->city_name.", ".$profile->state_name.",".$profile->country_name; ?><br>
                 <?php echo $profile->occupation; ?><br>
+                <?php if(isset($profile->placeofbirth)) { ?>
+            
+            <?php echo $profile->placeofbirth; echo '  ';echo $profile->timeofbirth;?>
+           
+            <?php }?>
                 <br>
                 <div class="edit-phone-form" style="display: none;">
                   <div>
                     <span class="country_codes">
-                      <input class="wed-reg-input" type="text" name="phone_countrycode" id="mobile-number" value="<?php echo $profile->phone_countrycode; ?>">
+                      <input class="wed-reg-input" type="text" name="phone_countrycode" id="mobile-number" value="<?php echo $profile->phone_countrycode; ?>" readonly>
                     </span>
                     <span class="phone_input">
-                    <input type='text' id='prof_mob_input' class='wed-navbar-input' value='<?php echo $profile->phone; ?>' name="phone">
+                    <input type='text' id='prof_mob_input' class='wed-navbar-input' value='<?php echo $profile->phone; ?>' name="phone" readonly>
                     </span>
                     <div class="clearfix"></div>
                   </div>
@@ -1469,7 +1474,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="family_origin" value="<?php echo ucwords($profile->family_origin);?>">
+            <input type="text" class="wed-reg-input" name="family_origin" value="<?php echo ucwords($profile->family_origin);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1480,7 +1485,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="family_location" value="<?php echo ucwords($profile->family_location);?>">
+            <input type="text" class="wed-reg-input" name="family_location" value="<?php echo ucwords($profile->family_location);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1497,7 +1502,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="father_status" value="<?php echo ucwords($profile->father_status);?>">
+            <input type="text" class="wed-reg-input" name="father_status" value="<?php echo ucwords($profile->father_status);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1508,7 +1513,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="text" class="wed-reg-input" name="mother_status" value="<?php echo ucwords($profile->mother_status);?>">
+            <input type="text" class="wed-reg-input" name="mother_status" value="<?php echo ucwords($profile->mother_status);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1519,7 +1524,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" value="<?php echo ucwords($profile->brothers);?>">
+            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" value="<?php echo ucwords($profile->brothers);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -1530,7 +1535,7 @@
           <div class="child2">:
           </div>
           <div class="child3">
-            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="sisters" value="<?php echo ucwords($profile->sisters);?>">
+            <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="sisters" value="<?php echo ucwords($profile->sisters);?>" required>
           </div>
           <div class="clearfix"></div>
         </li>
@@ -2164,29 +2169,31 @@ $(document).ready(function(){
     });
 
     $(".religion-selector").on('change', function () {
-      var valueSelected = $(this).val();
-      var passdata_1 = 'rlgn_sel='+ valueSelected;
-      $.ajax({
+        var valueSelected = $(this).val();
+        var passdata_1 = 'rlgn_sel='+ valueSelected;
+
+        $.ajax({
         type: "POST",
         url : '<?php echo base_url(); ?>home/getCaste',
         data:  passdata_1,
         success: function(data){
-          $(".caste-selector").html(data);
-        }
-      });
+                $(".caste-selector").html(data);
+            }
+        });
     });
 
     $(".caste-selector").on('change', function () {
-      var valueSelected = $(this).val();
-      var passdata_1 = 'cast_sel='+ valueSelected;
-      $.ajax({
+        var valueSelected = $(this).val();
+        var passdata_1 = 'cast_sel='+ valueSelected;
+
+        $.ajax({
         type: "POST",
         url : '<?php echo base_url(); ?>home/getSubCaste',
         data:  passdata_1,
         success: function(data){
-          $(".sub-caste-selector").html(data);
-        }
-      });
+                $(".sub-caste-selector").html(data);
+            }
+        });
     });
 
     /*$('#country-selector').on('change', function () {
@@ -2204,68 +2211,72 @@ $(document).ready(function(){
     });*/
 
     $(document).on("click","#prof_pers_btn",function() {
-      if($('#about_form').parsley().validate()) {
-        var value =$("#about_form").serialize();
-        $.ajax({
-          type: "POST",
-          url: base_url+'Home/update_about',
-          data: value,
-          error: function (err) {
-              console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
-          },
-          success: function(data) {
-            alert("Updated Successfully!");
-            //location.reload();
-            window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
-          }
-        });
-        return false;
-      }
+        if($('#about_form').parsley().validate()) {
+
+            var value =$("#about_form").serialize();
+            $.ajax({
+                type: "POST",
+                url: base_url+'Home/update_about',
+                data: value,
+                error: function (err) {
+                    console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+                },
+                success: function(data) {
+                  alert("Updated Successfully!");
+                  location.reload();
+                }
+            });
+            return false;
+        }
     });
+
+    
 
     $(document).on("click",".edit_relg_btn",function() {
-      //if($('#edit_form').parsley().validate()) {
-      console.log('relg_form - submit');
-      var value =$("#relg_form").serialize();
-      console.log(value);
-      $.ajax({
-        type: "POST",
-        url: base_url+'Home/update_profile',
-        data: value,
-        error: function (err) {
-          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
-        },
-        success: function(data) {
-          console.log(data);
-          alert("Updated Successfully!");
-          //location.reload();
-          window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
-        }
-      });
-      return false;
-      //}
+        //if($('#edit_form').parsley().validate()) {
+
+            console.log('relg_form - submit');
+            var value =$("#relg_form").serialize();
+            console.log(value);
+            $.ajax({
+                type: "POST",
+                url: base_url+'Home/update_profile',
+                data: value,
+                error: function (err) {
+                    console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+                },
+                success: function(data) {
+                  console.log(data);
+                  alert("Updated Successfully!");
+                  location.reload();
+                }
+            });
+            return false;
+        //}
     });
 
+   
+
     $(document).on("click",".edit_family_btn",function() {
-      //if($('#edit_form').parsley().validate()) {
-      var value =$("#family_form").serialize();
-      console.log(value);
-      $.ajax({
-        type: "POST",
-        url: base_url+'Home/update_profile',
-        data: value,
-        error: function (err) {
-          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
-        },
-        success: function(data) {
-          console.log(data);
-          alert("Updated Successfully!");
-          //location.reload();
-          window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
-        }
-      });
-      return false;
-      //}
+        //if($('#edit_form').parsley().validate()) {
+
+            var value =$("#family_form").serialize();
+            console.log(value);
+            $.ajax({
+                type: "POST",
+                url: base_url+'Home/update_profile',
+                data: value,
+                error: function (err) {
+                    console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+                },
+                success: function(data) {
+                  console.log(data);
+                  alert("Updated Successfully!");
+                  location.reload();
+                }
+            });
+            return false;
+        //}
     });
 
     $(document).on("click",".edit_about_btn",function() {
@@ -2283,26 +2294,27 @@ $(document).ready(function(){
                 success: function(data) {
                   console.log(data);
                   alert("Updated Successfully!");
-                  //location.reload();
-                  window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+                  location.reload();
                 }
             });
             return false;
         //}
     });
+
 });
 
   var base_url = <?php echo json_encode(base_url()); ?>;
-  $(function() {
-    $( "#autocomplete-5" ).autocomplete({
-    source: base_url+"/Home/load_parish",
-    minLength: 1,
-    focus: function( event, ui ) {
-    $( "#autocomplete-5" ).val( ui.item.val );
-    return false;  
-    }
-    });
-  });
+         $(function() {
+      
+            $( "#autocomplete-5" ).autocomplete({
+               source: base_url+"/Home/load_parish",
+               minLength: 1,
+               focus: function( event, ui ) {
+                $( "#autocomplete-5" ).val( ui.item.val );
+                return false;  
+          }
+            });
+         });
 
 
 $( document ).ready(function() {
@@ -2337,10 +2349,10 @@ $( document ).ready(function() {
   }, 1000);
 
 var religion = <?php echo json_encode($profile->religion) ?>;
-var caste = <?php echo json_encode($profile->caste) ?>;
+  var caste = <?php echo json_encode($profile->caste) ?>;
 //alert(caste);
 
-    $(".cst-select-2").on('change', function () {
+$(".cst-select-2").on('change', function () {
         var valueSelected = $(this).val();
         var select_type   = $(this).attr('cst-attr');
         var select_destn  = $(this).attr('cst-for');
@@ -2351,17 +2363,19 @@ var caste = <?php echo json_encode($profile->caste) ?>;
         url : '<?php echo base_url(); ?>Profile/get_drop_data3',
         data:  passdata_2,
         success: function(data){
-        // alert(data);
+       // alert(data);
                $("#"+select_destn+"-selector").html(data);
             }
         });
     });
 
-    $("select#religion-selector").val(religion).change();
-    setTimeout(function() {
-      $("select#caste-selector").val(caste).change();
-    }, 500);
-  
+  $("select#religion-selector").val(religion).change();
+  setTimeout(function() {
+    $("select#caste-selector").val(caste).change();
+  }, 500);
+   
+
+
  });    
       </script> 
 
