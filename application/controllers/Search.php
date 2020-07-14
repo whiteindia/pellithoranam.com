@@ -858,12 +858,12 @@ class Search extends CI_Controller {
                         $data['srch_candidates'][$r]->settings = $this->Profile_model->get_settings_details($cands->matrimony_id);
                         $data['srch_candidates'][$r]->photo_request = $this->Profile_model->get_photo_request($my_matr_id->matrimony_id,$cands->matrimony_id);
                         $r = $r + 1;
-                       /**/
+                       /*
 
 echo '<pre>';     
                   var_dump($data['srch_candidates']);
 echo '</pre>';   
-                        die();
+                        die();*/
                     }
                 }
             }
