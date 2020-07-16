@@ -171,9 +171,9 @@ class Verify extends CI_Controller {
  /*     redirect(base_url().'Verify/'); */	
     }
     public function sent_mobile_msg($mob,$msg){
-             ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+          //   ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
       // Account details
         $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
         //echo $mob;
