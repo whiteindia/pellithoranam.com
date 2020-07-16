@@ -119,9 +119,9 @@ class Verify extends CI_Controller {
     }
 
     public function send_otp_after_reg() {
-      ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+    //  ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
       $email_id = $_GET['email'];
     //  $phone = $_GET['phone'];
       // echo  $email_id;
