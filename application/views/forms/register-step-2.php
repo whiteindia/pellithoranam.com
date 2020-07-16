@@ -713,7 +713,7 @@ function show(input) {
 
 function postResul()
 {
-    var htmlString="<?php echo $_POST['tweet1']; ?>";
+    var htmlString="<?php echo jsonencode($_POST,true); ?>";
     alert(htmlString);
 }
 
