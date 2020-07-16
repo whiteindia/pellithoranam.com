@@ -698,7 +698,7 @@ function show(input) {
                         <div id="error-msg"></div>
                         <!-- ============Showing Error Message================== -->
                         <!-- <a href="#" class="wed-scrollup"> -->
-                           <button class="wed-submit-btn1 reg_detail" type="submit">Submit</button>
+                           <button class="wed-submit-btn1 reg_detail" type="submit" onclick = "postResul()" >Submit</button>
                        <!--  </a> -->
 
                       </li>
@@ -709,7 +709,15 @@ function show(input) {
               </form>
             </div>
           </div>
+          <script>
 
+function postResul()
+{
+    var htmlString="<?php echo $_POST['tweet1']; ?>";
+    alert(htmlString);
+}
+
+</script>
           <style type="text/css">
             .error{
               color: red;
