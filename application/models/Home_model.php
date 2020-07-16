@@ -136,6 +136,7 @@ class Home_model extends CI_Model {
        // Regster User First Step
        public function InsertRegistration($rcvd_arr) {
       //var_dump($rcvd_arr); die();
+
         $td_date = date('Y-m-d H:i:s', time());
         $td_date1 = date('Y-m-d');
         // $dob = $rcvd_arr['year']."-".$rcvd_arr['month']."-".$rcvd_arr['day'];
@@ -304,7 +305,7 @@ class Home_model extends CI_Model {
     }
     
     public function retrive_city1($data){
-      if($data['country']=='-1'){
+      if($data['country']!='-1'){
         $city=$data['city'];
         return $city;
       }
