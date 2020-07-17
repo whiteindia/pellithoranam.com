@@ -593,6 +593,13 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                                <?php if($profile[0]->sub_caste){ echo $profile[0]->sub_caste;} else { ?> - <?php } ?></div>
                           <div class="clearfix"></div>
                         </li>
+                        <li class="wed-personel-sec-li">
+                          <div class="child1">Gothram</div>
+                          <div class="child2">:</div>
+                          <div class="child3">
+                               <?php if(isset($profile[0]->gothram)){ echo $profile[0]->gothram;} else { ?> - <?php } ?></div>
+                          <div class="clearfix"></div>
+                        </li>
                       </ul>
                     </li>
                     <div class="clearfix"></div>
