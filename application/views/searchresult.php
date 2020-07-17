@@ -824,8 +824,8 @@ $settings= get_setting();
                           <div class="clearfix"></div>
                         </li> 
                         <li>
-                          <div class="childs1">Location</div>
-                          <div class="childs2"><?php echo $candidate->city_name.", ".$candidate->state_name.", ".$candidate->country_name;?></div>
+                          <div class="childs1">Gothram</div>
+                          <div class="childs2"><?php echo $candidate->Gothram;?></div>  <!---.", ".$candidate->state_name.", ".$candidate->country_name--->
                           <div class="clearfix"></div>
                         </li>
                         <li>
