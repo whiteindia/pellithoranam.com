@@ -825,7 +825,7 @@ $settings= get_setting();
                         </li> 
                         <li>
                           <div class="childs1">Gothram</div>
-                          <div class="childs2"><?php echo $candidate->Gothram;?></div>  <!---.", ".$candidate->state_name.", ".$candidate->country_name--->
+                          <div class="childs2"><?php echo $candidate->gothram;?></div>  <!---.", ".$candidate->state_name.", ".$candidate->country_name--->
                           <div class="clearfix"></div>
                         </li>
                         <li>
