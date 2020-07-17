@@ -1225,7 +1225,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                     </div>
                     <h6><?php echo $sim->profile_name;?></h6>
                     <p><?php $now = new DateTime();
-                             $age = $now->diff(new DateTime($profile[0]->dob));
+                             $age = $now->diff(new DateTime($sim->dob));
                              echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
                     <a href="<?php echo base_url();?>Profile/profile_details/<?php echo $sim->matrimony_id;?>"><button class="wed-view">View</button></a>
                   </li>
