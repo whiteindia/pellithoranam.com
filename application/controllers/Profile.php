@@ -305,9 +305,9 @@ public function get_drop_data3() {
         	$where[] = "profiles.religion = '".$my_user['logged_in']['religion']."'";
         	$where[] = "profiles.caste = '".$my_user['logged_in']['caste']."'"; 
         }
-        $where[] = "profiles.is_phone_verified = '1'";
-        $where[] = "profiles.profile_approval = '1'";
-        $where[] = "profiles.profile_status = '1'";
+     //   $where[] = "profiles.is_phone_verified = '1'";
+     //   $where[] = "profiles.profile_approval = '1'";
+     //   $where[] = "profiles.profile_status = '1'";
         $where[] = "profiles.matrimony_id != '".$matr_id."'";
         $simlr_cands = $this->Search_model->search_user_details(10, 0, $where,$or_where,$like);
         return $simlr_cands;
