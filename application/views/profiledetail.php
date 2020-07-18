@@ -741,7 +741,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                   <li class="wed-personel-main-li">
                       <ul class="wed-personel-sec-ul">
                         <li class="wed-personel-sec-li">
-                          <div class="child1">Ancestral Origin</div>
+                          <div class="child1">Ancestral Origin<small>[Native place]</small></div>
                           <div class="child2">:</div>
                           <div class="child3"> <?php if($profile[0]->family_location){ echo $profile[0]->family_location;} else { ?>- <?php } ?></div>
                           <div class="clearfix"></div>
