@@ -2146,6 +2146,7 @@ $(document).ready(function(){
     // });
 
     $(".cst-select-1").on('change', function () {
+      event.preventDefault();
       //alert($(this).attr('id'))
         var valueSelected = $(this).val();
         var select_type   = $(this).attr('cst-attr');
@@ -2164,6 +2165,7 @@ $(document).ready(function(){
     });
 
     $(".religion-selector").on('change', function () {
+      event.preventDefault();
       var valueSelected = $(this).val();
       var passdata_1 = 'rlgn_sel='+ valueSelected;
       $.ajax({
@@ -2177,6 +2179,7 @@ $(document).ready(function(){
     });
 
     $(".caste-selector").on('change', function () {
+      event.preventDefault();
       var valueSelected = $(this).val();
       var passdata_1 = 'cast_sel='+ valueSelected;
       $.ajax({
@@ -2204,6 +2207,7 @@ $(document).ready(function(){
     });*/
 
     $(document).on("click","#prof_pers_btn",function() {
+      event.preventDefault();
       if($('#about_form').parsley().validate()) {
         var value =$("#about_form").serialize();
         $.ajax({
@@ -2224,6 +2228,7 @@ $(document).ready(function(){
     });
 
     $(document).on("click",".edit_relg_btn",function() {
+      event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
       console.log('relg_form - submit');
       var value =$("#relg_form").serialize();
@@ -2247,6 +2252,7 @@ $(document).ready(function(){
     });
 
     $(document).on("click",".edit_family_btn",function() {
+      event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
       var value =$("#family_form").serialize();
       console.log(value);
@@ -2269,6 +2275,7 @@ $(document).ready(function(){
     });
 
     $(document).on("click",".edit_about_btn",function() {
+      event.preventDefault();
         //if($('#edit_form').parsley().validate()) {
 
             var value =$("#family_about_form").serialize();
@@ -2306,6 +2313,7 @@ $(document).ready(function(){
 
 
 $( document ).ready(function() {
+  
   var cntry = <?php echo json_encode($profile->country) ?>;
   var state = <?php echo json_encode($profile->state) ?>;
  var city = <?php echo json_encode($profile->city) ?>;
@@ -2341,6 +2349,7 @@ var caste = <?php echo json_encode($profile->caste) ?>;
 //alert(caste);
 
     $(".cst-select-2").on('change', function () {
+      event.preventDefault();
         var valueSelected = $(this).val();
         var select_type   = $(this).attr('cst-attr');
         var select_destn  = $(this).attr('cst-for');
