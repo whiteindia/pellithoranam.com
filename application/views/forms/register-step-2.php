@@ -589,7 +589,7 @@ function show(input) {
                      </li>-->
                      
                      <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Ancestral /Family Origin <small>[Native place]</small></div>
+                       <div class="wed-reg-right-child1 paddingtop10">Ancestral /Family Origin <small class="text-danger">[Native place]</small></div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
                               <span>
