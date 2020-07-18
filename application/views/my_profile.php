@@ -1464,7 +1464,7 @@
         </li>
         <li>
           <div class="child1">
-            Ancestral /Family Origin <small class="text-danger">[Native place]</small>
+            Ancestral /Family Origin <small class="text-danger"> [Native place]</small>
           </div>
           <div class="child2">:
           </div>
