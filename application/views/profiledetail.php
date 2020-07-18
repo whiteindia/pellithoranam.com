@@ -765,7 +765,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                           <div class="child1">Siblings</div>
                           <div class="child2">:</div>
                           <div class="child3">
-                        <b>brothers</b>  <?php if($profile[0]->brothers){ echo $profile[0]->brothers;} else { ?> - <?php } ?> <b>sisters:</b>  <?php if($profile[0]->sisters){ echo $profile[0]->sisters;} else { ?> - <?php } ?></div>
+                        <b>brothers</b> : <?php if($profile[0]->brothers){ echo $profile[0]->brothers;} else { ?> - <?php } ?> <b>sisters:</b>  <?php if($profile[0]->sisters){ echo $profile[0]->sisters;} else { ?> - <?php } ?></div>
                              
                           <div class="clearfix"></div>
                         </li>
