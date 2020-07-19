@@ -1310,9 +1310,21 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
               <h4>Send Message to <?php echo $profile[0]->profile_name;?></h4>
               <p>Enter your message</p>
               <div class="wed-add-modal-footer">
-                <textarea class="wed-reg-modal-textarea" rows="4" name="mail_content">Hy <?php echo $profile[0]->profile_name;?></textarea><br/>
+                <textarea class="wed-reg-modal-textarea" rows="4" name="mail_content">Hi <?php echo $profile[0]->profile_name;?></textarea><br/>
                 <input type="hidden" name="mail_to" value="<?php echo $profile[0]->matrimony_id; ?>">
+                <?php 
+     $qry1 = $this->db->select("total_sendmail as counts")
+     ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
+$base_count = $qry1->row()->counts;
+if($base_count>0 )
+{  //total_sendmail
+?>
                 <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Message</button>
+                <?php } else {?>
+<button class="btn btn-danger btn-lg" disabled>please update your package.</button>
+
+              <?php      }
+                    ?>
               </div>
               </form>
             </div>
@@ -1341,7 +1353,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
      ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
 $base_count = $qry1->row()->counts;
 if($base_count>0 )
-{
+{  //total_sendmail
 ?>
 
                 <button type='submit' id='send_forward_others' class='wed-view send_form_btn'>Send Message.</button>
