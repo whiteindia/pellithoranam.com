@@ -1316,6 +1316,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
      $qry1 = $this->db->select("total_sendmail as counts")
      ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
 $base_count = $qry1->row()->counts;
+echo $base_count.':';
 if($base_count>0 )
 {  //total_sendmail
 ?>
