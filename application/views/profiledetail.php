@@ -179,11 +179,11 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
 
           <div class="wed-profile-pic-log-detail">
              <?php if(!empty($membership)) { if($membership->total_mobileview == 0) { ?>
-            <span data-toggle='modal' data-target='#no_send'>
-               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">
+        <!--     <span data-toggle='modal' data-target='#no_send'>
+              <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  -->
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
-                </a>
-            </span>
+             <!--   </a> 
+            </span>-->
              <?php } else { ?>
              <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
             <?php } } ?>
