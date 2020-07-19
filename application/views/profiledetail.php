@@ -1464,7 +1464,7 @@ $(document).on("click","#send_form_btns",function() {
               var sub_msg ="Wait for "+proc_name+" responce.";
             } else {
               var main_msg ="Sorry, Your Send Mail Limit Exceeded";
-              var sub_msg ="Upgrade your profile to send Unlimited Mails/Sms";
+              var sub_msg ="Upgrade your profile to send Unlimited Mails and Sms";
             }
             var modal = showSendMailModal(main_msg,sub_msg,matri_id);
             $('body').append(modal);
