@@ -1346,7 +1346,7 @@ if($base_count>0 )
 
                 <button type='submit' id='send_forward_others' class='wed-view send_form_btn'>Send Message.</button>
                     <?php } else {?>
-<button class="btn btn-danger btn-lg">please update your package.</button>
+<button class="btn btn-danger btn-lg" disabled>please update your package.</button>
 
               <?php      }
                     ?>
