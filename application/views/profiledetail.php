@@ -1313,9 +1313,8 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                 <textarea class="wed-reg-modal-textarea" rows="4" name="mail_content">Hi <?php echo $profile[0]->profile_name;?></textarea><br/>
                 <input type="hidden" name="mail_to" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <?php 
-     $qry01 = $this->db->select("total_sendmail as counts")
-     ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
-$base_counts = $qry01->row()->counts;
+     $qry01 = $this->db->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
+$base_counts = $qry01->row()->total_sendmail;
 echo $base_counts.':';
 if($base_counts>0 )
 { 
