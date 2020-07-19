@@ -49,9 +49,7 @@
                            <th>Name</th>
                            <th>Birth Date</th>
                            <th>Gender</th>
-                           <th>Religion</th>
-                           <th>Mother tongue</th>
-                           <th>Email</th>
+
                            <th>Phone</th>
 						   <th>Status</th>
 						    <th>Current Package</th>
@@ -61,6 +59,9 @@
 						 
                            <th class="custom-btn-bay">Action</th>
 						       <th>Highlight </th>
+                         <th>Religion</th>
+                           <th>Mother tongue</th>
+                           <th>Email</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -75,9 +76,7 @@
                            <td class="center"><?php echo $member->profile_name; ?></td>
                            <td class="center"><?php echo $member->dob; ?></td>
                            <td class="center"><?php echo $member->gender; ?></td>
-                           <td class="center"><?php echo $member->religion_name; ?></td>
-                           <td class="center"><?php echo $member->mother_tongue_name; ?></td>
-                           <td class="center"><?php echo $member->email; ?></td>
+
                            <td class="center"><?php echo $member->phone; ?></td>
 						    <td class="center"><?php 
 								if($member->profile_status=='0'){
@@ -97,7 +96,7 @@
 								}
 							?>
 							</td>
-							
+
 							
 							  
 							
@@ -169,7 +168,9 @@
                               <i class="fa-lightbulb-o"></i></a>
 							</td>
 							<?php } ?>
-							
+                     <td class="center"><?php echo $member->religion_name; ?></td>
+                           <td class="center"><?php echo $member->mother_tongue_name; ?></td>
+                           <td class="center"><?php echo $member->email; ?></td>
 						     
                         </tr>
                         <?php $i = $i+1; } ?>
