@@ -1563,7 +1563,12 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 		$number = "+91".$_POST['mob_num'];
 		//$number = "+919966337383";
 		$result_array = array();
-
+//new logic
+$qry1 = $this->db->select("total_sms as counts")
+->get_where('membership_details',array('matrimony_id' => $my_matr_id->matrimony_id));
+$base_count = $qry1->row()->counts;
+//new 
+if($base_count>0){
 		$rcal=$this->sent_mobile_msg($number,$sms_contnet);
 		$my_matr_id = $this->session->userdata('logged_in');
 		$do_delete_sent_mail = $this->Profile_model->do_delete_sent_sms($my_matr_id->matrimony_id);
@@ -1571,6 +1576,14 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 		$result_array['msg'] = 'Sms Sent Successfully.';
 		//$result_array['sms'] = $sms_contnet;
 		echo json_encode($result_array);
+}else {
+	$result_array['type'] = 'failure';
+	$result_array['msg'] = 'Sms failed.verify you package';
+	//$result_array['sms'] = $sms_contnet;
+	echo json_encode($result_array);
+	
+}
+
 		exit;
 
 	}
