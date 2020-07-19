@@ -178,7 +178,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
           </div>
 
           <div class="wed-profile-pic-log-detail">
-          <!--   <?php if(!empty($membership)) { if($membership->total_mobileview > 0) { ?>
+          <!-- -->  <?php if(!empty($membership)) { if($membership->total_mobileview > 0) { ?>
            <span data-toggle='modal' data-target='#no_send'>
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
@@ -186,7 +186,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             </span>
              <?php } else { ?>
              <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
-            <?php } } ?>  -->
+            <?php } } ?>  
             <span id="print_profile">
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Print">
                 <img src="<?php echo base_url(); ?>assets/img/dot.png"> Print
