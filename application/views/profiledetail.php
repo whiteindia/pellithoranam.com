@@ -1315,9 +1315,9 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                 <?php 
      $qry1 = $this->db->select("total_sendmail as counts")
      ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
-$base_count = $qry1->row()->counts;
-echo $base_count.':';
-if($base_count>0 )
+$base_counts = $qry1->row()->counts;
+echo $base_counts.':';
+if($base_counts>0 )
 {  //total_sendmail
 ?>
                 <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Message</button>
