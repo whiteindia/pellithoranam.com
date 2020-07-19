@@ -1313,14 +1313,15 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                 <textarea class="wed-reg-modal-textarea" rows="4" name="mail_content">Hi <?php echo $profile[0]->profile_name;?></textarea><br/>
                 <input type="hidden" name="mail_to" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <?php 
-     $qry1 = $this->db->select("total_sendmail as counts")
+     $qry01 = $this->db->select("total_sendmail as counts")
      ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
-$base_counts = $qry1->row()->counts;
+$base_counts = $qry01->row()->counts;
 echo $base_counts.':';
 if($base_counts>0 )
-{  //total_sendmail
+{ 
+   //total_sendmail
 ?>
-                <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Message</button>
+                <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Mail</button>
                 <?php } else {?>
 <button class="btn btn-danger btn-lg" disabled>please update your package.</button>
 
