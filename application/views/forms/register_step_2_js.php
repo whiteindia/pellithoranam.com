@@ -93,9 +93,9 @@
 		      return false;
 		    }
 		    else if($('#height').val() == 0) { alert('Height can not be empty'); return false; }
-		    else if($('#weight').val() == 0) { alert('Weight can not be empty'); return false; }
-			if($('#body_type').val() == 0) { alert('body type can not be empty'); return false; }
-			if($('#complexion').val() == 0) { alert('complexion can not be empty'); return false; }
+		 //   else if($('#weight').val() == 0) { alert('Weight can not be empty'); return false; } -->
+		//	if($('#body_type').val() == 0) { alert('body type can not be empty'); return false; }
+		//	if($('#complexion').val() == 0) { alert('complexion can not be empty'); return false; }
 			if($('#physical_status').val() == 0) { alert('physical status can not be empty'); return false; }
 			else if($('#image').val() == '') { alert('profile pic can not be empty.please upload your profile photo'); return false; }
 		    else if($('#education').val() == 0) { 
@@ -109,13 +109,13 @@
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
 		      return false; 
 		    }
-			else if($('#employed_in').val() == 0) { alert('employed in can not be empty'); return false; }
+		//	else if($('#employed_in').val() == 0) { alert('employed in can not be empty'); return false; }
 		/*	else if($('#currency-selector').val() == 0) { alert('currency selectoion can not be empty'); return false; }
 			else if($('#income').val() == 0) { alert('income can not be empty'); return false; } 
 				 */
 			else if($('#gothram').val() == 0) { alert('gothram can not be empty'); return false; }
 			else if($('#star').val() == 0) { alert('star can not be empty'); return false; }
-			else if($('#padam').val() == 0) { alert('padam can not be empty'); return false; }
+		//	else if($('#padam').val() == 0) { alert('padam can not be empty'); return false; }
 		 else if($('#family_status').val() == 0) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">family status  can not be empty</p>');
@@ -123,7 +123,7 @@
 		      return false; 
 		    }
 
-			else if($('#family_type').val() == 0) { 
+		/*	else if($('#family_type').val() == 0) { 
 		      $("#error-msg").show();
 		      $("#error-msg").html('<p class="alert alert-danger" id="top">family type  can not be empty</p>');
 		      setTimeout(function() { $("#error-msg").hide();}, 3000)
@@ -137,14 +137,14 @@
 		      return false; 
 		    }
 
-			else if($('#family_origin').val() == 0) { alert('family origin can not be empty'); return false; }
+			else if($('#family_origin').val() == 0) { alert('family origin can not be empty'); return false; }*/
 			else if($('#family_location').val() == 0) { alert('family location can not be empty'); return false; }
 			else if($('#father_status').val() == 0) { alert('father name can not be empty'); return false; }
 			else if($('#mother_status').val() == 0) { alert('mother name can not be empty'); return false; }
 			else if($('#placeofbirth').val() == 0) { alert('place of birth can not be empty'); return false; }
 			else if($('#timeofbirth').val() == 0) { alert('time of birth can not be empty'); return false; }
-			else if($('#brothers').val().trim() == '') { alert('please fill brothers field'); return false; }
-			else if($('#sisters').val().trim() == '') { alert('please fill sisters field'); return false; }
+		/*	else if($('#brothers').val().trim() == '') { alert('please fill brothers field'); return false; }
+			else if($('#sisters').val().trim() == '') { alert('please fill sisters field'); return false; }  */
 
 
 		/*
