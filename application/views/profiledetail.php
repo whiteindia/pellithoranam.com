@@ -1231,7 +1231,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                         <img src="<?php echo base_url().$sim->profile_photo_blured; ?>">
                         <?php } ?>
                     </div>
-                    <h6><small><?php echo ucwords(strtolower($sim->profile_name));?></small></h6>
+                    <h6><small class="text-danger"><b><?php echo ucwords(strtolower($sim->profile_name));?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
                              echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
