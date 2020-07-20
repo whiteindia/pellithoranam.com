@@ -446,7 +446,7 @@
                     </li>
                     <li>
                       <div class="child1">
-                       Place of birth
+                       Place of Birth
                       </div>
                       <div class="child2">:
                       </div>
@@ -459,7 +459,7 @@
                     </li>
                     <li>
                       <div class="child1">
-                       time of birth
+                       Time of Birth
                       </div>
                       <div class="child2">:
                       </div>
