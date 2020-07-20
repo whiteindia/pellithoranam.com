@@ -1130,6 +1130,32 @@
         </div>
         <div class="clearfix"></div>
       </li>
+      <li>
+        <div class="child1">
+         Place of Birth 
+        </div>
+        <div class="child2">:
+       
+        </div>
+        <div class="child3">
+         
+         <input type="text" class="wed-reg-input" name="placeofbirth" value="<?php echo $profile->placeofbirth;?>">
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <div class="child1">
+        Time of Birth  
+        </div>
+        <div class="child2">:
+       
+        </div>
+        <div class="child3">
+         
+         <input type="time" class="wed-reg-input" name="timeofbirth" value="<?php echo $profile->timeofbirth;?>">
+        </div>
+        <div class="clearfix"></div>
+      </li>
    <!--    <li>
         <div class="child1">
           Star / Raasi
