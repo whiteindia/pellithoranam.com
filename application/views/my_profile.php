@@ -444,6 +444,32 @@
                       </div>
                       <div class="clearfix"></div>
                     </li>
+                    <li>
+                      <div class="child1">
+                       Place of birth
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php if($profile->placeofbirth) {
+              						echo $profile->placeofbirth; 
+              					} else {?> - <?php } ?>
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                       time of birth
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php if($profile->timeofbirth) {
+              						echo $profile->timeofbirth; 
+              					} else {?> - <?php } ?>
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
                    <!--  <li>
                       <div class="child1">
                         Star / Raasi
