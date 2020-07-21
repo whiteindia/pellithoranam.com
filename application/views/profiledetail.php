@@ -196,18 +196,28 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                             ?>
           <!-- -->  <?php 
           //if(!empty($membership)) { 
-          if($membership->total_mobileview < $used) { ?>
+          //  if($alreadyviewed>0)
+             if($alreadyviewed>0) {?>
+              <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
+             
+             
+             
+             <?php  }
+
+         else if($membership->total_mobileview < $used) { ?>
            <span data-toggle='modal' data-target='#no_send'>
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
                </a> 
             </span>
-             <?php } else if($alreadyviewed>0) {?>
-              <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
+             <?php } //else if($alreadyviewed>0){
+              ?>
+            <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
+             -->
              
              
-             
-             <?php  } else { ?>
+             <?php // }
+              else { ?>
             <img src="<?php echo base_url(); ?>assets/img/mob.png"> <strong>Locked</strong> 
            <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>-->
             <?php } 
