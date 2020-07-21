@@ -530,7 +530,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                             echo '  from'.$this->session->userdata('logged_in')->matrimony_id;
                             echo '  to'.$profile[0]->matrimony_id;
                             $query = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
-                            $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                          //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                             $query = $this->db->get('mobile_view'); 
                              echo 'used'.$query->num_rows();
                             
