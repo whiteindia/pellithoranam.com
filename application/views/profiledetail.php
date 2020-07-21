@@ -188,17 +188,20 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                            //  if
                             }
                             ?>
-            <?php 
-          //if(!empty($membership)) 
-          { if($membership->total_mobileview > $used) { ?>
+          <!-- -->  <?php 
+          //if(!empty($membership)) { 
+          if($membership->total_mobileview > $used) { ?>
            <span data-toggle='modal' data-target='#no_send'>
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
                </a> 
             </span>
              <?php } else { ?>
-             <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
-            <?php } } ?><!--   -->
+            <img src="<?php echo base_url(); ?>assets/img/mob.png"> <strong>Locked</strong> 
+           <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>-->
+            <?php } 
+         // }
+           ?>  
             <span id="print_profile">
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Print">
                 <img src="<?php echo base_url(); ?>assets/img/dot.png"> Print
