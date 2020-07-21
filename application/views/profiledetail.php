@@ -178,7 +178,19 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
           </div>
 
           <div class="wed-profile-pic-log-detail">
-          <!--   <?php if(!empty($membership)) { if($membership->total_mobileview > 0) { ?>
+          <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
+                         //   echo '  from'.$this->session->userdata('logged_in')->matrimony_id;
+                        //    echo '  to'.$profile[0]->matrimony_id;
+                            $query = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
+                          //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                            $query = $this->db->get('mobile_view'); 
+                             $used=$query->num_rows();
+                           //  if
+                            }
+                            ?>
+            <?php 
+          //if(!empty($membership)) 
+          { if($membership->total_mobileview > $used) { ?>
            <span data-toggle='modal' data-target='#no_send'>
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
@@ -186,7 +198,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             </span>
              <?php } else { ?>
              <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
-            <?php } } ?>  -->
+            <?php } } ?><!--   -->
             <span id="print_profile">
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Print">
                 <img src="<?php echo base_url(); ?>assets/img/dot.png"> Print
@@ -539,7 +551,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                             <!----->
                                 <?php if(!$this->session->userdata('logged_in_admin')) {
                                  if($membership->total_mobileview>$used) { ?><strong><span data-toggle="modal" data-target="#view_mob" style="cursor: pointer;">View Number</span></strong><?php } else {?><strong>Locked</strong><?php } ?>
-                              <?php } else {  ?> <strong>Locked</strong> <?php } ?> <strong>Locked</strong> </div>
+                              <?php } else {  ?> <strong>Locked</strong> <?php } ?> <!--<strong>Locked</strong> </div> -->
                             <div class="clearfix"></div>
                           </li>
                           <li class="wed-personel-sec-li">
