@@ -185,6 +185,12 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                           //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                             $query = $this->db->get('mobile_view'); 
                              $used=$query->num_rows();
+
+                             $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
+                             //  $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                               $query1 = $this->db->get('mobile_view'); 
+                                $alreadyviewed=$query1->num_rows();
+
                            //  if
                             }
                             ?>
@@ -196,7 +202,16 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
                </a> 
             </span>
-             <?php } else { ?>
+             <?php } else if($alreadyviewed>0) ?>
+             <span data-toggle='modal' data-target='#no_send'>
+              <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
+                  <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
+               </a> 
+            </span> 
+             
+             
+             
+         <?php   else { ?>
             <img src="<?php echo base_url(); ?>assets/img/mob.png"> <strong>Locked</strong> 
            <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>-->
             <?php } 
