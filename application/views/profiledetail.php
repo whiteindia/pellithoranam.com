@@ -187,7 +187,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                              $used=$query->num_rows();
 
                              $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
-                             //  $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                              $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $query1 = $this->db->get('mobile_view'); 
                                 $alreadyviewed=$query1->num_rows();
                                 echo 'is viewed'.$alreadyviewed;
