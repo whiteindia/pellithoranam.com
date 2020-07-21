@@ -526,8 +526,10 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                             <div class="child1">Contact Number</div>
                             <div class="child2">:</div>
                             <div class="child3">
+                            <?php if(!empty($membership) && $membership->total_mobileview>0)  echo $membership->total_mobileview.':mv'; ?>
+                            <!--
                                 <?php if(!$this->session->userdata('logged_in_admin')) {
-                                 if(!empty($membership) && $membership->total_mobileview>0) { echo $membership->total_mobileview.':mv'; }?><!--<strong><span data-toggle="modal" data-target="#view_mob" style="cursor: pointer;">View Number</span></strong><?php } else {?><strong>Locked</strong><?php } ?>
+                                 if(!empty($membership) && $membership->total_mobileview>0) { ?><strong><span data-toggle="modal" data-target="#view_mob" style="cursor: pointer;">View Number</span></strong><?php } else {?><strong>Locked</strong><?php } ?>
                               <?php } else {  ?> <strong>Locked</strong> <?php } ?> ---><strong>Locked</strong> </div>
                             <div class="clearfix"></div>
                           </li>
