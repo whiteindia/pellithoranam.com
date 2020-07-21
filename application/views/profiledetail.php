@@ -190,9 +190,9 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $query1 = $this->db->get('mobile_view'); 
                                 $alreadyviewed=$query1->num_rows();
-                                echo 'is viewed'.$alreadyviewed;
-                                echo '----used view no:'.$used;
-echo  '--total mv'.$membership->total_mobileview;
+                                echo 'isviewed'.$alreadyviewed;
+                                echo '-usedno:'.$used;
+echo  '--totalmv'.$membership->total_mobileview;
                            //  if
                             }
                             if($alreadyviewed){
