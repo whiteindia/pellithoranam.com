@@ -198,7 +198,14 @@ echo  '--total mv'.$membership->total_mobileview;
                             if($alreadyviewed){
                             ?>
                             <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
-                            <?php } ?>       <!--   <?php 
+                            <?php } ?>    
+                            <span data-toggle='modal' data-target='#no_send'>
+              <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
+                  <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
+               </a> 
+            </span>
+                            
+                               <!--   <?php 
 //}
           //if(!empty($membership)) { 
           if($membership->total_mobileview > $used) { ?>
