@@ -194,7 +194,8 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                                 echo '-usedno:'.$used;
 echo  '--totalmv'.$membership->total_mobileview; */
                            //  if
-                            }
+                            } ?>
+                       <!--     <?php
                             if($alreadyviewed){
                             ?>
                             <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
@@ -206,7 +207,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
                </a> 
             </span>
-                            <?php } ?>
+                            <?php } ?>  -->
 
                                <!--   <?php 
 //}
