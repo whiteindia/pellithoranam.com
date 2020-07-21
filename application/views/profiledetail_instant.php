@@ -85,11 +85,14 @@
           </div>
 
           <div class="wed-profile-pic-log-detail">
-             <?php if(!empty($membership)) { if($membership->total_mobileview == 0) { ?>
+      <!--       <?php if(!empty($membership)) { if($membership->total_mobileview == 0) { ?>
             <span data-toggle='modal' data-target='#no_send'><img src="<?php echo base_url(); ?>assets/img/mob.png"></span>
              <?php } else { ?>
              <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"></span>
-            <?php } } ?>
+            <?php } } ?>  -->
+
+
+
             <span><img src="<?php echo base_url(); ?>assets/img/dot.png"></span>
             <div class="wed-profile-log-down">
                         <div class="col-md-12">
