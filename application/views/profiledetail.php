@@ -202,7 +202,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
                </a> 
             </span>
-             <?php } else if($alreadyviewed>0) ?>
+             <?php } else if($alreadyviewed>0) {?>
              <span data-toggle='modal' data-target='#no_send'>
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
@@ -211,7 +211,7 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
              
              
              
-         <?php   else { ?>
+             <?php  } else { ?>
             <img src="<?php echo base_url(); ?>assets/img/mob.png"> <strong>Locked</strong> 
            <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>-->
             <?php } 
