@@ -498,8 +498,8 @@ return $all_membs;
        $result = $query->row();
        //return $result;
        $verified_mob=$result->verified_mob;
-       $verified_mob_permonth=$result->verified_mob_permonth;
-       if($verified_mob=='1' && $verified_mob_permonth=='0'){
+       $verified_mob_permonth=(int)$result->verified_mob_permonth;
+       if($verified_mob==1 && $verified_mob_permonth>0){
         return array('status' =>'success');
 
        }else{

@@ -1527,7 +1527,7 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 	    	   $to_id=$data['mobileview_to'];
 	    	   $is_zero = $this->Profile_model->CheckMobile($mat_id);
 
-	    	   if($is_zero) {
+	    	   if($is_zero['status'] = "success") {
 	    	   		$intrst_count['status'] = "success";
 	    	   } else {
 	    	   		$intrst_count = $this->Profile_model->CheckCount($my_matr_id->matrimony_id,"mobileview_from","mobile_view","total_mobileview");
