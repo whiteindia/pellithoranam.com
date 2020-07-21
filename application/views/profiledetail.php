@@ -199,12 +199,11 @@ echo  '--total mv'.$membership->total_mobileview;
                             ?>
                             <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
                             <?php } ?>    
-                            <span data-toggle='modal' data-target='#no_send'>
-              <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Mobile Number">  
-                  <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
-               </a> 
-            </span>
                             
+                     <?php     else  if($membership->total_mobileview>$used){
+                            ?>
+                            <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact ..</span>
+                            <?php } ?>  
                                <!--   <?php 
 //}
           //if(!empty($membership)) { 
