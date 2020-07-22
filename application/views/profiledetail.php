@@ -227,10 +227,10 @@ echo  '--totalmv'.$membership->total_mobileview; */
             </span>
              <?php } else { ?>
             <img src="<?php echo base_url(); ?>assets/img/mob.png"> <strong>Locked</strong> 
-           <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>-->
+           <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
             <?php } 
          // }
-           ?>  
+           ?>  -->
             <span id="print_profile">
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Print">
                 <img src="<?php echo base_url(); ?>assets/img/dot.png"> Print
