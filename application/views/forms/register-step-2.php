@@ -337,8 +337,8 @@ function show(input) {
                             <span><input id="income" type="number" name="income" placeholder="enter income" required></span>  <!-- class="wed-reg-input12"   -->
                             <div class="row1">
                               <div class="wed-custom5">
-                               <input id="mon" type="radio" name="income_per"  value="1" required>
-                               <label for="mon">Per Month</label>
+                            <!--   <input id="mon" type="radio" name="income_per"  value="1" required>
+                               <label for="mon">Per Month</label> -->
                                <input id="yr" type="radio" name="income_per" value="2" checked="checked">
                                <label for="yr">Per Year</label>                        
                              </div>
