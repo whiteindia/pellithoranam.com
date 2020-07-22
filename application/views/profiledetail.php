@@ -190,16 +190,23 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $query1 = $this->db->get('mobile_view'); 
                                 $alreadyviewed=$query1->num_rows();
+                                $total_mobileview=$membership->total_mobileview;
                              /*   echo 'isviewed'.$alreadyviewed;
                                 echo '-usedno:'.$used;
 echo  '--totalmv'.$membership->total_mobileview; */
                            //  if
-                            } ?>
-                       <!--     <?php
+                            }
+                            else{
+                              $used=1;
+                              //  if
+                              $total_mobileview=0;
+                            }
+                             ?>
+                       <!--  -->   <?php
                             if($alreadyviewed){
                             ?>
                             <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
-                            <?php } else if($membership->total_mobileview>$used){ ?>    
+                            <?php } else if($total_mobileview>$used){ ?>    
                               <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>
                             <?php } else {?>
                               <span data-toggle='modal' data-target='#no_send'>
@@ -207,7 +214,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                   <img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact
                </a> 
             </span>
-                            <?php } ?>  -->
+                            <?php } ?>  
 
                                <!--   <?php 
 //}
