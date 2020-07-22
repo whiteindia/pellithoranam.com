@@ -230,7 +230,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
            <!--  <span data-toggle='modal' data-target='#view_mob'><img src="<?php echo base_url(); ?>assets/img/mob.png"> Contact</span>-->
             <?php } 
          // }
-           ?>  -->
+           ?>  
             <span id="print_profile">
               <a class="tool_tip" data-toggle="tooltip" data-placement="top"  title="Print">
                 <img src="<?php echo base_url(); ?>assets/img/dot.png"> Print
