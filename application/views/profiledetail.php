@@ -582,7 +582,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             
                                 <?php if(!$this->session->userdata('logged_in_admin')) {
                                  if($total_mobileview>$used) { ?><strong><span data-toggle="modal" data-target="#view_mob" style="cursor: pointer;">View Number</span></strong><?php } else {?><strong>Locked</strong><?php } ?>
-                              <?php } else {  ?> <strong>Locked</strong> <?php } ?><strong>Locked</strong> </div> 
+                              <?php } else {  ?> <strong>Locked</strong> <?php } ?><!--<strong>Locked</strong> </div> -->
                             <div class="clearfix"></div>
                           </li>
                           <li class="wed-personel-sec-li">
