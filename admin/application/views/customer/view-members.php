@@ -146,7 +146,7 @@
                               <?php } ?> 
                                <a class="btn btn-sm btn-primary custom-btn" href="<?php echo site_url('customer/edit_member/'.$member->profile_id); ?>" title="Edit Member Profile">
                               <i class="fa fa-fw fa-edit"></i></a> <!-- edit -->
-                              <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('customer/edit_package/'.$member->profile_id); ?>" onClick="return doconfirmpackage()" title="edit Member package">
+                              <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('customer/edit_package/'.$member->matrimony_id); ?>" onClick="return doconfirmpackage()" title="edit Member package">
                               <i class="fa fa-exchange"></i></a> 
                               <?php if($member->profile_status!='3') { ?>
                               <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('customer/ban_member/'.$member->profile_id); ?>" onClick="return doconfirmban()" title="Ban Member">
