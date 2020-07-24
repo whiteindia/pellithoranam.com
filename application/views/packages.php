@@ -474,8 +474,8 @@
               <div class="wed-adon-payment-head">Payment Details</div>
               <div class="wed-adon-summary-inner">
                 <h6> For Offline Payment mode contact </h6>
-                <p>Contact No: +91 78934 19537, 78934 19636 <br>
-                Email: pellithoranam999@gmail.com </p>
+                <p>Contact No: +91 8187893236 <br>
+                Email: info@pellithoranam.com </p>
               </div>
             </div>
           </div>
