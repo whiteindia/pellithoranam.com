@@ -700,7 +700,7 @@ function show(input) {
                         <!-- <a href="#" class="wed-scrollup"> -->
                            <button class="wed-submit-btn1 reg_detail" type="submit">Submit</button>
                        <!--  </a> -->
-<small><?php if(isset($sess->user_id)) {echo $sess->user_id; } ?></small>
+<small><?php if(isset($_SESSION['user_id'])) {echo $_SESSION['user_id']; } ?></small>
                       </li>
 
                     
