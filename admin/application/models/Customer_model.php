@@ -116,12 +116,11 @@ class Customer_model extends CI_Model {
 		$this->db->where('matrimony_id',$mat_id);
 		$query1 = $this->db->get('membership_details');
 		$result1 = $query1->row();
-		echo '$mat_id';
-		echo 'result'; 	
- echo '<pre>'; 
- print_r($result1);
- echo '</pre>'; 
-exit();
+	
+ //echo '<pre>'; 
+ //print_r($result1);
+ //echo '</pre>'; 
+//exit();
 //if(isset()){
 
 //}else{
@@ -145,6 +144,11 @@ exit();
 	 $data1['total_mobileview']=(int)$result->verified_mob_permonth;
 	 $data1['total_sms']=(int)$result->send_sms_permonth;
 	 $data1['membership_package']=$data['package_id'];
+
+	  echo '<pre>'; 
+ print_r($data1);
+ echo '</pre>'; 
+exit();
 	 /*
 	 $data1['membership_purchase']= date('Y-m-d H:i:s', time());
 	 $data1['membership_expiry']= date('Y-m-d H:i:s', strtotime('+'.$month.' months'));
