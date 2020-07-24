@@ -709,7 +709,7 @@ function show(input) {
 <br>
 <br>
 if you are facing any problem in registration ,to start the registration process from starting click here
-<a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('home/remove_member/'.$sess->user_id); ?>" onClick="return doconfirm()" title="Delete profile completely"> <i class="fa fa-fw fa fa-power-off"></i></a>
+<a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('home/remove_member/'.$_SESSION['user_id']); ?>" onClick="return doconfirm()" title="Delete profile completely"> <i class="fa fa-fw fa fa-power-off"></i></a>
 </li>
                     
                     </ul>
