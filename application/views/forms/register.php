@@ -185,7 +185,7 @@
                       </div>
                      <div class="error w3-animate-top"></div>
                       <div class="wed-submit-btn-bay">
-                        <button class="wed-submit-btn" type="submit" id="register" onclick="alert('Complete your personal details in page 2 to complete the registration')">Continue</button>
+                        <button class="wed-submit-btn btn bt-lg" type="submit" id="register" >Continue for next step</button> <!---onclick="alert('Complete your personal details in page 2 to complete the registration')">-->
                       </div>
                   </div>
                 </div>
