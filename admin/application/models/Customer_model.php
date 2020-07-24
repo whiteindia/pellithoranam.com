@@ -112,7 +112,7 @@ class Customer_model extends CI_Model {
 	 }
 
 
-	 public function edit_package($data, $mat_id){
+	 public function edit_package($mat_id){
 		$this->db->where('matrimony_id',$mat_id);
 		$query1 = $this->db->get('membership_details');
 		$result1 = $query1->row();
