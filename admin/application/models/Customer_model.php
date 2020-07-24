@@ -120,7 +120,7 @@ class Customer_model extends CI_Model {
  echo '<pre>'; 
  print_r($result1);
  echo '</pre>'; 
-
+exit();
 //if(isset()){
 
 //}else{
