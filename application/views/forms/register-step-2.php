@@ -708,6 +708,10 @@ function show(input) {
               </div>
               </form>
             </div>
+            <div>
+            <span class="text-danger">if you are facing any problem in registration to start the regisatration process from first, click here </span>
+            
+            </div>
           </div>
 
           <style type="text/css">
