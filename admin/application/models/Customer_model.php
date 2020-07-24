@@ -111,6 +111,68 @@ class Customer_model extends CI_Model {
 		 return $result;		 
 	 }
 
+
+	 public function edit_package($data, $mat_id){
+		$this->db->where('matrimony_id',$mat_id);
+		$query1 = $this->db->get('membership_details');
+		$result1 = $query1->row();
+//if(isset()){
+
+//}else{
+
+//}
+		$this->db->where('id',$result1->membership_package);
+	 $query = $this->db->get('packages');
+	 $result = $query->row();
+	 $month=$result->month;
+	 $amount=$result->price;
+	   /* if($data['package_type']==1){	*/
+	 $date=date('Y-m-d H:i:s', time());
+
+	$data1['interest'] = $this->getCount($mat_id,"interest_from","profile_interest");
+	$data1['mails ']= $this->getCount($mat_id,"mail_from","profile_mails");
+	$data1['views ']= $this->getCount($mat_id,"mobileview_from","mobile_view");
+	$data1['sms'] = $this->getCount($mat_id,"send_sms_from","send_sms");
+
+	 $data1['total_interest']=(int)$result->intrest_permonth;
+	 $data1['total_sendmail']=(int)$result->personalized_msg_permonth;
+	 $data1['total_mobileview']=(int)$result->verified_mob_permonth;
+	 $data1['total_sms']=(int)$result->send_sms_permonth;
+	 $data1['membership_package']=$data['package_id'];
+	 /*
+	 $data1['membership_purchase']= date('Y-m-d H:i:s', time());
+	 $data1['membership_expiry']= date('Y-m-d H:i:s', strtotime('+'.$month.' months'));
+	 $this->db->where('matrimony_id',$mat_id);
+	 $result = $this->db->update('membership_details',$data1); */
+	/*}else if($data['package_type']==2){
+	 $date=date('Y-m-d H:i:s', time());
+
+	 $data2['total_interest']=$result->intrest_permonth;
+	 $data2['total_sendmail']=$result->personalized_msg_permonth;
+	 $data2['total_mobileview']=$result->verified_mob_permonth;
+	 $data2['total_sms']=$result->send_sms_permonth;
+	 $data2['addon_package']=$data['package_id'];
+	 $data2['addon_purchase']= date('Y-m-d H:i:s', time());
+	 $data2['addon_expiry']= date('Y-m-d H:i:s', strtotime('+'.$month.' months'));
+	 $this->db->where('matrimony_id',$mat_id);
+	 $result = $this->db->update('membership_details',$data2);
+	}//*//*
+	if($data['package_id']=='1'){
+	$data3['is_premium']='0';
+	}else{
+	$data3['is_premium']='1';
+	}
+
+	 $this->db->where('matrimony_id',$mat_id);
+	 $result = $this->db->update('profiles',$data3);
+	 $data4['user_id']=$mat_id;
+	 $data4['package_id']=$data['package_id'];
+	 $data4['purchase_amount']=$amount;
+	 $data4['payment_method']=$data['payment_type'];
+	 $data4['purchase_date']=date('Y-m-d H:i:s', time());
+	 $result1 = $this->db->insert('payments', $data4);*/
+	 return $data1;		 
+ }
 	public function getCount($matr_id,$field,$table) {
         $qry=$this->db->get_where($table,array($field => $matr_id));
         $count = $qry->num_rows();

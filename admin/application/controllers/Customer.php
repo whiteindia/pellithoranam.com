@@ -175,6 +175,29 @@ class Customer extends CI_Controller {
 				}
 		} else { redirect(base_url()); }
 	  }
+
+	  public function edit_package(){
+		if($this->session->userdata('logged_in_admin')) {
+			$settings        = get_settings();
+        	$header['title'] = $settings->title . " | Edit Package";		
+			$this->load->view('Templates/header',$header);
+			$mat_id = $this->uri->segment(3);
+			$data['package'] = $this->Customer_model->edit_package($mat_id);
+			//membership_details
+
+		//	$data['package1'] = $this->Customer_model->view_packages1();
+			$this->load->view('customer/edit_package',$data);
+			$this->load->view('Templates/footer');
+		//	 if($_POST) {
+					  
+		//		  $data = $_POST;
+				//  var_dump($data);
+				 // die();
+			//	   $result = $this->Customer_model->upgrade_members($data,$mat_id);
+				 
+			//	}
+		} else { redirect(base_url()); }
+	  }
 	public function get_drop_data() {
 		$sel_val = $this->input->post('sel_val');
 		$sel_typ = $this->input->post('sel_typ');
