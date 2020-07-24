@@ -898,7 +898,7 @@ public function check_verification($data) {
 		$this -> db -> where('user_id', $id);
 		$result1 = $this -> db -> delete('users');	
 	}
-
+  }
 
 
 } ?>
