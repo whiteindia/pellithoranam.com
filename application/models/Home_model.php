@@ -891,5 +891,14 @@ public function check_verification($data) {
         return false;
      }
   }
-  
+	public function remove_member($id) {
+	    $this -> db -> where('user_id', $id);
+		$result = $this -> db -> delete('profiles');
+	if($result){
+		$this -> db -> where('user_id', $id);
+		$result1 = $this -> db -> delete('users');	
+	}
+
+
+
 } ?>

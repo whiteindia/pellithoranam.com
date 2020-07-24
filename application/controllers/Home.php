@@ -693,7 +693,7 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 	$mgClient->send(); 
 	return "success";
 } 
-/*
+/**/
 public function remove_member() {
 	//if($this->session->userdata('logged_in_admin')) {
 	  $id = $this->uri->segment(3);		   
@@ -702,7 +702,7 @@ public function remove_member() {
 	  redirect(base_url());
 //	} else { redirect(base_url()); } 
 }
-*/
+*
 
 }
 ?>
