@@ -693,7 +693,14 @@ function sending_mail($from,$name,$mail,$sub, $msg) {
 	$mgClient->send(); 
 	return "success";
 } 
-
+public function remove_member() {
+	//if($this->session->userdata('logged_in_admin')) {
+	  $id = $this->uri->segment(3);		   
+	  $result = $this->Home_model->remove_member($id);
+	  $this->session->set_flashdata('message', array('message' => 'profile  Deleted completely','class' => 'success'));
+	  redirect(base_url());
+//	} else { redirect(base_url()); } 
+}
 
 
 }
