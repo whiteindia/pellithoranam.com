@@ -116,11 +116,11 @@ class Customer_model extends CI_Model {
 		$this->db->where('matrimony_id',$mat_id);
 		$query1 = $this->db->get('membership_details');
 		$result1 = $query1->row();
-	//	<?php
+	
  echo '<pre>'; 
  print_r($result1);
  echo '</pre>'; 
-//?>
+
 //if(isset()){
 
 //}else{
