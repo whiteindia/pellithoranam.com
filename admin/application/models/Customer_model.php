@@ -143,7 +143,8 @@ class Customer_model extends CI_Model {
 	 $data1['total_sendmail']=(int)$result->personalized_msg_permonth;
 	 $data1['total_mobileview']=(int)$result->verified_mob_permonth;
 	 $data1['total_sms']=(int)$result->send_sms_permonth;
-	 $data1['membership_package']=$data['package_id'];
+	 $data1['membership_package']=$result1->membership_package;
+	 $data1['membership_package_name']=$result->package_name;
 
 	  echo '<pre>'; 
  print_r($data1);
