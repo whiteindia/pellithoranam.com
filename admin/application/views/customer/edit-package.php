@@ -75,21 +75,22 @@
     <div class="container-fluid">
   <div class="bg-warning">  <fieldset>
     <legend><h3 class="text-primary">Package services  used by user till now</h3></legend>
-    <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationDefaultUsername">Username</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroupPrepend2">@</span>
-        </div>
-        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
-      </div>
-    </div>
+    <div class="alert alert-success" role="alert">
+  <label>interest</label><?= $package['interest'] ?><br>
 </div>
-<label>interest</label><?= $package['interest'] ?><br>
-<label>mails</label><?= $package['mails'] ?><br>
-<label>views</label><?= $package['views'] ?><br>
-<label>sms</label><?= $package['sms'] ?><br>
+<div class="alert alert-success" role="alert">
+  <label>mails</label><?= $package['mails'] ?><br>
+  </div>
+  <div class="alert alert-success" role="alert">
+  <label>views</label><?= $package['views'] ?><br>
+  </div>
+  <div class="alert alert-success" role="alert">
+  <label>sms</label><?= $package['sms'] ?><br>
+  </div>
+  
+
+
+
 </fieldset>
 </div>
 <div class="bg-danger">
