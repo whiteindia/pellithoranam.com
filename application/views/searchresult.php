@@ -684,7 +684,8 @@ $settings= get_setting();
               <div class="clearfix"></div>
             </div>
             <?php if(!empty($srch_candidates)) { 
-              foreach($srch_candidates as $candidate) {
+              array_reverse()
+              foreach(array_reverse($srch_candidates) as $candidate) {
                // echo "<pre>";print_r($candidate);echo "</pre>";//exit;
 
                 /* if($settings['profilevisibility_preference']==1){*/
