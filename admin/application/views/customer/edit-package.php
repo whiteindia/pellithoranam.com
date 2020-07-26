@@ -59,11 +59,20 @@
                </form>--><!-- /.box -->
 
 <?php
- echo '<pre>'; 
- print_r($package);
- echo '</pre>'; 
+ //echo '<pre>'; 
+ //print_r($package);
+ //echo '</pre>'; 
 ?>
-<h3>Used Info</h3>
+
+
+<div>
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <h3>Used Info</h3>
 <label>interest</label><?= $package['interest'] ?><br>
 <label>mails</label><?= $package['mails'] ?><br>
 <label>views</label><?= $package['views'] ?><br>
@@ -75,15 +84,6 @@
 <label>total_sendmail</label><?= $package['total_sendmail'] ?><br>
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
-
-<div>
-<div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
   <div class="card-footer text-muted">
