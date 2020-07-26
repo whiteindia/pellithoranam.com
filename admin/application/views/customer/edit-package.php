@@ -74,7 +74,7 @@
     <h5 class="card-title"><small>increase/decrease package values</small></h5>
     <div class="container-fluid">
   <div class="bg-warning">  <fieldset>
-    <legend><h3>Used Package Info</h3></legend>
+    <legend><h3 class="text-primary">Package services  used by user till now</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
 <label>mails</label><?= $package['mails'] ?><br>
 <label>views</label><?= $package['views'] ?><br>
@@ -83,7 +83,7 @@
 </div>
 <div class="bg-danger">
 <fieldset>
-    <legend><h3>Package Info</h3></legend>
+    <legend><h3 class="text-success">edit Package Info</h3></legend>
 <label>membership_package</label><?= $package['membership_package'] ?><br>
 <label>membership_package_name</label><?= $package['membership_package_name'] ?><br>
 <label>total_interest</label><?= $package['total_interest'] ?><br>
