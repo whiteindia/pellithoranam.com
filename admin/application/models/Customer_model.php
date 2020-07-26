@@ -146,11 +146,11 @@ class Customer_model extends CI_Model {
 	 $data1['membership_package']=$result1->membership_package;
 	 $data1['membership_package_name']=$result->package_name;
 
-	  echo '<pre>'; 
+	/*  echo '<pre>'; 
  print_r($data1);
  echo '</pre>'; 
 exit();
-	 /*
+	 
 	 $data1['membership_purchase']= date('Y-m-d H:i:s', time());
 	 $data1['membership_expiry']= date('Y-m-d H:i:s', strtotime('+'.$month.' months'));
 	 $this->db->where('matrimony_id',$mat_id);
