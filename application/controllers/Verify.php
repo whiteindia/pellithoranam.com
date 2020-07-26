@@ -304,6 +304,7 @@ class Verify extends CI_Controller {
         // echo "<br>";
      $this->sendMailNow($candidate);
       }
+      $this->sendMailNow('info@pellithoranam.com');
       $age = $basic->age;
 /*
       if($basic->gender== "male") { 
@@ -386,7 +387,7 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
             $mgClient = new Mailgun_lib();
             $from_name = "Pellithoranam";
             $from = "no-reply@pellithoranam.com";
-            $bcc = "info@pellithoranam.com";
+          //  $bcc = "info@pellithoranam.com";
             $mgClient->to($email);
             $mgClient->bcc($bcc);
             $mgClient->from($from,$from_name);
