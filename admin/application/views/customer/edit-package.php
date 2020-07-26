@@ -72,6 +72,7 @@
   </div>
   <div class="card-body">
     <h5 class="card-title"><small>increase/decrease package values</small></h5>
+    <div class="container">
   <div class="bg-warning">  <fieldset>
     <legend><h3>Used Package Info</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
@@ -90,6 +91,7 @@
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
 </fieldset> </div>
+</div>
   </div>
   <div class="card-footer text-muted">
     2 days ago
