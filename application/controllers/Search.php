@@ -814,7 +814,7 @@ class Search extends CI_Controller {
             $config = array();
             $config["base_url"] = base_url() . "search/index";
             $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
-            $config["per_page"] = 100;
+            $config["per_page"] = 1000;
             $config["uri_segment"] =3;
            // $choice = $config["total_rows"] / $config["per_page"];
             //$config["num_links"] = round($choice);
@@ -892,11 +892,12 @@ echo '</pre>';
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       if((isset($_POST['matri_id'])) && (!empty($_POST['matri_id']))) { // checking matrimony id
         $where[]= "profiles.matrimony_id = '". preg_replace("/[^0-9]/","",$_POST['matri_id'])."'";
+        $where[] = "profiles.profile_status = '1'";
     } else { redirect(base_url()); }
                   $config = array();
               $config["base_url"] = base_url() . "search/searchbyid";
               $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
-              $config["per_page"] = 50;
+              $config["per_page"] = 500;
               $config["uri_segment"] =3;
              // $choice = $config["total_rows"] / $config["per_page"];
               //$config["num_links"] = round($choice);
