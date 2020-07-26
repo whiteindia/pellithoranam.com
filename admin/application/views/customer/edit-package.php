@@ -103,7 +103,7 @@
 <label>total_sendmail</label><?= $package['total_sendmail'] ?><br>
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
-
+<?php $mid=$this->uri->segment(3);   ?>
 
 
 </form>
