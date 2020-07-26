@@ -72,7 +72,7 @@
   </div>
   <div class="card-body">
     <h5 class="card-title"><small>increase/decrease package values</small></h5>
-    <div class="container">
+    <div class="container-fluid">
   <div class="bg-warning">  <fieldset>
     <legend><h3>Used Package Info</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
