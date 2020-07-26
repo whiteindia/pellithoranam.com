@@ -18,7 +18,7 @@
                <?php $profile = $profile[0] ; ?>
                <!-- /.box-header -->
                <!-- form start -->
-                 <form role="form" action="<?php echo base_url(); ?>customer/save_edited_details/<?php echo $prof_id; ?>" method="post"  class="validate">
+                 <form role="form" action="" method="post"  class="validate">
                   <div class="box-body">
                      <div class="form-group">
                         <div class="col-md-6" style="padding:5px;">

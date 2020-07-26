@@ -75,6 +75,17 @@
     <div class="container-fluid">
   <div class="bg-warning">  <fieldset>
     <legend><h3 class="text-primary">Package services  used by user till now</h3></legend>
+    <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+</div>
 <label>interest</label><?= $package['interest'] ?><br>
 <label>mails</label><?= $package['mails'] ?><br>
 <label>views</label><?= $package['views'] ?><br>
@@ -91,6 +102,9 @@
 <label>total_sendmail</label><?= $package['total_sendmail'] ?><br>
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
+
+
+
 </form>
 </fieldset> </div>
 </div>
