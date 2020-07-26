@@ -13,7 +13,7 @@
          <div class="col-xs-12">
             <div class="box box-primary">
                <div class="box-header with-border">
-                  <h3 class="box-title">Edit User Details </h3>
+                  <h3 class="box-title">Edit Package Details </h3>
                </div>
                <?php $profile = $profile[0] ; ?>
                <!-- /.box-header -->
@@ -384,7 +384,7 @@
 </div>
 <!-- /.content-wrapper -->
 
-<script>
+<script>/*
 $(document).ready(function(){
 $('.datepicker').datepicker({
     format: 'yyyy-mm-dd'
@@ -456,6 +456,6 @@ $(".cst-select-2").on('change', function () {
 
  });
 
-
+*/
 
 </script>
