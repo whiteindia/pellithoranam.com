@@ -15,7 +15,7 @@
                <div class="box-header with-border">
                   <h3 class="box-title">Edit Package Details </h3>
                </div>
-               <?php $profile = $profile[0] ; ?>
+        <!--       <?php $profile = $profile[0] ; ?>-->
                <!-- /.box-header -->
                <!-- form start -->
             <!--     <form role="form" action="<?php echo base_url(); ?>customer/save_edited_details/<?php echo $prof_id; ?>" method="post"  class="validate">
@@ -379,7 +379,7 @@
 
 <?php
  echo '<pre>'; 
- print_r($packages);
+ print_r($package);
  echo '</pre>'; 
 ?>
 <div>
