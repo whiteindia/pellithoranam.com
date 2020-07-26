@@ -684,7 +684,7 @@ $settings= get_setting();
               <div class="clearfix"></div>
             </div>
             <?php if(!empty($srch_candidates)) { 
-              array_reverse()
+          //    array_reverse()
               foreach(array_reverse($srch_candidates) as $candidate) {
                // echo "<pre>";print_r($candidate);echo "</pre>";//exit;
 
