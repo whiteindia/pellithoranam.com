@@ -63,6 +63,7 @@
  //print_r($package);
  //echo '</pre>'; 
 ?>
+<form></form>
     <fieldset>
     <legend><h3>Used Package Info</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
@@ -80,7 +81,7 @@
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
 </fieldset> 
-
+</form>
 <div>
 <div class="card text-center">
   <div class="card-header">
