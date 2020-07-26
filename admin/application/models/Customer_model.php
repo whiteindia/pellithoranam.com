@@ -135,8 +135,8 @@ class Customer_model extends CI_Model {
 	 $date=date('Y-m-d H:i:s', time());
 
 	$data1['interest'] = $this->getCount($mat_id,"interest_from","profile_interest");
-	$data1['mails ']= $this->getCount($mat_id,"mail_from","profile_mails");
-	$data1['views ']= $this->getCount($mat_id,"mobileview_from","mobile_view");
+	$data1['mails']= $this->getCount($mat_id,"mail_from","profile_mails");
+	$data1['views']= $this->getCount($mat_id,"mobileview_from","mobile_view");
 	$data1['sms'] = $this->getCount($mat_id,"send_sms_from","send_sms");
 
 	 $data1['total_interest']=(int)$result->intrest_permonth;
