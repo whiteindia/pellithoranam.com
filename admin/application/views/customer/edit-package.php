@@ -96,7 +96,7 @@
 <div class="bg-danger">
 <fieldset>
     <legend><h3 class="text-success">edit Package Info</h3></legend>
-    <form role="form" action="<?php echo base_url(); ?>customer/save_edited_package/<?php echo $prof_id; ?>" method="post" >
+    <form role="form" action="" method="post" >
 <label>membership_package</label><?= $package['membership_package'] ?><br>
 <label>membership_package_name</label><?= $package['membership_package_name'] ?><br>
 <label>total_interest</label><?= $package['total_interest'] ?><br>
