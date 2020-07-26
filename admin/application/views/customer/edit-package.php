@@ -60,7 +60,7 @@
 
 <?php
  echo '<pre>'; 
- //print_r($package);
+ print_r($package);
  echo '</pre>'; 
 ?>
 <h3>Used Info</h3>
