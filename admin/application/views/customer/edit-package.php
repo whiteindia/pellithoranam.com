@@ -68,23 +68,27 @@
 <div>
 <div class="card text-center">
   <div class="card-header">
-    Featured
+    Edit package detail
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <h3>Used Info</h3>
+    <h5 class="card-title"><small>increase/decrease package values</small></h5>
+    <fieldset>
+    <legend><h3>Used Package Info</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
 <label>mails</label><?= $package['mails'] ?><br>
 <label>views</label><?= $package['views'] ?><br>
 <label>sms</label><?= $package['sms'] ?><br>
-<h3>Package Info</h3>
+</fieldset>
+
+<fieldset>
+    <legend><h3>Package Info</h3></legend>
 <label>membership_package</label><?= $package['membership_package'] ?><br>
 <label>membership_package_name</label><?= $package['membership_package_name'] ?><br>
 <label>total_interest</label><?= $package['total_interest'] ?><br>
 <label>total_sendmail</label><?= $package['total_sendmail'] ?><br>
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+</fieldset> 
   </div>
   <div class="card-footer text-muted">
     2 days ago
