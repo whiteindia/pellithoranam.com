@@ -63,15 +63,23 @@
  //print_r($package);
  //echo '</pre>'; 
 ?>
-<form>
-    <fieldset>
+
+
+<div>
+<div class="card text-center">
+  <div class="card-header">
+    Edit package detail
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><small>increase/decrease package values</small></h5>
+  <div class="bg-warning">  <fieldset>
     <legend><h3>Used Package Info</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
 <label>mails</label><?= $package['mails'] ?><br>
 <label>views</label><?= $package['views'] ?><br>
 <label>sms</label><?= $package['sms'] ?><br>
 </fieldset>
-
+</div>
 <fieldset>
     <legend><h3>Package Info</h3></legend>
 <label>membership_package</label><?= $package['membership_package'] ?><br>
@@ -81,26 +89,6 @@
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
 </fieldset> 
-</form>
-
-<form action="/action_page.php">
-  <fieldset>
-    <legend>Personalia:</legend>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-  </fieldset>
-</form>
-<div>
-<div class="card text-center">
-  <div class="card-header">
-    Edit package detail
-  </div>
-  <div class="card-body">
-    <h5 class="card-title"><small>increase/decrease package values</small></h5>
-
   </div>
   <div class="card-footer text-muted">
     2 days ago
