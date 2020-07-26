@@ -187,7 +187,7 @@ class Customer extends CI_Controller {
 		//	var_dump($data);
 		//	exit();
 		//	$data['package1'] = $this->Customer_model->view_packages1();
-			$this->load->view('customer/edit_package',$data);
+			$this->load->view('customer/edit-package',$data);
 			$this->load->view('Templates/footer');
 			 if($_POST) {
 					  
