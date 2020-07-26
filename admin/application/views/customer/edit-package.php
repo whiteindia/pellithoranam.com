@@ -365,6 +365,16 @@
                      </div>
                   </div>
                   
+                      [interest] => 0
+    [mails ] => 0
+    [views ] => 0
+    [sms] => 0
+    [total_interest] => 5
+    [total_sendmail] => 2
+    [total_mobileview] => 10
+    [total_sms] => 0
+    [membership_package] => 24
+    [membership_package_name] => PT-Welcome  Offer July 2020
                </form>--><!-- /.box -->
 
 <?php
@@ -372,6 +382,23 @@
  print_r($packages);
  echo '</pre>'; 
 ?>
+<div>
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+
+</div>
+
 
             </div>
             <!-- /.content-wrapper -->
