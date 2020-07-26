@@ -63,15 +63,6 @@
  //print_r($package);
  //echo '</pre>'; 
 ?>
-
-
-<div>
-<div class="card text-center">
-  <div class="card-header">
-    Edit package detail
-  </div>
-  <div class="card-body">
-    <h5 class="card-title"><small>increase/decrease package values</small></h5>
     <fieldset>
     <legend><h3>Used Package Info</h3></legend>
 <label>interest</label><?= $package['interest'] ?><br>
@@ -89,6 +80,15 @@
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
 </fieldset> 
+
+<div>
+<div class="card text-center">
+  <div class="card-header">
+    Edit package detail
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><small>increase/decrease package values</small></h5>
+
   </div>
   <div class="card-footer text-muted">
     2 days ago
