@@ -80,6 +80,7 @@
 <label>sms</label><?= $package['sms'] ?><br>
 </fieldset>
 </div>
+<div class="bg-danger">
 <fieldset>
     <legend><h3>Package Info</h3></legend>
 <label>membership_package</label><?= $package['membership_package'] ?><br>
@@ -88,7 +89,7 @@
 <label>total_sendmail</label><?= $package['total_sendmail'] ?><br>
 <label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
 <label>total_sms</label><?= $package['total_sms'] ?><br>
-</fieldset> 
+</fieldset> </div>
   </div>
   <div class="card-footer text-muted">
     2 days ago
