@@ -117,11 +117,11 @@ edit content
 <br>
 <label>total_sendmail</label>
 <input type="number" name="total_sendmail" value="<?= $package['total_sendmail'] ?>">
-<?= $package['total_sendmail'] ?><br>
+<br>
 <label>total_mobileview</label>
 <input type="number" name="total_mobileview" value="<?= $package['total_mobileview'] ?>">
-<?= $package['total_mobileview'] ?><br>
-<label>total_sms</label><?= $package['total_sms'] ?>
+<br>
+<label>total_sms</label>
 <input type="number" name="total_sms" value="<?= $package['total_sms'] ?>"><br>
 <input type="hiden" name="matrimony_id" value="<?= $mid=$this->uri->segment(3)?>">
 
