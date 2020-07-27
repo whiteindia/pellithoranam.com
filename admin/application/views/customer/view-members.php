@@ -1,7 +1,7 @@
 <style>
 .center{width:15%;}
 .custom-btn{display: inline-block;border-radius: 0px;}
-.custom-btn-bay{min-width:140px !important;}
+.custom-btn-bay{min-width:165px !important;}
 </style>
 
 <div class="content-wrapper">
