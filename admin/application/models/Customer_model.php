@@ -128,12 +128,7 @@ class Customer_model extends CI_Model {
 	//$mails = $this->getCount($mat_id,"mail_from","profile_mails");
 	//$views = $this->getCount($mat_id,"mobileview_from","mobile_view");
 	//$sms = $this->getCount($mat_id,"send_sms_from","send_sms");
-	[total_interest] => 5
-    [total_sendmail] => 2
-    [total_mobileview] => 11
-    [total_sms] => 0
-    [matrimony_id] => 28806
-    [submit] => submit
+
 
 	 $data1['total_interest']=(int)$data1['total_interest'];
 	 $data1['total_sendmail']=(int)$data1['total_sendmail'];
