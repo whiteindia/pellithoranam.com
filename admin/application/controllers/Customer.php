@@ -195,7 +195,18 @@ class Customer extends CI_Controller {
 				//  var_dump($data);
 				 // die();
 				   $result = $this->Customer_model->save_edited_package($data,$mat_id);
-				 
+				   if($result){
+					echo "<script type='text/javascript'>".
+					"alert('edit package Success .');
+					 location.reload;".
+				   "</script>";
+				   }
+				   else{
+					echo "<script type='text/javascript'>".
+					"alert('edit package failed .Try again');
+					 location.reload;".
+				   "</script>";
+				   }
 				}
 		} else { redirect(base_url()); }
 	  }

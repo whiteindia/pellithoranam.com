@@ -111,10 +111,7 @@ class Customer_model extends CI_Model {
 		 return $result;		 
 	 }
 	 public function save_edited_package($data, $mat_id){
-		echo '<pre>';
-		echo $mat_id;
-		print_r($data);
-		echo '</pre>';
+
 		 
 		//$this->db->where('id',$data['package_id']);
 	 //$query = $this->db->get('packages');
@@ -140,11 +137,11 @@ class Customer_model extends CI_Model {
 	 $this->db->where('matrimony_id',$mat_id);
 	 $query1 = $this->db->get('membership_details',$data1);
 	 $result1 =$query1->row();
-	 echo '<pre>';
+	/* echo '<pre>';
 		 echo '<br>after<br>'.$mat_id;
 		 print_r($result1);
 		 echo '</pre>';
-	 exit();
+	 exit();  */
 	/*}else if($data['package_type']==2){
 	 $date=date('Y-m-d H:i:s', time());
 
@@ -158,7 +155,7 @@ class Customer_model extends CI_Model {
 	 $this->db->where('matrimony_id',$mat_id);
 	 $result = $this->db->update('membership_details',$data2);
 	}*/
-	if($data['package_id']=='1'){
+	/*if($data['package_id']=='1'){
 	$data3['is_premium']='0';
 	}else{
 	$data3['is_premium']='1';
@@ -171,7 +168,7 @@ class Customer_model extends CI_Model {
 	 $data4['purchase_amount']=$amount;
 	 $data4['payment_method']=$data['payment_type'];
 	 $data4['purchase_date']=date('Y-m-d H:i:s', time());
-	 $result1 = $this->db->insert('payments', $data4);
+	 $result1 = $this->db->insert('payments', $data4);  */
 	 return $result;		 
  }
 
