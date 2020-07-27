@@ -107,7 +107,7 @@
                               <a class="btn btn-sm btn-success" href="<?php echo base_url();?>../profile/profile_details/<?php echo $member->matrimony_id; ?>" target="_blank">View Profile</a>
                            </td>
                            <?php }else{ ?>
-                           <td>
+                           <td style="width:100%;">
                               <a href="#" style="color:red;"><?php echo $member->user_id;
                                 $query = $this->db->where('email',$member->email);
                                 $query = $this->db->get('profiles');
