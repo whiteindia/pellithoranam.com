@@ -110,7 +110,7 @@ class Customer_model extends CI_Model {
 		 $result1 = $this->db->insert('payments', $data4);
 		 return $result;		 
 	 }
-	 public function save_edited_package(){
+	 public function save_edited_package($data, $mat_id){
 		 echo '<pre>';
 		 print_r($data);
 		 echo '</pre>';
