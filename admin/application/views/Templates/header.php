@@ -332,7 +332,7 @@ $settings = get_settings();
         <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
-            <span>Matrimony Memebers</span>
+            <span>Matrimony Members</span>
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
