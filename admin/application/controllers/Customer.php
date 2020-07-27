@@ -197,10 +197,9 @@ class Customer extends CI_Controller {
 				   $result = $this->Customer_model->save_edited_package($data1,$mat_id);
 				   if($result){
 					echo "<script type='text/javascript'>".
-					"alert('edit package Success .');".
+					"alert('edit package Success .');window.location.href='https://pellithoranam.com/admin/Customer/view_members'".
 				   "</script>";
-				   $this->load->view('customer/edit-package',$data);
-				   $this->load->view('Templates/footer');
+				  //https://pellithoranam.com/admin/Customer/view_members
 				   }
 				   else{
 					echo "<script type='text/javascript'>".
