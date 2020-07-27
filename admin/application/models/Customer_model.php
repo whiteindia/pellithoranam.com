@@ -112,29 +112,34 @@ class Customer_model extends CI_Model {
 	 }
 	 public function save_edited_package($data, $mat_id){
 		 echo '<pre>';
+		 echo $mat_id;
 		 print_r($data);
 		 echo '</pre>';
 		 exit();
-		$this->db->where('id',$data['package_id']);
-	 $query = $this->db->get('packages');
-	 $result = $query->row();
-	 $month=$result->month;
-	 $amount=$result->price;
+		//$this->db->where('id',$data['package_id']);
+	 //$query = $this->db->get('packages');
+	 //$result = $query->row();
+	 //$month=$result->month;
+	 //$amount=$result->price;
 	   /* if($data['package_type']==1){	*/
-	 $date=date('Y-m-d H:i:s', time());
+	 //$date=date('Y-m-d H:i:s', time());
 
-	$interest = $this->getCount($mat_id,"interest_from","profile_interest");
-	$mails = $this->getCount($mat_id,"mail_from","profile_mails");
-	$views = $this->getCount($mat_id,"mobileview_from","mobile_view");
-	$sms = $this->getCount($mat_id,"send_sms_from","send_sms");
+	//$interest = $this->getCount($mat_id,"interest_from","profile_interest");
+	//$mails = $this->getCount($mat_id,"mail_from","profile_mails");
+	//$views = $this->getCount($mat_id,"mobileview_from","mobile_view");
+	//$sms = $this->getCount($mat_id,"send_sms_from","send_sms");
+	[total_interest] => 5
+    [total_sendmail] => 2
+    [total_mobileview] => 11
+    [total_sms] => 0
+    [matrimony_id] => 28806
+    [submit] => submit
 
-	 $data1['total_interest']=(int)$result->intrest_permonth + $interest;
-	 $data1['total_sendmail']=(int)$result->personalized_msg_permonth + $mails;
-	 $data1['total_mobileview']=(int)$result->verified_mob_permonth + $views;
-	 $data1['total_sms']=(int)$result->send_sms_permonth + $sms;
-	 $data1['membership_package']=$data['package_id'];
-	 $data1['membership_purchase']= date('Y-m-d H:i:s', time());
-	 $data1['membership_expiry']= date('Y-m-d H:i:s', strtotime('+'.$month.' months'));
+	 $data1['total_interest']=(int)$data1['total_interest'];
+	 $data1['total_sendmail']=(int)$data1['total_sendmail'];
+	 $data1['total_mobileview']=(int)$data1['total_mobileview'];
+	 $data1['total_sms']=(int)$data1['total_sms'];
+
 	 $this->db->where('matrimony_id',$mat_id);
 	 $result = $this->db->update('membership_details',$data1);
 	/*}else if($data['package_type']==2){
