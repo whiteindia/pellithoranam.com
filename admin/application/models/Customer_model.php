@@ -111,6 +111,10 @@ class Customer_model extends CI_Model {
 		 return $result;		 
 	 }
 	 public function save_edited_package(){
+		 echo '<pre>';
+		 print_r($data);
+		 echo '</pre>';
+		 exit();
 		$this->db->where('id',$data['package_id']);
 	 $query = $this->db->get('packages');
 	 $result = $query->row();
