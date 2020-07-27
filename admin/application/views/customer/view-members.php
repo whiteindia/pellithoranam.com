@@ -57,7 +57,7 @@
 						   
                            <th>Upgrade</th>
 						 
-                           <th class="custom-btn-bay">Action</th>
+                           <th class="custom-btn-bay" style="width:100%;">Action</th>
 						       <th>Highlight </th>
                          <th>Religion</th>
                            <th>Mother tongue</th>
@@ -103,7 +103,7 @@
 							
 							<td class="center"><?php echo $member->package_name; ?></td>
                            <?php if($member->matrimony_id!=null){?>
-                           <td class="center" style="width: 100%;">
+                           <td class="center">
                               <a class="btn btn-sm btn-success" href="<?php echo base_url();?>../profile/profile_details/<?php echo $member->matrimony_id; ?>" target="_blank">View Profile</a>
                            </td>
                            <?php }else{ ?>
