@@ -139,7 +139,7 @@ class Customer_model extends CI_Model {
 	 $result = $this->db->update('membership_details',$data1);
 	 $this->db->where('matrimony_id',$mat_id);
 	 $query1 = $this->db->get('membership_details',$data1);
-	 $result1 =$query1->row()
+	 $result1 =$query1->row();
 	 echo '<pre>';
 		 echo '<br>after<br>'.$mat_id;
 		 print_r($result1);
