@@ -130,10 +130,10 @@ class Customer_model extends CI_Model {
 	//$sms = $this->getCount($mat_id,"send_sms_from","send_sms");
 
 
-	 $data1['total_interest']=(int)$data1['total_interest'];
-	 $data1['total_sendmail']=(int)$data1['total_sendmail'];
-	 $data1['total_mobileview']=(int)$data1['total_mobileview'];
-	 $data1['total_sms']=(int)$data1['total_sms'];
+	 $data1['total_interest']=(int)$data['total_interest'];
+	 $data1['total_sendmail']=(int)$data['total_sendmail'];
+	 $data1['total_mobileview']=(int)$data['total_mobileview'];
+	 $data1['total_sms']=(int)$data['total_sms'];
 
 	 $this->db->where('matrimony_id',$mat_id);
 	 $result = $this->db->update('membership_details',$data1);
