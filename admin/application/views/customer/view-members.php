@@ -103,7 +103,7 @@
 							
 							<td class="center"><?php echo $member->package_name; ?></td>
                            <?php if($member->matrimony_id!=null){?>
-                           <td class="center ">
+                           <td class="center" style="width: 100%;">
                               <a class="btn btn-sm btn-success" href="<?php echo base_url();?>../profile/profile_details/<?php echo $member->matrimony_id; ?>" target="_blank">View Profile</a>
                            </td>
                            <?php }else{ ?>
