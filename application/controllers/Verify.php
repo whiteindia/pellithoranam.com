@@ -391,7 +391,7 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
             $from = "no-reply@pellithoranam.com";
           //  $bcc = "info@pellithoranam.com";
             $mgClient->to($email);
-            $mgClient->bcc($bcc);
+         //   $mgClient->bcc($bcc);
             $mgClient->from($from,$from_name);
             $mgClient->subject($subject);
             $mgClient->message($mailTemplate);
