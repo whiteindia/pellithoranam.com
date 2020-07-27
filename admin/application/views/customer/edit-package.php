@@ -76,16 +76,16 @@
   <div class="bg-warning">  <fieldset>
     <legend><h3 class="text-primary">Package services  used by user till now</h3></legend>
     <div class="alert alert-success" role="alert">
-  <label>interest</label><?= $package['interest'] ?><br>
+  <label>interest</label><?= $package['interest'] ?>
 </div>
 <div class="alert alert-success" role="alert">
-  <label>mails</label><?= $package['mails'] ?><br>
+  <label>mails</label><?= $package['mails'] ?>
   </div>
   <div class="alert alert-success" role="alert">
-  <label>views</label><?= $package['views'] ?><br>
+  <label>views</label><?= $package['views'] ?>
   </div>
   <div class="alert alert-success" role="alert">
-  <label>sms</label><?= $package['sms'] ?><br>
+  <label>sms</label><?= $package['sms'] ?>
   </div>
   
 
@@ -93,21 +93,7 @@
 
 </fieldset>
 </div>
-<div class="bg-danger">
-<fieldset>
-    <legend><h3 class="text-success">edit Package Info</h3></legend>
-    <form role="form" action="" method="post" >
-<label>membership_package</label><?= $package['membership_package'] ?><br>
-<label>membership_package_name</label><?= $package['membership_package_name'] ?><br>
-<label>total_interest</label><?= $package['total_interest'] ?><br>
-<label>total_sendmail</label><?= $package['total_sendmail'] ?><br>
-<label>total_mobileview</label><?= $package['total_mobileview'] ?><br>
-<label>total_sms</label><?= $package['total_sms'] ?><br>
-<?php $mid=$this->uri->segment(3);   ?>
 
-
-</form>
-</fieldset> </div>
 </div>
   </div>
   <div class="card-footer text-muted">
@@ -117,6 +103,32 @@
 
 </div>
 
+edit content
+<div class="bg-danger">
+<fieldset>
+    <legend><h3 class="text-success">edit Package Info</h3></legend>
+    <form role="form" action="" method="post" >
+<label>membership_package</label>
+<?= $package['membership_package'] ?><br>
+<label>membership_package_name</label>
+<?= $package['membership_package_name'] ?><br>
+<label>total_interest</label>
+<input type="number" name="total_interest" value="<?= $package['total_interest'] ?>">
+<br>
+<label>total_sendmail</label>
+<input type="number" name="total_sendmail" value="<?= $package['total_sendmail'] ?>">
+<?= $package['total_sendmail'] ?><br>
+<label>total_mobileview</label>
+<input type="number" name="total_mobileview" value="<?= $package['total_mobileview'] ?>">
+<?= $package['total_mobileview'] ?><br>
+<label>total_sms</label><?= $package['total_sms'] ?><br>
+<input type="number" name="total_sms" value="<?= $package['total_sms'] ?>">
+<input type="text" name="matrimony_id" value="<?= $mid=$this->uri->segment(3)?>">
+
+<input type="submit" name="submit" value="submit">
+
+</form>
+</fieldset> </div>
 
             </div>
             <!-- /.content-wrapper -->
