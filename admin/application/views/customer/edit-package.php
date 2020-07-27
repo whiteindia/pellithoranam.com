@@ -121,9 +121,9 @@ edit content
 <label>total_mobileview</label>
 <input type="number" name="total_mobileview" value="<?= $package['total_mobileview'] ?>">
 <?= $package['total_mobileview'] ?><br>
-<label>total_sms</label><?= $package['total_sms'] ?><br>
-<input type="number" name="total_sms" value="<?= $package['total_sms'] ?>">
-<input type="text" name="matrimony_id" value="<?= $mid=$this->uri->segment(3)?>">
+<label>total_sms</label><?= $package['total_sms'] ?>
+<input type="number" name="total_sms" value="<?= $package['total_sms'] ?>"><br>
+<input type="hiden" name="matrimony_id" value="<?= $mid=$this->uri->segment(3)?>">
 
 <input type="submit" name="submit" value="submit">
 
