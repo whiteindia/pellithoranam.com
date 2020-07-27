@@ -196,7 +196,7 @@ class Verify extends CI_Controller {
         curl_close($ch);
         
         // Process your response here
-        echo $response;
+    //    echo $response;
 
     }
  public function intrest_success() {
