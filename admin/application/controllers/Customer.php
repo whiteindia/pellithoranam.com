@@ -198,7 +198,7 @@ class Customer extends CI_Controller {
 				   if($result){
 					echo "<script type='text/javascript'>".
 					"alert('edit package Success .');
-					 location.reload;".
+					window.location.reload(true);".
 				   "</script>";
 				   }
 				   else{
