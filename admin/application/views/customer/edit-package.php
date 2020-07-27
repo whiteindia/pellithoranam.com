@@ -123,7 +123,7 @@ edit content
 <br>
 <label>total_sms</label>
 <input type="number" name="total_sms" value="<?= $package['total_sms'] ?>"><br>
-<input type="hiden" name="matrimony_id" value="<?= $mid=$this->uri->segment(3)?>">
+<input type="hidden" name="matrimony_id" value="<?= $mid=$this->uri->segment(3)?>">
 
 <input type="submit" name="submit" value="submit">
 
