@@ -191,15 +191,17 @@ class Customer extends CI_Controller {
 			$this->load->view('Templates/footer');
 			 if($_POST) {
 					  
-			  $data = $_POST;
+			  $data1 = $_POST;
 				//  var_dump($data);
 				 // die();
-				   $result = $this->Customer_model->save_edited_package($data,$mat_id);
+				   $result = $this->Customer_model->save_edited_package($data1,$mat_id);
 				   if($result){
 					echo "<script type='text/javascript'>".
 					"alert('edit package Success .');
 					 location.reload;".
 				   "</script>";
+				   $this->load->view('customer/edit-package',$data);
+				   $this->load->view('Templates/footer');
 				   }
 				   else{
 					echo "<script type='text/javascript'>".
