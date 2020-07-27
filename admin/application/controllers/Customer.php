@@ -194,7 +194,7 @@ class Customer extends CI_Controller {
 			  $data = $_POST;
 				//  var_dump($data);
 				 // die();
-				   $result = $this->Customer_model->upgrade_members($data,$mat_id);save_edited_package
+				   $result = $this->Customer_model->save_edited_package($data,$mat_id);
 				 
 				}
 		} else { redirect(base_url()); }
