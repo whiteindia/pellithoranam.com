@@ -57,7 +57,7 @@
 						   
                            <th>Upgrade</th>
 						 
-                           <th class="custom-btn-bay" style="width:100%;">Action</th>
+                           <th style="width:100%;">Action</th>
 						       <th>Highlight </th>
                          <th>Religion</th>
                            <th>Mother tongue</th>
@@ -107,7 +107,7 @@
                               <a class="btn btn-sm btn-success" href="<?php echo base_url();?>../profile/profile_details/<?php echo $member->matrimony_id; ?>" target="_blank">View Profile</a>
                            </td>
                            <?php }else{ ?>
-                           <td style="width:100%;">
+                           <td>
                               <a href="#" style="color:red;"><?php echo $member->user_id;
                                 $query = $this->db->where('email',$member->email);
                                 $query = $this->db->get('profiles');
