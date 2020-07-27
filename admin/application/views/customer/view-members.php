@@ -57,7 +57,7 @@
 						   
                            <th>Upgrade</th>
 						 
-                           <th style="width:100%;">Action</th>
+                           <th class="custom-btn-bay">Action</th>
 						       <th>Highlight </th>
                          <th>Religion</th>
                            <th>Mother tongue</th>
