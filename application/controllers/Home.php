@@ -301,6 +301,9 @@ unset($_SESSION['pwd']);
 	}
 
 	public function submit_registration_details() {
+		ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL); 
 		if($this->session->userdata('ins_id')) {
 			if($_POST){
 				$data = $_POST;
