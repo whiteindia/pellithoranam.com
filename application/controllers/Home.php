@@ -327,6 +327,7 @@ unset($_SESSION['pwd']);
 //if($user->user_id!='') { $user1 = $user->user_id; } else { $user1 = $this->session->userdata('ins_id'); }
 //$user1 = $this->session->userdata('ins_id');
 //$datap['user_id'] = $_SESSION['user_id'];
+$email = $this->session->userdata('email');
 $query1 = $this->db->where('email',$email);
 $query1 = $this->db->get('profiles');
 $result1 = $query->row();
