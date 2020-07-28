@@ -333,7 +333,7 @@ error_reporting(E_ALL);
 $email = $this->session->userdata('email');
 $query1 = $this->db->where('email',$email);
 $query1 = $this->db->get('profiles');
-$result1 = $query->row();
+$result1 = $query1->row();
 $datap['user_id']= $result1->user_id;
 $config = set_upload_optionscategory('assets/uploads/profile_pics');
 $new_name = time()."_".$_FILES["image"]['name'];
