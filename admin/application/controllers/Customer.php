@@ -372,7 +372,8 @@ public function get_drop_data3() {
             	$data['countries'] = $this->Customer_model->getTable("","","country");
             	$data['occupations'] = $this->Customer_model->getTable("","","occupations");
             	$data['heights'] = $this->Customer_model->getTable("","","height");
-            	$data['weights'] = $this->Customer_model->getTable("","","weight");
+				$data['weights'] = $this->Customer_model->getTable("","","weight");
+				$mat_id = $this->uri->segment(3);
 			$this->load->view('customer/edit-customer',$data);
 			$this->load->view('Templates/footer');
 			if($_POST) {
