@@ -31,7 +31,8 @@ print_r('matrimony_id');
 
 foreach($matrimony_id AS $id){
 
-print_r($id);
+print_r($id['matrimony_id']);
+print_r($this->Reports_model->get_package($id['matrimony_id']));
 echo '<br>';
 
 }
