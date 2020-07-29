@@ -375,6 +375,28 @@ public function get_drop_data3() {
             	$data['weights'] = $this->Customer_model->getTable("","","weight");
 			$this->load->view('customer/edit-customer',$data);
 			$this->load->view('Templates/footer');
+			if($_POST) {
+					  
+				$data1 = $_POST;
+				  //  var_dump($data);
+				   // die();
+					 $result = $this->Customer_model->edit_member($data1,$mat_id);
+					 if($result){
+					  echo "<script type='text/javascript'>".
+					  "alert('edit customer Success .');window.location.href='https://pellithoranam.com/admin/Customer/view_members'".
+					 "</script>";
+					//https://pellithoranam.com/admin/Customer/view_members
+					 }
+					 else{
+					  echo "<script type='text/javascript'>".
+					  "alert('edit customer failed .Try again');
+					   location.reload;".
+					 "</script>";
+					 }
+				  }
+
+
+
 		} else { redirect(base_url()); } 
 	}
 	public function save_edited_details() {
