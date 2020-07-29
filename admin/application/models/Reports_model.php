@@ -621,7 +621,7 @@ public function edit_manage_package($data, $id){
 			return $count;
 		}
 		function get_mobile(){
-			$query = 	$this->db->select('matrimony_id') 
+		$this->db->select('matrimony_id') 
 		//	$this->db->where('id',$result1->membership_package);
 		 $query = $this->db->get('profile');
 			$result = $query->result();
