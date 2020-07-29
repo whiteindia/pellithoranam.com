@@ -283,6 +283,7 @@ $settings = get_settings();
            <li><a href="<?php echo base_url(); ?>Reports/view_inactive_user"><i class="fa fa-circle-o text-yellow"></i>Inactive users</a></li>
            <li><a href="<?php echo base_url(); ?>Reports/view_amount_report"><i class="fa fa-circle-o text-yellow"></i>View Earnings</a></li>
            <li><a href="<?php echo base_url(); ?>Reports/view_mobile"><i class="fa fa-circle-o text-yellow"></i>View mobile views</a></li>
+           <li><a href="<?php echo base_url(); ?>Reports/get_mobile"><i class="fa fa-circle-o text-yellow"></i>View package usage details</a></li>
          </ul>
        </li>
        <?php } ?>
