@@ -716,10 +716,10 @@ error_reporting(E_ALL);
             $this->load->view('Templates/header', $header);
            
          //   $data['countries'] = $this->Reports_model->getTable("", "", "country");
-            $data['mobilecount'] = $this->Reports_model->get_mobile();
-            print_r($data['mobilecount']);
-            exit();
-            $this->load->view('reports/get_mobile', $data);
+            $data['matrimony_id'] = $this->Reports_model->get_mobile();
+         //   print_r($data['matrimony_id']);
+//exit();
+            $this->load->view('reports/view_package_usage', $data);
             $this->load->view('Templates/footer');
            // $this->load->view('reports/view_amount_reports_js');
         }
