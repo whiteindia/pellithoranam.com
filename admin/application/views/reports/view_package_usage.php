@@ -61,7 +61,7 @@ print_r('matrimony_id');
 foreach($matrimony_id AS $id){
 
 //print_r($id['matrimony_id']);
-$tc=$this->Reports_model->get_package($id['matrimony_id']);
+$tc=json_decode(json_encode($this->Reports_model->get_package($id['matrimony_id'])),true);
 
 
 //$mobilecount=json_decode(json_encode($mobilecount),true);
