@@ -27,6 +27,7 @@ table#t01 th {
 </div>
 <div class="col-10 col-md-10">
 <?php 
+/*
 print_r('matrimony_id');
 
 foreach($matrimony_id AS $id){
@@ -35,12 +36,10 @@ foreach($matrimony_id AS $id){
 print_r($this->Reports_model->get_package($id['matrimony_id']));
 echo '<br>';
 
-}
+}  */
 
 ?>
-29737Array ( [interest] => 0 [mails] => 0 [views] => 0 [sms] => 0
- [total_interest] => 5 [total_sendmail] => 2 [total_mobileview] => 10 [total_sms] => 0
-  [membership_package] => 24 [membership_package_name] => PT-Welcome Offer July 2020 )
+
 <table style="width:100%;" id="t01">
   <tr>
     <th>S.No</th>
@@ -49,16 +48,18 @@ echo '<br>';
     <th>mails</th>
     <th>views</th>
     <th>sms</th>
-    <th>total mobile views</th>
-    <th>membership package name</th>
+        <th>membership package name</th>
   </tr>
 <?php
 $c=1;
 
 
-print_r('matrimony_id');
+//print_r('matrimony_id');
 
 foreach($matrimony_id AS $id){
+  if(!isset($id['matrimony_id'])){
+    continue;
+  }
 
 //print_r($id['matrimony_id']);
 $tc=json_decode(json_encode($this->Reports_model->get_package($id['matrimony_id'])),true);
