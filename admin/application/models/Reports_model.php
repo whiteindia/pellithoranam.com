@@ -623,7 +623,7 @@ public function edit_manage_package($data, $id){
 		function get_mobile(){
 		$this->db->select('matrimony_id'); 
 		//	$this->db->where('id',$result1->membership_package);
-		 $query = $this->db->get('profiles');
+		 $query = json_decode(json_encode($this->db->get('profiles')),true);
 			$result = $query->result();
 			return $result;
 	   }
