@@ -55,7 +55,7 @@ echo '<br>';
 <?php
 $c=1;
 
-<?php 
+
 print_r('matrimony_id');
 
 foreach($matrimony_id AS $id){
