@@ -698,5 +698,33 @@ error_reporting(E_ALL);
         }
         echo $html;
     }
+
+    function get_mobile()
+    {
+        ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+        $postedData =$this->input->post(NULL);
+        // for datatable
+        if(array_key_exists("start", $postedData)){
+            $this->_get_amount_report_tbl();
+            return false;
+        }
+        else{
+            $settings        = get_settings();
+            $header['title'] = $settings->title . " | View Report";
+            $this->load->view('Templates/header', $header);
+           
+         //   $data['countries'] = $this->Reports_model->getTable("", "", "country");
+            $data['mobilecount'] = $this->Reports_model->get_mobile();
+            print_r($data['mobilecount']);
+            exit();
+            $this->load->view('reports/get_mobile', $data);
+            $this->load->view('Templates/footer');
+           // $this->load->view('reports/view_amount_reports_js');
+        }
+    }
+
+
 }
 ?>
