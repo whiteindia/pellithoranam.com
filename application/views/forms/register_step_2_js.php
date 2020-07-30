@@ -162,7 +162,7 @@
 			{ alert('Family type can not be empty'); return false; }
 			else if(($('#ort').val() != 'checked') &&($('#trad').val() != 'checked')&&($('#mod').val() != 'checked')&&($('#lib').val() != 'checked'))
 			{ alert('Family value can not be empty'); return false; }  */
-			else if($('#about').val().length<150) { alert('Something About You can not be empty or cannot be lessthan 150 chars '); return false; }
+			else if($('#about').val().length<75) { alert('Something About You can not be empty or cannot be lessthan 75 chars '); return false; }
 		    else { }
 
 		    // var value =$("#reg_detail_form").serialize();
