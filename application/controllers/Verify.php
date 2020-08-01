@@ -272,14 +272,14 @@ class Verify extends CI_Controller {
         if($basic->gender== "male") { 
             $where[]= "profiles.gender = 'female'";
             //$this->session->set_userdata('gender',"female");
-            $agef=$age-5;
+            $agef=$age-3;
             // $where[]= "profiles.gender = 'female'";
              $where[]= "profiles.age >= '".$agef."'"; 
              $where[]= "profiles.age <= '".$age."'";
         } else { 
             $where[]= "profiles.gender = 'male'"; 
             //$this->session->set_userdata('gender',"male");
-            $aget=$age+5;
+            $aget=$age+3;
             // $where[]= "profiles.gender = 'male'";
              $where[]= "profiles.age >= '".$age."'"; 
              $where[]= "profiles.age <= '".$aget."'";
