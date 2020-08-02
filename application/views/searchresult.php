@@ -687,7 +687,9 @@ $settings= get_setting();
           //    array_reverse()
               foreach(array_reverse($srch_candidates) as $candidate) {
                // echo "<pre>";print_r($candidate);echo "</pre>";//exit;
-
+              if(empty($candidate->matrimony_id)){
+                continue;
+              }
                 /* if($settings['profilevisibility_preference']==1){*/
                   if(isset($candidate->membership)) { 
                     $membr = $candidate->membership;
