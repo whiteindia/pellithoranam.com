@@ -489,7 +489,7 @@ ini_set('memory_limit', '-1');
             if(isset($_POST['photo'])){
               $where[]= "profiles.profile_photo != ''";
             }
-
+            $where[]= "profiles.matrimony_id != ''";
           
 
             if((isset($_POST['city'])) && ($_POST['city']!=0)) { 
