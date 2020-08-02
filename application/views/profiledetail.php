@@ -413,10 +413,10 @@ echo  '--totalmv'.$membership->total_mobileview; */
                           <div class="clearfix"></div>
                         </li>
                         <li class="wed-personel-sec-li">
-                          <div class="child1">Weight</div>
+                          <div class="child1">Surname</div>
                           <div class="child2">:</div>
                           <div class="child3">
-                             <?php if($profile[0]->weight){ echo $profile[0]->weight;} else { ?> - <?php } ?> </div>
+                             <?php if($profile[0]->profile_surname){ echo $profile[0]->profile_surname;} else { ?> - <?php } ?> </div>
                           <div class="clearfix"></div>
                         </li>
 
