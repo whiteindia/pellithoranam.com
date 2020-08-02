@@ -862,14 +862,14 @@ $settings= get_setting();
                       <!-- <span><img src="<?php echo base_url(); ?>assets/img/mob.png"></span>
                      <span><img src="<?php echo base_url(); ?>assets/images/save.png"></span> -->
                       <div class="wed-search-btn-bay">
-                        <?php if($this->session->userdata('logged_in')) {
+                       <!-- <?php if($this->session->userdata('logged_in')) {
                          if((isset($membr->total_sendmail)) && ($membr->total_sendmail == 0)) { ?>
                           <button class="wed-mail" data-toggle='modal' data-target='#no_send'>Send mail</button>
                           <?php } else { ?>
                           <input type="button" class="wed-mail" value="Send Mail" data-toggle='modal' data-target='#send_mail_<?php echo $candidate->profile_id;?>' />
                           <?php } } else { ?>
                             <button class="wed-mail" data-toggle='modal' data-target='#reglog'>Send mail</button>
-                        <?php } ?>
+                        <?php } ?>   -->
                         <?php if($this->session->userdata('logged_in')) {
                                   if((isset($candidate->shortlisted)) && ($candidate->shortlisted == 1)) { ?>
                                       <button class="wed-shortlist remove-shortlist"  proc_name="<?php echo $candidate->profile_name; ?>" matr_id="<?php echo $candidate->matrimony_id; ?>">Shortlisted</button>
