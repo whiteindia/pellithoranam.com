@@ -526,7 +526,7 @@ function show(input) {
                       <li>  -->
 
                       <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Family Type<<small class="text-danger">[optional]</small>/div>
+                       <div class="wed-reg-right-child1 paddingtop10">Family Type<small class="text-danger">[optional]</small></div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
                              <select class="wed-reg-select" name="family_type" id="family_type">
