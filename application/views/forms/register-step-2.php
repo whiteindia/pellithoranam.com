@@ -41,7 +41,7 @@
                     </li>
                    
                     <li>
-                      <div class="wed-reg-right-child1 paddingtop10">Mother's Maden Name</div>
+                      <div class="wed-reg-right-child1 paddingtop10">Mother's Maden Name <small class="text-danger">[optional]</small></div>
                       <div class="wed-reg-right-child2">
                           <div class="row1">
                             <span><input class="wed-reg-input12 reg_input" type="text" name="mothers_maiden_name" id="mothers_maiden_name"></span>
@@ -50,7 +50,7 @@
                       <div class="clearfix"></div>
                     </li>
                     <li>
-                      <div class="wed-reg-right-child1 paddingtop10">Sub Caste</div>
+                      <div class="wed-reg-right-child1 paddingtop10">Sub Caste<small class="text-danger">[optional]</small></div>
                       <div class="wed-reg-right-child2">
                           <div class="row1">
                             <span><input class="wed-reg-input12 reg_input" type="text" name="sub_caste" id="sub_caste"></span>
@@ -120,7 +120,7 @@
                         <div class="clearfix"></div>
                       </li>
                       <li>
-                        <div class="wed-reg-right-child1 paddingtop10">Weight</div>
+                        <div class="wed-reg-right-child1 paddingtop10">Weight <small class="text-danger">[optional]</small></div>
                         <div class="wed-reg-right-child2">
                             <div class="row1">
                               <span><select class="wed-reg-select1 reg_input" name="weight" id="weight">
@@ -134,7 +134,7 @@
                         <div class="clearfix"></div>
                       </li>
                       <li>
-                        <div class="wed-reg-right-child1">Body Type</div>
+                        <div class="wed-reg-right-child1">Body Type <small class="text-danger">[optional]</small></div>
                     <!--    <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
                               <input id="slim" type="radio" name="body_type" checked="checked" value="1" required>
@@ -163,7 +163,7 @@
                       </li>
 
                       <li>
-                        <div class="wed-reg-right-child1">Complexion</div>
+                        <div class="wed-reg-right-child1">Complexion <small class="text-danger">[optional]</small></div>
                        <!--   <div class="wed-reg-right-child2">
                         <div class="wed-custom5">
                               <input id="vf" type="radio" name="complexion" checked="checked" value="1" required>
@@ -296,7 +296,7 @@ function show(input) {
                         <div class="clearfix"></div>
                       </li>
                       <li>
-                        <div class="wed-reg-right-child1">Employed In</div>
+                        <div class="wed-reg-right-child1">Employed In <small class="text-danger">[optional]</small></div>
                     <!--    <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
                               <input id="gov" type="radio" name="employed_in" checked="checked" value="1" required>
@@ -462,7 +462,7 @@ function show(input) {
                      
                      
                      <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Upload horoscope</div>
+                       <div class="wed-reg-right-child1 paddingtop10">Upload horoscope<small class="text-danger">[optional]</small></div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
                              <span><input class="wed-reg-input12 reg_input" type="file" name="horo_img" id="horo_img"></span>
@@ -526,7 +526,7 @@ function show(input) {
                       <li>  -->
 
                       <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Family Type</div>
+                       <div class="wed-reg-right-child1 paddingtop10">Family Type<<small class="text-danger">[optional]</small>/div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
                              <select class="wed-reg-select" name="family_type" id="family_type">
@@ -560,7 +560,7 @@ function show(input) {
                       </li>  --->
                       
                       <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Family Value</div>
+                       <div class="wed-reg-right-child1 paddingtop10">Family Value<small class="text-danger">[optional]</small></div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
                              <select class="wed-reg-select" name="family_value" id="family_value">
@@ -657,7 +657,7 @@ function show(input) {
 
 
                      <li>
-                       <div class="wed-reg-right-child1 paddingtop10">No: of brothers</div>
+                       <div class="wed-reg-right-child1 paddingtop10">No: of brothers<small class="text-danger">[optional]</small></div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
                               <span> <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" id="brothers" value="" required></span>
@@ -666,7 +666,7 @@ function show(input) {
                        <div class="clearfix"></div>
                      </li>
                      <li>
-                       <div class="wed-reg-right-child1 paddingtop10">No: of sisters</div>
+                       <div class="wed-reg-right-child1 paddingtop10">No: of sisters<small class="text-danger">[optional]</small></div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
                               <span><input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of sisters" name="sisters"  id="sisters" value="" required></span>
