@@ -26,8 +26,8 @@ die();*/
             <p>A  6 - Digit Confirmation code has been sent to your email address<strong><?php echo $email;?></strong><span><img src="<?php echo base_url();?>assets/img/verify-edit.png"></span></p>
             <div class="wed-verify-code">
               <form action="<?php echo base_url();?>verify/check_otp" method="post">
-              <input class="wed-verify-input" type="text" placeholder="Enter the code" name="otp">
-              <button class="wed-verify-btn" onclick="alert('Thank you.We are validating your otp.Please continue to find your matches );" type="submit">Verify</button>
+              <input class="wed-verify-input" type="text" placeholder="Enter the code" required name="otp">
+              <button class="wed-verify-btn" onclick="alert('Thank you.We are validating your otp.Please continue to find your matches ');" type="submit">Verify</button>
               <span style="color:red;"><?php if(isset($error)) { echo $error; } ?></span>
             </form>
               <p>Didn’t receive code yet?<br>
