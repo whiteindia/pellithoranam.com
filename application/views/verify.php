@@ -26,8 +26,8 @@ die();*/
             <p>A  6 - Digit Confirmation code has been sent to your email address<strong><?php echo $email;?></strong><span><img src="<?php echo base_url();?>assets/img/verify-edit.png"></span></p>
             <div class="wed-verify-code">
               <form action="<?php echo base_url();?>verify/check_otp" method="post">
-              <input class="wed-verify-input" type="text" placeholder="Enter the code" name="otp">
-              <button class="wed-verify-btn" type="submit">Verify</button>
+              <input class="wed-verify-input" type="text" placeholder="Enter the code" id="otp" name="otp">
+              <button class="wed-verify-btn edit_about_btn" type="submit">Verify</button>
               <span style="color:red;"><?php if(isset($error)) { echo $error; } ?></span>
             </form>
               <p>Didn’t receive code yet?<br>
@@ -53,4 +53,31 @@ die();*/
   history.forward(); 
   window.onpopstate = function () { history.go(1); }; 
   </script> 
+  <script>
+   $(document).on("click",".edit_about_btn",function() {
+      event.preventDefault();
+        //if($('#edit_form').parsley().validate()) {
+
+            var otp =document.getElementById("otp");
+            console.log(value);
+            $.ajax({
+                type: "POST",
+                url: base_url+'verify/check_otp',
+                data: value,
+                error: function (err) {
+                    console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+                },
+                done: function(data) {
+                  console.log(data);
+                  alert("verified please continue!");
+                  //location.reload();
+                  window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+                }
+            });
+            return false;
+        //}
+    });
+});
+  
+  </script>
 </body></html>
