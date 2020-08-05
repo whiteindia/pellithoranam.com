@@ -53,7 +53,7 @@ die();*/
   history.forward(); 
   window.onpopstate = function () { history.go(1); }; 
 
-
+</script>
   <script>
 function validateForm() {
   var x = document.forms["myForm"]["otp"].value;
@@ -65,7 +65,7 @@ function validateForm() {
      return true;
   }
 }
-</script>
+
 
 
   </script> 
