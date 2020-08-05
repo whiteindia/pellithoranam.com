@@ -44,7 +44,7 @@
                       <div class="wed-reg-right-child1 paddingtop10">Mother's Maden Name </div>
                       <div class="wed-reg-right-child2">
                           <div class="row1">
-                            <span><input class="wed-reg-input12 reg_input" type="text" name="mothers_maiden_name" id="mothers_maiden_name"><small style="color:red;;">[optional]</small></span>
+                            <span><input class="wed-reg-input12 reg_input" type="text" name="mothers_maiden_name" id="mothers_maiden_name"><small style="color:red; font-family: verdana;">[optional]</small></span>
                           </div>
                         </div>
                       <div class="clearfix"></div>
@@ -53,7 +53,7 @@
                       <div class="wed-reg-right-child1 paddingtop10">Sub Caste</div>
                       <div class="wed-reg-right-child2">
                           <div class="row1">
-                            <span><input class="wed-reg-input12 reg_input" type="text" name="sub_caste" id="sub_caste"><small style="color:red;;">[optional]</small></span>
+                            <span><input class="wed-reg-input12 reg_input" type="text" name="sub_caste" id="sub_caste"><small style="color:red; font-family: verdana;">[optional]</small></span>
                           </div>
                         </div>
                       <div class="clearfix"></div>
@@ -128,7 +128,7 @@
                                 <?php foreach($weights as $wgt) { ?>
                                     <option value="<?php echo $wgt->weight_id; ?>"><?php echo $wgt->weight; ?></option>
                                 <?php } ?>
-                              </select><small style="color:red;;">[optional]</small></span>
+                              </select><small style="color:red; font-family: verdana;">[optional]</small></span>
                             </div>
                           </div>
                         <div class="clearfix"></div>
@@ -156,7 +156,7 @@
                                 <option value="3">Athletic</option>
                                 <option value="4">Heavy</option>
                                                 
-                             </select><small style="color:red;;">[optional]</small>
+                             </select><small style="color:red; font-family: verdana;">[optional]</small>
                            </div>
                          </div>
                         <div class="clearfix"></div>
@@ -188,7 +188,7 @@
                                 <option value="4">Wheatish Brown</option>
                                 <option value="5">Dark</option>
                                                 
-                             </select><small style="color:red;;">[optional]</small>
+                             </select><small style="color:red; font-family: verdana;">[optional]</small>
                            </div>
                          </div>
                         <div class="clearfix"></div>
@@ -318,7 +318,7 @@ function show(input) {
                                 <option value="3">Business</option>
                                 <option value="4">Self Employed</option>
                                                 
-                             </select><small style="color:red;;">[optional]</small>
+                             </select><small style="color:red; font-family: verdana;">[optional]</small>
                            </div>
                          </div>
                         <div class="clearfix"></div>
@@ -465,7 +465,7 @@ function show(input) {
                        <div class="wed-reg-right-child1 paddingtop10">Upload horoscope</div>
                        <div class="wed-reg-right-child2">
                            <div class="row1">
-                             <span><input class="wed-reg-input12 reg_input" type="file" name="horo_img" id="horo_img"><small style="color:red;;">[optional]</small></span>
+                             <span><input class="wed-reg-input12 reg_input" type="file" name="horo_img" id="horo_img"><small style="color:red; font-family: verdana;">[optional]</small></span>
                            </div>
                          </div>
                        <div class="clearfix"></div>
@@ -534,7 +534,7 @@ function show(input) {
                                 <option value="1">Joint</option>
                                 <option value="2">Nuclear</option>
                                                           
-                             </select><small style="color:red;;">[optional]</small>
+                             </select><small style="color:red; font-family: verdana;">[optional]</small>
                            </div>
                          </div>
                        <div class="clearfix"></div>
@@ -570,7 +570,7 @@ function show(input) {
                                 <option value="3">Moderate</option>
                                 <option value="4">Liberal</option>
                                                 
-                             </select><small style="color:red;;">[optional]</small>
+                             </select><small style="color:red; font-family: verdana;">[optional]</small>
                            </div>
                          </div>
                        <div class="clearfix"></div>
@@ -660,7 +660,7 @@ function show(input) {
                        <div class="wed-reg-right-child1 paddingtop10">No: of brothers</div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <span> <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" id="brothers" value="" required><small style="color:red;;">[optional]</small></span>
+                              <span> <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" id="brothers" value="" required><small style="color:red; font-family: verdana;">[optional]</small></span>
                           </div>
                          </div>
                        <div class="clearfix"></div>
@@ -669,7 +669,7 @@ function show(input) {
                        <div class="wed-reg-right-child1 paddingtop10">No: of sisters</div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <span><input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of sisters" name="sisters"  id="sisters" value="" required><small style="color:red;;">[optional]</small></span>
+                              <span><input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of sisters" name="sisters"  id="sisters" value="" required><small style="color:red; font-family: verdana;">[optional]</small></span>
                           </div>
                          </div>
                        <div class="clearfix"></div>
