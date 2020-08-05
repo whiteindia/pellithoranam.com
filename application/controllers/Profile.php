@@ -820,7 +820,7 @@ public function upload_photo() {
 			$email = $this->session->userdata('email');
 			$query1 = $this->db->where('email',$email);
 			$query1 = $this->db->get('profiles');
-			$result1 = $query->row();
+			$result1 = $query1->row();
 		//	$phone= $result1->phone;
 			
 			
