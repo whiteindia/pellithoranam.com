@@ -246,7 +246,7 @@ class Verify extends CI_Controller {
      if($result=='1'){
      	  $this->reg_success();
         $this->reg_success_mail();
-        $this->send_email_to_other_user();
+       // $this->send_email_to_other_user();
      	  redirect(base_url().'Profile/upload_profile_pic'); 		
      	}else{
      		redirect(base_url().'Verify/index/error'); 	
