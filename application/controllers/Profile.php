@@ -817,7 +817,14 @@ public function upload_photo() {
 			//$data['user_id'] = $user->user_id;
 			$user = $this->session->userdata('logged_in');
 			if($user->user_id!='') { $user1 = $user->user_id; } else { $user1 = $this->session->userdata('ins_id'); }
-			$data['user_id'] = $user1;
+			$email = $this->session->userdata('email');
+			$query1 = $this->db->where('email',$email);
+			$query1 = $this->db->get('profiles');
+			$result1 = $query->row();
+		//	$phone= $result1->phone;
+			
+			
+			$data['user_id'] = $result1->user_id;
 			$config = set_upload_optionscategory('assets/uploads/profile_pics');
 			$new_name = time()."_".$_FILES["image"]['name'];
 			$config['file_name'] = $new_name;
