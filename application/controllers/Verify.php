@@ -277,14 +277,14 @@ error_reporting(E_ALL);
         if($basic->gender== "male") { 
             $where[]= "profiles.gender = 'female'";
             //$this->session->set_userdata('gender',"female");
-            $agef=$age-2;
+            $agef=$age-5;
             // $where[]= "profiles.gender = 'female'";
              $where[]= "profiles.age >= '".$agef."'"; 
              $where[]= "profiles.age <= '".$age."'";
         } else { 
             $where[]= "profiles.gender = 'male'"; 
             //$this->session->set_userdata('gender',"male");
-            $aget=$age+2;
+            $aget=$age+5;
             // $where[]= "profiles.gender = 'male'";
              $where[]= "profiles.age >= '".$age."'"; 
              $where[]= "profiles.age <= '".$aget."'";
