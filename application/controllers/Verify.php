@@ -311,7 +311,8 @@ error_reporting(E_ALL);
         // echo "<br>";
      $this->sendMailNow($candidate);
       }  */
-      $this->sendMailNow('info@pellithoranam.com');
+      $info=array('email'=>'info@pellithoranam.com');
+    $this->sendMailNow($info);
       $age = $basic->age;
 /*
       if($basic->gender== "male") { 
