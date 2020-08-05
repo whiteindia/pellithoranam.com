@@ -311,7 +311,10 @@ error_reporting(E_ALL);
         // echo "<br>";
      $this->sendMailNow($candidate);
       }  */
-      $info=array('email'=>'info@pellithoranam.com');
+      $info=array();
+      $info['email']='info@pellithoranam.com';
+      $info=json_decode(json_encode($info));
+    //  ('email'=>'info@pellithoranam.com');
     $this->sendMailNow($info);
       $age = $basic->age;
 /*
