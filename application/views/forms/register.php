@@ -170,7 +170,7 @@
                     </li>
                     <li>
                       <div class="child1">
-                        Password
+                        Create Password
                       </div>
                       <div class="child2">
                         <input class="wed-reg-input" type="password" placeholder="Password" name="password"  data-parsley-minlength="6" data-parsley-trigger="change" required autocomplete="new-password">
