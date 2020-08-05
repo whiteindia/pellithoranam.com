@@ -4,9 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Verify extends CI_Controller {
 
 	public function __construct() {
+    
         parent::__construct();
         $this->load->model('Verify_model');
         date_default_timezone_set('Asia/Kolkata');
+
+              ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
         $session=$this->session->userdata('logged_in');  
 	       if (!isset($session)&& empty($session) )  { 
 				redirect(base_url());
