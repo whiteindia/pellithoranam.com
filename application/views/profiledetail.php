@@ -1292,7 +1292,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                         <img src="<?php echo base_url().$sim->profile_photo_blured; ?>">
                         <?php } ?>
                     </div>
-                    <h6><small class="text-danger"><b><?php echo ucwords(strtolower($sim->profile_name));?></b></small></h6>
+                    <h6><small class="text-danger"><b><?php echo ucwords(strtolower($sim->matrimony_id));?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
                              echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
@@ -1327,7 +1327,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                         <?php } ?>
                   </div>
                   <div class="wed-similar-detail">
-                    <h6><small class="text-danger"><b><?php echo ucwords(strtolower($sim->profile_name));?></b></small></h6>
+                    <h6><small class="text-danger"><b><?php echo ucwords(strtolower($sim->matrimony_id));?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
                              echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
