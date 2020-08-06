@@ -75,16 +75,16 @@
     <div class="container-fluid">
   <div class="bg-warning">  <fieldset>
     <legend><h3 class="text-primary">Package services  used by user till now</h3></legend>
-    <div class="alert alert-success" role="alert">
+    <div class="btn btn-outline-danger" >
   <label>interest</label>: : -<?= $package['interest'] ?>
 </div>
-<div class="alert alert-success" role="alert">
+<div class="btn btn-outline-danger" >
   <label>mails</label>: : -<?= $package['mails'] ?>
   </div>
-  <div class="alert alert-success" role="alert">
+  <div class="btn btn-outline-danger" >
   <label>views</label>: : -<?= $package['views'] ?>
   </div>
-  <div class="alert alert-success" role="alert">
+  <div class="btn btn-outline-danger">
   <label>sms</label>: : -<?= $package['sms'] ?>
   </div>
   
