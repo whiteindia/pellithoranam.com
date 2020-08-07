@@ -389,7 +389,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
           <div class="col-md-9">
 <div class="wed-personel">
    <h1>Personal Information   <?php         
-   
+   /*
    echo '<br>used mails--'.$used;
    echo '<br>total mails--'.$membership->total_sendmail;
    echo '**<br><br>';
@@ -403,7 +403,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             echo '<pre>';
                           
                             print_r($membership);
-                            echo '</pre>';
+                            echo '</pre>';   */
                             
                             
                             ?></h1>
