@@ -1379,12 +1379,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
 $base_counts = $qry01->row()->total_sendmail;
 echo $base_counts.':';
 
-$querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
- 
-  $querym = $this->db->get('profile_mails'); 
-   $usedml=$querym->num_rows();
-
-if($membership->total_sendmail>$usedml)
+if($base_counts>0 )
 { 
    //total_sendmail
 ?>
