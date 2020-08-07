@@ -334,6 +334,29 @@ error_reporting(E_ALL);
 
 //////new photo upload option in registration
 
+					$email = $this->session->userdata('email');
+					$query1 = $this->db->where('email',$email);
+					$query1 = $this->db->get('profiles');
+				$result1 = $query1->row();
+				$datap['user_id']= $result1->user_id;
+				$config = set_upload_optionscategory('assets/uploads/profile_pics');
+				$new_name = time()."_".$_FILES["image"]['name'];
+				$config['file_name'] = $new_name;
+				$this->load->library('upload');
+				$this->upload->initialize($config);
+				if (!$this->upload->do_upload('image'))	{
+					//print_r($this->upload->display_errors());die();
+				$this->session->set_flashdata('message', array('message' => 'Error Occured While Uploading Files','class' => 'danger'));
+			//	redirect(base_url().'home/registration_details');
+				}
+				else 
+				{
+					$upload_data = $this->upload->data();
+					$datap['pic_name'] = $new_name;
+					$datap['pic_location'] = $config['upload_path']."/".$upload_data['file_name'];
+					$datap['pic_datetime'] = date('Y-m-d H:i:s', time());
+					$result = $this->db->insert('profile_pic_verification', $datap); 
+				}
 
 
 
@@ -354,29 +377,6 @@ error_reporting(E_ALL);
 					$result = $query->row();
 					$phone= $result->phone;
 
-				//	$email = $this->session->userdata('email');
-				//	$query1 = $this->db->where('email',$email);
-				//	$query1 = $this->db->get('profiles');
-				//	$result1 = $query1->row();
-					$datap['user_id']= $result->user_id;
-					$config = set_upload_optionscategory('assets/uploads/profile_pics');
-					$new_name = time()."_".$_FILES["image"]['name'];
-					$config['file_name'] = $new_name;
-					$this->load->library('upload');
-					$this->upload->initialize($config);
-					if (!$this->upload->do_upload('image'))	{
-						//print_r($this->upload->display_errors());die();
-					$this->session->set_flashdata('message', array('message' => 'Error Occured While Uploading Files','class' => 'danger'));
-				//	redirect(base_url().'home/registration_details');
-					}
-					else 
-					{
-						$upload_data = $this->upload->data();
-						$datap['pic_name'] = $new_name;
-						$datap['pic_location'] = $config['upload_path']."/".$upload_data['file_name'];
-						$datap['pic_datetime'] = date('Y-m-d H:i:s', time());
-						$result = $this->db->insert('profile_pic_verification', $datap); 
-					}
 
 
 
