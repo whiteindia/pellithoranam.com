@@ -391,7 +391,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
    <h1>Personal Information   <?php         
    
    echo '<br>used mails--'.$used;
-   echo '<br>total mails--'.$membership['total_sendmail'];
+   echo '<br>total mails--'.$membership->total_sendmail;
    echo '**<br><br>';
    print_r($membershipd);
   //  exit();
