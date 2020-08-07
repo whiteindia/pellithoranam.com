@@ -269,7 +269,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                              $querym = $this->db->where('matrimony_id',$this->session->userdata('logged_in')->matrimony_id);
                              //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $querym = $this->db->get('membership_details'); 
-                                $membershipd=$query->row()();
+                                $membershipd=$querym->row();
 
 
 
@@ -393,7 +393,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             echo 'new<br> total pkg<br>';
                             echo '<pre>';
                           
-                            print_r($membershipd);
+                            print_r($membership);
                             echo '</pre>';
                             
                             
