@@ -272,21 +272,21 @@ $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->ma
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
 		
       
-    <!--		<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
+  		<?php if(!empty($membership)) { if($membership->total_sendmail > 0) { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
-					  <?php } } ?>  -->
+					  <?php } } ?>  <!--  -->
 					  <?php if(!empty($membership)) { ?>
 					<input type="button" disabled  class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
 				   <?php } ?>
 			  <?php } else {?>
 			  
-          <!--    <?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
+              <?php if(!empty($membership)) { if($membership->total_sendmail >0) { ?>
               <input type="button" class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
               <?php } else { ?>
               <input type="button" class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
-              <?php } } ?>  -->
+              <?php } } ?>  <!---->
               <?php if(!empty($membership)) { ?>
             <input type="button" class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
            <?php } ?>
