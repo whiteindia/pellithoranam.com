@@ -200,6 +200,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                               $used=1;
                               //  if
                               $total_mobileview=0;
+                              $alreadyviewed=0;
                             }
                              ?>
                        <!--  -->   <?php
