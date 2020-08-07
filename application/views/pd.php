@@ -270,7 +270,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $query1 = $this->db->get('mobile_view'); 
                                 $alreadyviewed=$query1->num_rows();   */
-                                $total_mailsent=$membership->total_mobileview;
+                                $total_mailsent=$membership->total_sendmail;
                              /*   echo 'isviewed'.$alreadyviewed;
                                 echo '-usedno:'.$used;
 echo  '--totalmv'.$membership->total_mobileview; */
