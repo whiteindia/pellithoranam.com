@@ -258,7 +258,41 @@ echo  '--totalmv'.$membership->total_mobileview; */
 			  <?php } ?>
 			  
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
-		<!--		<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
+          <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
+                         //   echo '  from'.$this->session->userdata('logged_in')->matrimony_id;
+                        //    echo '  to'.$profile[0]->matrimony_id;
+                            $query = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
+                          //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                            $query = $this->db->get('profile_mails'); 
+                             $used=$query->num_rows();
+
+                        /*     $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
+                              $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                               $query1 = $this->db->get('mobile_view'); 
+                                $alreadyviewed=$query1->num_rows();   */
+                                $total_mailsent=$membership->total_mobileview;
+                             /*   echo 'isviewed'.$alreadyviewed;
+                                echo '-usedno:'.$used;
+echo  '--totalmv'.$membership->total_mobileview; */
+                           //  if
+                            }
+                            else{
+                              $used=1;
+                              //  if
+                              $total_mailsent=0;
+                            }
+
+
+                            echo '<br>used mails--'.$used;
+                            echo '<br>total mails--'.$total_mailsent;
+                             ?>
+  
+  
+  
+  
+  
+  
+  	<!--		<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
