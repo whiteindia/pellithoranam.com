@@ -292,6 +292,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
 
                             echo '<br>used mails--'.$used;
                             echo '<br>total mails--'.$membershipd->total_sendmail;
+                            echo '<br><br>';
                              ?>
   
   
