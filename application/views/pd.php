@@ -266,11 +266,18 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             $query = $this->db->get('profile_mails'); 
                              $used=$query->num_rows();
 
+                             $querym = $this->db->where('matrimony_id',$this->session->userdata('logged_in')->matrimony_id);
+                             //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                               $querym = $this->db->get('membership_details'); 
+                                $membershipd=$query->row()();
+
+
+
                         /*     $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $query1 = $this->db->get('mobile_view'); 
                                 $alreadyviewed=$query1->num_rows();   */
-                                $total_mailsent=$membership->total_sendmail;
+                                $total_mailsent=$membershipd->total_sendmail;
                              /*   echo 'isviewed'.$alreadyviewed;
                                 echo '-usedno:'.$used;
 echo  '--totalmv'.$membership->total_mobileview; */
@@ -284,7 +291,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                        //     total_sendmail
 
                             echo '<br>used mails--'.$used;
-                            echo '<br>total mails--'.$membership->total_sendmail;
+                            echo '<br>total mails--'.$membershipd->total_sendmail;
                              ?>
   
   
