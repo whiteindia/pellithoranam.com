@@ -70,6 +70,60 @@ class Profile extends CI_Controller {
 		} else { echo "Profile Not Found"; }
 	} else { redirect(base_url()); }
 	}
+
+/***testing profiles */
+public function pd($matr_id = 0) {
+	if(($this->session->userdata('logged_in')) || ($this->session->userdata('logged_in_admin'))) {
+		if($matr_id) {
+			// var_dump($matr_id);
+			// die();
+			$whr = array();
+			$my_matr_id = $this->session->userdata('logged_in');
+			$header['title'] = "Profile Details | TCM".$matr_id;
+			$data['profile'] = $this->Profile_model->get_profile_details($matr_id,$whr);
+			$data['gallery'] = $this->Profile_model->get_gallery_details($matr_id);
+			$data['data']=$this->Profile_model->hobbies_details($matr_id);
+			$data['logintime']=$this->Profile_model->get_logintime($matr_id);
+
+
+			if($this->session->userdata('logged_in')) {
+				$datad = $this->Profile_model->get_partner_preference($matr_id,"");
+				
+				if(isset($datad)) 
+					{ $data['preference'] =  $datad; 
+				}
+				$data['similar'] = $this->similar_profiles($matr_id);
+				$data['membership'] = $this->Profile_model->get_membership_details($my_matr_id->matrimony_id);
+				$data['profile'][0]->shortlisted = $this->Profile_model->checkShortlisted($my_matr_id->matrimony_id,$matr_id);
+				// echo "<pre>";print_r($k);echo "</pre>";exit;
+				$data['profile'][0]->interested  = $this->Profile_model->checkInterested($my_matr_id->matrimony_id,$matr_id);
+				//$prefs = $this->Profile_model->get_partner_preference($my_matr_id->matrimony_id,"");
+			    $prefs1 = $this->Profile_model->get_partner_preference1($matr_id,"");
+			    $data['photo_request'] = $this->Profile_model->get_photo_request($my_matr_id->matrimony_id,$matr_id);
+			    $data['data']=$this->Profile_model->hobbies_details($matr_id);
+			    //var_dump($data['photo_request']);die();
+			    $session=$this->session->userdata('logged_in');
+			    $hgt=$session->height_id;
+			    $where[] = "height_id = '$hgt'";
+			    $data['heights'] = $this->Home_model->getTable("",$where,"height");
+			    
+				if(!empty($prefs1)){
+					$data['prefernce'] = $this->getDataPreference($prefs1);	
+				}/*if(!empty($prefs1)){
+					$data['prefernce1'] = $this->getDataPreference($prefs1);	
+				}*/
+				$this->Profile_model->insertRecents($my_matr_id->matrimony_id,$matr_id);
+			}
+			//echo "<pre>"; print_r($data);
+			$data['matr_id']=$matr_id;
+			$this->load->view('header', $header);
+			$this->load->view('pd',$data);
+			$this->load->view('footer');
+		} else { echo "Profile Not Found"; }
+	} else { redirect(base_url()); }
+	}
+
+	/**  test ting profile */
 public function get_drop_data2() {
 		$sel_val = $this->input->post('sel_val');
 		$sel_typ = $this->input->post('sel_typ');
