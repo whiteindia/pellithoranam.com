@@ -281,10 +281,10 @@ echo  '--totalmv'.$membership->total_mobileview; */
                               //  if
                               $total_mailsent=0;
                             }
-
+                       //     total_sendmail
 
                             echo '<br>used mails--'.$used;
-                            echo '<br>total mails--'.$total_mailsent;
+                            echo '<br>total mails--'.$membership->total_sendmail;
                              ?>
   
   
