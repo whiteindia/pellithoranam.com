@@ -393,7 +393,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             echo 'new<br> total pkg<br>';
                             echo '<pre>';
                           
-                            print_r($membership);
+                            print_r($membershipd);
                             echo '</pre>';
                             
                             
