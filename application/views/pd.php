@@ -4,7 +4,7 @@
 //print_r($profile[0]->gender);die;
 /*print_r($prefernce['min_income']);die();*/
 $settings = get_setting();
-//$membership=json_decode(json_encode($membership),true);
+
 if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[0]->gender)){
 ?>
        <style> 
@@ -254,55 +254,25 @@ echo  '--totalmv'.$membership->total_mobileview; */
      
              <!--<h5>Last Login: <strong><?php //echo get_days_count($profile[0]->matrimony_id); ?></strong></h5>-->
 			 <?php if($logintime) { ?>
-			  <h5>Last Login: <strong><?php echo $logintime->date_time;  echo $membership->total_sendmail; ?></strong></h5>
+			  <h5>Last Login: <strong><?php echo $logintime->date_time;?></strong></h5>
 			  <?php } ?>
 			  
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
-          <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
-                         //   echo '  from'.$this->session->userdata('logged_in')->matrimony_id;
-                        //    echo '  to'.$profile[0]->matrimony_id;
-                            $query = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
-                          //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
-                            $query = $this->db->get('profile_mails'); 
-                             $used=$query->num_rows();
-
-                   /*          $querym = $this->db->where('matrimony_id',$this->session->userdata('logged_in')->matrimony_id);
-                             //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
-                               $querym = $this->db->get('membership_details'); 
-                                $membershipd=$querym->row();
-
-                                $membershipd=json_decode(json_encode($membershipd),true);  */
-
-                        /*     $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
-                              $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
-                               $query1 = $this->db->get('mobile_view'); 
-                                $alreadyviewed=$query1->num_rows();   */
-                                $total_mailsent=$membershipd->total_sendmail;
-                             /*   echo 'isviewed'.$alreadyviewed;
-                                echo '-usedno:'.$used;
-echo  '--totalmv'.$membership->total_mobileview; */
-                           //  if
-                            }
-                            else{
-                              $used=1;
-                              //  if
-                              $total_mailsent=0;
-                            }
-                       //     total_sendmail
-
-                             
-                             ?>
-  
-  
-  
-  
-  
-  
-  	<!--		<?php if(!empty($membership)) { if($membership->total_sendmail > 0) { ?>
+    <?php 
+                                  $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
+                                  //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                                    $querym = $this->db->get('profile_mails'); 
+                                     $usedm=$querym->num_rows();
+      
+      ?>
+    
+    <!--	-->
+      
+      	<?php if(!empty($membership)) { if($membership->total_sendmail > 0) { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
-					  <?php } } ?>  -->
+					  <?php } } ?>  
 					  <?php if(!empty($membership)) { ?>
 					<input type="button" disabled  class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
 				   <?php } ?>
@@ -385,17 +355,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
         <div class="row">
           <div class="col-md-9">
 <div class="wed-personel">
-	 <h1>Personal Information   <?php                             echo '<br>used mails--'.$used;
-                            echo '<br>total mails--'.$total_mailsent;
-                            
-                            echo 'new<br> total pkg<br>';
-                            echo '<pre>';
-                          
-                            print_r($membership);
-                            echo '</pre>';
-                            
-                            
-                            ?></h1>
+	 <h1>Personal Information</h1>
               <hr>
               <ul>
               	<li class="about">
@@ -1345,7 +1305,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                     <h6><small class="text-danger"><b><?php echo "PT".$sim->matrimony_id;?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
-                             echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
+                             echo $age->format('%Y');?> Yrs,<small> <?php echo $sim->height;?></small></p>
                     <a href="<?php echo base_url();?>Profile/profile_details/<?php echo $sim->matrimony_id;?>"><button class="wed-view">View</button></a>
                   </li>
                  
@@ -1380,7 +1340,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                     <h6><small class="text-danger"><b><?php echo "PT".$sim->matrimony_id;?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
-                             echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
+                             echo $age->format('%Y');?> Yrs, <small><?php echo $sim->height;?></small></p>
                     <a href="<?php echo base_url();?>Profile/profile_details/<?php echo $sim->matrimony_id;?>"><button class="wed-view">View</button></a>
                   </div>
                   <div class="clearfix">
