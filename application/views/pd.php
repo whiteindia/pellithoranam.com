@@ -4,7 +4,7 @@
 //print_r($profile[0]->gender);die;
 /*print_r($prefernce['min_income']);die();*/
 $settings = get_setting();
-
+$membership=json_decode(json_encode($membership),true);
 if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[0]->gender)){
 ?>
        <style> 
@@ -384,8 +384,8 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             
                             echo 'new<br> total pkg<br>';
                             echo '<pre>';
-                            $membership=json_decode(json_encode($membership),true);
-                            print_r($membership);
+                          
+                          //  print_r($membership);
                             echo '</pre>';
                             
                             
