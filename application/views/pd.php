@@ -269,12 +269,12 @@ echo  '--totalmv'.$membership->total_mobileview; */
     <!--	-->
       
       	<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
-					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
+					  <input type="button"  class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
-					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
+					  <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
 					  <?php } } ?>  
 					  <?php if(!empty($membership)) { ?>
-					<input type="button" disabled  class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
+					<input type="button"   class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
 				   <?php } ?>
 			  <?php } else {?>
 			  
