@@ -272,6 +272,8 @@ echo  '--totalmv'.$membership->total_mobileview; */
                                 $membershipd=$querym->row();
 
                                 $membershipd=json_decode(json_encode($membershipd),true);
+  
+
 
                         /*     $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
@@ -290,10 +292,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             }
                        //     total_sendmail
 
-                            echo '<br>used mails--'.$used;
-                            echo '<br>total mails--'.$membershipd['total_sendmail'];
-                            echo '**<br><br>';
-                             exit();
+                      
                              
                              ?>
   
@@ -389,7 +388,14 @@ echo  '--totalmv'.$membership->total_mobileview; */
         <div class="row">
           <div class="col-md-9">
 <div class="wed-personel">
-	 <h1>Personal Information   <?php                             echo '<br>used mails--'.$used;
+   <h1>Personal Information   <?php         
+   
+   echo '<br>used mails--'.$used;
+   echo '<br>total mails--'.$membershipd['total_sendmail'];
+   echo '**<br><br>';
+  //  exit();
+   
+   echo '<br>used mails--'.$used;
                             echo '<br>total mails--'.$total_mailsent;
                             
                             echo 'new<br> total pkg<br>';
