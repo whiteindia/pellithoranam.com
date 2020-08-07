@@ -1382,9 +1382,9 @@ echo $base_counts.':';
 $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
  
   $querym = $this->db->get('profile_mails'); 
-   $usedm=$querym->num_rows();
+   $usedml=$querym->num_rows();
 
-if($membership->total_sendmail>$usedm)
+if($membership->total_sendmail>$usedml)
 { 
    //total_sendmail
 ?>
