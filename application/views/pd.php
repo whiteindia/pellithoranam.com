@@ -271,7 +271,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                                $querym = $this->db->get('membership_details'); 
                                 $membershipd=$querym->row();
 
-
+                                $membershipd=json_decode(json_encode($membershipd),true);
 
                         /*     $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
@@ -291,7 +291,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                        //     total_sendmail
 
                             echo '<br>used mails--'.$used;
-                            echo '<br>total mails--'.$membershipd->total_sendmail;
+                            echo '<br>total mails--'.$membershipd['total_sendmail'];
                             echo '**<br><br>';
                              ?>
   
