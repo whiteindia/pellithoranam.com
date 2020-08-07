@@ -1384,16 +1384,19 @@ echo  '--totalmv'.$membership->total_mobileview; */
                 <textarea class="wed-reg-modal-textarea" rows="4" name="mail_content">Hi <?php echo $profile[0]->profile_name;?></textarea><br/>
                 <input type="hidden" name="mail_to" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <?php 
-     $qry01 = $this->db->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
-$base_counts = $qry01->row()->total_sendmail;
-echo $base_counts.':';
-if($base_counts>0 )
+		                                     $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
+                                         //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                                           $querym = $this->db->get('profile_mails'); 
+                                            $usedm=$querym->num_rows();
+
+
+if($membership->total_sendmail> $usedm)
 { 
    //total_sendmail
 ?>
                 <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Mail</button>
                 <?php } else {?>
-<button class="btn btn-danger btn-lg" disabled>please update your package.</button>
+<button class="btn btn-danger btn-lg" disabled> you have exceeded limit. please update your package.</button>
 
               <?php      }
                     ?>
