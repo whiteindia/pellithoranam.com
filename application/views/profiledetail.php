@@ -1295,7 +1295,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                     <h6><small class="text-danger"><b><?php echo "PT".$sim->matrimony_id;?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
-                             echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
+                             echo $age->format('%Y');?> Yrs,<small> <?php echo $sim->height;?></small></p>
                     <a href="<?php echo base_url();?>Profile/profile_details/<?php echo $sim->matrimony_id;?>"><button class="wed-view">View</button></a>
                   </li>
                  
@@ -1330,7 +1330,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                     <h6><small class="text-danger"><b><?php echo "PT".$sim->matrimony_id;?></b></small></h6>
                     <p><?php $now = new DateTime();
                              $age = $now->diff(new DateTime($sim->dob));
-                             echo $age->format('%Y');?> Yrs, <?php echo $sim->height;?></p>
+                             echo $age->format('%Y');?> Yrs, <small><?php echo $sim->height;?></small></p>
                     <a href="<?php echo base_url();?>Profile/profile_details/<?php echo $sim->matrimony_id;?>"><button class="wed-view">View</button></a>
                   </div>
                   <div class="clearfix">
