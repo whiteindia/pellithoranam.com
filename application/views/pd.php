@@ -264,16 +264,14 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             $query = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
                           //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                             $query = $this->db->get('profile_mails'); 
-                             $usedm=$query->num_rows();
+                             $used=$query->num_rows();
 
-                             $querym = $this->db->where('matrimony_id',$this->session->userdata('logged_in')->matrimony_id);
+                   /*          $querym = $this->db->where('matrimony_id',$this->session->userdata('logged_in')->matrimony_id);
                              //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                $querym = $this->db->get('membership_details'); 
                                 $membershipd=$querym->row();
 
-                                $membershipd=json_decode(json_encode($membershipd),true);
-  
-
+                                $membershipd=json_decode(json_encode($membershipd),true);  */
 
                         /*     $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
                               $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
@@ -286,13 +284,12 @@ echo  '--totalmv'.$membership->total_mobileview; */
                            //  if
                             }
                             else{
-                              $usedm=1;
+                              $used=1;
                               //  if
                               $total_mailsent=0;
                             }
                        //     total_sendmail
 
-                      
                              
                              ?>
   
@@ -301,11 +298,11 @@ echo  '--totalmv'.$membership->total_mobileview; */
   
   
   
-  	<!--	-->	<?php if(!empty($membership)) { if($membership->total_sendmail > 0) { ?>
+  	<!--		<?php if(!empty($membership)) { if($membership->total_sendmail > 0) { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
 					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
-					  <?php } } ?>  
+					  <?php } } ?>  -->
 					  <?php if(!empty($membership)) { ?>
 					<input type="button" disabled  class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
 				   <?php } ?>
@@ -388,22 +385,14 @@ echo  '--totalmv'.$membership->total_mobileview; */
         <div class="row">
           <div class="col-md-9">
 <div class="wed-personel">
-   <h1>Personal Information   <?php         
-   /*
-   echo '<br>used mails--'.$used;
-   echo '<br>total mails--'.$membership->total_sendmail;
-   echo '**<br><br>';
-   print_r($membershipd);
-  //  exit();
-   
-   echo '<br>used mails--'.$used;
+	 <h1>Personal Information   <?php                             echo '<br>used mails--'.$used;
                             echo '<br>total mails--'.$total_mailsent;
                             
                             echo 'new<br> total pkg<br>';
                             echo '<pre>';
                           
                             print_r($membership);
-                            echo '</pre>';   */
+                            echo '</pre>';
                             
                             
                             ?></h1>
