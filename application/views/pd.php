@@ -384,6 +384,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             
                             echo 'new<br> total pkg<br>';
                             echo '<pre>';
+                            $membership=json_decode(json_encode($membership),true);
                             print_r($membership);
                             echo '</pre>';
                             
