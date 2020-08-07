@@ -379,7 +379,8 @@ echo  '--totalmv'.$membership->total_mobileview; */
         <div class="row">
           <div class="col-md-9">
 <div class="wed-personel">
-	 <h1>Personal Information</h1>
+	 <h1>Personal Information   <?php                             echo '<br>used mails--'.$used;
+                            echo '<br>total mails--'.$total_mailsent; ?></h1>
               <hr>
               <ul>
               	<li class="about">
