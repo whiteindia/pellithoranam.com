@@ -257,6 +257,11 @@ echo  '--totalmv'.$membership->total_mobileview; */
 			  <h5>Last Login: <strong><?php echo $logintime->date_time;?>      <?php if(!empty($membership)) { 
             if($membership->total_sendmail>0) { 
 echo 'packge taken';
+$querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
+//  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+  $querym = $this->db->get('profile_mails'); 
+   $usedm=$querym->num_rows();
+   echo '--'.$usedm;
           }else {
             echo 'no packge taken';
           }
