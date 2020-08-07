@@ -254,7 +254,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
      
              <!--<h5>Last Login: <strong><?php //echo get_days_count($profile[0]->matrimony_id); ?></strong></h5>-->
 			 <?php if($logintime) { ?>
-			  <h5>Last Login: <strong><?php echo $logintime->date_time;?></strong></h5>
+			  <h5>Last Login: <strong><?php echo $logintime->date_time; echo '-'.$membership->total_sendmail;?></strong></h5>
 			  <?php } ?>
 			  
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
