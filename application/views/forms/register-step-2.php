@@ -213,27 +213,33 @@
                              </select>
                            </div>
                          </div>
+
+                        
+                      
+                      <div class="wed-reg-right-child1">Set Photo Privacy</div>
+<p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
+<div class="wed-reg-right-child2">
+<div class="wed-custom5">
+   <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
+   <label for="nop">Visible to all</label>
+   <input id="ds" type="radio" name="profile_preference" value="1">
+   <label for="ds">Visible only to members whom I had contacted / responded</label>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
                         <div class="clearfix"></div>
                       </li>
 
-                      <li>
-                      
-                      <div class="wed-reg-right-child1">Set Photo Privacy</div>
-                           <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
-                        <div class="wed-reg-right-child2">
-                          <div class="wed-custom5">
-                              <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
-                              <label for="nop">Visible to all</label>
-                              <input id="ds" type="radio" name="profile_preference" value="1">
-                              <label for="ds">Visible only to members whom I had contacted / responded</label>
 
-                          </div>
-                        </div>
-                      
-                      
-                      
-                      
-                      </li>
                       <li>
                        <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
                        <div class="wed-reg-right-child2">
