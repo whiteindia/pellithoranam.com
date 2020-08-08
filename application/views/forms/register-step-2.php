@@ -220,6 +220,17 @@
                        <div class="wed-reg-right-child2">
 
                            <div class="row1">
+                           <div class="wed-reg-right-child1">Set Photo Privacy</div>
+                           <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
+                        <div class="wed-reg-right-child2">
+                          <div class="wed-custom5">
+                              <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
+                              <label for="nop">Visible to all</label>
+                              <input id="ds" type="radio" name="profile_preference" value="1">
+                              <label for="ds">Visible only to members whom I had contacted / responded</label>
+
+                          </div>
+                        </div>
                                                   <!--image code-->
                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
@@ -281,21 +292,6 @@ function show(input) {
                            <small class="text-danger">** use standard aspect ratio[ex 4:3 and 5:4.] of your profile picture for better display </small>
                            <small class="text-danger">** image size should not exceed 5MB size </small>
                            <small class="text-danger">** Please upload halfsize Photos only </small>
-
-                           <div class="wed-reg-right-child1">Set Photo Privacy</div>
-                           <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
-                        <div class="wed-reg-right-child2">
-                          <div class="wed-custom5">
-                              <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
-                              <label for="nop">Visible to all</label>
-                              <input id="ds" type="radio" name="profile_preference" value="1">
-                              <label for="ds">Visible only to members whom I had contacted / responded</label>
-
-                          </div>
-                        </div>
-
-
-
                          </div>
                        <div class="clearfix"></div>
                      </li>
