@@ -257,7 +257,8 @@ class Home_model extends CI_Model {
         'gothram'=> $data['gothram'],
         'dosham'=> $data['dosham'],
         'horo_img'=> $data['horo_img'],
-        //'raasi_id'=> $data['raasi'],
+        //'raasi_id'=> $data['raasi'],profile_preference
+        'profile_preference'=> $data['profile_preference'],
         'family_status'=> $data['family_status'],
         'family_type'=> $data['family_type'],
         'family_value'=> $data['family_value'],
