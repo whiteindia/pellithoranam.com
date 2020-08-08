@@ -268,6 +268,8 @@ function show(input) {
                            </div>
                            <small class="text-danger">** upload jpg,jpeg,png image only.profile picture will be displayed in your profile page once admin approve it </small>
                            <small class="text-danger">** use standard aspect ratio[ex 4:3 and 5:4.] of your profile picture for better display </small>
+                           <small class="text-danger">** image size should not exceed 5MB size </small>
+                           <small class="text-danger">** Please upload halfsize Photos only </small>
                          </div>
                        <div class="clearfix"></div>
                      </li>
