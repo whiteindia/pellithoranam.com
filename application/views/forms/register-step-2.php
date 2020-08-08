@@ -268,7 +268,7 @@ function show(input) {
     }
     </script>
                            </div>
-                           <h4>Set Privacy</h4>
+                      <!--     <h4>Set Privacy</h4>
               <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
               <div class="wed-photoprivacy" style="text-align: left;">
                         <input id="nm" name="profile_preference" type="radio" value="0">
@@ -276,11 +276,25 @@ function show(input) {
                         <input id="dvsd" name="profile_preference" type="radio" value="1">
                         <label for="dvsd">Visible only to members whom I had contacted / responded</label>
                        
-                    </div>
+                    </div>  -->
                            <small class="text-danger">** upload jpg,jpeg,png image only.profile picture will be displayed in your profile page once admin approve it </small>
                            <small class="text-danger">** use standard aspect ratio[ex 4:3 and 5:4.] of your profile picture for better display </small>
                            <small class="text-danger">** image size should not exceed 5MB size </small>
                            <small class="text-danger">** Please upload halfsize Photos only </small>
+
+                           <div class="wed-reg-right-child1">Set Photo Privacy</div>
+                           <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
+                        <div class="wed-reg-right-child2">
+                          <div class="wed-custom5">
+                              <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
+                              <label for="nop">Visible to all</label>
+                              <input id="ds" type="radio" name="profile_preference" value="1">
+                              <label for="ds">Visible only to members whom I had contacted / responded</label>
+
+                          </div>
+                        </div>
+
+
 
                          </div>
                        <div class="clearfix"></div>
