@@ -555,10 +555,24 @@ $var = $this->db->update('profiles',$data);
       
       $query_5 = $this->db->select('matrimony_id')->get_where('profiles',array('matrimony_id =' =>$uniq));
       if($query_5->num_rows() > 0) {
-        $this->GenerateUique($gender);
+        $uniq=$uniq+1;
+        $query_51 = $this->db->select('matrimony_id')->get_where('profiles',array('matrimony_id =' =>$uniq));
+        if($query_51->num_rows() > 0) {
+          $this->GenerateUique($gender);
+        }else{
+          return $uniq;
+
+        }
+        
       } else {
         return $uniq;
       }
+      /* previous logic  */
+      /*  if($query_5->num_rows() > 0) {
+        $this->GenerateUique($gender);
+      } else {
+        return $uniq;
+      }  */
     }
 
     public function CalcAge($dob) {
