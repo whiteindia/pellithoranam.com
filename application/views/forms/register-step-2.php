@@ -239,6 +239,9 @@ function show(input) {
         var fileNameExt = fileName.substr(fileName.lastIndexOf('.') + 1);
         var FileSize = input.files[0].size / 1024 / 1024;
         if (FileSize > 5) {
+          input.type = ''
+            input.type = 'file'
+            $('#user_img').attr('src',"");
             alert('File size exceeds 5 MB,Please choose another image size below 5 MB');
            // $(file).val(''); //for clearing with Jquery
         } else {
