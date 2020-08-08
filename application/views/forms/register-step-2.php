@@ -231,6 +231,8 @@
 </div>
    <!--image code-->
                              <span><input class="wed-reg-input12 reg_input" type="file" name="image" id="image" onchange="show(this)"></span>
+
+                      
                              <script>
 function show(input) {
         debugger;
@@ -266,10 +268,20 @@ function show(input) {
     }
     </script>
                            </div>
+                           <h4>Set Privacy</h4>
+              <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
+              <div class="wed-photoprivacy" style="text-align: left;">
+                        <input id="nm" name="profile_preference" type="radio" value="0" <?php echo ($privacy->profile_preference== '0') ?  "checked" : "" ;  ?>>
+                        <label for="nm">Visible to all</label><br/>
+                        <input id="dvsd" name="profile_preference" type="radio" value="1" <?php echo ($privacy->profile_preference== '1') ?  "checked" : "" ;  ?>>
+                        <label for="dvsd">Visible only to members whom I had contacted / responded</label>
+                       
+                    </div>
                            <small class="text-danger">** upload jpg,jpeg,png image only.profile picture will be displayed in your profile page once admin approve it </small>
                            <small class="text-danger">** use standard aspect ratio[ex 4:3 and 5:4.] of your profile picture for better display </small>
                            <small class="text-danger">** image size should not exceed 5MB size </small>
                            <small class="text-danger">** Please upload halfsize Photos only </small>
+
                          </div>
                        <div class="clearfix"></div>
                      </li>
