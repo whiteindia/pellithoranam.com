@@ -271,9 +271,9 @@ function show(input) {
                            <h4>Set Privacy</h4>
               <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
               <div class="wed-photoprivacy" style="text-align: left;">
-                        <input id="nm" name="profile_preference" type="radio" value="0" <?php echo ($privacy->profile_preference== '0') ?  "checked" : "" ;  ?>>
+                        <input id="nm" name="profile_preference" type="radio" value="0">
                         <label for="nm">Visible to all</label><br/>
-                        <input id="dvsd" name="profile_preference" type="radio" value="1" <?php echo ($privacy->profile_preference== '1') ?  "checked" : "" ;  ?>>
+                        <input id="dvsd" name="profile_preference" type="radio" value="1">
                         <label for="dvsd">Visible only to members whom I had contacted / responded</label>
                        
                     </div>
