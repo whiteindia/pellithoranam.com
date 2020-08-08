@@ -215,12 +215,10 @@
                          </div>
                         <div class="clearfix"></div>
                       </li>
-                      <li>
-                       <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
-                       <div class="wed-reg-right-child2">
 
-                           <div class="row1">
-                           <div class="wed-reg-right-child1">Set Photo Privacy</div>
+                      <li>
+                      
+                      <div class="wed-reg-right-child1">Set Photo Privacy</div>
                            <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
                         <div class="wed-reg-right-child2">
                           <div class="wed-custom5">
@@ -231,6 +229,17 @@
 
                           </div>
                         </div>
+                      
+                      
+                      
+                      
+                      </li>
+                      <li>
+                       <div class="wed-reg-right-child1 paddingtop10">Upload Profile Photo</div>
+                       <div class="wed-reg-right-child2">
+
+                           <div class="row1">
+
                                                   <!--image code-->
                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
