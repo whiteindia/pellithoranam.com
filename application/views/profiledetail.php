@@ -254,17 +254,27 @@ echo  '--totalmv'.$membership->total_mobileview; */
      
              <!--<h5>Last Login: <strong><?php //echo get_days_count($profile[0]->matrimony_id); ?></strong></h5>-->
 			 <?php if($logintime) { ?>
-			  <h5>Last Login: <strong><?php echo $logintime->date_time;?></strong></h5>
+			  <h5>Last Login: <strong><?php echo $logintime->date_time; echo '-'.$membership->total_sendmail;?></strong></h5>
 			  <?php } ?>
 			  
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
-		<!--		<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
-					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
+    <?php 
+                                  $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
+                                  //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                                    $querym = $this->db->get('profile_mails'); 
+                                     $usedm=$querym->num_rows();
+      
+      ?>
+    
+    <!--	-->
+      
+      	<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
+					  <input type="button"  class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
-					  <input type="button" disabled class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
-					  <?php } } ?>  -->
+					  <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
+					  <?php } } ?>  
 					  <?php if(!empty($membership)) { ?>
-					<input type="button" disabled  class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
+					<input type="button"   class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
 				   <?php } ?>
 			  <?php } else {?>
 			  
@@ -1374,16 +1384,19 @@ echo  '--totalmv'.$membership->total_mobileview; */
                 <textarea class="wed-reg-modal-textarea" rows="4" name="mail_content">Hi <?php echo $profile[0]->profile_name;?></textarea><br/>
                 <input type="hidden" name="mail_to" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <?php 
-     $qry01 = $this->db->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
-$base_counts = $qry01->row()->total_sendmail;
-echo $base_counts.':';
-if($base_counts>0 )
+		                                     $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
+                                         //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                                           $querym = $this->db->get('profile_mails'); 
+                                            $usedm=$querym->num_rows();
+
+
+if($membership->total_sendmail> $usedm)
 { 
    //total_sendmail
 ?>
                 <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Mail</button>
                 <?php } else {?>
-<button class="btn btn-danger btn-lg" disabled>please update your package.</button>
+<button class="btn btn-danger btn-lg" disabled> you have exceeded limit. please update your package.</button>
 
               <?php      }
                     ?>
