@@ -53,8 +53,8 @@
                         <option><?php echo $package->month;?> Months</option>
                       </select>
                       <h4>Rs. <?php echo $package->price;?></h4>
-                     <!--  <p>Rs.1665/ Month</p> -->
-            <a href="#uniqueID" ><button   class="wed-btn-class payment" data-id="<?php echo $package->id;?>" > Make Payment</button></a>
+                     <!--  <pbase_url+>Rs.1665/ Month</pbase_url+"Package/razorpay/?"+data;>     -->
+            <a href="<?php echo base_url?>Package/razorpay/amount=<?= $package->price;?>" ><button   class="wed-btn-class payment" data-id="<?php echo $package->id;?>" > Make Payment</button></a>
             <div class="arrow-up"></div>
                     </div>
                   </li>
