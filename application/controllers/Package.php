@@ -24,6 +24,14 @@ class Package extends CI_Controller {
 				$this->load->view('packages',$template);
 				$this->load->view('footer');                  
 	}
+	public function pkg1()
+	{          $my_matr_id = $this->session->userdata('logged_in');
+	    		$header['title'] = "Packages | TCM";
+	            $this->load->view('header', $header);
+	            $template['data'] = $this->Package_model->view_packages();
+				$this->load->view('packages1',$template);
+				$this->load->view('footer');                  
+	}
 	public function view_package()
 	{          $my_matr_id = $this->session->userdata('logged_in');
 	    	   $data = $_POST;
