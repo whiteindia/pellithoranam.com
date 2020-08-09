@@ -453,10 +453,10 @@
 
                     <div class="arrow-left"></div>
                   </li>
-                  <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
+           <!---       <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
                     <a data-toggle="tab" href="#cod" style="width: 100%;float: left;">CASH</a>
                     <div class="arrow-left"></div>
-                  </li>
+                  </li> --->
                 </ul>
 				<input type="hidden" name="packageid" id="packageid" >
                   <div class="wed-payment-row"  style="width:100%; float:left; text-align: center; margin-top: 25px;">
