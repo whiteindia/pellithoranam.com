@@ -22,7 +22,7 @@
     <div class="container container-custom">
       <div class="wed-packages-list">
         <ul>
-          <li class="active" data-toggle="tab" href="">Classic Packages</li>
+          <li class="active" data-toggle="tab" href="#classic">Classic Packages</li>
           <!--<li data-toggle="tab" href="#personel"></li>-->
           <div class="clearfix"></div>
         </ul>
@@ -33,8 +33,8 @@
           <!-- CLASSIC-PACKAGES -->
 
             <div id="classic" class="tab-pane fade in active animated slideInUp">
-		<!--	<form> -->
-              <div class="wed-package-plans">
+			<form>
+              <div class="wed-package-plans pckg_id">
                 <ul>
                   <?php $i=0;
                   foreach($data as $package){
@@ -53,8 +53,8 @@
                         <option><?php echo $package->month;?> Months</option>
                       </select>
                       <h4>Rs. <?php echo $package->price;?></h4>
-                     <!--  <pbase_url+>Rs.1665/ Month</pbase_url+"Package/razorpay/?"+data;>     -->
-            <a class=" btn btn-lg btn-warning" href="https://pellithoranam.com/package/razorpay/?amount=<?= $package->id;?>" ><!--<button   class="wed-btn-class" data-id="" > </button> -->Make Payment</a>  <!-- <?php echo $package->id;?> -->
+                     <!--  <p>Rs.1665/ Month</p> -->
+            <a href="#uniqueID" ><button   class="wed-btn-class payment" data-id="<?php echo $package->id;?>" > Make Payment</button></a>
             <div class="arrow-up"></div>
                     </div>
                   </li>
@@ -97,11 +97,11 @@
                   </li> -->
                   <div class="clearfix"></div>
                 </ul>
-              </div><!--</form>  -->
-          <!--     <div class="wed-package-plans-tab-content">
-               <div class="tab-content">
+              </div></form>
+              <div class="wed-package-plans-tab-content">
+                <div class="tab-content">
 
-                  <!-- CLASSIC ->
+                  <!-- CLASSIC -->
                           <?php $i=0;
                   foreach($data as $package){
                   $i++;
@@ -246,7 +246,7 @@
 
 
                 </div>
-              </div>-->
+              </div>
         <!-- <div class="wed-adon-packages">
         <h6>Add-on Packages</h6>
         <p>A little extra to make your profile stand-out</p>
@@ -302,9 +302,9 @@
         </div> -->
         <br>
         <br>
-  <!--       <div class="wed-adon-payment">
+        <div class="wed-adon-payment">
         <div class="row">
-           ===================================PAYMENT START-->
+           <!-- ===================================PAYMENT START-->
           <!-- <div class="col-md-8">
             <div class="wed-adon-payment-selection">
               <div class="wed-adon-payment-head">
@@ -441,7 +441,7 @@
           <!-- ===================================PAYMENT END -->
        <!-- ****************NEW PAYMENT*********************** -->
 	   <div id="container">
-      <!--    <div class="col-md-8" id="uniqueID">
+          <div class="col-md-8" id="uniqueID">
             <div class="wed-adon-payment-selection">
               <div class="wed-adon-payment-head">
               Select Your Payment Option
@@ -453,10 +453,10 @@
 
                     <div class="arrow-left"></div>
                   </li>
-           <!---       <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
+                  <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
                     <a data-toggle="tab" href="#cod" style="width: 100%;float: left;">CASH</a>
                     <div class="arrow-left"></div>
-                  </li> ->
+                  </li>
                 </ul>
 				<input type="hidden" name="packageid" id="packageid" >
                   <div class="wed-payment-row"  style="width:100%; float:left; text-align: center; margin-top: 25px;">
@@ -467,9 +467,9 @@
               <div class="clearfix"></div>
               </div>
             </div>
-          </div>  -->
+          </div> 
           <!-- ****************************************************** -->
-     <!--     <div class="col-md-4">
+          <div class="col-md-4">
             <div class="wed-adon-payment-summary">
               <div class="wed-adon-payment-head">Payment Details</div>
               <div class="wed-adon-summary-inner">
@@ -478,10 +478,10 @@
                 Email: info@pellithoranam.com </p>
               </div>
             </div>
-          </div>  -->
+          </div>
 
 
-     <!--     <div class="col-md-12">
+          <div class="col-md-12">
             <div class="wed-adon-payment-summary" data-toggle="tab" href="#classic1" style="margin-top:20px;">
               <div class="wed-adon-payment-head">
               Summary
@@ -500,7 +500,7 @@
                 <label for="check3" style="position: relative;top: 10px;"></label>
                 <p style="padding-left:25px">Profile Highlighter ( 20 days ) - Rs. 299</p>
                 <div class="clearfix"></div>
-              </div>->
+              </div>-->
               </div>
               <div class="clearfix"></div>
               <div class="wed-adon-payment-head">
@@ -508,22 +508,22 @@
               </div>
 
             </div>
-          </div>  
+          </div>
 
           
 
         </div>
       </div>
-    </div>-->
+    </div>
 
-          <!-- PERSONEL-PACKAGES 
+          <!-- PERSONEL-PACKAGES -->
 
             <div id="personel" class="tab-pane fade animated slideInUp">
               <h3>Menu 1</h3>
               <p>Some content in menu 1.</p>
             </div>
           </div>
-      </div>-->
+      </div>
 
     </div>
   </div>
@@ -531,7 +531,6 @@
 
 <script type="text/javascript">
 var globalVariable;
-/*
 $(document).ready(function () {
 
  var id= $('li.test').attr('my-attr');
@@ -563,8 +562,8 @@ $(document).ready(function () {
            }
         });
 
-});*/
-/*
+});
+
 function package_details(id){
   dataString = 'id=' + id 
 
@@ -593,24 +592,24 @@ function package_details(id){
            }
         });
 
-    };  */
+    };
 	
 	
 	
-/*	
+	
 
 	function getId(paymentOption) {
 		
 	//alert(paymentOption);
 		 $("#payment_btn").on('click',function(){
 			  if($("#packageid").val()!=''){
-		//		if(paymentOption == 'razorpay'){
+				if(paymentOption == 'razorpay'){
 					var amount = $('#packageid').val(); 
 					var data ='amount=' + amount
           
 					window.location.href = base_url+"Package/razorpay/?"+data;
-		//		}
-	/*			else if(paymentOption == 'cash'){
+				}
+				else if(paymentOption == 'cash'){
 					$.ajax({
 						type: "POST",
 						url: base_url+'Package/cash',
@@ -619,8 +618,8 @@ function package_details(id){
 							$('#payment_msg').html('We will contact you immediatly..Thankyou..');
 						}
 					});	
-				} /*/
-		/*	 
+				}
+			 
 			  }
 			  else{
 				 $('#payment_msg').html('Please select any Package');
@@ -629,7 +628,7 @@ function package_details(id){
 					},3000);
 			  }
 		});
-	}  */
+	}
 	
 </script>
 </body></html>
