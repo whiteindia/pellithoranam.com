@@ -22,7 +22,7 @@
     <div class="container container-custom">
       <div class="wed-packages-list">
         <ul>
-          <li class="active" data-toggle="tab" href="#classic">Classic Packages</li>
+          <li class="active" data-toggle="tab" href="">Classic Packages</li>
           <!--<li data-toggle="tab" href="#personel"></li>-->
           <div class="clearfix"></div>
         </ul>
