@@ -448,19 +448,19 @@
               </div>
               <div class="wed-adon-payment-details">
                 <ul  class="payment_option" style="width:100% !important;">
-                  <li class="active " style="width:50%; float:left; text-align:center;" id="razorpay"  onclick="getId('razorpay')">
+               <!--   <li class="active " style="width:50%; float:left; text-align:center;" id="razorpay"  onclick="getId('razorpay')">
                   <a data-toggle="tab" href="#pay" style="width: 100%;float: left;">razorpay</a>
-                  <button class="wed-payment-process-btn" >Proceed</button>
+
                     <div class="arrow-left"></div>
-                  </li>
-             <!--   id="payment_btn"  <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
+                  </li>-->
+             <!--     <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
                     <a data-toggle="tab" href="#cod" style="width: 100%;float: left;">CASH</a>
                     <div class="arrow-left"></div>
                   </li>  -->
                 </ul>
 				<input type="hidden" name="packageid" id="packageid" >
                   <div class="wed-payment-row"  style="width:100%; float:left; text-align: center; margin-top: 25px;">
-               <!--     <button class="wed-payment-process-btn" id="payment_btn">Proceed</button> -->
+                    <button class="wed-payment-process-btn" id="payment_btn">Proceed</button>
 					
                   </div>
 				  <span id="payment_msg"></span>
@@ -598,7 +598,7 @@ function package_details(id){
 	
 	
 
-	function getId(paymentOption) {
+	//function getId(paymentOption) {
 		
 	//alert(paymentOption);
 		 $("#payment_btn").on('click',function(){
@@ -628,7 +628,7 @@ function package_details(id){
 					},3000);
 			  }
 		});
-	}
+//	}
 	
 </script>
 </body></html>
