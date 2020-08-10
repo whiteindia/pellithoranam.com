@@ -448,11 +448,11 @@
               </div>
               <div class="wed-adon-payment-details">
                 <ul  class="payment_option" style="width:100% !important;">
-                <!--  <li class="active " style="width:50%; float:left; text-align:center;" id="razorpay"  onclick="getId('razorpay')">
+                  <li class="active " style="width:50%; float:left; text-align:center;" id="razorpay"  onclick="getId('razorpay')">
                   <a data-toggle="tab" href="#pay" style="width: 100%;float: left;">razorpay</a>
 
                     <div class="arrow-left"></div>
-                  </li>  -->
+                  </li>
              <!--     <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
                     <a data-toggle="tab" href="#cod" style="width: 100%;float: left;">CASH</a>
                     <div class="arrow-left"></div>
@@ -603,13 +603,13 @@ function package_details(id){
 	//alert(paymentOption);
 		 $("#payment_btn").on('click',function(){
 			  if($("#packageid").val()!=''){
-				if(paymentOption == ''){
+				if(paymentOption == 'razorpay'||paymentOption == ''){
 					var amount = $('#packageid').val(); 
 					var data ='amount=' + amount
           
 					window.location.href = base_url+"Package/razorpay/?"+data;
-				}//razorpay
-		/*		else if(paymentOption == 'cash'){
+				}
+				else if(paymentOption == 'cash'){
 					$.ajax({
 						type: "POST",
 						url: base_url+'Package/cash',
@@ -618,7 +618,7 @@ function package_details(id){
 							$('#payment_msg').html('We will contact you immediatly..Thankyou..');
 						}
 					});	
-				}  */
+				}
 			 
 			  }
 			  else{
@@ -626,7 +626,7 @@ function package_details(id){
 				  setTimeout(function(){
 					  $('#payment_msg').fadeOut();
 					},3000);
-			  } 
+			  }
 		});
 	}
 	
