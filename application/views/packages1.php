@@ -99,9 +99,9 @@
                 </ul>
               </div><!--</form>  -->
               <div class="wed-package-plans-tab-content">
-                <div class="tab-content">
+            <!--    <div class="tab-content">
 
-                  <!-- CLASSIC -->
+                  <!-- CLASSIC ->
                           <?php $i=0;
                   foreach($data as $package){
                   $i++;
@@ -246,7 +246,7 @@
 
 
                 </div>
-              </div>
+              </div>-->
         <!-- <div class="wed-adon-packages">
         <h6>Add-on Packages</h6>
         <p>A little extra to make your profile stand-out</p>
@@ -441,7 +441,7 @@
           <!-- ===================================PAYMENT END -->
        <!-- ****************NEW PAYMENT*********************** -->
 	   <div id="container">
-          <div class="col-md-8" id="uniqueID">
+      <!--    <div class="col-md-8" id="uniqueID">
             <div class="wed-adon-payment-selection">
               <div class="wed-adon-payment-head">
               Select Your Payment Option
@@ -456,7 +456,7 @@
            <!---       <li  style="width:50%; float:left; text-align:center;" id="cash" onclick="getId('cash')">
                     <a data-toggle="tab" href="#cod" style="width: 100%;float: left;">CASH</a>
                     <div class="arrow-left"></div>
-                  </li> --->
+                  </li> ->
                 </ul>
 				<input type="hidden" name="packageid" id="packageid" >
                   <div class="wed-payment-row"  style="width:100%; float:left; text-align: center; margin-top: 25px;">
@@ -467,7 +467,7 @@
               <div class="clearfix"></div>
               </div>
             </div>
-          </div> 
+          </div>  -->
           <!-- ****************************************************** -->
           <div class="col-md-4">
             <div class="wed-adon-payment-summary">
@@ -478,10 +478,10 @@
                 Email: info@pellithoranam.com </p>
               </div>
             </div>
-          </div>
+          </div>  
 
 
-          <div class="col-md-12">
+     <!--     <div class="col-md-12">
             <div class="wed-adon-payment-summary" data-toggle="tab" href="#classic1" style="margin-top:20px;">
               <div class="wed-adon-payment-head">
               Summary
@@ -500,7 +500,7 @@
                 <label for="check3" style="position: relative;top: 10px;"></label>
                 <p style="padding-left:25px">Profile Highlighter ( 20 days ) - Rs. 299</p>
                 <div class="clearfix"></div>
-              </div>-->
+              </div>->
               </div>
               <div class="clearfix"></div>
               <div class="wed-adon-payment-head">
@@ -508,7 +508,7 @@
               </div>
 
             </div>
-          </div>
+          </div>  -->
 
           
 
