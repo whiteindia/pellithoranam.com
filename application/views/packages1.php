@@ -33,7 +33,7 @@
           <!-- CLASSIC-PACKAGES -->
 
             <div id="classic" class="tab-pane fade in active animated slideInUp">
-			<form>
+		<!--	<form> -->
               <div class="wed-package-plans">
                 <ul>
                   <?php $i=0;
@@ -97,7 +97,7 @@
                   </li> -->
                   <div class="clearfix"></div>
                 </ul>
-              </div></form>
+              </div><!--</form>  -->
               <div class="wed-package-plans-tab-content">
                 <div class="tab-content">
 
