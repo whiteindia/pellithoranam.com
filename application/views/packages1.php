@@ -597,7 +597,7 @@ function package_details(id){
 	
 	
 	
-	
+/*	
 
 	function getId(paymentOption) {
 		
@@ -619,8 +619,8 @@ function package_details(id){
 							$('#payment_msg').html('We will contact you immediatly..Thankyou..');
 						}
 					});	
-				} */
-			 
+				} /*/
+		/*	 
 			  }
 			  else{
 				 $('#payment_msg').html('Please select any Package');
@@ -629,7 +629,7 @@ function package_details(id){
 					},3000);
 			  }
 		});
-	}
+	}  */
 	
 </script>
 </body></html>
