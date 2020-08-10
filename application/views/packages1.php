@@ -98,8 +98,8 @@
                   <div class="clearfix"></div>
                 </ul>
               </div><!--</form>  -->
-              <div class="wed-package-plans-tab-content">
-            <!--    <div class="tab-content">
+          <!--     <div class="wed-package-plans-tab-content">
+               <div class="tab-content">
 
                   <!-- CLASSIC ->
                           <?php $i=0;
@@ -302,9 +302,9 @@
         </div> -->
         <br>
         <br>
-        <div class="wed-adon-payment">
+  <!--       <div class="wed-adon-payment">
         <div class="row">
-           <!-- ===================================PAYMENT START-->
+           ===================================PAYMENT START-->
           <!-- <div class="col-md-8">
             <div class="wed-adon-payment-selection">
               <div class="wed-adon-payment-head">
@@ -469,7 +469,7 @@
             </div>
           </div>  -->
           <!-- ****************************************************** -->
-          <div class="col-md-4">
+     <!--     <div class="col-md-4">
             <div class="wed-adon-payment-summary">
               <div class="wed-adon-payment-head">Payment Details</div>
               <div class="wed-adon-summary-inner">
@@ -478,7 +478,7 @@
                 Email: info@pellithoranam.com </p>
               </div>
             </div>
-          </div>  
+          </div>  -->
 
 
      <!--     <div class="col-md-12">
@@ -508,22 +508,22 @@
               </div>
 
             </div>
-          </div>  -->
+          </div>  
 
           
 
         </div>
       </div>
-    </div>
+    </div>-->
 
-          <!-- PERSONEL-PACKAGES -->
+          <!-- PERSONEL-PACKAGES 
 
             <div id="personel" class="tab-pane fade animated slideInUp">
               <h3>Menu 1</h3>
               <p>Some content in menu 1.</p>
             </div>
           </div>
-      </div>
+      </div>-->
 
     </div>
   </div>
