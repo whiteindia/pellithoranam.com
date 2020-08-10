@@ -531,6 +531,7 @@
 
 <script type="text/javascript">
 var globalVariable;
+/*
 $(document).ready(function () {
 
  var id= $('li.test').attr('my-attr');
@@ -562,8 +563,8 @@ $(document).ready(function () {
            }
         });
 
-});
-
+});*/
+/*
 function package_details(id){
   dataString = 'id=' + id 
 
@@ -592,7 +593,7 @@ function package_details(id){
            }
         });
 
-    };
+    };  */
 	
 	
 	
