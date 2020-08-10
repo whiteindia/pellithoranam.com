@@ -34,7 +34,7 @@
 
             <div id="classic" class="tab-pane fade in active animated slideInUp">
 			<form>
-              <div class="wed-package-plans pckg_id">
+              <div class="wed-package-plans">
                 <ul>
                   <?php $i=0;
                   foreach($data as $package){
