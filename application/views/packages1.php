@@ -598,7 +598,7 @@ function package_details(id){
 	
 	
 
-	//function getId(paymentOption) {
+	function getId(paymentOption) {
 		
 	//alert(paymentOption);
 		 $("#payment_btn").on('click',function(){
@@ -628,7 +628,7 @@ function package_details(id){
 					},3000);
 			  }
 		});
-	//}
+	}
 	
 </script>
 </body></html>
