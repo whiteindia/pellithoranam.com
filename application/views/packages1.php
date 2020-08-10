@@ -54,7 +54,7 @@
                       </select>
                       <h4>Rs. <?php echo $package->price;?></h4>
                      <!--  <pbase_url+>Rs.1665/ Month</pbase_url+"Package/razorpay/?"+data;>     -->
-            <a href="https://pellithoranam.com/package/razorpay/?amount=<?= $package->price;?>" ><button   class="wed-btn-class" data-id="<?php echo $package->id;?>" > Make Payment</button></a>
+            <a href="https://pellithoranam.com/package/razorpay/?amount=<?= $package->price;?>" ><button   class="wed-btn-class" data-id="" > Make Payment</button></a>  <!-- <?php echo $package->id;?> -->
             <div class="arrow-up"></div>
                     </div>
                   </li>

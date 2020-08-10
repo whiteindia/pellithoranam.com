@@ -48,6 +48,7 @@ class Package extends CI_Controller {
 		$amount1 =$amount *100;
 		$amount2 =100;
 		$_SESSION['packageid']=$id;
+		$_SESSION['purchase_amount1']=$amount;
 		$_SESSION['purchase_amount']=$amount2/100;
 		$booking_id = 'SM'.strtotime(date('m/d/Y H:i:s'));
 		// if ($_POST) {
