@@ -116,7 +116,7 @@ $this->load->view('footer');
 									   'booking_id'=>$booking_id,
 									   'package_id'=>$_SESSION['packageid'],
 									   'status'=>'Completed',
-									   'purchase_amount'=>$_SESSION['purchase_amount'],
+									   'purchase_amount'=>$_SESSION['purchase_amount1'],
 									   'payment_method'=>'Razorpay',
 									   'txnid'=>$razorpay_payment_id,
 									   'purchase_date'=>date('Y-m-d H:i:s')
