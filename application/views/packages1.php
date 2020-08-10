@@ -603,13 +603,13 @@ function package_details(id){
 	//alert(paymentOption);
 		 $("#payment_btn").on('click',function(){
 			  if($("#packageid").val()!=''){
-				if(paymentOption == 'razorpay'||paymentOption == ''){
+			//	if(paymentOption == 'razorpay'||paymentOption == ''){
 					var amount = $('#packageid').val(); 
 					var data ='amount=' + amount
           
 					window.location.href = base_url+"Package/razorpay/?"+data;
-				}
-				else if(paymentOption == 'cash'){
+		//		}
+		/*		else if(paymentOption == 'cash'){
 					$.ajax({
 						type: "POST",
 						url: base_url+'Package/cash',
@@ -618,7 +618,7 @@ function package_details(id){
 							$('#payment_msg').html('We will contact you immediatly..Thankyou..');
 						}
 					});	
-				}
+				}*/
 			 
 			  }
 			  else{
