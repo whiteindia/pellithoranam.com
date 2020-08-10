@@ -603,12 +603,12 @@ function package_details(id){
 	//alert(paymentOption);
 		 $("#payment_btn").on('click',function(){
 			  if($("#packageid").val()!=''){
-			//	if(paymentOption == 'razorpay'){
+				if(paymentOption == ''){
 					var amount = $('#packageid').val(); 
 					var data ='amount=' + amount
           
 					window.location.href = base_url+"Package/razorpay/?"+data;
-		//		}
+				}//razorpay
 		/*		else if(paymentOption == 'cash'){
 					$.ajax({
 						type: "POST",
