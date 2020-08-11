@@ -97,7 +97,7 @@ $tc=json_decode(json_encode($this->Reports_model->get_package($id['matrimony_id'
 <td><?= $tc['mails']; ?>/<?= $tc['total_sendmail']; ?></td>
 <td><?= $tc['views']; ?>/<?= $tc['total_mobileview']; ?></td>
 <td><?= $tc['sms']; ?>/<?= $tc['total_sms']; ?></td>
-<td><?= ('Y:m:d', strtotime($tc['membership_expiry'])); ?></td>
+<td><?= date('Y:m:d', strtotime($tc['membership_expiry'])); ?></td>
 <td><?= $tc['membership_package_name']; ?></td>
 
   </tr>
