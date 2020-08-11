@@ -12,7 +12,6 @@
 				debug: false,
 		        //focusInvalid: false,
 		        //onfocusout: false,
-				errorClass: "my-error-class",
 		        onkeyup: false,
 		        onclick: false,
 			  rules: {
@@ -115,9 +114,6 @@
 		  	
 		  		}
 			});
-			.my-error-class {
-    color:#FF0000;  /* red */
-}
 			$('.datepicker').datepicker({
 	          changeMonth: true,
 	          changeYear: true,
