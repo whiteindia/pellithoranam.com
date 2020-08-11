@@ -576,6 +576,7 @@ public function edit_manage_package($data, $id){
 		 $data1['total_sms']=$result1->total_sms;
 		 $data1['membership_package']=$result1->membership_package;
 		 $data1['membership_package_name']=$result->package_name;
+		 $data1['membership_expiry']=$result1->membership_expiry;
 	
 		/*  echo '<pre>'; 
 	 print_r($data1);
