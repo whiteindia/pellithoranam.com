@@ -764,8 +764,8 @@ $settings= get_setting();
                         <?php 
                         }else{
                           ?>
-                          <img src="<?php echo base_url().$usrIMG; ?>" style="-webkit-filter: blur(2px); 
-				filter: blur(2px);"> 
+                          <img src="<?php echo base_url().$usrIMG; ?>" style="-webkit-filter: blur(0px); 
+				filter: blur(0px);"> 
                           <?php
                         } ?>
                          <!--   --->
