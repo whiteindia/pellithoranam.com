@@ -219,7 +219,7 @@
                       <div class="wed-reg-right-child1">Set Photo Privacy</div>
 <p>Your Photo Privacy has been set to <br>"Visible only to members whom I had Contacted / Responded" </p>
 <div class="wed-reg-right-child2">
-<div class="wed-custom5">
+<div class="wed-custom">
    <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
    <label for="nop">Visible to all</label>
    <input id="ds" type="radio" name="profile_preference" value="1">
