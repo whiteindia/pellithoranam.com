@@ -1,5 +1,8 @@
 .error{
-    color: white;
+   /* color: white;*/
+    color: red;
+  text-shadow: 2px 2px 4px yellow;
+  font-family: "Lucida Console", Courier, monospace;
     font-size: 12px;
     height: 24px;
     text-align: center;
