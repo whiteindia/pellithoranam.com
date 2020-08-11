@@ -18,8 +18,21 @@ table#t01 tr:nth-child(odd) {
  background-color: #fff;
 }
 table#t01 th {
-  background-color: black;
-  color: white;
+ /* background-color: black;
+  color: white;*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
 }
 </style>
 <div class="row">
