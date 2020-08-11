@@ -346,8 +346,8 @@ error_reporting(E_ALL);
 				$this->upload->initialize($config);
 				if (!$this->upload->do_upload('image'))	{
 					//print_r($this->upload->display_errors());die();
-				$this->session->set_flashdata('message', array('message' => 'Error Occured While Uploading Files','class' => 'danger'));
-				redirect(base_url().'home/registration_details');
+			//	$this->session->set_flashdata('message', array('message' => 'Error Occured While Uploading Files','class' => 'danger'));
+			//	redirect(base_url().'home/registration_details');
 				}
 				else 
 				{
