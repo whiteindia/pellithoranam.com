@@ -60,8 +60,9 @@ echo '<br>';
     <th>interest</th>
     <th>mails</th>
     <th>views</th>
-    <th>sms</th>
+    <th>sms</th>  <th>Expiry date</th>
         <th>membership package name</th>
+      
   </tr>
 <?php
 $c=1;
@@ -96,7 +97,9 @@ $tc=json_decode(json_encode($this->Reports_model->get_package($id['matrimony_id'
 <td><?= $tc['mails']; ?>/<?= $tc['total_sendmail']; ?></td>
 <td><?= $tc['views']; ?>/<?= $tc['total_mobileview']; ?></td>
 <td><?= $tc['sms']; ?>/<?= $tc['total_sms']; ?></td>
+<td><?= $tc['membership_expiry']; ?></td>
 <td><?= $tc['membership_package_name']; ?></td>
+
   </tr>
 
 
