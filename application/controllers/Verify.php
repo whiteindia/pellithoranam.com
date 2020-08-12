@@ -251,8 +251,8 @@ class Verify extends CI_Controller {
      if($result=='1'){
      	  $this->reg_success();
         $this->reg_success_mail();
-        $this->send_email_to_other_user();
-         redirect(base_url().'Profile/search'); 
+       // $this->send_email_to_other_user();
+         redirect(base_url().'Profile/search/success'); 
        //  redirect(base_url().'Profile/upload_profile_pic');		
        }else if($result=='2'){
         redirect(base_url().'Profile/search');
@@ -310,13 +310,13 @@ class Verify extends CI_Controller {
 
 
 
-/*
+/**/
       foreach ($srch_candidates as $candidate) {
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
      $this->sendMailNow($candidate);
-      }  */
+      }  
       $info=array();
       $info['email']='info@pellithoranam.com';
       $info=json_decode(json_encode($info));

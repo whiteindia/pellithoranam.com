@@ -29,6 +29,7 @@ die();*/
               <input class="wed-verify-input" type="text" placeholder="Enter the code" required name="otp">
               <button class="wed-verify-btn"  type="submit">Verify</button>
               <span style="color:red;"><?php if(isset($error)) { echo $error; } ?></span>
+              <span style="color:red;"><?php if(isset($success)) { echo 'congratulations your account is verified';?><a href="<?php echo base_url(); ?>Verify/send_email_to_other_user"><strong>click here to send alert to other users now</strong></a><?php } ?></span>
             </form>
               <p>Didn’t receive code yet?<br>
                 <a href="<?php echo base_url(); ?>Verify/resend_otp"><strong>Resend Pin to Mobile number</strong></a>
