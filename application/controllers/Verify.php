@@ -255,7 +255,7 @@ class Verify extends CI_Controller {
          redirect(base_url().'Verify/index/success'); 
        //  redirect(base_url().'Profile/upload_profile_pic');		
        }else if($result=='2'){
-        redirect(base_url().'Profile/search');
+        redirect(base_url().'Search');
        }
        else{
      		redirect(base_url().'Verify/index/error'); 	
