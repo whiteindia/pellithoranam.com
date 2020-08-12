@@ -317,7 +317,7 @@ $_SESSION['user_id']=$sess->user_id;
  
  <!--header-->
  
-    <div class="wed-reg-top-banner">
+    <div class="wed-reg-top-banner d-none d-md-block">
       <div class="container-fluid container-custom">
         <div class="row">
           <div class="col-md-3">
