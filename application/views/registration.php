@@ -319,6 +319,7 @@ $_SESSION['user_id']=$sess->user_id;
  
     <div class="wed-reg-top-banner">
       <div class="container-fluid container-custom">
+      <div class="mobile-hide">
         <div class="row">
           <div class="col-md-3">
             <div class="wed-reg-tick">
@@ -333,6 +334,8 @@ $_SESSION['user_id']=$sess->user_id;
               <h4>Pellithoranam is the most Trusted matrimony, Call up and connect with your prospects instantly</h4>
             </div>
           </div>
+        </div>
+
         </div>
       </div>
     </div>
