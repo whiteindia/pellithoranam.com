@@ -823,7 +823,7 @@ function show(input) {
             </div>
             <div>
             <span class="text-danger">if you are facing any problem in registration to start the regisatration process from first, click here </span>
-            <a class="btn btn-sm btn-danger custom-btn" href="<?php echo site_url('home/remove_member/'.$_SESSION['user_id']); ?>" onClick="return doconfirm()" title="Delete profile completely">
+            <a class="btn btn-sm btn-danger btn-lg custom-btn" href="<?php echo site_url('home/remove_member/'.$_SESSION['user_id']); ?>" onClick="return doconfirm()" title="Delete profile completely">
                               <i class="fa fa-fw fa fa-power-off"></i></a>
             </div>
           </div>
