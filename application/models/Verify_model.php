@@ -61,6 +61,7 @@ function check_otp($data){
          $query = $this->db->where('otp',$data['otp']);
          $query = $this->db->get('otp_details');
          if ($query->num_rows() > 0){
+
             $query = $this->db->where('otp_status','0');
              $query = $this->db->where('otp_user',$mat_id);
              $query = $this->db->where('otp',$data['otp']);
@@ -69,8 +70,18 @@ function check_otp($data){
              $this->db->where('matrimony_id',$mat_id);
              $this->db->update('profiles',array('is_phone_verified' => 1));
              $status='1';
-         }else{        
-              $status='0';
+         }else{  
+           
+          $query2 = $this->db->where('otp_status','1');
+          $query2 = $this->db->where('otp_user',$mat_id);
+          $query2 = $this->db->where('otp',$data['otp']);
+          $query2 = $this->db->get('otp_details');
+          if ($query2->num_rows() > 0){
+            $status='2';
+          }else{
+            $status='0';
+          }
+              
       } 
       return $status;
  }     
