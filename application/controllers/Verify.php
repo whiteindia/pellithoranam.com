@@ -459,7 +459,8 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
          // $this->sending_mail($from,$name,$email,$sub,$mailTemplate);
 
             $this->session->set_flashdata('message',array('message' => 'Mail Sent Successfully','class' => 'success'));
-    }
+            return "Data is updated successfully";
+          }
 public function update_account($data){
 
 $result = $this->Verify_model->update_account($data);
