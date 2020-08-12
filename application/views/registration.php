@@ -101,7 +101,7 @@ $_SESSION['user_id']=$sess->user_id;
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand wed-navbar-logo" href="<?php echo base_url();?>">
-                <img src="<?php echo $settings->logo; ?>">
+                <img src="<?php echo $settings->logo; ?>" width="50px">
               </a>
             </div>
           </div>
