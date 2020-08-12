@@ -1027,6 +1027,13 @@ $settings= get_setting();
       </div>
     </div>
   </div>
+  <?php 
+  if(isset($_SESSION['profileverified']==1)){
+    $this->verify->send_email_to_other_user();
+    $_SESSION['profileverified']==0;
+  }
+  
+  ?>
 
       <div class="modal fade wed-add-modal" id="reglog" role="dialog">
         <div class="modal-dialog wed-add-modal-dialogue">
