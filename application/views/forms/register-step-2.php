@@ -282,7 +282,7 @@
   background-color: blue;
 }
 </style>
-<div class="radio">  <!--wed-custom5-->
+<div class="wed-custom5">
    <input  id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
    <label for="nop">Visible to all</label>
    <input  id="ds" type="radio" name="profile_preference" value="1">
@@ -801,7 +801,7 @@ function show(input) {
                     <ul>
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
-                        <textarea class="wed-reg-textarea" id="about" rows="5" cols="50" name="about_you" required></textarea>
+                        <textarea class="wed-reg-textarea" id="about" rows="10" cols="100" name="about_you" required></textarea>
                         <p>( Min. 75 Characters )</p>
                       </li>
                       <li>
