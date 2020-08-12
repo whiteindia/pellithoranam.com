@@ -316,7 +316,7 @@ $_SESSION['user_id']=$sess->user_id;
     </nav>
  
  <!--header-->
- <div class="wed-reg-top-banner"></div>
+ 
  <!--   <div class="wed-reg-top-banner">
       <div class="container-fluid container-custom">
       <div class="mobile-hide">
