@@ -1031,10 +1031,7 @@ $settings= get_setting();
     </div>
   </div>
   <?php 
-  if(isset($_SESSION['profileverified']==1)){
-   // $this->Verify->send_email_to_other_user();
-    $_SESSION['profileverified']==0;
-  }
+  
   
   ?>
 
