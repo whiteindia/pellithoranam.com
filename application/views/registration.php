@@ -342,7 +342,7 @@ $_SESSION['user_id']=$sess->user_id;
 
     <!-- REGESTRATION-REGISTRATION-DETAILS -->
 
-    <div class="wed-reg-details">
+    <div class="wed-reg-details" style="padding-top:100px;">
       <div class="container container-custom">
 
 	  
