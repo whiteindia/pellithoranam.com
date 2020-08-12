@@ -1,8 +1,16 @@
-
+<?php 
+  if(isset($_SESSION['profileverified'])&&$_SESSION['profileverified']==1){
+   // $this->Verify->send_email_to_other_user();
+    $result= file_get_contents(base_url(verify/send_email_to_other_user));
+    echo '-----------'.$result;
+    $_SESSION['profileverified']==0;
+  }
+  
+  ?>
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 $session=$this->session->userdata('user_values');
 $settings= get_setting();
 ?>
@@ -1030,15 +1038,7 @@ $settings= get_setting();
       </div>
     </div>
   </div>
-  <?php 
-  if(isset($_SESSION['profileverified'])&&$_SESSION['profileverified']==1){
-   // $this->Verify->send_email_to_other_user();
-    $result= file_get_contents(base_url(verify/send_email_to_other_user));
-    echo '-----------'.$result;
-    $_SESSION['profileverified']==0;
-  }
-  
-  ?>
+
 
       <div class="modal fade wed-add-modal" id="reglog" role="dialog">
         <div class="modal-dialog wed-add-modal-dialogue">
