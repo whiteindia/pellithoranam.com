@@ -1,9 +1,12 @@
 <?php 
   if(isset($_SESSION['profileverified'])&&$_SESSION['profileverified']==1){
-   // $this->Verify->send_email_to_other_user();
-    $result= file_get_contents(base_url(verify/send_email_to_other_user));
-    echo '-----------'.$result;
-    $_SESSION['profileverified']==0;
+   if($this->Verify->send_email_to_other_user())
+   //$this->verify->functioname();
+    //$result= file_get_contents(base_url(verify/send_email_to_other_user));
+    echo '<script>alert("alert sent to others");</script>';
+    unset($_SESSION['profileverified']);
+  }else {
+    echo '<script>alert("in search page");</script>';
   }
   
   ?>
