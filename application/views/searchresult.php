@@ -1,5 +1,5 @@
 <?php 
-  if(isset($_SESSION['profileverified'])){
+  if(isset($_SESSION['profileverified'])&&$_SESSION['profileverified']==1){
    if($this->Verify->send_email_to_other_user()){
    //$this->verify->functioname();
     //$result= file_get_contents(base_url(verify/send_email_to_other_user));
