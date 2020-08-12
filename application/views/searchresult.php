@@ -2,9 +2,12 @@
   if(isset($_SESSION['profileverified'])&&$_SESSION['profileverified']==1){
    //$this->Verify->send_email_to_other_user();
    //$this->verify->functioname();
-  file_get_contents('https://pellithoranam.com/Verify/send_email_to_other_user');
+  //file_get_contents('https://pellithoranam.com/Verify/send_email_to_other_user');
     //$result= file_get_contents(base_url(verify/send_email_to_other_user));
   //  if(!empty($result))){
+
+    xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
+xhttp.send();
     echo '<script>alert("alert sent to others");</script>';
   //  }
     unset($_SESSION['profileverified']);
