@@ -6,9 +6,14 @@
     //$result= file_get_contents(base_url(verify/send_email_to_other_user));
   //  if(!empty($result))){
 
-    xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
-xhttp.send();
-    echo '<script>alert("alert sent to others");</script>';
+
+    echo '<script>if (confirm("Do you want send alert to others?") == true) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
+      xhttp.send();
+  } else {
+  
+  };</script>';
   //  }
     unset($_SESSION['profileverified']);
    
