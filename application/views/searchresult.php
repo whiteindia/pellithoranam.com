@@ -18,7 +18,7 @@
     unset($_SESSION['profileverified']);
    
   }else {
-    echo '<script>alert("in search page");</script>';
+   // echo '<script>alert("in search page");</script>';
   }
   
   ?>
