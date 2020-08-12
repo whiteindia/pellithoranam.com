@@ -322,7 +322,7 @@ $_SESSION['user_id']=$sess->user_id;
         <div class="row">
           <div class="col-md-3">
             <div class="wed-reg-tick">
-              <img src="<?php echo base_url(); ?>assets/img/tick-reg.png">
+              <img src="<?php echo base_url(); ?>assets/img/tick-reg.png" width="50%">
             </div>
           </div>
           <div class="col-md-9">
