@@ -316,8 +316,8 @@ $_SESSION['user_id']=$sess->user_id;
     </nav>
  
  <!--header-->
- 
-    <div class="wed-reg-top-banner">
+ <div class="wed-reg-top-banner"></div>
+ <!--   <div class="wed-reg-top-banner">
       <div class="container-fluid container-custom">
       <div class="mobile-hide">
         <div class="row">
@@ -330,7 +330,7 @@ $_SESSION['user_id']=$sess->user_id;
             <div class="wed-reg-banner-detail">
           <!--    <p>You have <strong>1800</strong> </p>
               <p>Matching Profiles based on your details</p>
-              <p>Completing this page will take you closer to your perfect match</p> -->
+              <p>Completing this page will take you closer to your perfect match</p> ->
               <h4>Pellithoranam is the most Trusted matrimony, Call up and connect with your prospects instantly</h4>
             </div>
           </div>
@@ -338,7 +338,7 @@ $_SESSION['user_id']=$sess->user_id;
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- REGESTRATION-REGISTRATION-DETAILS -->
 
