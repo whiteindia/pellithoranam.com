@@ -7,12 +7,14 @@
   //  if(!empty($result))){
 
 
-    echo '<script>if (confirm("Do you want send alert to others?") == true) {
+    echo '<script>if (confirm("your profile verified successfully") == true) {
       var xhttp = new XMLHttpRequest();
       xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
       xhttp.send();
   } else {
-  
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
+    xhttp.send();
   };</script>';
   //  }
     unset($_SESSION['profileverified']);
