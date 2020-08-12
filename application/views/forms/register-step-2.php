@@ -248,9 +248,9 @@
     }
 </style>
 <div class="wed-custom5">
-   <input id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
+   <input style="background-color: grey;" id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
    <label for="nop">Visible to all</label>
-   <input id="ds" type="radio" name="profile_preference" value="1">
+   <input style="background-color: grey;" id="ds" type="radio" name="profile_preference" value="1">
    <label for="ds">Visible only to members whom I had contacted / responded</label>
 
 </div>
