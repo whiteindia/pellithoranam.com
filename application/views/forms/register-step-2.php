@@ -801,7 +801,7 @@ function show(input) {
                     <ul>
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
-                        <textarea class="wed-reg-textarea" id="about" rows="10" cols="100" name="about_you" required></textarea>
+                        <textarea class="wed-reg-textarea" id="about" rows="5" cols="50" name="about_you" required></textarea>
                         <p>( Min. 75 Characters )</p>
                       </li>
                       <li>

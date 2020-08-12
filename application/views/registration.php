@@ -318,7 +318,7 @@ $_SESSION['user_id']=$sess->user_id;
  <!--header-->
  
     <div class="wed-reg-top-banner">
-      <div class="container container-custom">
+      <div class="container-fluid container-custom">
         <div class="row">
           <div class="col-md-3">
             <div class="wed-reg-tick">
