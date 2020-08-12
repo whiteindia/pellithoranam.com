@@ -705,7 +705,7 @@ function show(input) {
                        <div class="wed-reg-right-child2">
                             <div class="row1">
                               <span>
-                              <input type="text" class="wed-reg-input12 wed-reg-input" name="family_origin" id="family_origin" value="" required>
+                              <input type="text" size="50" class="wed-reg-input12 wed-reg-input" name="family_origin" id="family_origin" value="" required>
                               </span>
                           </div>
                          </div>
@@ -717,7 +717,7 @@ function show(input) {
                        <div class="wed-reg-right-child2">
                             <div class="row1">
                               <span>
-                              <input type="text" class="wed-reg-input12 wed-reg-input" name="family_location" id="family_location" value="" required>
+                              <input type="text" size="50" class="wed-reg-input12 wed-reg-input" name="family_location" id="family_location" value="" required>
                               </span>
                           </div>
                          </div>
