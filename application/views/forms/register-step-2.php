@@ -226,7 +226,7 @@
         top: -2px;
         left: -1px;
         position: relative;
-        background-color: #d1d3d1;
+        background-color: black;
         content: '';
         display: inline-block;
         visibility: visible;
@@ -240,7 +240,7 @@
         top: -2px;
         left: -1px;
         position: relative;
-        background-color: #ffa500;
+        background-color: red;
         content: '';
         display: inline-block;
         visibility: visible;
