@@ -246,11 +246,46 @@
         visibility: visible;
         border: 2px solid white;
     }
+
+    .radio input[type='radio'] {
+  display: none;
+  /*removes original button*/
+}
+
+.radio label:before {
+  /*styles outer circle*/
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid orange;
+  background-color: transparent;
+}
+
+.radio label {
+  position: relative;
+}
+
+.radio label input[type='radio']:checked+span {
+  /*styles inside circle*/
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  display: block;
+  background-color: blue;
+}
 </style>
-<div class="wed-custom5">
-   <input style="background-color: grey;" id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
+<div class="radio">  <!--wed-custom5-->
+   <input  id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
    <label for="nop">Visible to all</label>
-   <input style="background-color: grey;" id="ds" type="radio" name="profile_preference" value="1">
+   <input  id="ds" type="radio" name="profile_preference" value="1">
    <label for="ds">Visible only to members whom I had contacted / responded</label>
 
 </div>
@@ -766,7 +801,7 @@ function show(input) {
                     <ul>
                       <li>
                         <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
-                        <textarea class="wed-reg-textarea" id="about" rows="10" cols="100" name="about_you" required></textarea>
+                        <textarea class="wed-reg-textarea" id="about" rows="5" cols="50" name="about_you" required></textarea>
                         <p>( Min. 75 Characters )</p>
                       </li>
                       <li>
