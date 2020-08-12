@@ -772,7 +772,7 @@ function show(input) {
                        <div class="wed-reg-right-child1 paddingtop10">No: of brothers</div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <span> <input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" id="brothers" value="" required><small style="color:red; font-family: verdana;">[optional]</small></span>
+                              <span> <input type="number" size="50" class="wed-reg-input" min="0" max="50" placeholder="No: of brothers" name="brothers" id="brothers" value="" required><small style="color:red; font-family: verdana;">[optional]</small></span>
                           </div>
                          </div>
                        <div class="clearfix"></div>
@@ -781,7 +781,7 @@ function show(input) {
                        <div class="wed-reg-right-child1 paddingtop10">No: of sisters</div>
                        <div class="wed-reg-right-child2">
                             <div class="row1">
-                              <span><input type="number" class="wed-reg-input" min="0" max="50" placeholder="No: of sisters" name="sisters"  id="sisters" value="" required><small style="color:red; font-family: verdana;">[optional]</small></span>
+                              <span><input type="number" size="50" class="wed-reg-input" min="0" max="50" placeholder="No: of sisters" name="sisters"  id="sisters" value="" required><small style="color:red; font-family: verdana;">[optional]</small></span>
                           </div>
                          </div>
                        <div class="clearfix"></div>
