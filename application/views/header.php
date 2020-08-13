@@ -61,6 +61,21 @@ $settings = get_setting();//print_r($settings);die;
       .wed-about h2{color: #f4721c;}
       .wed-custom2 label:before{background-color: #f4721c;border: 2px solid #f4721c !important;}
 
+
+      /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+@media screen and (min-width: 600px) {
+  img.example {
+    width: 100%;
+  }
+}
+
+/* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  img.example {
+    width-size: 50%;
+  }
+}
+
     </style>
     <?php if ($sess)  { ?>
     <!--Start of Tawk.to Script-->
@@ -360,7 +375,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
                 <span class="icon-bar"></span>
               </button>
             <!--  <a class="navbar-brand wed-navbar-logo" href="<?php echo base_url();?>"></a>-->
-               <img src="<?php echo base_url();?>assets/logo/pellithoranam_logo.png" width="100%">
+               <img class="example" src="<?php echo base_url();?>assets/logo/pellithoranam_logo.png" >
               
             </div>
           </div>
