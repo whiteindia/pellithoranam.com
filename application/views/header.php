@@ -360,7 +360,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
                 <span class="icon-bar"></span>
               </button>
             <!--  <a class="navbar-brand wed-navbar-logo" href="<?php echo base_url();?>"></a>-->
-               <img src="<?php echo base_url();?>assets/logo/pellithoranam_logo.png" width="5%">
+               <img src="<?php echo base_url();?>assets/logo/pellithoranam_logo.png" width="50%">
               
             </div>
           </div>
