@@ -129,9 +129,9 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand wed-navbar-logo" href="<?php/* echo base_url();*/?>">
+              <!--<a class="navbar-brand wed-navbar-logo" href="<?php/* echo base_url();*/?>"></a>-->
                 <img src="<?php echo base_url();?>admin/assets/uploads/logo/pelli-thoranam.png">
-              </a>
+              
             </div>
           </div>
           <div class="col-md-9">
