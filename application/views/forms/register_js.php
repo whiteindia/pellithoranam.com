@@ -287,7 +287,7 @@
 	          changeMonth: true,
 	          changeYear: true,
 	          dateFormat: "yy-mm-dd",
-	          yearRange: "1970:2000"
+	          yearRange: "1960:2000"
 	      	});
 	      	$(".religion-selector").on('change', function () {
 		        var valueSelected = $(this).val();
