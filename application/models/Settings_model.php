@@ -38,6 +38,7 @@ class Settings_model extends CI_Model {
     //print_r($pass_data['new_password']); 
     //print_r($pass_data['conf_password']);           
       $qry_1 = $this->db->get_where('users', array('user_id'=>$usr->user_id)); // getting password of that user
+      $oldpass=$qry_1->result()[0]->password;
       $exist_pass = $this->encryption->decrypt($qry_1->result()[0]->password); // decoding pass  
   
   //   $exist_pass = $this->encrypt->decode($qry_1->result()[0]->password);
@@ -48,9 +49,9 @@ class Settings_model extends CI_Model {
   //  exit();
           //print_r($exist_pass); 
        //var_dump($pass_data['crnt_password']);die();   
-      
-      if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
-
+       $new_pass1 = $this->encryption->encrypt($pass_data['crnt_password']);
+      //if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
+        if($oldpass == $new_pass1) {
           if($pass_data['new_password'] != $exist_pass) {                      // checking new pass != db pass
               $new_pass = $this->encryption->encrypt($pass_data['new_password']);
               $this->db->where("user_id",$usr->user_id);
