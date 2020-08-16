@@ -48,7 +48,10 @@ class Settings_model extends CI_Model {
   //  exit();
           //print_r($exist_pass); 
        //var_dump($pass_data['crnt_password']);die();   
-      
+      echo 'current in db'.$exist_pass;
+      echo '<br>';
+      echo 'current in input'.$pass_data['crnt_password'];
+      exit();
       if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
 
           if($pass_data['new_password'] != $exist_pass) {                      // checking new pass != db pass
