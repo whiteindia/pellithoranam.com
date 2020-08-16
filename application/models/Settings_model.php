@@ -53,7 +53,8 @@ class Settings_model extends CI_Model {
        echo $oldpass;
        echo '---<br>*****';
        echo $new_pass1;
-       echo '<br>';
+       echo '<br>##';
+       echo $exist_pass;
        exit();
       //if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
         if($oldpass == $new_pass1) {
