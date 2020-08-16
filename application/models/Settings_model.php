@@ -49,7 +49,12 @@ class Settings_model extends CI_Model {
   //  exit();
           //print_r($exist_pass); 
        //var_dump($pass_data['crnt_password']);die();   
-       $new_pass1 = $this->encryption->encrypt($pass_data['crnt_password']);
+       $new_pass1 = $this->encryption->encrypt($pass_data['crnt_password']); 
+       echo $oldpass;
+       echo '---<br>*****';
+       echo $new_pass1;
+       echo '<br>';
+       exit();
       //if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
         if($oldpass == $new_pass1) {
           if($pass_data['new_password'] != $exist_pass) {                      // checking new pass != db pass
