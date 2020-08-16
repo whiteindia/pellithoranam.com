@@ -47,10 +47,15 @@ class Settings_model extends CI_Model {
    // echo '</pre>';
   //  exit();
           //print_r($exist_pass); 
-       //var_dump($pass_data['crnt_password']);die();   
       echo 'current in db'.$exist_pass;
       echo '<br>';
       echo 'current in input'.$pass_data['crnt_password'];
+
+      echo '<br>';
+       //var_dump($pass_data['crnt_password']);die(); ea842071b9ab38d3b2199728988e631565a960610441a5d6c53d97a14afb263ebe7e298fecb85d47ddc529234f1b4ca317f2da8a96a70f97fd810cef853aa571U2x5CMS4KduHlZmVd/UR8yuhKMvI+WUCJZGNgqMH3iU=  
+       //var_dump($pass_data['crnt_password']);die(); ea842071b9ab38d3b2199728988e631565a960610441a5d6c53d97a14afb263ebe7e298fecb85d47ddc529234f1b4ca317f2da8a96a70f97fd810cef853aa571U2x5CMS4KduHlZmVd/UR8yuhKMvI+WUCJZGNgqMH3iU=  
+      $exist_pass1 = $this->encryption->decrypt('ea842071b9ab38d3b2199728988e631565a960610441a5d6c53d97a14afb263ebe7e298fecb85d47ddc529234f1b4ca317f2da8a96a70f97fd810cef853aa571U2x5CMS4KduHlZmVd/UR8yuhKMvI+WUCJZGNgqMH3iU=');
+      echo 'current in db'.$exist_pass;
       exit();
       if($exist_pass == $pass_data['crnt_password']) { // checking db pass = current
 
