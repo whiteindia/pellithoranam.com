@@ -1000,7 +1000,7 @@ $settings= get_setting();
                     <?php } ?>
                     </a>
                 </div>
-                <?php echo $attr;?><small><?php echo ucwords(strtolower($candidate->profile_name));?></small></a>
+              <!---  <?php echo $attr;?><small><?php echo ucwords(strtolower($candidate->profile_name));?></small></a>-->
                 <?php echo $attr;?><p><?php echo $settings->id_prefix;?><?php echo $candidate->matrimony_id; ?></p></a>
                 <!--<span><img src="<?php echo base_url(); ?>assets/img/online.png">Online</span>-->
               </div>
