@@ -25,7 +25,7 @@
 					    "processing": true, //Feature control the processing indicator.
 					    "serverSide": true, //Feature control DataTables' server-side processing mode.
 					    "order": [], //Initial no order.
-					    "lengthMenu": [ [100, 10, 50, 200, 500, -1], [100, 10, 50, 200, 500, "All"] ],
+					    "lengthMenu": [ [20,1, 5, 10, 25, 50, -1], [20,1, 5, 10, 25, 50, "All"] ],
 					    "pageLength": 25,
 					    "pagingType": "full_numbers",
 					    "filter": false,
