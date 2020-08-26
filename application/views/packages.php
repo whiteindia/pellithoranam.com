@@ -217,8 +217,8 @@
                     <div class="wed-package-circle">
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
-                    <p>Discussion with prospective matches - 
-                      <?php echo $package->intrest_permonth; ?></p>
+                    <p>Discussion with prospective <?php echo $package->intrest_permonth; ?> matches
+                      </p>
                     <div class="clearfix"></div>
                   </li>
                    <?php } ?>
