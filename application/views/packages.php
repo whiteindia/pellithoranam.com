@@ -217,8 +217,8 @@
                     <div class="wed-package-circle">
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
-                    <p>View Social and Professional 
-                      <br>profile of members</p>
+                    <p>Discussion with prospective matches - 
+                      <?php echo $package->send_sms; ?></p>
                     <div class="clearfix"></div>
                   </li>
                    <?php } ?>

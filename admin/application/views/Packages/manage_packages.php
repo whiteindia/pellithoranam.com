@@ -154,7 +154,7 @@
                           <input type="radio" name="enhanced_privacy" value="0"> No
                         </div>  
                         <div class="form-group">
-                           <label for="exampleInputEmail1">View Social and Professional profile  </label><br>
+                           <label for="exampleInputEmail1">Discussion with prospective matches  </label><br>
                           <input type="radio" name="view_social_profiles" value="1" checked> Yes
                           <input type="radio" name="view_social_profiles" value="0"> No
                         </div> 
