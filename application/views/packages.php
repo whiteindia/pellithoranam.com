@@ -466,7 +466,7 @@
                 </ul>
 				<input type="hidden" name="packageid" id="packageid" >
                   <div class="wed-payment-row"  style="width:100%; float:left; text-align: center; margin-top: 25px;">
-                    <button class="wed-payment-process-btn" id="payment_btn" onclick="getId('razorpay')">Proceed</button>
+                    <button class="wed-payment-process-btn" id="payment_btn" onclick="getId('razorpay')">click here to Proceed</button>
 					
                   </div>
 				  <span id="payment_msg"></span>
