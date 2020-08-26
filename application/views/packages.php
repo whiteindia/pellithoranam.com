@@ -215,7 +215,7 @@
                     <div class="wed-package-circle">
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
-                    <p>Get instant notificationson<br> your mobile</p>
+                    <p>Get instant notifications to<br> your mobile</p>
                     <div class="clearfix"></div>
                   </li>
                     <?php } if($package->enhanced_privacy== '1') {?>
