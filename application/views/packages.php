@@ -119,6 +119,25 @@
                 <div class="wed-package-info">
                 <h6>Benefits of <?php echo $package->package_name;?> - <strong><?php echo $package->month;?> Months</strong></h6>
                 <ul>
+                <?php if($package->personal_relationship_manager== '1') {?>
+                     <li>
+                    <div class="wed-package-circle">
+                      <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
+                    </div>
+                    <p>Personal Relationship Manager:</p>
+                    <div class="clearfix"></div>
+                  </li>
+                    <?php } ?>
+                <?php if($package->view_social_profiles== '1') {?>
+                     <li>
+                    <div class="wed-package-circle">
+                      <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
+                    </div>
+                    <p>Discussion with prospective <?php echo $package->intrest_permonth; ?> matches
+                      </p>
+                    <div class="clearfix"></div>
+                  </li>
+                   <?php } ?>
                   <?php if($package->personalized_msg== '1') {?>
                   <li>
                     <div class="wed-package-circle">
@@ -163,15 +182,10 @@
                    
                     <div class="clearfix"></div>
                   </li>
-                    <?php } if($package->personal_relationship_manager== '1') {?>
-                     <li>
-                    <div class="wed-package-circle">
-                      <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
-                    </div>
-                    <p>Personal Relationship Manager:</p>
-                    <div class="clearfix"></div>
-                  </li>
-                    <?php } if($package->priority_search== '1') {?>
+                    <?php } ?>
+
+                    
+                    <?php if($package->priority_search== '1') {?>
                      <li>
                     <div class="wed-package-circle">
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
@@ -212,16 +226,8 @@
                     <p>Enhanced Privacy:Photo / Phone</p>
                     <div class="clearfix"></div>
                   </li>
-                   <?php } if($package->view_social_profiles== '1') {?>
-                     <li>
-                    <div class="wed-package-circle">
-                      <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
-                    </div>
-                    <p>Discussion with prospective <?php echo $package->intrest_permonth; ?> matches
-                      </p>
-                    <div class="clearfix"></div>
-                  </li>
                    <?php } ?>
+   
                      <li>
                     <div class="wed-package-circle">
                       <img src="<?php echo base_url(); ?>assets/img/more.png">
