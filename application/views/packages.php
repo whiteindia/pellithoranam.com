@@ -218,7 +218,7 @@
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
                     <p>Discussion with prospective matches - 
-                      <?php echo $package->send_sms; ?></p>
+                      <?php echo $package->intrest_permonth; ?></p>
                     <div class="clearfix"></div>
                   </li>
                    <?php } ?>
