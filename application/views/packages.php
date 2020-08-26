@@ -450,7 +450,7 @@
           <div class="col-md-8" id="uniqueID">
             <div class="wed-adon-payment-selection">
               <div class="wed-adon-payment-head">
-              Select Your Payment Option
+         <!--     Select Your Payment Option  -->
               </div>
               <div class="wed-adon-payment-details">
                 <ul  class="payment_option" style="width:100% !important;">
