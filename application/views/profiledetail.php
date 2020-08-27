@@ -1487,7 +1487,7 @@ $base_count = $qry1->row()->counts;
   */
 ?>
 
-                <button type='submit' id='send_forward_others' class='wed-view send_form_btn'>Send Message.</button>
+                <button type='submit' id='send_forward_others' class='wed-view send_form_btn bg-success text-danger '>Send Message.</button>
                     <?php 
                 /*    } else {
                       ?>
