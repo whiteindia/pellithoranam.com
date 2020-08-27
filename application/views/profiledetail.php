@@ -1479,18 +1479,21 @@ if(true)
                 <input type="hidden" name="forward_id" value="<?php echo $profile[0]->matrimony_id; ?>">
                 <input type="hidden" name="mail_from" value="<?php echo $sess->profile_name; ?>"> -->
 <?php 
-     $qry1 = $this->db->select("total_sms as counts")
+     $qry1 = $this->db->select("total_mobileview as counts")
      ->get_where('membership_details',array('matrimony_id' => $profile[0]->matrimony_id));
 $base_count = $qry1->row()->counts;
-if($base_count>0 )
+/*if($base_count>0 )
 {  //total_sendmail
+  */
 ?>
 
                 <button type='submit' id='send_forward_others' class='wed-view send_form_btn'>Send Message.</button>
-                    <?php } else {?>
+                    <?php 
+                /*    } else {
+                      ?>
 <button class="btn btn-danger btn-lg" disabled>please update your package.</button>
 
-              <?php      }
+              <?php      }*/
                     ?>
               </div>
               </form>
