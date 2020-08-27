@@ -1643,8 +1643,8 @@ $(document).on("click","#send_request_btns",function() {
 $(document).on("click","#send_forward",function(e) {
     e.preventDefault();
     var mc = $(this).closest("form").find("[name='mail_content']").val();
-    if(mc.length>130){
-      alert("Maximum Length of sms is 130");
+    if(mc.length>180){
+      alert("Maximum Length of sms is 180");
       return false;
     }
     var value =$("#send_sms_form").serialize();
