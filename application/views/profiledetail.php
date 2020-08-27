@@ -201,6 +201,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             else{
                               $used=1;
                               //  if
+                              $alreadyviewed=0;
                               $total_mobileview=0;
                             }
                              ?>
@@ -286,6 +287,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             else{
                               $used=1;
                               //  if
+                              $alreadyviewed=0;
                               $total_mobileview=0;
                             }
                              ?>
