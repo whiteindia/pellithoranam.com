@@ -21,9 +21,6 @@ class Profile extends CI_Controller {
 	}*/
 
 	public function profile_details($matr_id = 0) {
-		ini_set('display_errors', 1);
-		ini_set('display_startup_errors', 1);
-		error_reporting(E_ALL);
 	if(($this->session->userdata('logged_in')) || ($this->session->userdata('logged_in_admin'))) {
 		if($matr_id) {
 			// var_dump($matr_id);
@@ -1122,43 +1119,18 @@ public function upload_photo() {
 
 
 	public function send_mail() {
-//	ini_set('display_errors', 1);
-//		ini_set('display_startup_errors', 1);
-//		error_reporting(E_ALL);
+		ini_set('display_errors', 1);
+		ini_set('display_startup_errors', 1);
+		error_reporting(E_ALL);
 
 		if($this->session->userdata('logged_in')) {
 			if($_POST) {
-		//	$my_matr_id = $this->session->userdata('logged_in');
+			$my_matr_id = $this->session->userdata('logged_in');
 			$td_date = date('Y-m-d H:i:s', time());
 
-/** new logic for pakackage integration */
-$my_matr_id = $this->session->userdata('logged_in');
-$mat_id=$my_matr_id->matrimony_id;
-//	if($_POST) {
-  $datas = $_POST;
-  $to_id=$datas['mail_to'];
-  $data['mobileview_from']=$mat_id;
-  $data['mobileview_to']=$datas['mail_to'];
-  $is_zero = $this->Profile_model->CheckMobile($mat_id);
+			$intrst_count = $this->Profile_model->CheckCount($my_matr_id->matrimony_id,"mail_from","profile_mails","total_sendmail");
+			if($intrst_count>0) {
 
-  if($is_zero['status'] = "success") {
-		  $intrst_count['status'] = "success";
-  } else {
-	//	  $intrst_count = $this->Profile_model->CheckCount($my_matr_id->matrimony_id,"mobileview_from","mobile_view","total_mobileview");
-  }
-
-
-
-
-
-
-/*** */
-
-
-
-	//		$intrst_count = $this->Profile_model->CheckCount($my_matr_id->matrimony_id,"mail_from","profile_mails","total_sendmail");
-			if($intrst_count['status'] == "success") {
-				$result = $this->Profile_model->add_mobileview($data);
 				$ins_arr_3 = array("mail_from" => $my_matr_id->matrimony_id,
 								   "mail_to" => $_POST['mail_to'],
 								   "mail_content" => $_POST['mail_content'],
@@ -1654,33 +1626,13 @@ border-bottom-left-radius:5px;border-bottom-right-radius:20px;font-family: "Robo
 		$sms_contnet = $_POST['mail_content'];
 		$number = "+91".$_POST['mob_num'];
 		//$number = "+919966337383";
-	//	print_r($_POST);
-	//	exit();
 		$result_array = array();
 //new logic
 $qry1 = $this->db->select("total_sms as counts")
 ->get_where('membership_details',array('matrimony_id' => $my_matr_id->matrimony_id));
 $base_count = $qry1->row()->counts;
 //new 
-
-/** new logic for pakackage integration */
-$my_matr_id = $this->session->userdata('logged_in');
-$mat_id=$my_matr_id->matrimony_id;
-//	if($_POST) {
-  $datas = $_POST;
-  $to_id=$datas['to_id'];
-  $data['mobileview_from']=$mat_id;
-  $data['mobileview_to']=$datas['to_id'];
-  $is_zero = $this->Profile_model->CheckMobile($mat_id);
-
-  if($is_zero['status'] = "success") {
-		  $intrst_count['status'] = "success";
-  } else {
-	//	  $intrst_count = $this->Profile_model->CheckCount($my_matr_id->matrimony_id,"mobileview_from","mobile_view","total_mobileview");
-  }
-
-  if($intrst_count['status'] == "success") {
-	$result = $this->Profile_model->add_mobileview($data);
+if($base_count>0){
 		$rcal=$this->sent_mobile_msg($number,$sms_contnet);
 		$my_matr_id = $this->session->userdata('logged_in');
 		$do_delete_sent_mail = $this->Profile_model->do_delete_sent_sms($my_matr_id->matrimony_id);

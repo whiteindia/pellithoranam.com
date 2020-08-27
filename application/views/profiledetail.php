@@ -177,7 +177,9 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             </li>
           </div>
 
-          <div class="wed-profile-pic-log-detail">
+          <div class="wed-profile-pic-log-detail bg-success">
+         <ul> <li class="text-danger">
+                  <h3>Contact Details</h3></li></ul>
           <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
                          //   echo '  from'.$this->session->userdata('logged_in')->matrimony_id;
                         //    echo '  to'.$profile[0]->matrimony_id;
@@ -253,9 +255,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
          </div>
      
              <!--<h5>Last Login: <strong><?php //echo get_days_count($profile[0]->matrimony_id); ?></strong></h5>-->
-			 <?php if($logintime) { ?>
-			  <h5>Last Login: <strong><?php echo $logintime->date_time; echo '-'.$membership->total_sendmail;?></strong></h5>
-			  <?php } ?>
+		
 			  
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
     <?php 
@@ -266,13 +266,54 @@ echo  '--totalmv'.$membership->total_mobileview; */
       
       ?>
     
-    <!--	-->
+    <!--	maill new logic-->
+     
+    <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
+        //      echo 'in mail-1<br>';
+
+                            $query = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
+                        
+                            $query = $this->db->get('mobile_view'); 
+                             $used=$query->num_rows();
+
+                             $query1 = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
+                              $query1 = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
+                               $query1 = $this->db->get('mobile_view'); 
+                                $alreadyviewed=$query1->num_rows();
+                                $total_mobileview=$membership->total_mobileview;
+   
+                            }
+                            else{
+                              $used=1;
+                              //  if
+                              $total_mobileview=0;
+                            }
+                             ?>
+                    
+                       <?php
+
+              /*         echo '<br>already viewed'.$alreadyviewed;
+                       echo '<br>total_mobileview'.$total_mobileview;
+                       echo '<br>used'.$used;*/
+                    //   exit();
+                            if($alreadyviewed){
+                              ?>
+                          		  <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
+                              <?php } else if($total_mobileview>$used){ ?>    
+                                <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
+                              <?php } else {?>
+                                <input type="button"  class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
+                                         <?php } ?>
+
+
+
+
       
-      	<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
+  <!--	<?php if(!empty($membership)) { if($membership->total_sendmail == 0) { ?>
 					  <input type="button"  class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
 					  <?php } else { ?>
 					  <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
-					  <?php } } ?>  
+					  <?php } } ?>  -->
 					  <?php if(!empty($membership)) { ?>
 					<input type="button"   class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
 				   <?php } ?>
@@ -287,7 +328,9 @@ echo  '--totalmv'.$membership->total_mobileview; */
             <input type="button" class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
            <?php } ?>
 		    <?php } ?>
-		   
+        <?php if($logintime) { ?>
+			  <h5>Last Login: <strong><?php echo $logintime->date_time; echo '-'.$membership->total_sendmail;?></strong></h5>
+			  <?php } ?>
             </div>
           </div>
           </div>
@@ -570,7 +613,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                
 			<div class="clearfix"></div>
 			
-			<li class="contact">
+	<!--		<li class="contact">
                   <h3>Contact Details</h3>
                  
                     <ul class="wed-personel-main-ul">
@@ -580,7 +623,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             <div class="child1">Contact Number</div>
                             <div class="child2">:</div>
                             <div class="child3">
-                           <!-- --> <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
+                            <?php if(!empty($membership) && $membership->total_mobileview>0) {// echo $membership->total_mobileview.':mv';
                          //   echo '  from'.$this->session->userdata('logged_in')->matrimony_id;
                         //    echo '  to'.$profile[0]->matrimony_id;
                             $query = $this->db->where('mobileview_from',$this->session->userdata('logged_in')->matrimony_id);
@@ -599,7 +642,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                             
                                 <?php if(!$this->session->userdata('logged_in_admin')) {
                                  if($total_mobileview>$used) { ?><strong><span data-toggle="modal" data-target="#view_mob" style="cursor: pointer;">View Number</span></strong><?php } else {?><strong>Locked</strong><?php } ?>
-                              <?php } else {  ?> <strong>Locked</strong> <?php } ?><!--<strong>Locked</strong> </div> -->
+                              <?php } else {  ?> <strong>Locked</strong> <?php } ?><!--<strong>Locked</strong> </div> ->
                             <div class="clearfix"></div>
                           </li>
                           <li class="wed-personel-sec-li">
@@ -617,13 +660,13 @@ echo  '--totalmv'.$membership->total_mobileview; */
                           <li class="wed-personel-sec-li">
                             <div class="child1">Send Mail</div>
                             <div class="child2">:</div>
-                            <div class="child3"><?php if(!empty($membership) && $membership->total_sendmail>0){?>
+                            <div class="child3"><?php if(!empty($membership) && $membership->total_mobileview>0){?>
 <strong><span proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' style="cursor: pointer;" data-target='#send_mail'>Click Send</span></strong>
                             <?php } else {?><strong>Locked</strong><?php } ?></div>
                             <div class="clearfix"></div>
                           </li>
                         </ul>
-                        <!--<button class="wed-btn-view">View More Details</button> -->
+                        <!--<button class="wed-btn-view">View More Details</button> ->
                       </li>
                        <?php if(!$this->session->userdata('logged_in_admin')) {
                      if($membership->membership_package==1){?>
@@ -635,7 +678,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                     </ul>
                     <div class="clearfix"></div>
                     <hr>
-                </li>
+                </li> -->
 <!-- RELIGION-INFORMATION -->
 
                 <li class="religion">
@@ -1390,15 +1433,18 @@ echo  '--totalmv'.$membership->total_mobileview; */
                                             $usedm=$querym->num_rows();
 
 
-if($membership->total_sendmail> $usedm)
+if(true)
 { 
    //total_sendmail
 ?>
                 <button type='button' matr_id="<?php echo $profile[0]->matrimony_id; ?>" proc_name="<?php echo $profile[0]->profile_name;?>" id='send_form_btns' class='wed-view send_form_btn'>Send Mail</button>
-                <?php } else {?>
+                <?php } 
+          /*      else {
+                  ?>
 <button class="btn btn-danger btn-lg" disabled> you have exceeded limit. please update your package.</button>
 
-              <?php      }
+              <?php     
+               }  */
                     ?>
               </div>
               </form>
