@@ -334,7 +334,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
 
 
               <?php if(!empty($membership)) { ?>
-            <input type="button" class="wed-ques-yes" value="Forward" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
+            <input type="button" class="wed-ques-yes" value="Forward  to others" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#forward'/>
            <?php } ?>
 		    <?php/* } */?>
         <?php if($logintime) { ?>
@@ -943,7 +943,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
               <div class="wed-forward">
                 <span><img src="<?php echo base_url(); ?>assets/img/forward.png"></span>
                 &nbsp;
-                <span>Forward to others</span>
+                <span>Forward</span>
                   &nbsp;&nbsp;&nbsp;
                 <span><img src="<?php echo base_url(); ?>assets/img/print.png"></span>
                 &nbsp;
