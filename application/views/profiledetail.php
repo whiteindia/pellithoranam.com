@@ -331,7 +331,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
            <?php } ?>
 		    <?php } ?>
         <?php if($logintime) { ?>
-			  <h5>Last Login: <strong><?php echo $logintime->date_time; echo '-'.$membership->total_sendmail;?></strong></h5>
+			  <h5>Last Login: <strong><?php echo $logintime->date_time; echo '-'.$membership->total_mobileview;?></strong></h5>
 			  <?php } ?>
             </div>
           </div>
