@@ -264,7 +264,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
                                   //  $query = $this->db->where('mobileview_to',$profile[0]->matrimony_id); 
                                     $querym = $this->db->get('profile_mails'); 
                                      $usedm=$querym->num_rows();
-        echo 'in mail-1<br>';
+    //    echo 'in mail-1<br>';
       ?>
     
     <!--	maill new logic-->
