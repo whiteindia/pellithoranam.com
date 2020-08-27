@@ -257,7 +257,7 @@ echo  '--totalmv'.$membership->total_mobileview; */
      
              <!--<h5>Last Login: <strong><?php //echo get_days_count($profile[0]->matrimony_id); ?></strong></h5>-->
 		
-			  
+			  <?php echo 'membership'; ?>
 			  <?php if($this->session->userdata('logged_in_admin') || $this->session->userdata('logged_in')->matrimony_id==$profile[0]->matrimony_id ){ ?>
     <?php 
                                   $querym = $this->db->where('mail_from',$this->session->userdata('logged_in')->matrimony_id);
