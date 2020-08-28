@@ -148,7 +148,7 @@
                 <li>
                   <div class="wed-member-child1">Total Profile access </div>
                   <div class="wed-member-child2">:</div>
-                  <div class="wed-member-child3"><?php echo $data->total_mobileview;?></div>
+                  <div class="wed-member-child3"><?php echo $mobileview_count_total;?></div>
                   <div class="clearfix"></div>
                 </li>
                 <li>
