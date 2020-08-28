@@ -141,25 +141,25 @@
               <ul>
                 <div class="wed-member-head">
                   <div class="wed-member-circle"><img src="<?php echo base_url();?>assets/img/m2.png"></div>
-                  <h4>MOBILE NUMBER COUNT</h4>
+                  <h4>Profile access information</h4>
                   <div class="clearfix"></div>
                 </div>
                 <br>
                 <li>
-                  <div class="wed-member-child1">Total Count</div>
+                  <div class="wed-member-child1">Total Profile access </div>
                   <div class="wed-member-child2">:</div>
                   <div class="wed-member-child3"><?php echo $data->total_mobileview;?></div>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <div class="wed-member-child1">Count Left</div>
+                  <div class="wed-member-child1"> Profile accessed till now</div>
                   <div class="wed-member-child2">:</div>
-                  <div class="wed-member-child3"><?php echo $mobileview_count; ?></div>
+                  <div class="wed-member-child3"><?php echo $mobileview_count_used; ?></div>
                   <div class="clearfix"></div>
                 </li>
               </ul>
               <br>
-              <ul>
+          <!--    <ul>
                 <div class="wed-member-head">
                   <div class="wed-member-circle"><img src="<?php echo base_url();?>assets/img/m3.png"></div>
                   <h4>SMS COUNT </h4>
@@ -180,7 +180,7 @@
                 
                   <div class="clearfix"></div>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
