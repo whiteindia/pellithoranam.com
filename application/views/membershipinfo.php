@@ -15,7 +15,7 @@
                 <li>
                   <div class="wed-member-child1">Matrimony ID</div>
                   <div class="wed-member-child2">:</div>
-                  <div class="wed-member-child3">T<?php echo $data->matrimony_id;?></div>
+                  <div class="wed-member-child3">PT<?php echo $this->session->userdata('logged_in')->matrimony_id; ?></div>
                   <div class="clearfix"></div>
                 </li>
                  <?php if($data->membership_package==1){?>
