@@ -21,9 +21,9 @@ class Profile extends CI_Controller {
 	}*/
 
 	public function profile_details($matr_id = 0) {
-		ini_set('display_errors', 1);
-		ini_set('display_startup_errors', 1);
-		error_reporting(E_ALL);
+	//	ini_set('display_errors', 1);
+	//	ini_set('display_startup_errors', 1);
+	//	error_reporting(E_ALL);
 	if(($this->session->userdata('logged_in')) || ($this->session->userdata('logged_in_admin'))) {
 		if($matr_id) {
 			// var_dump($matr_id);
