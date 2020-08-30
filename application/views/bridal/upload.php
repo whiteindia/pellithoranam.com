@@ -34,9 +34,16 @@
 }
 </script>
 <div class="container register-form">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">BRIDAL COLLECTION UPLOAD</h1>
+    <p class="lead"><img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" height="20%" id="icon" alt="User Icon" /></p>
+  </div>
+</div>
+
             <div class="form">
                 <div class="note">
-                <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" height="10%" id="icon" alt="User Icon" />
+                
                 </div>
                 
                 <div class="col-md-12">
@@ -132,7 +139,7 @@ $row=$query->result();
   </tbody>
 </table>
 
-
+<br><br><br><br><br><br><br><br><br>
 
 
 
