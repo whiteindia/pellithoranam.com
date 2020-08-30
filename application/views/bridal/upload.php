@@ -36,8 +36,8 @@
 <div class="container register-form">
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h4 class="display-4">BRIDAL COLLECTION UPLOAD</h4>
-    <p class="lead"><img style="  display: block;   margin-left: auto;   margin-right: auto;   width: 50%;" src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" height="15%" id="icon" alt="User Icon" /></p>
+   
+    <p class="lead"><img style="  display: block;   margin-left: auto;   margin-right: auto;   width: 40%;" src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" height="15%" id="icon" alt="User Icon" /></p>
   </div>
 </div>
 
