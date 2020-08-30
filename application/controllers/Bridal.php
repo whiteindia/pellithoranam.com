@@ -35,6 +35,14 @@ error_reporting(E_ALL);*/
             $this->load->view('bridal/login');
         }
     }
+
+public function logout() {
+    $data=array();
+   // unset($_SESSION["id"]);
+unset($_SESSION);
+header("Location:login.php");
+    $this->load->view('bridal/login', $data);
+}
     public function upload() {
         $data=array();
         $this->load->view('bridal/upload', $data);

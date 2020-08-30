@@ -38,7 +38,7 @@
                 <div class="note">
                 <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" height="10%" id="icon" alt="User Icon" />
                 </div>
-
+                <a href="<?php echo base_url(); ?>bridal/login" class="btn btn-danger btn-lg active pull-right" role="button" aria-pressed="true">Primary link</a>
                 <div class="col-md-12">
             <!-- general form elements -->
             <div class="box box-warning">
