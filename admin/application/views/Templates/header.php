@@ -203,6 +203,7 @@ $settings = get_settings();
           <ul class="treeview-menu">
            <li><a href="<?php echo base_url(); ?>Packages/view_packages"><i class="fa fa-circle-o text-yellow"></i> Add Packages</a></li>
           <li><a href="<?php echo base_url(); ?>Packages/view_manage_packages"><i class="fa fa-circle-o text-yellow"></i>Packages Details</a></li>
+          <li><a href="<?php echo base_url(); ?>bridal/add_uploader"><i class="fa fa-circle-o text-yellow"></i> Add Uploader</a></li>
          </ul>
        </li>
        <?php } ?>
