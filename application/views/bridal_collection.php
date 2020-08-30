@@ -5,12 +5,21 @@
 			<div id="p-flex">
 				<?php if($bridal_collection): ?>
 				<?php foreach($bridal_collection as $bc): ?>
+				<?php 
+					$this->db->where('bridaluser', $username);
+					$query1 = $this->db->get('bridalusers'); 
+					//$count=$query1->num_rows();
+					$row=$query1->row();
+
+					?>
 			    <div class="p-flex">
 			    	<div class="p-flex-in" style="text-align: center;">
 			        	<img class="p-img" src="<?php echo base_url()."assets/uploads/bridal/".$bc->img;?>"/>
-			        	<div class="p-name"><?php echo $bc->title;?></div>
+			        	<div class="p-name"><?php echo $bc->title;?>  </div>
+						<div class="p-name"><?= $bc->id; ?><?= $bc->bridalcode; ?><?= $bc->serialno; ?> </div>
 			       		<!-- <div class="p-price"></div> -->
 			        	<div class="p-desc"><?php echo $bc->short_desc;?></div>
+						<div class="p-name"><?php echo $row->contact;?>  </div>
 			        	<!-- <button class="p-add">Add to Cart</button> -->
 			      	</div>
 			  	</div>
