@@ -6,7 +6,7 @@
 				<?php if($bridal_collection): ?>
 				<?php foreach($bridal_collection as $bc): ?>
 				<?php 
-					$this->db->where('bridalcode', $$bc->bridalcode);
+					$this->db->where('bridalcode', $bc->bridalcode);
 					$query1 = $this->db->get('bridalusers'); 
 					//$count=$query1->num_rows();
 					$row=$query1->row();
