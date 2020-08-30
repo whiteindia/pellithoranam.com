@@ -45,7 +45,10 @@
                <div class="box-header with-border">
                   <h3 class="box-title">Add Collection</h3>
                </div>
-               <a href="<?php echo base_url(); ?>bridal/login" class="btn btn-danger btn-lg active pull-right" role="button" aria-pressed="true">Logout</a>
+               <div class="pull-right"> 
+               <a href="<?php echo base_url(); ?>bridal/login" class="btn btn-danger btn-lg active pull-right" role="button" aria-pressed="true">Logout</a> 
+      </div> 
+              
                <!-- /.box-header -->
                <!-- form start -->
 			         <form role="form" action="<?php echo base_url(); ?>bridal/add_collection" method="post" data-parsley-validate class="validate" enctype="multipart/form-data">
