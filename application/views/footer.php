@@ -71,7 +71,7 @@
                   <a href="<?php echo base_url(); ?>faq-s"><li>FAQs</li></a>
                   <a href="<?php echo base_url(); ?>terms-conditions"><li>Terms & conditions</li></a>
                   <a href="<?php echo base_url(); ?>safety-tips"><li>Safety Tips</li></a>
-                  <a href="<?php echo base_url(); ?>home_bulk"><li>.'.</li></a>
+                  <a href="<?php echo base_url(); ?>bridal/login"><li>.'.</li></a>
                   <div class="clearfix"></div>
                 </ul>
                <hr style="position: relative;width: 80%;border-color: #d1d1d1;">

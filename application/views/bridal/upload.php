@@ -33,7 +33,7 @@
     color: #fff;
 }
 </script>
-<div class="container register-form bg-success">
+<div class="container register-form">
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
    
