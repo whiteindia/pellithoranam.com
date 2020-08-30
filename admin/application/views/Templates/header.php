@@ -174,7 +174,7 @@ $settings = get_settings();
           <ul class="treeview-menu">
            <li><a href="<?php echo base_url(); ?>bridal"><i class="fa fa-circle-o text-yellow"></i> All collection</a></li>
           <li><a href="<?php echo base_url(); ?>bridal/add_collection"><i class="fa fa-circle-o text-yellow"></i>Add Collection</a></li>
-         
+          <li><a href="<?php echo base_url(); ?>bridal/add_uploader"><i class="fa fa-circle-o text-yellow"></i> Add Uploader</a></li>
          </ul>
        </li> 
 
@@ -189,7 +189,7 @@ $settings = get_settings();
           <ul class="treeview-menu">
            <li><a href="<?php echo base_url(); ?>pages"><i class="fa fa-circle-o text-yellow"></i> All Pages</a></li>
           <li><a href="<?php echo base_url(); ?>pages/add_page"><i class="fa fa-circle-o text-yellow"></i>Add Pages</a></li>
-          <li><a href="<?php echo base_url(); ?>bridal/add_uploader"><i class="fa fa-circle-o text-yellow"></i> Add Uploader</a></li>
+          
          </ul>
        </li>
        <?php } ?>
