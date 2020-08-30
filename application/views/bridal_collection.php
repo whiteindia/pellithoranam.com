@@ -15,11 +15,11 @@
 			    <div class="p-flex">
 			    	<div class="p-flex-in" style="text-align: center;">
 			        	<img class="p-img" src="<?php echo base_url()."assets/uploads/bridal/".$bc->img;?>"/>
-			        	<div class="p-name">Product Name<?php echo $bc->title;?>  </div>
-						<div class="p-name">Product code : <?= $bc->id; ?><?= $bc->bridalcode; ?><?= $bc->serialno; ?> </div>
+			        	<div class="p-name"><span class="text-danger">Product Name :</span> <?php echo $bc->title;?>  </div>
+						<div class="p-name"><span class="text-danger">Product code :</span> <?= $bc->id; ?><?= $bc->bridalcode; ?><?= $bc->serialno; ?> </div>
 			       		<!-- <div class="p-price"></div> -->
-			        	<div class="p-desc">Description: <?php echo $bc->short_desc;?></div>
-						<div class="p-name">Contact: <?php echo $row->contact;?>  </div>
+			        	<div class="p-desc"><span class="text-danger">Description:</span> <?php echo $bc->short_desc;?></div>
+						<div class="p-name"><span class="text-danger">Contact: </span> <?php echo $row->contact;?>  </div>
 			        	<!-- <button class="p-add">Add to Cart</button> -->
 			      	</div>
 			  	</div>
