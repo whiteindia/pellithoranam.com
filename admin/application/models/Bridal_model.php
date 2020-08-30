@@ -12,7 +12,11 @@ class Bridal_model extends CI_Model {
 		      return $result;
      }
 	
-
+     public function  add_uploader($data){
+        $data['password']=md5($data['password']);
+                $result = $this->db->insert('bridalusers', $data);
+                return $result;
+        }
  
 	 public function delete_collection($id){
 		$this->db->where('id', $id);
