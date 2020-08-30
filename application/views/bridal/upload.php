@@ -38,13 +38,14 @@
                 <div class="note">
                 <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" height="10%" id="icon" alt="User Icon" />
                 </div>
-                <a href="<?php echo base_url(); ?>bridal/login" class="btn btn-danger btn-lg active pull-right" role="button" aria-pressed="true">Primary link</a>
+                
                 <div class="col-md-12">
             <!-- general form elements -->
             <div class="box box-warning">
                <div class="box-header with-border">
                   <h3 class="box-title">Add Collection</h3>
                </div>
+               <a href="<?php echo base_url(); ?>bridal/login" class="btn btn-danger btn-lg active pull-right" role="button" aria-pressed="true">Logout</a>
                <!-- /.box-header -->
                <!-- form start -->
 			         <form role="form" action="<?php echo base_url(); ?>bridal/add_collection" method="post" data-parsley-validate class="validate" enctype="multipart/form-data">
