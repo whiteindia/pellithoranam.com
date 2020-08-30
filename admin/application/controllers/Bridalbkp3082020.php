@@ -233,48 +233,5 @@ class Bridal extends CI_Controller
     }
     
 
-
-    //to add Package
-    function add_uploader()
-    {
-        $settings        = get_settings();
-        $header['title'] = $settings->title . " | Add Uploader";
-        if ($_POST) {
-            $data = $_POST;
-          //  $files = $_FILES;
-            //$upload_image=$this->_do_upload($files);
-         /*   if (array_key_exists('error', $upload_image)) {
-                echo $upload_image['error'];
-                $this->session->set_flashdata('message', array(
-                    'message' => $upload_image['error'],
-                    'class' => 'error'
-                ));
-
-                redirect(base_url() . 'bridal/add_collection');
-                exit;
-            }else{
-                //print_r($upload_image);
-                 $data['img']=$upload_image['upload_data']['file_name'];
-            }  */
-            //echo "<pre>";print_r($data);echo "</pre>";exit;
-            $result = $this->bridal_model->add_uploader($data);
-            if ($result) {
-                $this->session->set_flashdata('message', array(
-                    'message' => 'Add uploader successfully',
-                    'class' => 'success'
-                ));
-            } else {
-                $this->session->set_flashdata('message', array(
-                    'message' => 'Error',
-                    'class' => 'error'
-                ));
-            }
-            redirect(base_url() . 'bridal');
-        }
-        $this->load->view('Templates/header', $header);
-        $this->load->view('bridal/add_uploader');
-        $this->load->view('Templates/footer');
-    }
-
 }
 ?>
