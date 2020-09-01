@@ -454,7 +454,7 @@ function show(input) {
   <option value="<?php echo (int)$i*(int)$k; ?>"> <?= $i; ?> lakh</option>
 <?php }?>
 </datalist>
-<small class="text-danger">[you can select or enter the income]</small>
+<small style="color:red;">[you can select or enter the income]</small>
                             
                             
                             <div class="row1">
