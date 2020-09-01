@@ -446,7 +446,17 @@ function show(input) {
                               <?php } ?>  
                               
                             </select></span>
-                            <span><input id="income" type="number" name="income" placeholder="enter income" required></span>  <!-- class="wed-reg-input12"   -->
+                       <!--     <span><input id="income" type="number" name="income" placeholder="enter income" required></span>  <!-- class="wed-reg-input12"   ->
+                                   <span><input id="income" list="browsers" type="number" name="income" placeholder="enter income" required></span> 
+                            <datalist  style="display: visible;" id="browsers">
+   <!-- <option value="500000">-->
+<?php $k=100000; for($i=1;$i<=100;$i++){ ?>
+  <option value="<?php echo (int)$i*(int)$k; ?>"> <?= $i; ?> lakh</option>
+<?php }?>
+</datalist>
+<small>[you can select or enter the income]</small>
+                            
+                            
                             <div class="row1">
                               <div class="wed-custom5">
                             <!--   <input id="mon" type="radio" name="income_per"  value="1" required>
