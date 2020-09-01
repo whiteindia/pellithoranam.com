@@ -173,7 +173,29 @@ if(($sess->matrimony_id==$profile[0]->matrimony_id) || ($sess->gender!=$profile[
             <?php echo $profile[0]->occupation;?>
             </li>
             <li><span><img src="<?php echo base_url(); ?>assets/img/salary.png"></span>
-            <?php echo ceil($profile[0]->income);?> INR
+            <!--<?php echo ceil($profile[0]->income);?> -->
+            <?php $val1=ceil($profile[0]->income);
+        if($val1>=10000000){
+            $val1=$val1/10000000;
+            $val1=$val1.'Crore';
+            echo $val1;
+      }else if($val1>=100000){
+        $val1=$val1/100000;
+        $val1=$val1.'Lakhs';
+        echo $val1;
+      }
+      else if($val1>=1000){
+        $val1=$val1/1000;
+        $val1=$val1.'Thousands';
+        echo $val1;
+      }else{
+        echo $val1;
+      }
+            
+            
+            
+            ?>
+            INR
             </li>
           </div>
 
