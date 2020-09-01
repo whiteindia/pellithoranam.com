@@ -12,7 +12,7 @@
                 <form method="post" action="<?php echo base_url();?>home/submit_registration_details" id="reg_detail_form" enctype="multipart/form-data">
                   <ul>
                     <li>
-                      <div class="wed-reg-right-child1">Maritial Status</div>
+                      <div class="wed-reg-right-child1">Marital Status</div>
               <!--        <div class="wed-reg-right-child2">
                         <div class="wed-custom5">
                             <input id="nm" type="radio" name="maritial_status" checked="checked" value="1">
@@ -41,7 +41,7 @@
                     </li>
                    
                     <li>
-                      <div class="wed-reg-right-child1 paddingtop10">Mother's Maden Name </div>
+                      <div class="wed-reg-right-child1 paddingtop10">Mother's Maiden Name </div>
                       <div class="wed-reg-right-child2">
                           <div class="row1">
                             <span><input class="wed-reg-input12 reg_input" type="text" name="mothers_maiden_name" id="mothers_maiden_name"><small style="color:red; font-family: verdana;">[optional]</small></span>
@@ -811,7 +811,7 @@ function show(input) {
                     <hr>
                     <ul>
                       <li>
-                        <p>Write about your Personality, Family Background, Education, Proffession and Hobbies</p>
+                        <p>Write about your Personality, Family Background, Education, Profession and Hobbies</p>
                         <textarea class="wed-reg-textarea" id="about" rows="5" cols="50" name="about_you" required></textarea>
                         <p>( Min. 75 Characters )</p>
                       </li>
