@@ -616,7 +616,15 @@ $settings= get_setting();
                                   <option value="100001-500000">1 - 5 Lakh</option>
                                   <option value="500001-1000000">5 - 10 Lakh</option>
                                   <option value="1000001-2000000">10 - 20 Lakh</option>
-                                  <option value="2000001 above">Above 20 Lakh</option>
+                                  <option value="2000001-3000000">20 - 30 Lakh</option>
+                                  <option value="3000001-4000000">30 - 40 Lakh</option>
+                                  <option value="4000001-5000000">40 - 50 Lakh</option>
+                                  <option value="5000001-6000000">50 - 60 Lakh</option>
+                                  <option value="6000001-7000000">60 - 70 Lakh</option>
+                                  <option value="7000001-8000000">70 - 80 Lakh</option>
+                                  <option value="8000001-9000000">80 - 90 Lakh</option>
+                                  <option value="9000001-10000000">90 - 100 Lakh</option>
+                                  <option value="10000001-1000000001">Above 1 crore</option>
                             </select>
                             </li>
                               <button class="wed-btn-view1" type="submit" my_drop="income">Submit</button>
