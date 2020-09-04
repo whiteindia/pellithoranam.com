@@ -164,7 +164,7 @@
                     </div>
                     <p>Send SMS
                     <?php if($package->package_name=="DIAMOND") { $amount=60; echo '. Total Matches access:'.$amount;}
-                    else if($package->package_name=="TILL U   MARRY") { $amount=120;  echo '.Total Matches access: '.$amount;}
+                    else if($package->id==29) { $amount=120;  echo '.Total Matches access: '.$amount;}
                     ?>
                     </p>
                     <div class="clearfix"></div>
