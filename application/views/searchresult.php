@@ -9,11 +9,11 @@
 
     echo '<script>if (confirm("your profile verified successfully") == true) {
       var xhttp = new XMLHttpRequest();
-      xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
+      xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", false);
       xhttp.send();
   } else {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", true);
+    xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", false);
     xhttp.send();
   };</script>';
   //  }
