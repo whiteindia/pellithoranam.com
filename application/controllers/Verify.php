@@ -323,6 +323,7 @@ class Verify extends CI_Controller {
       $info=json_decode(json_encode($info));
     //  ('email'=>'info@pellithoranam.com');
     $this->sendMailNow($info);
+    echo 'mail sent';
       $age = $basic->age;
 /*
       if($basic->gender== "male") { 
@@ -345,6 +346,7 @@ $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching you
      //  echo $candidate->age.'<br>';
 
       }
+      echo 'msg sent';
      // echo $msg;
      // exit();
       // echo '<pre>';print_r($my_matr_id);
