@@ -134,8 +134,8 @@
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
                     <p>Discussion with prospective <?php echo $package->intrest_permonth; ?> matches 
-                    <?php if($package->amount==3000) { $amount=60; echo 'per month. Total '.$amount;}
-                    else if($package->amount==5000) { $amount=120;  echo 'per month. Total '.$amount;}
+                    <?php if($package->price==3000) { $amount=60; echo 'per month. Total '.$amount;}
+                    else if($package->price==5000) { $amount=120;  echo 'per month. Total '.$amount;}
                     ?>
                       </p>
                     <div class="clearfix"></div>
