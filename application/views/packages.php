@@ -134,9 +134,7 @@
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
                     <p>Discussion with prospective <?php echo $package->intrest_permonth; ?> matches 
-                    <?php if($package->price==3000) { $amount=60; echo 'per month. Total '.$amount;}
-                    else if($package->price==5000) { $amount=120;  echo 'per month. Total '.$amount;}
-                    ?>
+                
                       </p>
                     <div class="clearfix"></div>
                   </li>
@@ -164,7 +162,11 @@
                     <div class="wed-package-circle">
                       <img src="<?php echo base_url(); ?>assets/img/chat-proces.png">
                     </div>
-                    <p>Send SMS</p>
+                    <p>Send SMS
+                    <?php if($package->package_name=="DIAMOND") { $amount=60; echo '. Total Matches '.$amount;}
+                    else if($package->package_name=="") { $amount=120;  echo '.Total Matches '.$amount;}
+                    ?>
+                    </p>
                     <div class="clearfix"></div>
                   </li>
                     <?php } if($package->chat_instantly== '1') {?>
