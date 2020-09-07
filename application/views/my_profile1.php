@@ -891,7 +891,7 @@
             <ul id="prof_preference_ul">
                 <li class="wed-detail-left border-right1">
                   <div class="wed-detail-head">
-                    <h5>Preference Details</h5>
+                    <h5>Partner Preference Details</h5>
                     <div class="wed-detail-edit" id="prof_preference_edit_btn">
                       edit
                     </div>
@@ -2204,7 +2204,7 @@ else {
   <form method="post" id="prefernce_form">
     <li class="wed-detail-left border-right1">
       <div class="wed-detail-head">
-        <h5>Profile Preferences Details : </h5>
+        <h5>Partner Preferences Details : </h5>
         <div class="wed-detail-edit no_backurl">
           <button type='submit' class="wed-go edit_prefernce_btn">Save</button>
         </div>
@@ -2468,7 +2468,7 @@ else {
                  <div class="wed-reg-right-child1 paddingtop10">Star</div>
                  <div class="wed-reg-right-child2">
                      <div class="row1">
-                       <select class="wed-reg-select" name="star">
+                       <select class="wed-reg-select" multiple="multiple" name="star[]">
                           <option value="0">Option</option>
                           <?php foreach($stars as $star) { ?>
                               <option value="<?php echo $star->star_id; ?>" <?php if($horroscope_info->star_id==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
