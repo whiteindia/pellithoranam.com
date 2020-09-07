@@ -731,7 +731,56 @@ public function remove_member() {
 	  redirect(base_url());
 //	} else { redirect(base_url()); } 
 }
+public function update_preference() {
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+	if($this->session->userdata('logged_in')) {
+		if($_POST) { 
+			$i = 0; $educations =""; $occupations=""; $states=""; $countries="";
+			$my_matr_id = $this->session->userdata('logged_in');
+			$td_date = date('Y-m-d H:i:s', time());
+			$_POST['profile_id'] = $my_matr_id->matrimony_id;
+			$_POST['preference_date'] = $td_date;
+			if(isset($_POST['education'])) {
+				 $_POST['education'] = implode(',', $_POST['education']);
+			}
+			if(isset($_POST['occupation'])) {
+				$_POST['occupation'] = implode(',', $_POST['occupation']);
+			}
+			if(isset($_POST['state'])) {
+				$_POST['state'] = implode(',', $_POST['state']);
+			}
+			
+			if(isset($_POST['country'])) {
+				$_POST['country'] = implode(',', $_POST['country']);
+			}
 
+			if(isset($_POST['caste'])) {
+				$_POST['caste'] = implode(',', $_POST['caste']);
+			}
+			
+			/*$_POST['education'] = $educations;
+			$_POST['occupation'] = $occupations;
+			$_POST['state'] = $states;
+			$_POST['country'] = $countries;
+			unset($_POST['cnty']);
+			unset($_POST['stat']);
+			unset($_POST['edu']);
+			unset($_POST['ocu']);*/
+		if(isset($_POST['maritial_status'])){	$_POST['maritial_status'] = implode(',', $_POST['maritial_status']);}
+		if(isset($_POST['physical_status'])){		$_POST['physical_status'] = implode(',', $_POST['physical_status']);}
+			if(isset($_POST['eating_habit'])){	$_POST['eating_habit'] = implode(',', $_POST['eating_habit']);}
+				if(isset($_POST['drinking_habit'])){	$_POST['drinking_habit'] = implode(',', $_POST['drinking_habit']);}
+					if(isset($_POST['smoking_habit'])){	$_POST['smoking_habit'] = implode(',', $_POST['smoking_habit']);}
+
+
+			$result = $this->Profile_model->insert_update_preference($_POST,$my_matr_id->matrimony_id);
+			echo $result;
+		} 
+	} 	
+
+}
 
 }
 ?>
