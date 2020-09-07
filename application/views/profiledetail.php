@@ -322,11 +322,11 @@ echo  '--totalmv'.$membership->total_mobileview; */
                     //   exit();
                             if($alreadyviewed){
                               ?>
-                          		  <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
+                          		  <input type="button"  class="wed-ques-yes" value="Send personal message" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
                               <?php } else if($total_mobileview>$used){ ?>    
-                                <input type="button"  class="wed-ques-yes" value="Send Mail" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
+                                <input type="button"  class="wed-ques-yes" value="Send personal message" proc_name="<?php echo $profile[0]->profile_name; ?>" matr_id="<?php echo $profile[0]->matrimony_id; ?>" data-toggle='modal' data-target='#send_mail'/>
                               <?php } else {?>
-                                <input type="button"  class="wed-ques-yes" value="Send Mail" data-toggle='modal' data-target='#no_send'/>
+                                <input type="button"  class="wed-ques-yes" value="Send personal message" data-toggle='modal' data-target='#no_send'/>
                                          <?php } ?>
 
 

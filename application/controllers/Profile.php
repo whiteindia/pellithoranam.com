@@ -2031,6 +2031,68 @@ $mat_id=$my_matr_id->matrimony_id;
 	
 	 public function notification_count() {
 		$result = $this->Profile_model->notification_count();
-    }
+	}
+	
+	public function my_profile1() {
+		if($this->session->userdata('logged_in')) {
+			$my_matr_id = $this->session->userdata('logged_in');
+			if($my_matr_id) {
+				$whr = array();
+				$whr1= array();
+				$whr1[]  = "religion_id = '".$my_matr_id->religion."'";
+				$header['title'] = "Profile Details | TCM".$my_matr_id->matrimony_id;
+				$data['profile'] = $this->Profile_model->get_profile_details($my_matr_id->matrimony_id,$whr)[0];
+				//print_r($data['profile']); die;
+				/*$prefs = $this->Profile_model->get_partner_preference($my_matr_id->matrimony_id,"");
+				if(!empty($prefs)){
+					$data['prefernce'] = $this->getDataPreference($prefs);	
+				}*/
+				$prefs = $this->Profile_model->get_partner_preference($my_matr_id->matrimony_id,"");
+			    //$prefs1 = $this->Profile_model->get_partner_preference1($matr_id,"");
+			   /* var_dump($prefs1);
+			    die();*/
+				if(!empty($prefs)){
+					$data['prefernce'] = $this->getDataPreference($prefs);	
+				}/*if(!empty($prefs1)){
+					$data['prefernce1'] = $this->getDataPreference($prefs);	
+				}*/
+				$data['horroscope_info'] = $this->Profile_model->getHorroscope_info($my_matr_id->matrimony_id)[0];
+				// echo "<pre>";
+				// print_r($data['horroscope_info']);
+				// echo "</pre>";
+				// exit;
+				$whr_r[]  = "religion_status = '1'";
+				$data['religions'] = $this->Home_model->getTable("",$whr_r,"religions");
+				$data['castes'] = $this->Home_model->getTable("","","castes");
+				$data['mother_tongue'] = $this->Home_model->getMotherTongues();
+            	$data['stars'] = $this->Home_model->getTable("","","stars");
+            	$data['raasi'] = $this->Home_model->getTable("","","raasi");
+            	$whr_e[]  = "education_status = '1'";
+            	$data['educations'] = $this->Home_model->getTable("",$whr_e,"educations");
+            	$whr_c[]  = "country_status = '1'";
+				$data['country'] = $this->Home_model->getTable("",$whr_c,"country");
+				$where3[] = "state_status = '1'";
+			$data['states'] = $this->Home_model->getTable("",$where3,"states");
+			$data['currencies'] = $this->Home_model->getCurrency();
+            	$whr_o[]  = "occupation_status = '1'";
+            	$data['occupations'] = $this->Home_model->getTable("",$whr_o,"occupations");
+            	$data['heights'] = $this->Home_model->getTable("","","height");
+            	$data['weights'] = $this->Home_model->getTable("","","weight");
+				$this->load->view('header', $header);
+				$data['data']=$this->Profile_model->hobbies_details($my_matr_id->matrimony_id);//print_r($data['data']);die;
+				$data['profile_complete']=$this->Profile_model->profile_complete();
+				$data['employed_in']=$this->Profile_model->employed_in();
+				/*var_dump($data['employed_in']);
+				die();*/
+				$data['horroscope_info'] = $this->db->where('matrimony_id',$my_matr_id->matrimony_id)->get('profiles')->row();
+				$data['membershipinfo']=$this->Profile_model->membershipinfo();
+				$this->load->view('my_profile1',$data);
+				$this->load->view('footer');
+			} else { echo "Profile Not Found"; }
+		} else { redirect(base_url()); }
+	}
+
+
+
                              
 }
