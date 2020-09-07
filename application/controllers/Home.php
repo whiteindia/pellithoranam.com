@@ -759,6 +759,9 @@ public function update_preference() {
 			if(isset($_POST['caste'])) {
 				$_POST['caste'] = implode(',', $_POST['caste']);
 			}
+			if(isset($_POST['star'])) {
+				$_POST['star'] = implode(',', $_POST['star']);
+			}
 			
 			/*$_POST['education'] = $educations;
 			$_POST['occupation'] = $occupations;

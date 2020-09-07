@@ -544,7 +544,7 @@
                     <div class="clearfix"></div>
                   </li>
                    <?php if($profile->is_premium==1){?>
-                  <li>
+             <!--     <li>
                     <div class="child1">
                       Parish
                     </div>
@@ -569,7 +569,7 @@
             					} else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
-                  </li>
+                  </li>  -->
                   <?php } ?>
                 </ul>
               </li>
@@ -1278,7 +1278,7 @@
         <div class="clearfix"></div>
       </li>
       <?php if($profile->is_premium==1){?>
-      <li>
+   <!--   <li>
         <div class="child1">
          Parish
         </div>
@@ -1303,7 +1303,7 @@
          <input type="text" class="wed-reg-input" name="parish_village" value="<?php echo $profile->parish_village;?>">
         </div>
         <div class="clearfix"></div>
-      </li>
+      </li>  -->
       <?php } ?>
     </ul>
   </li>
