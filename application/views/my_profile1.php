@@ -577,6 +577,203 @@
               </li>
               <div class="clearfix"></div>
             </ul>
+
+<!--HORROSCOPE START----->
+
+ <!---horoscope details start--->
+ <div class="wed-row">
+            <ul id="prof_horoscope_ul">
+                <li class="wed-detail-left border-right1">
+                  <div class="wed-detail-head">
+                    <h5>Horoscope Details</h5>
+                    <div class="wed-detail-edit" id="prof_horoscope_edit_btn">
+                      edit
+                    </div>
+                    <?php 
+                       $preferences = $this->db->where('profile_id',$profile->matrimony_id)->get('preferences')->row();
+                       $horroscope_info = $this->db->where('matrimony_id',$profile->matrimony_id)->get('profiles')->row();   
+                        ?>
+                    <div class="clearfix"></div>
+                  </div>
+                <ul class="wed-inside-detail">
+                  <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->gothram;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->star_name;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->padam;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Have Dosham?
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                      <?php 
+                      switch ($horroscope_info->dosham) {
+                        case '1':
+                          echo "No";
+                          break;
+                        case '2':
+                          echo "Yes";
+                          break;
+                          default:
+                          echo "Don't Know.";
+                          break;
+                      }
+                      ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+              <!--    <li>
+                    <div class="child1">
+                    Horoscope File
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                       <?php if($horroscope_info->horo_img!=""):?>
+                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
+                      <?php endif?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>  -->
+                </ul>
+              </li>
+  
+          </div>
+
+
+          <!---horroscope details end--->
+		  
+		  
+		  
+		  
+		  <!---horoscope edit start---->
+<ul id="prof_horoscope_edit_btn" style="display: none;">
+  <form method="post" id="prefernce_form">
+    <li class="wed-detail-left border-right1">
+      <div class="wed-detail-head">
+        <h5>Horoscope Details : </h5>
+        <div class="wed-detail-edit no_backurl">
+          <button type='submit' class="wed-go edit_horoscope_btn">Save</button>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <ul class="wed-inside-detail">
+                  <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
+                 <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
+                    </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Star</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="star">
+                          <option value="0">Option</option>
+                          <?php foreach($stars as $star) { ?>
+                              <option value="<?php echo $star->star_id; ?>" <?php if($horroscope_info->star_id==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
+                          <?php } ?>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Padam</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="padam">
+                          <option value="0">Option</option>
+                          <option value="1 Padam" <?php if($horroscope_info->padam=="1 Padam") echo 'selected="SELECTED"'; ?>>1 Padam</option>
+                          <option value="2 Padam" <?php if($horroscope_info->padam=="2 Padam") echo 'selected="SELECTED"'; ?>>2 Padam</option>
+                          <option value="3 Padam" <?php if($horroscope_info->padam=="3 Padam") echo 'selected="SELECTED"'; ?>>3 Padam</option>
+                          <option value="4 Padam" <?php if($horroscope_info->padam=="4 Padam") echo 'selected="SELECTED"'; ?>>4 Padam</option>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1">Have Dosham?</div>
+                 <div class="wed-reg-right-child2">
+                   <div class="wed-custom5">
+                       <input id="nm12" type="radio" name="dosham" value="1" <?php if($horroscope_info->dosham=="1") echo 'checked="checked"'; ?>>
+                       <label for="nm12">No</label>
+                       <input id="dvsd12" type="radio" name="dosham" value="2" <?php if($horroscope_info->dosham=="2") echo 'checked="checked"'; ?>>
+                       <label for="dvsd12">Yes</label>
+                       <input id="wd45" type="radio" name="dosham" value="3" <?php if($horroscope_info->dosham=="3") echo 'checked="checked"'; ?>>
+                       <label for="wd45">Don't Know</label>
+                   </div>
+                 </div>
+                 <div class="clearfix"></div>
+               </li>
+               
+               
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Upload horoscope</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <span><input class="wed-reg-input12 reg_input" type="file" name="horo_img" id="horo_img"></span>
+                    
+                       <?php if($horroscope_info->horo_img!=""):?>
+                           <br>
+                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
+                      <?php endif?>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+                    
+               
+
+      </ul>
+    </li>
+
+    <div class="clearfix"></div>
+    </form>
+  </ul>
+
+<!---horoscope edit end---->
+
+
+
+
+<!--HOROSCOPE END------->
+
+
           </div>
 
           <!-- PROFESSIONAL-INFORMATION -->
