@@ -470,6 +470,80 @@
                       </div>
                       <div class="clearfix"></div>
                     </li>
+                    <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->gothram;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->star_name;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->padam;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Have Dosham?
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                      <?php 
+                      switch ($horroscope_info->dosham) {
+                        case '1':
+                          echo "No";
+                          break;
+                        case '2':
+                          echo "Yes";
+                          break;
+                          default:
+                          echo "Don't Know.";
+                          break;
+                      }
+                      ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Horoscope File
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                       <?php if($horroscope_info->horo_img!=""):?>
+                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
+                      <?php endif?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+
+
+
+
+
                    <!--  <li>
                       <div class="child1">
                         Star / Raasi
@@ -543,6 +617,11 @@
                     </div>
                     <div class="clearfix"></div>
                   </li>
+
+
+
+
+
                    <?php if($profile->is_premium==1){?>
             <!--      <li>
                     <div class="child1">
@@ -2197,7 +2276,99 @@ else {
     <div class="clearfix"></div>
     </form>
   </ul>
+<!---horrowscope details start----->
 
+<ul>
+              <li class="wed-detail-left border-right1">
+                <div class="wed-detail-head">
+                  <h5>Horoscope Details</h5>
+                  <a href="<?php echo base_url();?>profile/partner_preference">
+                    <div class="wed-detail-edit">
+                      edit
+                    </div>
+                  </a>
+                  <div class="clearfix"></div>
+                </div>
+                <ul class="wed-inside-detail">
+                  <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->gothram;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->star_name;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->padam;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Have Dosham?
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                      <?php 
+                      switch ($horroscope_info->dosham) {
+                        case '1':
+                          echo "No";
+                          break;
+                        case '2':
+                          echo "Yes";
+                          break;
+                          default:
+                          echo "Don't Know.";
+                          break;
+                      }
+                      ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Horoscope File
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                       <?php if($horroscope_info->horo_img!=""):?>
+                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
+                      <?php endif?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                </ul>
+              </li>
+              <li class="wed-detail-left">
+                
+                
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+
+<!---horroscope details end------>
 <!---HOme edit end---->
 <!---HOme edit start---->
 <ul id="prof_preference_edit" style="display: none;">
@@ -2471,7 +2642,7 @@ else {
                        <select class="wed-reg-select" multiple="multiple" name="star[]">
                           <option value="0">Option</option>
                           <?php foreach($stars as $star) { ?>
-                              <option value="<?php echo $star->star_id; ?>" <?php if($horroscope_info->star_id==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
+                              <option value="<?php echo $star->star_id; ?>" <?php if($preferences->star==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
                           <?php } ?>                  
                        </select>
                      </div>
@@ -2548,13 +2719,13 @@ else {
                           <option value="1000000" <?php if($preferences->max_income=="1000000") echo 'selected="SELECTED"'; ?>>10,00,000</option>
                           <option value="1000001" <?php if($preferences->max_income=="1000001") echo 'selected="SELECTED"'; ?>>10,00,000 &amp; Above</option>
                         </select>
-                        <span><select class="wed-reg-select1 cst-select-1" cst-attr="currency" cst-for="city" id="currency-selector" name="income_currency">
+                  <!--      <span><select class="wed-reg-select1 cst-select-1" cst-attr="currency" cst-for="city" id="currency-selector" name="income_currency">
 
                           <?php foreach($currencies as $currency) { ?>
                               <option value="<?php echo $currency->symbol.' - '.$currency->code; ?>" <?php if($preferences->income_currency==$currency->symbol.' - '.$currency->code) echo 'selected="SELECTED"'; ?>><?php echo $currency->symbol.' - '.$currency->code; ?></option>
                           <?php } ?>  
                           
-                        </select></span>
+                        </select></span> -->
                       </div>
                     </div>
                   <div class="clearfix"></div>
