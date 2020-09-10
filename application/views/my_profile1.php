@@ -3167,6 +3167,32 @@ $(document).ready(function(){
       return false;
       //}
     });
+
+
+    $(document).on("click",".edit_horoscope_btn",function() {
+      event.preventDefault();
+      //if($('#edit_form').parsley().validate()) {
+      var value =$("#horoscope_form").serialize();
+      console.log(value);
+      $.ajax({
+        type: "POST",
+        url: base_url+'Home/update_horoscope',
+        data: value,
+        error: function (err) {
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+        },
+        success: function(data) {
+          console.log(data);
+          alert("Updated Successfully!");
+          //location.reload();
+          window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+        }
+      });
+      return false;
+      //}
+    });
+
+
     $(document).on("click",".edit_prefernce_btn",function() {
       event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
