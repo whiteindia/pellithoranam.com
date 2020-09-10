@@ -9,6 +9,12 @@
         $(document).ready(function () {
             $("#test").CreateMultiCheckBox({ width: '230px', defaultText : 'Select Below', height:'250px' });
         });
+        $(document).ready(function () {
+            $("#test1").CreateMultiCheckBox({ width: '230px', defaultText : 'Select Below', height:'250px' });
+        });
+        $(document).ready(function () {
+            $("#test2").CreateMultiCheckBox({ width: '230px', defaultText : 'Select Below', height:'250px' });
+        });
     </script>
     <style>
     .MultiCheckBox {
@@ -2612,7 +2618,7 @@ else {
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
 
-                        <select class="wed-reg-select" name="maritial_status[]" id="maritial_status" multiple required>
+                        <select id="test1" name="maritial_status[]" id="maritial_status" multiple required>
                        <!-- <option value="">select</option>-->
                                 <option value="1">Never Married</option>
                                 <option value="2">Divorced</option>
@@ -2888,7 +2894,7 @@ else {
                  <div class="wed-reg-right-child2">
                      <div class="row1">
                        <select id="test" prof_preference_edit_btnmultiple="multiple" name="star[]">  <!----->
-                          <option value="0">Option</option>
+                          <option  value="0">none</option>
                           <?php foreach($stars as $star) { ?>
                               <option value="<?php echo $star->star_id; ?>" <?php if($preferences->star==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
                           <?php } ?>                  
