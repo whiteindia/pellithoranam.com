@@ -888,6 +888,113 @@
     </form>
   </ul>
 
+ <!---horoscope start--->
+ <div class="wed-row">
+            <ul id="prof_horoscope_ul">
+                <li class="wed-detail-left border-right1">
+                  <div class="wed-detail-head">
+                    <h5> Horoscope Details</h5>
+                    <div class="wed-detail-edit" id="prof_horoscope_edit_btn">
+                      edit
+                    </div>
+                    <?php 
+                       $preferences = $this->db->where('profile_id',$profile->matrimony_id)->get('preferences')->row();
+                       $horroscope_info = $this->db->where('matrimony_id',$profile->matrimony_id)->get('profiles')->row();   
+                        ?>
+                    <div class="clearfix"></div>
+                  </div>
+                  <ul class="wed-inside-detail">
+
+                  </ul>
+              </li>
+              <li class="wed-detail-left">
+                <div class="wed-space1">
+                </div>
+                <ul class="wed-inside-detail">
+
+
+
+
+           <!--   -->     <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if($preferences->gothram) {  
+        					  print_r($preferences->gothram);
+        					   } else {?> - <?php } ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li> 
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if($preferences->star_id){
+                      $preferences->star_id=explode (",",$preferences->star_id);
+                      ?>
+<?php foreach($stars as $star) { ?>
+<?php if(is_array($preferences->star_id)){
+if(in_array($star->star_id,$preferences->star_id)) echo $star->star_name; 
+}
+else {
+
+  if($star->star_id==$preferences->star_id) echo $star->star_name;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+
+
+
+                 <!--   <?php if($horroscope_info->star_id) {  
+        					  print_r($horroscope_info->star_id);
+        					   } else {?> - <?php } ?>  -->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+         <!--  -->       <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                <?php    if(isset($horroscope_info->padam)) {
+                        //    echo $preferences->smoking_habit;
+                            if($horroscope_info->padam==0){echo '-';}
+                            if($horroscope_info->padam==1){echo 'padam 1';}
+if($horroscope_info->padam==2){echo 'padam 2';}
+if($horroscope_info->padam==3){echo 'padam 3';}
+if($horroscope_info->padam==4){echo 'padam 4';}
+
+                          } else { echo '-';} ?>
+
+
+
+              <!--      <?php if($preferences->star_id) {  
+        					  print_r($preferences->star_id);
+        					   } else {?> - <?php } ?>-->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>   
+
+                </ul>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+
+
+          <!---horoscope end--->
 
 
  <!---family details start--->
@@ -2201,11 +2308,83 @@ else {
     <div class="clearfix"></div>
     </form>
   </ul>
-<!---horrowscope details start----->
+
+<!---HOme horoscope start---->
+<ul id="prof_horoscope_edit" style="display: none;">
+  <form method="post" id="horoscope_form">
+    <li class="wed-detail-left border-right1">
+      <div class="wed-detail-head">
+        <h5>horoscope  Details : </h5>
+        <div class="wed-detail-edit no_backurl">
+          <button type='submit' class="wed-go edit_horoscope_btn">Save</button>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <ul class="wed-inside-detail">
+
+
+ 
 
 
 
-<!---horroscope details end------>
+
+
+
+
+      </ul>
+    </li>
+    <li class="wed-detail-left">
+      <div class="wed-space1">
+      </div>
+      <ul class="wed-inside-detail">
+
+
+
+
+
+
+    <!---->  <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
+                 <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
+                    </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li> 
+     <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Padam</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="padam">
+                          <option value="0">Option</option>
+                          <option value="1 Padam" <?php if($horroscope_info->padam=="1 Padam") echo 'selected="SELECTED"'; ?>>1 Padam</option>
+                          <option value="2 Padam" <?php if($horroscope_info->padam=="2 Padam") echo 'selected="SELECTED"'; ?>>2 Padam</option>
+                          <option value="3 Padam" <?php if($horroscope_info->padam=="3 Padam") echo 'selected="SELECTED"'; ?>>3 Padam</option>
+                          <option value="4 Padam" <?php if($horroscope_info->padam=="4 Padam") echo 'selected="SELECTED"'; ?>>4 Padam</option>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li> 
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </li>
+    <div class="clearfix"></div>
+    </form>
+  </ul>
+
+<!---HOme horoscope start---->
 <!---HOme edit end---->
 <!---HOme edit start---->
 <ul id="prof_preference_edit" style="display: none;">
