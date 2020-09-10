@@ -2363,7 +2363,7 @@ else {
                  <div class="wed-reg-right-child1 paddingtop10">Star</div>
                  <div class="wed-reg-right-child2">
                      <div class="row1">
-                       <select class="wed-reg-select" name="star">
+                       <select class="wed-reg-select" name="star_id">
                           <option value="0">Option</option>
                           <?php foreach($stars as $star) { ?>
                               <option value="<?php echo $star->star_id; ?>" <?php if($horroscope_info->star_id==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
