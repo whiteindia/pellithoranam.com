@@ -115,7 +115,7 @@ $row=$query->result();
  ?>
 
 <h4>uploaded images</h4>
-<table class="table table-sm table-dark">
+<table class="table table-sm table-striped">
   <thead>
     <tr>
       <th scope="col">#code</th>
