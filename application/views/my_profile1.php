@@ -2908,6 +2908,16 @@ else {
                           <option value="250000" <?php if($preferences->min_income=="250000") echo 'selected="SELECTED"'; ?>>2,50,000</option>
                           <option value="500000" <?php if($preferences->min_income=="500000") echo 'selected="SELECTED"'; ?>>5,00,000</option>
                           <option value="1000000" <?php if($preferences->min_income=="1000000") echo 'selected="SELECTED"'; ?>>10,00,000</option>
+                          <option value="2000000" <?php if($preferences->min_income=="2000000") echo 'selected="SELECTED"'; ?>>20,00,000</option>
+                          <option value="3000000" <?php if($preferences->min_income=="3000000") echo 'selected="SELECTED"'; ?>>30,00,000</option>
+                          <option value="4000000" <?php if($preferences->min_income=="4000000") echo 'selected="SELECTED"'; ?>>40,00,000</option>
+                          <option value="5000000" <?php if($preferences->min_income=="5000000") echo 'selected="SELECTED"'; ?>>50,00,000</option>
+                          <option value="6000000" <?php if($preferences->min_income=="6000000") echo 'selected="SELECTED"'; ?>>60,00,000</option>
+                          <option value="7000000" <?php if($preferences->min_income=="7000000") echo 'selected="SELECTED"'; ?>>70,00,000</option>
+                          <option value="8000000" <?php if($preferences->min_income=="8000000") echo 'selected="SELECTED"'; ?>>80,00,000</option>
+                          <option value="9000000" <?php if($preferences->min_income=="9000000") echo 'selected="SELECTED"'; ?>>90,00,000</option>
+                          <option value="10000000" <?php if($preferences->min_income=="10000000") echo 'selected="SELECTED"'; ?>>1,00,00,000</option>
+              
                         </select>
                         <select class="wed-reg-select" name="max_income">
                           <option disabled value="0">MAX</option>
@@ -2917,8 +2927,16 @@ else {
                           <option value="250000" <?php if($preferences->max_income=="250000") echo 'selected="SELECTED"'; ?>>2,50,000</option>
                           <option value="500000" <?php if($preferences->max_income=="500000") echo 'selected="SELECTED"'; ?>>5,00,000</option>
                           <option value="1000000" <?php if($preferences->max_income=="1000000") echo 'selected="SELECTED"'; ?>>10,00,000</option>
-                          <option value="1000001" <?php if($preferences->max_income=="1000001") echo 'selected="SELECTED"'; ?>>10,00,000 &amp; Above</option>
-                        </select>
+                          <option value="2000000" <?php if($preferences->max_income=="2000000") echo 'selected="SELECTED"'; ?>>20,00,000</option>
+                          <option value="3000000" <?php if($preferences->max_income=="3000000") echo 'selected="SELECTED"'; ?>>30,00,000</option>
+                          <option value="4000000" <?php if($preferences->max_income=="4000000") echo 'selected="SELECTED"'; ?>>40,00,000</option>
+                          <option value="5000000" <?php if($preferences->max_income=="5000000") echo 'selected="SELECTED"'; ?>>50,00,000</option>
+                          <option value="6000000" <?php if($preferences->max_income=="6000000") echo 'selected="SELECTED"'; ?>>60,00,000</option>
+                          <option value="7000000" <?php if($preferences->max_income=="7000000") echo 'selected="SELECTED"'; ?>>70,00,000</option>
+                          <option value="8000000" <?php if($preferences->max_income=="8000000") echo 'selected="SELECTED"'; ?>>80,00,000</option>
+                          <option value="9000000" <?php if($preferences->max_income=="9000000") echo 'selected="SELECTED"'; ?>>90,00,000</option>
+                          <option value="10000000" <?php if($preferences->max_income=="10000000") echo 'selected="SELECTED"'; ?>>1,00,00,000</option>
+               </select>
                   <!--      <span><select class="wed-reg-select1 cst-select-1" cst-attr="currency" cst-for="city" id="currency-selector" name="income_currency">
 
                           <?php foreach($currencies as $currency) { ?>
