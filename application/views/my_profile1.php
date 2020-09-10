@@ -2594,22 +2594,22 @@ else {
           <span class="wed-or">From</span>
                       <span></span>
                         <select class="wed-reg-select2" name="height_from_id" required>
-                        <!--<option disabled value="0">MIN</option>> --><option value="">MIN</option>
+                        <option disabled value="0">MIN</option>><!-- <option value="">MIN</option>-->
                         <?php 
                      //   $heights=json_decode(json_encode($heights),true);
                      
                         ?>
                         <?php foreach($heights as $heightd) { ?>
-                          <option value="<?php echo $heightd['height_id']; ?>" <?php ?>><?php echo $heightd['height']; ?></option>
+                          <option value="<?php echo $heightd['height_id']; ?>" <?php if($preferences->height_from_id==$heightd['height_id']) echo 'selected="SELECTED"'; ?> <?php ?>><?php echo $heightd['height']; ?></option>
                       <?php } ?>
                         </select>
                       
                       <span class="wed-or">To</span>
                       <span></span>
                         <select class="wed-reg-select2" name="height_to_id" required>
-                   <!--     <option disabled value="0">MAX</option>--><option value="">MAX</option>
+                        <option disabled value="0">MAX</option><!--<option value="">MAX</option>-->
                         <?php foreach($heights as $heightd) { ?>
-                          <option value="<?php echo $heightd['height_id']; ?>" <?php ?>><?php echo $heightd['height']; ?></option>
+                          <option value="<?php echo $heightd['height_id']; ?>" <?php if($preferences->height_to_id==$heightd['height_id']) echo 'selected="SELECTED"'; ?> <?php ?>><?php echo $heightd['height']; ?></option>
                       <?php } ?>
                         </select>
                       
