@@ -2404,7 +2404,7 @@ else {
                </li>
                
                
-               <li>
+          <!--     <li>
                  <div class="wed-reg-right-child1 paddingtop10">Upload horoscope</div>
                  <div class="wed-reg-right-child2">
                      <div class="row1">
@@ -2417,7 +2417,7 @@ else {
                      </div>
                    </div>
                  <div class="clearfix"></div>
-               </li>
+               </li>  -->
           
  
 
@@ -2439,30 +2439,7 @@ else {
 
 
 
-    <!---->  <li>
-                 <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
-                 <div class="wed-reg-right-child2">
-                      <div class="row1">
-                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
-                    </div>
-                   </div>
-                 <div class="clearfix"></div>
-               </li> 
-     <li>
-                 <div class="wed-reg-right-child1 paddingtop10">Padam</div>
-                 <div class="wed-reg-right-child2">
-                     <div class="row1">
-                       <select class="wed-reg-select" name="padam">
-                          <option value="0">Option</option>
-                          <option value="1 Padam" <?php if($horroscope_info->padam=="1 Padam") echo 'selected="SELECTED"'; ?>>1 Padam</option>
-                          <option value="2 Padam" <?php if($horroscope_info->padam=="2 Padam") echo 'selected="SELECTED"'; ?>>2 Padam</option>
-                          <option value="3 Padam" <?php if($horroscope_info->padam=="3 Padam") echo 'selected="SELECTED"'; ?>>3 Padam</option>
-                          <option value="4 Padam" <?php if($horroscope_info->padam=="4 Padam") echo 'selected="SELECTED"'; ?>>4 Padam</option>                  
-                       </select>
-                     </div>
-                   </div>
-                 <div class="clearfix"></div>
-               </li> 
+    <!---->  
 
 
 
