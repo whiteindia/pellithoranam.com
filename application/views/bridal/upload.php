@@ -135,7 +135,7 @@ $row=$query->result();
       <td><?= $dt->title; ?></td>
       <td><?= $dt->short_desc; ?></td>
       <td><img src="<?php echo base_url();?>assets/uploads/bridal/<?= $dt->img; ?>" id="icon" width="150px" height="150px" alt="User Icon" /></td>
-   <td><a style="backgroundcolor:white;" href="<?php echo base_url(); ?>bridal/bdelete/<?= $dt->id; ?>"><i class="fa fa-yelp" aria-hidden="true">remove</i></a></td>
+   <td><a style="color:red" href="<?php echo base_url(); ?>bridal/bdelete/<?= $dt->id; ?>"><i class="fa fa-yelp" aria-hidden="true">remove</i></a></td>
     </tr>
 <?php } ?>
   </tbody>
