@@ -2937,7 +2937,7 @@ else {
                  <div class="wed-reg-right-child2">
                      <div class="row1">
                        <select id="test" prof_preference_edit_btn multiple="multiple" name="star[]">  <!----->
-                          <option  value="0">none</option>
+                      <!--    <option  value="0">none</option>--->
                           <?php foreach($stars as $star) { ?>
                               <option value="<?php echo $star->star_id; ?>"  <?php if(is_array($preferences->star)){if(in_array($star->star_id,$preferences->star)) echo 'selected="SELECTED"';}elseif($preferences->star==$star->star_name){echo 'selected="SELECTED"';} ?> ><?php echo $star->star_name; ?></option>
                           <?php } ?>   
