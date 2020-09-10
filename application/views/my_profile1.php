@@ -2800,7 +2800,7 @@ else {
                   <div class="wed-reg-right-child1 paddingtop10">Caste / Division</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select caste-drop" name="caste[]" multiple required>  <!-- caste-selector-->
+                        <select class="wed-reg-select caste-drop" name="caste[]" multiple="multiple" required>  <!-- caste-selector-->
                         <?php
                         foreach ($castes as $rs) {?>
                           <option value="<?php echo $rs->caste_id;?>" <?php if(in_array($rs->caste_id, $preferences->caste)) echo 'selected="SELECTED"'; ?> ><?php echo $rs->caste_name; ?></option>
