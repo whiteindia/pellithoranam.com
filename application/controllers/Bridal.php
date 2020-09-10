@@ -54,7 +54,7 @@ public function bdelete() {
    // unset($_SESSION["id"]);
 //unset($_SESSION);
 //header("Location:login.php");
-    $this->load->view('bridal/uload', $data);
+    $this->load->view('bridal/upload', $data);
 }
 
     public function upload() {
