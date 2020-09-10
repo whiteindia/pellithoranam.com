@@ -1490,7 +1490,7 @@ else {
                     </div>
                     <div class="child3">
                     <?php if(isset($preferences->star)){
-                      $preferences->star_id=explode (",",$preferences->star);
+                      $preferences->star=explode (",",$preferences->star);
                       ?>
 <?php foreach($stars as $star) { ?>
 <?php if(is_array($preferences->star)){
