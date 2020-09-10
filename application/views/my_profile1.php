@@ -1231,8 +1231,8 @@ if($preferences->maritial_status==4){echo 'Awaiting for Divorce';}
                         //    echo $preferences->physical_status;
 
                             if($preferences->physical_status==0){echo 'Doesnot Matter';}
-if($preferences->physical_status==2){echo 'Normal';}
-if($preferences->physical_status==3){echo 'physically Challenged';}
+if($preferences->physical_status==1){echo 'Normal';}
+if($preferences->physical_status==2){echo 'physically Challenged';}
 
                           } else { echo '-';} ?>
            
