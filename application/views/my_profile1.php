@@ -2829,7 +2829,7 @@ else {
                   <div class="wed-reg-right-child1 paddingtop10">State</div>
                   <div class="wed-reg-right-child2">
                       <div class="row1">
-                        <select class="wed-reg-select state_drop" name="state[]" multiple="multiple">
+                        <select class="wed-reg-select " name="state[]" multiple="multiple">
                           <?php foreach($states as $state) { ?>
                               <option value="<?php echo $state->state_id; ?>" <?php if(is_array( $preferences->state)){if(in_array($state->state_id, $preferences->state)) echo 'selected="SELECTED"';}else if($state->state_id==$preferences->state){ echo 'selected="SELECTED"';} ?>><?php echo $state->state_name; ?></option>
                           <?php } ?>
