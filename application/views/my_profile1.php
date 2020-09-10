@@ -2618,7 +2618,7 @@ else {
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
 
-                        <select id="test1" name="maritial_status[]" id="maritial_status" multiple required>
+                        <select id="test" name="maritial_status[]" id="maritial_status" multiple required>
                        <!-- <option value="">select</option>-->
                                 <option value="1">Never Married</option>
                                 <option value="2">Divorced</option>
