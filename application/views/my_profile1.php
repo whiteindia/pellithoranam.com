@@ -1489,16 +1489,16 @@ else {
                     <div class="child2">:
                     </div>
                     <div class="child3">
-                    <?php if($preferences->star_id){
-                      $preferences->star_id=explode (",",$preferences->star_id);
+                    <?php if($preferences->star){
+                      $preferences->star_id=explode (",",$preferences->star);
                       ?>
 <?php foreach($stars as $star) { ?>
-<?php if(is_array($preferences->star_id)){
-if(in_array($star->star_id,$preferences->star_id)) echo $star->star_name; 
+<?php if(is_array($preferences->star)){
+if(in_array($star->star_id,$preferences->star)) echo $star->star_name; 
 }
 else {
 
-  if($star->star_id==$preferences->star_id) echo $star->star_name;
+  if($star->star_id==$preferences->star) echo $star->star_name;
 } ?>
   <?php ?>
 <?php }
@@ -1506,6 +1506,11 @@ else {
   echo '-';
 }
  ?>
+
+
+
+
+ 
 
 
 
