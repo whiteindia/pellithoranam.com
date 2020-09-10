@@ -43,6 +43,20 @@ unset($_SESSION);
 header("Location:login.php");
     $this->load->view('bridal/login', $data);
 }
+
+public function bdelete() {
+  
+    $this->uri->segment('3');
+    $this->db->where('id', $id);
+    $result =  $this->db->delete('bridal_collection');
+    //return $result;
+    $data=array();
+   // unset($_SESSION["id"]);
+//unset($_SESSION);
+//header("Location:login.php");
+    $this->load->view('bridal/uload', $data);
+}
+
     public function upload() {
         $data=array();
         $this->load->view('bridal/upload', $data);
