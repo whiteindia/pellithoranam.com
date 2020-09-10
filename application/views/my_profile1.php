@@ -2630,14 +2630,14 @@ else {
 
                              <div class="profile_check"> </div>-->
 
-                        <input id="nmt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="1" <?php if(is_array($preferences->maritial_status)) { if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
-                        <label for="nmt">Never Married</label>
-                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="2" <?php if(is_array($preferences->maritial_status)) { if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
-                        <label for="dvsdt">Divorced</label>
-                        <input id="wdt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="3" <?php if(is_array($preferences->maritial_status)) { if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
-                        <label for="wdt">Widowed</label>
-                        <input id="wdt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="4" <?php if(is_array($preferences->maritial_status)) { if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
-                        <label for="wdt">Awaiting for Divorce</label>
+                        <input id="mnmt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="1" <?php if(is_array($preferences->maritial_status)) { if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mnmt">Never Married</label>
+                        <input id="mdd" class="drinking_sel" type="checkbox" name="maritial_status[]" value="2" <?php if(is_array($preferences->maritial_status)) { if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mdd">Divorced</label>
+                        <input id="mwd" class="drinking_sel" type="checkbox" name="maritial_status[]" value="3" <?php if(is_array($preferences->maritial_status)) { if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mwd">Widowed</label>
+                        <input id="mawd" class="drinking_sel" type="checkbox" name="maritial_status[]" value="4" <?php if(is_array($preferences->maritial_status)) { if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mawd">Awaiting for Divorce</label>
                    
 
 
@@ -2664,13 +2664,13 @@ else {
                                                 
                              </select> -->
 
-                             <input id="wdt" class="drinking_sel" type="checkbox" name="physical_status[]" value="0" <?php if(is_array($preferences->physical_status)) { if(in_array('0', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
-                        <label for="wdt">Doesn't Matter</label>
+                             <input id="pdt" class="physical_sel" type="checkbox" name="physical_status[]" value="0" <?php if(is_array($preferences->physical_status)) { if(in_array('0', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="pdt">Doesn't Matter</label>
 
-                             <input id="nmt" class="drinking_sel" type="checkbox" name="physical_status[]" value="1" <?php if(is_array($preferences->physical_status)) { if(in_array('1', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
-                        <label for="nmt">Normal</label>
-                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="physical_status[]" value="2" <?php if(is_array($preferences->physical_status)) { if(in_array('2', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
-                        <label for="dvsdt">Physically Challenged</label>
+                             <input id="pn" class="physical_sel" type="checkbox" name="physical_status[]" value="1" <?php if(is_array($preferences->physical_status)) { if(in_array('1', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="pn">Normal</label>
+                        <input id="ppc" class="physical_sel" type="checkbox" name="physical_status[]" value="2" <?php if(is_array($preferences->physical_status)) { if(in_array('2', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="ppc">Physically Challenged</label>
             
 
 
@@ -2695,14 +2695,14 @@ else {
                                                 
                              </select>-->
                              
-                             <input id="wdt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="0" <?php if(is_array($preferences->eating_habit)) { if(in_array('0', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
-                        <label for="wdt">Doesn't Matter</label>
-                             <input id="nmt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="1" <?php if(is_array($preferences->eating_habit)) { if(in_array('1', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
-                        <label for="nmt">Vegitarian</label>
-                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="2" <?php if(is_array($preferences->eating_habit)) { if(in_array('2', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
-                        <label for="dvsdt">Non Vegitarian</label>
-                        <input id="wdt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="3" <?php if(is_array($preferences->eating_habit)) { if(in_array('3', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
-                        <label for="wdt">Eggetarian</label>
+                             <input id="edt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="0" <?php if(is_array($preferences->eating_habit)) { if(in_array('0', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="edt">Doesn't Matter</label>
+                             <input id="ev" class="drinking_sel" type="checkbox" name="eating_habit[]" value="1" <?php if(is_array($preferences->eating_habit)) { if(in_array('1', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="ev">Vegitarian</label>
+                        <input id="env" class="drinking_sel" type="checkbox" name="eating_habit[]" value="2" <?php if(is_array($preferences->eating_habit)) { if(in_array('2', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="env">Non Vegitarian</label>
+                        <input id="ee" class="drinking_sel" type="checkbox" name="eating_habit[]" value="3" <?php if(is_array($preferences->eating_habit)) { if(in_array('3', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="ee">Eggetarian</label>
   
                    
 
