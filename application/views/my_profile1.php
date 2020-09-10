@@ -1169,7 +1169,7 @@ if($horroscope_info->padam==4){echo 'padam 4';}
                           if(isset($preferences->height_from_id)&&($preferences->height_to_id>0)) {
                            // echo $preferences->height_from_id;
                             
-                           // echo($heights[(int)$preferences->height_from_id-1]['height']); 
+                            echo($heights[(int)$preferences->height_from_id-1]['height']); 
                           } else { echo '-';} ?>
            
                       </div>
@@ -1177,7 +1177,7 @@ if($horroscope_info->padam==4){echo 'padam 4';}
                     </li>
                     <li>
                       <div class="child1">
-                        height from <?php
+                        height to <?php
                         $heights=json_decode(json_encode($heights),true);
                        // echo($heights[(int)$preferences->height_to_id-1]['height']);
                          ?>
