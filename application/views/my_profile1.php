@@ -924,7 +924,23 @@
                     <div class="child2">:
                     </div>
                     <div class="child3">
-                     <?php echo $horroscope_info->star_name;?>
+                    <?php if($horroscope_info->star_id){
+                      $horroscope_info->star_id=explode (",",$preferences->star_id);
+                      ?>
+<?php foreach($stars as $star) { ?>
+<?php if(is_array($horroscope_info->star_id)){
+if(in_array($star->star_id,$horroscope_info->star_id)) echo $star->star_name; 
+}
+else {
+
+  if($star->star_id==$horroscope_info->star_id) echo $star->star_name;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
                     </div>
                     <div class="clearfix"></div>
                   </li>
@@ -973,7 +989,7 @@
 
 
            <!--   -->  
-         <!--  -->       <li>
+         <!--        <li>
                     <div class="child1">
                     Padam
                     </div>
@@ -994,10 +1010,10 @@ if($horroscope_info->padam==4){echo 'padam 4';}
 
               <!--      <?php if($preferences->star_id) {  
         					  print_r($preferences->star_id);
-        					   } else {?> - <?php } ?>-->
+        					   } else {?> - <?php } ?>->
                     </div>
                     <div class="clearfix"></div>
-                  </li>   
+                  </li>   -->
 
                 </ul>
               </li>
