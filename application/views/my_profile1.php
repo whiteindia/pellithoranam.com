@@ -2350,7 +2350,75 @@ else {
       </div>
       <ul class="wed-inside-detail">
 
-
+      <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
+                 <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
+                    </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Star</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="star">
+                          <option value="0">Option</option>
+                          <?php foreach($stars as $star) { ?>
+                              <option value="<?php echo $star->star_id; ?>" <?php if($horroscope_info->star_id==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
+                          <?php } ?>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Padam</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="padam">
+                          <option value="0">Option</option>
+                          <option value="1 Padam" <?php if($horroscope_info->padam=="1 Padam") echo 'selected="SELECTED"'; ?>>1 Padam</option>
+                          <option value="2 Padam" <?php if($horroscope_info->padam=="2 Padam") echo 'selected="SELECTED"'; ?>>2 Padam</option>
+                          <option value="3 Padam" <?php if($horroscope_info->padam=="3 Padam") echo 'selected="SELECTED"'; ?>>3 Padam</option>
+                          <option value="4 Padam" <?php if($horroscope_info->padam=="4 Padam") echo 'selected="SELECTED"'; ?>>4 Padam</option>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1">Have Dosham?</div>
+                 <div class="wed-reg-right-child2">
+                   <div class="wed-custom5">
+                       <input id="nm12" type="radio" name="dosham" value="1" <?php if($horroscope_info->dosham=="1") echo 'checked="checked"'; ?>>
+                       <label for="nm12">No</label>
+                       <input id="dvsd12" type="radio" name="dosham" value="2" <?php if($horroscope_info->dosham=="2") echo 'checked="checked"'; ?>>
+                       <label for="dvsd12">Yes</label>
+                       <input id="wd45" type="radio" name="dosham" value="3" <?php if($horroscope_info->dosham=="3") echo 'checked="checked"'; ?>>
+                       <label for="wd45">Don't Know</label>
+                   </div>
+                 </div>
+                 <div class="clearfix"></div>
+               </li>
+               
+               
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Upload horoscope</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <span><input class="wed-reg-input12 reg_input" type="file" name="horo_img" id="horo_img"></span>
+                    
+                       <?php if($horroscope_info->horo_img!=""):?>
+                           <br>
+                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
+                      <?php endif?>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+          
  
 
 
@@ -2358,7 +2426,7 @@ else {
 
 
 
-
+<!----->
       </ul>
     </li>
     <li class="wed-detail-left">
