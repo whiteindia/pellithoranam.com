@@ -46,7 +46,7 @@ header("Location:login.php");
 
 public function bdelete() {
   
-    $this->uri->segment('3');
+    $id=$this->uri->segment('3');
     $this->db->where('id', $id);
     $result =  $this->db->delete('bridal_collection');
     //return $result;
