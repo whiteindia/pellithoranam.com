@@ -2799,20 +2799,7 @@ else {
                    </div>
                  <div class="clearfix"></div>
                </li> -->
-               <li>
-                 <div class="wed-reg-right-child1 paddingtop10">Star</div>
-                 <div class="wed-reg-right-child2">
-                     <div class="row1">
-                       <select id="test" prof_preference_edit_btnmultiple="multiple" name="star[]">  <!----->
-                          <option value="0">Option</option>
-                          <?php foreach($stars as $star) { ?>
-                              <option value="<?php echo $star->star_id; ?>" <?php if($preferences->star==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
-                          <?php } ?>                  
-                       </select>
-                     </div>
-                   </div>
-                 <div class="clearfix"></div>
-               </li>
+
         <!--       <li>
                  <div class="wed-reg-right-child1 paddingtop10">Padam</div>
                  <div class="wed-reg-right-child2">
@@ -2896,7 +2883,20 @@ else {
                 </li>
 
 
-
+                <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Star</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select id="test" prof_preference_edit_btnmultiple="multiple" name="star[]">  <!----->
+                          <option value="0">Option</option>
+                          <?php foreach($stars as $star) { ?>
+                              <option value="<?php echo $star->star_id; ?>" <?php if($preferences->star==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
+                          <?php } ?>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
 
 
 
