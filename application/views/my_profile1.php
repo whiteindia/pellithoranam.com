@@ -925,7 +925,7 @@
                     </div>
                     <div class="child3">
                     <?php if($horroscope_info->star_id){
-                      $horroscope_info->star_id=explode (",",$preferences->star_id);
+                     // $horroscope_info->star_id=explode (",",$preferences->star_id);
                       ?>
 <?php foreach($stars as $star) { ?>
 <?php if(is_array($horroscope_info->star_id)){
