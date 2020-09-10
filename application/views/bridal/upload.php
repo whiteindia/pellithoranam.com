@@ -122,6 +122,7 @@ $row=$query->result();
       <th scope="col">title</th>
       <th scope="col">short_desc</th>
       <th scope="col">img</th>
+      <th scope="col">ACTION</th>
     </tr>
   </thead>
   <tbody>
@@ -134,6 +135,7 @@ $row=$query->result();
       <td><?= $dt->title; ?></td>
       <td><?= $dt->short_desc; ?></td>
       <td><img src="<?php echo base_url();?>assets/uploads/bridal/<?= $dt->img; ?>" id="icon" width="150px" height="150px" alt="User Icon" /></td>
+   <td><a href="<?php echo base_url(); ?>bridal/bdelete/<?= $dt->id; ?>"><i class="fa fa-yelp text-danger" aria-hidden="true"></i></a></td>
     </tr>
 <?php } ?>
   </tbody>
