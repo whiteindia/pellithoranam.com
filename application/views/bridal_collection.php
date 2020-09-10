@@ -1,7 +1,7 @@
 <div class="container bridal-container"> <!-- Start Contaner -->
 	<div class="row"> <!-- Start row -->
 		<div class="col-md-12"> <!-- Start col-md-12 -->
-		<h1 style="text-align: center;">Bridal Collection</h1>
+		<h1 style="text-align: center;">Bridal and Other Collection</h1>
 			<div id="p-flex">
 				<?php if($bridal_collection): ?>
 				<?php foreach($bridal_collection as $bc): ?>
