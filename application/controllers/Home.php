@@ -564,6 +564,17 @@ public function get_drop_data1() {
 			} else { /*redirect('../home/index');*/ echo "dsf"; }
 		}
 	}
+	public function update_profile1() {
+		
+		if($this->session->userdata('logged_in')) {
+			$user = $this->session->userdata('logged_in');
+			if($_POST){
+				$data = $_POST;
+				$result = $this->Home_model->UpdateProfile1($data,$user->user_id);
+				echo $result;
+			} else { /*redirect('../home/index');*/ echo "dsf"; }
+		}
+	}
 	public function load_parish() {
 		if($_GET['term']!="") { $like = $_GET['term']; }
 		$sess=$this->session->userdata('logged_in');

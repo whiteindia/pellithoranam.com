@@ -3176,7 +3176,7 @@ $(document).ready(function(){
       console.log(value);
       $.ajax({
         type: "POST",
-        url: base_url+'Home/update_horoscope',
+        url: base_url+'Home/update_profile1',
         data: value,
         error: function (err) {
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
