@@ -2618,8 +2618,8 @@ else {
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
 
-                        <select id="test" name="maritial_status[]" id="maritial_status" multiple required>
-                       <!-- <option value="">select</option>-->
+                        <!--  <select class="wed-reg-select" name="maritial_status[]" id="maritial_status" multiple required>
+                      <option value="">select</option>
                                 <option value="1">Never Married</option>
                                 <option value="2">Divorced</option>
                                 <option value="3">Widowed</option>
@@ -2627,6 +2627,20 @@ else {
                                 
                                                 
                              </select>
+
+                             <div class="profile_check"> </div>-->
+
+                        <input id="nmt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="1" <?php if(is_array($preferences->maritial_status)) { if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="nmt">Never Married</label>
+                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="2" <?php if(is_array($preferences->maritial_status)) { if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="dvsdt">Divorced</label>
+                        <input id="wdt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="3" <?php if(is_array($preferences->maritial_status)) { if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="wdt">Widowed</label>
+                        <input id="wdt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="4" <?php if(is_array($preferences->maritial_status)) { if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="wdt">Awaiting for Divorce</label>
+                   
+
+
 
 
                     </div>
@@ -2640,15 +2654,28 @@ else {
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
     
-                        <select class="wed-reg-select" name="physical_status[]" id="physical_status" multiple required>
-                       <!-- <option value="">select</option>-->
+                      <!--  <select class="wed-reg-select" name="physical_status[]" id="physical_status" multiple required>
+                       <!-- <option value="">select</option>->
                                 <option value="0">Doesn't Matter</option>
                                 <option value="1">Normal</option>
                                 <option value="2">Physically Challenged</option>
-                             <!--   <option value="4">Awaiting for Divorce</option> -->
+                                <option value="4">Awaiting for Divorce</option>
                                 
                                                 
-                             </select>
+                             </select> -->
+
+                             <input id="wdt" class="drinking_sel" type="checkbox" name="physical_status[]" value="0" <?php if(is_array($preferences->physical_status)) { if(in_array('0', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="wdt">Doesn't Matter</label>
+
+                             <input id="nmt" class="drinking_sel" type="checkbox" name="physical_status[]" value="1" <?php if(is_array($preferences->physical_status)) { if(in_array('1', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="nmt">Normal</label>
+                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="physical_status[]" value="2" <?php if(is_array($preferences->physical_status)) { if(in_array('2', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="dvsdt">Physically Challenged</label>
+            
+
+
+
+
                     </div>
                   </div>
                   <div class="clearfix"></div>
@@ -2658,15 +2685,26 @@ else {
                   <div class="wed-reg-right-child2">
                     <div class="profile_check">
 
-                        <select class="wed-reg-select" name="eating_habit[]" id="eating_habit" multiple required>
-                       <!----> <option value="0">Doesn't Matter</option>
+                   <!---     <select class="wed-reg-select" name="eating_habit[]" id="eating_habit" multiple required>
+                       -> <option value="0">Doesn't Matter</option>
                                 <option value="1">Vegetarian</option>
                                 <option value="2">Non Vegitarian</option>
                                 <option value="3">Eggetarian</option>
-                            <!--  <option value="4">Awaiting for Divorce</option>   -->
+                            <!--  <option value="4">Awaiting for Divorce</option>   
                                 
                                                 
-                             </select>
+                             </select>-->
+                             
+                             <input id="wdt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="0" <?php if(is_array($preferences->eating_habit)) { if(in_array('0', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="wdt">Doesn't Matter</label>
+                             <input id="nmt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="1" <?php if(is_array($preferences->eating_habit)) { if(in_array('1', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="nmt">Vegitarian</label>
+                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="2" <?php if(is_array($preferences->eating_habit)) { if(in_array('2', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="dvsdt">Non Vegitarian</label>
+                        <input id="wdt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="3" <?php if(is_array($preferences->eating_habit)) { if(in_array('3', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="wdt">Eggetarian</label>
+  
+                   
 
                     </div>
                   </div>
