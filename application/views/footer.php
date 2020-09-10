@@ -120,7 +120,7 @@
 <script type="text/javascript">
       $(".ctry_drop").select2();
       $(".state_drop").select2();
-     
+      $(".caste_drop").select2();
       $(".educ_drop").select2();
       $(".occup_drop").select2();
       $("#mobile-number").intlTelInput();
