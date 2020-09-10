@@ -905,6 +905,63 @@
                   </div>
                   <ul class="wed-inside-detail">
 
+
+                  <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->gothram;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->star_name;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->padam;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Have Dosham?
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                      <?php 
+                      switch ($horroscope_info->dosham) {
+                        case '1':
+                          echo "No";
+                          break;
+                        case '2':
+                          echo "Yes";
+                          break;
+                          default:
+                          echo "Don't Know.";
+                          break;
+                      }
+                      ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li> 
                   </ul>
               </li>
               <li class="wed-detail-left">
@@ -915,52 +972,7 @@
 
 
 
-           <!--   -->     <li>
-                    <div class="child1">
-                    Gothram
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if($preferences->gothram) {  
-        					  print_r($preferences->gothram);
-        					   } else {?> - <?php } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li> 
-                  <li>
-                    <div class="child1">
-                    Star
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if($preferences->star_id){
-                      $preferences->star_id=explode (",",$preferences->star_id);
-                      ?>
-<?php foreach($stars as $star) { ?>
-<?php if(is_array($preferences->star_id)){
-if(in_array($star->star_id,$preferences->star_id)) echo $star->star_name; 
-}
-else {
-
-  if($star->star_id==$preferences->star_id) echo $star->star_name;
-} ?>
-  <?php ?>
-<?php }
-}else{
-  echo '-';
-}
- ?>
-
-
-
-                 <!--   <?php if($horroscope_info->star_id) {  
-        					  print_r($horroscope_info->star_id);
-        					   } else {?> - <?php } ?>  -->
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
+           <!--   -->  
          <!--  -->       <li>
                     <div class="child1">
                     Padam
