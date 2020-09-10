@@ -2566,18 +2566,18 @@ else {
                       <span class="wed-or">from</span>
                       <span>
                         <select class="wed-reg-select2" name="age_from" required>
-                          <!--<option disabled value="0">MIN</option>--><option value="">MIN</option>
+                          <option disabled value="0">MIN</option><!--<option value="">MIN</option>-->
                           <?php for($i=18;$i<=70;$i++) { ?>
-                          <option value="<?php echo $i; ?>" <?php // if($preferences->age_from==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
+                          <option value="<?php echo $i; ?>" <?php  if($preferences->age_from==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
                           <?php } ?>
                         </select>
                       </span>
                       <span class="wed-or">To</span>
                       <span>
                         <select class="wed-reg-select2" name="age_to" required>
-                          <!--<option disabled value="0">MAX</option>--><option value="">MAX</option>
+                          <option disabled value="0">MAX</option><!--<option value="">MAX</option>-->
                           <?php for($i=18;$i<=70;$i++) { ?>
-                          <option value="<?php echo $i; ?>" <?php //if($preferences->age_to==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
+                          <option value="<?php echo $i; ?>" <?php if($preferences->age_to==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
                           <?php } ?>
                         </select>
                       </span>
