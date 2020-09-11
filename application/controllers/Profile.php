@@ -190,7 +190,7 @@ public function get_drop_data3() {
 		} 
 		echo $html;
 	}
-	public function my_profile() {
+	public function my_profileold() {
 		if($this->session->userdata('logged_in')) {
 			$my_matr_id = $this->session->userdata('logged_in');
 			if($my_matr_id) {
@@ -2033,7 +2033,7 @@ $mat_id=$my_matr_id->matrimony_id;
 		$result = $this->Profile_model->notification_count();
 	}
 	
-	public function my_profile1() {
+	public function my_profile() {
 		if($this->session->userdata('logged_in')) {
 			$my_matr_id = $this->session->userdata('logged_in');
 			if($my_matr_id) {
@@ -2086,7 +2086,7 @@ $mat_id=$my_matr_id->matrimony_id;
 				die();*/
 				$data['horroscope_info'] = $this->db->where('matrimony_id',$my_matr_id->matrimony_id)->get('profiles')->row();
 				$data['membershipinfo']=$this->Profile_model->membershipinfo();
-				$this->load->view('my_profile1',$data);
+				$this->load->view('my_profile',$data);
 				$this->load->view('footer');
 			} else { echo "Profile Not Found"; }
 		} else { redirect(base_url()); }

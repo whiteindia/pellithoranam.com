@@ -4,6 +4,87 @@
 
  ?>
 
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#test").CreateMultiCheckBox({ width: '230px', defaultText : 'Select Below', height:'250px' });
+        });
+        $(document).ready(function () {
+            $("#test1").CreateMultiCheckBox({ width: '230px', defaultText : 'Select Below', height:'250px' });
+        });
+        $(document).ready(function () {
+            $("#test2").CreateMultiCheckBox({ width: '230px', defaultText : 'Select Below', height:'250px' });
+        });
+    </script>
+    <style>
+    .MultiCheckBox {
+            border:1px solid #e2e2e2;
+            padding: 5px;
+            border-radius:4px;
+            cursor:pointer;
+        }
+
+        .MultiCheckBox .k-icon{ 
+            font-size: 15px;
+            float: right;
+            font-weight: bolder;
+            margin-top: -7px;
+            height: 10px;
+            width: 14px;
+            color:#787878;
+        } 
+
+        .MultiCheckBoxDetail {
+            display:none;
+            position:absolute;
+            border:1px solid #e2e2e2;
+            overflow-y:hidden;
+        }
+
+        .MultiCheckBoxDetailBody {
+            overflow-y:scroll;
+        }
+
+            .MultiCheckBoxDetail .cont  {
+                clear:both;
+                overflow: hidden;
+                padding: 2px;
+            }
+
+            .MultiCheckBoxDetail .cont:hover  {
+                background-color:#cfcfcf;
+            }
+
+            .MultiCheckBoxDetailBody > div > div {
+                float:left;
+            }
+
+        .MultiCheckBoxDetail>div>div:nth-child(1) {
+        
+        }
+
+        .MultiCheckBoxDetailHeader {
+            overflow:hidden;
+            position:relative;
+            height: 28px;
+            background-color:#3d3d3d;
+        }
+
+            .MultiCheckBoxDetailHeader>input {
+                position: absolute;
+                top: 4px;
+                left: 3px;
+            }
+
+            .MultiCheckBoxDetailHeader>div {
+                position: absolute;
+                top: 5px;
+                left: 24px;
+                color:#fff;
+            }
+    
+    
+    </style>
     <!-- PROFILE-BANNER -->
 
     <div class="wed-profile-banner">
@@ -151,6 +232,8 @@
           </ul>
 
           </div>
+
+
 
           <!-- BASIC-DETAILS -->
 
@@ -544,7 +627,7 @@
                     <div class="clearfix"></div>
                   </li>
                    <?php if($profile->is_premium==1){?>
-             <!--     <li>
+            <!--      <li>
                     <div class="child1">
                       Parish
                     </div>
@@ -556,7 +639,7 @@
             					 } else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
-                  </li>
+                  </li> 
                   <li>
                     <div class="child1">
                       Village
@@ -569,12 +652,14 @@
             					} else {?> - <?php } ?>
                     </div>
                     <div class="clearfix"></div>
-                  </li>  -->
+                  </li> -->
                   <?php } ?>
                 </ul>
               </li>
               <div class="clearfix"></div>
             </ul>
+
+            
           </div>
 
           <!-- PROFESSIONAL-INFORMATION -->
@@ -698,6 +783,8 @@
 
           <!-- FAMILY-DETAILS -->
           <!-- bordernone -->
+
+            <!---family details start--->
           <div class="wed-row">
             <ul id="prof_family_ul">
                 <li class="wed-detail-left border-right1">
@@ -860,6 +947,750 @@
               <div class="clearfix"></div>
             </ul>
           </div>
+
+
+          <!---family details end--->
+
+          <ul id="about_family_edit" style="display: none;">
+  <form method="post" id="family_about_form">
+    <li class="wed-detail-left" style=" width:100% !important">
+      <div class="wed-detail-head">
+        <h5>About my Family</h5>
+        <div class="clearfix"></div>
+
+        <textarea class="wed-reg-textarea" rows="4" style="width:90% !important" id="family_about_text" name="family_about"><?php echo $profile->family_about;?></textarea>
+        <div class="wed-detail-edit no_backurl">
+          <button type='submit' class="wed-go edit_about_btn">Save</button>
+        </div>
+      </div>
+      <div class="clearfix"></div> 
+    </li>
+    <div class="clearfix"></div>
+    </form>
+  </ul>
+
+ <!---horoscope start--->
+ <div class="wed-row">
+            <ul id="prof_horoscope_ul">
+                <li class="wed-detail-left border-right1">
+                  <div class="wed-detail-head">
+                    <h5> Horoscope Details</h5>
+                    <div class="wed-detail-edit" id="prof_horoscope_edit_btn">
+                      edit
+                    </div>
+                    <?php 
+                       $preferences = $this->db->where('profile_id',$profile->matrimony_id)->get('preferences')->row();
+                       $horroscope_info = $this->db->where('matrimony_id',$profile->matrimony_id)->get('profiles')->row();   
+                        ?>
+                    <div class="clearfix"></div>
+                  </div>
+                  <ul class="wed-inside-detail">
+
+
+                  <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->gothram;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if($horroscope_info->star_id){
+                     // $horroscope_info->star_id=explode (",",$preferences->star_id);
+                      ?>
+<?php foreach($stars as $star) { ?>
+<?php if(is_array($horroscope_info->star_id)){
+if(in_array($star->star_id,$horroscope_info->star_id)) echo $star->star_name; 
+}
+else {
+
+  if($star->star_id==$horroscope_info->star_id) echo $star->star_name;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                     <?php echo $horroscope_info->padam;?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Have Dosham?
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                      <?php 
+                      switch ($horroscope_info->dosham) {
+                        case '1':
+                          echo "No";
+                          break;
+                        case '2':
+                          echo "Yes";
+                          break;
+                          default:
+                          echo "Don't Know.";
+                          break;
+                      }
+                      ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li> 
+                  </ul>
+              </li>
+              <li class="wed-detail-left">
+                <div class="wed-space1">
+                </div>
+                <ul class="wed-inside-detail">
+
+
+
+
+           <!--   -->  
+         <!--        <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                <?php    if(isset($horroscope_info->padam)) {
+                        //    echo $preferences->smoking_habit;
+                            if($horroscope_info->padam==0){echo '-';}
+                            if($horroscope_info->padam==1){echo 'padam 1';}
+if($horroscope_info->padam==2){echo 'padam 2';}
+if($horroscope_info->padam==3){echo 'padam 3';}
+if($horroscope_info->padam==4){echo 'padam 4';}
+
+                          } else { echo '-';} ?>
+
+
+
+              <!--      <?php if($preferences->star_id) {  
+        					  print_r($preferences->star_id);
+        					   } else {?> - <?php } ?>->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>   -->
+
+                </ul>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+
+
+          <!---horoscope end--->
+
+
+ <!---family details start--->
+ <div class="wed-row">
+            <ul id="prof_preference_ul">
+                <li class="wed-detail-left border-right1">
+                  <div class="wed-detail-head">
+                    <h5>Partner Preference Details</h5>
+                    <div class="wed-detail-edit" id="prof_preference_edit_btn">
+                      edit
+                    </div>
+                    <?php 
+                       $preferences = $this->db->where('profile_id',$profile->matrimony_id)->get('preferences')->row();
+                       $horroscope_info = $this->db->where('matrimony_id',$profile->matrimony_id)->get('profiles')->row();   
+                        ?>
+                    <div class="clearfix"></div>
+                  </div>
+                  <ul class="wed-inside-detail">
+                    <li>
+                      <div class="child1">
+                        Age From
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->age_from)) {
+                            echo $preferences->age_from;
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                        Age to
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->age_to)) {
+                            echo $preferences->age_to;
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                        height from
+      <?php
+      $heights=json_decode(json_encode($heights),true);
+     // print_r($heights); 
+     ?>
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->height_from_id)&&($preferences->height_to_id>0)) {
+                           // echo $preferences->height_from_id;
+                            
+                            echo($heights[(int)$preferences->height_from_id-1]['height']); 
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                        height to <?php
+                        $heights=json_decode(json_encode($heights),true);
+                       // echo($heights[(int)$preferences->height_to_id-1]['height']);
+                         ?>
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->height_to_id)&&($preferences->height_to_id>0)) {
+                           // echo $preferences->height_to_id;
+                            
+                           echo($heights[(int)$preferences->height_to_id-1]['height']); 
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                      Maritial Status
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->maritial_status)) {
+if($preferences->maritial_status==1){echo 'Never Married';}
+if($preferences->maritial_status==2){echo 'Divorced';}
+if($preferences->maritial_status==3){echo 'Widowed';}
+if($preferences->maritial_status==4){echo 'Awaiting for Divorce';}
+   
+
+                        //    echo $preferences->maritial_status;
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                      Physical Status
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->physical_status)) {
+                        //    echo $preferences->physical_status;
+
+                            if($preferences->physical_status==0){echo 'Doesnot Matter';}
+if($preferences->physical_status==1){echo 'Normal';}
+if($preferences->physical_status==2){echo 'physically Challenged';}
+
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                      Eating Habbits
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->eating_habit)) {
+                           // echo $preferences->eating_habit;
+                            if($preferences->eating_habit==0){echo 'Doesnot Matter';}
+                            if($preferences->eating_habit==1){echo 'Vegetarian';}
+if($preferences->eating_habit==2){echo 'Non Vegitarian';}
+if($preferences->eating_habit==3){echo 'Eggetarian';}
+
+
+
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                      Drinking Habits
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->eating_habit)) {
+                           // echo $preferences->eating_habit;
+                            if($preferences->eating_habit==0){echo 'Doesnot Matter';}
+                            if($preferences->eating_habit==1){echo 'Never Drinks';}
+if($preferences->eating_habit==2){echo 'Drinks Socialy';}
+if($preferences->eating_habit==3){echo 'Drinks Regularly';}
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                      Smoking Habits
+      
+                      </div>
+                      <div class="child2">:
+                      </div>
+                      <div class="child3">
+                        <?php
+                          if(isset($preferences->smoking_habit)) {
+                        //    echo $preferences->smoking_habit;
+                            if($preferences->smoking_habit==0){echo 'Doesnot Matter';}
+                            if($preferences->smoking_habit==1){echo 'Never Smokes';}
+if($preferences->smoking_habit==2){echo 'Smokes Occasionaly';}
+if($preferences->smoking_habit==3){echo 'Smokes Regularly';}
+
+                          } else { echo '-';} ?>
+           
+                      </div>
+                      <div class="clearfix"></div>
+                    </li>
+
+                    <li>
+                    <div class="child1">
+                    Partner Description
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if(isset($preferences->about_partner)) {  
+        					  print_r($preferences->about_partner);
+        					   } else {?> - <?php } ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+
+
+
+
+
+                  </ul>
+              </li>
+              <li class="wed-detail-left">
+                <div class="wed-space1">
+                </div>
+                <ul class="wed-inside-detail">
+                  <li>
+                    <div class="child1">
+                    Religion
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+              
+                                                  <?php 
+                                                 if(isset($religions)){ 
+                                                  foreach($religions as $rlgn) { ?>
+                             <?php if($preferences->religion==$rlgn->religion_id) echo $rlgn->religion_name; ?>
+                          <?php }
+                                                 }else{
+                                                   echo '-';
+                                                 }
+                          
+                          ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                 
+Mother Tongue
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">  
+                    <?php 
+                                                 if(isset($mother_tongue)){ 
+                                                  foreach($mother_tongue as $mthr_tng) { ?>
+                             <?php if($preferences->mother_language==$mthr_tng->mother_tongue_id) echo $mthr_tng->mother_tongue_name; ?>
+                          <?php }
+                                                 }else{
+                                                   echo '-';
+                                                 }
+                          
+                          ?>
+
+
+
+                <!--      <?php if($profile->mother_language) {   
+          					  echo ucwords($profile->mother_language);
+          					   } else {?> - <?php } ?>  -->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+             <!--     <li>
+                    <div class="child1">
+                    Caste / Division
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php 
+                                                 if(isset($preferences->caste)){ 
+                                                  $preferences->caste=explode (",",$preferences->caste); 
+                                                  foreach($castes as $rs) { ?>
+                             <?php 
+                             if(in_array($rs->caste_id, $preferences->caste))echo $rs->caste_name;
+                             ?>
+                          <?php }
+                                                 }else{
+                                                   echo '-';
+                                                 }
+                          
+                          ?>
+
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>  -->
+                  <li>
+                    <div class="child1">
+                    Country
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    
+<?php if($preferences->country){
+  $preferences->country=explode (",",$preferences->country); 
+  ?>
+
+<?php foreach($country as $ctry) { 
+  
+  ?>
+<?php if(is_array($preferences->country)){
+if(in_array($ctry->country_id,$preferences->country)) echo $ctry->country_name; 
+}
+else {
+
+  if($ctry->country_id==$preferences->country) echo $ctry->country_name;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+<!--<?php if($profile->country) {  ?>
+        					  print_r($profile->country);
+        					   } else {?> - <?php } ?>  -->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    State 
+                     <?php //if(is_array($preferences->state)){
+                   $preferences->state=explode (",", $preferences->state); 
+                    // print_r($preferences->state); // }
+                      ?>
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                              
+<?php if($preferences->state){?>
+<?php foreach($states as $state) { ?>
+<?php if(is_array($preferences->state)){
+if(in_array($state->state_id,$preferences->state)) 
+echo $state->state_name; 
+}
+else {
+
+  if($state->state_id==$preferences->state) 
+  echo $state->state_name;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+
+
+         
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+           <!--       <li>
+                    <div class="child1">
+                    Gothram
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if($preferences->gothram) {  
+        					  print_r($preferences->gothram);
+        					   } else {?> - <?php } ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>  -->
+                  <li>
+                    <div class="child1">
+                    Star
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if(isset($preferences->star)){
+                      $preferences->star=explode (",",$preferences->star);
+                      ?>
+<?php foreach($stars as $star) { ?>
+<?php if(is_array($preferences->star)){
+if(in_array($star->star_id,$preferences->star)) echo $star->star_name; 
+}
+else {
+
+  if($star->star_id==$preferences->star) echo $star->star_name;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+
+
+
+
+ 
+
+
+
+                 <!--   <?php if($horroscope_info->star_id) {  
+        					  print_r($horroscope_info->star_id);
+        					   } else {?> - <?php } ?>  -->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+         <!--         <li>
+                    <div class="child1">
+                    Padam
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                <?php    if(isset($preferences->padam)) {
+                        //    echo $preferences->smoking_habit;
+                            if($preferences->padam==0){echo '-';}
+                            if($preferences->padam==1){echo 'padam 1';}
+if($preferences->padam==2){echo 'padam 2';}
+if($preferences->padam==3){echo 'padam 3';}
+if($preferences->padam==4){echo 'padam 4';}
+
+                          } else { echo '-';} ?>
+
+
+
+              <!--      <?php if($preferences->star_id) {  
+        					  print_r($preferences->star_id);
+        					   } else {?> - <?php } ?>->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>   -->
+                  <li>
+                    <div class="child1">
+                    Education
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                <!--    <?php if(isset($preferences->education)) {  
+        					  print_r($preferences->education);
+        					   } else {?> - <?php } ?>-->
+          <?php if($preferences->education){
+            $preferences->education=explode (",",$preferences->education);
+            
+            ?>
+<?php foreach($educations as $education) { ?>
+<?php if(is_array($preferences->education)){
+if(in_array($education->education_id,$preferences->education)) echo $education->education; 
+}
+else {
+
+  if($education->education_id==$preferences->education) echo $education->education;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+
+<!--
+<?php foreach($educations as $education) { ?>
+                              <option <?php if(in_array($education->education_id, $preferences->education)) echo 'selected="SELECTED"'; ?> value="<?php echo $education->education_id; ?>"><?php echo $education->education; ?></option>
+                          <?php } ?> -->
+
+
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+               <!--   <li>
+                    <div class="child1">
+                    Occupation
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if(isset($preferences->occupation)) {  
+        					  print_r($preferences->occupation);
+        					   } else {?> - <?php } ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>  -->
+                  <li>
+                    <div class="child1">
+                    Occupation
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                  <!--  <?php if(isset($preferences->occupation)) {  
+        					  print_r($preferences->occupation);
+        					   } else {?> - <?php } ?>  -->
+         <?php if($preferences->occupation){
+           $preferences->occupation=explode (",",$preferences->occupation);
+           ?>
+<?php foreach($occupations as $occup) { ?>
+<?php if(is_array($preferences->occupation)){
+if(in_array($occup->occupation_id,$preferences->occupation)) echo $occup->occupation; 
+}
+else {
+
+  if($occup->occupation_id==$preferences->occupation) echo $occup->occupation;
+} ?>
+  <?php ?>
+<?php }
+}else{
+  echo '-';
+}
+ ?>
+
+
+<!--
+<?php foreach($occupations as $occup) { ?>
+                              <option <?php if(in_array($occup->occupation_id, $preferences->occupation)) echo 'selected="SELECTED"'; ?> value="<?php echo $occup->occupation_id; ?>"><?php echo $occup->occupation; ?></option>
+                          <?php } ?>-->
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Income From
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if(isset($preferences->min_income)) {  
+        					  print_r($preferences->min_income);
+        					   } else {?> - <?php } ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="child1">
+                    Income To
+                    </div>
+                    <div class="child2">:
+                    </div>
+                    <div class="child3">
+                    <?php if(isset($preferences->max_income)) {  
+        					  print_r($preferences->max_income);
+        					   } else {?> - <?php } ?>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+
+
+          <!---family details end--->
+
+
+
+
+
+
+
+
+
         </div>
         <!-- <div class="wed-space"> -->
         </div>
@@ -1278,7 +2109,7 @@
         <div class="clearfix"></div>
       </li>
       <?php if($profile->is_premium==1){?>
-   <!--   <li>
+  <!--    <li>
         <div class="child1">
          Parish
         </div>
@@ -1303,7 +2134,7 @@
          <input type="text" class="wed-reg-input" name="parish_village" value="<?php echo $profile->parish_village;?>">
         </div>
         <div class="clearfix"></div>
-      </li>  -->
+      </li>  --->
       <?php } ?>
     </ul>
   </li>
@@ -1453,7 +2284,7 @@
   </ul>
 
 
-
+<!---HOme edit start---->
 <ul id="prof_family_edit" style="display: none;">
   <form method="post" id="family_form">
     <li class="wed-detail-left border-right1">
@@ -1592,8 +2423,561 @@
     </form>
   </ul>
 
+<!---HOme horoscope start---->
+<ul id="prof_horoscope_edit" style="display: none;">
+  <form method="post" id="horoscope_form">
+    <li class="wed-detail-left border-right1">
+      <div class="wed-detail-head">
+        <h5>horoscope  Details : </h5>
+        <div class="wed-detail-edit no_backurl">
+          <button type='submit' class="wed-go edit_horoscope_btn">Save</button>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <ul class="wed-inside-detail">
+
+      <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
+                 <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
+                    </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Star</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="star_id">
+                          <option value="0">Option</option>
+                          <?php foreach($stars as $star) { ?>
+                              <option value="<?php echo $star->star_id; ?>" <?php if($horroscope_info->star_id==$star->star_id) echo 'selected="SELECTED"'; ?>><?php echo $star->star_name; ?></option>
+                          <?php } ?>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Padam</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="padam">
+                          <option value="0">Option</option>
+                          <option value="1 Padam" <?php if($horroscope_info->padam=="1 Padam") echo 'selected="SELECTED"'; ?>>1 Padam</option>
+                          <option value="2 Padam" <?php if($horroscope_info->padam=="2 Padam") echo 'selected="SELECTED"'; ?>>2 Padam</option>
+                          <option value="3 Padam" <?php if($horroscope_info->padam=="3 Padam") echo 'selected="SELECTED"'; ?>>3 Padam</option>
+                          <option value="4 Padam" <?php if($horroscope_info->padam=="4 Padam") echo 'selected="SELECTED"'; ?>>4 Padam</option>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+               <li>
+                 <div class="wed-reg-right-child1">Have Dosham?</div>
+                 <div class="wed-reg-right-child2">
+                   <div class="wed-custom5">
+                       <input id="nm12" type="radio" name="dosham" value="1" <?php if($horroscope_info->dosham=="1") echo 'checked="checked"'; ?>>
+                       <label for="nm12">No</label>
+                       <input id="dvsd12" type="radio" name="dosham" value="2" <?php if($horroscope_info->dosham=="2") echo 'checked="checked"'; ?>>
+                       <label for="dvsd12">Yes</label>
+                       <input id="wd45" type="radio" name="dosham" value="3" <?php if($horroscope_info->dosham=="3") echo 'checked="checked"'; ?>>
+                       <label for="wd45">Don't Know</label>
+                   </div>
+                 </div>
+                 <div class="clearfix"></div>
+               </li>
+               
+               
+          <!--     <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Upload horoscope</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <span><input class="wed-reg-input12 reg_input" type="file" name="horo_img" id="horo_img"></span>
+                    
+                       <?php if($horroscope_info->horo_img!=""):?>
+                           <br>
+                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
+                      <?php endif?>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>  -->
+          
+ 
 
 
+
+
+
+
+<!----->
+      </ul>
+    </li>
+    <li class="wed-detail-left">
+      <div class="wed-space1">
+      </div>
+      <ul class="wed-inside-detail">
+
+
+
+
+
+
+    <!---->  
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </li>
+    <div class="clearfix"></div>
+    </form>
+  </ul>
+
+<!---HOme horoscope start---->
+<!---HOme edit end---->
+<!---HOme edit start---->
+<ul id="prof_preference_edit" style="display: none;">
+  <form method="post" id="prefernce_form">
+    <li class="wed-detail-left border-right1">
+      <div class="wed-detail-head">
+        <h5>Partner Preferences Details : </h5>
+        <div class="wed-detail-edit no_backurl">
+          <button type='submit' class="wed-go edit_prefernce_btn">Save</button>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <ul class="wed-inside-detail">
+      <li>
+                      <div class="child1">
+                        Age 
+      
+                      </div><br>
+                      <div class="row1">
+                      <span class="wed-or">from</span>
+                      <span>
+                        <select class="wed-reg-select2" name="age_from" required>
+                          <option disabled value="0">MIN</option><!--<option value="">MIN</option>-->
+                          <?php for($i=18;$i<=70;$i++) { ?>
+                          <option value="<?php echo $i; ?>" <?php  if($preferences->age_from==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
+                          <?php } ?>
+                        </select>
+                      </span>
+                      <span class="wed-or">To</span>
+                      <span>
+                        <select class="wed-reg-select2" name="age_to" required>
+                          <option disabled value="0">MAX</option><!--<option value="">MAX</option>-->
+                          <?php for($i=18;$i<=70;$i++) { ?>
+                          <option value="<?php echo $i; ?>" <?php if($preferences->age_to==$i) echo 'selected="SELECTED"'; ?>><?php echo $i; ?></option>
+                          <?php } ?>
+                        </select>
+                      </span>
+                    </div>
+                      <div class="clearfix"></div>
+                    </li>
+                    <li>
+                      <div class="child1">
+                      Height 
+      <?php //print_r($heights);
+       ?>
+                      </div><br>
+                      <div class="row1">
+          <span class="wed-or">From</span>
+                      <span></span>
+                        <select class="wed-reg-select2" name="height_from_id" required>
+                        <option disabled value="0">MIN</option>><!-- <option value="">MIN</option>-->
+                        <?php 
+                     //   $heights=json_decode(json_encode($heights),true);
+                     
+                        ?>
+                        <?php foreach($heights as $heightd) { ?>
+                          <option value="<?php echo $heightd['height_id']; ?>" <?php if($preferences->height_from_id==$heightd['height_id']) echo 'selected="SELECTED"'; ?> <?php ?>><?php echo $heightd['height']; ?></option>
+                      <?php } ?>
+                        </select>
+                      
+                      <span class="wed-or">To</span>
+                      <span></span>
+                        <select class="wed-reg-select2" name="height_to_id" required>
+                        <option disabled value="0">MAX</option><!--<option value="">MAX</option>-->
+                        <?php foreach($heights as $heightd) { ?>
+                          <option value="<?php echo $heightd['height_id']; ?>" <?php if($preferences->height_to_id==$heightd['height_id']) echo 'selected="SELECTED"'; ?> <?php ?>><?php echo $heightd['height']; ?></option>
+                      <?php } ?>
+                        </select>
+                      
+                    </div>
+                      <div class="clearfix"></div>
+                    </li>
+ 
+
+        <li>
+        <div class="wed-reg-right-child1">Maritial Status</div>
+                  <div class="wed-reg-right-child2">
+                    <div class="profile_check">
+
+                        <!--  <select class="wed-reg-select" name="maritial_status[]" id="maritial_status" multiple required>
+                      <option value="">select</option>
+                                <option value="1">Never Married</option>
+                                <option value="2">Divorced</option>
+                                <option value="3">Widowed</option>
+                                <option value="4">Awaiting for Divorce</option>
+                                
+                                                
+                             </select>
+
+                             <div class="profile_check"> </div>-->
+
+                        <input id="mnmt" class="drinking_sel" type="checkbox" name="maritial_status[]" value="1" <?php if(is_array($preferences->maritial_status)) { if(in_array('1', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mnmt">Never Married</label>
+                        <input id="mdd" class="drinking_sel" type="checkbox" name="maritial_status[]" value="2" <?php if(is_array($preferences->maritial_status)) { if(in_array('2', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mdd">Divorced</label>
+                        <input id="mwd" class="drinking_sel" type="checkbox" name="maritial_status[]" value="3" <?php if(is_array($preferences->maritial_status)) { if(in_array('3', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mwd">Widowed</label>
+                        <input id="mawd" class="drinking_sel" type="checkbox" name="maritial_status[]" value="4" <?php if(is_array($preferences->maritial_status)) { if(in_array('4', $preferences->maritial_status)) echo 'checked="checked"'; } ?>>
+                        <label for="mawd">Awaiting for Divorce</label>
+                   
+
+
+
+
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+        </li>
+<!----new more fields-->
+
+<li>
+                  <div class="wed-reg-right-child1">Physical Status</div>
+                  <div class="wed-reg-right-child2">
+                    <div class="profile_check">
+    
+                      <!--  <select class="wed-reg-select" name="physical_status[]" id="physical_status" multiple required>
+                       <!-- <option value="">select</option>->
+                                <option value="0">Doesn't Matter</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Physically Challenged</option>
+                                <option value="4">Awaiting for Divorce</option>
+                                
+                                                
+                             </select> -->
+
+                             <input id="pdt" class="physical_sel" type="checkbox" name="physical_status[]" value="0" <?php if(is_array($preferences->physical_status)) { if(in_array('0', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="pdt">Doesn't Matter</label>
+
+                             <input id="pn" class="physical_sel" type="checkbox" name="physical_status[]" value="1" <?php if(is_array($preferences->physical_status)) { if(in_array('1', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="pn">Normal</label>
+                        <input id="ppc" class="physical_sel" type="checkbox" name="physical_status[]" value="2" <?php if(is_array($preferences->physical_status)) { if(in_array('2', $preferences->physical_status)) echo 'checked="checked"'; } ?>>
+                        <label for="ppc">Physically Challenged</label>
+            
+
+
+
+
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1">Eating Habits</div>
+                  <div class="wed-reg-right-child2">
+                    <div class="profile_check">
+
+                   <!---     <select class="wed-reg-select" name="eating_habit[]" id="eating_habit" multiple required>
+                       -> <option value="0">Doesn't Matter</option>
+                                <option value="1">Vegetarian</option>
+                                <option value="2">Non Vegitarian</option>
+                                <option value="3">Eggetarian</option>
+                            <!--  <option value="4">Awaiting for Divorce</option>   
+                                
+                                                
+                             </select>-->
+                             
+                             <input id="edt" class="drinking_sel" type="checkbox" name="eating_habit[]" value="0" <?php if(is_array($preferences->eating_habit)) { if(in_array('0', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="edt">Doesn't Matter</label>
+                             <input id="ev" class="drinking_sel" type="checkbox" name="eating_habit[]" value="1" <?php if(is_array($preferences->eating_habit)) { if(in_array('1', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="ev">Vegitarian</label>
+                        <input id="env" class="drinking_sel" type="checkbox" name="eating_habit[]" value="2" <?php if(is_array($preferences->eating_habit)) { if(in_array('2', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="env">Non Vegitarian</label>
+                        <input id="ee" class="drinking_sel" type="checkbox" name="eating_habit[]" value="3" <?php if(is_array($preferences->eating_habit)) { if(in_array('3', $preferences->eating_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="ee">Eggetarian</label>
+  
+                   
+
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1">Drinking Habits</div>
+                  <div class="wed-reg-right-child2">
+                    <div class="profile_check">
+                        <input id="drinking_all" type="checkbox" name="drinking_habit[]" value="0" <?php if(is_array($preferences->drinking_habit)) { if(empty($preferences->drinking_habit)) echo 'checked="checked"'; ?> <?php if(in_array('0', $preferences->drinking_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="drinking_all">Doesn't Matter</label>
+                        <input id="nmt" class="drinking_sel" type="checkbox" name="drinking_habit[]" value="1" <?php if(is_array($preferences->drinking_habit)) { if(in_array('1', $preferences->drinking_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="nmt">Never Drinks</label>
+                        <input id="dvsdt" class="drinking_sel" type="checkbox" name="drinking_habit[]" value="2" <?php if(is_array($preferences->drinking_habit)) { if(in_array('2', $preferences->drinking_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="dvsdt">Drinks Socialy</label>
+                        <input id="wdt" class="drinking_sel" type="checkbox" name="drinking_habit[]" value="3" <?php if(is_array($preferences->drinking_habit)) { if(in_array('3', $preferences->drinking_habit)) echo 'checked="checked"'; } ?>>
+                        <label for="wdt">Drinks Regularly</label>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1">Smoking Habits </div>
+                  <div class="wed-reg-right-child2">
+                    <div class="profile_check">
+                        <input id="smoking_all" type="checkbox" name="smoking_habit[]" value="0" <?php if(empty($preferences->smoking_habit)) echo 'checked="checked"'; ?> <?php if(is_array($preferences->smoking_habit)){if(in_array('0', $preferences->smoking_habit)) echo 'checked="checked"';} ?>>
+                        <label for="smoking_all">Doesn't Matter</label>
+                        <input id="nmr" class="smoking_sel" type="checkbox" name="smoking_habit[]" value="1" <?php if(is_array($preferences->smoking_habit)){if(in_array('1', $preferences->smoking_habit)) echo 'checked="checked"';} ?>>
+                        <label for="nmr">Never Smokes</label>
+                        <input id="dvsdr" class="smoking_sel" type="checkbox" name="smoking_habit[]" value="2" <?php if(is_array($preferences->smoking_habit)){if(in_array('2', $preferences->smoking_habit)) echo 'checked="checked"';} ?>>
+                        <label for="dvsdr">Smokes Occasionaly</label>
+                        <input id="wgdr" class="smoking_sel" type="checkbox" name="smoking_habit[]" value="3" <?php if(is_array($preferences->smoking_habit)){if(in_array('3', $preferences->smoking_habit)) echo 'checked="checked"';} ?>>
+                        <label for="wgdr">Smokes Regularly</label> 
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                <div class="child1">
+                Partner Description
+          </div>
+       
+          <div class="child2">
+                  <textarea class="wed-reg-textarea" name="about_partner" rows="4" cols="25" minlength="50" placeholder="Describe your expectations.minimum 50 characters" required><?php echo $preferences->about_partner; ?></textarea>
+          </div>
+                </li>
+<!--- more fields end-->
+
+
+
+
+
+      </ul>
+    </li>
+    <li class="wed-detail-left">
+      <div class="wed-space1">
+      </div>
+      <ul class="wed-inside-detail">
+      <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Religion</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select religion-selector" name="religion" required>
+                          <option  value="">- Select Religion -</option>
+                          <?php foreach($religions as $rlgn) { ?>
+                              <option value="<?php echo $rlgn->religion_id; ?>" <?php if($preferences->religion==$rlgn->religion_id) echo 'selected="SELECTED"'; ?>><?php echo $rlgn->religion_name; ?></option>
+                          <?php } ?>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Mother Tongue</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select" name="mother_language" required>
+                          <option   value="">- Select Mother Tongue -</option>
+                          <?php foreach($mother_tongue as $mthr_tng) { ?>
+                              <option value="<?php echo $mthr_tng->mother_tongue_id; ?>"  <?php if($preferences->mother_language==$mthr_tng->mother_tongue_id) echo 'selected="SELECTED"'; ?>><?php echo $mthr_tng->mother_tongue_name ?></option>
+                          <?php } ?>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>
+        <!--        <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Caste / Division</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select caste-drop" name="caste[]" multiple="multiple" required>  <!-- caste-selector-->
+                        <?php
+                        foreach ($castes as $rs) {?>
+                          <option value="<?php echo $rs->caste_id;?>" <?php if(in_array($rs->caste_id, $preferences->caste)) echo 'selected="SELECTED"'; ?> ><?php echo $rs->caste_name; ?></option>
+                        <?php } ?>
+                        
+                        </select>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>  --->
+
+      <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Country</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select ctry_drop" name="country[]" multiple="multiple" required>
+                          <?php foreach($country as $ctry) { ?>
+                              <option value="<?php echo $ctry->country_id; ?>" <?php if(is_array( $preferences->country)){if(in_array($ctry->country_id,$preferences->country)) echo 'selected="SELECTED"'; }else if($ctry->country_id==$preferences->country){ echo 'selected="SELECTED"';}?>><?php echo $ctry->country_name; ?></option>
+                          <?php } ?>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1 paddingtop10">State</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select state_drop" name="state[]" multiple="multiple">
+                          <?php foreach($states as $state) { ?>
+                              <option value="<?php echo $state->state_id; ?>" <?php if(is_array( $preferences->state)){if(in_array($state->state_id, $preferences->state)) echo 'selected="SELECTED"';}else if($state->state_id==$preferences->state){ echo 'selected="SELECTED"';} ?>><?php echo $state->state_name; ?></option>
+                          <?php } ?>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>
+
+    <!--  <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Gothram</div>
+                 <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <span><input class="wed-reg-input12 reg_input" type="text" name="gothram" id="gothram" value="<?php echo $horroscope_info->gothram;?>" required></span>
+                    </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li> -->
+
+        <!--       <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Padam</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select class="wed-reg-select" name="padam">
+                          <option value="0">Option</option>
+                          <option value="1 Padam" <?php if($horroscope_info->padam=="1 Padam") echo 'selected="SELECTED"'; ?>>1 Padam</option>
+                          <option value="2 Padam" <?php if($horroscope_info->padam=="2 Padam") echo 'selected="SELECTED"'; ?>>2 Padam</option>
+                          <option value="3 Padam" <?php if($horroscope_info->padam=="3 Padam") echo 'selected="SELECTED"'; ?>>3 Padam</option>
+                          <option value="4 Padam" <?php if($horroscope_info->padam=="4 Padam") echo 'selected="SELECTED"'; ?>>4 Padam</option>                  
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li> -->
+
+
+      <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Education</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select educ_drop" name="education[]" multiple required>
+                        <option value="">Option</option>
+                          <?php foreach($educations as $education) { ?>
+                              <option <?php if(is_array($preferences->education)){if(in_array($education->education_id, $preferences->education)) echo 'selected="SELECTED"';} elseif($preferences->occupation==$occup->occupation_id){echo 'selected="SELECTED"';} ?> value="<?php echo $education->education_id; ?>"><?php echo $education->education; ?></option>
+                          <?php } ?>
+                        </select>
+                      </div>
+   
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Occupation</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select occup_drop" name="occupation[]" multiple="multiple">
+                          <?php foreach($occupations as $occup) { ?>
+                              <option <?php if(is_array($preferences->occupation)){if(in_array($occup->occupation_id,$preferences->occupation)) echo 'selected="SELECTED"';}elseif($preferences->occupation==$occup->occupation_id){echo 'selected="SELECTED"';} ?> value="<?php echo $occup->occupation_id; ?>"><?php echo $occup->occupation; ?></option>
+                          <?php } ?>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="wed-reg-right-child1 paddingtop10">Annual Income</div>
+                  <div class="wed-reg-right-child2">
+                      <div class="row1">
+                        <select class="wed-reg-select" name="min_income">
+                          <option disabled value="0">MIN</option>
+                          <option value="0">Any</option>
+                          <option>0</option>
+                          <option value="50000" <?php if($preferences->min_income=="50000") echo 'selected="SELECTED"'; ?>>50,000</option>
+                          <option value="100000" <?php if($preferences->min_income=="100000") echo 'selected="SELECTED"'; ?>>1,00,000</option>
+                          <option value="250000" <?php if($preferences->min_income=="250000") echo 'selected="SELECTED"'; ?>>2,50,000</option>
+                          <option value="500000" <?php if($preferences->min_income=="500000") echo 'selected="SELECTED"'; ?>>5,00,000</option>
+                          <option value="1000000" <?php if($preferences->min_income=="1000000") echo 'selected="SELECTED"'; ?>>10,00,000</option>
+                          <option value="2000000" <?php if($preferences->min_income=="2000000") echo 'selected="SELECTED"'; ?>>20,00,000</option>
+                          <option value="3000000" <?php if($preferences->min_income=="3000000") echo 'selected="SELECTED"'; ?>>30,00,000</option>
+                          <option value="4000000" <?php if($preferences->min_income=="4000000") echo 'selected="SELECTED"'; ?>>40,00,000</option>
+                          <option value="5000000" <?php if($preferences->min_income=="5000000") echo 'selected="SELECTED"'; ?>>50,00,000</option>
+                          <option value="6000000" <?php if($preferences->min_income=="6000000") echo 'selected="SELECTED"'; ?>>60,00,000</option>
+                          <option value="7000000" <?php if($preferences->min_income=="7000000") echo 'selected="SELECTED"'; ?>>70,00,000</option>
+                          <option value="8000000" <?php if($preferences->min_income=="8000000") echo 'selected="SELECTED"'; ?>>80,00,000</option>
+                          <option value="9000000" <?php if($preferences->min_income=="9000000") echo 'selected="SELECTED"'; ?>>90,00,000</option>
+                          <option value="10000000" <?php if($preferences->min_income=="10000000") echo 'selected="SELECTED"'; ?>>1,00,00,000</option>
+              
+                        </select>
+                        <select class="wed-reg-select" name="max_income">
+                          <option disabled value="0">MAX</option>
+                          <option value="0">Any</option>
+                          <option value="50000" <?php if($preferences->max_income=="50000") echo 'selected="SELECTED"'; ?>>50,000</option>
+                          <option value="100000" <?php if($preferences->max_income=="100000") echo 'selected="SELECTED"'; ?>>1,00,000</option>
+                          <option value="250000" <?php if($preferences->max_income=="250000") echo 'selected="SELECTED"'; ?>>2,50,000</option>
+                          <option value="500000" <?php if($preferences->max_income=="500000") echo 'selected="SELECTED"'; ?>>5,00,000</option>
+                          <option value="1000000" <?php if($preferences->max_income=="1000000") echo 'selected="SELECTED"'; ?>>10,00,000</option>
+                          <option value="2000000" <?php if($preferences->max_income=="2000000") echo 'selected="SELECTED"'; ?>>20,00,000</option>
+                          <option value="3000000" <?php if($preferences->max_income=="3000000") echo 'selected="SELECTED"'; ?>>30,00,000</option>
+                          <option value="4000000" <?php if($preferences->max_income=="4000000") echo 'selected="SELECTED"'; ?>>40,00,000</option>
+                          <option value="5000000" <?php if($preferences->max_income=="5000000") echo 'selected="SELECTED"'; ?>>50,00,000</option>
+                          <option value="6000000" <?php if($preferences->max_income=="6000000") echo 'selected="SELECTED"'; ?>>60,00,000</option>
+                          <option value="7000000" <?php if($preferences->max_income=="7000000") echo 'selected="SELECTED"'; ?>>70,00,000</option>
+                          <option value="8000000" <?php if($preferences->max_income=="8000000") echo 'selected="SELECTED"'; ?>>80,00,000</option>
+                          <option value="9000000" <?php if($preferences->max_income=="9000000") echo 'selected="SELECTED"'; ?>>90,00,000</option>
+                          <option value="10000000" <?php if($preferences->max_income=="10000000") echo 'selected="SELECTED"'; ?>>1,00,00,000</option>
+               </select>
+                  <!--      <span><select class="wed-reg-select1 cst-select-1" cst-attr="currency" cst-for="city" id="currency-selector" name="income_currency">
+
+                          <?php foreach($currencies as $currency) { ?>
+                              <option value="<?php echo $currency->symbol.' - '.$currency->code; ?>" <?php if($preferences->income_currency==$currency->symbol.' - '.$currency->code) echo 'selected="SELECTED"'; ?>><?php echo $currency->symbol.' - '.$currency->code; ?></option>
+                          <?php } ?>  
+                          
+                        </select></span> -->
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                </li>
+
+
+                <li>
+                 <div class="wed-reg-right-child1 paddingtop10">Star</div>
+                 <div class="wed-reg-right-child2">
+                     <div class="row1">
+                       <select id="test"  multiple="multiple" name="star[]">  <!----->
+                     <?php if(isset($preferences->star)){}
+                      $preferences->star=explode (",",$preferences->star); 
+                     ?>
+                      <!--    <option  value="0">none</option>--->
+                          <?php foreach($stars as $star) { ?>
+                              <option value="<?php echo $star->star_id; ?>"  <?php if(is_array($preferences->star)){if(in_array($star->star_id,$preferences->star)) echo 'selected="SELECTED"';}elseif($preferences->star==$star->star_name){echo 'selected="SELECTED"';} ?> ><?php echo $star->star_name; ?></option>
+                          <?php } ?>   
+                                       
+                       </select>
+                     </div>
+                   </div>
+                 <div class="clearfix"></div>
+               </li>
+
+
+
+      </ul>
+    </li>
+    <div class="clearfix"></div>
+    </form>
+  </ul>
+
+<!---HOme edit end---->
 
 
   </div>
@@ -1737,410 +3121,7 @@
         </div>
       </div>
 
-      <div class="wed-profile-details">
-        <div class="wed-patner-preference1">
-          <div class="container container-custom">
-          <div class="wed-row">
-            <h5>Partner Preference</h5>
-            <ul>
-              <li class="wed-detail-left border-right1">
-                <div class="wed-detail-head">
-                  <h5>Basic & Religious Preference</h5>
-                  <a href="<?php echo base_url();?>profile/partner_preference">
-                    <div class="wed-detail-edit">
-                      edit
-                    </div>
-                  </a>
-                  <div class="clearfix"></div>
-                </div>
-                <ul class="wed-inside-detail">
-                  <li>
-                    <div class="child1">
-                      Bride's Age
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php if(!empty($prefernce)){echo "<b>".$prefernce['min_age']."</b> - <b>".$prefernce['max_age']."</b> Years";} ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Height
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php if(!empty($prefernce)){echo "<b>".$prefernce['min_height']."</b> - <b>".$prefernce['max_height']."</b>";} ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                      Marital status
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if(!empty($prefernce)){ echo implode(', ', $prefernce['maritial']); } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                      Physical Status
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if(!empty($prefernce)){ echo implode(', ', $prefernce['physical']); } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                      Eating Habits
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if(!empty($prefernce)){ echo implode(', ', $prefernce['eating']); } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                      Smoking Habits
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if(!empty($prefernce)){ echo implode(', ', $prefernce['smoking']); } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                      Drinking Habits
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if(!empty($prefernce)){ echo implode(', ', $prefernce['drinking']); } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                </ul>
-            </li>
-            <li class="wed-detail-left">
-              <div class="wed-space1">
-              </div>
-              <ul class="wed-inside-detail">
-                <li>
-                  <div class="child1">
-                    Religion
-                  </div>
-                  <div class="child2">:
-                  </div>
-                  <div class="child3">
-                    <?php if(!empty($prefernce)){echo $prefernce['religion'].""; }?>
-                  </div>
-                  <div class="clearfix"></div>
-                </li>
-                <li>
-                  <div class="child1">
-                Mother Tongue
-                  </div>
-                  <div class="child2">:
-                  </div>
-                  <div class="child3">
-                    <?php if(!empty($prefernce)){ echo $prefernce['mother']; }?>
-                  </div>
-                  <div class="clearfix"></div>
-                </li>
-                <li>
-                  <div class="child1">
-                    Caste
-                  </div>
-                  <div class="child2">:
-                  </div>
-                  <div class="child3">
-                  <?php if(!empty($prefernce)){ echo $prefernce['caste']; } ?>
-                  </div>
-                  <div class="clearfix"></div>
-                </li>
-            <!--     <li>
-                  <div class="child1">
-                    Star
-                  </div>
-                  <div class="child2">:
-                  </div>
-                  <div class="child3">
-                    <?php if(!empty($prefernce)){foreach($prefernce['star'] as $val) { echo $val.", "; } }?>
-                  </div>
-                  <div class="clearfix"></div>
-                </li>
-                <li>
-                  <div class="child1">
-                    Chovva Dosham
-                  </div>
-                  <div class="child2">:
-                  </div>
-                  <div class="child3">
-                    <?php if(!empty($prefernce)){foreach($prefernce['dosham'] as $val) { echo $val.", "; }} ?>
-                  </div>
-                  <div class="clearfix"></div>
-                </li> -->
-
-              </ul>
-          </li>
-
-
-              <div class="clearfix"></div>
-            </ul>
-          </div>
-          <div class="wed-row">
-            <ul>
-              <li class="wed-detail-left border-right1">
-                <div class="wed-detail-head">
-                  <h5>Professional Preferences</h5>
-                  <a href="<?php echo base_url();?>profile/partner_preference">
-                    <div class="wed-detail-edit">
-                      edit
-                    </div>
-                  </a>
-                  <div class="clearfix"></div>
-                </div>
-                <ul class="wed-inside-detail">
-                  <li>
-                    <div class="child1">
-                    Education
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                     <?php if(isset($prefernce) && ($prefernce != "")) {
-                        echo $prefernce['education'];
-                      } else { 
-                        echo "Any";
-                      } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Occupation
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php if(isset($prefernce) && ($prefernce != "")) {
-                        echo $prefernce['occupation'];
-                      } else { 
-                        echo "Any";
-                      } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Annual Income
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php if(!empty($prefernce)){echo $prefernce['min_income']." - ".$prefernce['max_income']." (".$prefernce['income_currency'].")";} ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                </ul>
-              </li>
-              <li class="wed-detail-left">
-                <div class="wed-space1">
-                </div>
-                <ul class="wed-inside-detail">
-                  <li>
-                    <div class="child1">
-                      Country
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php if(isset($prefernce) && ($prefernce != "")) {
-                          echo $prefernce['country'];
-                        } else { 
-                          echo "Any";
-                        } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                      Residing State
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php if(isset($prefernce) && ($prefernce != "")) {
-                          echo $prefernce['state'];
-                        } else { 
-                          echo "Any";
-                        } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Citizenship
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                    <?php if(isset($prefernce) && ($prefernce != "")) {
-                          echo $prefernce['country'];
-                        } else { 
-                          echo "Any";
-                        } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <!-- <li>
-                    <div class="child1">
-                    Residing City
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                     <?php if(!empty($prefernce))foreach($prefernce['city'] as $val) { 
-                          if(isset($val->city_name)) { 
-                            echo $val->city_name.", ";
-                          } else { 
-                            echo "Any";
-                          } 
-                      } ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li> -->
-                </ul>
-              </li>
-              <div class="clearfix"></div>
-            </ul>
-          </div>
-          <div class="wed-row">
-            <ul>
-              <li class="wed-detail-left border-right1">
-                <div class="wed-detail-head">
-                  <h5>Horoscope Details</h5>
-                  <a href="<?php echo base_url();?>profile/partner_preference">
-                    <div class="wed-detail-edit">
-                      edit
-                    </div>
-                  </a>
-                  <div class="clearfix"></div>
-                </div>
-                <ul class="wed-inside-detail">
-                  <li>
-                    <div class="child1">
-                    Gothram
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                     <?php echo $horroscope_info->gothram;?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Star
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                     <?php echo $horroscope_info->star_name;?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Padam
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                     <?php echo $horroscope_info->padam;?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Have Dosham?
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                      <?php 
-                      switch ($horroscope_info->dosham) {
-                        case '1':
-                          echo "No";
-                          break;
-                        case '2':
-                          echo "Yes";
-                          break;
-                          default:
-                          echo "Don't Know.";
-                          break;
-                      }
-                      ?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                  <li>
-                    <div class="child1">
-                    Horoscope File
-                    </div>
-                    <div class="child2">:
-                    </div>
-                    <div class="child3">
-                       <?php if($horroscope_info->horo_img!=""):?>
-                       <a href="<?php echo base_url();?>assets/uploads/horoscope/<?php echo $horroscope_info->horo_img;?>" download class="btn btn-success">Download Horoscope</a>
-                      <?php endif?>
-                    </div>
-                    <div class="clearfix"></div>
-                  </li>
-                </ul>
-              </li>
-              <li class="wed-detail-left">
-                
-                
-              </li>
-              <div class="clearfix"></div>
-            </ul>
-          </div>
-          <div class="wed-row bordernone">
-            <h5>What we are looking for</h5>
-            <ul>
-              <li class="wed-detail-left" style="width:100% !important">
-                <div class="wed-detail-head">
-                  <h5 style="line-height:30px; text-align:justify;"><?php if(!empty($prefernce)){if($prefernce['abt_part']!=NULL) { echo $prefernce['abt_part']; } }else { echo "Not Specified"; } ?></h5>
-                </div>
-              </li>
-              <div class="clearfix"></div>
-          </div>
-        </div>
-        </div>
-        <div class="wed-space">
-        </div>
-        <div class="wed-help-div">
-          <div class="wed-help-assistance">
-            <p>Need help? Here's one click assistance!   </p>
-            <p><a href="#">Click here</a>and we will get in touch with you right away.</p>
-          </div>
-        </div>
-        <div class="wed-space">
-        </div>
-      </div>
+ 
 </div>
 
 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -2185,7 +3166,14 @@ $(document).ready(function(){
         $('#prof_family_edit').show();
         $('#prof_family_ul').replaceWith($('#prof_family_edit'));
     });
-
+    $(document).on("click","#prof_preference_edit_btn",function() {
+        $('#prof_preference_edit').show();
+        $('#prof_preference_ul').replaceWith($('#prof_preference_edit'));
+    });
+    $(document).on("click","#prof_horoscope_edit_btn",function() {
+        $('#prof_horoscope_edit').show();
+        $('#prof_horoscope_ul').replaceWith($('#prof_horoscope_edit'));
+    });
      $(document).on("click","#about_family_edit_btn",function() {
         $('#about_family_edit').show();
         $('#about_family_ul').replaceWith($('#about_family_edit'));
@@ -2302,7 +3290,7 @@ $(document).ready(function(){
       return false;
       //}
     });
-
+//edit_prefernce_btn
     $(document).on("click",".edit_family_btn",function() {
       event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
@@ -2325,6 +3313,77 @@ $(document).ready(function(){
       return false;
       //}
     });
+
+
+    $(document).on("click",".edit_horoscope_btn",function() {
+      event.preventDefault();
+      //if($('#edit_form').parsley().validate()) {
+      var value =$("#horoscope_form").serialize();
+      console.log(value);
+      $.ajax({
+        type: "POST",
+        url: base_url+'Home/update_profile1',
+        data: value,
+        error: function (err) {
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+        },
+        success: function(data) {
+          console.log(data);
+          alert("Updated Successfully!");
+          //location.reload();
+          window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+        }
+      });
+      return false;
+      //}
+    });
+
+
+    $(document).on("click",".edit_prefernce_btn",function() {
+      event.preventDefault();
+      //if($('#edit_form').parsley().validate()) {
+      var value =$("#prefernce_form").serialize();
+      console.log(value);
+      $.ajax({
+        type: "POST",
+        url: base_url+'Home/update_preference',
+        data: value,
+        error: function (err) {
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+        },
+        success: function(data) {
+          console.log(data);
+          alert("Updated Successfully!");
+          //location.reload();
+          window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+        }
+      });
+      return false;
+      //}
+    });
+
+  /*  $(document).on("click",".edit_preference_btn",function() {
+      event.preventDefault();
+      //if($('#edit_form').parsley().validate()) {
+      var value =$("#family_form").serialize();
+      console.log(value);
+      $.ajax({
+        type: "POST",
+        url: base_url+'Home/update_preference',
+        data: value,
+        error: function (err) {
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+        },
+        success: function(data) {
+          console.log(data);
+          alert("Updated Successfully!");
+          //location.reload();
+          window.location = "<?php echo base_url()?>/profile/my_profile"; return false;
+        }
+      });
+      return false;
+      //}
+    });  */
 
     $(document).on("click",".edit_about_btn",function() {
       event.preventDefault();
@@ -2425,5 +3484,98 @@ var caste = <?php echo json_encode($profile->caste) ?>;
   
  });    
       </script> 
+<script>
+    $(document).ready(function () {
+            $(document).on("click", ".MultiCheckBox", function () {
+                var detail = $(this).next();
+                detail.show();
+            });
+
+            $(document).on("click", ".MultiCheckBoxDetailHeader input", function (e) {
+                e.stopPropagation();
+                var hc = $(this).prop("checked");
+                $(this).closest(".MultiCheckBoxDetail").find(".MultiCheckBoxDetailBody input").prop("checked", hc);
+                $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
+            });
+
+            $(document).on("click", ".MultiCheckBoxDetailHeader", function (e) {
+                var inp = $(this).find("input");
+                var chk = inp.prop("checked");
+                inp.prop("checked", !chk);
+                $(this).closest(".MultiCheckBoxDetail").find(".MultiCheckBoxDetailBody input").prop("checked", !chk);
+                $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
+            });
+
+            $(document).on("click", ".MultiCheckBoxDetail .cont input", function (e) {
+                e.stopPropagation();
+                $(this).closest(".MultiCheckBoxDetail").next().UpdateSelect();
+
+                var val = ($(".MultiCheckBoxDetailBody input:checked").length == $(".MultiCheckBoxDetailBody input").length)
+                $(".MultiCheckBoxDetailHeader input").prop("checked", val);
+            });
+
+            $(document).on("click", ".MultiCheckBoxDetail .cont", function (e) {
+                var inp = $(this).find("input");
+                var chk = inp.prop("checked");
+                inp.prop("checked", !chk);
+
+                var multiCheckBoxDetail = $(this).closest(".MultiCheckBoxDetail");
+                var multiCheckBoxDetailBody = $(this).closest(".MultiCheckBoxDetailBody");
+                multiCheckBoxDetail.next().UpdateSelect();
+
+                var val = ($(".MultiCheckBoxDetailBody input:checked").length == $(".MultiCheckBoxDetailBody input").length)
+                $(".MultiCheckBoxDetailHeader input").prop("checked", val);
+            });
+
+            $(document).mouseup(function (e) {
+                var container = $(".MultiCheckBoxDetail");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.hide();
+                }
+            });
+        });
+
+        var defaultMultiCheckBoxOption = { width: '220px', defaultText: 'Select Below', height: '200px' };
+
+        jQuery.fn.extend({
+            CreateMultiCheckBox: function (options) {
+
+                var localOption = {};
+                localOption.width = (options != null && options.width != null && options.width != undefined) ? options.width : defaultMultiCheckBoxOption.width;
+                localOption.defaultText = (options != null && options.defaultText != null && options.defaultText != undefined) ? options.defaultText : defaultMultiCheckBoxOption.defaultText;
+                localOption.height = (options != null && options.height != null && options.height != undefined) ? options.height : defaultMultiCheckBoxOption.height;
+
+                this.hide();
+                this.attr("multiple", "multiple");
+                var divSel = $("<div class='MultiCheckBox'>" + localOption.defaultText + "<span class='k-icon k-i-arrow-60-down'><svg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' class='svg-inline--fa fa-sort-down fa-w-10 fa-2x'><path fill='currentColor' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z' class=''></path></svg></span></div>").insertBefore(this);
+                divSel.css({ "width": localOption.width });
+
+                var detail = $("<div class='MultiCheckBoxDetail'><div class='MultiCheckBoxDetailHeader'><input type='checkbox' class='mulinput' value='-1982' /><div>Select All</div></div><div class='MultiCheckBoxDetailBody'></div></div>").insertAfter(divSel);
+                detail.css({ "width": parseInt(options.width) + 10, "max-height": localOption.height });
+                var multiCheckBoxDetailBody = detail.find(".MultiCheckBoxDetailBody");
+
+                this.find("option").each(function () {
+                    var val = $(this).attr("value");
+
+                    if (val == undefined)
+                        val = '';
+
+                    multiCheckBoxDetailBody.append("<div class='cont'><div><input type='checkbox' class='mulinput' value='" + val + "' /></div><div>" + $(this).text() + "</div></div>");
+                });
+
+                multiCheckBoxDetailBody.css("max-height", (parseInt($(".MultiCheckBoxDetail").css("max-height")) - 28) + "px");
+            },
+            UpdateSelect: function () {
+                var arr = [];
+
+                this.prev().find(".mulinput:checked").each(function () {
+                    arr.push($(this).val());
+                });
+
+                this.val(arr);
+            },
+        });
+    </script>
+
 
 </body></html>
