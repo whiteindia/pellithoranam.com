@@ -1388,11 +1388,11 @@ Mother Tongue
                                                   $preferences->caste=explode (",",$preferences->caste); 
                                                   foreach($castes as $rs) { ?>
                              <?php 
-                             if(in_array($rs->caste_id, $preferences->caste))echo $rs->caste_name;
+                             if(in_array($rs->caste_id, $preferences->caste))//echo $rs->caste_name;
                              ?>
                           <?php }
                                                  }else{
-                                                   echo '-';
+                                                 //  echo '-';
                                                  }
                           
                           ?>
