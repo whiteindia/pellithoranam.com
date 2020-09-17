@@ -218,10 +218,10 @@
             </li>
             <li class="wed-detail-left">
               <div class="wed-patner-preference">
-              <!--  <a href="<?php echo base_url();?>profile/partner_preference" class="custom_a">
+            <!--    <a href="<?php echo base_url();?>profile/partner_preference" class="custom_a"></a>    Add Partner Preferences-->
                 <div class="wed-add-patner-preference">
-                  Add Partner Preferences
-                </a>  -->
+               
+                <i class="fa fa-leaf" style="font-size:16px;color:green"></i> <i class="fa fa-cubes" style="font-size:16px;color:yellow"></i>
                 </div>
                 <!-- <div class="wed-add-patner-horrorscope">
                   Add Horoscope
