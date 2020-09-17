@@ -158,7 +158,7 @@
             <div class="wed-profile-banner-right-50">
               <p>How your profile looks<br> to others</p>
               <a href="<?php echo base_url()?>profile/profile_details/<?php echo $profile->matrimony_id;?>"><button class="wed-preview-btn">Preview Profile</button></a>
-              <p><a href="<?php echo base_url();?>profile/partner_preference" class="custom_a"><span><img src="<?php echo base_url(); ?>assets/img/add1.png"></span>Add Partner Preferences</a></p>
+              <!--<p><a href="<?php echo base_url();?>profile/partner_preference" class="custom_a"><span><img src="<?php echo base_url(); ?>assets/img/add1.png"></span>Add Partner Preferences</a></p> -->
             </div>
             <div class="wed-profile-banner-right-50">
               <div class="c100 p<?php echo round($profile_complete);?> center">
@@ -218,10 +218,10 @@
             </li>
             <li class="wed-detail-left">
               <div class="wed-patner-preference">
-                <a href="<?php echo base_url();?>profile/partner_preference" class="custom_a">
+              <!--  <a href="<?php echo base_url();?>profile/partner_preference" class="custom_a">
                 <div class="wed-add-patner-preference">
                   Add Partner Preferences
-                </a>
+                </a>  -->
                 </div>
                 <!-- <div class="wed-add-patner-horrorscope">
                   Add Horoscope
