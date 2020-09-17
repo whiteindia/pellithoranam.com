@@ -957,9 +957,13 @@
       <div class="wed-detail-head">
         <h5>About my Family</h5>
         <div class="clearfix"></div>
-        <textarea class="wed-reg-textarea" rows="4" cols="50"  id="family_about_text" name="family_about"><?php echo $profile->family_about;?></textarea>
-        <!--<textarea class="wed-reg-textarea" rows="4" style="width:90% !important" id="family_about_text" name="family_about"><?php echo 'description'; echo $profile->family_about;?></textarea>-->
-        <div class="wed-detail-edit no_backurl">
+     <!--   <textarea class="wed-reg-textarea" rows="4" cols="50"  id="family_about_text" name="family_about"><?php echo $profile->family_about;?></textarea>
+        <textarea class="wed-reg-textarea" rows="4" style="width:90% !important" id="family_about_text" name="family_about"><?php echo 'description'; echo $profile->family_about;?></textarea>-->
+        <textarea  class="wed-reg-textarea" id="family_about_text" name="family_about" rows="4" cols="50">
+        <?php echo $profile->family_about;?>
+</textarea>
+    
+     <div class="wed-detail-edit no_backurl">
           <button type='submit' class="wed-go edit_about_btn">Save</button>
         </div>
       </div>
