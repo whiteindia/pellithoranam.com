@@ -291,7 +291,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
                               <li><a href="<?php echo base_url();?>profile/upload_profile_pic" style="color:#d12d4c;font-weight:500;">- Add a Profile Photo</a></li>
                               <li><a href="<?php echo base_url();?>profile/upload_multi_image" style="color:#d12d4c;font-weight:500;">- Add a Gallery Photo</a></li>
                             </div>
-                          <li><a href="<?php echo base_url();?>profile/partner_preference">Edit Partner Preference</a></li>
+                       <!--   <li><a href="<?php echo base_url();?>profile/partner_preference">Edit Partner Preference</a></li> -->
                           <li><a href="<?php echo base_url();?>profile/upload_badge">Add Trust Badge</a></li>
                           <li><a href="<?php echo base_url();?>settings">Settings</a></li>
                           <li><a href="#">Feedback</a></li>
