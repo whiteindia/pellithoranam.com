@@ -102,7 +102,7 @@
                         <div class="wed-search-btn-bay">
                           <button class="wed-mail">Send mail</button>
                           <?php if($profile->shortlisted == 1) { ?>
-                          <button class="wed-shortlist remove-shortlist" proc_name="<?php echo $profile->profile_name; ?>" matr_id="<?php echo $profile->matrimony_id; ?>">Shortlisted</button>
+                          <button class="wed-shortlist remove-shortlist" proc_name="<?php echo $profile->profile_name; ?>" matr_id="<?php echo $profile->matrimony_id; ?>">Remove from Sortlist</button>
                           <?php } else { ?>
                           <button class="wed-shortlist shortlist" proc_name="<?php echo $profile->profile_name; ?>" matr_id="<?php echo $profile->matrimony_id; ?>">Short List</button>
                           <?php } ?>
