@@ -3189,7 +3189,7 @@ $(document).ready(function(){
     //     $(".about_u").hide();
     // });
 
-    $(".cst-select-1").on('change', function () {
+    $(".cst-select-1").on('change', function(event) {
       event.preventDefault();
       //alert($(this).attr('id'))
         var valueSelected = $(this).val();
@@ -3208,7 +3208,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".religion-selector").on('change', function () {
+    $(".religion-selector").on('change', function(event) {
       event.preventDefault();
       var valueSelected = $(this).val();
       var passdata_1 = 'rlgn_sel='+ valueSelected;
@@ -3222,7 +3222,7 @@ $(document).ready(function(){
       });
     });
 
-    $(".caste-selector").on('change', function () {
+    $(".caste-selector").on('change', function (event) {
       event.preventDefault();
       var valueSelected = $(this).val();
       var passdata_1 = 'cast_sel='+ valueSelected;
@@ -3250,7 +3250,7 @@ $(document).ready(function(){
         });
     });*/
 
-    $(document).on("click","#prof_pers_btn",function() {
+    $(document).on("click","#prof_pers_btn",function(event) {
       event.preventDefault();
       if($('#about_form').parsley().validate()) {
         var value =$("#about_form").serialize();
@@ -3271,7 +3271,7 @@ $(document).ready(function(){
       }
     });
 
-    $(document).on("click",".edit_relg_btn",function() {
+    $(document).on("click",".edit_relg_btn",function(event) {
       event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
       console.log('relg_form - submit');
@@ -3295,7 +3295,7 @@ $(document).ready(function(){
       //}
     });
 //edit_prefernce_btn
-    $(document).on("click",".edit_family_btn",function() {
+    $(document).on("click",".edit_family_btn",function(event) {
       event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
       var value =$("#family_form").serialize();
@@ -3319,7 +3319,7 @@ $(document).ready(function(){
     });
 
 
-    $(document).on("click",".edit_horoscope_btn",function() {
+    $(document).on("click",".edit_horoscope_btn",function(event) {
       event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
       var value =$("#horoscope_form").serialize();
@@ -3343,7 +3343,7 @@ $(document).ready(function(){
     });
 
 
-    $(document).on("click",".edit_prefernce_btn",function() {
+    $(document).on("click",".edit_prefernce_btn",function(event) {
       event.preventDefault();
       //if($('#edit_form').parsley().validate()) {
       var value =$("#prefernce_form").serialize();
@@ -3389,7 +3389,7 @@ $(document).ready(function(){
       //}
     });  */
 
-    $(document).on("click",".edit_about_btn",function() {
+    $(document).on("click",".edit_about_btn",function(event) {
       event.preventDefault();
         //if($('#edit_form').parsley().validate()) {
 
