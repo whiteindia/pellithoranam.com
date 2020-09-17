@@ -951,14 +951,14 @@
 
           <!---family details end--->
 
-          <ul id="about_family_edit" style="display: none;">
+      <!--    <ul id="about_family_edit" style="display: none;">
   <form method="post" id="family_about_form">
     <li class="wed-detail-left" style=" width:100% !important">
       <div class="wed-detail-head">
         <h5>About my Family</h5>
         <div class="clearfix"></div>
-     <!--   <textarea class="wed-reg-textarea" rows="4" cols="50"  id="family_about_text" name="family_about"><?php echo $profile->family_about;?></textarea>
-        <textarea class="wed-reg-textarea" rows="4" style="width:90% !important" id="family_about_text" name="family_about"><?php echo 'description'; echo $profile->family_about;?></textarea>-->
+     <!-   <textarea class="wed-reg-textarea" rows="4" cols="50"  id="family_about_text" name="family_about"><?php echo $profile->family_about;?></textarea>
+        <textarea class="wed-reg-textarea" rows="4" style="width:90% !important" id="family_about_text" name="family_about"><?php echo 'description'; echo $profile->family_about;?></textarea>->
         <textarea  class="wed-reg-textarea" id="family_about_text" name="family_about" rows="4" cols="50">
         <?php echo $profile->family_about;?>
 </textarea>
@@ -971,7 +971,7 @@
     </li>
     <div class="clearfix"></div>
     </form>
-  </ul>
+  </ul>  -->
 
  <!---horoscope start--->
  <div class="wed-row">
