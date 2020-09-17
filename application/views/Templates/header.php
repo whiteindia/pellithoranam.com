@@ -89,7 +89,7 @@ $setting = get_setting(); ?>
                         </div>
                         <div class="wed-modal-list">
                           <li><a href="<?php echo base_url();?>Myaccount/">Edit Profile</a></li>
-                          <li><a href="#">Edit Partner Preference</a></li>
+                      <!--    <li><a href="#">Edit Partner Preference</a></li> -->
                           <li><a href="#">Generate Hororscope</a></li>
                           <li><a href="#">Add Trust Badge</a></li>
                           <li><a href="<?php echo base_url();?>Profile/photo_add">Settings</a></li>
