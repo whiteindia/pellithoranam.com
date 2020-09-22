@@ -187,7 +187,9 @@ else {
         $config['useragent']           = "CodeIgniter";
         $config['mailpath']            = "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']            = "smtp";
-        $config['smtp_host']           = "localhost";
+        $config['smtp_user']    = 'kvs116.wi@gmail.com';
+        $config['smtp_pass']    = 'dvsk0309';
+        $config['smtp_host']           = "smtp.gmail.com";
         $config['smtp_port']           = "587";
         $config['mailtype'] = 'html';
         $config['charset']  = 'utf-8';
