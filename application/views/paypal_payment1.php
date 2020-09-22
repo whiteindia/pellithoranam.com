@@ -75,7 +75,7 @@ $now=date('d-m-Y H:i:s');
                         </div>
                         <div class="detail_list">    
                             <div class="col-md-6"><b>Package Name </b></div>
-                            <div class="col-md-6">: '. $package->package_name.'</div>
+                            <div class="col-md-6">: package_name</div>
                         </div>
                         <div class="detail_list">    
                             <div class="col-md-6"><b>Amount</b></div>
