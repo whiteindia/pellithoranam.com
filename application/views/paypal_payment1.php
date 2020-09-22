@@ -183,10 +183,20 @@ else {
       $mgClient->attachments($pdff,$filename);
       $mgClient->send(); */
         //print_r($sendMessage);die;
-       
+        $config = array();
+        $config['useragent']           = "CodeIgniter";
+        $config['mailpath']            = "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
+        $config['protocol']            = "smtp";
+        $config['smtp_host']           = "localhost";
+        $config['smtp_port']           = "25";
+        $config['mailtype'] = 'html';
+        $config['charset']  = 'utf-8';
+        $config['newline']  = "\r\n";
+        $config['wordwrap'] = TRUE;
 
 
         $this->load->library('email');
+        $this->email->initialize($config);
         $this->email->from('Noreply@pellithoranam.com', 'pellithoranam');
         $this->email->to('kvs116.wi@gmail.com');
         $this->email->subject('Invoice');
