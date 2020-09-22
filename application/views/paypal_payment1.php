@@ -3,8 +3,8 @@ $my_matr_id = $this->session->userdata('logged_in');
 $query = $this->db->where('matrimony_id',$my_matr_id->matrimony_id);
 $query = $this->db->get('profiles');
 $user = $query->row();
-print_r($user);
-exit();
+//print_r($user);
+//exit();
 $booked=array();
 //index.php
 $booked['purchase_amount']=1000;
