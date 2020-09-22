@@ -1,4 +1,8 @@
 <?php
+$my_matr_id = $this->session->userdata('logged_in');
+$query = $this->db->where('matrimony_id',$my_matr_id);
+$query = $this->db->get('profiles');
+$result = $query->row();
 
 //index.php
 $booked['purchase_amount']=1000;
