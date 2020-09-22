@@ -183,21 +183,30 @@ else {
       $mgClient->attachments($pdff,$filename);
       $mgClient->send(); */
         //print_r($sendMessage);die;
-        $config = array();
+  /*      $config = array();
         $config['useragent']           = "CodeIgniter";
         $config['mailpath']            = "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']            = "smtp";
         $config['smtp_user']    = 'my.pellithoranam.com@gmail.com';
         $config['smtp_pass']    = 'PTM#1234';
         $config['smtp_host']           = "smtp.gmail.com";
-        $config['smtp_port']           = "587";
+        $config['smtp_port']           = 587;
         $config['mailtype'] = 'html';
         $config['charset']  = 'utf-8';
         $config['newline']  = "\r\n";
         $config['wordwrap'] = TRUE;
         $config['send_multipart'] = TRUE;
         $config['smtp_crypto'] = 'tls';
-
+*/
+$config = array(
+    'protocol'  => 'smtp',
+    'smtp_host' => 'ssl://smtp.googlemail.com',
+    'smtp_port' => 465,
+    'smtp_user' => 'my.pellithoranam.com@gmail.com',
+    'smtp_pass' => 'PTM#1234',
+    'mailtype'  => 'html',
+    'charset'   => 'utf-8'
+);
 
         $this->load->library('email');
         $this->email->initialize($config);
@@ -206,7 +215,7 @@ else {
         $this->email->subject('Invoice');
         $this->email->message('This is my message');
      
-        $this->email->attach($pdff);
+      //  $this->email->attach($pdff);
    if($this->email->send()){
        echo 'success';
    }else{
