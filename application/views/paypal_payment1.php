@@ -143,61 +143,8 @@ $pdff = $obj_pdf->Output($filename.'.pdf', 'S');
                   </body>
                   </html>';
                   
-    /*              $this->load->library('PHPMailer');
-                //  $this->load->library('smtp');
-        //echo "<pre>"; print_r($sendMessage);
-      //  $mail = new Bizmailer();
-      $mail = new PHPMailer();
-      $mail->AddAddress($user->email); 
-      $mail->IsMail();
+ 
 
-      $mail->AddStringAttachment($pdff, 'output.pdf');
-
-      $mail->From      = 'kvs116.wi@gmail.com';
-      $mail->FromName = 'sam';            
-      $mail->IsHTML(true);                                  
-      $mail->Subject        =  "Invoice";
-      $mail->Body           =  $sendMessage;
-    if($mail->Send()){
-echo 'success ####';
-    }else{
-        echo 'xxxxx';
-
-    }
-      $mail->ClearAddresses();
-
-
-if(file_put_contents( $file_name,file_get_contents($pdff))) { 
-    echo "File downloaded successfully"; 
-} 
-else { 
-    echo "File downloading failed."; 
-}*/
-//print_r();
-      /*$this->load->library('Mailgun_lib');
-      $mgClient = new Mailgun_lib();
-      $mgClient->to($user->email);
-      $mgClient->from("noreply@pellithoranam.com", "pellithoranam");
-      $mgClient->subject("Invoice from pellithoranam.com");
-      $mgClient->message($output);
-      $mgClient->attachments($pdff,$filename);
-      $mgClient->send(); */
-        //print_r($sendMessage);die;
-  /*      $config = array();
-        $config['useragent']           = "CodeIgniter";
-        $config['mailpath']            = "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
-        $config['protocol']            = "smtp";
-        $config['smtp_user']    = 'my.pellithoranam.com@gmail.com';
-        $config['smtp_pass']    = 'PTM#1234';
-        $config['smtp_host']           = "smtp.gmail.com";
-        $config['smtp_port']           = 587;
-        $config['mailtype'] = 'html';
-        $config['charset']  = 'utf-8';
-        $config['newline']  = "\r\n";
-        $config['wordwrap'] = TRUE;
-        $config['send_multipart'] = TRUE;
-        $config['smtp_crypto'] = 'tls';
-*/
 $config = array(
     'protocol'  => 'smtp',
     'smtp_host' => 'ssl://smtp.googlemail.com',
@@ -215,7 +162,7 @@ $config = array(
         $this->email->subject('Invoice');
         $this->email->message('This is my message');
      
-      //  $this->email->attach($pdff);
+       $this->email->attach($pdff);
    if($this->email->send()){
        echo 'success';
    }else{
@@ -225,43 +172,7 @@ $config = array(
    }
  $this->session->set_flashdata('success', 'Your contact information sent successfully. You will be notify via email.');
 
-if(isset($_POST["action"]))
-{
-	include(base_url().'assets/pdf.php');
-	$file_name = md5(rand()) . '.pdf';
-	$html_code = '<link rel="stylesheet" href="bootstrap.min.css">';
-	$html_code = '<link rel="stylesheet" href="style.css">';
-	//$html_code .= fetch_customer_data($connect);
-	$html_code .= $output;
-	$pdf = new Pdf();
-	$pdf->load_html($html_code);
-	$pdf->render(); 
-	$file = $pdf->output();
-	file_put_contents($file_name, $file);
-	
-	require base_url().'assets/class/class.phpmailer.php';
-	$mail = new PHPMailer;
-	$mail->IsSMTP();								//Sets Mailer to send message using SMTP
-	$mail->Host = 'smtp.hostinger.in';		//Sets the SMTP hosts of your Email hosting, this for Godaddy
-	$mail->Port = '587';								//Sets the default SMTP server port
-	$mail->SMTPAuth = true;							//Sets SMTP authentication. Utilizes the Username and Password variables
-	$mail->Username = 'wiemp1@whiteindia.in';					//Sets SMTP username
-	$mail->Password = 'Wiemp3_pw';					//Sets SMTP password
-	$mail->SMTPSecure = 'SSL';							//Sets connection prefix. Options are "", "ssl" or "tls"
-	$mail->From = 'wiemp1@whiteindia.in';			//Sets the From email address for the message
-	$mail->FromName = 'wiemp1@whiteindia.in';			//Sets the From name of the message
-	$mail->AddAddress('kvs116.wi@gmail.com', 'Name');		//Adds a "To" address
-	$mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
-	$mail->IsHTML(true);							//Sets message type to HTML				
-	$mail->AddAttachment($file_name);     				//Adds an attachment from a path on the filesystem
-	$mail->Subject = 'Customer Details';			//Sets the Subject of the message
-	$mail->Body = 'Please Find Customer details in attach PDF File.';				//An HTML or plain text message body
-	if($mail->Send())								//Send an Email. Return true on success or false on error
-	{
-		$message = '<label class="text-success">Customer Details has been send successfully...</label>';
-	}
-	unlink($file_name);
-}
+
 
 ?>
 <!--<html>
