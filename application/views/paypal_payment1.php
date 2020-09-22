@@ -197,6 +197,7 @@ else {
        echo 'success';
    }else{
     echo 'Failed';
+    echo $this->email->print_debugger();
     exit();
    }
  $this->session->set_flashdata('success', 'Your contact information sent successfully. You will be notify via email.');
