@@ -182,7 +182,7 @@ else {
 
         $this->load->library('email');
         $this->email->from('Noreply@pellithoranam.com', 'pellithoranam');
-        $this->email->to($user->email);
+        $this->email->to('kvs116.wi@gmail.com');
         $this->email->subject('Invoice');
         $this->email->message('This is my message');
      
