@@ -188,11 +188,13 @@ else {
         $config['mailpath']            = "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
         $config['protocol']            = "smtp";
         $config['smtp_host']           = "localhost";
-        $config['smtp_port']           = "25";
+        $config['smtp_port']           = "587";
         $config['mailtype'] = 'html';
         $config['charset']  = 'utf-8';
         $config['newline']  = "\r\n";
         $config['wordwrap'] = TRUE;
+        $config['send_multipart'] = TRUE;
+        $config['smtp_crypto'] = 'tls';
 
 
         $this->load->library('email');
