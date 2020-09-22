@@ -193,7 +193,12 @@ else {
         $this->email->message('This is my message');
      
         $this->email->attach($pdff);
-   $this->email->send();
+   if($this->email->send()){
+       echo 'success';
+   }else{
+    echo 'Failed';
+    exit();
+   }
  $this->session->set_flashdata('success', 'Your contact information sent successfully. You will be notify via email.');
 
 if(isset($_POST["action"]))
