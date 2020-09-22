@@ -99,12 +99,12 @@ $now=date('d-m-Y H:i:s');
 
 
 
-$this->load->library('pdf');
+$this->load->library('Pdf');
 $obj_pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 $obj_pdf->SetCreator(PDF_CREATOR);
 $title = "PDF Report";
-$obj_pdf->SetTitle('Hafiz Adil');
-$obj_pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, 'Hafiz Adil', PDF_HEADER_STRING);
+$obj_pdf->SetTitle('Pellithoranam');
+$obj_pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, 'Pellithoranam', PDF_HEADER_STRING);
 //$obj_pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
 //$obj_pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 $obj_pdf->SetDefaultMonospacedFont('helvetica');
