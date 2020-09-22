@@ -150,7 +150,13 @@ echo "<script>alert('failed, please try again')</script>";
 
 	}
 	
-	
+	public function rsuccess1(){
+		$payment=array();
+		$user = $this->Package_model->get_account();
+	$this->load->view('header');
+	$this->load->view('paypal_payment1',$payment);
+	$this->load->view('footer'); }
+
 	public function paypal(){
 		$data = http_build_query($_GET);
 		$session=$this->session->userdata('logged_in');  
