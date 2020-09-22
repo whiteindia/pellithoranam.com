@@ -1,7 +1,7 @@
 
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 require_once dirname(__FILE__) . '/tcpdf/tcpdf.php';
-class Pdf extends TCPDF
+class PDF extends TCPDF
 { function __construct() { parent::__construct(); 
 	echo 'dir - <br>';
 echo dirname(__FILE__) . '/tcpdf/';
