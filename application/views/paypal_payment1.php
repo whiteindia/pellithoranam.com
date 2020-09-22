@@ -99,7 +99,7 @@ $now=date('d-m-Y H:i:s');
 
 
 
-$this->load->library('Pdf');
+$this->load->library('pdf');
 $obj_pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 $obj_pdf->SetCreator(PDF_CREATOR);
 $title = "PDF Report";
