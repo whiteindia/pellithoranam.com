@@ -378,7 +378,7 @@ Include the above in your HEAD tag ---------->
 		<br />
 		<div class="container-fluid">
 			
-			<form action="mailinvoice" method="post">
+			
 			<div class="toolbar hidden-print">
         <div class="text-right">
             <button id="printInvoice" class="btn btn-info"><i class="fa fa-print"></i> Print</button>
@@ -388,7 +388,7 @@ Include the above in your HEAD tag ---------->
         <hr>
     </div>
 	
-			
+			<form action="mailinvoice" method="post">
 			</form>
 			<br />
 			<?php
