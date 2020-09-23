@@ -271,17 +271,18 @@ class Verify extends CI_Controller {
   error_reporting(E_ALL);
         $data = $_POST;
        
-         $this->send_email_to_other_user();
+         //$this->send_email_to_other_user();
         // echo "test";
         // exit;
         $result = $this->Verify_model->check_otp($data);
        if($result=='1'){
            $this->reg_success();
           $this->reg_success_mail();
-        // $this->send_email_to_other_user();
+        
      //    $_SESSION['profileverified']=1;
          //  redirect(base_url().'search'); 
          echo json_encode(array('success' => 1));
+         $this->send_email_to_other_user();
          //  redirect(base_url().'Profile/upload_profile_pic');		
          }else if($result=='2'){
          // redirect(base_url().'search');
