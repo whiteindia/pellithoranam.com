@@ -179,7 +179,8 @@ class Search_model extends CI_Model {
         if($start!=0) { $search_query.= ",".$start; }
         //echo $search_query;
         $query = $this->db->query($search_query);
-        if($query->num_rows() > 0) {
+       // if($query->num_rows() > 0) {  $query && $query->num_rows() == 1
+        if($query && $query->num_rows() > 0) { 
             $result = $query->result();        
             return $result;
         } else { return false; }
