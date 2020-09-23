@@ -91,7 +91,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: '<?php echo base_url();?>verify/check_otp',
+            url: '<?php echo base_url();?>Verify/check_otp',
             data: $(this).serialize(),
             success: function(response)
             {
