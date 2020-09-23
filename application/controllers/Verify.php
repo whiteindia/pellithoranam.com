@@ -238,7 +238,7 @@ class Verify extends CI_Controller {
       $uniq = mt_rand(100000, 999999);
       return $uniq;
     }
-   public function check_otp() {
+   public function check_otp1() {
     //  ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
@@ -264,6 +264,38 @@ class Verify extends CI_Controller {
      
      
     }
+
+    public function check_otp() {
+      //  ini_set('display_errors', 1);
+  //ini_set('display_startup_errors', 1);
+  //error_reporting(E_ALL);
+        $data = $_POST;
+       
+         $this->send_email_to_other_user();
+        // echo "test";
+        // exit;
+        $result = $this->Verify_model->check_otp($data);
+       if($result=='1'){
+           $this->reg_success();
+          $this->reg_success_mail();
+        // $this->send_email_to_other_user();
+     //    $_SESSION['profileverified']=1;
+         //  redirect(base_url().'search'); 
+         echo json_encode(array('success' => 1));
+         //  redirect(base_url().'Profile/upload_profile_pic');		
+         }else if($result=='2'){
+         // redirect(base_url().'search');
+         echo json_encode(array('success' => 1));
+         }
+         else{
+          echo json_encode(array('success' => 0));
+         //	redirect(base_url().'Verify/index/error'); 	
+         }
+       
+       
+      }
+
+
     function send_email_to_other_user(){
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
