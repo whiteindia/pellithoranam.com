@@ -1583,16 +1583,16 @@ background:rgb(0,188,212);
     background: none;
 }
 .list-premium ul li .list .childs1 {
-	color: #fff;
+	color: #333;
 }
 .list-premium ul li .list .childs2 {
-	color: #fff;
+	color: #333;
 }
 .list-premium ul li .list ul li {
 	background: none;
 }
 .wed-search-listing.list-premium.list-view ul li .web-search-photo h5{color: #fff;}
-.wed-search-listing.list-premium.list-view ul li .wed-search-btm p {color: #fff;}
+.wed-search-listing.list-premium.list-view ul li .wed-search-btm p {color: #333;}
 
 .web-search-pic img{width:100%;height:100%; max-width: 250px; max-height: 250px;border-radius:10px;object-fit: cover;}
 .web-search-photo{width:20%;float:left;text-align: center}
