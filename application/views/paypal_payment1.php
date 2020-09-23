@@ -162,7 +162,7 @@ $config = array(
         $this->email->subject('Invoice');
         $this->email->message('This is my message');
      
-       $this->email->attach($pdff);
+      // $this->email->attach($pdff);
    if($this->email->send()){
        echo 'success';
    }else{
