@@ -344,12 +344,13 @@ class Verify extends CI_Controller {
 
 
 /**/
+if(count($srch_candidates)>0){
       foreach ($srch_candidates as $candidate) {
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
      $this->sendMailNow($candidate);
-      }  
+      }  }
       $info=array();
       $info['email']='info@pellithoranam.com';
       $info=json_decode(json_encode($info));
@@ -372,12 +373,14 @@ class Verify extends CI_Controller {
       }
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like); */
 $msg='New User PT'.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.']';
-      foreach ($srch_candidates as $candidate) {
+if(count($srch_candidates)>0)   {  
+foreach ($srch_candidates as $candidate) {
         $this->sent_mobile_msg($candidate->phone,$msg);
      //  echo $candidate->phone.'--';
      //  echo $candidate->age.'<br>';
 
-      }
+      } 
+    }
       echo 'msg sent';
      // echo $msg;
      // exit();
