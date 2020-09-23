@@ -275,6 +275,8 @@ class Verify extends CI_Controller {
         // echo "test";
         // exit;
         $result = $this->Verify_model->check_otp($data);
+        echo $result;
+        exit();
        if($result=='1'){
            $this->reg_success();
           $this->reg_success_mail();
