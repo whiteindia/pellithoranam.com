@@ -8,13 +8,17 @@
 
 
     echo '<script>if (confirm("your profile verified successfully") == true) {
-      var xhttp = new XMLHttpRequest();
-      xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", false);
-      xhttp.send();
+  
+
+      $.ajax({
+        type: "post",
+        url: "https://pellithoranam.com/Verify/send_email_to_other_user"
+    });
   } else {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", false);
-    xhttp.send();
+    $.ajax({
+      type: "post",
+      url: "https://pellithoranam.com/Verify/send_email_to_other_user"
+  });
   };</script>';
   //  }
     unset($_SESSION['profileverified']);
@@ -22,7 +26,9 @@
   }else {
    // echo '<script>alert("in search page");</script>';
   }
-  
+  /**    var xhttp = new XMLHttpRequest();
+      xhttp.open("POST", "https://pellithoranam.com/Verify/send_email_to_other_user", false);
+      xhttp.send(); */
   ?>
 <?php
 //ini_set('display_errors', 1);
