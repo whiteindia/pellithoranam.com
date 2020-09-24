@@ -44,7 +44,7 @@ die();*/
   <div class="spinner-grow text-dark"></div>
   <div class="spinner-grow text-light"></div>
 
-              <br>Please Wait we are veryfying your otp.and informing you registration to othermembers</div>
+              <br>Please Wait we are veryfying your otp</div>
               </div>
                 <a href="<?php echo base_url(); ?>Verify/resend_otp"><strong>Resend Pin to Mobile number</strong></a>
               </p>
