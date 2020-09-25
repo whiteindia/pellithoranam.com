@@ -281,7 +281,7 @@ class Verify extends CI_Controller {
            $this->reg_success();
           $this->reg_success_mail();
         
-        $_SESSION['profileverified']=1;
+       // $_SESSION['profileverified']=1;
          //  redirect(base_url().'search'); 
          echo json_encode(array('success' => 1));
         // $this->send_email_to_other_user();
