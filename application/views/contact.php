@@ -12,12 +12,15 @@ $title    = $settings->title;
           <div class="wed-contact-inner-left">
             <div class="wed-contact-address">
               <?php echo $title; ?><br>
-              Hyderabad.
+              <br>Plot No -79
+              <br>PRAGATHINAGAR
+             <br>KUKATPALLY
+             <br> HYDERABAD- 500090
             </div>
           </div>
           <div class="wed-contact-inner-right">
             <div class="wed-contact-mail">
-              info@pellithoranam.com, pellithoranam999@gmail.com
+              info@pellithoranam.com 
             </div>
             <div class="wed-contact-call">
               +91 8187893236 <!-- 78934 19537-->
