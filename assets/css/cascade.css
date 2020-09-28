@@ -1560,7 +1560,7 @@ box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
 .wed-search-listing ul li .list ul li {
 	box-shadow: none;
 }
-.web-search-pic{width:100px;height:100px;background: #f2f2f2;border-radius:10px;margin:0 auto;    margin-top: 5px;}
+.web-search-pic{width:100px;height:100px;background: #fefe8663;border-radius:10px;margin:0 auto;    margin-top: 5px;}
 .grid-view .web-search-photo .web-search-pic{ min-height: 250px;}
 .grid-view .wed-search-btn-bay .wed-mail {
 	width: 44%;
