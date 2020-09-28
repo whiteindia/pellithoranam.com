@@ -12,7 +12,7 @@ $title    = $settings->title;
           <div class="wed-contact-inner-left">
             <div class="wed-contact-address">
               <?php echo $title; ?><br>
-           <small>   <br>Plot No -79
+           <small>Plot No -79
               <br>PRAGATHINAGAR
              <br>KUKATPALLY
              <br> HYDERABAD- 500090 </small>
