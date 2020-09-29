@@ -783,12 +783,15 @@ $settings= get_setting();
                           $usrIMG = $candidate->profile_photo_blured;
                         }else if($reuest_res=="success"){
                           $usrIMG = $candidate->profile_photo;
+                          $style="";
                         }else{
-                          $usrIMG = $candidate->profile_photo_blured;
+                          //$usrIMG = $candidate->profile_photo_blured; style="filter: blur(1.25px);"
+                          $usrIMG = $candidate->profile_photo;
+                          $style="filter: blur(1.25px);";
                         }
                         if($this->session->userdata('logged_in')) {
                             if($reuest_res=="success"){
-                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."'>";
+                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style."'>";
                             }else if($reuest_res=="requested"){
                               $attr2 = "<a href='javascript:void(0);' class='photo_already_request_btn'>";
                             }else{
@@ -806,8 +809,7 @@ $settings= get_setting();
                         <?php 
                         }else{
                           ?>
-                          <img src="<?php echo base_url().$usrIMG; ?>" style="-webkit-filter: blur(0px); 
-				filter: blur(0px);"> 
+                          <img src="<?php echo base_url().$usrIMG; ?>" style="<?= $style; ?>">  <!---webkit-filter: blur(0px); 	filter: blur(1.25px);-->
                           <?php
                         } ?>
                          <!--   --->
