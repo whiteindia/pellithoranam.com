@@ -787,7 +787,7 @@ $settings= get_setting();
                         }else{
                           //$usrIMG = $candidate->profile_photo_blured; style="filter: blur(1.25px);"
                           $usrIMG = $candidate->profile_photo;
-                          $style="filter: blur(1.25px);";
+                          $style="filter: blur(1.05px);";
                         }
                         if($this->session->userdata('logged_in')) {
                             if($reuest_res=="success"){
