@@ -770,7 +770,7 @@ $settings= get_setting();
                         
                        $usrIMG = $candidate->profile_photo;///assets/img/user.jpg
                         if($this->session->userdata('logged_in')) {
-                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."'>";
+                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."'  class='img-thumbnail'>";
                         } else {
                             $attr2 = "<a href='' data-toggle='modal' data-target='#reglog'>";
                         }
@@ -791,7 +791,7 @@ $settings= get_setting();
                         }
                         if($this->session->userdata('logged_in')) {
                             if($reuest_res=="success"){
-                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style."'>";
+                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style."'  class='img-thumbnail' >";
                             }else if($reuest_res=="requested"){
                               $attr2 = "<a href='javascript:void(0);' class='photo_already_request_btn'>";
                             }else{
