@@ -791,7 +791,7 @@ $settings= get_setting();
                         }
                         if($this->session->userdata('logged_in')) {
                             if($reuest_res=="success"){
-                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style."'  class='img-thumbnail' >";
+                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style." '  class='img-thumbnail' >";
                             }else if($reuest_res=="requested"){
                               $attr2 = "<a href='javascript:void(0);' class='photo_already_request_btn'>";
                             }else{
@@ -805,11 +805,11 @@ $settings= get_setting();
                        ?>
                        <?php
                        if($reuest_res=="success"){ ?>
-                        <img src="<?php echo base_url().$usrIMG; ?>">
+                        <img src="<?php echo base_url().$usrIMG; ?>" style="<?= $style; ?> padding: 0px;border-radius: 0px;" >
                         <?php 
                         }else{
                           ?>
-                          <img src="<?php echo base_url().$usrIMG; ?>" style="<?= $style; ?>">  <!---webkit-filter: blur(0px); 	filter: blur(1.25px);-->
+                          <img src="<?php echo base_url().$usrIMG; ?>" style="<?= $style; ?> padding: 0px;border-radius: 0px;">  <!---webkit-filter: blur(0px); 	filter: blur(1.25px);-->
                           <?php
                         } ?>
                          <!--   --->
