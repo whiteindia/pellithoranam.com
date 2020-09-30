@@ -770,7 +770,7 @@ $settings= get_setting();
                         
                        $usrIMG = $candidate->profile_photo;///assets/img/user.jpg
                         if($this->session->userdata('logged_in')) {
-                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."'  class='img-thumbnail'>";
+                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' style='color: red;' data-title='".$candidate->profile_name."'  class='img-thumbnail'>";
                         } else {
                             $attr2 = "<a href='' data-toggle='modal' data-target='#reglog'>";
                         }
