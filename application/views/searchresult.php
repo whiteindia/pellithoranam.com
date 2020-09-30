@@ -765,7 +765,7 @@ $settings= get_setting();
                           }
                           echo $attr2;
                         ?>
-                        <img src="<?php echo base_url(); ?>/assets/img/user.jpg">
+                        <img src="<?php echo base_url(); ?>/assets/img/user.jpg" style="padding: 0px;border-radius: 0px;" >
                       <?php } else if($candidate->profile_photo != "" && $candidate->profile_preference==0){
                         
                        $usrIMG = $candidate->profile_photo;///assets/img/user.jpg
