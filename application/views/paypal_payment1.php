@@ -51,11 +51,7 @@ $now=date('d-m-Y H:i:s');
 		<main>
 			<div class="row contacts">
 				<div class="col invoice-to">
-					<div class="text-gray-light">INVOICE TO:<span class="to"  style="color: orange;">'.$user->profile_name.'</span></div>
-				
-				</div>
-				<div class="col invoice-details">
-					<h4 class="invoice-id" style="color:#171615;">'.$user->matrimony_id.'</h4>
+					<div class="text-gray-light">INVOICE TO:<span class="to"  style="color: orange;">'.$user->profile_name.' [PT'.$user->matrimony_id.']</span></div>
 					<div class="date">Date of Invoice: '.$now.'</div>
 				   
 				</div>
