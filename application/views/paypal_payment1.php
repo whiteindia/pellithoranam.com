@@ -175,6 +175,7 @@ $config = array(
       $this->email->attach('/var/www/html/assets/uploads/invoices/'.$filename);
    if($this->email->send()){
        echo 'success';
+       exit();
    }else{
     echo 'Failed';
     echo $this->email->print_debugger();
