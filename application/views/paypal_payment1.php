@@ -67,24 +67,19 @@ $now=date('d-m-Y H:i:s');
                     <h3>Payment Details</h3>
                     <div class="section_det">
                         <div class="detail_list">
-                            <div class="col-md-6"><b>Transaction Id :</b></div>
-                            <div class="col-md-6">: '.$booked['txnid'].'</div>
+                            <div class="col-md-6"><b>Transaction Id :</b>: '.$booked['txnid'].'</div>
                         </div>
                         <div class="detail_list">
-                            <div class="col-md-6"><b>Name </b></div>
-                            <div class="col-md-6">: '.$user->profile_name.'</div>
+                            <div class="col-md-6"><b>Name </b>: '.$user->profile_name.'</div>
                         </div>
                         <div class="detail_list">    
-                            <div class="col-md-6"><b>Matrimoni Id </b></div>
-                            <div class="col-md-6">: '. $user->matrimony_id.'</div>
+                            <div class="col-md-6"><b>Matrimoni Id </b>: '. $user->matrimony_id.'</div>
                         </div>
                         <div class="detail_list">    
-                            <div class="col-md-6"><b>Package Name </b></div>
-                            <div class="col-md-6">: package_name</div>
+                            <div class="col-md-6"><b>Package Name </b>: package_name</div>
                         </div>
                         <div class="detail_list">    
-                            <div class="col-md-6"><b>Amount</b></div>
-                            <div class="col-md-6">: '.$booked['purchase_amount'].'</div>
+                            <div class="col-md-6"><b>Amount</b>: '.$booked['purchase_amount'].'</div>
                         </div>
                         <div class="detail_list">    
                             <div class="col-md-6"><b>Date</b></div>
@@ -96,7 +91,7 @@ $now=date('d-m-Y H:i:s');
 
 
         </main>
-        <button onclick="window.print()">Print/Download this page</button>
+    
         <footer style="color: green;">
 		This Package is not transferable to others and no refund of money is entertained.
 	</footer>
@@ -194,10 +189,10 @@ $config = array(
    $mgClient->from($from,$from_name);
    $mgClient->subject('Invoice');
    $mgClient->message($output);
-   $mgClient->attachments('/var/www/html/assets/uploads/invoices/'.$filename);
+   $mgClient->attachments(base_url().'assets/uploads/invoices/'.$filename);
    if($mgClient->send()){
        echo '<br> success<br>';
-       echo '/var/www/html/assets/uploads/invoices/'.$filename;
+       echo base_url().'assets/uploads/invoices/'.$filename;
        exit();
    }else{
     echo 'failed'; exit();
