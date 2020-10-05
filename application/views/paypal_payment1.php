@@ -129,7 +129,7 @@ $obj_pdf->writeHTML('Medicine', true, false, true, false, '');
 $t=time();
 $filename=$user->matrimony_id.'_'.$t;
 $pdff = $obj_pdf->Output($filename.'.pdf', 'S');
-if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$file_name, $file)){
+if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $file)){
 
     echo 'success'; exit();
 }else{
