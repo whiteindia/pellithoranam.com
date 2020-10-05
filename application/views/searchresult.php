@@ -295,7 +295,7 @@ $settings= get_setting();
                         <!-- FOR Education And Occuption -->
                         <div class="wed-filter-heading" role="tab" id="headingOne">
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#edu_n_occu_col" aria-expanded="true" aria-controls="collapse15">
-                              Occuption
+                              Occupation
                               <i class="more-less glyphicon glyphicon-plus"></i>
                             </a>
                         </div>
