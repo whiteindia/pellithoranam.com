@@ -21,7 +21,12 @@ $now=date('d-m-Y H:i:s');
 	//$statement = $connect->prepare($query);
 	//$statement->execute();
 	//$result = $statement->fetchAll();
-	$output = '
+    $output = '
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<div id="invoice">
 	<div class="invoice overflow-auto">
 	<div style="min-width:600px">
@@ -167,7 +172,7 @@ $config = array(
         $this->email->subject('Invoice');
         $this->email->message('This is my message');
      
-      // $this->email->attach($pdff);
+      $this->email->attach('/var/www/html/assets/uploads/invoices/'.$filename);
    if($this->email->send()){
        echo 'success';
    }else{
