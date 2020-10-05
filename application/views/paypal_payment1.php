@@ -154,7 +154,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
                   </html>';
                   
  
-
+/*
 $config = array(
     'protocol'  => 'smtp',
     'smtp_host' => 'ssl://smtp.googlemail.com',
@@ -173,14 +173,39 @@ $config = array(
         $this->email->message('This is my message');
      
       $this->email->attach('/var/www/html/assets/uploads/invoices/'.$filename);
-   if($this->email->send()){
+   i($fthis->email->send()){
        echo 'success';
        exit();
    }else{
     echo 'Failed';
     echo $this->email->print_debugger();
     exit();
+   }  */
+
+   $this->load->library('Mailgun_lib');
+   $mgClient = new Mailgun_lib();
+   $from_name = "Pellithoranam";
+   $from = "no-reply@pellithoranam.com";
+ //  $bcc = "info@pellithoranam.com";
+   $mgClient->to('kvs116.wi@gmail.com');  
+   //  $mgClient->to($email); 
+//   $mgClient->bcc($bcc);   'attachment' => [
+    ['filePath'=>'/tmp/foo.jpg', 'filename'=>'test.jpg']
+    ]
+   $mgClient->from($from,$from_name);
+   $mgClient->subject($subject);
+   $mgClient->message($mailTemplate);
+   $mgClient->attachment(array('filePath'=>'/var/www/html/assets/uploads/invoices/'.$filename, 'filename'=>$filename));
+   if($mgClient->send()){
+       echo 'success'; exit();
+   }else{
+    echo 'failed'; exit();
    }
+
+
+
+
+
  $this->session->set_flashdata('success', 'Your contact information sent successfully. You will be notify via email.');
 
 
