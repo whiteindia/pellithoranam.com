@@ -57,7 +57,7 @@ $now=date('d-m-Y H:i:s');
 					<div class="email"><a href="mailto:'.$user->matrimony_id.'" style="color: black;">'.$user->matrimony_id.'</a></div>
 				</div>
 				<div class="col invoice-details">
-					<h1 class="invoice-id" style="color:#171615;">'.$user->matrimony_id.'</h1>
+					<h4 class="invoice-id" style="color:#171615;">'.$user->matrimony_id.'</h4>
 					<div class="date">Date of Invoice: '.$now.'</div>
 				   
 				</div>
@@ -68,8 +68,7 @@ $now=date('d-m-Y H:i:s');
                     <div class="section_det">
                         <div class="detail_list">
                             <div class="col-md-6"><b>Transaction Id :</b>: '.$booked['txnid'].'</div>
-                        </div>
-                        <div class="detail_list">
+                      
                             <div class="col-md-6"><b>Name </b>: '.$user->profile_name.'</div>
                         
                             <div class="col-md-6"><b>Matrimoni Id </b>: '. $user->matrimony_id.'</div>
