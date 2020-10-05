@@ -51,8 +51,8 @@ $now=date('d-m-Y H:i:s');
 		<main>
 			<div class="row contacts">
 				<div class="col invoice-to">
-					<div class="text-gray-light">INVOICE TO:</div>
-					<h2 class="to"  style="color: black;">Customer Name</h2>
+					<div class="text-gray-light">INVOICE TO:<h4 class="to"  style="color: orange;">'.$user->profile_name.'</h4></div>
+					
 					<div class="address">Hyderabad</div>
 					<div class="email"><a href="mailto:'.$user->matrimony_id.'" style="color: black;">'.$user->matrimony_id.'</a></div>
 				</div>
