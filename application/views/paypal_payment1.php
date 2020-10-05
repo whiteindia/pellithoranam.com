@@ -125,7 +125,7 @@ $obj_pdf->AddPage();
     // we can have any view part here like HTML, PHP etc
     $content = ob_get_contents();
 ob_end_clean();*/
-$obj_pdf->writeHTML('Medicine', true, false, true, false, '');
+$obj_pdf->writeHTML($output, true, false, true, false, '');
 $t=time();
 $filename=$user->matrimony_id.'_'.$t;
 $pdff = $obj_pdf->Output($filename.'.pdf', 'S');
