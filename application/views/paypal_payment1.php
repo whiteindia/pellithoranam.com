@@ -190,8 +190,7 @@ $config = array(
    $mgClient->to('kvs116.wi@gmail.com');  
    //  $mgClient->to($email); 
 //   $mgClient->bcc($bcc);   'attachment' => [
-    ['filePath'=>'/tmp/foo.jpg', 'filename'=>'test.jpg']
-    ]
+
    $mgClient->from($from,$from_name);
    $mgClient->subject($subject);
    $mgClient->message($mailTemplate);
