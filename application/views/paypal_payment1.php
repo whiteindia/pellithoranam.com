@@ -192,9 +192,9 @@ $config = array(
 //   $mgClient->bcc($bcc);   'attachment' => [ _attachments
 
    $mgClient->from($from,$from_name);
-   $mgClient->subject($subject);
-   $mgClient->message($mailTemplate);
-   $mgClient->attachments(array('filePath'=>'/var/www/html/assets/uploads/invoices/'.$filename, 'filename'=>$filename));
+   $mgClient->subject('Invoice');
+   $mgClient->message($output);
+   $mgClient->attachments('/var/www/html/assets/uploads/invoices/'.$filename);
    if($mgClient->send()){
        echo 'success'; exit();
    }else{
