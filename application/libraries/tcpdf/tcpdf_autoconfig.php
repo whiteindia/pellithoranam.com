@@ -99,14 +99,14 @@ if (!defined('K_PATH_IMAGES')) {
 		}
 	}
 }
-
+/*
 if (!defined('PDF_HEADER_LOGO')) {
 	$tcpdf_header_logo = '';
 	if (@file_exists(K_PATH_IMAGES.'tcpdf_logo.jpg')) {
 		$tcpdf_header_logo = 'tcpdf_logo.jpg';
 	}
 	define ('PDF_HEADER_LOGO', $tcpdf_header_logo);
-}
+}  */
 
 if (!defined('PDF_HEADER_LOGO_WIDTH')) {
 	if (!empty($tcpdf_header_logo)) {
@@ -137,19 +137,19 @@ if (!defined('PDF_PAGE_ORIENTATION')) {
 }
 
 if (!defined('PDF_CREATOR')) {
-	define ('PDF_CREATOR', 'TCPDF');
+	define ('PDF_CREATOR', 'Pellithoranam');
 }
 
 if (!defined('PDF_AUTHOR')) {
-	define ('PDF_AUTHOR', 'TCPDF');
+	define ('PDF_AUTHOR', 'Pellithoranam');
 }
 
 if (!defined('PDF_HEADER_TITLE')) {
-	define ('PDF_HEADER_TITLE', 'TCPDF Example');
+	define ('PDF_HEADER_TITLE', 'Pellithoranam');
 }
 
 if (!defined('PDF_HEADER_STRING')) {
-	define ('PDF_HEADER_STRING', "by Nicola Asuni - Tecnick.com\nwww.tcpdf.org");
+	define ('PDF_HEADER_STRING', " Pellithoranam.com");
 }
 
 if (!defined('PDF_UNIT')) {
