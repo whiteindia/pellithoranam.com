@@ -196,7 +196,9 @@ $config = array(
    $mgClient->message($output);
    $mgClient->attachments('/var/www/html/assets/uploads/invoices/'.$filename);
    if($mgClient->send()){
-       echo 'success'; exit();
+       echo '<br> success<br>';
+       echo '/var/www/html/assets/uploads/invoices/'.$filename;
+       exit();
    }else{
     echo 'failed'; exit();
    }
