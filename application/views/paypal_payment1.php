@@ -127,10 +127,10 @@ $obj_pdf->AddPage();
 ob_end_clean();*/
 $obj_pdf->writeHTML('Medicine', true, false, true, false, '');
 $t=time();
-$filename=$user->matrimony_id.$t;
+$filename=$user->matrimony_id.'_'.$t;
 $pdff = $obj_pdf->Output($filename.'.pdf', 'S');
 
-//file_put_contents($file_name, $file);
+file_put_contents('/var/www/html/assets/uploads/invoices/'.$file_name, $file);
 
 
 
