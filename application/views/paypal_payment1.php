@@ -71,19 +71,14 @@ $now=date('d-m-Y H:i:s');
                         </div>
                         <div class="detail_list">
                             <div class="col-md-6"><b>Name </b>: '.$user->profile_name.'</div>
-                        </div>
-                        <div class="detail_list">    
+                        
                             <div class="col-md-6"><b>Matrimoni Id </b>: '. $user->matrimony_id.'</div>
-                        </div>
-                        <div class="detail_list">    
+                        
                             <div class="col-md-6"><b>Package Name </b>: package_name</div>
-                        </div>
-                        <div class="detail_list">    
+                          
                             <div class="col-md-6"><b>Amount</b>: '.$booked['purchase_amount'].'</div>
-                        </div>
-                        <div class="detail_list">    
-                            <div class="col-md-6"><b>Date</b></div>
-                            <div class="col-md-6">: '.date('d:m:Y H:i:S').'</div>
+                      
+                            <div class="col-md-6"><b>Date</b>: '.date('d:m:Y H:i:S').'</div>
                         </div>
                     </div>
                 </div>
