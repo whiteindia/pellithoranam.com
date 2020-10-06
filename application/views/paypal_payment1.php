@@ -146,7 +146,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
                   $config['smtp_pass'] = 'yepxdmiehcigrhtn';
                   $config['smtp_port'] = '587';
                   $config['smtp_crypto'] = 'tls'; 
-                  $config['charset']    = 'utf-8';
+                  $config['CharSet']    = 'utf-8';
                 $config['mailtype'] = 'html';
                   $this->email->initialize($config);
               
