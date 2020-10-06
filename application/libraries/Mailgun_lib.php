@@ -65,7 +65,7 @@ class Mailgun_lib{
         return $this;
     }
     public function attach($filename, $disposition = 'attachment'){
-        return $this->attachments($attachment);
+        return $this->attachment($attachment);
     }
     protected function _format_emails_names($emails, $names = false){
         foreach($emails as $k => $email) {
