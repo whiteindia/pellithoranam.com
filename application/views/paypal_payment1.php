@@ -177,7 +177,7 @@ $config = array(
    $mgClient->from($from,$from_name);
    $mgClient->subject('Invoice');
    $mgClient->message($output);
-   $mgClient->attachments(FCPATH.'assets/uploads/invoices/'.$filename);
+   $mgClient->attach(FCPATH.'assets/uploads/invoices/'.$filename);
    if($mgClient->send()){
        echo '<br> success<br>';
        echo FCPATH.'assets/uploads/invoices/'.$filename;
