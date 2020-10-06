@@ -145,6 +145,8 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
                   $config['smtp_user'] = 'my.pellithoranam.com@gmail.com';
                   $config['smtp_pass'] = 'yepxdmiehcigrhtn';
                   $config['smtp_port'] = '587';
+                  $config['smtp_crypto'] = 'tls'; 
+                  $config['mailtype'] = 'html';
                   $this->email->initialize($config);
               
                   $this->email->set_newline("\r\n");
