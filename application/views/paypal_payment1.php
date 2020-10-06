@@ -156,7 +156,7 @@ $config = array(
         $this->email->message('This is my message');
      
       $this->email->attach('/var/www/html/assets/uploads/invoices/'.$filename);
-   i($fthis->email->send()){
+   if($this->email->send()){
        echo 'success';
        exit();
    }else{
