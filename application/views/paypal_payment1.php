@@ -125,7 +125,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
 
 }
 
-ini_set('default_charset', 'UTF8');
+//ini_set('default_charset', 'UTF8');
 
         $sendMessage = '<html>
                     <body bgcolor="#EDEDEE">
@@ -153,7 +153,7 @@ ini_set('default_charset', 'UTF8');
               
                   $this->email->from('info@pellithoranam.com');
                   $this->email->to('kvs116.wi@gmail.com');
-                  $this->email->subject(utf8_decode("invoice from pellithoranam.com"));
+                  $this->email->subject( mb_encode_mimeheader($subject,"UTF-8"));
                   $this->email->message($output);
               
                   $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename;
