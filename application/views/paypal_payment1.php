@@ -154,7 +154,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
               
                   $this->email->from('info@pellithoranam.com');
                   $this->email->to('kvs116.wi@gmail.com');
-                  $this->email->subject($subject);//mb_encode_mimeheader($subject,"UTF-8")  vmb_encode_mimeheader($subject, 'UTF-8', 'B', "\r\n", strlen('Subject: '))
+                  $this->email->subject(utf8_encode($subject));//mb_encode_mimeheader($subject,"UTF-8")  vmb_encode_mimeheader($subject, 'UTF-8', 'B', "\r\n", strlen('Subject: '))
                   $this->email->message($output);
               
                   $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename;
