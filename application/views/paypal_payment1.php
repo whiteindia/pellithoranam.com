@@ -137,7 +137,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
                   </html>';
                   
  
-/*
+/**/
 $config = array(
     'protocol'  => 'smtp',
     'smtp_host' => 'ssl://smtp.googlemail.com',
@@ -163,8 +163,8 @@ $config = array(
     echo 'Failed';
     echo $this->email->print_debugger();
     exit();
-   }  */
-
+   }  
+/*
    $this->load->library('Mailgun_lib');
    $mgClient = new Mailgun_lib();
    $from_name = "Pellithoranam";
@@ -185,7 +185,7 @@ $config = array(
    }else{
     echo 'failed'; exit();
    }
-
+   */
 
 
 
