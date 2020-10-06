@@ -125,7 +125,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
 
 }
 
-iconv_set_encoding("internal_encoding", "UTF-8");
+ini_set('default_charset', 'UTF8');
 
         $sendMessage = '<html>
                     <body bgcolor="#EDEDEE">
