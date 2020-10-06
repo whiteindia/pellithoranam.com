@@ -153,7 +153,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
               
                   $this->email->from('info@pellithoranam.com');
                   $this->email->to('kvs116.wi@gmail.com');
-                  $this->email->subject($subject);
+                  $this->email->subject("invoice");
                   $this->email->message($output);
               
                   $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename;
