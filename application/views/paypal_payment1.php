@@ -274,12 +274,14 @@ $now=date('d-m-Y H:i:s');
       </tbody>
     </table>
     <hr class="bg-success">
+    <br>
+    <br>
       <table class="table">
         <thead class="bg-success" style="font-size:5vw;color: ivory;">
           <tr style="background-color: green;">
             <th>#</th>
-            <th>Package</th>
-            <th>Amount</th>
+            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:ivory !important;">Package</h2></th>
+            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:ivory !important;">Amount</h2></th>
           </tr>
         </thead>
         <tbody>
@@ -290,8 +292,8 @@ $now=date('d-m-Y H:i:s');
           </tr>
           <tr style="font-size:5vw;color: orange;">
             <td>.</td>
-            <td>GRAND TOTAL</td>
-            <td>AMOUNT</td>
+            <td><h4 style="font-family:Georgia,Times New Roman, Times, serif ;color:orange !important;">GRAND TOTAL</h4></td>
+            <td><h4 style="font-family:Georgia,Times New Roman, Times, serif ;color:orange !important;">AMOUNT</h4></td>
           </tr>
     
         </tbody>
