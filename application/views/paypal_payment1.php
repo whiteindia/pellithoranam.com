@@ -216,16 +216,10 @@ $now=date('d-m-Y H:i:s');
     <body>
     
     <div class="container-fluid">
-    
-    
-      <br>
-      <hr class="bg-success">
-    
-      
-        <table class="table">
+          <table class="table">
         <thead >
           <tr>
-            <th><img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="200px" height="100px" data-holder-rendered="true" /></th>
+            <th><img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="150px" height="75px" data-holder-rendered="true" /></th>
             <th></th>
             <th></th>
           </tr>
@@ -278,10 +272,10 @@ $now=date('d-m-Y H:i:s');
     <br>
       <table class="table">
         <thead class="bg-success">
-          <tr style="background-color: green;">
+          <tr style="background-color: green;color: white;">
             <th>#</th>
-            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:white !important;">Package</h2></th>
-            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:white !important;">Amount</h2></th>
+            <th>Package</th>
+            <th>Amount</th>
           </tr>
         </thead>
         <tbody>
