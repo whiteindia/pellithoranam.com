@@ -225,9 +225,9 @@ $now=date('d-m-Y H:i:s');
         <table class="table">
         <thead >
           <tr>
-            <th><img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" /></th>
+            <th><img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="200px" height="100px" data-holder-rendered="true" /></th>
             <th></th>
-            <th style="background-color: green;"></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -247,10 +247,11 @@ $now=date('d-m-Y H:i:s');
     
         </tbody>
       </table>
+      <hr class="bg-success">
       <table class="table">
       <thead >
         <tr>
-          <th>INVOICE TO:
+          <th><h3>INVOICE TO:</h3>
           <br>customer name
           <br>city
           <br>mail
@@ -265,17 +266,17 @@ $now=date('d-m-Y H:i:s');
           <td>.</td>
           <td class="text-warning"></td>
           <td>
-          PT
+      <h3>   PT</h3> 
           <br> date of invoice
                       </td>
         </tr>
   
       </tbody>
     </table>
-
+    <hr class="bg-success">
       <table class="table">
         <thead class="bg-success">
-          <tr>
+          <tr style="background-color: green;">
             <th>#</th>
             <th>Package</th>
             <th>Amount</th>
