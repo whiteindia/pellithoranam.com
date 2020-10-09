@@ -552,7 +552,7 @@ $config = array(
 			</form>
 			<br />
 			<?php
-			echo $output;
+			echo $output1;
 			?>			
 		</div>
 		<br />
