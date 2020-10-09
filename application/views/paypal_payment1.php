@@ -253,6 +253,7 @@ $now=date('d-m-Y H:i:s');
           <th></th>
           <th></th>
         </tr>
+        <tr></tr>
       </thead>
       <tbody>
   
@@ -264,7 +265,16 @@ $now=date('d-m-Y H:i:s');
           <br> date of invoice
                       </td>
         </tr>
-  
+  <tr>
+  <td>.</td>
+  <td>.</td>
+  <td>.</td>
+  </tr>
+  <tr>
+  <td>.</td>
+  <td>.</td>
+  <td>.</td>
+  </tr>
       </tbody>
     </table>
     <hr class="bg-success">
