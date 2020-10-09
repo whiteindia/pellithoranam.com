@@ -238,10 +238,10 @@ $now=date('d-m-Y H:i:s');
             <td><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:black !important;">
                             Pellithoranam
                             
-                        </h2>
-                        <div style="color:black !important;" >Kukatpally, Hyderabad,500090</div>
-                        <div style="color:black !important;">8187823936</div>
-                        <div  style="color:black !important;">info@pellithoranam.com</div>
+                        </h2><span  style="color:black !important;">
+                        Kukatpally, Hyderabad,500090 <br>
+                        8187823936<br>
+                        info@pellithoranam.com</span>
                         </td>
           </tr>
     
