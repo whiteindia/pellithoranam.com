@@ -215,7 +215,7 @@ $now=date('d-m-Y H:i:s');
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container-lg mt-3 border">
   <div class="row">
     <div class="col-sm-6"> <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" /></div>
     <div class="col-sm-6"></div>
