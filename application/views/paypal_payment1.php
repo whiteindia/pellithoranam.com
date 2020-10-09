@@ -164,12 +164,12 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
                   if ($this->email->send()) {
                     $this->session->set_flashdata('success','Email Sent');
                     echo 'success email sent';
-                    exit();
+                  //  exit();
                   //  redirect(base_url());
                   } else{
                     show_error($this->email->print_debugger());
                     echo 'failed email ';
-                    exit();
+                  //  exit();
                   }
 
 
