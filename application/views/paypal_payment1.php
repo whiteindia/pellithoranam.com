@@ -280,8 +280,8 @@ $now=date('d-m-Y H:i:s');
         <thead class="bg-success">
           <tr style="background-color: green;">
             <th>#</th>
-            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:ivory !important;">Package</h2></th>
-            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:ivory !important;">Amount</h2></th>
+            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:white !important;">Package</h2></th>
+            <th><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:white !important;">Amount</h2></th>
           </tr>
         </thead>
         <tbody>
