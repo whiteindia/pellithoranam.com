@@ -273,9 +273,9 @@ $now=date('d-m-Y H:i:s');
       <table class="table">
         <thead class="bg-success">
           <tr style="background-color: green;color: white;">
-            <th>#</th>
-            <th>Package</th>
-            <th>Amount</th>
+            <th><h2>#</h2></th>
+            <th><h2>Package</h2></th>
+            <th><h2>Amount</h2></th>
           </tr>
         </thead>
         <tbody>
