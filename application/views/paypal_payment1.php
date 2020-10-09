@@ -294,10 +294,10 @@ $now=date('d-m-Y H:i:s');
             <td>Package name</td>
             <td>AMOUNT</td>
           </tr>
-          <tr >
-            <td>.</td>
-            <td><h4 style="font-family:Georgia,Times New Roman, Times, serif ;color:orange !important;">GRAND TOTAL</h4></td>
-            <td><h4 style="font-family:Georgia,Times New Roman, Times, serif ;color:orange !important;">AMOUNT</h4></td>
+          <tr style="color:red;" >
+            <td><h2>.</h2></td>
+            <td><h2>GRAND TOTAL</h2></td>
+            <td><h2>AMOUNT</h2></td>
           </tr>
     
         </tbody>
