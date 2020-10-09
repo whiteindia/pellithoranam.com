@@ -432,7 +432,7 @@ Include the above in your HEAD tag ---------->
         <div class="text-right">
             <button id="printInvoice" class="btn btn-info"><i class="fa fa-print"></i> Print</button>
             <input type="hidden" name="output" value="<?= htmlentities($output); ?>">
-			<button class="btn btn-info" type="submit" name="action"><i class="fa fa-file-pdf-o"></i> Send Mail</button><?php echo $message; ?>
+		<!--	<button class="btn btn-info" type="submit" name="action"><i class="fa fa-file-pdf-o"></i> Send Mail</button><?php echo $message; ?> -->
         </div>
         <hr>
     </div>
