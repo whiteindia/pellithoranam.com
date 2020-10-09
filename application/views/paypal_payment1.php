@@ -232,10 +232,10 @@ $now=date('d-m-Y H:i:s');
             <td><h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:black !important;">
                             Pellithoranam
                             
-                        </h2><span  style="color:black !important;">
+                        </h2><h3><span  style="color:black !important;">
                         Kukatpally, Hyderabad,500090 <br>
                         8187823936<br>
-                        info@pellithoranam.com</span>
+                        info@pellithoranam.com</span></h3>
                         </td>
           </tr>
     
@@ -246,9 +246,9 @@ $now=date('d-m-Y H:i:s');
       <thead >
         <tr>
           <th><h3>INVOICE TO:</h3>
-          <br>customer name
+          <h4>  <br>customer name
           <br>city
-          <br>mail
+          <br>mail</h4>
           </th>
           <th></th>
           <th></th>
@@ -262,8 +262,8 @@ $now=date('d-m-Y H:i:s');
           <td class="text-warning"></td>
           <td>
       <h3>   PT</h3> 
-          <br> date of invoice
-                      </td>
+       <h4>   <br> date of invoice
+                    </h4>  </td>
         </tr>
   <tr>
   <td>.</td>
