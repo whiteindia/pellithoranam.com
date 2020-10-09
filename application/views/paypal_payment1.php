@@ -1,3 +1,183 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!------ 
+<link rel="stylesheet" href="bootstrap.min.css" />
+		<script src="bootstrap.min.js"></script>
+<script src="jquery.min.js"></script>
+Include the above in your HEAD tag ---------->
+<style>
+	 * {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important;                 /*Firefox*/
+}
+    #invoice{
+    padding: 20px;
+}
+
+.invoice {
+    position: relative;
+    background-color: #fff0;
+    min-height: 680px;
+    padding: 15px
+}
+
+.invoice header .colss {
+    padding: 10px 17px;
+    margin-bottom: 20px;
+	border-bottom: 1px solid #3989c6;
+	background:linear-gradient(0deg, rgb(242 119 53), rgb(115 171 59)) !important;
+	color: #fff !important;
+    font-size: 1.6em;
+   
+}
+}
+
+.invoice .company-details {
+    text-align: right
+}
+
+.invoice .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .contacts {
+    margin-bottom: 20px
+}
+
+.invoice .invoice-to {
+    text-align: left
+}
+
+.invoice .invoice-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .invoice-details {
+    text-align: right
+}
+
+.invoice .invoice-details .invoice-id {
+    margin-top: 0;
+    color: #0120d0
+}
+
+.invoice main {
+    padding-bottom: 50px
+}
+
+.invoice main .thanks {
+    margin-top: -100px;
+    font-size: 2em;
+    margin-bottom: 50px
+}
+
+.invoice main .notices {
+    padding-left: 6px;
+    border-left: 6px solid #3989c6
+}
+
+.invoice main .notices .notice {
+    font-size: 1.2em
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px
+}
+
+.invoice table td,.invoice table th {
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #fff
+}
+
+.invoice table th {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.invoice table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #211e1d;
+    font-size: 1.2em
+}
+
+.invoice table .qty,.invoice table .total,.invoice table .unit {
+    text-align: right;
+    font-size: 1.2em
+}
+
+.invoice table .no {
+    color: #fff !important;
+    font-size: 1.6em;
+    background: #73ab3b !important
+}
+
+.invoice table .unit {
+    background: #ddd
+}
+
+.invoice table .total {
+    background: #3989c6;
+    color: #fff
+}
+
+.invoice table tbody tr:last-child td {
+    border: none
+}
+
+.imgs{
+    min-height:100%;
+  background:linear-gradient(0deg, rgb(242 119 53 / 45%), rgb(115 171 59 / 51%)), url(image.png) !important;
+  background-size:cover;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+   
+}
+
+.invoice table tfoot tr:last-child td {
+    color: #f28135;
+    font-size: 1.4em;
+    border-top: 1px solid #f28135
+}
+
+.invoice table tfoot tr td:first-child {
+    border: none
+}
+
+.invoice footer {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding: 8px 0
+}
+
+@media print {
+    .invoice {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+
+    .invoice footer {
+        position: absolute;
+        bottom: 10px;
+        page-break-after: always
+    }
+
+    .invoice>div:last-child {
+        page-break-before: always
+    }
+}
+</style>
+
 <?php
 $my_matr_id = $this->session->userdata('logged_in');
 $query = $this->db->where('matrimony_id',$my_matr_id->matrimony_id);
@@ -244,185 +424,7 @@ $config = array(
         <title></title></head>
 	<body > -->
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<!------ 
-<link rel="stylesheet" href="bootstrap.min.css" />
-		<script src="bootstrap.min.js"></script>
-<script src="jquery.min.js"></script>
-Include the above in your HEAD tag ---------->
-<style>
-	 * {
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
-    color-adjust: exact !important;                 /*Firefox*/
-}
-    #invoice{
-    padding: 20px;
-}
 
-.invoice {
-    position: relative;
-    background-color: #fff0;
-    min-height: 680px;
-    padding: 15px
-}
-
-.invoice header .colss {
-    padding: 10px 17px;
-    margin-bottom: 20px;
-	border-bottom: 1px solid #3989c6;
-	background:linear-gradient(0deg, rgb(242 119 53), rgb(115 171 59)) !important;
-	color: #fff !important;
-    font-size: 1.6em;
-   
-}
-}
-
-.invoice .company-details {
-    text-align: right
-}
-
-.invoice .company-details .name {
-    margin-top: 0;
-    margin-bottom: 0
-}
-
-.invoice .contacts {
-    margin-bottom: 20px
-}
-
-.invoice .invoice-to {
-    text-align: left
-}
-
-.invoice .invoice-to .to {
-    margin-top: 0;
-    margin-bottom: 0
-}
-
-.invoice .invoice-details {
-    text-align: right
-}
-
-.invoice .invoice-details .invoice-id {
-    margin-top: 0;
-    color: #0120d0
-}
-
-.invoice main {
-    padding-bottom: 50px
-}
-
-.invoice main .thanks {
-    margin-top: -100px;
-    font-size: 2em;
-    margin-bottom: 50px
-}
-
-.invoice main .notices {
-    padding-left: 6px;
-    border-left: 6px solid #3989c6
-}
-
-.invoice main .notices .notice {
-    font-size: 1.2em
-}
-
-.invoice table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin-bottom: 20px
-}
-
-.invoice table td,.invoice table th {
-    padding: 15px;
-    background: white;
-    border-bottom: 1px solid #fff
-}
-
-.invoice table th {
-    white-space: nowrap;
-    font-weight: 400;
-    font-size: 16px
-}
-
-.invoice table td h3 {
-    margin: 0;
-    font-weight: 400;
-    color: #211e1d;
-    font-size: 1.2em
-}
-
-.invoice table .qty,.invoice table .total,.invoice table .unit {
-    text-align: right;
-    font-size: 1.2em
-}
-
-.invoice table .no {
-    color: #fff !important;
-    font-size: 1.6em;
-    background: #73ab3b !important
-}
-
-.invoice table .unit {
-    background: #ddd
-}
-
-.invoice table .total {
-    background: #3989c6;
-    color: #fff
-}
-
-.invoice table tbody tr:last-child td {
-    border: none
-}
-
-.imgs{
-    min-height:100%;
-  background:linear-gradient(0deg, rgb(242 119 53 / 45%), rgb(115 171 59 / 51%)), url(image.png) !important;
-  background-size:cover;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-   
-}
-
-.invoice table tfoot tr:last-child td {
-    color: #f28135;
-    font-size: 1.4em;
-    border-top: 1px solid #f28135
-}
-
-.invoice table tfoot tr td:first-child {
-    border: none
-}
-
-.invoice footer {
-    width: 100%;
-    text-align: center;
-    color: #777;
-    border-top: 1px solid #aaa;
-    padding: 8px 0
-}
-
-@media print {
-    .invoice {
-        font-size: 11px!important;
-        overflow: hidden!important
-    }
-
-    .invoice footer {
-        position: absolute;
-        bottom: 10px;
-        page-break-after: always
-    }
-
-    .invoice>div:last-child {
-        page-break-before: always
-    }
-}
-</style>
 
 		<br />
 		<div class="container-fluid">
