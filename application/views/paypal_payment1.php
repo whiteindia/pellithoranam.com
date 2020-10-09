@@ -216,7 +216,6 @@ $now=date('d-m-Y H:i:s');
 <body>
 
 <div class="container-fluid">
-  <h2>More Equal Columns</h2>
   <div class="row">
     <div class="col-sm-6"> <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" /></div>
     <div class="col-sm-6"></div>
