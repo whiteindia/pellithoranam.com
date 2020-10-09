@@ -248,6 +248,32 @@ $now=date('d-m-Y H:i:s');
         </tbody>
       </table>
       <table class="table">
+      <thead >
+        <tr>
+          <th>INVOICE TO:
+          <br>customer name
+          <br>city
+          <br>mail
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+  
+        <tr>
+          <td>.</td>
+          <td class="text-warning"></td>
+          <td>
+          PT
+          <br> date of invoice
+                      </td>
+        </tr>
+  
+      </tbody>
+    </table>
+
+      <table class="table">
         <thead class="bg-success">
           <tr>
             <th>#</th>
