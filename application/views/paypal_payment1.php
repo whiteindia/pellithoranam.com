@@ -261,9 +261,9 @@ $now=date('d-m-Y H:i:s');
           <td>.</td>
           <td class="text-warning"></td>
           <td>
-      <h3>   PT</h3> 
-       <h4>   <br> date of invoice
-                    </h4>  </td>
+      <h2>   PT</h2> 
+       <h3>   <br> date of invoice
+                    </h3>  </td>
         </tr>
   <tr>
   <td>.</td>
