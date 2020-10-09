@@ -201,7 +201,76 @@ $now=date('d-m-Y H:i:s');
 	//$statement = $connect->prepare($query);
 	//$statement->execute();
 	//$result = $statement->fetchAll();
-    $output = '
+    $output='
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h2>More Equal Columns</h2>
+  <div class="row">
+    <div class="col-sm-6"> <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" /></div>
+    <div class="col-sm-6"></div>
+        <div class="col-sm-6 "></div>
+    <div class="col-sm-6 ">					<h2 style="font-family:Georgia,Times New Roman, Times, serif ;color:black !important;">
+						Pellithoranam
+						
+					</h2>
+					<div style="color:black !important;" >Kukatpally, Hyderabad,500090</div>
+					<div style="color:black !important;">8187823936</div>
+					<div  style="color:black !important;">info@pellithoranam.com</div></div>
+  </div>
+  <br>
+  <hr class="bg-success">
+  <div class="row">
+    <div class="col-sm-6">INVOICE TO:<br>
+    -----<br>
+    -------
+    </div>
+    <div class="col-sm-6"></div>
+        <div class="col-sm-6 "></div>
+    <div class="col-sm-6 ">	PT		--<br>--</div>
+  </div>
+  <table class="table">
+    <thead class="bg-success">
+      <tr>
+        <th>#</th>
+        <th>Package</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>.</td>
+        <td>Package name</td>
+        <td>AMOUNT</td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td class="text-warning">GRAND TOTAL</td>
+        <td>AMOUNT</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+</div>
+</body>
+</html>
+
+    ';
+    $output1 = '
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
