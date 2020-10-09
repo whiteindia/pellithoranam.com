@@ -282,7 +282,7 @@ $now=date('d-m-Y H:i:s');
     <br>
       <table class="table">
         <thead class="bg-success">
-          <tr style="background-color: green;color: white;">
+          <tr style="background-color:#228B22;color: white;">
             <th><h2>#</h2></th>
             <th><h2>Package</h2></th>
             <th><h2>Amount</h2></th>
@@ -290,9 +290,9 @@ $now=date('d-m-Y H:i:s');
         </thead>
         <tbody>
           <tr>
-            <td>.</td>
-            <td>Package name</td>
-            <td>AMOUNT</td>
+            <td><h2>.</h2></td>
+            <td><h2>Package name</h2></td>
+            <td><h2>AMOUNT</h2></td>
           </tr>
           <tr style="color:red;" >
             <td><h2>.</h2></td>
