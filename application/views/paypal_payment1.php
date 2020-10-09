@@ -284,8 +284,8 @@ $now=date('d-m-Y H:i:s');
         <thead class="bg-success">
           <tr style="background-color:#228B22;color: white;">
             <th><h2>#</h2></th>
-            <th><h2>Package</h2></th>
-            <th><h2>Amount</h2></th>
+            <th><h2>PACKAGE</h2></th>
+            <th><h2>AMOUNT</h2></th>
           </tr>
         </thead>
         <tbody>
