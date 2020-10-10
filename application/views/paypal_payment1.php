@@ -247,7 +247,7 @@ $now=date('d-m-Y H:i:s');
         <tr>
           <th><h3>INVOICE TO:</h3>
           <h4>  <br>'.$user->profile_name.' [PT'.$user->matrimony_id.']
-                <br>'.$user->profile_name.'</h4>
+                <br>'.$user->email.'</h4>
           </th>
           <th></th>
           <th></th>
