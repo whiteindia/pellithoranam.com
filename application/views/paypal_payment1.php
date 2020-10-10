@@ -299,6 +299,17 @@ $now=date('d-m-Y H:i:s');
             <td><h2>GRAND TOTAL</h2></td>
             <td><h2>AMOUNT</h2></td>
           </tr>
+
+          <tr>
+          <td>Terms & conditions</td>
+          <td colspan="2"></td>
+          <footer style="color: green;">
+          This Package is not transferable to others and no refund of money is entertained.
+      </footer>
+      <footer style="color: green;">
+          Invoice was created on a computer and is valid without the signature and seal.
+      </footer>
+        </tr>
     
         </tbody>
       </table>
