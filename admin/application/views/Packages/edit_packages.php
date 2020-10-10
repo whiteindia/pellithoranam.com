@@ -64,7 +64,18 @@
                             <input type="text" class="form-control required" data-parsley-trigger="change"  
                             data-parsley-minlength="2" data-parsley-maxlength="15" data-parsley-pattern="^[a-zA-Z\  \/]+$" required="" name="price"  value="<?php echo $data->price; ?>">
                            <span class="glyphicon  form-control-feedback"></span>
-                        </div>        						
+                        </div>     
+
+                                              <div class="form-group has-feedback">
+                           <label for="exampleInputEmail1">Terms & Conditions</label>
+                           <textarea  name="terms" rows="4" cols="50">
+                           <?php echo $data->terms; ?>
+      </textarea>
+                         <!---   <input type="text" class="form-control required" required="" data-parsley-trigger="change" 	
+                            data-parsley-minlength="2" data-parsley-maxlength="50" 
+                            data-parsley-pattern="^[a-zA-Z\  \/]+$"  name="package_name" placeholder="Package Name">  -->
+                           <span class="glyphicon  form-control-feedback"></span>
+                        </div>    						
 						
 					    <div class="box-footer">
                      <button type="submit" class="btn btn-primary">Submit</button>
