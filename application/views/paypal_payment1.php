@@ -298,7 +298,9 @@ $now=date('d-m-Y H:i:s');
             <td><h2>GRAND TOTAL</h2></td>
             <td><h2>'.$booked['purchase_amount'].'</h2></td>
           </tr>
-
+<tr>
+<td><h2>Transactionid'.$booked['txnid'].'</h2></td>
+</tr>
           <tr>
           <br><br><br><br>
           <td>Terms & conditions</td>
@@ -312,7 +314,7 @@ $now=date('d-m-Y H:i:s');
       </footer>
       <br>
       <footer style="color: green;">
-      '. $package->term.'
+      '. $package->terms.'
   </footer>
         </tr>
     
