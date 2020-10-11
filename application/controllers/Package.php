@@ -137,7 +137,7 @@ $this->load->view('footer');
 				$msg = "You Successfully Purchased Package For www.Pellithoranam.com.Package Name : ".$package->package_name.".Price : ".$paypalInfo["payment_gross"].".Purchase Date : ".$newformat.".";
 				$this->sent_mobile_msg($mobile_no,$msg);
 				$this->load->view('header');
-				$this->load->view('paypal_payment',$payment);
+				$this->load->view('paypal_payment1',$payment);
 				$this->load->view('footer');
 
 		}

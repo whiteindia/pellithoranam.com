@@ -185,11 +185,11 @@ $query = $this->db->get('profiles');
 $user = $query->row();
 //print_r($user);
 //exit();
-$booked=array();
+//$booked=array();
 //index.php
-$booked['purchase_amount']=1000;
+//$booked['purchase_amount']=1000;
 $message = '';
-$booked['txnid']=time();
+//$booked['txnid']=time();
 //$user = $this->Package_model->get_account();
 date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
 $now=date('d-m-Y H:i:s');
@@ -289,8 +289,8 @@ $now=date('d-m-Y H:i:s');
         </thead>
         <tbody>
           <tr>
-            <td><h2>.</h2></td>
-            <td><h2>Package name</h2></td>
+            <td><h2>Transactionid'.$booked['txnid'].'</h2></td>
+            <td><h2>'. $package->package_name.'</h2></td>
             <td><h2>'.$booked['purchase_amount'].'</h2></td>
           </tr>
           <tr style="color:red;" >
@@ -300,14 +300,20 @@ $now=date('d-m-Y H:i:s');
           </tr>
 
           <tr>
+          <br><br><br><br>
           <td>Terms & conditions</td>
           <td colspan="2"></td>
           <footer style="color: green;">
           This Package is not transferable to others and no refund of money is entertained.
       </footer>
+      <br>
       <footer style="color: green;">
           Invoice was created on a computer and is valid without the signature and seal.
       </footer>
+      <br>
+      <footer style="color: green;">
+      '. $package->term.'
+  </footer>
         </tr>
     
         </tbody>
