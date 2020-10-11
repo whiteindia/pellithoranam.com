@@ -374,7 +374,7 @@ $now=date('d-m-Y H:i:s');
                         
                             <div class="col-md-6"><b>Matrimoni Id </b>: '. $user->matrimony_id.'</div>
                         
-                            <div class="col-md-6"><b>Package Name </b>: package_name</div>
+                            <div class="col-md-6"><b>Package Name </b>: '.$package->package_name.'</div>
                           
                             <div class="col-md-6"><b>Amount</b>: '.$booked['purchase_amount'].'</div>
                       
