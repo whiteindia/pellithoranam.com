@@ -770,7 +770,7 @@ $settings= get_setting();
                         
                        $usrIMG = $candidate->profile_photo;///assets/img/user.jpg
                         if($this->session->userdata('logged_in')) {
-                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' style='color: red;' data-title='".$candidate->profile_name."'  class='img-thumbnail'>";
+                            $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' style='color: red;' data-title='".$candidate->profile_name."'  >";  /*<!----->     class='img-thumbnail' */
                         } else {
                             $attr2 = "<a href='' data-toggle='modal' data-target='#reglog'>";
                         }
@@ -979,8 +979,8 @@ $settings= get_setting();
               
               $attr = "<a href='".base_url()."profile/profile_details/".$candidate->matrimony_id."' >";
               ?>
-              <div><!---class="web-search-photo"-->
-                <div>
+              <div class="web-search-photo">
+                <div class="web-search-pic">
                   <?php  if($candidate->profile_photo == "")  { 
                     if($this->session->userdata('logged_in')) {
                         $attr2 = "<a href='javascript:void(0);' class='light-box'>";
