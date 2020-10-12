@@ -2036,6 +2036,14 @@ $mat_id=$my_matr_id->matrimony_id;
 	public function my_profile() {
 		if($this->session->userdata('logged_in')) {
 			$my_matr_id = $this->session->userdata('logged_in');
+			if(isset($_SESSION['newreg'])&&$_SESSION['newreg']==1){
+				//base_url(home/logout);
+				$_SESSION['newreg']=0;
+				
+					$message = "Thank You. you will logout now.please login again";
+					 echo "<script type='text/javascript'>alert('$message');window.location.href='https://pellithoranam.com/home/logout' </script>";
+							}
+
 			if($my_matr_id) {
 				$whr = array();
 				$whr1= array();
