@@ -214,7 +214,7 @@ $now=date('d-m-Y H:i:s');
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <body style="border: 1px solid black;padding-bottom:90vh;padding-left:5vw;"padding-bottom:5vw;">
+    <body style="border: 1px solid black;padding-bottom:90vh;">
     
     <div class="container-fluid">
           <table class="table">
