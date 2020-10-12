@@ -424,7 +424,7 @@ $obj_pdf->writeHTML($output, true, false, true, false, '');
 $t=time();
 $filename=$user->matrimony_id.'_'.$t;
 $pdff = $obj_pdf->Output($filename.'.pdf', 'S');
-if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff)){
+if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename.'.pdf', $pdff)){
 
     echo 'success';// // exit();
 }else{
@@ -465,7 +465,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff))
                   $this->email->subject('=?UTF-8?q?'.quoted_printable_encode($subject).'?=');//mb_encode_mimeheader($subject,"UTF-8")  vmb_encode_mimeheader($subject, 'UTF-8', 'B', "\r\n", strlen('Subject: '))
                   $this->email->message($output1);
               
-                  $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename;
+                  $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename.'.pdf';
               
                   $this->email->attach($resume_tmp_path);
                   if ($this->email->send()) {
