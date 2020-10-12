@@ -151,9 +151,9 @@ echo "<script>alert('failed, please try again')</script>";
 	}
 	
 	public function rsuccess1(){
-	//	ini_set('display_errors', 1);
-	//	ini_set('display_startup_errors', 1);
-	//	error_reporting(E_ALL);
+		ini_set('display_errors', 1);
+		ini_set('display_startup_errors', 1);
+		error_reporting(E_ALL);
 		$payment=array();
 		$user = $this->Package_model->get_account();
 	$this->load->view('header');
