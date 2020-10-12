@@ -299,7 +299,7 @@ $now=date('d-m-Y H:i:s');
             <td><h2>'.$booked['purchase_amount'].'</h2></td>
           </tr>
 <tr>
-<td><h2>Transactionid'.$booked['txnid'].'</h2></td>
+<td><h5>Transactionid'.$booked['txnid'].'</h5></td>
 </tr>
           <tr>
           <br><br><br><br>
