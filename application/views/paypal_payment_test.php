@@ -345,7 +345,7 @@ $now=date('d-m-Y H:i:s');
 			<div class="row">
 				<div class="col colss">
 				<a target="_blank" href="#">
-                            <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" />
+                        <!--    <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" />-->
                             </a>
 				</div>
 				<div class="col company-details colss">
