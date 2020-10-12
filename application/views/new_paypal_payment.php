@@ -1,6 +1,14 @@
 <?php
+$my_matr_id = $this->session->userdata('logged_in');
+$query = $this->db->where('matrimony_id',$my_matr_id->matrimony_id);
+$query = $this->db->get('profiles');
+$user = $query->row();
+$booked=array();
 
-//index.php
+$booked['purchase_amount']=1000;
+$message = '';
+$booked['txnid']=time();
+
 
 $message = '';
 date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
