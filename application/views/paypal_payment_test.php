@@ -214,7 +214,7 @@ $now=date('d-m-Y H:i:s');
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <body style="border: 1px solid black;padding-bottom:90vh;padding-left:5vw;"padding-right:5vw;">
+    <body style="border: 1px solid black;padding-bottom:90vh;padding-left:5vw;"padding-bottom:5vw;">
     
     <div class="container-fluid">
           <table class="table">
@@ -428,7 +428,7 @@ $obj_pdf->writeHTML($output, true, false, true, false, '');
 $t=time();
 $filename=$user->matrimony_id.'_'.$t;
 $pdff = $obj_pdf->Output($filename.'.pdf', 'S');
-if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename.'.pdf', $pdff)){
+if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename, $pdff)){
 
     echo 'success';// // exit();
 }else{
@@ -469,7 +469,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename.'.pdf', 
                   $this->email->subject('=?UTF-8?q?'.quoted_printable_encode($subject).'?=');//mb_encode_mimeheader($subject,"UTF-8")  vmb_encode_mimeheader($subject, 'UTF-8', 'B', "\r\n", strlen('Subject: '))
                   $this->email->message($output1);
               
-                  $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename.'.pdf';
+                  $resume_tmp_path = '/var/www/html/assets/uploads/invoices/'.$filename;
               
                   $this->email->attach($resume_tmp_path);
                   if ($this->email->send()) {
