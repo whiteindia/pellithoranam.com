@@ -791,7 +791,7 @@ $settings= get_setting();
                         }
                         if($this->session->userdata('logged_in')) {
                             if($reuest_res=="success"){
-                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style." '  class='img-thumbnail' >";
+                              $attr2 = "<a href='".base_url().$usrIMG."' data-lightbox='image-".$candidate->matrimony_id."' data-title='".$candidate->profile_name."' style='".$style." ' >";
                             }else if($reuest_res=="requested"){
                               $attr2 = "<a href='javascript:void(0);' class='photo_already_request_btn'>";
                             }else{
@@ -814,15 +814,15 @@ $settings= get_setting();
                         } ?>
                          <!--   --->
                         <?php } ?>
-                        </a>
+                       </a> 
                     </div>
                     
-                    <?php echo $attr;?>
+                 <!--   <?php echo $attr;?>
                     <small><?php echo ucwords(strtolower($candidate->profile_name));?></small>
                     </a>
                     <?php echo $attr;?>
                     <p><?php echo $settings->id_prefix;?><?php echo $candidate->matrimony_id; ?></p>
-                    </a>
+                    </a>  -->
                     <div class="wed-space3">
                     </div>
                     <!--<span><img src="<?php echo base_url(); ?>assets/img/online.png">Online</span>-->
@@ -837,6 +837,11 @@ $settings= get_setting();
                     <div class="clearfix"></div>
                     <div class="list">
                       <ul>
+                      <li>
+                          <div class="childs1">Name</div>
+                          <div class="childs2"><?php echo $attr;?><?= $candidate->profile_name; ?></a></div>
+                          <div class="clearfix"></div>
+                        </li>
                         <li>
                           <div class="childs1">Age</div>
                           <div class="childs2">
@@ -861,10 +866,16 @@ $settings= get_setting();
                           <div class="childs2"><?php echo $candidate->caste_name.", ".$candidate->sub_caste;?></div>
                           <div class="clearfix"></div>
                         </li>
+                        
                       </ul>
                     </div>
                     <div class="list">
                       <ul>
+                      <li>
+                          <div class="childs1">MatrimonyID</div>
+                          <div class="childs2"><?php echo $attr;?><?= $candidate->matrimony_id; ?></a></div>
+                          <div class="clearfix"></div>
+                        </li>
                         <li>
                           <div class="childs1">Star</div>
                           <div class="childs2"><?php echo $candidate->star_name;?></div>
@@ -1093,8 +1104,8 @@ $settings= get_setting();
 
       <style type="text/css">
         .grid-view{display: none;}
-        .grid-view .web-search-photo{float: none;width: 100%;}
-        .grid-view .web-search-photo .web-search-pic{width: 250px;height: 250px;border-radius: 0px;}
+        .grid-view .web-search-photo{float: none;width: 150%;}
+        .grid-view .web-search-photo .web-search-pic{width: 350px;height: 350px;border-radius: 0px;}
         .grid-view .web-search-photo .web-search-pic img{border-radius: 50%;}
         .grid-view .web-search-photo h5{}
         .grid-view .web-search-photo p{}
