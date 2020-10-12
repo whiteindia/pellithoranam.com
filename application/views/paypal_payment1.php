@@ -341,7 +341,7 @@ $now=date('d-m-Y H:i:s');
 			<div class="row">
 				<div class="col colss">
 				<a target="_blank" href="#">
-                            <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" />
+                   <!--         <img src="https://pellithoranam.com/assets/logo/pellithoranam_logo.png" width="250px" height="100px" data-holder-rendered="true" />-->
                             </a>
 				</div>
 				<div class="col company-details colss">
@@ -448,10 +448,14 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename.'.pdf', 
                   $this->load->library('email');
                   $config = array();
                   $config['protocol'] = 'smtp';
-                  $config['smtp_host'] = 'smtp.gmail.com';
+                  $config['smtp_host'] = 'smtp.zoho.in';
+                  $config['smtp_user'] = 'info@pellithoranam.com';
+                  $config['smtp_pass'] = 'RTM56dfQIYAc';
+                  $config['smtp_port'] = '587';
+               /*   $config['smtp_host'] = 'smtp.gmail.com';
                   $config['smtp_user'] = 'my.pellithoranam.com@gmail.com';
                   $config['smtp_pass'] = 'yepxdmiehcigrhtn';
-                  $config['smtp_port'] = '587';
+                  $config['smtp_port'] = '587'; */
                   $config['smtp_crypto'] = 'tls'; 
                   $config['CharSet']    = 'utf-8';
                 $config['mailtype'] = 'html';
