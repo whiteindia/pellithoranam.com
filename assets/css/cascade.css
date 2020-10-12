@@ -1594,7 +1594,7 @@ background:#aee790;
 .wed-search-listing.list-premium.list-view ul li .web-search-photo h5{color: #fff;}
 .wed-search-listing.list-premium.list-view ul li .wed-search-btm p {color: #333;}
 
-.web-search-pic img{width:200%;height:200%; max-width: 250px; max-height: 250px;border-radius:10px;object-fit: cover;}
+.web-search-pic img{width:175%;height:175%; max-width: 250px; max-height: 250px;border-radius:10px;object-fit: cover;}
 .web-search-photo{width:30%;float:left;text-align: center}
 .web-search-photo h5{margin:0px;font-family: 'Roboto', sans-serif;color:#646464;font-size: 18px;padding-top: 10px;text-align: center; text-transform: capitalize;}
 .web-search-photo p{margin:0px;font-family: 'Roboto', sans-serif;color: #000;text-align: center;    font-size: 16px;}
