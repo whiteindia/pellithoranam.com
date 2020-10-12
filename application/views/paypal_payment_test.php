@@ -179,6 +179,7 @@ Include the above in your HEAD tag ---------->
 </style>
 
 <?php
+$package=$this->Package_model->get_amount('30');
 $my_matr_id = $this->session->userdata('logged_in');
 $query = $this->db->where('matrimony_id',$my_matr_id->matrimony_id);
 $query = $this->db->get('profiles');
@@ -289,7 +290,7 @@ $now=date('d-m-Y H:i:s');
         </thead>
         <tbody>
           <tr>
-            <td><h2>Transactionid'.$booked['txnid'].'</h2></td>
+            <td><h2></h2></td>
             <td><h2>'. $package->package_name.'</h2></td>
             <td><h2>'.$booked['purchase_amount'].'</h2></td>
           </tr>
@@ -297,6 +298,9 @@ $now=date('d-m-Y H:i:s');
             <td><h2>.</h2></td>
             <td><h2>GRAND TOTAL</h2></td>
             <td><h2>'.$booked['purchase_amount'].'</h2></td>
+          </tr>
+          <tr>
+          <td></td>
           </tr>
 <tr>
 <td><h2>Transactionid'.$booked['txnid'].'</h2></td>
