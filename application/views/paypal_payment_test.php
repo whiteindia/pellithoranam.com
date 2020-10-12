@@ -452,10 +452,18 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename.'.pdf', 
                   $this->load->library('email');
                   $config = array();
                   $config['protocol'] = 'smtp';
-                  $config['smtp_host'] = 'smtp.gmail.com';
+                  $config['smtp_host'] = 'smtp.zoho.com';
+                  $config['smtp_user'] = 'info@pellithoranam.com';
+                  $config['smtp_pass'] = 'Info_888';
+                  $config['smtp_port'] = '587';
+
+                  /**
+                   * 
+                   *               $config['smtp_host'] = 'smtp.gmail.com';
                   $config['smtp_user'] = 'my.pellithoranam.com@gmail.com';
                   $config['smtp_pass'] = 'yepxdmiehcigrhtn';
                   $config['smtp_port'] = '587';
+                   */
                   $config['smtp_crypto'] = 'tls'; 
                   $config['CharSet']    = 'utf-8';
                 $config['mailtype'] = 'html';
