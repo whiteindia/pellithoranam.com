@@ -979,7 +979,7 @@ $settings= get_setting();
               
               $attr = "<a href='".base_url()."profile/profile_details/".$candidate->matrimony_id."' >";
               ?>
-              <div class="web-search-photo">
+              <div><!---class="web-search-photo"-->
                 <div>
                   <?php  if($candidate->profile_photo == "")  { 
                     if($this->session->userdata('logged_in')) {
