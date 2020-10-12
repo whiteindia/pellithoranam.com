@@ -157,7 +157,7 @@ echo "<script>alert('failed, please try again')</script>";
 		$payment=array();
 		$user = $this->Package_model->get_account();
 	$this->load->view('header');
-	$this->load->view('new_paypal_payment',$payment);
+	$this->load->view('paypal_payment_test',$payment);
 	$this->load->view('footer'); }
 
 	public function paypal(){
