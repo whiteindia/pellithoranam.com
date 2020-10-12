@@ -452,7 +452,7 @@ if(file_put_contents('/var/www/html/assets/uploads/invoices/'.$filename.'.pdf', 
                   $this->load->library('email');
                   $config = array();
                   $config['protocol'] = 'smtp';
-                  $config['smtp_host'] = 'smtp.zoho.com';
+                  $config['smtp_host'] = 'smtp.zoho.in';
                   $config['smtp_user'] = 'info@pellithoranam.com';
                   $config['smtp_pass'] = 'RTM56dfQIYAc';
                   $config['smtp_port'] = '587';
