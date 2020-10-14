@@ -1105,7 +1105,7 @@ $settings= get_setting();
       <style type="text/css">
         .grid-view{display: none;}
         .grid-view .web-search-photo{float: none;width: 150%;}
-        .grid-view .web-search-photo .web-search-pic{width: 350px;height: 350px;border-radius: 0px;}
+        .grid-view .web-search-photo .web-search-pic{width: 250px;height: 250px;border-radius: 5px;}
         .grid-view .web-search-photo .web-search-pic img{border-radius: 50%;}
         .grid-view .web-search-photo h5{}
         .grid-view .web-search-photo p{}
