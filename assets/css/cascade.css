@@ -1594,7 +1594,7 @@ background:#aee790;
 .wed-search-listing.list-premium.list-view ul li .web-search-photo h5{color: #fff;}
 .wed-search-listing.list-premium.list-view ul li .wed-search-btm p {color: #333;}
 
-.web-search-pic img{width:150%;height:150%; max-width: 250px; max-height: 250px;border-radius:10px;object-fit: cover;   border: 1px solid #ddd;
+.web-search-pic img{width:150%;height:150%; max-width: 250px; max-height: 250px;border-radius:10px;object-fit: cover;   border: 1px solid #fff;
   border-radius: 4px;
   padding: 5px;}
 .web-search-photo{width:30%;float:left;text-align: center}
