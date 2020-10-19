@@ -1596,7 +1596,7 @@ background:#aee790;
 
 .web-search-pic img{width:150%;height:150%; max-width: 250px; max-height: 250px;border-radius:10px;object-fit: cover;   border: 5px solid #fff;
  
-  padding: 2px;}
+  padding: 0px;}
 .web-search-photo{width:30%;float:left;text-align: center}
 .web-search-photo h5{margin:0px;font-family: 'Roboto', sans-serif;color:#646464;font-size: 18px;padding-top: 10px;text-align: center; text-transform: capitalize;}
 .web-search-photo p{margin:0px;font-family: 'Roboto', sans-serif;color: #000;text-align: center;    font-size: 16px;}
