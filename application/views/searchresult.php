@@ -938,7 +938,7 @@ $settings= get_setting();
                                   <?php } } else { ?>
                           <button class="wed-shortlist" data-toggle='modal' data-target='#reglog'>Short List</button>
                         <?php }
-                       ?> <a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-warning" role="button" style="color:red;font-size:16px;">View Full Profile</a>
+                       ?><b> <a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-warning" role="button" style="color:ivory;font-size:16px;">View Full Profile</a></b>
                          <?php if($this->session->userdata('logged_in')) {
                           if((isset($candidate->interested)) && ($candidate->interested == 1)) { ?>
                           <button class="wed-interest">Already Interested</button>
