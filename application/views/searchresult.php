@@ -898,7 +898,7 @@ $settings= get_setting();
                         </li>
                         <li>
                           <div class="childs1"> </div>
-                       <div class="childs2"><a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" style="color:red;font-size:16px;">View Full Profile</a></div>   <!---->
+                       <div class="childs2"><a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-primary " role="button" style="color:red;font-size:16px;">View Full Profile</a></div>   <!---->
                           <div class="clearfix"></div>
                         </li>
                       </ul>
