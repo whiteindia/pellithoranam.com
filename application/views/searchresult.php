@@ -1034,7 +1034,7 @@ $settings= get_setting();
               <div class="clearfix"></div>
               </a>
               <div class="wed-search-btn-bay">
-              <a href="<?= base_url(); ?>profile/profile_details/ <?php echo candidate->matrimony_id; ?>" class="btn btn-outline-warning btn-lg " role="button" >View Profile</a>
+              <a href="<?php echo base_url(); ?>profile/profile_details/ <?php echo candidate->matrimony_id; ?>" class="btn btn-outline-warning btn-lg " role="button" >View Profile</a>
                 <?php if($this->session->userdata('logged_in')) {
                  if((isset($membr->total_sendmail)) && ($membr->total_sendmail == 0)) { ?>
                   <button class="wed-mail" data-toggle='modal' data-target='#no_send'>Send mail</button>
