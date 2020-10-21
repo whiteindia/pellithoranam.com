@@ -896,11 +896,11 @@ $settings= get_setting();
                           <div class="childs2"><?php echo $candidate->occupation;?></div>
                           <div class="clearfix"></div>
                         </li>
-                        <li>
+                     <!--   <li>
                           <div class="childs1"> </div>
-                       <div class="childs2"><a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-warning" role="button" style="color:red;font-size:16px;">View Full Profile</a></div>   <!---->
+                       <div class="childs2"><a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-warning" role="button" style="color:red;font-size:16px;">View Full Profile</a></div>   --
                           <div class="clearfix"></div>
-                        </li>
+                        </li>-->
                       </ul>
                     </div>
                     <div class="clearfix"></div>
@@ -938,7 +938,7 @@ $settings= get_setting();
                                   <?php } } else { ?>
                           <button class="wed-shortlist" data-toggle='modal' data-target='#reglog'>Short List</button>
                         <?php }
-                       ?><b> <a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-warning" role="button" style="color:ivory;font-size:16px;">View Full Profile</a></b>
+                       ?><b> <a href="<?php echo base_url(); ?>profile/profile_details/<?php echo $candidate->matrimony_id; ?>" class="btn btn-danger" role="button" style="color:ivory;font-size:16px;">View Full Profile</a></b>
                          <?php if($this->session->userdata('logged_in')) {
                           if((isset($candidate->interested)) && ($candidate->interested == 1)) { ?>
                           <button class="wed-interest">Already Interested</button>
