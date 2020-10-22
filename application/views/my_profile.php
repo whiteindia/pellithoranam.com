@@ -1867,7 +1867,7 @@ else {
  </div>
  <div class="child2">:
  </div>
- <div class="child3">
+ <div class="child3"><?php print_r($heights); ?>
    <select class="wed-reg-input-select" data-parsley-trigger="change" name="height_id" required>
     <option value="-1">- Select Height -</option>
     <?php foreach($heights as $heightd) {
