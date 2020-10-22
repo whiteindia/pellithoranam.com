@@ -1871,9 +1871,9 @@ else {
    <select class="wed-reg-input-select" data-parsley-trigger="change" name="height_id" required>
     <option value="-1">- Select Height -</option>
     <?php foreach($heights as $heightd) {
-        if($profile->height_id == $heightd->height_id) { $attr="selected"; } else { $attr=""; }
+        if($profile->height_id == $heightd['height_id']) { $attr="selected"; } else { $attr=""; }
       ?>
-    <option value="<?php echo $heightd->height_id; ?>" <?php echo $attr; ?>><?php echo $heightd['height']; ?></option>
+    <option value="<?php echo $heightd['height_id']; ?>" <?php echo $attr; ?>><?php echo $heightd['height']; ?></option>
     <?php } ?>
   </select>
 </div>
