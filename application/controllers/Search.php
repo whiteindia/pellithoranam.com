@@ -297,7 +297,7 @@ ini_set('memory_limit', '-1');
                $where[]= "profiles.age >= '".$_POST['age_from']."'"; 
             }
             if((isset($_POST['age_to'])) && ($_POST['age_to']!=0)) { 
-               // $where[]= "profiles.age <= '".$_POST['age_to']."'"; 
+                $where[]= "profiles.age <= '".$_POST['age_to']."'"; 
             }
             if((isset($_POST['height_from'])) && ($_POST['height_from']!=0)) { 
                 $where[]= "profiles.height_id >= '".$_POST['height_from']."'"; 
