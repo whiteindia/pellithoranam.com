@@ -38,6 +38,14 @@ function get_successstories(){
 			$car=$query->num_rows();
 			return $car;	
 		}
+
+		function get_payments(){
+			$CI = & get_instance();		
+		//	$CI->db->where('success_approval',1);
+			$query = $CI->db->get('payments');
+			$car=$query->num_rows();
+			return $car;	
+		}
 		function get_paidmember(){
 			$CI = & get_instance();	
 			$CI->db->select('* ');
