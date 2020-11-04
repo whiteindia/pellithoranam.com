@@ -93,20 +93,7 @@ $amount = get_amount();
           <!-- /.info-box -->
         </div>
         </a>
-        <a href="#"> <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="fa fa-star" style="margin-top: 21px;"></i></span>
 
-            <div class="info-box-content small-content">
-              <span class="info-box-text"></span>
-              <span class="info-box-number">Paid Members</span>
-              <span style="font-size: 25px;margin-top: 21px;"><b><?php echo $paidmember; ?></b></span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        </a>
 
         <a href="#"> <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
