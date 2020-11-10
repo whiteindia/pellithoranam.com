@@ -1,63 +1,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-<style>
- /* only demo styles */
 
-/* end only demo styles */
-
-.checkbox-custom, .radio-custom {
-    opacity: 0;
-    position: absolute;   
-}
-
-.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
-    cursor: pointer;
-   
-}
-
-.checkbox-custom-label, .radio-custom-label {
-    position: relative;
-}
-
-.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
-    content: '';
-    background: green;
-    border: 2px solid white;
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-    margin-right: 10px;
-    text-align: center;
-    ]
-}
-
-.checkbox-custom:checked + .checkbox-custom-label:before {
-    content: "\f00c";
-    font-family: 'FontAwesome';
-    background: green;
-    color: white;
-   
-}
-
-.radio-custom + .radio-custom-label:before {
-    border-radius: 50%;
-    font-size:10px;
-}
-
-.radio-custom:checked + .radio-custom-label:before {
-    content: "\f00c";
-    font-family: 'FontAwesome';
-    color: white;
-}
-
-
-  </style>
 
 <div class="col-md-9">
             <div class="wed-reg-right">
@@ -338,11 +282,11 @@
   background-color: blue;
 }
 </style>
-<div class="">
-   <input  id="nop" class="radio-custom" type="radio" name="profile_preference" checked="checked" value="0" required>
-   <label class="radio-custom-label" for="nop">Visible to all</label>
-   <input  id="ds2" class="radio-custom" type="radio" name="profile_preference" value="1">
-   <label class="radio-custom-label" for="ds2">Visible only to members whom I had contacted / responded</label>
+<div class="wed-custom5">
+   <input  id="nop" type="radio" name="profile_preference" checked="checked" value="0" required>
+   <label for="nop">Visible to all</label>
+   <input  id="ds" type="radio" name="profile_preference" value="1">
+   <label for="ds">Visible only to members whom I had contacted / responded</label>
 
 </div>
 </div>
@@ -536,13 +480,13 @@ function show(input) {
                       <li>
                         <div class="wed-reg-right-child1">Food</div>
                         <div class="wed-reg-right-child2">
-                          <div class="">
-                              <input id="veg" class="radio-custom" type="radio" name="food" checked="checked" value="1" required>
-                              <label class="radio-custom-label" for="veg">Vegetarian</label>
-                              <input id="nveg" class="radio-custom" type="radio" name="food" value="2">
-                              <label class="radio-custom-label" for="nveg">Non Vegitarian</label>
-                              <input id="egg" class="radio-custom" type="radio" name="food" value="3">
-                              <label class="radio-custom-label" for="egg">Eggetarian</label>
+                          <div class="wed-custom5">
+                              <input id="veg" type="radio" name="food" checked="checked" value="1" required>
+                              <label for="veg">Vegetarian</label>
+                              <input id="nveg" type="radio" name="food" value="2">
+                              <label for="nveg">Non Vegitarian</label>
+                              <input id="egg" type="radio" name="food" value="3">
+                              <label for="egg">Eggetarian</label>
                           </div>
                         </div>
                         <div class="clearfix"></div>
@@ -550,13 +494,13 @@ function show(input) {
                       <li>
                         <div class="wed-reg-right-child1">Smoking</div>
                         <div class="wed-reg-right-child2">
-                          <div class="">
-                              <input id="no" class="radio-custom" type="radio" name="smoking" checked="checked" value="1" required>
-                              <label class="radio-custom-label" for="no">No</label>
-                              <input id="occ" class="radio-custom" type="radio" name="smoking" value="2">
-                              <label class="radio-custom-label" for="occ">Occasionaly</label>
-                              <input id="ys" class="radio-custom" type="radio" name="smoking" value="3">
-                              <label class="radio-custom-label" for="ys">Yes</label>
+                          <div class="wed-custom5">
+                              <input id="no" type="radio" name="smoking" checked="checked" value="1" required>
+                              <label for="no">No</label>
+                              <input id="occ" type="radio" name="smoking" value="2">
+                              <label for="occ">Occasionaly</label>
+                              <input id="ys" type="radio" name="smoking" value="3">
+                              <label for="ys">Yes</label>
                           </div>
                         </div>
                         <div class="clearfix"></div>
@@ -564,13 +508,13 @@ function show(input) {
                       <li>
                         <div class="wed-reg-right-child1">Drinking</div>
                         <div class="wed-reg-right-child2">
-                          <div class="">
-                              <input id="nop" class="radio-custom" type="radio" name="drinking" checked="checked" value="1" required>
-                              <label class="radio-custom-label" for="nop">No</label>
-                              <input id="ds" class="radio-custom" type="radio" name="drinking" value="2">
-                              <label class="radio-custom-label" for="ds">Drinks Socialy</label>
-                              <input id="yp" class="radio-custom" type="radio" name="drinking" value="3"> 
-                              <label class="radio-custom-label" for="yp">Yes</label>
+                          <div class="wed-custom5">
+                              <input id="nop" type="radio" name="drinking" checked="checked" value="1" required>
+                              <label for="nop">No</label>
+                              <input id="ds" type="radio" name="drinking" value="2">
+                              <label for="ds">Drinks Socialy</label>
+                              <input id="yp" type="radio" name="drinking" value="3"> 
+                              <label for="yp">Yes</label>
                           </div>
                         </div>
                         <div class="clearfix"></div>
@@ -627,13 +571,13 @@ function show(input) {
                      <li>
                        <div class="wed-reg-right-child1">Have Dosham?</div>
                        <div class="wed-reg-right-child2">
-                         <div class="">
-                             <input id="nm12" class="radio-custom" type="radio" name="dosham" value="1">
-                             <label class="radio-custom-label" for="nm12">No</label>
-                             <input id="dvsd12" class="radio-custom" type="radio" name="dosham" value="2">
-                             <label class="radio-custom-label" for="dvsd12">Yes</label>
-                             <input id="wd45" class="radio-custom" type="radio" name="dosham" value="3">
-                             <label class="radio-custom-label" for="wd45">Don't Know</label>
+                         <div class="wed-custom5">
+                             <input id="nm12" type="radio" name="dosham" value="1">
+                             <label for="nm12">No</label>
+                             <input id="dvsd12" type="radio" name="dosham" value="2">
+                             <label for="dvsd12">Yes</label>
+                             <input id="wd45" type="radio" name="dosham" value="3">
+                             <label for="wd45">Don't Know</label>
                          </div>
                        </div>
                        <div class="clearfix"></div>
