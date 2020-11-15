@@ -368,7 +368,7 @@ NB:   ANY TYPE OR GRPTMATICAL MISTAKES IF NOTICED IN TERMS AND CONDITIONS KINDLY
          </div>
           <div class="pck-detl">
        <!--  <a href="/package" class="btn-pckg" style="">View Packages</a> -->
-         <p> To know more, call us @ <i class="fa fa-mobile text-warning" aria-hidden="true"></i>+91 8187893236 <i class="fa fa-mobile text-warning" aria-hidden="true"></i> +91  7893419636  <i class="fa fa-phone-square text-warning" aria-hidden="true"></i>040-42709366</p>  <!-- 78934 19537 -->
+         <p> To know more, call us @ <i class="fa fa-mobile bg-light text-warning" aria-hidden="true"></i>+91 8187893236 <i class="fa fa-mobile bg-light text-warning" aria-hidden="true"></i> +91  7893419636  <i class="fa fa-phone-square bg-light text-warning" aria-hidden="true"></i>040-42709366</p>  <!-- 78934 19537 -->
           </div> 
      </div> 
      </div>
