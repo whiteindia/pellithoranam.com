@@ -127,6 +127,7 @@ class Verify extends CI_Controller {
     //  ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
+if(isset($this->session->userdata('new_matrimonyid')&&(!empty($this->session->userdata('new_matrimonyid')))){
       $email_id = $_GET['email'];
     //  $phone = $_GET['phone'];
       // echo  $email_id;
@@ -135,13 +136,29 @@ class Verify extends CI_Controller {
       $otp = $this->generate_otp();
       //exit;
       $result = $this->Verify_model->add_otpdetails($otp);
+      if($result ){
       $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp.". Do not share the password with anyone for security reasons.";
       $this->send_sms($email_id,$msg);
+       }
+      else{
+        $result1 = $this->Verify_model->add_otpdetails($otp);
+              if($result1){
+                $msg = "Hello, Your one time password for www.Pellithoranam.in is ".$otp.". Do not share the password with anyone for security reasons.";
+                $this->send_sms($email_id,$msg);
+              }else{
+                redirect(base_url().'home/registration_details');
+              }
+      }
      // $result=$this->Verify_model->get_mob_email($email_id);
      // $mobn=$result->phone; 
      // $this->sent_mobile_msg($phone,$msg);
       //$this->resend_otp(); 
-      redirect(base_url().'Verify');
+      redirect(base_url().'Verify');}
+      else{
+        redirect(base_url().'home/registration_details');
+//home/registration_details   new_matrimonyid
+
+      }
     }
 
     public function resend_otp() {

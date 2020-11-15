@@ -284,6 +284,7 @@ class Home_model extends CI_Model {
 
       $user = $this->Profile_model->get_profile_details($unq,"");
       $this->session->set_userdata('logged_in',$user[0]);
+      $this->session->set_userdata('new_matrimonyid',$user[0]['matrimony_id']);
       return $var;
     }
 
