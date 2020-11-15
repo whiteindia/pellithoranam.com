@@ -23,7 +23,7 @@ $title    = $settings->title;
               info@pellithoranam.com 
             </div>
             <div class="wed-contact-call">
-              +91 8187893236 <!-- 78934 19537-->
+             040-42709366<br> +91 8187893236 <!-- 78934 19537--> <br> +91  7893419636
             </div>
         </div>
         <div class="clearfix"></div>
