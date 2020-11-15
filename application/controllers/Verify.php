@@ -9,9 +9,9 @@ class Verify extends CI_Controller {
         $this->load->model('Verify_model');
         date_default_timezone_set('Asia/Kolkata');
 
-             ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+    //         ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
         $session=$this->session->userdata('logged_in');  
 	       if (!isset($session)&& empty($session) )  { 
 				redirect(base_url());
@@ -125,7 +125,7 @@ error_reporting(E_ALL);
 
     public function send_otp_after_reg() {
 
-if(isset($this->session->userdata('new_matrimonyid')&&(!empty($this->session->userdata('new_matrimonyid')))){
+if(isset($this->session->userdata('new_matrimonyid'))&&(!empty($this->session->userdata('new_matrimonyid')))){
       $email_id = $_GET['email'];
     //  $phone = $_GET['phone'];
       // echo  $email_id;
@@ -151,7 +151,7 @@ if(isset($this->session->userdata('new_matrimonyid')&&(!empty($this->session->us
      // $mobn=$result->phone; 
      // $this->sent_mobile_msg($phone,$msg);
       //$this->resend_otp(); 
-      redirect(base_url().'Verify');}
+      redirect(base_url().'Verify'); }
       else{
         redirect(base_url().'home/registration_details');
 //home/registration_details   new_matrimonyid
