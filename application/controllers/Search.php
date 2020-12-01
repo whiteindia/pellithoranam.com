@@ -815,7 +815,7 @@ ini_set('memory_limit', '-1');
             $config = array();
             $config["base_url"] = base_url() . "search/index";
             $config["total_rows"] = count($this->Search_model->search_user_details(10000, 0, $where,$or_where,$like));
-            $config["per_page"] = 300;
+            $config["per_page"] = 200;
             $config["uri_segment"] =3;
            // $choice = $config["total_rows"] / $config["per_page"];
             //$config["num_links"] = round($choice);
@@ -845,7 +845,7 @@ ini_set('memory_limit', '-1');
         // print_r($like);
         // echo "</pre>";
         // exit;
-3
+
         //echo $this->db->last_query();
 
             if($this->session->userdata('logged_in')) {               // check shortlist and intrested if logd in 
