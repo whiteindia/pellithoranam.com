@@ -185,7 +185,64 @@ class Search_model extends CI_Model {
             return $result;
         } else { return false; }
     } 
+    public function search_user_details_count($whr,$or_whr,$like){
+        $whr_2 =array(); $whr_length = count($whr); $or_whr_length = count($or_whr); $like_length = count($like);
+        $i=1; $j=1;
+        $search_query ="";
+        $search_query.= "SELECT * FROM profiles
+                        LEFT JOIN height ON profiles.height_id = height.height_id 
+                        LEFT JOIN weight ON profiles.weight_id = weight.weight_id 
+                        LEFT JOIN religions ON profiles.religion = religions.religion_id 
+                        LEFT JOIN castes ON profiles.caste = castes.caste_id 
+                        LEFT JOIN sub_castes ON profiles.sub_caste = sub_castes.sub_caste_id 
+                        LEFT JOIN stars ON profiles.star_id = stars.star_id 
+                        LEFT JOIN raasi ON profiles.raasi_id = raasi.raasi_id 
+                        LEFT JOIN country ON profiles.country = country.country_id 
+                        LEFT JOIN states ON profiles.state = states.state_id 
+                        LEFT JOIN cities ON profiles.city = cities.city_id 
+                        LEFT JOIN educations ON profiles.education_id = educations.education_id 
+                        LEFT JOIN occupations ON profiles.occupation_id = occupations.occupation_id
+                        LEFT JOIN settings_preferences  ON profiles.matrimony_id = settings_preferences.matrimony_id";
+        $search_query.=" WHERE ((";
+            foreach($whr as $row) {
+                $search_query.= $row;
+                if($i < $whr_length) { $search_query.= " AND "; }
+                $i= $i+1;
+            }
+        $search_query.=")";
 
+            if(!empty($or_whr)) { 
+                $search_query.=" AND ("; 
+                foreach($or_whr as $row1) {
+                    $search_query.= $row1;
+                    if($j < $or_whr_length) { $search_query.= " AND "; }
+                    $j= $j+1;
+                }
+                $search_query.=")";
+            }
+
+            if(!empty($like)) { 
+                $search_query.=" AND ("; 
+                foreach($like as $row2) {
+                    $search_query.= $row2;
+                    if($j < $like_length) { $search_query.= " OR "; }
+                    $j= $j+1;
+                }
+                $search_query.=")";
+            }
+
+        $search_query.=")";// LIMIT ".$limit;
+       //  echo $search_query;
+       // exit;
+      //  if($start!=0) { $search_query.= ",".$start; }
+        //echo $search_query;
+        $query = $this->db->query($search_query);
+       // if($query->num_rows() > 0) {  $query && $query->num_rows() == 1
+        if($query && $query->num_rows() > 0) { 
+            $result = $query->result();        
+            return $query->num_rows();
+        } else { return 0; }
+    } 
     public function getValueFromId($query) {
         $query1 = $this->db->query($query);
         if($query1->num_rows() > 0) {

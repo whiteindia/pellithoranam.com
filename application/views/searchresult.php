@@ -63,7 +63,7 @@ $settings= get_setting();
     <!-- PROFILE-BANNER -->
   <div class="wed-search-div-main">
     <div class="container"><?php if(!empty($srch_candidates)){?>
-    <h4>Search Results <strong><?php if(!empty($srch_candidates)) { echo count($srch_candidates); } else { echo "0"; } ?> Matches Found</strong></h4><?php } ?>
+    <h4>Search Results <strong><?php if(!empty($total_candidates)) { echo count($total_candidates); } else { echo "0"; } ?> Matches Found</strong></h4><?php } ?>
     <h3>Discover your soulmate based on personalities, hobbies and interests</h3>
     <!--<div class="wed-search-sort-list">
       <ul>
