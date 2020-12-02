@@ -241,7 +241,7 @@ class Search_model extends CI_Model {
         $query = $this->db->query($search_query);
        // if($query->num_rows() > 0) {  $query && $query->num_rows() == 1
         if($query && $query->num_rows() > 0) { 
-            $result = $query->num_rows();        
+            $result = count($query);        
             return $result;
         } else { return false; }
     } 
