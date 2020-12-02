@@ -834,8 +834,6 @@ ini_set('memory_limit', '-1');
         $data['srch_candidates'] = $this->Search_model->search_user_details($config["per_page"], $page, $where,$or_where,$like);
       
         $data['total_candidates'] = $this->Search_model->search_user_details_count($config["per_page"], $page, $where,$or_where,$like);
-       var_dump($data['total_candidates']);
-       exit();
         $data['photo_count'] = $this->Search_model->photo_count($data['srch_candidates']);
         $data['religions'] = $this->Home_model->getReligions();
         // echo "<pre>";
