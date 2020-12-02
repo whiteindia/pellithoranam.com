@@ -185,9 +185,10 @@ class Search_model extends CI_Model {
             return $result;
         } else { return false; }
     } 
-    public function search_user_details_count($whr,$or_whr,$like){
+    public function search_user_details_count($limit,$start,$whr,$or_whr,$like){
         $whr_2 =array(); $whr_length = count($whr); $or_whr_length = count($or_whr); $like_length = count($like);
         $i=1; $j=1;
+        $limit=10000;
         $search_query ="";
         $search_query.= "SELECT * FROM profiles
                         LEFT JOIN height ON profiles.height_id = height.height_id 
@@ -231,17 +232,17 @@ class Search_model extends CI_Model {
                 $search_query.=")";
             }
 
-        $search_query.=")";// LIMIT ".$limit;
+        $search_query.=") LIMIT ".$limit;
        //  echo $search_query;
        // exit;
-      //  if($start!=0) { $search_query.= ",".$start; }
+        if($start!=0) { $search_query.= ",".$start; }
         //echo $search_query;
         $query = $this->db->query($search_query);
        // if($query->num_rows() > 0) {  $query && $query->num_rows() == 1
         if($query && $query->num_rows() > 0) { 
-            $result = $query->result();        
-            return $query->num_rows();
-        } else { return 0; }
+            $result = $query->num_rows();        
+            return $result;
+        } else { return false; }
     } 
     public function getValueFromId($query) {
         $query1 = $this->db->query($query);
