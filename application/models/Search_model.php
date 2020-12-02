@@ -189,7 +189,7 @@ class Search_model extends CI_Model {
         $whr_2 =array(); $whr_length = count($whr); $or_whr_length = count($or_whr); $like_length = count($like);
         $i=1; $j=1;
         $limit=10000;
-        $start=0;
+        $start=1;
         $search_query ="";
         $search_query.= "SELECT * FROM profiles
                         LEFT JOIN height ON profiles.height_id = height.height_id 
