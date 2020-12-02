@@ -242,8 +242,8 @@ class Search_model extends CI_Model {
        // if($query->num_rows() > 0) {  $query && $query->num_rows() == 1
         if($query && $query->num_rows() > 0) {   //->num_rows
             $result = $query->num_rows;   
-            var_dump($result);     
-            exit();
+           // var_dump($result);     
+           // exit();
             return $result;
         } else { return false; }
     } 
