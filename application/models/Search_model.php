@@ -177,7 +177,7 @@ class Search_model extends CI_Model {
        //  echo $search_query;
        // exit;
         if($start!=0) { $search_query.= $start.","; }
-        $search_query.="".$limit." ORDER BY profile_id DESC";
+        $search_query.="".$limit;
         //echo $search_query;
         $query = $this->db->query($search_query);
        // if($query->num_rows() > 0) {  $query && $query->num_rows() == 1
