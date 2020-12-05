@@ -176,7 +176,7 @@ class Search_model extends CI_Model {
         $search_query.=") LIMIT ".$limit; //.$limit
        //  echo $search_query;
        // exit;
-        if($start!=0) { $search_query.= " OFFSET ". $start*$limit; }
+        if($start!=0) { $start=$start-1; $search_query.= " OFFSET ".$start*$limit; }
        // $search_query.="".$limit;
         //echo $search_query;
         $query = $this->db->query($search_query);
