@@ -957,7 +957,7 @@ echo '</pre>';
      $data['stars'] = false;
    }
    //$data['castes'] = $castes;
-     $sql="SELECT * FROM profiles WHERE gender='".$gender."' AND profile_status=1  ORDER BY profile_id DESC";
+     $sql="SELECT * FROM profiles WHERE gender='".$gender."' AND profile_status=1";
      $result= $this->db->query($sql);
      if ($result->num_rows()) {
        $data['srch_candidates'] = $result->result();
