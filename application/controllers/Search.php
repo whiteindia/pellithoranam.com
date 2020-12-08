@@ -919,7 +919,65 @@ echo '</pre>';
     }
 
 
-
+    function mymatches(){
+      $userdata=$this->session->userdata('logged_in'); 
+      if($userdata->gender=='male'){
+        $gender='female';
+      }else if($userdata->gender=='female'){
+       $gender='male';
+      }
+      /* echo '<pre>'; 
+    
+     print_r($userdata->gender);
+   echo '</pre>';
+   exit();*/
+   $sql1="SELECT * FROM `castes`";
+   $result1= $this->db->query($sql1);
+   if ($result1->num_rows()) {
+     $data['castes'] = $result1->result();
+   } else{
+     $data['castes'] = false;
+   }
+   
+   
+   $sql2="SELECT * FROM `occupations`";
+   $result2= $this->db->query($sql2);
+   if ($result2->num_rows()) {
+     $data['occupations'] = $result2->result();
+   } else{
+     $data['occupations'] = false;
+   }
+   
+   
+   $sql3="SELECT * FROM `stars`";
+   $result3= $this->db->query($sql3);
+   if ($result3->num_rows()) {
+     $data['stars'] = $result3->result();
+   } else{
+     $data['stars'] = false;
+   }
+   //$data['castes'] = $castes;
+     $sql="SELECT * FROM profiles WHERE gender='".$gender."' AND profile_status=1  ORDER BY profile_id DESC";
+     $result= $this->db->query($sql);
+     if ($result->num_rows()) {
+       $data['srch_candidates'] = $result->result();
+     } else{
+       $data['srch_candidates'] = false;
+     }
+     /*echo '<pre>'; 
+    
+     print_r($data['srch_candidates']);
+   echo '</pre>';
+   exit();
+   */
+    // $data['srch_candidates'] = $result->result();
+    $settings        = get_setting();
+    $header['title'] = $settings->title . " | My Matches";
+     $this->load->view('header', $header); 
+         $this->load->view('mymatches',$data);
+         $this->load->view('footer');
+   
+   }
 
 
 
