@@ -704,7 +704,7 @@ $(document).ready(function() {
             selector: 'td:nth-child(2)'
         },
         responsive: true,
-        "lengthMenu": [[-1,10, 25, 50, 100], ["All",10, 25, 50, 100]]
+        "lengthMenu": [[500,-1,10, 25, 50, 100], [500,"All",10, 25, 50, 100]]
     } );
 } );
 </script>
