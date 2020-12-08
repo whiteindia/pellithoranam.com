@@ -843,7 +843,7 @@ img {
 
                             <?php
                             if($candidate->is_premium){
-                              echo '<h3><span class="label label-success">Pemium Member</span><br></h3>';
+                              echo '<h3><span class="label label-success">Premium Member</span><br></h3>';
                             }
                       echo '<h5><b>Name        :'.$candidate->profile_name.'<br>';
                              echo 'Matrimony ID: PT'.$candidate->matrimony_id.'<br>';
