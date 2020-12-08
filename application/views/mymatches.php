@@ -750,6 +750,7 @@ img {
   $str[$star->star_id]=$star->star_name;
  }
  $l=1;
+ $srch_candidates = array_reverse($srch_candidates);
  foreach($srch_candidates AS $candidate){?>       
             <tr>     
 
