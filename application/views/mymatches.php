@@ -772,7 +772,7 @@ img {
                        "> 
                        <div class="col-sm-4">
                        <div class="" style="height:auto;">
-                       <?php echo $candidate->profile_id;   //e xcho $l; $l++; srch_candidates $candidate->profile_photo
+                       <?php echo $l; $l++;
                        ?>
                       <?php  if($candidate->profile_photo == "")  { 
                           if($this->session->userdata('logged_in')) {
