@@ -769,11 +769,12 @@ img {
                        
                        
                        
-                       "> 
+                       "><?php echo $l; $l++;
+                       ?> 
                        <div class="col-sm-4">
+                       
                        <div class="" style="height:auto;">
-                       <?php echo $l; $l++;
-                       ?>
+                       
                       <?php  if($candidate->profile_photo == "")  { 
                           if($this->session->userdata('logged_in')) {
                               $attr2 = "<a href='javascript:void(0);' class='light-box'>";

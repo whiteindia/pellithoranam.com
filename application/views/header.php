@@ -175,7 +175,7 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
                   <div class="dropdown">
                     <div class=" dropdown-toggle" data-toggle="dropdown">Matches</div>
                       <ul class="dropdown-menu wed-nav-dd-menu ">
-                          <li><a href="<?php echo base_url();?>search" >My Matches</a></li>
+                          <li><a href="<?php echo base_url();?>search/mymatches" >My Matches</a></li>
                           <li><a href="<?php echo base_url();?>profile/shortlisted_profiles/my" >Shortlisted Profiles</a></li>
                           <li><a href="<?php echo base_url();?>profile/interested_profiles/my">Interested Profiles</a></li>
                       </ul>
