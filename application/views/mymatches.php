@@ -770,7 +770,7 @@ img {
                        
                        
                        
-                       "><?php echo $l; $l++;
+                       "><?php //echo $l; $l++;
                        ?> 
                        <div class="col-sm-4">
                        
