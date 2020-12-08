@@ -729,7 +729,7 @@ img {
 <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
         <thead>
             <tr>
-                <th>Photo</th>
+                <th>PROFILES</th>
             <!--     <th>Details</th>
                <th>Action</th>  -->
             </tr>
@@ -749,6 +749,7 @@ img {
 
   $str[$star->star_id]=$star->star_name;
  }
+ $l=1;
  foreach($srch_candidates AS $candidate){?>       
             <tr>     
 
@@ -770,6 +771,7 @@ img {
                        "> 
                        <div class="col-sm-4">
                        <div class="" style="height:auto;">
+                       <? echo $l; $l++;?>
                       <?php  if($candidate->profile_photo == "")  { 
                           if($this->session->userdata('logged_in')) {
                               $attr2 = "<a href='javascript:void(0);' class='light-box'>";
