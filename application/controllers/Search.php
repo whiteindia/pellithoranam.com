@@ -1009,7 +1009,7 @@ echo '</pre>';
     if($this->session->userdata('filter')) {
         $this->session->unset_userdata('filter');
     }
-    redirect(base_url('/search'));
+    redirect(base_url('/search/mymatches'));
   }
 
     public function advanced() {

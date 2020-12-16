@@ -153,7 +153,7 @@ membership_package!='1'
 			   $res = $this->Home_model->check_verification($_POST);
 			   if($res)
 			   {
-           		redirect('../search');
+           		redirect('../search/mymatches');
 			   }
 			   else{
 				   $this->load->view('header'); 
