@@ -449,9 +449,8 @@ $( document ).ready(function() {
    
 
    <script>
-      $(document).ready(function() {
-         function disablePrev() { window.history.forward() }
-         window.onload = disablePrev();
-         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
-      });
+history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+    history.pushState(null, null, document.URL);
+});
    </script>
