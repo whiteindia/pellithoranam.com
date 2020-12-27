@@ -51,12 +51,20 @@ $_SESSION['user_id']=$sess->user_id;
     <style type="text/css">
       .wed-navbar-logo img {width: 90px;}
     </style>
-    ​<script type = "text/javascript" >
+   <!-- ​<script type = "text/javascript" >
  history.pushState(null, null, location.href); 
  history.back();
   history.forward(); 
   window.onpopstate = function () { history.go(1); }; 
-  </script>
+  </script>-->
+  <script>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+</script>
   </head>
    <body>
    <?php
