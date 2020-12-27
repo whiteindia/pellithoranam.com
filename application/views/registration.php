@@ -63,11 +63,13 @@ $_SESSION['user_id']=$sess->user_id;
         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
     });
   </script>-->
-  <script>
-history.pushState(null, null, location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
+  <script type="text/javascript">
+  $(document).ready(function() {
+      window.history.pushState(null, "", window.location.href);        
+      window.onpopstate = function() {
+          window.history.pushState(null, "", window.location.href);
+      };
+  });
 </script>
   </head>
    <body>
