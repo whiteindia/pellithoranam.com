@@ -62,7 +62,7 @@ $_SESSION['user_id']=$sess->user_id;
         window.history.forward();
         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
     });
-  </script>-->
+  </script>
   <script type="text/javascript">
   $(document).ready(function() {
       window.history.pushState(null, "", window.location.href);        
@@ -70,7 +70,7 @@ $_SESSION['user_id']=$sess->user_id;
           window.history.pushState(null, "", window.location.href);
       };
   });
-</script>
+</script>-->
   </head>
    <body>
    <?php
@@ -443,3 +443,15 @@ $( document ).ready(function() {
  });  */
 </script>
 <?php $this->load->view('forms/register_step_2_js.php');?>
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   
+   
+
+   <script>
+      $(document).ready(function() {
+         function disablePrev() { window.history.forward() }
+         window.onload = disablePrev();
+         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+      });
+   </script>
