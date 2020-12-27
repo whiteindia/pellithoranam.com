@@ -62,6 +62,7 @@ $_SESSION['user_id']=$sess->user_id;
         function disableBack() { window.history.forward() }
 
         window.onload = disableBack();
+        window.history.forward()
         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
     });
 </script>
