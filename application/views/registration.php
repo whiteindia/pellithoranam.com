@@ -55,16 +55,19 @@ $_SESSION['user_id']=$sess->user_id;
  history.pushState(null, null, location.href); 
  history.back();
   history.forward(); 
-  window.onpopstate = function () { history.go(1); }; 
-  </script>-->
-  <script>
-    $(document).ready(function() {
+  window.onpopstate = function () { history.go(1); };     $(document).ready(function() {
         function disableBack() { window.history.forward() }
 
         window.onload = disableBack();
         window.history.forward();
         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
     });
+  </script>-->
+  <script>
+history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
 </script>
   </head>
    <body>
