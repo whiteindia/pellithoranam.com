@@ -58,15 +58,20 @@ $_SESSION['user_id']=$sess->user_id;
   window.onpopstate = function () { history.go(1); };      window.history.forward(); 
         function noBack() { 
             window.history.forward(); 
-        }   */
+        }   
   $(document).ready(function() {
          function disablePrev() { window.history.forward() }
          window.onload = disablePrev();
          window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
-      });
+      });*/
   </script>
      <script type="text/javascript"> 
-  
+  $(document).ready(function() {
+function disableBack() { window.history.forward() }
+
+window.onload = disableBack();
+window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+});
     </script> 
   </head>
    <body>
