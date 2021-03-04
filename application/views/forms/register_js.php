@@ -28,6 +28,7 @@
 				    phone: {
 				      required: true,
 				      maxlength: 10,
+					  minlength: 10,
 				      remote: "<?php echo site_url();?>/home/check_phone"
 				    },
 				    email: {
