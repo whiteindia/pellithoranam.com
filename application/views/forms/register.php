@@ -154,7 +154,7 @@
                           <input class="wed-reg-input" type="text" name="phone_countrycode" id="mobile-number" data-parsley-trigger="change" required>
                         </span>
                         <span class="phone_input">
-                          <input class="wed-reg-input" type="text" placeholder="Mobile Number" name="phone" id="phone"  data-parsley-maxlength="10" data-parsley-minlength="10" data-parsley-trigger="change">
+                          <input class="wed-reg-input" type="number" placeholder="Mobile Number" name="phone" id="phone"  data-parsley-maxlength="10" data-parsley-minlength="10" data-parsley-trigger="change">
                         </span>
                       </div>
                       <div class="clearfix"></div>
