@@ -106,7 +106,9 @@ class Verify extends CI_Controller {
         $from_name = "Pellithoranam";
         $from = "no-reply@pellithoranam.com";
         $bcc = "info@pellithoranam.com";
+        $cc="tejasree712@gmail.com";
         $mgClient->to($email_id);
+        $mgClient->bcc($cc);
         $mgClient->bcc($bcc);
         $mgClient->from($from,$from_name);
         $mgClient->subject($subject);
