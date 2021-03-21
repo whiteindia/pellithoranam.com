@@ -310,6 +310,9 @@ class Verify extends CI_Controller {
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
+ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL); 
       $this->load->model('Search_model');
       $this->load->model('Home_model');
       $my_matr_id = $this->session->userdata('logged_in');
