@@ -12,12 +12,12 @@
 
       $.ajax({
         type: "post",
-        url: "https://pellithoranam.com/Verify/send_email_to_other_user"
+        url: "'.base_url().'Verify/send_email_to_other_user"
     });
   } else {
     $.ajax({
       type: "post",
-      url: "https://pellithoranam.com/Verify/send_email_to_other_user"
+      url: "'.base_url().'Verify/send_email_to_other_user"
   });
   };</script>';
   //  }

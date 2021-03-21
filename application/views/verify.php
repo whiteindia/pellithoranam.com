@@ -103,7 +103,7 @@ $(document).ready(function() {
                 {
                /*  */  $.ajax({
                    type: "post",
-                     url: "https://pellithoranam.com/Verify/send_email_to_other_user"
+                     url: "<?php echo base_url();?>Verify/send_email_to_other_user"
                        }); 
                  
                     location.href = '<?php echo base_url();?>search/mymatches';
