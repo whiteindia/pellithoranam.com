@@ -321,6 +321,7 @@ class Verify extends CI_Controller {
     //  print_r($basic);
      // echo '</pre>';
      $age = $basic->age;
+     $caste=$basic->caste;
       if($basic->partner_preference == 0) {
         if($basic->gender== "male") { 
             $where[]= "profiles.gender = 'female'";
@@ -330,7 +331,7 @@ class Verify extends CI_Controller {
             /*
              $where[]= "profiles.age >= '".$agef."'"; 
              $where[]= "profiles.age <= '".$age."'";*/
-             $where[]= "profiles.caste = '".$basic->caste."'"; 
+             $where[]= "profiles.caste = '".$caste."'"; 
            //  $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
         } else { 
@@ -340,7 +341,7 @@ class Verify extends CI_Controller {
             // $where[]= "profiles.gender = 'male'";
         /*     $where[]= "profiles.age >= '".$age."'"; 
              $where[]= "profiles.age <= '".$aget."'"; */
-             $where[]= "profiles.caste = '".$basic->caste."'"; 
+             $where[]= "profiles.caste = '".$caste."'"; 
             // $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
         }
