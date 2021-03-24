@@ -310,7 +310,7 @@ class Verify extends CI_Controller {
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
-
+9
       $this->load->model('Search_model');
       $this->load->model('Home_model');
       $my_matr_id = $this->session->userdata('logged_in');
@@ -327,16 +327,21 @@ class Verify extends CI_Controller {
             //$this->session->set_userdata('gender',"female");
             $agef=$age-5;
             // $where[]= "profiles.gender = 'female'";
+            /*
              $where[]= "profiles.age >= '".$agef."'"; 
-             $where[]= "profiles.age <= '".$age."'";
+             $where[]= "profiles.age <= '".$age."'";*/
+             $where[]= "profiles.caste = '".$basic->caste."'"; 
+             $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
         } else { 
             $where[]= "profiles.gender = 'male'"; 
             //$this->session->set_userdata('gender',"male");
             $aget=$age+5;
             // $where[]= "profiles.gender = 'male'";
-             $where[]= "profiles.age >= '".$age."'"; 
-             $where[]= "profiles.age <= '".$aget."'";
+        /*     $where[]= "profiles.age >= '".$age."'"; 
+             $where[]= "profiles.age <= '".$aget."'"; */
+             $where[]= "profiles.caste = '".$basic->caste."'"; 
+             $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
         }
         if($basic->willing_intercast != 1) { 
