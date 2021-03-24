@@ -331,7 +331,7 @@ class Verify extends CI_Controller {
              $where[]= "profiles.age >= '".$agef."'"; 
              $where[]= "profiles.age <= '".$age."'";*/
              $where[]= "profiles.caste = '".$basic->caste."'"; 
-             $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
+           //  $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
         } else { 
             $where[]= "profiles.gender = 'male'"; 
@@ -341,7 +341,7 @@ class Verify extends CI_Controller {
         /*     $where[]= "profiles.age >= '".$age."'"; 
              $where[]= "profiles.age <= '".$aget."'"; */
              $where[]= "profiles.caste = '".$basic->caste."'"; 
-             $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
+            // $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
         }
         if($basic->willing_intercast != 1) { 
