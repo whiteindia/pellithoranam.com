@@ -328,9 +328,9 @@ class Verify extends CI_Controller {
             //$this->session->set_userdata('gender',"female");
             $agef=$age-5;
             // $where[]= "profiles.gender = 'female'";
-            /*
+            /**/
              $where[]= "profiles.age >= '".$agef."'"; 
-             $where[]= "profiles.age <= '".$age."'";*/
+             $where[]= "profiles.age <= '".$age."'";
              $where[]= "profiles.caste = '".$caste."'"; 
            //  $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
@@ -339,8 +339,8 @@ class Verify extends CI_Controller {
             //$this->session->set_userdata('gender',"male");
             $aget=$age+5;
             // $where[]= "profiles.gender = 'male'";
-        /*     $where[]= "profiles.age >= '".$age."'"; 
-             $where[]= "profiles.age <= '".$aget."'"; */
+        /*  */   $where[]= "profiles.age >= '".$age."'"; 
+             $where[]= "profiles.age <= '".$aget."'"; 
              $where[]= "profiles.caste = '".$caste."'"; 
             // $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
              $where[] = "profiles.profile_status = '1'";
@@ -380,15 +380,15 @@ if(is_array($srch_candidates)){
       if($basic->gender== "male") { 
         $agef=$age-5;
           $where[]= "profiles.gender = 'female'";
-       //   $where[]= "profiles.age >= '".$agef."'"; 
-       //   $where[]= "profiles.age <= '".$age."'";
+          $where[]= "profiles.age >= '".$agef."'"; 
+          $where[]= "profiles.age <= '".$age."'";
           $where[]= "profiles.caste = '".$caste."'"; 
           //$this->session->set_userdata('gender',"female");
       } else { 
         $aget=$age+5;
         $where[]= "profiles.gender = 'male'";
-     //   $where[]= "profiles.age >= '".$age."'"; 
-      //  $where[]= "profiles.age <= '".$aget."'";
+       $where[]= "profiles.age >= '".$age."'"; 
+       $where[]= "profiles.age <= '".$aget."'";
         $where[]= "profiles.caste = '".$caste."'"; 
       }
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like); /**/
