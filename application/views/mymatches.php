@@ -1235,7 +1235,7 @@ $(".photo_already_request_btn").on("click",function(e){
         //When the page has loaded.
         $( document ).ready(function(){
             //Perform Ajax request.
-            if(<?php echo $_SESSION[profileverified]; ?>==1)
+            if(<?php echo $_SESSION[profileverified]; ?>)
           {  
            
             $.ajax({
