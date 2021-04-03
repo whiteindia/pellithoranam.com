@@ -106,7 +106,7 @@ $(document).ready(function() {
                      url: "<?php echo base_url();?>Verify/send_email_to_other_user"
                        }); 
                   */ 
-                    location.href = '<?php echo base_url();?>search/mymatches';
+                    location.href = '<?php echo base_url();?>search/mymatches/1';
                 }
                 else
                 {
