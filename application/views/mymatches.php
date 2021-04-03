@@ -7,10 +7,8 @@
   //  if(!empty($result))){
 
 
-    echo '<script>if (confirm("your profile verified successfully") == true) {
-  
-
-      $.ajax({
+  /*  echo '<script>if (confirm("your profile verified successfully") == true) {\
+        $.ajax({\
         type: "post",
         url: "'.base_url().'Verify/send_email_to_other_user"
     });
@@ -19,7 +17,7 @@
       type: "post",
       url: "'.base_url().'Verify/send_email_to_other_user"
   });
-  };</script>';
+  };</script>';  */
   //  }
     unset($_SESSION['profileverified']);
    
