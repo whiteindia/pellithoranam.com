@@ -1252,7 +1252,7 @@ $(".photo_already_request_btn").on("click",function(e){
               //  error: function (xhr, ajaxOptions, thrownError) {
                 //    var errorMsg = 'Ajax request failed: ' + xhr.responseText;
                  //   $('#content').html(errorMsg);
-                  }
+                 // }
             });
             }
         });
