@@ -392,7 +392,7 @@ if(is_array($srch_candidates)){
         $where[]= "profiles.caste = '".$caste."'"; 
       }
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like); /**/
-$msg='New User PT '.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out[ https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.']';
+$msg='New User PT '.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.'';
 if(is_array($srch_candidates))  {  
 foreach ($srch_candidates as $candidate) {
         $this->sent_mobile_msg($candidate->phone,$msg);
