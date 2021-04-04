@@ -377,20 +377,20 @@ if(is_array($srch_candidates)){
       $age = $basic->age;
       $caste=$basic->caste;
 
-      if($basic->gender== "male") { 
-        $agef=$age-3;
-          $where[]= "profiles.gender = 'female'";
-          $where[]= "profiles.age >= '".$agef."'"; 
-          $where[]= "profiles.age <= '".$age."'";
-          $where[]= "profiles.caste = '".$caste."'"; 
-          //$this->session->set_userdata('gender',"female");
-      } else { 
-        $aget=$age+3;
-        $where[]= "profiles.gender = 'male'";
-       $where[]= "profiles.age >= '".$age."'"; 
-       $where[]= "profiles.age <= '".$aget."'";
-        $where[]= "profiles.caste = '".$caste."'"; 
-      }
+      // if($basic->gender== "male") { 
+      //   $agef=$age-3;
+      //     $where[]= "profiles.gender = 'female'";
+      //     $where[]= "profiles.age >= '".$agef."'"; 
+      //     $where[]= "profiles.age <= '".$age."'";
+      //     $where[]= "profiles.caste = '".$caste."'"; 
+      //     //$this->session->set_userdata('gender',"female");
+      // } else { 
+      //   $aget=$age+3;
+      //   $where[]= "profiles.gender = 'male'";
+      //  $where[]= "profiles.age >= '".$age."'"; 
+      //  $where[]= "profiles.age <= '".$aget."'";
+      //   $where[]= "profiles.caste = '".$caste."'"; 
+      // }
       $srch_candidates_sms= $this->Search_model->search_user_details(10000, 0, $where,$or_where,$like); /**/
 $msg='New User PT '.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.'';
 if(is_array($srch_candidates))  {  
