@@ -188,7 +188,7 @@ class Verify extends CI_Controller {
 //error_reporting(E_ALL);
       // Account details
         $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
-        //echo $mob;
+        echo $mob;
         // Message details
         $numbers = array($mob);
         $sender = urlencode('TORNAM');
