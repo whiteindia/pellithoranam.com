@@ -369,6 +369,7 @@ if(is_array($srch_candidates)){
         // echo "<br>";
      $this->sendMailNow($candidate);
      $this->sent_mobile_msg($candidate->phone,$msg);
+     echo "<script>console.log('" .$candidate->phone. "');</script>";
       }  }
       $info=array();
       $info['email']='info@pellithoranam.com';
