@@ -368,7 +368,7 @@ if(is_array($srch_candidates)){
         // echo $candidate->profile_name;
         // echo "<br>";
      $this->sendMailNow($candidate);
-     $this->sent_mobile_msg($candidate->phone,urlencode($msg));
+     $this->sent_mobile_msg($candidate->phone,rawurlencode($msg));
      echo "<script>console.log('" .$candidate->phone. "');</script>";
       }  }
       $info=array();
