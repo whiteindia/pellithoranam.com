@@ -317,9 +317,10 @@ class Verify extends CI_Controller {
       $my_matr_id = json_decode(json_encode($my_matr_id),true);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
-    //  echo '<pre>';
-    //  print_r($basic);
-     // echo '</pre>';
+     echo '<pre>';
+     print_r($basic);
+     echo '</pre>';
+     exit();
      $age = $basic->age;
      $caste=$basic->caste;
       if($basic->partner_preference == 0) {
