@@ -317,7 +317,9 @@ class Verify extends CI_Controller {
       $my_matr_id = json_decode(json_encode($my_matr_id),true);
       $where = array(); $where1 = array(); $or_where = array(); $like = array(); $tbl ="profiles";
       $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
-
+    //  echo '<pre>';
+    //  print_r($basic);
+     // echo '</pre>';
      $age = $basic->age;
      $caste=$basic->caste;
       if($basic->partner_preference == 0) {
@@ -354,27 +356,21 @@ class Verify extends CI_Controller {
 
    //   $now = new DateTime();
 
-   echo '<pre>';
-   print_r($srch_candidates);
-   echo '</pre>';
-  // exit();
+
 
    $msg='New User PT '.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.'';
    
 
 /**/
-$k=1;
 if(is_array($srch_candidates)){
       foreach ($srch_candidates as $candidate) {
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
      $this->sendMailNow($candidate);
-     $this->sent_mobile_msg($candidate->phone,$msg);
-     echo "<script>console.log('" .$candidate->phone. "".$k++."');</script>";
+     $this->sent_mobile_msg($candidate->phone,rawurlencode($msg));
+     echo "<script>console.log('" .$candidate->phone. "');</script>";
       }  }
-
-      exit();
       $info=array();
       $info['email']='info@pellithoranam.com';
       $info=json_decode(json_encode($info));
