@@ -357,7 +357,7 @@ class Verify extends CI_Controller {
    echo '<pre>';
    print_r($srch_candidates);
    echo '</pre>';
-   exit();
+  // exit();
 
    $msg='New User PT '.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.'';
    
@@ -373,6 +373,8 @@ if(is_array($srch_candidates)){
      $this->sent_mobile_msg($candidate->phone,$msg);
      echo "<script>console.log('" .$candidate->phone. "".$k++."');</script>";
       }  }
+
+      exit();
       $info=array();
       $info['email']='info@pellithoranam.com';
       $info=json_decode(json_encode($info));
