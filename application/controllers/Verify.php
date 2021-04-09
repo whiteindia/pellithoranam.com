@@ -363,14 +363,15 @@ class Verify extends CI_Controller {
    
 
 /**/
+$k=1;
 if(is_array($srch_candidates)){
       foreach ($srch_candidates as $candidate) {
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
      $this->sendMailNow($candidate);
-     $this->sent_mobile_msg($candidate->phone,rawurlencode($msg));
-     echo "<script>console.log('" .$candidate->phone. "');</script>";
+     $this->sent_mobile_msg($candidate->phone,$msg);
+     echo "<script>console.log('" .$candidate->phone. "".$k++."');</script>";
       }  }
       $info=array();
       $info['email']='info@pellithoranam.com';
