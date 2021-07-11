@@ -267,6 +267,8 @@ unset($_SESSION['pwd']);
 
  
 	public function registration_details() {
+		error_reporting(-1);
+		ini_set('display_errors', 1);
 		if($this->session->userdata('ins_id')) {
 			$caste_id = $this->session->userdata('cast_id');
 			$religion_id = $this->session->userdata('religion');
@@ -797,4 +799,3 @@ public function update_preference() {
 }
 
 }
-?>
