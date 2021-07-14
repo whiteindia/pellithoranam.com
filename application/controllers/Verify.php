@@ -376,7 +376,7 @@ class Verify extends CI_Controller
 
 
 
-    $msg = 'New User PT ' . $basic->matrimony_id . ' Has Registered to our site maching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/' . $basic->matrimony_id . '';
+    $msg = 'New User PT ' . $basic->matrimony_id . ' Has Registered to our site matching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/' . $basic->matrimony_id;
 
 
     /**/
