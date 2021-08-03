@@ -150,10 +150,10 @@ class Verify extends CI_Controller
     $result = $this->Verify_model->add_otpdetails($otp);
     if ($result) {
       $msg = "Hello, Your one time password for www.Pellithoranam.in is " . $otp . ". Do not share the password with anyone for security reasons.";
-      // $this->send_sms($email_id,$msg);
+      $this->send_sms($email_id, $msg);
       // $result=$this->Verify_model->get_mob_email($email_id);
       // $mobn=$result->phone;   
-      $this->sent_mobile_msg($phone, $msg);
+      // $this->sent_mobile_msg($phone, $msg);
       //$this->resend_otp(); 
       redirect(base_url() . 'Verify');
     } else {
@@ -171,9 +171,9 @@ class Verify extends CI_Controller
     $msg = "Hello, Your one time password for www.Pellithoranam.com is " . $otp . ". Do not share the password with anyone for security reasons.";
     $this->send_sms($mob, $msg);
 
-    $result = $this->Verify_model->get_mob_email($mob);
-    $mobn = $result->phone;
-    $this->sent_mobile_msg($mobn, $msg);
+    // $result = $this->Verify_model->get_mob_email($mob);
+    // $mobn = $result->phone;
+    // $this->sent_mobile_msg($mobn, $msg);
 
     redirect(base_url() . 'Verify');
   }
