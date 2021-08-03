@@ -149,7 +149,8 @@ class Verify extends CI_Controller
     //exit;
     $result = $this->Verify_model->add_otpdetails($otp);
     if ($result) {
-      $msg = "Hello, Your one time password for www.Pellithoranam.in is " . $otp . ". Do not share the password with anyone for security reasons.";
+      //$msg = "Hello, Your one time password for www.Pellithoranam.in is " . $otp . ". Do not share the password with anyone for security reasons.";
+      $msg = "Hello, Your one time password for www.Pellithoranam.com is " . $otp . ". Do not share the password with anyone for security reasons.";
       //$this->send_sms($phone, $msg);
       // $result=$this->Verify_model->get_mob_email($email_id);
       // $mobn=$result->phone;   
