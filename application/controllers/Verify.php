@@ -11,9 +11,9 @@ class Verify extends CI_Controller
     $this->load->model('Verify_model');
     date_default_timezone_set('Asia/Kolkata');
 
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+    // ini_set('display_errors', 1);
+    // ini_set('display_startup_errors', 1);
+    // error_reporting(E_ALL);
     $session = $this->session->userdata('logged_in');
     if (!isset($session) && empty($session)) {
       redirect(base_url());
@@ -155,7 +155,8 @@ class Verify extends CI_Controller
       // $mobn=$result->phone;   
       $this->sent_mobile_msg($phone, $msg);
       //$this->resend_otp(); 
-      redirect(base_url() . 'Verify');
+      //  redirect(base_url() . 'Verify');
+      redirect('Verify', 'refresh');
     } else {
       redirect(base_url() . 'home/registration_details');
     }
@@ -175,7 +176,8 @@ class Verify extends CI_Controller
     // $mobn = $result->phone;
     $this->sent_mobile_msg($mobn, $msg);
 
-    redirect(base_url() . 'Verify');
+    // redirect(base_url() . 'Verify');
+    redirect('Verify', 'refresh');
   }
   public function reg_success()
   {
