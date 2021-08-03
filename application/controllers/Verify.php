@@ -174,7 +174,7 @@ class Verify extends CI_Controller
 
     // $result = $this->Verify_model->get_mob_email($mob);
     // $mobn = $result->phone;
-    $this->sent_mobile_msg($mob, $msg);
+    $this->sent_mobile_msg($this->uri->segment(3), $msg);
 
     // redirect(base_url() . 'Verify');
     redirect('Verify', 'refresh');
