@@ -186,16 +186,11 @@ class Verify extends CI_Controller
     $mob = $my_matr_id->phone;
     $mob_cc = str_replace(' ', '', $my_matr_id->phone_countrycode);
     $mobile_no = $mob_cc . $mob;
-    //$mobile_no = "+919966337383";
+
 
 
     $msg = "You are Successfully registered with www.Pellithoranam.com";
     $this->sent_mobile_msg($mobile_no, $msg);
-    // echo "<pre>";
-    // print_r($my_matr_id);
-    // exit;
-    //$this->send_sms($mob,$msg);
-    /*     redirect(base_url().'Verify/'); */
   }
   public function sent_mobile_msg($mob, $msg)
   {
@@ -204,7 +199,7 @@ class Verify extends CI_Controller
     //error_reporting(E_ALL);
     // Account details
     $apiKey = urlencode('0fiLk8sAj50-F810SajAQVGv9RmBPrmYcapheCx2vT');
-    echo $mob;
+    // echo $mob;
     // Message details
     $numbers = array($mob);
     $sender = urlencode('TORNAM');
