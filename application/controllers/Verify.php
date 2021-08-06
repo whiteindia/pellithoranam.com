@@ -390,8 +390,12 @@ class Verify extends CI_Controller
         //  $this->sendMailNow($candidate);
         $this->sent_mobile_msg($candidate->phone, rawurlencode($msg));
         echo "<script>console.log('" . $candidate->phone . "');</script>";
+        echo $candidate->phone;
       }
     }
+    echo '<pre>';
+    print_r($srch_candidates);
+    exit();
     // $info = array();
     // $info['email'] = 'info@pellithoranam.com';
     // $info = json_decode(json_encode($info));
@@ -425,7 +429,7 @@ class Verify extends CI_Controller
 
       }
     }
-    echo 'msg sent';
+    //echo 'msg sent';
     // echo $msg;
     // exit();
     // echo '<pre>';print_r($my_matr_id);
