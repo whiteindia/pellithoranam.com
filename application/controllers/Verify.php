@@ -318,37 +318,33 @@ class Verify extends CI_Controller
     $like = array();
     $tbl = "profiles";
     $basic = $this->Search_model->get_user_basic_details2($my_matr_id);
-    //  echo '<pre>';
-    //  print_r($basic);
-    // echo '</pre>';
+
     $age = $basic->age;
     $caste = $basic->caste;
     if ($basic->partner_preference == 0) {
       if ($basic->gender == "male") {
         $where[] = "profiles.gender = 'female'";
-        //$this->session->set_userdata('gender',"female");
-        $agef = $age - 3;
-        // $where[]= "profiles.gender = 'female'";
-        /**/
+
+        $agef = $age - 5;
+
         $where[] = "profiles.age >= '" . $agef . "'";
         $where[] = "profiles.age <= '" . $age . "'";
         $where[] = "profiles.caste = '" . $caste . "'";
-        //  $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
+
         $where[] = "profiles.profile_status = '1'";
       } else {
         $where[] = "profiles.gender = 'male'";
-        //$this->session->set_userdata('gender',"male");
-        $aget = $age + 3;
-        // $where[]= "profiles.gender = 'male'";
-        /*  */
+
+        $aget = $age + 5;
+
         $where[] = "profiles.age >= '" . $age . "'";
         $where[] = "profiles.age <= '" . $aget . "'";
         $where[] = "profiles.caste = '" . $caste . "'";
-        // $where[]= "profiles.sub_caste < '".$basic->sub_caste."'";
+
         $where[] = "profiles.profile_status = '1'";
       }
       if ($basic->willing_intercast != 1) {
-        //  $where[] = "profiles.caste = '".$basic->caste."'";
+
         $where[]  = "profiles.religion = '" . $basic->religion . "'";
         $where1[] = "religion_id = '" . $basic->religion . "'";
       }
@@ -366,13 +362,8 @@ class Verify extends CI_Controller
     /**/
     if (is_array($srch_candidates)) {
       foreach ($srch_candidates as $candidate) {
-        // echo $candidate->email;
-        // echo $candidate->profile_name;
-        // echo "<br>";
-        //  $this->sendMailNow($candidate);
+
         $this->sent_mobile_msg($candidate->phone, rawurlencode($msg));
-        //  echo "<script>console.log('" . $candidate->phone . "');</script>";
-        //echo $candidate->phone;
       }
     }
     echo '<pre>';
