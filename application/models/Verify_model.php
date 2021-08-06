@@ -75,7 +75,7 @@ class Verify_model extends CI_Model
       $result = $this->db->update('otp_details', $data);
       $this->db->where('matrimony_id', $mat_id);
       $this->db->update('profiles', array('is_phone_verified' => 1));
-      $status = '1';
+      return $status = '1';
     } else {
 
       $query2 = $this->db->where('otp_status', '1');
@@ -83,12 +83,12 @@ class Verify_model extends CI_Model
       $query2 = $this->db->where('otp', $data['otp']);
       $query2 = $this->db->get('otp_details');
       if ($query2->num_rows() > 0) {
-        $status = '2';
+        return $status = '2';
       } else {
-        $status = '0';
+        return $status = '0';
       }
     }
-    return $status;
+    // return $status;
   }
   // view Package 
   function view_packages()
