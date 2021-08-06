@@ -364,7 +364,7 @@ class Verify extends CI_Controller
       foreach ($srch_candidates as $candidate) {
 
         $this->sent_mobile_msg($candidate->phone, $msg);
-        echo "<script>console_log(" . $candidate->phone . ");</script>";
+        // echo "<script>console_log(" . $candidate->phone . ");</script>";
       }
     }
     // echo '<pre>';
