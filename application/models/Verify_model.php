@@ -66,17 +66,7 @@ class Verify_model extends CI_Model
     $query = $this->db->where('otp_user', $mat_id);
     $query = $this->db->where('otp', $data['otp']);
     $query = $this->db->get('otp_details');
-    if ($query->num_rows() == 0) {
-
-      $query = $this->db->where('otp_status', '0');
-      $query = $this->db->where('otp_user', $mat_id);
-      $query = $this->db->where('otp', $data['otp']);
-      $data['otp_status'] = '1';
-      $result = $this->db->update('otp_details', $data);
-      $this->db->where('matrimony_id', $mat_id);
-      $this->db->update('profiles', array('is_phone_verified' => 1));
-      return $status = '1';
-    } else {
+    if ($query->num_rows() > 0) {
 
       $query2 = $this->db->where('otp_status', '1');
       $query2 = $this->db->where('otp_user', $mat_id);
@@ -87,6 +77,16 @@ class Verify_model extends CI_Model
       } else {
         return $status = '0';
       }
+    } else {
+
+      $query = $this->db->where('otp_status', '0');
+      $query = $this->db->where('otp_user', $mat_id);
+      $query = $this->db->where('otp', $data['otp']);
+      $data['otp_status'] = '1';
+      $result = $this->db->update('otp_details', $data);
+      $this->db->where('matrimony_id', $mat_id);
+      $this->db->update('profiles', array('is_phone_verified' => 1));
+      return $status = '1';
     }
     // return $status;
   }
