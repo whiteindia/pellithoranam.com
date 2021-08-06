@@ -88,7 +88,7 @@ class Verify_model extends CI_Model
         $status = '0';
       }
     }
-    echo $status;
+    return $status;
   }
   // view Package 
   function view_packages()
