@@ -387,17 +387,17 @@ class Verify extends CI_Controller
         // echo $candidate->email;
         // echo $candidate->profile_name;
         // echo "<br>";
-        $this->sendMailNow($candidate);
+        //  $this->sendMailNow($candidate);
         $this->sent_mobile_msg($candidate->phone, rawurlencode($msg));
         echo "<script>console.log('" . $candidate->phone . "');</script>";
       }
     }
-    $info = array();
-    $info['email'] = 'info@pellithoranam.com';
-    $info = json_decode(json_encode($info));
+    // $info = array();
+    // $info['email'] = 'info@pellithoranam.com';
+    // $info = json_decode(json_encode($info));
     //  ('email'=>'info@pellithoranam.com');
-    $this->sendMailNow($info);
-    echo 'mail sent';
+    // $this->sendMailNow($info);
+    // echo 'mail sent';
     $age = $basic->age;
     $caste = $basic->caste;
 
