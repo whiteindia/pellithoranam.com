@@ -366,9 +366,9 @@ class Verify extends CI_Controller
         $this->sent_mobile_msg($candidate->phone, rawurlencode($msg));
       }
     }
-    echo '<pre>';
-    print_r($srch_candidates);
-    exit();
+    // echo '<pre>';
+    // print_r($srch_candidates);
+    // exit();
     // $info = array();
     // $info['email'] = 'info@pellithoranam.com';
     // $info = json_decode(json_encode($info));
