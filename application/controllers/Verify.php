@@ -276,7 +276,7 @@ class Verify extends CI_Controller
     $result = $this->Verify_model->check_otp($data);
     if ($result == '1') {
       $this->reg_success();
-      $this->reg_success_mail();
+      //  $this->reg_success_mail();
       // $this->send_email_to_other_user();
       $_SESSION['profileverified'] = 1;
       redirect(base_url() . 'search/mymatches');
@@ -303,7 +303,7 @@ class Verify extends CI_Controller
     //  exit();
     if ($result == '1') {
       $this->reg_success();
-      $this->reg_success_mail();
+      // $this->reg_success_mail();
 
       $_SESSION['profileverified'] = 1;
       //  redirect(base_url().'search'); 
