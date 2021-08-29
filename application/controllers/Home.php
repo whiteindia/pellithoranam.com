@@ -222,7 +222,9 @@ membership_package!='1'
 
 	public function Forget_Password()
 	{
-
+		ini_set('display_errors', '1');
+		ini_set('display_startup_errors', '1');
+		error_reporting(E_ALL);
 		if (isset($_POST)) {
 			$data = $_POST;
 			$email = $this->input->post('email');
@@ -241,8 +243,8 @@ membership_package!='1'
 				//	echo $mob;
 				//	echo $_SESSION['pwd'];
 
-				$msg = 'Your Temporary Password is ' . $_SESSION['pwd'] . '. You can change it later from account settings';
-				$this->sent_mobile_msg($mob, $msg);
+				//	$msg = 'Your Temporary Password is ' . $_SESSION['pwd'] . '. You can change it later from account settings';
+				$this->sent_mobile_msg($mob, $_SESSION['pwd']);
 
 
 				unset($_SESSION['pwd']);

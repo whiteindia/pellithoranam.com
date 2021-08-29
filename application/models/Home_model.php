@@ -778,14 +778,14 @@ public function forgetpassword($email){
         $chk_qry = $this->db->get();
     $my_matr_id = $chk_qry;
     $mob=$my_matr_id->phone;   */ 
-     $from= 'no-reply@techlabz.in'; 
-     $name='Soulmate Matrimony'; 
-     $sub="Forgot Password";
-     $email=$email;
+    //  $from= 'no-reply@techlabz.in'; 
+    //  $name='Soulmate Matrimony'; 
+    //  $sub="Forgot Password";
+    //  $email=$email;
      // $mailTemplate="<div style='width:100%;float:left;color: ##ee2979;font-size=14px;font-weight: bold;>Hi,<br>Your Temporary Password is<br><div style='font-style=italics;width:100%; margin:0px 50px;'>$rand_pwd</div><br>You can change it later from account settings</div>";
      $mailTemplate='Your Temporary Password is '.$rand_pwd.'. You can change it later from account settings';
    $_SESSION['pwd']=$mailTemplate;
-     $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
+    //  $this->sending_mail($from,$name,$email,$sub,$mailTemplate);     
 
    //  $this->verify->sent_mobile_msg($mob,$mailTemplate);
 
@@ -917,4 +917,4 @@ public function check_verification($data) {
   }
 
 
-} ?>
+}
