@@ -240,7 +240,9 @@ membership_package!='1'
 				$mob = $my_matr_id[0]->phone;
 				//	echo $mob;
 				//	echo $_SESSION['pwd'];
-				$this->sent_mobile_msg($mob, $_SESSION['pwd']);
+
+				$msg = 'Your Temporary Password is ' . $_SESSION['pwd'] . '. You can change it later from account settings';
+				$this->sent_mobile_msg($mob, $msg);
 
 
 				unset($_SESSION['pwd']);
