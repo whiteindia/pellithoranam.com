@@ -250,7 +250,7 @@ membership_package!='1'
 				unset($_SESSION['pwd']);
 
 
-				$result = array('status'  => 'loggedIn', 'message'  => 'Successfully Sent. Please Check Your Email.');
+				$result = array('status'  => 'loggedIn', 'message'  => 'Successfully Sent. Please Check Your Mobile.');
 			}
 			print json_encode($result);
 		}
