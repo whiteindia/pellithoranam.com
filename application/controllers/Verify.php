@@ -307,7 +307,7 @@ class Verify extends CI_Controller
     //ini_set('display_errors', 1);
     //ini_set('display_startup_errors', 1);
     //error_reporting(E_ALL);
-
+    /*
     $this->load->model('Search_model');
     $this->load->model('Home_model');
     $my_matr_id = $this->session->userdata('logged_in');
@@ -357,16 +357,16 @@ class Verify extends CI_Controller
 
 
     $msg = 'New User PT ' . $basic->matrimony_id . ' Has Registered to our site matching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/' . $basic->matrimony_id;
+*/
 
-
-    /**/
+    /*
     if (is_array($srch_candidates)) {
       foreach ($srch_candidates as $candidate) {
 
         $this->sent_mobile_msg($candidate->phone, $msg);
         // echo "<script>console_log(" . $candidate->phone . ");</script>";
       }
-    }
+    }*/
     // echo '<pre>';
     // print_r($srch_candidates);
     // exit();
@@ -376,8 +376,8 @@ class Verify extends CI_Controller
     //  ('email'=>'info@pellithoranam.com');
     // $this->sendMailNow($info);
     // echo 'mail sent';
-    $age = $basic->age;
-    $caste = $basic->caste;
+    /*  $age = $basic->age;
+    $caste = $basic->caste;*/
 
     // if($basic->gender== "male") { 
     //   $agef=$age-3;
@@ -393,7 +393,7 @@ class Verify extends CI_Controller
     //  $where[]= "profiles.age <= '".$aget."'";
     //   $where[]= "profiles.caste = '".$caste."'"; 
     // }
-    $srch_candidates_sms = $this->Search_model->search_user_details(10000, 0, $where, $or_where, $like); /**/
+    /* $srch_candidates_sms = $this->Search_model->search_user_details(10000, 0, $where, $or_where, $like);
     //$msg='New User PT '.$basic->matrimony_id.' Has Registered to our site maching your preferences. You Can Check it out https://pellithoranam.com/profile/profile_details/'.$basic->matrimony_id.'';
     if (is_array($srch_candidates)) {
       foreach ($srch_candidates as $candidate) {
@@ -402,7 +402,7 @@ class Verify extends CI_Controller
         //  echo $candidate->age.'<br>';
 
       }
-    }
+    } */
     //echo 'msg sent';
     // echo $msg;
     // exit();
